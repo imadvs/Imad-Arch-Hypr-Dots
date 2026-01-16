@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Programming Advices
+Comment=Programming Advices Dashboard
+Exec=brave --password-store=basic --new-window --app="https://programmingadvices.com/l/dashboard"
+Type=Application
+Icon=brave-browser
+Categories=Network;WebBrowser;
+StartupWMClass=programmingadvices.com__l_dashboard

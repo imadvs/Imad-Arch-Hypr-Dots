@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Pomofocus
+Comment=Pomofocus Timer
+Exec=brave --password-store=basic --new-window --app="https://pomofocus.io/app"
+Type=Application
+Icon=brave-browser
+Categories=Network;WebBrowser;Utility;
+StartupWMClass=pomofocus.io__app

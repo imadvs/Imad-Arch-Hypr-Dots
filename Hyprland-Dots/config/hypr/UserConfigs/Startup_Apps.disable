@@ -1,0 +1,2 @@
+omarchy-launch-webapp 'https://programmingadvices.com' --ozone-platform-hint=auto
+uwsm app -- ghostty --class=org.omarchy.nvim.startup -e nvim

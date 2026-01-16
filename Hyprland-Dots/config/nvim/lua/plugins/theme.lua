@@ -1,0 +1,1 @@
+/home/imad/dotfiles/my-themes/IMAD/neovim.lua

@@ -1,0 +1,132 @@
+:: There are 3 providers available for nvidia-dkms:
+:: Repository cachyos
+   1) nvidia-535xx-dkms  2) nvidia-550xx-dkms
+:: Repository extra
+   3) nvidia-open-dkms
+
+Enter a number (default=1): 
+resolving dependencies...
+looking for conflicting packages...
+:: nvidia-535xx-dkms-535.274.02-1 and nvidia-580xx-dkms-580.119.02-1 are in conflict (NVIDIA-MODULE). Remove nvidia-580xx-dkms? [y/N] error: unresolvable package conflicts detected
+error: failed to prepare transaction (conflicting dependencies)
+
+:: nvidia-535xx-dkms-535.274.02-1 and nvidia-580xx-dkms-580.119.02-1 are in conflict
+resolving dependencies...
+looking for conflicting packages...
+
+Package (2)                 New Version  Net Change  Download Size
+
+cachyos-v3/libxnvctrl       590.48.01-1    0.45 MiB       0.07 MiB
+cachyos-v3/nvidia-settings  590.48.01-1    1.54 MiB       0.76 MiB
+
+Total Download Size:   0.84 MiB
+Total Installed Size:  1.98 MiB
+
+:: Proceed with installation? [Y/n] 
+:: Retrieving packages...
+ nvidia-settings-590.48.01-1-x86_64_v3 downloading...
+ libxnvctrl-590.48.01-1-x86_64_v3 downloading...
+checking keyring...
+checking package integrity...
+loading package files...
+checking for file conflicts...
+error: failed to commit transaction (conflicting files)
+libxnvctrl: /usr/include/NVCtrl/NVCtrl.h exists in filesystem (owned by libxnvctrl-580xx)
+libxnvctrl: /usr/include/NVCtrl/NVCtrlLib.h exists in filesystem (owned by libxnvctrl-580xx)
+libxnvctrl: /usr/include/NVCtrl/nv_control.h exists in filesystem (owned by libxnvctrl-580xx)
+libxnvctrl: /usr/lib/libXNVCtrl.a exists in filesystem (owned by libxnvctrl-580xx)
+libxnvctrl: /usr/lib/libXNVCtrl.so exists in filesystem (owned by libxnvctrl-580xx)
+libxnvctrl: /usr/lib/libXNVCtrl.so.0 exists in filesystem (owned by libxnvctrl-580xx)
+libxnvctrl: /usr/lib/libXNVCtrl.so.0.0.0 exists in filesystem (owned by libxnvctrl-580xx)
+nvidia-settings: /usr/bin/nvidia-settings exists in filesystem (owned by nvidia-580xx-settings)
+nvidia-settings: /usr/share/applications/nvidia-settings.desktop exists in filesystem (owned by nvidia-580xx-settings)
+nvidia-settings: /usr/share/man/man1/nvidia-settings.1.gz exists in filesystem (owned by nvidia-580xx-settings)
+nvidia-settings: /usr/share/pixmaps/nvidia-settings.png exists in filesystem (owned by nvidia-580xx-settings)
+Errors occurred, no packages were upgraded.
+:: There are 3 providers available for nvidia-dkms:
+:: Repository cachyos
+   1) nvidia-535xx-dkms  2) nvidia-550xx-dkms
+:: Repository extra
+   3) nvidia-open-dkms
+
+Enter a number (default=1): 
+resolving dependencies...
+looking for conflicting packages...
+:: nvidia-535xx-dkms-535.274.02-1 and nvidia-580xx-dkms-580.119.02-1 are in conflict (NVIDIA-MODULE). Remove nvidia-580xx-dkms? [y/N] error: unresolvable package conflicts detected
+error: failed to prepare transaction (conflicting dependencies)
+
+:: nvidia-535xx-dkms-535.274.02-1 and nvidia-580xx-dkms-580.119.02-1 are in conflict
+resolving dependencies...
+looking for conflicting packages...
+
+Package (2)                 New Version  Net Change
+
+cachyos-v3/libxnvctrl       590.48.01-1    0.45 MiB
+cachyos-v3/nvidia-settings  590.48.01-1    1.54 MiB
+
+Total Installed Size:  1.98 MiB
+
+:: Proceed with installation? [Y/n] 
+checking keyring...
+checking package integrity...
+loading package files...
+checking for file conflicts...
+error: failed to commit transaction (conflicting files)
+libxnvctrl: /usr/include/NVCtrl/NVCtrl.h exists in filesystem (owned by libxnvctrl-580xx)
+libxnvctrl: /usr/include/NVCtrl/NVCtrlLib.h exists in filesystem (owned by libxnvctrl-580xx)
+libxnvctrl: /usr/include/NVCtrl/nv_control.h exists in filesystem (owned by libxnvctrl-580xx)
+libxnvctrl: /usr/lib/libXNVCtrl.a exists in filesystem (owned by libxnvctrl-580xx)
+libxnvctrl: /usr/lib/libXNVCtrl.so exists in filesystem (owned by libxnvctrl-580xx)
+libxnvctrl: /usr/lib/libXNVCtrl.so.0 exists in filesystem (owned by libxnvctrl-580xx)
+libxnvctrl: /usr/lib/libXNVCtrl.so.0.0.0 exists in filesystem (owned by libxnvctrl-580xx)
+nvidia-settings: /usr/bin/nvidia-settings exists in filesystem (owned by nvidia-580xx-settings)
+nvidia-settings: /usr/share/applications/nvidia-settings.desktop exists in filesystem (owned by nvidia-580xx-settings)
+nvidia-settings: /usr/share/man/man1/nvidia-settings.1.gz exists in filesystem (owned by nvidia-580xx-settings)
+nvidia-settings: /usr/share/pixmaps/nvidia-settings.png exists in filesystem (owned by nvidia-580xx-settings)
+Errors occurred, no packages were upgraded.
+[34m[INFO](B[m Rebuilding [33mInitramfs(B[m...
+==> Building image from preset: /etc/mkinitcpio.d/linux-cachyos-lts.preset: 'default'
+==> Using default configuration file: '/etc/mkinitcpio.conf'
+  -> -k /boot/vmlinuz-linux-cachyos-lts -g /boot/initramfs-linux-cachyos-lts.img
+==> Using drop-in configuration file: '10-chwd.conf'
+==> Starting build: '6.12.63-2-cachyos-lts'
+  -> Running build hook: [base]
+  -> Running build hook: [systemd]
+  -> Running build hook: [autodetect]
+  -> Running build hook: [microcode]
+  -> Running build hook: [kms]
+  -> Running build hook: [modconf]
+  -> Running build hook: [block]
+  -> Running build hook: [keyboard]
+  -> Running build hook: [sd-vconsole]
+  -> Running build hook: [plymouth]
+  -> Running build hook: [filesystems]
+==> Generating module dependencies
+==> Creating zstd-compressed initcpio image: '/boot/initramfs-linux-cachyos-lts.img'
+  -> Early uncompressed CPIO image generation successful
+==> Initcpio image generation successful
+==> Building image from preset: /etc/mkinitcpio.d/linux-cachyos.preset: 'default'
+==> Using default configuration file: '/etc/mkinitcpio.conf'
+  -> -k /boot/vmlinuz-linux-cachyos -g /boot/initramfs-linux-cachyos.img
+==> Using drop-in configuration file: '10-chwd.conf'
+==> Starting build: '6.18.3-2-cachyos'
+  -> Running build hook: [base]
+  -> Running build hook: [systemd]
+  -> Running build hook: [autodetect]
+  -> Running build hook: [microcode]
+  -> Running build hook: [kms]
+  -> Running build hook: [modconf]
+  -> Running build hook: [block]
+  -> Running build hook: [keyboard]
+  -> Running build hook: [sd-vconsole]
+  -> Running build hook: [plymouth]
+  -> Running build hook: [filesystems]
+==> Generating module dependencies
+==> Creating zstd-compressed initcpio image: '/boot/initramfs-linux-cachyos.img'
+  -> Early uncompressed CPIO image generation successful
+==> Initcpio image generation successful
+options nvidia_drm modeset=1 fbdev=1
+[34m[INFO](B[m [33mGRUB(B[m bootloader detected
+[32m[OK](B[m nvidia-drm.modeset=1 added to /etc/default/grub
+[32m[OK](B[m nvidia_drm.fbdev=1 added to /etc/default/grub
+[32m[OK](B[m Additional steps for [33mGRUB(B[m completed

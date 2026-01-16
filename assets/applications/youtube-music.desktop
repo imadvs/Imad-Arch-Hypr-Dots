@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=YouTube Music
+Comment=YouTube Music Web App
+Exec=brave --password-store=basic --new-window --app="https://music.youtube.com"
+Type=Application
+Icon=brave-browser
+Categories=Network;WebBrowser;AudioVideo;
+StartupWMClass=music.youtube.com

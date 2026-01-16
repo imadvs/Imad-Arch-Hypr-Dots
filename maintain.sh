@@ -1,5 +1,5 @@
 #!/bin/bash
-# 💫 My-Hyprland Maintenance Script 💫
+# 💫 Imad-Arch-Hypr-Dots Maintenance Script 💫
 # Usage: ./maintain.sh "Commit Message"
 
 REPO_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"

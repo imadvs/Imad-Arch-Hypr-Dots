@@ -1,5 +1,5 @@
 #!/bin/bash
-# Custom SDDM Theme Installer for My-Hyprland
+# Custom SDDM Theme Installer for Imad-Arch-Hypr-Dots
 # Installs the preserved sddm-astronaut-theme with pixel_sakura and HiDPI fixes
 
 LOG="Install-Logs/install-$(date +%d-%H%M%S)_sddm_theme.log"

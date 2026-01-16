@@ -8,8 +8,8 @@ To install this setup on any Arch-based system (Arch, EndeavourOS, Manjaro, etc.
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/YOUR_USERNAME/My-Hyprland.git
-    cd My-Hyprland
+    git clone https://github.com/YOUR_USERNAME/Imad-Arch-Hypr-Dots.git
+    cd Imad-Arch-Hypr-Dots
     ```
 
 2.  **Run the installer:**

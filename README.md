@@ -1,76 +1,93 @@
-# My Custom Hyprland Dotfiles
+# 💫 Imad-Arch-Hypr-Dots
 
-This repository is a self-contained, portable installer for my personalized Hyprland environment. It is based on Jakoolit's scripts but modified to be deeply customized and completely independent.
+This repository is a self-contained, portable, and self-maintaining installer for my personalized Hyprland environment. It is widely compatible with Arch-based distributions (Arch, EndeavourOS, Manjaro, etc.).
 
 ## 🚀 Installation
 
-To install this setup on any Arch-based system (Arch, EndeavourOS, Manjaro, etc.):
+To install this setup on a new machine:
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/YOUR_USERNAME/Imad-Arch-Hypr-Dots.git
+    git clone https://github.com/yourusername/Imad-Arch-Hypr-Dots.git
     cd Imad-Arch-Hypr-Dots
     ```
 
-2.  **Run the installer:**
+2.  **Run the Installer:**
     ```bash
     ./install.sh
     ```
 
-### What happens during installation?
-- **Packages**: Installs Hyprland, Waybar, Rofi, Kitty, and **your custom apps** (`obsidian`, `brave-bin`, `visual-studio-code-bin`).
-- **Configs**: Restores your exact configurations for 17+ tools (AgS, Neovim, Qt5/6, etc.).
-- **Themes**: Installs the `sddm-astronaut-theme` with your `pixel_sakura` preset and 4K HiDPI fixes.
-- **Assets**: Restores your full wallpaper collection to `~/Pictures/wallpapers`.
-- **Web Apps**: Restores your custom web apps (`youtube-music`, `pomofocus`, `programming-advices`).
-- **Shell**: Restores your `.zshrc` so your terminal feels right at home immediately.
+---
+
+## 📜 Scripts Explained
+
+Here is what works under the hood:
+
+### 1. `install.sh` (The Master Installer)
+This is the main entry point. It coordinates the entire installation process.
+- **What it does**:
+    - Checks your distro and privileges.
+    - Menus allow you to select components (Hyprland, Waybar, Zsh, etc.).
+    - Calls other scripts from the `install-scripts/` directory to do the heavy lifting.
+    - **Driver Check**: Automatically looks for NVIDIA GPUs and installs drivers if found.
+
+### 2. `maintain.sh` (The "Dots" Command)
+This script allows this repository to act as a **two-way sync** tool.
+- **Command Alias**: On installation, this script is aliased to `dots`.
+- **Usage**: `dots "Optional Commit Message"`
+- **What it does**:
+    1.  **Pull**: Runs `git pull` to get updates from the cloud (useful if you have multiple machines).
+    2.  **Sync Configs**: Copies your current settings from `~/.config` -> Repo.
+    3.  **Sync Assets**: Copies your Wallpapers and Desktop Shortcuts -> Repo.
+    4.  **Push**: Commits changes and pushes them to GitHub.
+
+### 3. Key Installation Scripts (`install-scripts/`)
+These scripts are called by `install.sh` but can be customized:
+
+*   **`01-hypr-pkgs.sh`**:
+    *   Installs core Hyprland packages (waybar, rofi, kitty, etc.).
+    *   **Customization**: This file contains the `Extra=(...)` list where your personal apps (`obsidian`, `brave-bin`, `vscode`) are defined for auto-installation.
+*   **`zsh.sh`**:
+    *   Installs Zsh and Oh-My-Zsh.
+    *   **Auto-Injection**: Automatically adds the `dots` command to your `.zshrc` so you can start managing your repo immediately.
+*   **`sddm_theme.sh`**:
+    *   Installs your custom `sddm-astronaut-theme`.
+    *   **Fixes**: Applies 4K HiDPI scaling and sets the correct `pixel_sakura` preset.
+*   **`dotfiles-main.sh`**:
+    *   Responsible for copying the `Hyprland-Dots` (configs) and `wallpapers` to your system.
+    *   It triggers `Hyprland-Dots/copy.sh`.
+
+### 4. `Hyprland-Dots/copy.sh`
+This script does the actual file copying during installation.
+- It copies specific folders (`hypr`, `waybar`, etc.) from the repo to `~/.config`.
+- It restores your **Wallpapers** to `~/Pictures/wallpapers`.
+- It restores your **Web Apps** to `~/.local/share/applications`.
 
 ---
 
-## ✨ Features
+## ✨ Features Overview
 
-### 📦 Complete Configuration Support
-This repo syncs and restores configurations for:
-- `ags`, `btop`, `cava`, `fastfetch`
-- `hypr` (Keybinds, WindowRules, Monitors)
-- `kitty`, `Kvantum`, `nvim`, `qt5ct/qt6ct`
-- `quickshell`, `rofi`, `swappy`, `swaync`
-- `wallust`, `waybar`, `wlogout`
-
-### 🎨 Custom Theming
-- **SDDM**: Preserves your `pixel_sakura` theme with specific high-resolution scaling fixes.
-- **Wallpapers**: Your personal collection is bundled in `Hyprland-Dots/wallpapers` and restored automatically.
-
-### 🛠️ Utilities
-- **Web Apps**: Custom `.desktop` entries for Brave web apps are preserved.
-- **Driver Support**: Automatically detects NVIDIA GPUs and prompts for driver installation.
-- **Distro Agnostic**: Works on any Arch-based distribution.
+*   **Portable**: All customized installation scripts use local files (bundled in the repo), so no external GitHub cloning is required for themes or dots.
+*   **Self-Updating**: The `maintain.sh` script ensures your repo always matches your local machine.
+*   **Large File Support**: Configured with Git LFS to handle high-res themes and assets.
+*   **Custom Apps**: Automatically restores your browser web apps and desktop shortcuts.
 
 ---
 
-## 🔄 Maintenance & Updates
+## 🔄 How to Update
 
-This repository comes with a powerful sync script to keep it up-to-date with your local changes.
-
-**If you make changes to your system** (e.g., new keybinds, new wallpapers, new config tweaks), simply run:
-
+**Scenario A: You changed a setting (keybind, wallpaper, etc.)**
+Run:
 ```bash
-~/update_my_dots.sh
+dots "Updated keybinds"
 ```
+*Result: Local changes -> Repo -> GitHub.*
 
-This script will:
-1.  Recursively sync all relevant config folders from `~/.config` to the repo.
-2.  Sync new wallpapers from `~/Pictures/wallpapers`.
-3.  Sync new desktop shortcuts from `~/.local/share/applications`.
-
-After running it, just `git push` your changes!
-
----
-
-## 📂 Repository Structure
-
-- `Hyprland-Dots/config`: The core configuration files.
-- `Hyprland-Dots/wallpapers`: Your wallpaper collection.
-- `assets/applications`: Backup of custom `.desktop` files.
-- `assets/sddm-astronaut-theme`: Your modified login screen theme.
-- `install-scripts/`: The installation logic (Sanitized to use local files only).
+**Scenario B: You are on a NEW machine**
+Run:
+```bash
+cd Imad-Arch-Hypr-Dots
+git pull
+./install.sh
+```
+*Result: GitHub -> Repo -> Local Machine.*

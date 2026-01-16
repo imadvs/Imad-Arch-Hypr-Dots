@@ -74,6 +74,10 @@ echo -e "  .zshrc synced."
 echo -e "${BLUE}Git Operations...${NC}"
 cd "$REPO_DIR" || exit
 
+# Pull latest changes
+echo -e "${YELLOW}Pulling latest changes from remote...${NC}"
+git pull
+
 # Add all changes
 git add .
 

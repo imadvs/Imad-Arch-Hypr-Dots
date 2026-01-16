@@ -46,5 +46,5 @@ setopt appendhistory
 
 # Custom Dotfiles Management
 function dots() {
-    ~/My-Hyprland/maintain.sh "$@"
+    ~/Imad-Arch-Hypr-Dots/maintain.sh "$@"
 }

@@ -79,6 +79,19 @@ if command -v zsh >/dev/null; then
   cp -r 'assets/.zshrc' ~/
   cp -r 'assets/.zprofile' ~/
 
+  # Inject 'dots' alias for maintenance
+  DOTS_PATH="$HOME/Imad-Arch-Hypr-Dots"
+  if ! grep -q "function dots()" "$HOME/.zshrc"; then
+      cat << EOF >> "$HOME/.zshrc"
+
+# Custom Dotfiles Management
+function dots() {
+    $DOTS_PATH/maintain.sh "\$@"
+}
+EOF
+      echo "${OK} Injected 'dots' alias into .zshrc" 2>&1 | tee -a "$LOG"
+  fi
+
   # Check if the current shell is zsh
   current_shell=$(basename "$SHELL")
   if [ "$current_shell" != "zsh" ]; then

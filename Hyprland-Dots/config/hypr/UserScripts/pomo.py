@@ -6,9 +6,9 @@ from datetime import datetime
 
 class PomodoroTimer:
     def __init__(self):
-        self.pomodoro_time = 25 * 60  # 25 minutes
-        self.short_break = 5 * 60      # 5 minutes
-        self.long_break = 15 * 60      # 15 minutes
+        self.pomodoro_time = 50 * 60  # 50 minutes
+        self.short_break = 10 * 60      # 10 minutes
+        self.long_break = 30 * 60      # 30 minutes
         self.pomodoro_count = 0
         self.mode = "pomodoro"
         
@@ -159,9 +159,9 @@ class PomodoroTimer:
         print("  Press ENTER to start your first Pomodoro session!")
         print()
         print("  Default settings:")
-        print("  • Pomodoro: 25 minutes")
-        print("  • Short break: 5 minutes")
-        print("  • Long break: 15 minutes (every 4 pomodoros)")
+        print("  • Pomodoro: 50 minutes")
+        print("  • Short break: 10 minutes")
+        print("  • Long break: 30 minutes (every 4 pomodoros)")
         print()
         print("=" * 50)
         input()

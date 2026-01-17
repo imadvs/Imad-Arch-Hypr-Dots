@@ -48,3 +48,8 @@ setopt appendhistory
 function dots() {
     ~/Imad-Arch-Hypr-Dots/maintain.sh "$@"
 }
+
+alias aurpdate='paru -Syu'
+alias update='sudo pacman -Syu && paru -Sua'
+alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'
+alias mirrors='sudo cachyos-rate-mirrors'

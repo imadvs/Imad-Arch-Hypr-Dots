@@ -29,9 +29,10 @@ send_notification() {
     notify-send -e \
         -h string:x-canonical-private-synchronous:brightness_notif \
         -h int:value:"$brightness" \
+        -h boolean:SWAYNC_BYPASS_DND:true \
         -u low \
         -i "$icon_path" \
-        "Screen" "Brightness: ${brightness}%"
+        "Brightness: ${brightness}%"
 }
 
 # Change brightness and notify

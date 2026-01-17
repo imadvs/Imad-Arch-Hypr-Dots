@@ -73,11 +73,27 @@ class PomodoroTimer:
     def play_notification(self):
         # Terminal bell
         print("\a" * 3)
+        # System notification sound (works on most Linux systems)
+        try:
+            os.system('paplay /usr/share/sounds/freedesktop/stereo/complete.oga 2>/dev/null || '
+                     'paplay /usr/share/sounds/freedesktop/stereo/bell.oga 2>/dev/null || '
+                     'aplay /usr/share/sounds/freedesktop/stereo/complete.oga 2>/dev/null || '
+                     'mpg123 -q /usr/share/sounds/freedesktop/stereo/complete.oga 2>/dev/null &')
+        except:
+            pass
+    
+    def send_notification(self, title, message):
+        # Send desktop notification
+        try:
+            os.system(f'notify-send "{title}" "{message}" -u critical -t 5000 2>/dev/null &')
+        except:
+            pass
     
     def run_timer(self, mode):
         total_time = self.get_total_time(mode)
         time_left = total_time
         paused = False
+        one_min_warning_sent = False
         
         # Set up non-blocking input
         if os.name != 'nt':
@@ -92,6 +108,16 @@ class PomodoroTimer:
                 
                 if paused:
                     print("\n⏸  PAUSED - Press SPACE to continue")
+                
+                # Send 1-minute warning
+                if time_left == 60 and not one_min_warning_sent and not paused:
+                    one_min_warning_sent = True
+                    if mode == "pomodoro":
+                        self.send_notification("⏰ Pomodoro Timer", "1 minute remaining! Finish up your task.")
+                    else:
+                        self.send_notification("⏰ Break Timer", "1 minute remaining! Break almost over.")
+                    # Warning sound
+                    os.system('paplay /usr/share/sounds/freedesktop/stereo/message.oga 2>/dev/null &')
                 
                 # Check for input (non-blocking)
                 if os.name != 'nt':
@@ -125,8 +151,15 @@ class PomodoroTimer:
                 else:
                     time.sleep(0.1)
             
-            # Timer completed
+            # Timer completed - play notification sound and send notification
             self.play_notification()
+            if mode == "pomodoro":
+                self.send_notification("✅ Pomodoro Complete!", "Great work! Time for a break.")
+            elif mode == "short_break":
+                self.send_notification("✅ Break Complete!", "Ready to focus again?")
+            else:
+                self.send_notification("✅ Long Break Complete!", "Recharged! Ready for another round?")
+            
             return 'complete'
             
         finally:

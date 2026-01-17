@@ -11,6 +11,12 @@ To install this setup on a new machine:
     git clone https://github.com/imadvs/Imad-Arch-Hypr-Dots.git && cd Imad-Arch-Hypr-Dots && chmod +x install.sh && ./install.sh
     ```
 
+### Alternative: Lazy Install (`auto-install.sh`)
+If you don't even want to type `git clone`, you can download just the bootstrap script:
+1.  Download `auto-install.sh`.
+2.  Run `chmod +x auto-install.sh && ./auto-install.sh`.
+*Result: It automatically clones the repo and starts the installer.*
+
 ---
 
 ## 📜 Scripts Explained

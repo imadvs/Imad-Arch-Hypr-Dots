@@ -91,3 +91,26 @@ git pull
 ./install.sh
 ```
 *Result: GitHub -> Repo -> Local Machine.*
+
+## ↩️ How to Undo / Rollback
+
+If you messed up a configuration and want to go back to a previous version:
+
+1.  **Go to the repo:**
+    ```bash
+    cd ~/Imad-Arch-Hypr-Dots
+    ```
+2.  **Find the "Good" commit:**
+    ```bash
+    git log --oneline
+    ```
+    *(Copy the code, e.g., `a1b2c3d`, of the version you want).*
+3.  **Reset the repo to that version:**
+    ```bash
+    git reset --hard <commit-hash>
+    ```
+4.  **Re-apply the good configs:**
+    ```bash
+    ./install.sh
+    ```
+    *(Select "y" to overwrite configs).*

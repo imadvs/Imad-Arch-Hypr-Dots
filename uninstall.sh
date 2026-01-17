@@ -1,6 +1,6 @@
 #!/bin/bash
 # 💫 https://github.com/JaKooLit 💫 #
-# KooL Arch-Hyprland uninstall script #
+# 💫 Imad-Arch-Hypr-Dots uninstall script 💫 #
 
 clear
 
@@ -24,12 +24,12 @@ printf "\n%.0s" {1..2}
 echo -e "\e[35m
 	╦╔═┌─┐┌─┐╦    ╦ ╦┬ ┬┌─┐┬─┐┬  ┌─┐┌┐┌┌┬┐
 	╠╩╗│ ││ │║    ╠═╣└┬┘├─┘├┬┘│  ├─┤│││ ││ UNINSTALL
-	╩ ╩└─┘└─┘╩═╝  ╩ ╩ ┴ ┴  ┴└─┴─┘┴ ┴┘└┘─┴┘ Arch Linux
+	╩ ╩└─┘└─┘╩═╝  ╩ ╩ ┴ ┴  ┴└─┴─┘┴ ┴┘└┘─┴┘ Imad Dots
 \e[0m"
 printf "\n%.0s" {1..1}
 
 # Show welcome message using whiptail with Yes/No options
-whiptail --title "Arch-Hyprland KooL Dots Uninstall Script" --yesno \
+whiptail --title "Imad-Arch-Hypr-Dots Uninstall Script" --yesno \
 "Hello! This script will uninstall KooL Hyprland packages and configs.
 
 You can choose packages and directories you want to remove.

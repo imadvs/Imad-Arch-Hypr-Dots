@@ -18,22 +18,19 @@ echo -e "${BLUE}Starting Dotfiles Sync...${NC}"
 # ==============================================================================
 # 1. Sync Configurations (User Configs -> Repo)
 # ==============================================================================
-Jakoolit_DIR="$HOME/Arch-Hyprland/Hyprland-Dots/config"
+# We sync directly from ~/.config to the repo. 
+# Only folders that already exist in the repo are updated to avoid clutter.
 TARGET_DIR="$REPO_DIR/Hyprland-Dots/config"
 
-if [ -d "$Jakoolit_DIR" ]; then
-    echo -e "${YELLOW}Syncing Configurations...${NC}"
-    for item in "$Jakoolit_DIR"/*; do
-        base_name=$(basename "$item")
-        if [ -d "$CONFIG_DIR/$base_name" ] || [ -f "$CONFIG_DIR/$base_name" ]; then
-            # Sync, deleting extraneous files in destination to keep it 1:1
-            rsync -aq --delete "$CONFIG_DIR/$base_name" "$TARGET_DIR/"
-            echo -e "  Synced: $base_name"
-        fi
-    done
-else
-    echo -e "${RED}Warning: Reference directory $Jakoolit_DIR not found. Skipping config sync based on reference.${NC}"
-fi
+echo -e "${YELLOW}Syncing Configurations...${NC}"
+for item in "$TARGET_DIR"/*; do
+    base_name=$(basename "$item")
+    if [ -d "$CONFIG_DIR/$base_name" ] || [ -f "$CONFIG_DIR/$base_name" ]; then
+        # Sync, deleting extraneous files in destination to keep it 1:1
+        rsync -aq --delete "$CONFIG_DIR/$base_name" "$TARGET_DIR/"
+        echo -e "  Synced: $base_name"
+    fi
+done
 
 # ==============================================================================
 # 2. Sync Wallpapers (Pictures -> Repo)

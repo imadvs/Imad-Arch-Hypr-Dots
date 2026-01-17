@@ -6,15 +6,9 @@ This repository is a self-contained, portable, and self-maintaining installer fo
 
 To install this setup on a new machine:
 
-1.  **Clone the repository:**
+1.  **Run the One-Line Installer:**
     ```bash
-    git clone https://github.com/yourusername/Imad-Arch-Hypr-Dots.git
-    cd Imad-Arch-Hypr-Dots
-    ```
-
-2.  **Run the Installer:**
-    ```bash
-    ./install.sh
+    git clone https://github.com/imadvs/Imad-Arch-Hypr-Dots.git && cd Imad-Arch-Hypr-Dots && chmod +x install.sh && ./install.sh
     ```
 
 ---

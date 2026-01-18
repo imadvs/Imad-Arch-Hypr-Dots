@@ -73,6 +73,16 @@ else
   printf "\n"
 fi
 
+# NVIDIA Power Management (Preserve Video Memory)
+NVEP="/etc/modprobe.d/nvidia-power.conf"
+if [ -f "$NVEP" ]; then
+  printf "${INFO} Seems like ${YELLOW}NVreg_PreserveVideoMemoryAllocations=1${RESET} is already added..moving on.\n"
+else
+  printf "${YELLOW} Adding options to $NVEP...\n"
+  echo "options nvidia NVreg_PreserveVideoMemoryAllocations=1" | sudo tee "$NVEP" 2>&1 | tee -a "$LOG"
+  printf "${OK} Added nvidia-power.conf\n"
+fi
+
 # Additional for GRUB users
 if [ -f /etc/default/grub ]; then
     printf "${INFO} ${YELLOW}GRUB${RESET} bootloader detected\n" 2>&1 | tee -a "$LOG"

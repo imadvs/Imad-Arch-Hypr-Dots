@@ -97,6 +97,10 @@ cmd_init() {
   state="$(cat "$STATE_FILE" || echo off)"
 
   if [[ "$state" == "on" ]]; then
+    # Kill any existing instance first to ensure a fresh application of gamma tables
+    pkill -x hyprsunset || true
+    sleep 0.5 # Give it a moment to die and clear gamma
+
     if command -v hyprsunset >/dev/null 2>&1; then
       nohup hyprsunset >/dev/null 2>&1 &
     fi

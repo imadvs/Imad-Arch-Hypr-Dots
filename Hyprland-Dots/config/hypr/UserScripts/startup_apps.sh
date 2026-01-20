@@ -48,8 +48,11 @@ hyprctl dispatch movetoworkspacesilent "3,title:^(.*YouTube Music.*|.*music.yout
 
 # --- Workspace 3: Pomofocus ---
 echo "Launching Pomofocus..."
+# Force switch to WS3 first to encourage spawning there
+hyprctl dispatch workspace 3
+sleep 0.5
 uwsm app -- brave --password-store=basic --new-window --app="https://pomofocus.io/app" &
-sleep 5
+sleep 6
 echo "Clients before move (Pomofocus):" >>"$LOGfile"
 hyprctl clients | grep "title:" >>"$LOGfile"
 echo "Moving Pomofocus..."

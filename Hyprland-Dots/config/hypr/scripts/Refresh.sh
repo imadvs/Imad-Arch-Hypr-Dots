@@ -40,8 +40,19 @@ for pid in $(pidof waybar rofi swaync ags swaybg); do
 done
 
 #Restart waybar
+#Restart waybar
 sleep 0.1
 waybar &
+WAYBAR_PID=$!
+
+STATE_FILE="$HOME/.config/hypr/waybar_state"
+if [ -f "$STATE_FILE" ]; then
+    STATE=$(cat "$STATE_FILE")
+    if [ "$STATE" == "hidden" ]; then
+        sleep 0.2
+        kill -SIGUSR1 $WAYBAR_PID
+    fi
+fi
 
 
 # relaunch swaync

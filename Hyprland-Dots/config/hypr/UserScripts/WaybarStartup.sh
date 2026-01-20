@@ -14,16 +14,8 @@ STATE_FILE="$HOME/.config/hypr/waybar_state"
 if [ -f "$STATE_FILE" ]; then
     STATE=$(cat "$STATE_FILE")
     if [ "$STATE" == "hidden" ]; then
-        # Check iteratively for process existence to hide ASAP
-        for i in {1..20}; do
-            if kill -0 $WAYBAR_PID 2>/dev/null; then
-                kill -SIGUSR1 $WAYBAR_PID
-                break
-            fi
-            sleep 0.1
-        done
-        # Ensure it caught it
-        sleep 0.5
+        # Wait a bit for Waybar to fully initialize to avoid crashing it
+        sleep 1.0
         kill -SIGUSR1 $WAYBAR_PID
     fi
 fi

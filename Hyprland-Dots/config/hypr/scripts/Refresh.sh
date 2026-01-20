@@ -49,7 +49,7 @@ STATE_FILE="$HOME/.config/hypr/waybar_state"
 if [ -f "$STATE_FILE" ]; then
     STATE=$(cat "$STATE_FILE")
     if [ "$STATE" == "hidden" ]; then
-        sleep 0.2
+        sleep 1.0
         kill -SIGUSR1 $WAYBAR_PID
     fi
 fi

@@ -14,10 +14,8 @@ if [ "$CURRENT_STATE" == "visible" ]; then
     # Was visible, now hiding
     pkill -SIGUSR1 waybar
     echo "hidden" > "$STATE_FILE"
-    notify-send "Waybar" "Hidden"
 else
     # Was hidden, now showing
     pkill -SIGUSR1 waybar
     echo "visible" > "$STATE_FILE"
-    notify-send "Waybar" "Visible"
 fi

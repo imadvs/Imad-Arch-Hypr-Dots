@@ -72,3 +72,6 @@ echo "--- Startup Script Finished ---"
 # Force a reload to ensure all keybinds and configs are applied correctly
 sleep 2
 hyprctl reload
+sleep 1
+~/.config/hypr/UserScripts/RainbowBorders.sh
+

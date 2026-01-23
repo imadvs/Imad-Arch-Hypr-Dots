@@ -1,0 +1,167 @@
+[INFO] Nvidia GPU detected. Setting up proper env's and configs
+[INFO] Bibata-Hyprcursor directory detected. Activating Hyprcursor....
+[NOTE] kb_layout es configured in settings.
+[INFO] Quickshell detected - enabling in startup and refresh scripts
+[OK] You have chosen ≥ 1440p resolution.
+[NOTE] You chose not to change to 12H format.
+[NOTE] No changes made. Rainbow borders remain enabled.
+[NOTE] - Backed up fastfetch to /home/imad/.config/fastfetch-backup-back-up_0123_0232.
+[OK] - Replaced fastfetch with new configuration.
+[NOTE] - Backed up kitty to /home/imad/.config/kitty-backup-back-up_0123_0232.
+[OK] - Replaced kitty with new configuration.
+[NOTE] - Backed up rofi to /home/imad/.config/rofi-backup-back-up_0123_0232.
+[OK] - Replaced rofi with new configuration.
+Copying /home/imad/.config/rofi-backup-back-up_0123_0232/themes/KooL_LonerOrZ.rasi to /home/imad/.config/rofi/themes/
+Copying /home/imad/.config/rofi-backup-back-up_0123_0232/themes/KooL_style-10-Fancy.rasi to /home/imad/.config/rofi/themes/
+Copying /home/imad/.config/rofi-backup-back-up_0123_0232/themes/KooL_style-10-Fancy-v2.rasi to /home/imad/.config/rofi/themes/
+Copying /home/imad/.config/rofi-backup-back-up_0123_0232/themes/KooL_style-11-Win11-list-dark.rasi to /home/imad/.config/rofi/themes/
+Copying /home/imad/.config/rofi-backup-back-up_0123_0232/themes/KooL_style-11-Win11-list-light.rasi to /home/imad/.config/rofi/themes/
+Copying /home/imad/.config/rofi-backup-back-up_0123_0232/themes/KooL_style-12-TOP-Docu.rasi to /home/imad/.config/rofi/themes/
+Copying /home/imad/.config/rofi-backup-back-up_0123_0232/themes/KooL_style-13-Vertical.rasi to /home/imad/.config/rofi/themes/
+Copying /home/imad/.config/rofi-backup-back-up_0123_0232/themes/KooL_style-14.rasi to /home/imad/.config/rofi/themes/
+Copying /home/imad/.config/rofi-backup-back-up_0123_0232/themes/KooL_style-15-solarized.rasi to /home/imad/.config/rofi/themes/
+Copying /home/imad/.config/rofi-backup-back-up_0123_0232/themes/KooL_style-1.rasi to /home/imad/.config/rofi/themes/
+Copying /home/imad/.config/rofi-backup-back-up_0123_0232/themes/KooL_style-2-Dark.rasi to /home/imad/.config/rofi/themes/
+Copying /home/imad/.config/rofi-backup-back-up_0123_0232/themes/KooL_style-2-Light.rasi to /home/imad/.config/rofi/themes/
+Copying /home/imad/.config/rofi-backup-back-up_0123_0232/themes/KooL_style-3-FullScreen-v1.rasi to /home/imad/.config/rofi/themes/
+Copying /home/imad/.config/rofi-backup-back-up_0123_0232/themes/KooL_style-3-Fullscreen-v2.rasi to /home/imad/.config/rofi/themes/
+Copying /home/imad/.config/rofi-backup-back-up_0123_0232/themes/KooL_style-4.rasi to /home/imad/.config/rofi/themes/
+Copying /home/imad/.config/rofi-backup-back-up_0123_0232/themes/KooL_style-5.rasi to /home/imad/.config/rofi/themes/
+Copying /home/imad/.config/rofi-backup-back-up_0123_0232/themes/KooL_style-6.rasi to /home/imad/.config/rofi/themes/
+Copying /home/imad/.config/rofi-backup-back-up_0123_0232/themes/KooL_style-7.rasi to /home/imad/.config/rofi/themes/
+Copying /home/imad/.config/rofi-backup-back-up_0123_0232/themes/KooL_style-8.rasi to /home/imad/.config/rofi/themes/
+Copying /home/imad/.config/rofi-backup-back-up_0123_0232/themes/KooL_style-9.rasi to /home/imad/.config/rofi/themes/
+Copying /home/imad/.config/rofi-backup-back-up_0123_0232/themes/saint-rofi.rasi to /home/imad/.config/rofi/themes/
+Restoring /home/imad/.config/rofi-backup-back-up_0123_0232/0-shared-fonts.rasi to /home/imad/.config/rofi/
+[NOTE] - Backed up swaync to /home/imad/.config/swaync-backup-back-up_0123_0232.
+[OK] - Replaced swaync with new configuration.
+[NOTE] - Backed up waybar to /home/imad/.config/waybar-backup-back-up_0123_0232.
+File /home/imad/.config/waybar/configs/[BOT] Camellia already exists. Skipping.
+File /home/imad/.config/waybar/configs/[BOT] Chrysanthemum already exists. Skipping.
+File /home/imad/.config/waybar/configs/[BOT] Default Laptop already exists. Skipping.
+File /home/imad/.config/waybar/configs/[BOT] Gardenia already exists. Skipping.
+File /home/imad/.config/waybar/configs/[BOT & Left] SouthWest already exists. Skipping.
+File /home/imad/.config/waybar/configs/[BOT] Peony already exists. Skipping.
+File /home/imad/.config/waybar/configs/[BOT & Right] SouthEast already exists. Skipping.
+File /home/imad/.config/waybar/configs/[BOT] Simple already exists. Skipping.
+File /home/imad/.config/waybar/configs/[BOT] Sleek already exists. Skipping.
+File /home/imad/.config/waybar/configs/[LEFT] WestWing already exists. Skipping.
+File /home/imad/.config/waybar/configs/[LEFT] WestWing v2 already exists. Skipping.
+File /home/imad/.config/waybar/configs/[RIGHT] EastWing already exists. Skipping.
+File /home/imad/.config/waybar/configs/[RIGHT] EastWing v2 already exists. Skipping.
+File /home/imad/.config/waybar/configs/[TOP] 0-Ja-0 already exists. Skipping.
+File /home/imad/.config/waybar/configs/[TOP] Arrow already exists. Skipping.
+File /home/imad/.config/waybar/configs/[TOP & BOT] SummitSplit already exists. Skipping.
+File /home/imad/.config/waybar/configs/[TOP & BOT] SummitSplit v2 already exists. Skipping.
+File /home/imad/.config/waybar/configs/[TOP] Camellia already exists. Skipping.
+File /home/imad/.config/waybar/configs/[TOP] Chrysanthemum already exists. Skipping.
+File /home/imad/.config/waybar/configs/[TOP] Default Laptop already exists. Skipping.
+File /home/imad/.config/waybar/configs/[TOP] Default Laptop (old v1) already exists. Skipping.
+File /home/imad/.config/waybar/configs/[TOP] Default Laptop (old v2) already exists. Skipping.
+File /home/imad/.config/waybar/configs/[TOP] Default Laptop (old v3) already exists. Skipping.
+File /home/imad/.config/waybar/configs/[TOP] Default Laptop (old v4) already exists. Skipping.
+File /home/imad/.config/waybar/configs/[TOP] Everforest already exists. Skipping.
+File /home/imad/.config/waybar/configs/[TOP] Gardenia already exists. Skipping.
+File /home/imad/.config/waybar/configs/[TOP & Left] NorthWest already exists. Skipping.
+File /home/imad/.config/waybar/configs/[TOP] Minimal - Long already exists. Skipping.
+File /home/imad/.config/waybar/configs/[TOP] Minimal - Short already exists. Skipping.
+File /home/imad/.config/waybar/configs/[TOP] Peony already exists. Skipping.
+File /home/imad/.config/waybar/configs/[TOP & Right] NorthEast already exists. Skipping.
+File /home/imad/.config/waybar/configs/[TOP] Simple already exists. Skipping.
+File /home/imad/.config/waybar/configs/[TOP] Simpliest already exists. Skipping.
+File /home/imad/.config/waybar/configs/[TOP] Sleek already exists. Skipping.
+File /home/imad/.config/waybar/style/[0 VERTICAL] [Catpuccin] Mocha.css already exists. Skipping.
+File /home/imad/.config/waybar/style/[0 VERTICAL] Golden Noir.css already exists. Skipping.
+File /home/imad/.config/waybar/style/[0 VERTICAL] Oglo Chicklets.css already exists. Skipping.
+File /home/imad/.config/waybar/style/[Black & White] Monochrome.css already exists. Skipping.
+File /home/imad/.config/waybar/style/[Catppuccin] Frappe.css already exists. Skipping.
+File /home/imad/.config/waybar/style/[Catppuccin] Latte.css already exists. Skipping.
+File /home/imad/.config/waybar/style/[Catppuccin] Mocha.css already exists. Skipping.
+Directory /home/imad/.config/waybar/style/catppuccin-themes already exists. Skipping.
+File /home/imad/.config/waybar/style/[Colored] Chroma Glow.css already exists. Skipping.
+File /home/imad/.config/waybar/style/[Colored] Translucent.css already exists. Skipping.
+File /home/imad/.config/waybar/style/[Colorful] Aurora Blossom.css already exists. Skipping.
+File /home/imad/.config/waybar/style/[Colorful] Aurora.css already exists. Skipping.
+File /home/imad/.config/waybar/style/[Colorful] Oglo Chicklets.css already exists. Skipping.
+File /home/imad/.config/waybar/style/[Colorful] Rainbow Spectrum.css already exists. Skipping.
+File /home/imad/.config/waybar/style/[Colorful] stolen-style.css already exists. Skipping.
+File /home/imad/.config/waybar/style/[Dark] Golden Eclipse.css already exists. Skipping.
+File /home/imad/.config/waybar/style/[Dark] Golden Noir.css already exists. Skipping.
+File /home/imad/.config/waybar/style/[Dark] Half-Moon.css already exists. Skipping.
+File /home/imad/.config/waybar/style/[Dark] Latte-Wallust combined.css already exists. Skipping.
+File /home/imad/.config/waybar/style/[Dark] Latte-Wallust combined v2.css already exists. Skipping.
+File /home/imad/.config/waybar/style/[Dark] Purpl.css already exists. Skipping.
+File /home/imad/.config/waybar/style/[Dark] Wallust Obsidian Edge.css already exists. Skipping.
+File /home/imad/.config/waybar/style/[Extra] Arrow.css already exists. Skipping.
+File /home/imad/.config/waybar/style/[Extra] Crimson.css already exists. Skipping.
+File /home/imad/.config/waybar/style/[Extra] EverForest.css already exists. Skipping.
+File /home/imad/.config/waybar/style/[Extra] Mauve.css already exists. Skipping.
+File /home/imad/.config/waybar/style/[Extra] ML4W starter.css already exists. Skipping.
+File /home/imad/.config/waybar/style/[Extra] Modern-Combined.css already exists. Skipping.
+File /home/imad/.config/waybar/style/[Extra] Modern-Combined - Transparent.css already exists. Skipping.
+File /home/imad/.config/waybar/style/[Extra] Neon Circuit.css already exists. Skipping.
+File /home/imad/.config/waybar/style/[Extra] Prismatic Glow.css already exists. Skipping.
+File /home/imad/.config/waybar/style/[Extra] Rose Pine.css already exists. Skipping.
+File /home/imad/.config/waybar/style/[Extra] Simple Pink.css already exists. Skipping.
+File /home/imad/.config/waybar/style/[Light] Monochrome Contrast.css already exists. Skipping.
+File /home/imad/.config/waybar/style/[Light] Obsidian Glow.css already exists. Skipping.
+File /home/imad/.config/waybar/style/[Rainbow] RGB Bordered.css already exists. Skipping.
+File /home/imad/.config/waybar/style/[Retro] Simple Style.css already exists. Skipping.
+File /home/imad/.config/waybar/style/[Transparent] Crystal Clear.css already exists. Skipping.
+File /home/imad/.config/waybar/style/[VERTICAL] [Catpuccin] Mocha.css already exists. Skipping.
+File /home/imad/.config/waybar/style/[Wallust Bordered] Chroma Fusion Edge.css already exists. Skipping.
+File /home/imad/.config/waybar/style/[Wallust Bordered] Chroma Simple.css already exists. Skipping.
+File /home/imad/.config/waybar/style/[Wallust] Box type.css already exists. Skipping.
+File /home/imad/.config/waybar/style/[Wallust] Chroma Edge.css already exists. Skipping.
+File /home/imad/.config/waybar/style/[Wallust] Chroma Fusion.css already exists. Skipping.
+File /home/imad/.config/waybar/style/[Wallust] Chroma Tally.css already exists. Skipping.
+File /home/imad/.config/waybar/style/[Wallust] Chroma Tally V2.css already exists. Skipping.
+File /home/imad/.config/waybar/style/[Wallust] Colored.css already exists. Skipping.
+File /home/imad/.config/waybar/style/[WALLUST] ML4W-modern.css already exists. Skipping.
+File /home/imad/.config/waybar/style/[WALLUST] ML4W-modern-mixed.css already exists. Skipping.
+File /home/imad/.config/waybar/style/[Wallust] Simple.css already exists. Skipping.
+File /home/imad/.config/waybar/style/[Wallust Transparent] Crystal Clear.css already exists. Skipping.
+[NOTE] - Found old Quickshell startup command, updating to new overview config...
+[OK] - Updated Quickshell startup command to use overview config
+[OK] - Restored directory: Monitor_Profiles
+[OK] - Restored directory: animations
+[OK] - Restored directory: wallpaper_effects
+[OK] - Restored file: monitors.conf
+[OK] - Restored file: workspaces.conf
+[NOTE] - Skipped restoring 01-UserDefaults.conf.
+[NOTE] - Skipped restoring ENVariables.conf.
+[NOTE] - Skipped restoring LaptopDisplay.conf.
+[NOTE] - Skipped restoring Laptops.conf.
+[OK] - Migrated overlay for Startup_Apps.conf
+[NOTE] - Skipped restoring UserDecorations.conf.
+[NOTE] - Skipped restoring UserAnimations.conf.
+[NOTE] - Skipped restoring UserKeybinds.conf.
+[NOTE] - Skipped restoring UserSettings.conf.
+[OK] - Migrated overlay for WindowRules.conf
+[NOTE] - Skipped restoring RofiBeats.sh.
+[NOTE] - Skipped restoring Weather.py.
+[NOTE] - Skipped restoring Weather.sh.
+[NOTE] - Skipped restoring hyprlock.conf.
+[NOTE] - Skipped restoring hypridle.conf.
+[OK] Some wallpapers copied successfully!
+[NOTE] You chose not to apply the current wallpaper to SDDM.
+[OK] Custom Desktop Files copied.
+[[1m[34mI[39m[0m] [1m[35mimage[39m[0m: .wallpaper_current
+[[1m[34mI[39m[0m] [1m[35mimage parser[39m[0m: Using [94m[1mKmeans[0m[39m backend parser
+[[1m[34mI[39m[0m] [1m[35mthreshold[39m[0m: Using a threshold of 11 in between colors.
+[[1m[34mI[39m[0m] [1m[35mcolorspace[39m[0m: Using [32m[1mLabMixed[0m[39m colorspace variation
+[[1m[34mI[39m[0m] [1m[35mscheme palette[39m[0m: Using [94m[1mDark16[0m[39m palette
+
+[48;2;67;65;65m    [49m[48;2;26;18;20m    [49m[48;2;65;50;46m    [49m[48;2;139;45;33m    [49m[48;2;139;45;33m    [49m[48;2;117;96;86m    [49m[48;2;174;146;122m    [49m[48;2;235;216;201m    [49m
+[48;2;165;151;140m    [49m[48;2;35;24;26m    [49m[48;2;87;67;61m    [49m[48;2;186;60;44m    [49m[48;2;186;60;44m    [49m[48;2;156;128;114m    [49m[48;2;232;194;163m    [49m[48;2;235;216;201m    [49m
+
+[[1m[34mI[39m[0m] [1m[35mtemplates[39m[0m: Writing templates..
+  * Templated [1mhypr[0m to '[3m/home/imad/.config/hypr/wallust/wallust-hyprland.conf[0m'
+  * Templated [1mrofi[0m to '[3m/home/imad/.config/rofi/wallust/colors-rofi.rasi[0m'
+  * Templated [1mwaybar[0m to '[3m/home/imad/.config/waybar/wallust/colors-waybar.css[0m'
+  * Templated [1mcava[0m to '[3m/home/imad/.config/cava/config[0m'
+  * Templated [1mkitty[0m to '[3m/home/imad/.config/kitty/kitty-themes/01-Wallust.conf[0m'
+  * Templated [1mquickshell[0m to '[3m/home/imad/.config/quickshell/qml_color.json[0m'
+[[1m[34mI[39m[0m] [1m[35mcache[39m[0m: Saving scheme to cache.
+
+[5m[1m[38;2;235;216;201mE [39m[0m[0m[5m[1m[38;2;232;194;163mN [39m[0m[0m[5m[1m[38;2;156;128;114mJ [39m[0m[0m[5m[1m[38;2;186;60;44mO [39m[0m[0m[5m[1m[38;2;186;60;44mY [39m[0m[0m[9m  [0m[5m[1m[38;2;87;67;61mT [39m[0m[0m[5m[1m[38;2;35;24;26mH [39m[0m[0m[5m[1m[38;2;165;151;140mE [39m[0m[0m[9m  [0m[5m[1m[38;2;235;216;201mP [39m[0m[0m[5m[1m[38;2;174;146;122mA [39m[0m[0m[5m[1m[38;2;117;96;86mL [39m[0m[0m[5m[1m[38;2;139;45;33mE [39m[0m[0m[5m[1m[38;2;139;45;33mT [39m[0m[0m[5m[1m[38;2;65;50;46mT [39m[0m[0m[5m[1m[38;2;26;18;20mE [39m[0m[0m[5m[1m[38;2;247;234;223m! [39m[0m[0m

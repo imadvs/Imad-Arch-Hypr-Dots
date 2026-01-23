@@ -2,6 +2,7 @@
 import time
 import sys
 import os
+import json
 from datetime import datetime
 
 class PomodoroTimer:
@@ -11,6 +12,10 @@ class PomodoroTimer:
         self.long_break = 30 * 60      # 30 minutes
         self.pomodoro_count = 0
         self.mode = "pomodoro"
+        
+        # State file location
+        self.state_dir = os.path.expanduser("~/.local/share/pomo")
+        self.state_file = os.path.join(self.state_dir, "state.json")
         
         # Color codes
         self.RESET = '\033[0m'
@@ -22,6 +27,46 @@ class PomodoroTimer:
         self.MAGENTA = '\033[95m'
         self.CYAN = '\033[96m'
         self.WHITE = '\033[97m'
+        
+        # Create state directory if it doesn't exist
+        os.makedirs(self.state_dir, exist_ok=True)
+        
+        # Load previous state
+        self.load_state()
+        
+    def save_state(self):
+        """Save current state to file"""
+        state = {
+            'pomodoro_count': self.pomodoro_count,
+            'mode': self.mode,
+            'timestamp': datetime.now().isoformat()
+        }
+        try:
+            with open(self.state_file, 'w') as f:
+                json.dump(state, f)
+        except:
+            pass
+    
+    def load_state(self):
+        """Load previous state from file"""
+        try:
+            if os.path.exists(self.state_file):
+                with open(self.state_file, 'r') as f:
+                    state = json.load(f)
+                    self.pomodoro_count = state.get('pomodoro_count', 0)
+                    self.mode = state.get('mode', 'pomodoro')
+        except:
+            pass
+    
+    def reset_state(self):
+        """Clear saved state"""
+        self.pomodoro_count = 0
+        self.mode = "pomodoro"
+        try:
+            if os.path.exists(self.state_file):
+                os.remove(self.state_file)
+        except:
+            pass
         
     def clear_screen(self):
         os.system('clear' if os.name != 'nt' else 'cls')
@@ -196,35 +241,78 @@ class PomodoroTimer:
         print(f"{self.CYAN}Press ENTER to continue...{self.RESET}", end='')
         input()
     
-    def run(self):
+    def show_welcome(self):
+        """Show welcome screen with current progress"""
         self.clear_screen()
         print("\n" * 5)
         print(f"{self.CYAN}{self.BOLD}{'=' * 50}{self.RESET}")
         print(f"{self.RED}{self.BOLD}{' ' * 12}🍅 POMODORO TIMER 🍅{self.RESET}")
         print(f"{self.CYAN}{self.BOLD}{'=' * 50}{self.RESET}")
         print()
-        print(f"{self.YELLOW}  Press ENTER to start your first Pomodoro session!{self.RESET}")
-        print()
-        print(f"{self.WHITE}  Default settings:{self.RESET}")
+        
+        # Show progress if sessions are in progress
+        if self.pomodoro_count > 0:
+            print(f"{self.YELLOW}{self.BOLD}  Welcome back!{self.RESET}")
+            print()
+            print(f"{self.GREEN}  Sessions completed: {self.pomodoro_count}/4{self.RESET}")
+            print()
+            print(f"{self.CYAN}  Press ENTER to continue from Session {self.pomodoro_count + 1}{self.RESET}")
+            print(f"{self.CYAN}  Press 'R' + ENTER to start fresh{self.RESET}")
+            print()
+        else:
+            print(f"{self.YELLOW}  Press ENTER to start your first Pomodoro session!{self.RESET}")
+            print()
+        
+        print(f"{self.WHITE}  Settings:{self.RESET}")
         print(f"{self.GREEN}  • Pomodoro: 50 minutes{self.RESET}")
         print(f"{self.GREEN}  • Short break: 10 minutes{self.RESET}")
         print(f"{self.GREEN}  • Long break: 30 minutes (every 4 pomodoros){self.RESET}")
         print()
         print(f"{self.CYAN}{self.BOLD}{'=' * 50}{self.RESET}")
-        input()
+        
+        response = input().strip().lower()
+        if response == 'r':
+            self.reset_state()
+            print(f"{self.GREEN}Starting fresh!{self.RESET}")
+            time.sleep(1)
+    
+    def run(self):
+        self.show_welcome()
         
         while True:
+            # Check if we've completed all sessions
+            if self.pomodoro_count >= 4:
+                self.clear_screen()
+                print("\n" * 5)
+                print(f"{self.GREEN}{self.BOLD}{'=' * 50}{self.RESET}")
+                print(f"{self.GREEN}{self.BOLD}{' ' * 8}🎉 ALL 4 SESSIONS COMPLETE! 🎉{self.RESET}")
+                print(f"{self.GREEN}{self.BOLD}{'=' * 50}{self.RESET}")
+                print()
+                print(f"{self.YELLOW}  You finished all Pomodoro sessions!{self.RESET}")
+                print()
+                print(f"{self.CYAN}  Press ENTER to start a new cycle{self.RESET}")
+                print(f"{self.CYAN}  Press 'Q' + ENTER to quit{self.RESET}")
+                print()
+                response = input().strip().lower()
+                if response == 'q':
+                    break
+                else:
+                    self.reset_state()
+                    continue
+            
             # Pomodoro session
             result = self.run_timer("pomodoro")
             
             if result == 'quit':
+                self.save_state()
                 break
             elif result == 'reset':
-                self.pomodoro_count = 0
+                self.reset_state()
                 continue
             elif result == 'complete':
                 self.show_completion("pomodoro")
                 self.pomodoro_count += 1
+                self.save_state()
             
             # Determine break type
             if self.pomodoro_count % 4 == 0 and self.pomodoro_count > 0:
@@ -236,12 +324,14 @@ class PomodoroTimer:
             result = self.run_timer(break_mode)
             
             if result == 'quit':
+                self.save_state()
                 break
             elif result == 'reset':
-                self.pomodoro_count = 0
+                self.reset_state()
                 continue
             elif result == 'complete':
                 self.show_completion(break_mode)
+                self.save_state()
         
         self.clear_screen()
         print("\n" * 5)
@@ -254,5 +344,6 @@ if __name__ == "__main__":
         timer.run()
     except KeyboardInterrupt:
         timer.clear_screen()
-        print(f"\n\n{timer.YELLOW}Pomodoro timer stopped. See you next time! 🍅{timer.RESET}\n")
+        timer.save_state()
+        print(f"\n\n{timer.YELLOW}Pomodoro timer stopped. Progress saved! See you next time! 🍅{timer.RESET}\n")
         sys.exit(0)

@@ -41,19 +41,8 @@ done
 
 #Restart waybar
 #Restart waybar
-sleep 0.1
-waybar &
-WAYBAR_PID=$!
-
-STATE_FILE="$HOME/.config/hypr/waybar_state"
-if [ -f "$STATE_FILE" ]; then
-    STATE=$(cat "$STATE_FILE")
-    if [ "$STATE" == "hidden" ]; then
-        sleep 1.0
-        kill -SIGUSR1 $WAYBAR_PID
-    fi
-fi
-
+# Launch Waybar using the startup script to ensure consistent persistence and stability
+${UserScripts}/WaybarStartup.sh &
 
 # relaunch swaync
 sleep 0.3
@@ -61,10 +50,6 @@ swaync >/dev/null 2>&1 &
 # reload swaync
 swaync-client --reload-config
 
-# Relaunching rainbow borders if the script exists
-sleep 1
-if file_exists "${UserScripts}/RainbowBorders.sh"; then
-  ${UserScripts}/RainbowBorders.sh &
-fi
+exit 0
 
 exit 0

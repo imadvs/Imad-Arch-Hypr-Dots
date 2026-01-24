@@ -34,12 +34,15 @@ class PomodoroTimer:
         # Load previous state
         self.load_state()
         
-    def save_state(self):
-        """Save current state to file"""
+    def save_state(self, time_left=None, current_mode=None):
+        """Save current state to file including timer position"""
         state = {
             'pomodoro_count': self.pomodoro_count,
             'mode': self.mode,
-            'timestamp': datetime.now().isoformat()
+            'timestamp': datetime.now().isoformat(),
+            'time_left': time_left,
+            'current_mode': current_mode,
+            'paused': True if time_left is not None else False
         }
         try:
             with open(self.state_file, 'w') as f:
@@ -49,12 +52,19 @@ class PomodoroTimer:
     
     def load_state(self):
         """Load previous state from file"""
+        self.saved_time_left = None
+        self.saved_current_mode = None
+        self.was_paused = False
+        
         try:
             if os.path.exists(self.state_file):
                 with open(self.state_file, 'r') as f:
                     state = json.load(f)
                     self.pomodoro_count = state.get('pomodoro_count', 0)
                     self.mode = state.get('mode', 'pomodoro')
+                    self.saved_time_left = state.get('time_left')
+                    self.saved_current_mode = state.get('current_mode')
+                    self.was_paused = state.get('paused', False)
         except:
             pass
     
@@ -129,27 +139,33 @@ class PomodoroTimer:
             return self.long_break
     
     def play_notification(self):
-        # Terminal bell
-        print("\a" * 3)
+        # Terminal bell - ring 3 times with delay
+        for i in range(3):
+            print("\a", flush=True)
+            time.sleep(0.5)
+        
         # System notification sound (works on most Linux systems)
         try:
-            os.system('paplay /usr/share/sounds/freedesktop/stereo/complete.oga 2>/dev/null || '
-                     'paplay /usr/share/sounds/freedesktop/stereo/bell.oga 2>/dev/null || '
-                     'aplay /usr/share/sounds/freedesktop/stereo/complete.oga 2>/dev/null || '
-                     'mpg123 -q /usr/share/sounds/freedesktop/stereo/complete.oga 2>/dev/null &')
+            # Play sound 3 times
+            for _ in range(3):
+                os.system('paplay /usr/share/sounds/freedesktop/stereo/complete.oga 2>/dev/null &')
+                time.sleep(0.5)
         except:
             pass
     
     def send_notification(self, title, message):
-        # Send desktop notification
+        # Send desktop notification using standard notify-send for SwayNC
+        # JaKooLit config uses SwayNC which handles notify-send properly
         try:
-            os.system(f'notify-send "{title}" "{message}" -u critical -t 5000 2>/dev/null &')
+            os.system(f'notify-send -a "Pomodoro" -u critical -t 5000 "{title}" "{message}" 2>/dev/null &')
+            # Force close after 5 seconds if SwayNC ignores timeout
+            os.system('(sleep 5 && swaync-client -C 2>/dev/null) &')
         except:
             pass
     
-    def run_timer(self, mode):
+    def run_timer(self, mode, resume_time=None):
         total_time = self.get_total_time(mode)
-        time_left = total_time
+        time_left = resume_time if resume_time is not None else total_time
         paused = False
         one_min_warning_sent = False
         
@@ -185,11 +201,11 @@ class PomodoroTimer:
                         if key == ' ':
                             paused = not paused
                         elif key == 'r':
-                            return 'reset'
+                            return 'reset', time_left
                         elif key == 's':
-                            return 'skip'
+                            return 'skip', time_left
                         elif key == 'q':
-                            return 'quit'
+                            return 'quit', time_left
                 else:
                     import msvcrt
                     if msvcrt.kbhit():
@@ -197,11 +213,11 @@ class PomodoroTimer:
                         if key == ' ':
                             paused = not paused
                         elif key == 'r':
-                            return 'reset'
+                            return 'reset', time_left
                         elif key == 's':
-                            return 'skip'
+                            return 'skip', time_left
                         elif key == 'q':
-                            return 'quit'
+                            return 'quit', time_left
                 
                 if not paused:
                     time.sleep(1)
@@ -218,7 +234,7 @@ class PomodoroTimer:
             else:
                 self.send_notification("✅ Long Break Complete!", "Recharged! Ready for another round?")
             
-            return 'complete'
+            return 'complete', 0
             
         finally:
             if os.name != 'nt':
@@ -251,7 +267,20 @@ class PomodoroTimer:
         print()
         
         # Show progress if sessions are in progress
-        if self.pomodoro_count > 0:
+        if self.was_paused and self.saved_time_left is not None:
+            mins = self.saved_time_left // 60
+            secs = self.saved_time_left % 60
+            mode_name = "WORK" if self.saved_current_mode == "pomodoro" else "BREAK"
+            
+            print(f"{self.YELLOW}{self.BOLD}  ⏸  Paused Timer Detected!{self.RESET}")
+            print()
+            print(f"{self.GREEN}  Sessions completed: {self.pomodoro_count}/4{self.RESET}")
+            print(f"{self.CYAN}  {mode_name} timer paused at: {mins:02d}:{secs:02d}{self.RESET}")
+            print()
+            print(f"{self.CYAN}  Press ENTER to resume from where you left off{self.RESET}")
+            print(f"{self.CYAN}  Press 'R' + ENTER to start fresh{self.RESET}")
+            print()
+        elif self.pomodoro_count > 0:
             print(f"{self.YELLOW}{self.BOLD}  Welcome back!{self.RESET}")
             print()
             print(f"{self.GREEN}  Sessions completed: {self.pomodoro_count}/4{self.RESET}")
@@ -273,11 +302,17 @@ class PomodoroTimer:
         response = input().strip().lower()
         if response == 'r':
             self.reset_state()
+            self.saved_time_left = None
+            self.saved_current_mode = None
+            self.was_paused = False
             print(f"{self.GREEN}Starting fresh!{self.RESET}")
             time.sleep(1)
     
     def run(self):
         self.show_welcome()
+        
+        # Check if we should resume a paused timer
+        should_resume = self.was_paused and self.saved_time_left is not None and self.saved_current_mode is not None
         
         while True:
             # Check if we've completed all sessions
@@ -298,16 +333,52 @@ class PomodoroTimer:
                     break
                 else:
                     self.reset_state()
+                    should_resume = False
+                    continue
+            
+            # Resume from saved state if applicable
+            if should_resume:
+                result, time_left = self.run_timer(self.saved_current_mode, self.saved_time_left)
+                should_resume = False  # Only resume once
+                
+                if result == 'quit':
+                    self.save_state(time_left, self.saved_current_mode)
+                    break
+                elif result == 'reset':
+                    self.reset_state()
+                    continue
+                elif result == 'skip':
+                    # Determine what comes next based on saved mode
+                    if self.saved_current_mode == "pomodoro":
+                        # Skip work, go to break
+                        self.pomodoro_count += 1
+                        self.save_state()
+                    # Continue to next phase
+                    continue
+                elif result == 'complete':
+                    if self.saved_current_mode == "pomodoro":
+                        self.show_completion("pomodoro")
+                        self.pomodoro_count += 1
+                        self.save_state()
+                    else:
+                        self.show_completion(self.saved_current_mode)
+                        self.save_state()
+                    # Continue to next session
                     continue
             
             # Pomodoro session
-            result = self.run_timer("pomodoro")
+            result, time_left = self.run_timer("pomodoro")
             
             if result == 'quit':
-                self.save_state()
+                self.save_state(time_left, "pomodoro")
                 break
             elif result == 'reset':
                 self.reset_state()
+                continue
+            elif result == 'skip':
+                # Skip work, but count it
+                self.pomodoro_count += 1
+                self.save_state()
                 continue
             elif result == 'complete':
                 self.show_completion("pomodoro")
@@ -321,13 +392,17 @@ class PomodoroTimer:
                 break_mode = "short_break"
             
             # Break session
-            result = self.run_timer(break_mode)
+            result, time_left = self.run_timer(break_mode)
             
             if result == 'quit':
-                self.save_state()
+                self.save_state(time_left, break_mode)
                 break
             elif result == 'reset':
                 self.reset_state()
+                continue
+            elif result == 'skip':
+                # Skip break, continue to next session
+                self.save_state()
                 continue
             elif result == 'complete':
                 self.show_completion(break_mode)
@@ -339,6 +414,25 @@ class PomodoroTimer:
         print("\n" * 5)
 
 if __name__ == "__main__":
+    # Check for test argument first
+    if len(sys.argv) > 1 and sys.argv[1] == "test":
+        print("Testing notification and sound...")
+        timer = PomodoroTimer()
+        
+        print("\n🔔 Testing 3 rings + sound...")
+        timer.play_notification()
+        
+        print("\n📬 Testing notification (should appear for 5 seconds)...")
+        timer.send_notification("🍅 Test Notification", "This should disappear in 5 seconds!")
+        
+        print("\n✅ Test complete! Check if you:")
+        print("   1. Heard 3 distinct rings")
+        print("   2. Saw a notification")
+        print("   3. Notification disappeared after 5 seconds")
+        
+        sys.exit(0)
+    
+    # Normal program
     timer = PomodoroTimer()
     try:
         timer.run()

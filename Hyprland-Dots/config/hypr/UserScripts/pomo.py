@@ -154,12 +154,10 @@ class PomodoroTimer:
             pass
     
     def send_notification(self, title, message):
-        # Send desktop notification using standard notify-send for SwayNC
-        # JaKooLit config uses SwayNC which handles notify-send properly
+        # Send desktop notification using normal urgency (not critical)
+        # This respects the 5-second timeout in SwayNC
         try:
-            os.system(f'notify-send -a "Pomodoro" -u critical -t 5000 "{title}" "{message}" 2>/dev/null &')
-            # Force close after 5 seconds if SwayNC ignores timeout
-            os.system('(sleep 5 && swaync-client -C 2>/dev/null) &')
+            os.system(f'notify-send -a "Pomodoro" -u normal -t 5000 "{title}" "{message}" 2>/dev/null &')
         except:
             pass
     
@@ -350,23 +348,24 @@ class PomodoroTimer:
                 elif result == 'skip':
                     # Determine what comes next based on saved mode
                     if self.saved_current_mode == "pomodoro":
-                        # Skip work, go to break
+                        # Skip work, count session and go to break
                         self.pomodoro_count += 1
                         self.save_state()
-                    # Continue to next phase
+                    # If was in break, just continue to next work session
                     continue
                 elif result == 'complete':
                     if self.saved_current_mode == "pomodoro":
                         self.show_completion("pomodoro")
                         self.pomodoro_count += 1
                         self.save_state()
+                        # DON'T continue here - fall through to break
                     else:
                         self.show_completion(self.saved_current_mode)
                         self.save_state()
-                    # Continue to next session
-                    continue
+                        # Continue to next work session
+                        continue
             
-            # Pomodoro session
+            # Pomodoro work session
             result, time_left = self.run_timer("pomodoro")
             
             if result == 'quit':
@@ -376,20 +375,29 @@ class PomodoroTimer:
                 self.reset_state()
                 continue
             elif result == 'skip':
-                # Skip work, but count it
+                # Skip work, but count it and go to break
                 self.pomodoro_count += 1
                 self.save_state()
-                continue
+                # DON'T continue - fall through to break
             elif result == 'complete':
                 self.show_completion("pomodoro")
                 self.pomodoro_count += 1
                 self.save_state()
+                # DON'T continue - fall through to break
             
             # Determine break type
             if self.pomodoro_count % 4 == 0 and self.pomodoro_count > 0:
                 break_mode = "long_break"
             else:
                 break_mode = "short_break"
+            
+            # Show break message
+            print()
+            if break_mode == "long_break":
+                print(f"{self.BLUE}{self.BOLD}Starting Long Break (30m)...{self.RESET}")
+            else:
+                print(f"{self.GREEN}{self.BOLD}Starting Short Break (10m)...{self.RESET}")
+            time.sleep(2)
             
             # Break session
             result, time_left = self.run_timer(break_mode)
@@ -401,12 +409,14 @@ class PomodoroTimer:
                 self.reset_state()
                 continue
             elif result == 'skip':
-                # Skip break, continue to next session
+                # Skip break, continue to next work session
                 self.save_state()
                 continue
             elif result == 'complete':
                 self.show_completion(break_mode)
                 self.save_state()
+                # Continue to next work session
+                continue
         
         self.clear_screen()
         print("\n" * 5)

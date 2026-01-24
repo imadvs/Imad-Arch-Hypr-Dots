@@ -7,7 +7,8 @@ APP_LAUNCHER="omarchy-launch-webapp"
 
 # Check if windows already exist
 if ! hyprctl clients | grep -q "pomofocus"; then
-    $APP_LAUNCHER "$POMO_URL" --ozone-platform-hint=auto --disable-gpu &
+    # Launch pomo.py in kitty with class "pomofocus" to match existing rules
+    kitty --class "pomofocus" --title "Pomofocus" --detach python3 /home/imad/.config/hypr/UserScripts/pomo.py
 fi
 
 if ! hyprctl clients | grep -q "music.youtube.com"; then

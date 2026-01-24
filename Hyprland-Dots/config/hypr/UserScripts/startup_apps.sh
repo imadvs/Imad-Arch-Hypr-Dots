@@ -51,7 +51,7 @@ echo "Launching Pomofocus..."
 # Force switch to WS3 first to encourage spawning there
 hyprctl dispatch workspace 3
 sleep 0.5
-uwsm app -- brave --password-store=basic --new-window --app="https://pomofocus.io/app" &
+uwsm app -- kitty --class "pomofocus" --title "Pomofocus" python3 /home/imad/.config/hypr/UserScripts/pomo.py &
 sleep 6
 echo "Clients before move (Pomofocus):" >>"$LOGfile"
 hyprctl clients | grep "title:" >>"$LOGfile"

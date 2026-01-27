@@ -54,3 +54,5 @@ alias update='sudo pacman -Syu && paru -Sua'
 alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'
 alias mirrors='sudo cachyos-rate-mirrors'
 
+alias siteblock='/home/imad/.config/hypr/UserScripts/siteblock'
+alias siteblock='/home/imad/.config/hypr/UserScripts/siteblock'

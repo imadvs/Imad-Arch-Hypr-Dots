@@ -70,9 +70,23 @@ hyprctl dispatch splitratio -0.5
 sleep 1
 hyprctl dispatch workspace 1
 
-echo "--- Startup Script Finished ---"
-
 # Force a reload to ensure all keybinds and configs are applied correctly
 sleep 2
 hyprctl reload
 
+# --- Workspace 4: Busuu ---
+echo "Launching Busuu..."
+sleep 10
+uwsm app -- brave --password-store=basic --new-window --app="https://www.busuu.com" &
+sleep 5
+echo "Moving Busuu..."
+hyprctl dispatch movetoworkspacesilent "4,title:^(.*Busuu.*)$"
+
+# --- Workspace 4: Managementdose ---
+echo "Launching Managementdose..."
+uwsm app -- brave --password-store=basic --new-window --app="https://managementdose.com" &
+sleep 5
+echo "Moving Managementdose..."
+hyprctl dispatch movetoworkspacesilent "4,title:^(.*Managementdose.*)$"
+
+echo "--- Startup Script Finished ---"

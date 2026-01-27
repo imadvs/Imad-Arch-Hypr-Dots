@@ -1,0 +1,441 @@
+#!/bin/bash
+
+# Scheduled Website Blocker for Hyprland (Tamper-Resistant)
+# Blocks websites with time-based schedules using systemd
+
+SCRIPT_DIR="/home/imad/.config/hypr/scripts"
+CONFIG_DIR="/home/imad/.config/hypr/siteblock"
+CONFIG_FILE="$CONFIG_DIR/schedule.conf"
+LOCK_FILE="$CONFIG_DIR/.lock"
+HOSTS_FILE="/etc/hosts"
+BLOCK_MARKER="# SCHEDULED_BLOCK"
+
+# Colors
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[1;33m'
+BLUE='\033[0;34m'
+NC='\033[0m'
+
+check_root() {
+  if [ "$EUID" -ne 0 ]; then
+    echo -e "${RED}Error: This script must be run as root for blocking operations${NC}"
+    echo "Run with: sudo $0 $@"
+    exit 1
+  fi
+}
+
+# Check if currently in a blocking period
+is_blocking_active() {
+  [ ! -f "$CONFIG_FILE" ] && return 1
+
+  while IFS='|' read -r site start_time end_time days; do
+    [[ "$site" =~ ^#.*$ ]] || [[ -z "$site" ]] && continue
+
+    site=$(echo "$site" | xargs)
+    start_time=$(echo "$start_time" | xargs)
+    end_time=$(echo "$end_time" | xargs)
+    days=$(echo "$days" | xargs)
+
+    if is_day_match "$days" && is_time_in_range "$start_time" "$end_time"; then
+      return 0 # Yes, blocking is active
+    fi
+  done <"$CONFIG_FILE"
+
+  return 1 # No active blocking
+}
+
+# Prevent tampering during block period
+prevent_tampering() {
+  if is_blocking_active; then
+    echo -e "${RED}╔═══════════════════════════════════════════════════════╗${NC}"
+    echo -e "${RED}║  🔒 BLOCKED: Currently in a scheduled block period   ║${NC}"
+    echo -e "${RED}║                                                       ║${NC}"
+    echo -e "${RED}║  You cannot modify or disable the blocker during     ║${NC}"
+    echo -e "${RED}║  an active blocking session. This is by design.      ║${NC}"
+    echo -e "${RED}║                                                       ║${NC}"
+    echo -e "${RED}║  Wait until the block period ends, or restart your   ║${NC}"
+    echo -e "${RED}║  computer into single-user mode if this is urgent.   ║${NC}"
+    echo -e "${RED}╚═══════════════════════════════════════════════════════╝${NC}"
+
+    # Log the tampering attempt
+    logger "SiteBlocker: Tampering attempt blocked - user tried to disable during active block period"
+    exit 1
+  fi
+}
+
+setup() {
+  # Create config directory (no root needed)
+  mkdir -p "$CONFIG_DIR"
+
+  # Create example config if it doesn't exist
+  if [ ! -f "$CONFIG_FILE" ]; then
+    cat >"$CONFIG_FILE" <<'EOF'
+# Schedule Configuration
+# Format: SITE|START_TIME|END_TIME|DAYS
+# Days: mon,tue,wed,thu,fri,sat,sun (or "all" for every day)
+# Time format: HH:MM (24-hour)
+
+# Examples:
+# Block during work/study hours
+reddit.com|09:00|17:00|mon,tue,wed,thu,fri
+youtube.com|09:00|17:00|mon,tue,wed,thu,fri
+
+# Block social media all day
+# twitter.com|00:00|23:59|all
+
+# Block only on specific days
+# facebook.com|08:00|20:00|mon,wed,fri
+
+# Late night blocking (prevent staying up late)
+# twitter.com|23:00|06:00|all
+
+# IMPORTANT: Once blocking is active, you cannot disable it until
+# the scheduled time ends. This prevents you from bypassing your own rules!
+EOF
+    echo -e "${GREEN}Created example config at $CONFIG_FILE${NC}"
+    echo -e "${YELLOW}Edit it with: nano $CONFIG_FILE${NC}"
+  fi
+
+  # Now create systemd files (needs root)
+  echo -e "${BLUE}Creating systemd service and timer...${NC}"
+
+  if [ "$EUID" -ne 0 ]; then
+    echo -e "${YELLOW}Systemd setup requires root privileges.${NC}"
+    echo -e "${YELLOW}Run: sudo $0 setup${NC}"
+    return
+  fi
+
+  # Get the actual script path
+  SCRIPT_PATH="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/$(basename "${BASH_SOURCE[0]}")"
+
+  # Create systemd service
+  cat >/etc/systemd/system/siteblock-check.service <<EOF
+[Unit]
+Description=Check and apply website blocking schedule
+After=network.target
+
+[Service]
+Type=oneshot
+ExecStart=$SCRIPT_PATH check-schedule
+User=root
+EOF
+
+  # Create systemd timer (runs every minute)
+  cat >/etc/systemd/system/siteblock-check.timer <<'EOF'
+[Unit]
+Description=Website blocker schedule checker
+After=network.target
+
+[Timer]
+OnBootSec=1min
+OnUnitActiveSec=1min
+Persistent=true
+
+[Install]
+WantedBy=timers.target
+EOF
+
+  # Make config and script read-only during blocks
+  chmod 644 "$CONFIG_FILE"
+
+  # Enable and start timer
+  systemctl daemon-reload
+  systemctl enable siteblock-check.timer
+  systemctl start siteblock-check.timer
+
+  echo -e "${GREEN}✓ Setup complete!${NC}"
+  echo -e "${BLUE}Config file: $CONFIG_FILE${NC}"
+  echo -e "${RED}⚠️  WARNING: You cannot disable blocking during active block periods!${NC}"
+  echo -e "${BLUE}Edit schedule: nano $CONFIG_FILE${NC}"
+  echo -e "${BLUE}Check status: $0 status${NC}"
+}
+
+is_time_in_range() {
+  local start="$1"
+  local end="$2"
+  local current=$(date +%H:%M)
+
+  # Convert times to comparable integers (HHMM format)
+  local start_int=$(echo "$start" | tr -d ':')
+  local end_int=$(echo "$end" | tr -d ':')
+  local current_int=$(echo "$current" | tr -d ':')
+
+  # Handle overnight ranges (e.g., 23:00-06:00)
+  if [ "$start_int" -gt "$end_int" ]; then
+    [ "$current_int" -ge "$start_int" ] || [ "$current_int" -le "$end_int" ]
+  else
+    [ "$current_int" -ge "$start_int" ] && [ "$current_int" -le "$end_int" ]
+  fi
+}
+
+is_day_match() {
+  local days="$1"
+  local current_day=$(date +%a | tr '[:upper:]' '[:lower:]')
+
+  [[ "$days" == "all" ]] || [[ "$days" =~ $current_day ]]
+}
+
+block_site() {
+  local site="$1"
+
+  if ! grep -q "127.0.0.1.*$site.*$BLOCK_MARKER" "$HOSTS_FILE"; then
+    echo "127.0.0.1 $site $BLOCK_MARKER" >>"$HOSTS_FILE"
+    echo "127.0.0.1 www.$site $BLOCK_MARKER" >>"$HOSTS_FILE"
+
+    # Make hosts file immutable during block (extra protection)
+    chattr +i "$HOSTS_FILE" 2>/dev/null || true
+    logger "SiteBlocker: Blocked $site"
+  fi
+}
+
+unblock_site() {
+  local site="$1"
+
+  if grep -q "127.0.0.1.*$site.*$BLOCK_MARKER" "$HOSTS_FILE"; then
+    # Remove immutable flag to allow editing
+    chattr -i "$HOSTS_FILE" 2>/dev/null || true
+    sed -i "/$site.*$BLOCK_MARKER/d" "$HOSTS_FILE"
+    logger "SiteBlocker: Unblocked $site"
+  fi
+}
+
+check_schedule() {
+  check_root
+
+  if [ ! -f "$CONFIG_FILE" ]; then
+    echo -e "${RED}Config file not found at $CONFIG_FILE${NC}"
+    echo -e "${YELLOW}Run: $0 setup${NC}"
+    exit 1
+  fi
+
+  local any_blocked=false
+
+  # Read config and apply rules
+  while IFS='|' read -r site start_time end_time days; do
+    # Skip comments and empty lines
+    [[ "$site" =~ ^#.*$ ]] || [[ -z "$site" ]] && continue
+
+    # Remove whitespace
+    site=$(echo "$site" | xargs)
+    start_time=$(echo "$start_time" | xargs)
+    end_time=$(echo "$end_time" | xargs)
+    days=$(echo "$days" | xargs)
+
+    if is_day_match "$days" && is_time_in_range "$start_time" "$end_time"; then
+      block_site "$site"
+      any_blocked=true
+    else
+      unblock_site "$site"
+    fi
+  done <"$CONFIG_FILE"
+
+  # Remove immutable flag if nothing is blocked
+  if [ "$any_blocked" = false ]; then
+    chattr -i "$HOSTS_FILE" 2>/dev/null || true
+  fi
+}
+
+status() {
+  echo -e "${BLUE}=== Scheduled Blocker Status ===${NC}"
+  echo ""
+
+  if systemctl is-active --quiet siteblock-check.timer 2>/dev/null; then
+    echo -e "${GREEN}✓ Timer is active${NC}"
+    echo -e "  Next run: $(systemctl status siteblock-check.timer 2>/dev/null | grep Trigger | awk '{print $2, $3, $4}')"
+  else
+    echo -e "${RED}✗ Timer is not running${NC}"
+    echo -e "${YELLOW}Start it with: sudo $0 start${NC}"
+  fi
+
+  echo ""
+  if is_blocking_active; then
+    echo -e "${RED}🔒 CURRENTLY IN BLOCK PERIOD${NC}"
+    echo -e "${YELLOW}   (Modifications are locked until block period ends)${NC}"
+  else
+    echo -e "${GREEN}✓ Not currently in a block period${NC}"
+    echo -e "${BLUE}   (Safe to modify configuration)${NC}"
+  fi
+
+  echo ""
+  echo -e "${BLUE}Currently blocked sites:${NC}"
+  if grep -q "$BLOCK_MARKER" "$HOSTS_FILE" 2>/dev/null; then
+    grep "$BLOCK_MARKER" "$HOSTS_FILE" | awk '{print "  - " $2}' | sort -u
+  else
+    echo -e "${YELLOW}  None${NC}"
+  fi
+
+  echo ""
+  echo -e "${BLUE}Schedule configuration ($CONFIG_FILE):${NC}"
+  if [ -f "$CONFIG_FILE" ]; then
+    grep -v "^#" "$CONFIG_FILE" | grep -v "^$" | while read line; do
+      echo "  $line"
+    done
+  else
+    echo -e "${YELLOW}  No config file found${NC}"
+  fi
+
+  echo ""
+  echo -e "${BLUE}Current time:${NC} $(date '+%A %H:%M')"
+}
+
+edit_config() {
+  # Check if blocking is active
+  prevent_tampering
+
+  # If we get here, it's safe to edit
+  ${EDITOR:-nano} "$CONFIG_FILE"
+  echo -e "${GREEN}✓ Configuration updated${NC}"
+  echo -e "${YELLOW}Changes will take effect on next schedule check (within 1 minute)${NC}"
+}
+
+# Manual block/unblock (doesn't use schedule)
+manual_block() {
+  check_root
+  local site="$1"
+
+  if [ -z "$site" ]; then
+    echo -e "${RED}Error: Please specify a domain${NC}"
+    echo "Usage: sudo $0 block reddit.com"
+    exit 1
+  fi
+
+  block_site "$site"
+  echo -e "${GREEN}✓ Manually blocked: $site${NC}"
+}
+
+manual_unblock() {
+  check_root
+  prevent_tampering # Can't manually unblock during scheduled block
+
+  local site="$1"
+
+  if [ -z "$site" ]; then
+    echo -e "${RED}Error: Please specify a domain${NC}"
+    echo "Usage: sudo $0 unblock reddit.com"
+    exit 1
+  fi
+
+  unblock_site "$site"
+  echo -e "${GREEN}✓ Manually unblocked: $site${NC}"
+}
+
+emergency_disable() {
+  echo -e "${RED}╔═══════════════════════════════════════════════════════╗${NC}"
+  echo -e "${RED}║           EMERGENCY DISABLE CONFIRMATION             ║${NC}"
+  echo -e "${RED}╚═══════════════════════════════════════════════════════╝${NC}"
+  echo ""
+  echo -e "${YELLOW}This will completely disable the blocker.${NC}"
+  echo -e "${YELLOW}Use this only in genuine emergencies.${NC}"
+  echo ""
+  echo -e "Type ${RED}'I NEED TO DISABLE THIS NOW'${NC} to confirm:"
+  read -r confirmation
+
+  if [ "$confirmation" = "I NEED TO DISABLE THIS NOW" ]; then
+    check_root
+    systemctl stop siteblock-check.timer
+    systemctl disable siteblock-check.timer
+    chattr -i "$HOSTS_FILE" 2>/dev/null || true
+    sed -i "/$BLOCK_MARKER/d" "$HOSTS_FILE"
+    echo -e "${GREEN}✓ Emergency disable complete${NC}"
+    logger "SiteBlocker: EMERGENCY DISABLED by user"
+  else
+    echo -e "${RED}✗ Confirmation failed. Blocker remains active.${NC}"
+  fi
+}
+
+usage() {
+  cat <<EOF
+${GREEN}Scheduled Website Blocker for Hyprland (Tamper-Resistant)${NC}
+
+Usage: $0 [command] [arguments]
+
+${YELLOW}Setup:${NC}
+  setup           Initial setup (creates config and systemd timer)
+  
+${YELLOW}Scheduling:${NC}
+  status          Show current status and schedule
+  check-schedule  Manually check and apply schedule (requires sudo)
+  edit            Edit schedule (blocked during active block periods)
+  start           Start the scheduler (requires sudo)
+  stop            Stop the scheduler (blocked during active periods)
+  restart         Restart the scheduler (requires sudo)
+  
+${YELLOW}Manual Control:${NC}
+  block <site>    Manually block a site (requires sudo)
+  unblock <site>  Manually unblock a site (blocked during scheduled blocks)
+  
+${YELLOW}Emergency:${NC}
+  emergency       Emergency disable (use only if absolutely necessary)
+  
+${YELLOW}Monitoring:${NC}
+  logs            View scheduler logs
+
+${RED}⚠️  IMPORTANT:${NC}
+  Once a scheduled block is active, you CANNOT:
+  - Edit the configuration
+  - Stop the scheduler
+  - Manually unblock sites
+  - Disable the script
+  
+  This prevents you from bypassing your own productivity rules!
+
+${BLUE}Configuration:${NC} $CONFIG_FILE
+
+${BLUE}Example schedule entry:${NC}
+  reddit.com|09:00|17:00|mon,tue,wed,thu,fri
+  youtube.com|22:00|07:00|all  ${GREEN}# Overnight blocking${NC}
+
+EOF
+}
+
+main() {
+  case "$1" in
+  setup)
+    setup
+    ;;
+  check-schedule)
+    check_schedule
+    ;;
+  status)
+    status
+    ;;
+  edit)
+    edit_config
+    ;;
+  block)
+    manual_block "$2"
+    ;;
+  unblock)
+    manual_unblock "$2"
+    ;;
+  start)
+    check_root
+    systemctl start siteblock-check.timer
+    systemctl enable siteblock-check.timer
+    echo -e "${GREEN}✓ Scheduler started${NC}"
+    ;;
+  stop)
+    prevent_tampering
+    check_root
+    systemctl stop siteblock-check.timer
+    echo -e "${YELLOW}Scheduler stopped${NC}"
+    ;;
+  restart)
+    check_root
+    systemctl restart siteblock-check.timer
+    echo -e "${GREEN}✓ Scheduler restarted${NC}"
+    ;;
+  emergency)
+    emergency_disable
+    ;;
+  logs)
+    journalctl -u siteblock-check.service -n 50 --no-pager
+    ;;
+  *)
+    usage
+    ;;
+  esac
+}
+
+main "$@"

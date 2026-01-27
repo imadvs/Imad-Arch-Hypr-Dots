@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Busuu
+Comment=Busuu Language Learning
+Exec=brave --password-store=basic --new-window --app="https://www.busuu.com/dashboard"
+Type=Application
+Icon=brave-browser
+Categories=Education;Language;
+StartupWMClass=www.busuu.com__dashboard

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Management Dose
+Comment=Management Dose Platform
+Exec=brave --password-store=basic --new-window --app="https://managementdose.com"
+Type=Application
+Icon=brave-browser
+Categories=Education;Business;
+StartupWMClass=managementdose.com

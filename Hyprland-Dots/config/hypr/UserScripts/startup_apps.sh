@@ -8,85 +8,70 @@ echo "--- Starting Startup Script at $(date) ---"
 # Wait for Hyprland to fully initialize
 sleep 3
 
-# --- Workspace 1: VS Code ---
+# --- Sequential Startup (Workspace 1 -> 4) ---
+echo "Starting Sequential Launch..."
+
+# --- Workspace 1 ---
+echo "Visiting Workspace 1..."
+hyprctl dispatch workspace 1
+sleep 1
 echo "Launching VS Code..."
 uwsm app -- code &
-sleep 3
-echo "Moving VS Code..."
-hyprctl dispatch movetoworkspacesilent "1,class:^(Code|code)$"
+sleep 2
 
-# --- Workspace 2: Obsidian ---
+# --- Workspace 2 ---
+echo "Visiting Workspace 2..."
+hyprctl dispatch workspace 2
+sleep 1
 echo "Launching Obsidian..."
 uwsm app -- obsidian &
-sleep 3
-echo "Moving Obsidian..."
-hyprctl dispatch movetoworkspacesilent "2,class:^(obsidian)$"
+sleep 2
 
-# --- Workspace 2: ProgrammingAdvices ---
 echo "Launching ProgrammingAdvices..."
 uwsm app -- brave --password-store=basic --new-window --app="https://programmingadvices.com/l/dashboard" &
-sleep 5
-echo "Clients before move (ProgrammingAdvices):" >>"$LOGfile"
-hyprctl clients | grep "title:" >>"$LOGfile"
-echo "Moving ProgrammingAdvices..."
-hyprctl dispatch movetoworkspacesilent "2,title:^(.*ProgrammingAdvices.*|.*Dashboard.*|.*programmingadvices.*)$"
+sleep 4 # Wait for P.Advices to spawn
 
-# Resize Workspace 2 (Make Programming Advices small like Pomofocus)
-sleep 1
-hyprctl dispatch workspace 2
+# Resize Workspace 2
+echo "Resizing Workspace 2..."
 hyprctl dispatch focuswindow "title:^(.*ProgrammingAdvices.*|.*Dashboard.*|.*programmingadvices.*)$"
 hyprctl dispatch splitratio 0.5
+sleep 1
 
-# --- Workspace 4: YouTube Music ---
+# --- Workspace 3 ---
+echo "Visiting Workspace 3..."
+hyprctl dispatch workspace 3
+sleep 1
+echo "Launching Busuu..."
+uwsm app -- brave --password-store=basic --new-window --app="https://www.busuu.com" &
+sleep 1
+echo "Launching Managementdose..."
+uwsm app -- brave --password-store=basic --new-window --app="https://managementdose.com" &
+sleep 3
+
+# --- Workspace 4 ---
+echo "Visiting Workspace 4..."
+hyprctl dispatch workspace 4
+sleep 1
 echo "Launching YouTube Music..."
 uwsm app -- brave --password-store=basic --new-window --app="https://music.youtube.com" &
-sleep 5
-echo "Clients before move (YouTube Music):" >>"$LOGfile"
-hyprctl clients | grep "title:" >>"$LOGfile"
-echo "Moving YouTube Music..."
-hyprctl dispatch movetoworkspacesilent "4,title:^(.*YouTube Music.*|.*music.youtube.com.*)$"
+sleep 2
 
-# --- Workspace 4: Pomofocus ---
 echo "Launching Pomofocus..."
-# Force switch to WS4 first to encourage spawning there
-hyprctl dispatch workspace 4
-sleep 0.5
 uwsm app -- kitty --class "pomofocus" --title "Pomofocus" python3 /home/imad/.config/hypr/UserScripts/pomo.py &
-sleep 6
-echo "Clients before move (Pomofocus):" >>"$LOGfile"
-hyprctl clients | grep "title:" >>"$LOGfile"
-echo "Moving Pomofocus..."
-# Broader regex to catch "Pomodoro Timer", "Time to focus", etc.
-hyprctl dispatch movetoworkspacesilent "4,title:^(.*Pomofocus.*|.*Time to focus.*|.*Pomodoro.*)$"
+sleep 4 # Wait for Pomo to spawn
 
-# Resize Workspace 4 (Make Pomofocus smaller)
-sleep 1
-hyprctl dispatch workspace 4
+# Resize Workspace 4
+echo "Resizing Workspace 4..."
 hyprctl dispatch focuswindow "title:^(.*Pomofocus.*|.*Time to focus.*|.*Pomodoro.*)$"
 hyprctl dispatch movewindow l
 hyprctl dispatch splitratio -0.5
 
-# Return to workspace 1
+# --- Final Cleanup ---
 sleep 1
+echo "Returning to Workspace 1..."
 hyprctl dispatch workspace 1
-
-# Force a reload to ensure all keybinds and configs are applied correctly
-sleep 2
+sleep 1
+# Reduced sleep for reload
 hyprctl reload
-
-# --- Workspace 3: Busuu ---
-echo "Launching Busuu..."
-sleep 10
-uwsm app -- brave --password-store=basic --new-window --app="https://www.busuu.com" &
-sleep 5
-echo "Moving Busuu..."
-hyprctl dispatch movetoworkspacesilent "3,title:^(.*Busuu.*)$"
-
-# --- Workspace 3: Managementdose ---
-echo "Launching Managementdose..."
-uwsm app -- brave --password-store=basic --new-window --app="https://managementdose.com" &
-sleep 5
-echo "Moving Managementdose..."
-hyprctl dispatch movetoworkspacesilent "3,title:^(.*Managementdose.*)$"
 
 echo "--- Startup Script Finished ---"

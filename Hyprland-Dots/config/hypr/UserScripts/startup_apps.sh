@@ -37,19 +37,19 @@ hyprctl dispatch workspace 2
 hyprctl dispatch focuswindow "title:^(.*ProgrammingAdvices.*|.*Dashboard.*|.*programmingadvices.*)$"
 hyprctl dispatch splitratio 0.5
 
-# --- Workspace 3: YouTube Music ---
+# --- Workspace 4: YouTube Music ---
 echo "Launching YouTube Music..."
 uwsm app -- brave --password-store=basic --new-window --app="https://music.youtube.com" &
 sleep 5
 echo "Clients before move (YouTube Music):" >>"$LOGfile"
 hyprctl clients | grep "title:" >>"$LOGfile"
 echo "Moving YouTube Music..."
-hyprctl dispatch movetoworkspacesilent "3,title:^(.*YouTube Music.*|.*music.youtube.com.*)$"
+hyprctl dispatch movetoworkspacesilent "4,title:^(.*YouTube Music.*|.*music.youtube.com.*)$"
 
-# --- Workspace 3: Pomofocus ---
+# --- Workspace 4: Pomofocus ---
 echo "Launching Pomofocus..."
-# Force switch to WS3 first to encourage spawning there
-hyprctl dispatch workspace 3
+# Force switch to WS4 first to encourage spawning there
+hyprctl dispatch workspace 4
 sleep 0.5
 uwsm app -- kitty --class "pomofocus" --title "Pomofocus" python3 /home/imad/.config/hypr/UserScripts/pomo.py &
 sleep 6
@@ -57,11 +57,11 @@ echo "Clients before move (Pomofocus):" >>"$LOGfile"
 hyprctl clients | grep "title:" >>"$LOGfile"
 echo "Moving Pomofocus..."
 # Broader regex to catch "Pomodoro Timer", "Time to focus", etc.
-hyprctl dispatch movetoworkspacesilent "3,title:^(.*Pomofocus.*|.*Time to focus.*|.*Pomodoro.*)$"
+hyprctl dispatch movetoworkspacesilent "4,title:^(.*Pomofocus.*|.*Time to focus.*|.*Pomodoro.*)$"
 
-# Resize Workspace 3 (Make Pomofocus smaller)
+# Resize Workspace 4 (Make Pomofocus smaller)
 sleep 1
-hyprctl dispatch workspace 3
+hyprctl dispatch workspace 4
 hyprctl dispatch focuswindow "title:^(.*Pomofocus.*|.*Time to focus.*|.*Pomodoro.*)$"
 hyprctl dispatch movewindow l
 hyprctl dispatch splitratio -0.5
@@ -74,19 +74,19 @@ hyprctl dispatch workspace 1
 sleep 2
 hyprctl reload
 
-# --- Workspace 4: Busuu ---
+# --- Workspace 3: Busuu ---
 echo "Launching Busuu..."
 sleep 10
 uwsm app -- brave --password-store=basic --new-window --app="https://www.busuu.com" &
 sleep 5
 echo "Moving Busuu..."
-hyprctl dispatch movetoworkspacesilent "4,title:^(.*Busuu.*)$"
+hyprctl dispatch movetoworkspacesilent "3,title:^(.*Busuu.*)$"
 
-# --- Workspace 4: Managementdose ---
+# --- Workspace 3: Managementdose ---
 echo "Launching Managementdose..."
 uwsm app -- brave --password-store=basic --new-window --app="https://managementdose.com" &
 sleep 5
 echo "Moving Managementdose..."
-hyprctl dispatch movetoworkspacesilent "4,title:^(.*Managementdose.*)$"
+hyprctl dispatch movetoworkspacesilent "3,title:^(.*Managementdose.*)$"
 
 echo "--- Startup Script Finished ---"

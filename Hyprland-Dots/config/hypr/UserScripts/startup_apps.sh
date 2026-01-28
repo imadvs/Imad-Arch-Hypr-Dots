@@ -34,7 +34,7 @@ sleep 4 # Wait for P.Advices to spawn
 # Resize Workspace 2
 echo "Resizing Workspace 2..."
 hyprctl dispatch focuswindow "title:^(.*ProgrammingAdvices.*|.*Dashboard.*|.*programmingadvices.*)$"
-hyprctl dispatch splitratio 0.5
+hyprctl dispatch splitratio 0.15
 echo "Waiting for WS2 icons to settle..."
 sleep 5 # Extensive wait to ensure Waybar registers icons before switching
 
@@ -64,8 +64,8 @@ sleep 4 # Wait for Pomo to spawn
 # Resize Workspace 4
 echo "Resizing Workspace 4..."
 hyprctl dispatch focuswindow "title:^(.*Pomofocus.*|.*Time to focus.*|.*Pomodoro.*)$"
-hyprctl dispatch movewindow l
-hyprctl dispatch splitratio -0.5
+# hyprctl dispatch movewindow l
+# hyprctl dispatch splitratio -0.5
 
 # --- Final Cleanup ---
 sleep 1

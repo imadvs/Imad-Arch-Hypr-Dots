@@ -28,7 +28,7 @@ uwsm app -- obsidian &
 sleep 2
 
 echo "Launching ProgrammingAdvices..."
-uwsm app -- brave --class="brave-programmingadvices" --password-store=basic --new-window --app="https://programmingadvices.com/l/dashboard" &
+uwsm app -- brave --class="brave-programmingadvices" --password-store=basic --new-window --app="https://programmingadvices.com/l/dashboard" --user-data-dir="$HOME/.config/brave-webapps" &
 sleep 4 # Wait for P.Advices to spawn
 
 # Resize Workspace 2
@@ -43,10 +43,10 @@ echo "Visiting Workspace 3..."
 hyprctl dispatch workspace 3
 sleep 1
 echo "Launching Busuu..."
-uwsm app -- brave --class="brave-busuu" --password-store=basic --new-window --app="https://www.busuu.com" &
+uwsm app -- brave --class="brave-busuu" --password-store=basic --new-window --app="https://www.busuu.com" --user-data-dir="$HOME/.config/brave-webapps" &
 sleep 1
 echo "Launching Managementdose..."
-uwsm app -- brave --class="brave-managementdose" --password-store=basic --new-window --app="https://managementdose.com" &
+uwsm app -- brave --class="brave-managementdose" --password-store=basic --new-window --app="https://managementdose.com" --user-data-dir="$HOME/.config/brave-webapps" &
 sleep 3
 
 # --- Workspace 4 ---
@@ -54,7 +54,7 @@ echo "Visiting Workspace 4..."
 hyprctl dispatch workspace 4
 sleep 1
 echo "Launching YouTube Music..."
-uwsm app -- brave --class="brave-youtubemusic" --password-store=basic --new-window --app="https://music.youtube.com" &
+uwsm app -- brave --class="brave-youtubemusic" --password-store=basic --new-window --app="https://music.youtube.com" --user-data-dir="$HOME/.config/brave-webapps" &
 sleep 2
 
 echo "Launching Pomofocus..."

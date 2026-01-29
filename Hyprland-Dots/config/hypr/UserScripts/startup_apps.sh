@@ -49,6 +49,11 @@ echo "Launching Managementdose..."
 uwsm app -- brave --class="brave-managementdose" --password-store=basic --new-window --app="https://managementdose.com" --user-data-dir="$HOME/.config/brave-webapps" &
 sleep 3
 
+# Resize Workspace 3
+echo "Resizing Workspace 3..."
+hyprctl dispatch focuswindow "title:^(.*ManagementDose.*|.*managementdose.*)$"
+hyprctl dispatch splitratio 0.15
+
 # --- Workspace 4 ---
 echo "Visiting Workspace 4..."
 hyprctl dispatch workspace 4

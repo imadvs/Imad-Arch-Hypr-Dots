@@ -28,7 +28,7 @@ uwsm app -- obsidian &
 sleep 2
 
 echo "Launching ProgrammingAdvices..."
-uwsm app -- brave --class="brave-programmingadvices" --password-store=basic --new-window --app="https://programmingadvices.com/l/dashboard" &
+uwsm app -- google-chrome-stable --class="chrome-programmingadvices" --password-store=basic --new-window --app="https://programmingadvices.com/l/dashboard" &
 sleep 4 # Wait for P.Advices to spawn
 
 # Resize Workspace 2
@@ -43,15 +43,17 @@ echo "Visiting Workspace 3..."
 hyprctl dispatch workspace 3
 sleep 1
 echo "Launching Busuu..."
-uwsm app -- brave --class="brave-busuu" --password-store=basic --new-window --app="https://www.busuu.com" &
+uwsm app -- google-chrome-stable --class="chrome-busuu" --password-store=basic --new-window --app="https://www.busuu.com" &
 sleep 1
 echo "Launching Managementdose..."
-uwsm app -- brave --class="brave-managementdose" --password-store=basic --new-window --app="https://managementdose.com" &
+uwsm app -- google-chrome-stable --class="chrome-managementdose" --password-store=basic --new-window --app="https://managementdose.com" &
 sleep 3
 
 # Resize Workspace 3
+# With Chrome, titles might differ. Using broad matching.
+# Swapping focus to Busuu first (Main Left), then ManagementDose (Right Split)
 echo "Resizing Workspace 3..."
-hyprctl dispatch focuswindow "title:^(.*ManagementDose.*|.*managementdose.*)$"
+hyprctl dispatch focuswindow "class:^(chrome-managementdose.*)$"
 hyprctl dispatch splitratio 0.15
 
 # --- Workspace 4 ---
@@ -59,7 +61,7 @@ echo "Visiting Workspace 4..."
 hyprctl dispatch workspace 4
 sleep 1
 echo "Launching YouTube Music..."
-uwsm app -- brave --class="brave-youtubemusic" --password-store=basic --new-window --app="https://music.youtube.com" &
+uwsm app -- google-chrome-stable --class="chrome-youtubemusic" --password-store=basic --new-window --app="https://music.youtube.com" &
 sleep 2
 
 echo "Launching Pomofocus..."
@@ -68,7 +70,7 @@ sleep 4 # Wait for Pomo to spawn
 
 # Resize Workspace 4
 echo "Resizing Workspace 4..."
-hyprctl dispatch focuswindow "title:^(.*Pomofocus.*|.*Time to focus.*|.*Pomodoro.*)$"
+hyprctl dispatch focuswindow "class:^(pomofocus)$"
 # hyprctl dispatch movewindow l
 # hyprctl dispatch splitratio -0.5
 

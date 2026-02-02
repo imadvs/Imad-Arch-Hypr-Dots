@@ -11,4 +11,4 @@ fi
 
 # Launch Brave in app mode (no address bar)
 # Using uwsm app wrapper as preferred by user config
-uwsm app -- brave --password-store=basic --new-window --app="$URL" --user-data-dir="$HOME/.config/brave-webapps"
+uwsm app -- brave --password-store=basic --new-window --app="$URL"

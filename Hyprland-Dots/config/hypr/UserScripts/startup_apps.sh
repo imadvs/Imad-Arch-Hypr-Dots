@@ -15,9 +15,9 @@ echo "Starting Sequential Launch..."
 echo "Visiting Workspace 1..."
 hyprctl dispatch workspace 1
 sleep 1
-echo "Launching VS Code..."
-uwsm app -- code &
-sleep 2
+echo "Launching CLion..."
+uwsm app -- /home/imad/.local/share/JetBrains/Toolbox/scripts/clion &
+sleep 8
 
 # --- Workspace 2 ---
 echo "Visiting Workspace 2..."
@@ -29,14 +29,14 @@ sleep 2
 
 echo "Launching ProgrammingAdvices..."
 uwsm app -- google-chrome-stable --class="chrome-programmingadvices" --password-store=basic --new-window --app="https://programmingadvices.com/l/dashboard" &
-sleep 4 # Wait for P.Advices to spawn
+sleep 7 # Wait for P.Advices to spawn
 
 # Resize Workspace 2
 echo "Resizing Workspace 2..."
 hyprctl dispatch focuswindow "title:^(.*ProgrammingAdvices.*|.*Dashboard.*|.*programmingadvices.*)$"
 hyprctl dispatch splitratio 0.15
 echo "Waiting for WS2 icons to settle..."
-sleep 5 # Extensive wait to ensure Waybar registers icons before switching
+sleep 8 # Extensive wait to ensure Waybar registers icons before switching
 
 # --- Workspace 3 ---
 echo "Visiting Workspace 3..."

@@ -1,0 +1,8 @@
+
+[Desktop Entry]
+Type=Application
+Name=Far Cry 3
+Icon=lutris_far-cry-3
+Exec=env LUTRIS_SKIP_INIT=1 lutris lutris:rungameid/1
+Categories=Game
+TryExec=lutris

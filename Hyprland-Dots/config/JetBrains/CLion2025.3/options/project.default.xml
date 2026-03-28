@@ -1,0 +1,22 @@
+<application>
+  <component name="ProjectManager">
+    <defaultProject>
+      <component name="Encoding" addBOMForNewFiles="with BOM under Windows, with no BOM otherwise" />
+      <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
+  }
+}]]></component>
+      <component name="WindowStateProjectService">
+        <state x="0" y="163" width="701" height="738" key="#Options" timestamp="1770121401930">
+          <screen x="0" y="0" width="1600" height="900" />
+        </state>
+        <state x="0" y="163" width="701" height="738" key="#Options/0.0.1600.900" timestamp="1770121401930" />
+        <state x="0" y="163" width="998" height="738" key="SettingsEditor" timestamp="1770121549922">
+          <screen x="0" y="0" width="1600" height="900" />
+        </state>
+        <state x="0" y="163" width="998" height="738" key="SettingsEditor/0.0.1600.900" timestamp="1770121549922" />
+      </component>
+    </defaultProject>
+  </component>
+</application>

@@ -1,0 +1,9 @@
+<application>
+  <component name="VimMarksSettings">
+    <globalmarks />
+    <localmarks />
+  </component>
+  <component name="VimVariables">
+    <vim-variables />
+  </component>
+</application>

@@ -1,0 +1,376 @@
+"" =============================================================================
+""  .ideavimrc — LazyVim-faithful IdeaVim config for CLion
+""  Uses consistent nmap + <Action>() syntax throughout (no :action <CR>)
+"" =============================================================================
+
+"" --- GENERAL SETTINGS ---
+let mapleader=" "
+let maplocalleader=","
+set clipboard+=unnamedplus
+set number
+set relativenumber
+set incsearch
+set hlsearch
+set ignorecase
+set smartcase
+set scrolloff=8
+set sidescrolloff=8
+set showmode
+set ideajoin
+set idearefactormode=keep
+set ideafold
+
+"" =============================================================================
+"" PLUGINS
+"" =============================================================================
+set surround         " cs/ds/ys — surround owns the 'cs' prefix, don't remap it
+set commentary       " gcc / gc<motion> — use these for comments
+set highlightedyank
+set argtextobj       " ia / aa — function argument text objects
+set textobj-indent   " ii / ai — indent text objects
+set textobj-entire   " ie / ae — entire buffer text object
+set matchit
+set easymotion
+set quickscope
+set which-key
+set sneak
+set exchange         " cx<motion> — cx must stay free, don't remap it
+set NERDTree
+
+"" --- WHICH-KEY ---
+let g:WhichKey_ShowVimActions = "true"
+let g:WhichKey_DefaultDelay = 500
+
+"" =============================================================================
+"" GUARDS
+"" =============================================================================
+nnoremap q: <nop>
+
+"" =============================================================================
+"" SEARCH & MOVEMENT
+"" =============================================================================
+nnoremap <leader>h :nohlsearch<CR>
+nnoremap <Esc> :nohlsearch<CR>
+nnoremap n nzzzv
+nnoremap N Nzzzv
+nnoremap <C-d> <C-d>zz
+nnoremap <C-u> <C-u>zz
+nnoremap * *zzzv
+nnoremap # #zzzv
+
+"" Last buffer (LazyVim: <leader>`)
+nmap <leader>` <Action>(RecentFiles)
+
+"" =============================================================================
+"" INSERT MODE
+"" =============================================================================
+inoremap jk <Esc>
+inoremap kj <Esc>
+
+"" =============================================================================
+"" VISUAL MODE
+"" =============================================================================
+vnoremap < <gv
+vnoremap > >gv
+vnoremap J :m '>+1<CR>gv=gv
+vnoremap K :m '<-2<CR>gv=gv
+vnoremap p "_dP
+
+"" =============================================================================
+"" LINE MOVEMENT (ALT+J/K)
+"" =============================================================================
+nnoremap <A-j> :m .+1<CR>==
+nnoremap <A-k> :m .-2<CR>==
+inoremap <A-j> <Esc>:m .+1<CR>==gi
+inoremap <A-k> <Esc>:m .-2<CR>==gi
+vnoremap <A-j> :m '>+1<CR>gv=gv
+vnoremap <A-k> :m '<-2<CR>gv=gv
+
+"" =============================================================================
+"" FILE OPERATIONS
+"" =============================================================================
+nmap <leader>e  <Action>(ActivateProjectToolWindow)
+nmap <leader>fn <Action>(NewFile)
+nmap <leader>fN <Action>(NewClass)
+nmap <leader>fs <Action>(SaveDocument)
+nmap <leader>fr <Action>(RecentFiles)
+nmap <leader>fR <Action>(ActivateRunToolWindow)
+nmap <leader>ft <Action>(ActivateTerminalToolWindow)
+nmap <leader>fd <Action>(ActivateDebugToolWindow)
+nmap <leader>fh <Action>(HideActiveWindow)
+nmap <leader>fH <Action>(HideAllWindows)
+nnoremap <C-s> :w<CR>
+inoremap <C-s> <Esc>:w<CR>a
+
+"" =============================================================================
+"" BUFFER MANAGEMENT
+"" =============================================================================
+nmap <leader>bb <Action>(RecentFiles)
+nmap <leader>bd <Action>(CloseContent)
+nmap <leader>bD <Action>(CloseAllEditorsButActive)
+nmap <leader>bo <Action>(CloseAllEditorsButActive)
+nmap <leader>bl <Action>(NextTab)
+nmap <leader>bh <Action>(PreviousTab)
+nmap <leader>bp <Action>(PinActiveEditorTab)
+
+"" Tab navigation (LazyVim: Shift+H/L)
+nmap <S-h> <Action>(PreviousTab)
+nmap <S-l> <Action>(NextTab)
+
+nmap <leader>q <Action>(CloseContent)
+nmap <leader>Q <Action>(CloseAllEditors)
+
+"" =============================================================================
+"" WINDOW MANAGEMENT
+"" =============================================================================
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
+nmap <leader>wv <Action>(SplitVertically)
+nmap <leader>ws <Action>(SplitHorizontally)
+nmap <leader>|  <Action>(SplitVertically)
+nmap <leader>-  <Action>(SplitHorizontally)
+nmap <leader>wd <Action>(CloseContent)
+nmap <leader>wo <Action>(CloseAllEditorsButActive)
+nmap <leader>ww <C-w>w
+nmap <leader>wm <Action>(HideAllWindows)
+
+nmap <C-Up>    <Action>(StretchSplitToTop)
+nmap <C-Down>  <Action>(StretchSplitToBottom)
+nmap <C-Left>  <Action>(StretchSplitToLeft)
+nmap <C-Right> <Action>(StretchSplitToRight)
+
+"" =============================================================================
+"" TERMINAL
+"" =============================================================================
+nmap <leader>tt <Action>(ActivateTerminalToolWindow)
+nmap <leader>tn <Action>(Terminal.OpenInTerminal)
+nmap <C-/>      <Action>(ActivateTerminalToolWindow)
+nmap <C-_>      <Action>(ActivateTerminalToolWindow)
+
+"" =============================================================================
+"" TESTS
+"" =============================================================================
+nmap <leader>gt <Action>(GotoTest)
+nmap <leader>tr <Action>(Run)
+nmap <leader>td <Action>(Debug)
+
+"" =============================================================================
+"" AI ASSISTANT
+"" =============================================================================
+nmap <leader>ai <Action>(ActivateAIAssistantToolWindow)
+nmap <leader>aa <Action>(AIAssistant.Chat.Focus)
+nmap <leader>ae <Action>(AIAssistant.ExplainCode)
+
+"" =============================================================================
+"" SEARCH (Telescope-style)
+"" =============================================================================
+nmap <leader><leader> <Action>(SearchEverywhere)
+nmap <leader>ff       <Action>(GotoFile)
+nmap <leader>fg       <Action>(FindInPath)
+nmap <leader>fb       <Action>(RecentFiles)
+nmap <leader>fo       <Action>(RecentFiles)
+nmap <leader>/        <Action>(Find)
+
+nmap <leader>sa <Action>(GotoAction)
+nmap <leader>sb <Action>(RecentFiles)
+nmap <leader>sc <Action>(GotoClass)
+nmap <leader>sd <Action>(GotoSymbol)
+nmap <leader>sf <Action>(GotoFile)
+nmap <leader>sg <Action>(FindInPath)
+nmap <leader>sh <Action>(SearchEverywhere)
+nmap <leader>sl <Action>(RecentLocations)
+nmap <leader>sm <Action>(FileStructurePopup)
+nmap <leader>sn <Action>(ActivateNotificationsToolWindow)
+nmap <leader>sp <Action>(FindInPath)
+nmap <leader>sr <Action>(ReplaceInPath)
+nmap <leader>ss <Action>(FileStructurePopup)
+nmap <leader>sS <Action>(GotoSymbol)
+nmap <leader>sw <Action>(FindInPath)
+nmap <leader>sR <Action>(GotoRelated)
+
+"" =============================================================================
+"" GIT
+"" hs=stage  hr=reset/rollback  hp=preview diff  hu=undo stage
+"" =============================================================================
+nmap ]h <Action>(VcsShowNextChangeMarkerAction)
+nmap [h <Action>(VcsShowPrevChangeMarkerAction)
+nmap <leader>hn <Action>(VcsShowNextChangeMarkerAction)
+nmap <leader>hp <Action>(VcsShowDiffChangedLines)
+nmap <leader>hs <Action>(ChangesView.AddUnversioned)
+vmap <leader>hs <Action>(ChangesView.AddUnversioned)
+nmap <leader>hr <Action>(Vcs.RollbackChangedLines)
+vmap <leader>hr <Action>(Vcs.RollbackChangedLines)
+nmap <leader>hu <Action>(Vcs.RollbackChangedLines)
+
+nmap <leader>gg <Action>(ActivateVersionControlToolWindow)
+nmap <leader>gs <Action>(ActivateVersionControlToolWindow)
+nmap <leader>gb <Action>(Annotate)
+nmap <leader>gB <Action>(Git.Branches)
+nmap <leader>gc <Action>(CheckinProject)
+nmap <leader>gd <Action>(Compare.SameVersion)
+nmap <leader>gf <Action>(Git.Fetch)
+nmap <leader>gh <Action>(Vcs.ShowHistoryForBlock)
+nmap <leader>gl <Action>(Vcs.Show.Log)
+nmap <leader>gL <Action>(Vcs.Show.Local.Changes)
+nmap <leader>gp <Action>(Vcs.Push)
+
+"" =============================================================================
+"" LSP / CODE NAVIGATION
+"" =============================================================================
+nmap gd <Action>(GotoDeclaration)
+nmap gD <Action>(GotoTypeDeclaration)
+nmap gi <Action>(GotoImplementation)
+nmap gr <Action>(FindUsages)
+nmap gR <Action>(FindUsages)
+nmap gy <Action>(GotoTypeDeclaration)
+nmap K  <Action>(QuickJavaDoc)
+nmap <leader>k <Action>(QuickJavaDoc)
+
+nmap [m <Action>(MethodUp)
+nmap ]m <Action>(MethodDown)
+nmap [[ <Action>(GotoPreviousElementUnderCaretUsage)
+nmap ]] <Action>(GotoNextElementUnderCaretUsage)
+
+"" =============================================================================
+"" CODE ACTIONS & REFACTORING
+"" NOTE: <leader>cs is intentionally absent — surround owns 'cs'.
+""       Use gcc / gc<motion> for comments (vim-commentary).
+""       <leader>cX = SafeDelete (cx is free for vim-exchange).
+"" =============================================================================
+nmap <leader>ca <Action>(ShowIntentionActions)
+vmap <leader>ca <Action>(ShowIntentionActions)
+nmap <leader>cA <Action>(GotoAction)
+nmap <leader>cc <Action>(ShowIntentionActions)
+nmap <leader>cf <Action>(ReformatCode)
+vmap <leader>cf <Action>(ReformatCode)
+nmap <leader>cg <Action>(Generate)
+nmap <leader>cI <Action>(Generate)
+nmap <leader>cl <Action>(ShowIntentionActions)
+nmap <leader>cm <Action>(ShowPopupMenu)
+nmap <leader>co <Action>(OptimizeImports)
+nmap <leader>cX <Action>(SafeDelete)
+nmap <leader>cp <Action>(ChangeSignature)
+
+"" BUILD & RUN
+nmap <leader>cb <Action>(CompileProject)
+nmap <leader>cr <Action>(Run)
+nmap <leader>cR <Action>(RunAnything)
+nmap <leader>cq <Action>(Stop)
+
+"" Refactoring
+nmap <leader>rn <Action>(RenameElement)
+nmap <leader>rr <Action>(RenameElement)
+nmap <leader>rf <Action>(RenameFile)
+nmap <leader>rc <Action>(Refactorings.QuickListPopupAction)
+vmap <leader>rc <Action>(Refactorings.QuickListPopupAction)
+nmap <leader>rm <Action>(ExtractMethod)
+vmap <leader>rm <Action>(ExtractMethod)
+nmap <leader>rv <Action>(IntroduceVariable)
+vmap <leader>rv <Action>(IntroduceVariable)
+nmap <leader>ri <Action>(Inline)
+
+"" =============================================================================
+"" DIAGNOSTICS / ERRORS
+"" =============================================================================
+nmap ]d <Action>(GotoNextError)
+nmap [d <Action>(GotoPrevError)
+nmap ]e <Action>(GotoNextError)
+nmap [e <Action>(GotoPrevError)
+nmap <leader>cd <Action>(ShowErrorDescription)
+nmap <leader>ce <Action>(ShowErrorDescription)
+
+nmap <leader>xx <Action>(ActivateProblemsViewToolWindow)
+nmap <leader>xq <Action>(ActivateProblemsViewToolWindow)
+nmap <leader>xl <Action>(ActivateProblemsViewToolWindow)
+
+"" =============================================================================
+"" DEBUGGING
+"" NOTE: <leader>dq = stop debug session
+""       <leader>cq = stop run session (above)
+"" =============================================================================
+nmap <leader>db <Action>(ToggleLineBreakpoint)
+nmap <leader>dB <Action>(ViewBreakpoints)
+nmap <leader>dc <Action>(Resume)
+nmap <leader>dd <Action>(Debug)
+nmap <leader>di <Action>(StepInto)
+nmap <leader>dj <Action>(StepOver)
+nmap <leader>do <Action>(StepOut)
+nmap <leader>dO <Action>(StepOver)
+nmap <leader>dq <Action>(Stop)
+nmap <leader>du <Action>(StepOut)
+
+"" =============================================================================
+"" UI TOGGLES
+"" =============================================================================
+nmap <leader>uf <Action>(ToggleFullScreen)
+nmap <leader>ug <Action>(EditorToggleShowGutterIcons)
+nmap <leader>uh <Action>(EditorToggleShowInlayHints)
+nmap <leader>uI <Action>(EditorToggleShowParameterNameHints)
+nmap <leader>ui <Action>(EditorToggleShowIndentLines)
+nmap <leader>ul <Action>(EditorToggleShowLineNumbers)
+nmap <leader>ur :set relativenumber!<CR>
+nmap <leader>uD <Action>(ToggleDistractionFreeMode)
+nmap <leader>us <Action>(TogglePresentationMode)
+nmap <leader>uw <Action>(EditorToggleUseSoftWraps)
+nmap <leader>uz <Action>(ToggleZenMode)
+
+nmap <leader>z <Action>(ToggleZenMode)
+nmap <leader>Z <Action>(ToggleDistractionFreeMode)
+
+"" =============================================================================
+"" MARKDOWN
+"" =============================================================================
+nmap <leader>mp <Action>(Markdown.Preview)
+nmap <leader>ms <Action>(Markdown.ShowPreviewWindow)
+
+"" =============================================================================
+"" SESSION / QUIT
+"" =============================================================================
+nmap <leader>qa <Action>(Exit)
+nmap <leader>qq <Action>(Exit)
+nmap <leader>qr <Action>(RestartIde)
+nmap <leader>qs <Action>(SaveAll)
+
+"" =============================================================================
+"" CLIPBOARD
+"" =============================================================================
+nnoremap <leader>y "+y
+vnoremap <leader>y "+y
+nnoremap <leader>Y "+Y
+nnoremap <leader>p "+p
+vnoremap <leader>p "+p
+nnoremap <leader>P "+P
+
+"" =============================================================================
+"" FOLDING
+"" =============================================================================
+nmap zo <Action>(ExpandRegion)
+nmap zc <Action>(CollapseRegion)
+nmap za <Action>(ToggleFold)
+vmap za <Action>(ToggleFold)
+nmap zM <Action>(CollapseAllRegions)
+nmap zR <Action>(ExpandAllRegions)
+
+"" =============================================================================
+"" MISC
+"" =============================================================================
+map Q gq
+nmap <leader>L <Action>(Vcs.Show.Log)
+
+"" =============================================================================
+"" CHEATSHEET
+"" -----------------------------------------------------------------------------
+"" RUN:   <leader>cr = run last | <leader>cR = pick config | <leader>cq = STOP
+"" DEBUG: <leader>dd = debug    | <leader>dc = resume      | <leader>dq = STOP
+""        <leader>db = breakpoint | <leader>di/j/o = step into/over/out
+"" GIT:   <leader>hs = stage | <leader>hr = rollback | <leader>hp = preview
+"" NAV:   gd/gi/gr/gy/K | ]d/[d errors | ]h/[h hunks | ]m/[m methods
+"" SPLIT: <leader>| vertical | <leader>- horizontal
+"" TABS:  S-h / S-l
+"" TEXT:  ia/aa=args | ii/ai=indent | ie/ae=entire buffer | cx=exchange
+"" COMMENTS: gcc (line) | gc<motion> (block) — via vim-commentary
+"" SURROUND: cs/ds/ys — via vim-surround
+"" =============================================================================

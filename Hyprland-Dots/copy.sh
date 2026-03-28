@@ -682,7 +682,7 @@ if [ ! -d "config" ]; then
   exit 1
 fi
 
-DIR="btop cava hypr Kvantum qt5ct qt6ct swappy wallust wlogout"
+DIR="btop cava hypr Kvantum qt5ct qt6ct swappy wallust wlogout ideavim"
 
 for DIR_NAME in $DIR; do
   DIRPATH="$HOME/.config/$DIR_NAME"
@@ -1219,6 +1219,25 @@ cleanup_backups() {
 }
 # Execute the cleanup function
 cleanup_backups
+
+# JetBrains Config Sync
+if [ -d "config/JetBrains" ]; then
+  echo "${NOTE} - Syncing JetBrains configurations..." 2>&1 | tee -a "$LOG"
+  JB_DIR="$HOME/.config/JetBrains"
+  mkdir -p "$JB_DIR"
+
+  for IDE_DIR in config/JetBrains/*; do
+    if [ -d "$IDE_DIR" ]; then
+      IDE_NAME=$(basename "$IDE_DIR")
+      mkdir -p "$JB_DIR/$IDE_NAME"
+      echo "Copying config for $IDE_NAME..." 2>&1 | tee -a "$LOG"
+      cp -r "$IDE_DIR/"* "$JB_DIR/$IDE_NAME/" 2>&1 | tee -a "$LOG" || true
+      echo "${OK} - $IDE_NAME config synchronized." 2>&1 | tee -a "$LOG"
+    fi
+  done
+fi
+
+
 
 # Check if ~/.config/waybar/style.css does not exist or is a symlink
 if [ ! -e "$HOME/.config/waybar/style.css" ] || [ -L "$HOME/.config/waybar/style.css" ]; then

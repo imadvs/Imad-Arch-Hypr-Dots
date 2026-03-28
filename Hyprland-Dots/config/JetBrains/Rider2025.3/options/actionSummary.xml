@@ -1,0 +1,58 @@
+<application>
+  <component name="ActionsLocalSummary">
+    <e n="AIAssistant.Toolwindow.Scale">
+      <i c="1" d="1" l="1770121852339" k="1770121852339" />
+    </e>
+    <e n="EditCustomVmOptions">
+      <i c="7" d="7" l="1770122826338" k="1770122826338" />
+    </e>
+    <e n="EditorBackSpace">
+      <i c="8" l="1770122823748" />
+    </e>
+    <e n="EditorCopy">
+      <i c="1" l="1770122841307" />
+    </e>
+    <e n="EditorDown">
+      <i c="51" l="1770121222127" />
+    </e>
+    <e n="EditorEnter">
+      <i c="2" l="1770121227721" />
+    </e>
+    <e n="EditorPaste">
+      <i c="3" l="1770121250329" />
+    </e>
+    <e n="EditorToggleActions">
+      <i c="1" d="1" l="1770121429615" k="1770121429615" />
+    </e>
+    <e n="EditorUp">
+      <i c="57" l="1770121132999" />
+    </e>
+    <e n="GotoAction">
+      <i c="1" l="1770121387231" />
+    </e>
+    <e n="SearchEverywhere">
+      <i c="12" l="1770122821283" />
+    </e>
+    <e n="TextEditorWithPreview.Layout.EditorOnly">
+      <i c="1" d="1" l="1770121410659" k="1770121410659" />
+    </e>
+    <e n="WebDeployment.Options">
+      <i c="1" d="1" l="1770121390464" k="1770121390464" />
+    </e>
+    <e n="com.intellij.ide.startup.importSettings.chooser.productChooser.ExpChooserAction">
+      <i c="1" l="1770120672280" />
+    </e>
+    <e n="com.intellij.openapi.project.DumbAwareAction$SimpleDumbAwareAction">
+      <i c="12" l="1770122826332" />
+    </e>
+    <e n="com.intellij.openapi.wm.impl.welcomeScreen.WelcomeScreenComponentFactory$4">
+      <i c="2" l="1770121569771" />
+    </e>
+    <e n="com.intellij.ui.ScrollingUtil$ListMoveDownAction">
+      <i c="59" l="1770122824898" />
+    </e>
+    <e n="com.intellij.ui.ScrollingUtil$ListMoveUpAction">
+      <i c="2" l="1770121440849" />
+    </e>
+  </component>
+</application>

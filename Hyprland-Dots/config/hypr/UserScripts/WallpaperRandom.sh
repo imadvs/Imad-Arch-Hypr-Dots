@@ -19,10 +19,18 @@ BEZIER=".43,1.19,1,.4"
 SWWW_PARAMS="--transition-fps $FPS --transition-type $TYPE --transition-duration $DURATION --transition-bezier $BEZIER"
 
 
-swww query || swww-daemon --format xrgb && swww img -o $focused_monitor ${RANDOMPICS} $SWWW_PARAMS
+if ! pgrep -x "awww-daemon" > /dev/null; then
+  swww-daemon --format argb &
+  sleep 1
+fi
+swww img "${RANDOMPICS}" $SWWW_PARAMS
 
 wait $!
 "$SCRIPTSDIR/WallustSwww.sh" &&
+
+wait $!
+sleep 2
+"$SCRIPTSDIR/Refresh.sh"
 
 wait $!
 sleep 2

@@ -7,7 +7,9 @@ set -euo pipefail
 
 # Inputs and paths
 passed_path="${1:-}"
-cache_dir="$HOME/.cache/swww/"
+# awww 0.12.0 renamed cache dir from swww -> awww; support both
+cache_dir="$HOME/.cache/awww/"
+[[ ! -d "$cache_dir" ]] && cache_dir="$HOME/.cache/swww/"
 rofi_link="$HOME/.config/rofi/.current_wallpaper"
 wallpaper_current="$HOME/.config/hypr/wallpaper_effects/.wallpaper_current"
 
@@ -40,7 +42,9 @@ else
   if [[ -f "$cache_file" ]]; then
     # The first non-filter line is the original wallpaper path
     # wallpaper_path="$(grep -v 'Lanczos3' "$cache_file" | head -n 1)"
-    wallpaper_path=$(swww query | grep $current_monitor | awk '{print $9}')
+    # awww query: path starts at col 9; use NF-based join to handle spaces in filenames
+    _q=$(swww query 2>/dev/null | grep "$current_monitor")
+    wallpaper_path=$(echo "$_q" | awk '{for(i=9;i<=NF;i++) printf "%s%s",$i,(i<NF?" ":""); print ""}')
   fi
 fi
 

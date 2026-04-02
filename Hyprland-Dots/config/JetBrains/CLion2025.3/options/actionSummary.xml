@@ -16,10 +16,10 @@
       <i c="7" l="1774162668233" />
     </e>
     <e n="$Undo">
-      <i c="24" l="1774542232263" />
+      <i c="28" l="1774717230644" />
     </e>
     <e n="AIAssistant.ToolWindow.Chat.Copy.Chameleon">
-      <i c="35" l="1774156223746" />
+      <i c="38" l="1774661629123" />
     </e>
     <e n="AIAssistant.ToolWindow.Chat.Message.User.Message.Edit">
       <i c="7" l="1774068182633" />
@@ -40,7 +40,7 @@
       <i c="9" l="1774068181529" />
     </e>
     <e n="AIAssistant.ToolWindow.NewChatActionAlt">
-      <i c="13" l="1774162845965" />
+      <i c="14" l="1774661565146" />
     </e>
     <e n="AIAssistant.ToolWindow.Snippet.Apply.Smart">
       <i c="28" l="1774408121982" />
@@ -124,10 +124,10 @@
       <i c="7" d="7" l="1772372056632" k="1772372056632" />
     </e>
     <e n="EditorBackSpace">
-      <i c="777" l="1774653417037" />
+      <i c="801" l="1774717573172" />
     </e>
     <e n="EditorChooseLookupItem">
-      <i c="15" l="1774542798248" />
+      <i c="17" l="1774717172439" />
     </e>
     <e n="EditorChooseLookupItemReplace">
       <i c="30" l="1774477969411" />
@@ -142,10 +142,10 @@
       <i c="2" l="1770152534642" />
     </e>
     <e n="EditorDown">
-      <i c="59" l="1774542240999" />
+      <i c="61" l="1774717164489" />
     </e>
     <e n="EditorEnter">
-      <i c="644" l="1774653418656" />
+      <i c="668" l="1774717938711" />
     </e>
     <e n="EditorEscape">
       <i c="72" l="1774063809594" />
@@ -157,7 +157,7 @@
       <i c="3" d="2" l="1770152529230" k="1770124155945" />
     </e>
     <e n="EditorIndentSelection">
-      <i c="4" l="1774542333456" />
+      <i c="6" l="1774663828881" />
     </e>
     <e n="EditorJoinLines">
       <i c="17" l="1770730879424" />
@@ -172,7 +172,7 @@
       <i c="7" l="1771510923823" />
     </e>
     <e n="EditorPaste">
-      <i c="52" l="1774162346349" />
+      <i c="53" l="1774661573664" />
     </e>
     <e n="EditorResetFontSize">
       <i c="1" d="1" l="1770157178631" k="1770157178631" />
@@ -181,7 +181,7 @@
       <i c="1" d="1" l="1770157140275" k="1770157140275" />
     </e>
     <e n="EditorRight">
-      <i c="118" l="1774369595484" />
+      <i c="121" l="1774717621393" />
     </e>
     <e n="EditorSetContentBasedBidiTextDirection">
       <i c="2" l="1774377787202" />
@@ -193,10 +193,10 @@
       <i c="1" l="1774377779500" />
     </e>
     <e n="EditorTab">
-      <i c="11" l="1773179637863" />
+      <i c="13" l="1774667481244" />
     </e>
     <e n="EditorUp">
-      <i c="78" l="1774542236801" />
+      <i c="82" l="1774812631396" />
     </e>
     <e n="ExpandAllRegions">
       <i c="3" l="1771690140499" />
@@ -223,13 +223,13 @@
       <i c="1" l="1771689813260" />
     </e>
     <e n="HideActiveWindow">
-      <i c="109" l="1774543037862" />
+      <i c="110" l="1774661230277" />
     </e>
     <e n="HideAllWindows">
       <i c="5" l="1774113555786" />
     </e>
     <e n="InsertInlineCompletionAction">
-      <i c="125" l="1774542850283" />
+      <i c="131" l="1774717942099" />
     </e>
     <e n="List-selectNextRow">
       <i c="1" l="1771005821639" />
@@ -309,6 +309,9 @@
     <e n="ShowSettings">
       <i c="12" l="1771683644023" />
     </e>
+    <e n="SmartTypeCompletion">
+      <i c="1" l="1775051876666" />
+    </e>
     <e n="Stop">
       <i c="63" d="16" l="1774163477711" k="1771689618094" />
     </e>
@@ -372,6 +375,9 @@
     <e n="com.intellij.execution.ui.RunToolbarPopupKt$createRunConfigurationWithInlines$1">
       <i c="2" l="1774163381868" />
     </e>
+    <e n="com.intellij.ide.ReopenProjectAction">
+      <i c="1" l="1774967978081" />
+    </e>
     <e n="com.intellij.ide.actions.BackAction">
       <i c="1" l="1770157399714" />
     </e>
@@ -424,7 +430,7 @@
       <i c="2" l="1770125255409" />
     </e>
     <e n="com.intellij.openapi.actionSystem.AnActionWrapper">
-      <i c="2229" l="1774542991998" />
+      <i c="2309" l="1774812631395" />
     </e>
     <e n="com.intellij.openapi.actionSystem.DefaultActionGroup">
       <i c="5" l="1774145374477" />
@@ -457,7 +463,7 @@
       <i c="1" l="1770152139645" />
     </e>
     <e n="com.intellij.openapi.wm.impl.SquareAnActionButton">
-      <i c="265" l="1774653654687" />
+      <i c="268" l="1774663591080" />
     </e>
     <e n="com.intellij.openapi.wm.impl.customFrameDecorations.header.toolbar.MainMenuButton$ShowMenuAction">
       <i c="14" l="1774162491776" />

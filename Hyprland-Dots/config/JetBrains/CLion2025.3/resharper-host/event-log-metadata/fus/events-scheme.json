@@ -6925,7 +6925,7 @@
     "rules" : {
       "event_id" : [ "{enum:plugin.used}" ],
       "event_data" : {
-        "PluginVersion" : [ "{regexp:\\d+\\.\\d+-\\d+\\.\\d+-(IJ(?:_CE)?|AS)-\\d+|error}" ]
+        "PluginVersion" : [ "{regexp:\\d+\\.\\d+-\\d+\\.\\d+-(IJ(?:_CE)?|AS)-\\d+|error}", "{regexp:\\d+\\.\\d+-\\d+\\.\\d+-(IJ(?:_CE)?|AS)-\\d+|\\d+\\.\\d+\\.\\d+-(IJ|AS)(-based-on-\\d+\\.\\d+)?|error}" ]
       }
     }
   }, {
@@ -7562,6 +7562,7 @@
         "Lines_count" : [ "{regexp#integer}" ],
         "Time" : [ "{regexp#integer}" ],
         "conversion_time" : [ "{regexp#integer}" ],
+        "conversion_time_ms" : [ "{regexp#integer}" ],
         "files_count" : [ "{regexp#integer}" ],
         "is_new_j2k" : [ "{enum#boolean}" ],
         "lines_count" : [ "{regexp#integer}" ],
@@ -8170,7 +8171,7 @@
     "rules" : {
       "event_id" : [ "{enum:accounts.logout.clicked|accounts.login.clicked}" ],
       "event_data" : {
-        "agentName" : [ "{enum:CODEX_AGENT|OTHER}" ]
+        "agentName" : [ "{enum:CODEX_AGENT|OTHER}", "{enum:CLAUDE_AGENT|JUNIE_AGENT|GEMINI_AGENT}" ]
       }
     }
   }, {
@@ -8913,27 +8914,57 @@
         "agent_locs_changed" : [ "{regexp#integer}" ],
         "agent_locs_removed" : [ "{regexp#integer}" ],
         "agent_name" : [ "{util#chat_agent_name}" ],
+        "cache_input_tokens" : [ "{regexp#integer}" ],
+        "cache_output_tokens" : [ "{regexp#integer}" ],
         "chain_id" : [ "{regexp#short_hash}" ],
         "duration_ms" : [ "{regexp#integer}" ],
+        "event_status" : [ "{enum:COMPLETED|IN_PROGRESS|REJECTED|CANCELED|FAILED}" ],
         "exit_status" : [ "{enum:SUBMIT|CANCELLED|NO_RESULT|FAILED}" ],
+        "file_changes_count" : [ "{regexp#integer}" ],
         "ide_activity_id" : [ "{regexp#integer}" ],
+        "input_tokens" : [ "{regexp#integer}" ],
+        "is_user_response_missing" : [ "{enum#boolean}" ],
         "issue_id" : [ "{regexp#short_hash}" ],
+        "output_tokens" : [ "{regexp#integer}" ],
         "plugin" : [ "{util#plugin}" ],
         "plugin_type" : [ "{util#plugin_type}" ],
         "plugin_version" : [ "{util#plugin_version}" ],
+        "quota" : [ "{regexp#float}" ],
         "rejected_prompts" : [ "{regexp#integer}" ],
+        "response_options" : [ "{enum:ALLOW|ALWAYS_ALLOW|REJECT|TEXT|LET_AGENT_DECIDE|OTHER}" ],
+        "result_cancelled" : [ "{enum#boolean}" ],
+        "result_changes_count" : [ "{regexp#integer}" ],
+        "result_error_code" : [ "{enum:ExitCost|ExitPaymentRequired|ExitFormat|ExitInferenceServerTimeout|ExitContext|ExitEarly|Submit|ExitMaxIter|CountryForbidden|ProblemWithTerminal|ProblemWithProject|PreHookFailed|AuthorizationFailed}" ],
         "rollback_locs_added" : [ "{regexp#integer}" ],
         "rollback_locs_changed" : [ "{regexp#integer}" ],
         "rollback_locs_removed" : [ "{regexp#integer}" ],
-        "start_time_ms" : [ "{regexp#integer}" ]
+        "start_time_ms" : [ "{regexp#integer}" ],
+        "terminal_command" : [ "{enum:ls|mkdir|cp|mv|rm|rmdir|touch|cat|head|tail|grep|awk|sed|which|where|whereis|type|command|tar|zip|unzip|gzip|7z|curl|wget|ping|ssh|scp|ps|top|kill|uname|whoami|echo|printf|env|export|source|git|svn|hg|gh|glab|make|cmake|gradle|mvn|npm|python|python3|java|node|gcc|eslint|prettier|pylint|black|ktlint|jest|vitest|pytest|rspec|ctest|docker|kubectl|terraform|aws|gcloud|psql|mysql|sqlite3|mongosh|redis-cli|man|jq|openssl|base64|sudo}" ],
+        "terminal_exit_code" : [ "{regexp#integer}" ],
+        "test_run_result" : [ "{enum:SUCCESS|FAILURE}" ],
+        "tool_type" : [ "{enum:Build|Test|Mcp|Read|Edit|Run|Search|Download|Plan}" ],
+        "user_response" : [ "{enum:ALLOW|ALWAYS_ALLOW|REJECT|TEXT|LET_AGENT_DECIDE|OTHER}" ],
+        "view_files_count" : [ "{regexp#integer}" ]
       },
       "enums" : {
-        "__event_id" : [ "agent_generation.rejected", "agent_generation.finished", "agent_generation.started", "task.rollback.file.change.clicked", "agent.installed" ]
+        "__event_id" : [ "agent_generation.rejected", "agent_generation.finished", "agent_generation.started", "task.rollback.file.change.clicked", "agent.installed", "markdown.event.received", "file_changes.approval.request.received", "mcp.approval.request.received", "mcp.event.received", "file_changes.event.received", "ask_request.event.received", "choice_request.event.received", "result.event.received", "test_run.approval.request.received", "tool.approval.request.received", "tool.event.received", "view_files.approval.request.received", "terminal.event.received", "terminal.approval.request.received", "view_files.event.received", "agent_thought.event.received", "test_run.event.received", "agent_generation.start.quota.reported", "agent_generation.end.quota.reported" ]
       }
     },
     "anonymized_fields" : [ {
+      "event" : "markdown.event.received",
+      "fields" : [ "issue_id", "chain_id" ]
+    }, {
+      "event" : "mcp.approval.request.received",
+      "fields" : [ "issue_id", "chain_id" ]
+    }, {
+      "event" : "choice_request.event.received",
+      "fields" : [ "issue_id", "chain_id" ]
+    }, {
       "event" : "task.rollback.file.change.clicked",
       "fields" : [ "chain_id" ]
+    }, {
+      "event" : "file_changes.event.received",
+      "fields" : [ "issue_id", "chain_id" ]
     }, {
       "event" : "agent_generation.finished",
       "fields" : [ "chain_id", "issue_id" ]
@@ -8941,8 +8972,53 @@
       "event" : "agent_generation.started",
       "fields" : [ "issue_id", "chain_id" ]
     }, {
+      "event" : "terminal.approval.request.received",
+      "fields" : [ "issue_id", "chain_id" ]
+    }, {
+      "event" : "file_changes.approval.request.received",
+      "fields" : [ "issue_id", "chain_id" ]
+    }, {
+      "event" : "test_run.event.received",
+      "fields" : [ "issue_id", "chain_id" ]
+    }, {
+      "event" : "mcp.event.received",
+      "fields" : [ "issue_id", "chain_id" ]
+    }, {
+      "event" : "agent_generation.end.quota.reported",
+      "fields" : [ "issue_id", "chain_id" ]
+    }, {
       "event" : "agent_generation.rejected",
       "fields" : [ "chain_id" ]
+    }, {
+      "event" : "agent_thought.event.received",
+      "fields" : [ "issue_id", "chain_id" ]
+    }, {
+      "event" : "agent_generation.start.quota.reported",
+      "fields" : [ "issue_id", "chain_id" ]
+    }, {
+      "event" : "tool.approval.request.received",
+      "fields" : [ "issue_id", "chain_id" ]
+    }, {
+      "event" : "test_run.approval.request.received",
+      "fields" : [ "issue_id", "chain_id" ]
+    }, {
+      "event" : "terminal.event.received",
+      "fields" : [ "issue_id", "chain_id" ]
+    }, {
+      "event" : "ask_request.event.received",
+      "fields" : [ "issue_id", "chain_id" ]
+    }, {
+      "event" : "view_files.event.received",
+      "fields" : [ "issue_id", "chain_id" ]
+    }, {
+      "event" : "view_files.approval.request.received",
+      "fields" : [ "issue_id", "chain_id" ]
+    }, {
+      "event" : "result.event.received",
+      "fields" : [ "issue_id", "chain_id" ]
+    }, {
+      "event" : "tool.event.received",
+      "fields" : [ "issue_id", "chain_id" ]
     } ]
   }, {
     "id" : "llm.cmake",
@@ -9221,10 +9297,10 @@
     "rules" : {
       "event_id" : [ "{enum#__event_id}" ],
       "event_data" : {
-        "agentName" : [ "{enum:CODEX_AGENT|OTHER}" ],
+        "agentName" : [ "{enum:CODEX_AGENT|OTHER}", "{enum:CLAUDE_AGENT|JUNIE_AGENT|GEMINI_AGENT}" ],
         "keyIsFilled" : [ "{enum#boolean}" ],
         "modelIsFilled" : [ "{enum#boolean}" ],
-        "providerName" : [ "{enum:OpenAI|Anthropic|OpenAI-compatible|Ollama|LMStudio}" ]
+        "providerName" : [ "{enum:OpenAI|Anthropic|OpenAI-compatible|Ollama|LMStudio}", "{enum:Gemini API key}" ]
       },
       "enums" : {
         "__event_id" : [ "login.byok.connect.clicked", "login.byok.connect.error", "thirdparty.agent.activate.clicked", "login_screen_displayed", "thirdparty.agent.install.clicked", "login.byok.connect.success", "login.byok.provider.changed", "login.start.jb.ai.clicked", "login.jba.returned", "login.jba.web.opened", "login.byok.clicked", "login.byok.back.clicked", "thirdparty.agent.login.clicked" ]
@@ -9420,7 +9496,7 @@
         "isLocalhost" : [ "{enum#boolean}" ],
         "isLocalhostUrl" : [ "{enum#boolean}" ],
         "profileIds" : [ "{enum:llama3.2:latest|llama3.2:1b|llama3.2:3b|llama3.1:latest|llama3.1:8b|llama3.1:70b|gemma2:latest|gemma2:2b|gemma2:9b|gemma2:27b|qwen2.5:latest|qwen2.5:3b|qwen2.5:7b|qwen2.5:14b|qwen2.5:32b}", "{util#llm_profile_id}" ],
-        "providerId" : [ "{enum:OpenAI|Anthropic|Google|Grazie|Alibaba|Mistral|HuggingFace|DeepSeek|Local|Xai|Unknown|OpenAIAPI|Ollama|LMStudio}", "{enum:OpenRouter}" ],
+        "providerId" : [ "{enum:OpenAI|Anthropic|Google|Grazie|Alibaba|Mistral|HuggingFace|DeepSeek|Local|Xai|Unknown|OpenAIAPI|Ollama|LMStudio}", "{enum:OpenRouter}", "{enum:VertexAI}" ],
         "providerIds" : [ "{enum:ollama}", "{enum:lmstudio}", "{enum:liteLLM|llama.cpp}", "{enum:OpenAI}", "{enum:JetBrains}" ]
       }
     }
@@ -12375,7 +12451,7 @@
       "from" : "1"
     } ],
     "rules" : {
-      "event_id" : [ "{enum:collection.management}" ],
+      "event_id" : [ "{enum:symbol.based.code.insight}" ],
       "event_data" : {
         "enabled" : [ "{enum#boolean}" ]
       }
@@ -15250,7 +15326,7 @@
         "plugin_type" : [ "{util#plugin_type}" ],
         "plugin_version" : [ "{util#plugin_version}" ],
         "query" : [ "{enum:GET_CURRENT_USER|GET_MERGE_REQUEST|GET_MERGE_REQUEST_DISCUSSIONS|GET_PROJECT_LABELS|GET_PROJECT_MEMBERS|TOGGLE_MERGE_REQUEST_DISCUSSION_RESOLVE|CREATE_NOTE|CREATE_DIFF_NOTE|CREATE_REPLY_NOTE|UPDATE_NOTE|DESTROY_NOTE|MERGE_REQUEST_ACCEPT|MERGE_REQUEST_SET_DRAFT|MERGE_REQUEST_SET_REVIEWERS|MERGE_REQUEST_UPDATE}", "{enum:MERGE_REQUEST_REVIEWER_REREVIEW}", "{enum:CREATE_SNIPPET|UPDATE_SNIPPET_BLOB|GET_MEMBER_PROJECTS}", "{enum:FIND_MERGE_REQUESTS}", "{enum:GET_METADATA}", "{enum:MERGE_REQUEST_CREATE|GET_PROJECT_REPOSITORY}", "{enum:GET_PROJECT_WORK_ITEMS}", "{enum:GET_MERGE_REQUEST_COMMITS}", "{enum:AWARD_EMOJI_TOGGLE}", "{enum:GET_PROJECT}", "{enum:GET_MEMBER_PROJECTS_FOR_CLONE|GET_MEMBER_PROJECTS_FOR_SNIPPETS}", "{enum:GET_MERGE_REQUEST_METRICS|GET_PROJECT_IS_FORKED}", "{enum:GET_MEMBER_NAMESPACES_OLD|GET_MEMBER_NAMESPACES}" ],
-        "request_name" : [ "{enum:REST_GET_CURRENT_USER|REST_GET_PROJECT_USERS|REST_GET_COMMIT|REST_GET_COMMIT_DIFF|REST_GET_MERGE_REQUEST_DIFF|REST_GET_MERGE_REQUEST_CHANGES|REST_DELETE_DRAFT_NOTE|REST_GET_DRAFT_NOTES|REST_SUBMIT_DRAFT_NOTES|REST_SUBMIT_SINGLE_DRAFT_NOTE|REST_CREATE_DRAFT_NOTE|REST_UPDATE_DRAFT_NOTE|REST_GET_MERGE_REQUESTS|REST_APPROVE_MERGE_REQUEST|REST_UNAPPROVE_MERGE_REQUEST|REST_REBASE_MERGE_REQUEST|REST_PUT_MERGE_REQUEST_REVIEWERS|REST_GET_MERGE_REQUEST_COMMITS|REST_GET_MERGE_REQUEST_STATE_EVENTS|REST_GET_MERGE_REQUEST_LABEL_EVENTS|REST_GET_MERGE_REQUEST_MILESTONE_EVENTS|GQL_GET_METADATA|GQL_GET_CURRENT_USER|GQL_GET_MERGE_REQUEST|GQL_FIND_MERGE_REQUEST|GQL_GET_MERGE_REQUEST_DISCUSSIONS|GQL_GET_PROJECT_LABELS|GQL_GET_PROJECT_REPOSITORY|GQL_GET_MEMBER_PROJECTS|GQL_TOGGLE_MERGE_REQUEST_DISCUSSION_RESOLVE|GQL_CREATE_NOTE|GQL_CREATE_DIFF_NOTE|GQL_CREATE_REPLY_NOTE|GQL_CREATE_SNIPPET|GQL_UPDATE_NOTE|GQL_UPDATE_SNIPPET_BLOB|GQL_DESTROY_NOTE|GQL_MERGE_REQUEST_ACCEPT|GQL_MERGE_REQUEST_CREATE|GQL_MERGE_REQUEST_SET_DRAFT|GQL_MERGE_REQUEST_SET_REVIEWERS|GQL_MERGE_REQUEST_UPDATE|GQL_MERGE_REQUEST_REVIEWER_REREVIEW}", "{enum:REST_GET_PROJECT_NAMESPACE}", "{enum:GQL_GET_PROJECT_WORK_ITEMS}", "{enum:GQL_GET_MERGE_REQUEST_COMMITS}", "{enum:GQL_AWARD_EMOJI_TOGGLE}", "{enum:GQL_GET_PROJECT}", "{enum:GQL_GET_MEMBER_PROJECTS_FOR_SNIPPETS|GQL_GET_MEMBER_PROJECTS_FOR_CLONE}", "{enum:GQL_GET_MERGE_REQUEST_METRICS|GQL_GET_PROJECT_IS_FORKED|REST_GET_PROJECT_IS_FORKED}", "{enum:GQL_GET_MEMBER_NAMESPACES_OLD|GQL_GET_MEMBER_NAMESPACES|REST_CREATE_PROJECT}", "{enum#__request_name}", "{enum:REST_CREATE_MERGE_REQUEST}", "{enum:REST_GET_PROJECT}" ],
+        "request_name" : [ "{enum:REST_GET_CURRENT_USER|REST_GET_PROJECT_USERS|REST_GET_COMMIT|REST_GET_COMMIT_DIFF|REST_GET_MERGE_REQUEST_DIFF|REST_GET_MERGE_REQUEST_CHANGES|REST_DELETE_DRAFT_NOTE|REST_GET_DRAFT_NOTES|REST_SUBMIT_DRAFT_NOTES|REST_SUBMIT_SINGLE_DRAFT_NOTE|REST_CREATE_DRAFT_NOTE|REST_UPDATE_DRAFT_NOTE|REST_GET_MERGE_REQUESTS|REST_APPROVE_MERGE_REQUEST|REST_UNAPPROVE_MERGE_REQUEST|REST_REBASE_MERGE_REQUEST|REST_PUT_MERGE_REQUEST_REVIEWERS|REST_GET_MERGE_REQUEST_COMMITS|REST_GET_MERGE_REQUEST_STATE_EVENTS|REST_GET_MERGE_REQUEST_LABEL_EVENTS|REST_GET_MERGE_REQUEST_MILESTONE_EVENTS|GQL_GET_METADATA|GQL_GET_CURRENT_USER|GQL_GET_MERGE_REQUEST|GQL_FIND_MERGE_REQUEST|GQL_GET_MERGE_REQUEST_DISCUSSIONS|GQL_GET_PROJECT_LABELS|GQL_GET_PROJECT_REPOSITORY|GQL_GET_MEMBER_PROJECTS|GQL_TOGGLE_MERGE_REQUEST_DISCUSSION_RESOLVE|GQL_CREATE_NOTE|GQL_CREATE_DIFF_NOTE|GQL_CREATE_REPLY_NOTE|GQL_CREATE_SNIPPET|GQL_UPDATE_NOTE|GQL_UPDATE_SNIPPET_BLOB|GQL_DESTROY_NOTE|GQL_MERGE_REQUEST_ACCEPT|GQL_MERGE_REQUEST_CREATE|GQL_MERGE_REQUEST_SET_DRAFT|GQL_MERGE_REQUEST_SET_REVIEWERS|GQL_MERGE_REQUEST_UPDATE|GQL_MERGE_REQUEST_REVIEWER_REREVIEW}", "{enum:REST_GET_PROJECT_NAMESPACE}", "{enum:GQL_GET_PROJECT_WORK_ITEMS}", "{enum:GQL_GET_MERGE_REQUEST_COMMITS}", "{enum:GQL_AWARD_EMOJI_TOGGLE}", "{enum:GQL_GET_PROJECT}", "{enum:GQL_GET_MEMBER_PROJECTS_FOR_SNIPPETS|GQL_GET_MEMBER_PROJECTS_FOR_CLONE}", "{enum:GQL_GET_MERGE_REQUEST_METRICS|GQL_GET_PROJECT_IS_FORKED|REST_GET_PROJECT_IS_FORKED}", "{enum:GQL_GET_MEMBER_NAMESPACES_OLD|GQL_GET_MEMBER_NAMESPACES|REST_CREATE_PROJECT}", "{enum#__request_name}", "{enum:REST_CREATE_MERGE_REQUEST}", "{enum:REST_GET_PROJECT}", "{enum:REST_GET_MERGE_REQUEST_PARTICIPANTS|REST_GET_PROJECT_SEARCH_USERS|REST_GET_GROUPS}" ],
         "tab_type" : [ "{enum:CREATION|DETAILS|LIST|SELECTOR}" ],
         "version" : [ "{regexp#version}" ]
       },
@@ -16171,5 +16247,5 @@
       "version" : "Unknown|unknown.format|unknown|UNKNOWN|((\\d+\\.?)*\\d+)"
     }
   },
-  "version" : "7004"
+  "version" : "7026"
 }

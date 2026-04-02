@@ -6,7 +6,7 @@
 SCRIPT_DIR="/home/imad/.config/hypr/scripts"
 CONFIG_DIR="/home/imad/.config/hypr/siteblock"
 CONFIG_FILE="$CONFIG_DIR/schedule.conf"
-LOCK_FILE="$CONFIG_DIR/.lock"
+PAUSE_FILE="$CONFIG_DIR/.paused"
 HOSTS_FILE="/etc/hosts"
 BLOCK_MARKER="# SCHEDULED_BLOCK"
 
@@ -174,7 +174,8 @@ is_time_in_range() {
 
 is_day_match() {
   local days="$1"
-  local current_day=$(date +%a | tr '[:upper:]' '[:lower:]')
+  # Force English locale for day names
+  local current_day=$(LC_TIME=en_US.UTF-8 date +%a | tr '[:upper:]' '[:lower:]')
 
   [[ "$days" == "all" ]] || [[ "$days" =~ $current_day ]]
 }
@@ -205,6 +206,21 @@ check_schedule() {
     echo -e "${RED}Config file not found at $CONFIG_FILE${NC}"
     echo -e "${YELLOW}Run: $0 setup${NC}"
     exit 1
+  fi
+
+  # Check if paused
+  if [ -f "$PAUSE_FILE" ]; then
+    local pause_until=$(cat "$PAUSE_FILE")
+    local current_time=$(date +%s)
+
+    if [ "$current_time" -lt "$pause_until" ]; then
+      # Still paused - unblock everything
+      sed -i "/$BLOCK_MARKER/d" "$HOSTS_FILE"
+      return
+    else
+      # Pause expired - remove pause file
+      rm -f "$PAUSE_FILE"
+    fi
   fi
 
   local any_blocked=false
@@ -242,6 +258,22 @@ status() {
   fi
 
   echo ""
+
+  # Check if paused
+  if [ -f "$PAUSE_FILE" ]; then
+    local pause_until=$(cat "$PAUSE_FILE")
+    local current_time=$(date +%s)
+    local remaining=$((pause_until - current_time))
+
+    if [ "$remaining" -gt 0 ]; then
+      local hours=$((remaining / 3600))
+      local minutes=$(((remaining % 3600) / 60))
+      echo -e "${YELLOW}⏸️  PAUSED for ${hours}h ${minutes}m${NC}"
+      echo -e "${BLUE}   Resume time: $(date -d @$pause_until '+%H:%M')${NC}"
+      echo ""
+    fi
+  fi
+
   if is_blocking_active; then
     echo -e "${RED}🔒 CURRENTLY IN BLOCK PERIOD${NC}"
     echo -e "${YELLOW}   (Modifications are locked until block period ends)${NC}"
@@ -329,11 +361,58 @@ emergency_disable() {
     systemctl stop siteblock-check.timer
     systemctl disable siteblock-check.timer
     sed -i "/$BLOCK_MARKER/d" "$HOSTS_FILE"
+    rm -f "$PAUSE_FILE"
     echo -e "${GREEN}✓ Emergency disable complete${NC}"
     logger "SiteBlocker: EMERGENCY DISABLED by user"
   else
     echo -e "${RED}✗ Confirmation failed. Blocker remains active.${NC}"
   fi
+}
+
+pause_blocker() {
+  local hours="$1"
+
+  if [ -z "$hours" ]; then
+    echo -e "${RED}Error: Please specify number of hours${NC}"
+    echo "Usage: sudo $0 pause <hours>"
+    echo "Example: sudo $0 pause 3"
+    exit 1
+  fi
+
+  # Validate hours is a number
+  if ! [[ "$hours" =~ ^[0-9]+$ ]]; then
+    echo -e "${RED}Error: Hours must be a number${NC}"
+    exit 1
+  fi
+
+  check_root
+
+  local pause_until=$(($(date +%s) + (hours * 3600)))
+  echo "$pause_until" >"$PAUSE_FILE"
+
+  # Immediately unblock everything
+  sed -i "/$BLOCK_MARKER/d" "$HOSTS_FILE"
+
+  echo -e "${GREEN}✓ Blocker paused for $hours hours${NC}"
+  echo -e "${BLUE}Will resume at: $(date -d @$pause_until '+%H:%M on %A')${NC}"
+  logger "SiteBlocker: Paused for $hours hours"
+}
+
+resume_blocker() {
+  check_root
+
+  if [ ! -f "$PAUSE_FILE" ]; then
+    echo -e "${YELLOW}Blocker is not paused${NC}"
+    return
+  fi
+
+  rm -f "$PAUSE_FILE"
+
+  # Immediately run check to apply blocks if needed
+  check_schedule
+
+  echo -e "${GREEN}✓ Blocker resumed${NC}"
+  logger "SiteBlocker: Resumed manually"
 }
 
 usage() {
@@ -400,6 +479,12 @@ main() {
     ;;
   unblock)
     manual_unblock "$2"
+    ;;
+  pause)
+    pause_blocker "$2"
+    ;;
+  resume)
+    resume_blocker
     ;;
   start)
     check_root

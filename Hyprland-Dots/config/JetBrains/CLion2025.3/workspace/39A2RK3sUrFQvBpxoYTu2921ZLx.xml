@@ -5,6 +5,7 @@
         <entry key="06ed4a5b-d2d4-4ef2-b511-aa999466f4ed" value="false" />
         <entry key="093ba630-9251-43a9-a9e6-e86babb72a38" value="false" />
         <entry key="0b772592-bf08-4876-a3cd-6af1668f83d8" value="false" />
+        <entry key="0cb6a908-3b9e-4970-8ae5-1a710ca3bf59" value="false" />
         <entry key="0eb697d2-a6f5-47d2-9bb8-3d38e19fe495" value="false" />
         <entry key="10a050bc-d3a6-4778-a51f-c12ce7d01c22" value="false" />
         <entry key="1630e2ef-1dd9-4d60-b08b-1d467a9ff79e" value="false" />
@@ -12,9 +13,11 @@
         <entry key="21e752f4-2caf-43be-94d9-ccb34180d07a" value="false" />
         <entry key="230c1afd-cee1-4a15-8605-39337cc04d25" value="false" />
         <entry key="245e29ac-c112-44c1-9867-af5ae62eb18a" value="false" />
+        <entry key="24a6b7a9-cbae-4278-b855-863f85a223ef" value="false" />
         <entry key="26592162-9b5f-4987-8382-21826627da05" value="false" />
         <entry key="28bc0333-a4a6-426f-9c49-658cd841d474" value="false" />
         <entry key="28c2f586-3660-4e4c-8f2c-98c6df5e5ef3" value="false" />
+        <entry key="2ac73887-5144-4720-b273-e625611b2d40" value="false" />
         <entry key="2afc9266-bbd1-4203-b3d2-cb9ca34b28aa" value="false" />
         <entry key="2dc01007-1a96-4a48-bd7f-1a3377ad5deb" value="false" />
         <entry key="3284eef2-7c6a-44e7-975e-5e90355866ef" value="false" />
@@ -58,6 +61,7 @@
         <entry key="9b19a332-e6e9-41ba-96f8-b67095b80246" value="false" />
         <entry key="9e03dec7-1622-4e2e-a236-b24010854147" value="false" />
         <entry key="9e1d4fc2-562f-46b3-a119-34c6375f2f09" value="false" />
+        <entry key="9f486a0f-6bb9-48a8-80df-7eaa6071fea0" value="false" />
         <entry key="a0367c17-164e-435b-937e-8c886a310115" value="false" />
         <entry key="a2bceb2a-4d74-4138-aef7-2d494c463201" value="false" />
         <entry key="a693e3b5-c9df-46b8-bf90-b9fac71be98e" value="false" />
@@ -86,6 +90,7 @@
         <entry key="d0c9b4a2-a0f3-4d42-b770-785a40c3e877" value="false" />
         <entry key="d1b905d4-c2cf-4dce-bdad-d35e241c0de8" value="false" />
         <entry key="d3156078-5bbc-435a-baa1-d9efd02595cb" value="false" />
+        <entry key="d5b51295-d640-4b1d-ac20-fadb30f0b4e4" value="false" />
         <entry key="d8e0efed-9758-426f-bb8b-9704e50e9092" value="false" />
         <entry key="d9ded76b-21f3-4fa5-8517-bd1904c8dd3b" value="false" />
         <entry key="da9fb45f-e0ff-4489-8e56-d2d0eb1963ff" value="false" />
@@ -97,6 +102,7 @@
         <entry key="ec9a32ef-a3aa-457b-8699-64e3d8cfb907" value="false" />
         <entry key="ed8d88e4-7b51-42c0-b210-4035a2366944" value="false" />
         <entry key="eea4893e-a39c-4c3b-990a-772d4f677244" value="false" />
+        <entry key="ef46c0de-526d-48cc-a945-909ad4f58de3" value="false" />
         <entry key="f10d8a1f-478d-434c-bc97-9365e3bd1bd5" value="false" />
         <entry key="f1c6c0ef-1ead-438b-a78e-6573c0c194a3" value="false" />
         <entry key="f2dff384-92fa-4ca3-a8cb-5c1701f2f9ef" value="false" />
@@ -3206,6 +3212,7 @@
           <option name="statisticInformation">
             <ChatStatisticInformation>
               <option name="sourceActionType" value="EXPLAIN_CODE_INTENTION" />
+              <option name="timestamp" value="1774653422213" />
             </ChatStatisticInformation>
           </option>
           <option name="title">
@@ -3215,6 +3222,95 @@
             </SerializedChatTitle>
           </option>
           <option name="uid" value="f614887c-f9de-45d0-84ce-d05e3ba95dc0" />
+        </SerializedChat>
+        <SerializedChat>
+          <option name="chatContext">
+            <SerializedChatContext />
+          </option>
+          <option name="chatModelId" value="chat_mode" />
+          <option name="messages">
+            <list>
+              <SerializedChatMessage>
+                <option name="attachments">
+                  <list>
+                    <SerializedChatAttachment>
+                      <option name="url" value="file://$PROJECT_DIR$/src/Test_Of_OOP.cpp" />
+                      <option name="name" value="Information about open file in the editor" />
+                      <option name="text" value="```c/c++&#10;#include &lt;iostream&gt;&#10;using namespace std;&#10;class clsAddress&#10;{&#10;private:&#10;    string _AddressLine1;&#10;    string _AddressLine2;&#10;    string _POBox;&#10;    string _ZipCode;&#10;public :&#10;clsAddress(string AddressLine1, string AddressLine2, string&#10;POBox, string ZipCode)&#10;{&#10;    _AddressLine1 = AddressLine1;&#10;    _AddressLine2 = AddressLine2;&#10;    _POBox = POBox;&#10;    _ZipCode = ZipCode;&#10;}&#10;    void SetAddressLine1(string AddressLine1)&#10;{&#10;    _AddressLine1 = AddressLine1;&#10;}&#10;    string AddressLine1()&#10;{&#10;    return _AddressLine1;&#10;}&#10;    void SetAddressLine2(string AddressLine2)&#10;{&#10;    _AddressLine2 = AddressLine2;&#10;}&#10;    string AddressLine2()&#10;{&#10;    return _AddressLine2;&#10;}&#10;    void SetPOBox(string POBox)&#10;{&#10;    _POBox = POBox;&#10;}&#10;    string POBox()&#10;{&#10;    return _POBox;&#10;}&#10;    void SetZipCode(string ZipCode)&#10;{&#10;    _ZipCode = ZipCode;&#10;}&#10;    string ZipCode()&#10;{&#10;    return _ZipCode;&#10;}&#10;    void Print()&#10;{&#10;    cout &lt;&lt; &quot;\nAddress Details:\n&quot;;&#10;    cout &lt;&lt; &quot;------------------------&quot;;&#10;    cout &lt;&lt; &quot;\nAddressLine1: &quot; &lt;&lt; _AddressLine1 &lt;&lt;endl;&#10;    cout &lt;&lt; &quot;AddressLine2: &quot; &lt;&lt; _AddressLine2 &lt;&lt; endl;&#10;    cout &lt;&lt; &quot;POBox : &quot; &lt;&lt; _POBox &lt;&lt; endl;&#10;    cout &lt;&lt; &quot;ZipCode : &quot; &lt;&lt; _ZipCode &lt;&lt; endl;&#10;}&#10;};&#10;int main()&#10;{&#10;    clsAddress Address1(&quot;Queen Alia Street&quot;,&quot;B 303&quot;,&quot;11192&quot;,&quot;5555&quot;);&#10;    Address1.Print();&#10;    system(&quot;pause&gt;0&quot;);&#10;    return 0;&#10;    }&#10;```" />
+                    </SerializedChatAttachment>
+                  </list>
+                </option>
+                <option name="markupLanguageID" value="ChatInput" />
+                <option name="uid" value="UUID(uuid=4de1546b-fe59-4ace-b552-a75b6180ed20)" />
+                <option name="displayContent" value="Why we need the Constructors?" />
+                <option name="internalContent" value="Why we need the Constructors?" />
+              </SerializedChatMessage>
+              <SerializedChatMessage>
+                <option name="author" value="Assistant" />
+                <option name="uid" value="0e416ddd-f937-4e7b-9330-0aa2cc9be9e0" />
+                <option name="displayContent" value="Constructors are needed because they let an object start its life **already initialized and valid**.&#10;&#10;### In simple terms&#10;A constructor is a special function that runs **automatically when you create an object**.  &#10;Its job is to set up the object’s initial state.&#10;&#10;### Why that matters&#10;Without constructors, you would have to:&#10;- create the object first,&#10;- then manually assign values one by one,&#10;- and you might forget some of them.&#10;&#10;That can lead to:&#10;- incomplete objects,&#10;- invalid data,&#10;- more repeated code,&#10;- harder maintenance.&#10;&#10;### Main benefits of constructors&#10;1. **Initialization**&#10;   - They give the object its starting values right away.&#10;&#10;2. **Safety**&#10;   - They help ensure the object is created in a correct state.&#10;&#10;3. **Less repetition**&#10;   - You avoid writing separate setup code every time.&#10;&#10;4. **Cleaner code**&#10;   - Object creation becomes simpler and easier to read.&#10;&#10;5. **Encapsulation**&#10;   - The class controls how its data is set, instead of letting outside code do everything manually.&#10;&#10;### Think of it like this&#10;Creating an object without a constructor is like buying a new phone and having to manually install the battery, set the time, configure the language, and add your account every single time.&#10;&#10;A constructor is like the phone coming ready to use.&#10;&#10;### Types of constructors you often see&#10;- **Default constructor**: sets default values&#10;- **Parameterized constructor**: accepts values during creation&#10;- **Copy constructor**: creates a new object from an existing one&#10;&#10;### Short answer&#10;We need constructors to **initialize objects automatically, safely, and cleanly** when they are created.&#10;&#10;If you want, I can also explain **constructor vs setter methods** in a very simple way." />
+                <option name="internalContent" value="Constructors are needed because they let an object start its life **already initialized and valid**.&#10;&#10;### In simple terms&#10;A constructor is a special function that runs **automatically when you create an object**.  &#10;Its job is to set up the object’s initial state.&#10;&#10;### Why that matters&#10;Without constructors, you would have to:&#10;- create the object first,&#10;- then manually assign values one by one,&#10;- and you might forget some of them.&#10;&#10;That can lead to:&#10;- incomplete objects,&#10;- invalid data,&#10;- more repeated code,&#10;- harder maintenance.&#10;&#10;### Main benefits of constructors&#10;1. **Initialization**&#10;   - They give the object its starting values right away.&#10;&#10;2. **Safety**&#10;   - They help ensure the object is created in a correct state.&#10;&#10;3. **Less repetition**&#10;   - You avoid writing separate setup code every time.&#10;&#10;4. **Cleaner code**&#10;   - Object creation becomes simpler and easier to read.&#10;&#10;5. **Encapsulation**&#10;   - The class controls how its data is set, instead of letting outside code do everything manually.&#10;&#10;### Think of it like this&#10;Creating an object without a constructor is like buying a new phone and having to manually install the battery, set the time, configure the language, and add your account every single time.&#10;&#10;A constructor is like the phone coming ready to use.&#10;&#10;### Types of constructors you often see&#10;- **Default constructor**: sets default values&#10;- **Parameterized constructor**: accepts values during creation&#10;- **Copy constructor**: creates a new object from an existing one&#10;&#10;### Short answer&#10;We need constructors to **initialize objects automatically, safely, and cleanly** when they are created.&#10;&#10;If you want, I can also explain **constructor vs setter methods** in a very simple way." />
+              </SerializedChatMessage>
+              <SerializedChatMessage>
+                <option name="attachments">
+                  <list>
+                    <SerializedChatAttachment>
+                      <option name="name" value="Console Selection" />
+                      <option name="text" value="old_obj" />
+                    </SerializedChatAttachment>
+                    <SerializedChatAttachment>
+                      <option name="name" value="Project View" />
+                      <option name="text" value="Project View content:&#10;```&#10;Project 2 L4 - ATM System&#10; src&#10;  Test_Of_OOP.cpp&#10; data&#10; .idea&#10; build&#10; include&#10; cmake-build-debug&#10; .gitignore&#10; .gitattributes&#10; CMakeLists.txt&#10;extensions&#10;```" />
+                    </SerializedChatAttachment>
+                  </list>
+                </option>
+                <option name="markupLanguageID" value="ChatInput" />
+                <option name="uid" value="UUID(uuid=c8162432-b4ec-4eb2-839e-e7f779a10b0f)" />
+                <option name="displayContent" value="Why we don't name it Addres2 like the one in the main?" />
+                <option name="internalContent" value="Why we don't name it Addres2 like the one in the main?" />
+              </SerializedChatMessage>
+              <SerializedChatMessage>
+                <option name="author" value="Assistant" />
+                <option name="uid" value="f782771d-e0b5-4269-9d73-8429995ea465" />
+                <option name="displayContent" value="Because `Address2` would be a **second object variable**, not the class itself.&#10;&#10;### Simple idea&#10;- The **class name** is like a blueprint.&#10;- The **object names** in `main` are just variables that hold instances of that class.&#10;&#10;So if you write:&#10;- `Address1` → first object&#10;- `Address2` → second object&#10;&#10;You **can** name it `Address2` if you want.&#10;&#10;### Why the example may use a different name&#10;Usually, names are chosen to show that:&#10;- it’s a different object,&#10;- it may store different data,&#10;- and it helps avoid confusion when reading the code.&#10;&#10;For example, one object can represent one address, and another object can represent a different address.&#10;&#10;### Important point&#10;The name in `main` is **your choice**.  &#10;It does **not** have to match the class name.&#10;&#10;### Best practice&#10;Use names that describe the purpose, such as:&#10;- `homeAddress`&#10;- `officeAddress`&#10;- `shippingAddress`&#10;&#10;That makes the code easier to understand than `Address1` and `Address2`.&#10;&#10;If you want, I can also explain **the difference between class name, object name, and constructor name** in one short example." />
+                <option name="internalContent" value="Because `Address2` would be a **second object variable**, not the class itself.&#10;&#10;### Simple idea&#10;- The **class name** is like a blueprint.&#10;- The **object names** in `main` are just variables that hold instances of that class.&#10;&#10;So if you write:&#10;- `Address1` → first object&#10;- `Address2` → second object&#10;&#10;You **can** name it `Address2` if you want.&#10;&#10;### Why the example may use a different name&#10;Usually, names are chosen to show that:&#10;- it’s a different object,&#10;- it may store different data,&#10;- and it helps avoid confusion when reading the code.&#10;&#10;For example, one object can represent one address, and another object can represent a different address.&#10;&#10;### Important point&#10;The name in `main` is **your choice**.  &#10;It does **not** have to match the class name.&#10;&#10;### Best practice&#10;Use names that describe the purpose, such as:&#10;- `homeAddress`&#10;- `officeAddress`&#10;- `shippingAddress`&#10;&#10;That makes the code easier to understand than `Address1` and `Address2`.&#10;&#10;If you want, I can also explain **the difference between class name, object name, and constructor name** in one short example." />
+              </SerializedChatMessage>
+              <SerializedChatMessage>
+                <option name="attachments">
+                  <list>
+                    <SerializedChatAttachment>
+                      <option name="name" value="Console Selection" />
+                      <option name="text" value="string" />
+                    </SerializedChatAttachment>
+                  </list>
+                </option>
+                <option name="markupLanguageID" value="ChatInput" />
+                <option name="uid" value="UUID(uuid=3e598c42-028c-4d37-b185-0c2c7643c15d)" />
+                <option name="displayContent" value="Do we need include string lib?" />
+                <option name="internalContent" value="Do we need include string lib?" />
+              </SerializedChatMessage>
+              <SerializedChatMessage>
+                <option name="author" value="Assistant" />
+                <option name="uid" value="3dc2a7e8-fe22-4a6e-888b-26a4b55919c8" />
+                <option name="displayContent" value="Yes — **you should include `&lt;string&gt;`** when you use `std::string`.&#10;&#10;### Why?&#10;`std::string` is defined in the **`&lt;string&gt;`** header.  &#10;Even if your code sometimes compiles without it because another header indirectly includes it, that is **not guaranteed** and is not good practice.&#10;&#10;### Best practice&#10;Always include the header for what you use:&#10;- `#include &lt;iostream&gt;` for input/output&#10;- `#include &lt;string&gt;` for `std::string`&#10;&#10;### Why this matters&#10;- Makes your code correct and portable&#10;- Avoids hidden dependencies&#10;- Prevents compiler issues on other systems or compilers&#10;&#10;### Short answer&#10;**Yes, include `&lt;string&gt;`** whenever you use `string`.&#10;&#10;If you want, I can also explain **why `iostream` sometimes seems to make `string` work anyway**." />
+                <option name="internalContent" value="Yes — **you should include `&lt;string&gt;`** when you use `std::string`.&#10;&#10;### Why?&#10;`std::string` is defined in the **`&lt;string&gt;`** header.  &#10;Even if your code sometimes compiles without it because another header indirectly includes it, that is **not guaranteed** and is not good practice.&#10;&#10;### Best practice&#10;Always include the header for what you use:&#10;- `#include &lt;iostream&gt;` for input/output&#10;- `#include &lt;string&gt;` for `std::string`&#10;&#10;### Why this matters&#10;- Makes your code correct and portable&#10;- Avoids hidden dependencies&#10;- Prevents compiler issues on other systems or compilers&#10;&#10;### Short answer&#10;**Yes, include `&lt;string&gt;`** whenever you use `string`.&#10;&#10;If you want, I can also explain **why `iostream` sometimes seems to make `string` work anyway**." />
+              </SerializedChatMessage>
+            </list>
+          </option>
+          <option name="modifiedAt" value="1774669649660" />
+          <option name="statisticInformation">
+            <ChatStatisticInformation>
+              <option name="sourceActionType" value="NEW_CHAT" />
+              <option name="timestamp" value="1774669649660" />
+            </ChatStatisticInformation>
+          </option>
+          <option name="title">
+            <SerializedChatTitle>
+              <option name="custom" value="true" />
+              <option name="text" value="Importance of Constructors in Object-Oriented Programming" />
+            </SerializedChatTitle>
+          </option>
+          <option name="uid" value="24a6b7a9-cbae-4278-b855-863f85a223ef" />
         </SerializedChat>
       </list>
     </option>
@@ -3228,20 +3324,20 @@
       <file current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Test_Of_OOP.cpp" file-id="39670" managing-fs="1770122711113">
           <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="-576">
-              <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+            <state relative-caret-position="456">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
             </state>
           </provider>
         </entry>
-        <tab><![CDATA[{"tabTitle":"Test_Of_OOP.cpp","foregroundColor":-9192071,"textAttributes":{"name":"a","children":[{"name":"option","attributes":{"name":"FOREGROUND","value":"73bd79"}}]},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,114,10,23,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,99,112,112,46,115,118,103,18,29,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,99,112,112,46,115,118,103,26,18,99,111,109,46,105,110,116,101,108,108,105,106,46,99,108,105,111,110,34,23,105,110,116,101,108,108,105,106,46,99,105,100,114,46,108,97,110,103,46,98,97,115,101,40,-21,-119,-10,-57,-3,-1,-1,-1,-1,1,48,0]}]]></tab>
+        <tab>{&quot;tabTitle&quot;:&quot;Test_Of_OOP.cpp&quot;,&quot;foregroundColor&quot;:-9192071,&quot;textAttributes&quot;:{&quot;name&quot;:&quot;a&quot;,&quot;children&quot;:[{&quot;name&quot;:&quot;option&quot;,&quot;attributes&quot;:{&quot;name&quot;:&quot;FOREGROUND&quot;,&quot;value&quot;:&quot;73bd79&quot;}}]},&quot;icon&quot;:[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,114,10,23,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,99,112,112,46,115,118,103,18,29,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,99,112,112,46,115,118,103,26,18,99,111,109,46,105,110,116,101,108,108,105,106,46,99,108,105,111,110,34,23,105,110,116,101,108,108,105,106,46,99,105,100,114,46,108,97,110,103,46,98,97,115,101,40,-21,-119,-10,-57,-3,-1,-1,-1,-1,1,48,0]}</tab>
       </file>
     </leaf>
   </component>
   <component name="FileTypeUsageLocalSummary"><![CDATA[{
   "data": {
     "C/C++": {
-      "usageCount": 113,
-      "lastUsed": 1774370514805
+      "usageCount": 119,
+      "lastUsed": 1775054220276
     },
     "CMakeLists.txt": {
       "usageCount": 20,
@@ -3288,24 +3384,24 @@
     <select />
   </component>
   <component name="GitSEFilterConfiguration">{}</component>
-  <component name="IdeDocumentHistory"><![CDATA[{
-  "changedPaths": [
-    "/home/imad/.ideavimrc",
-    "/home/imad/.config/JetBrains/CLion2025.3/clion64.vmoptions",
-    "/home/imad/Documents/Coding/UserLib.cpp",
-    "/home/imad/Documents/Coding/Project.cpp",
-    "/home/imad/Documents/Coding/UserLib.h",
-    "/home/imad/Documents/Coding/CMakeLists.txt",
-    "/home/imad/Documents/Project 1 L4 - Bank Extension 2/include/clsUser.h",
-    "/home/imad/Documents/Project 1 L4 - Bank Extension 2/include/clsDbObject.h",
-    "/home/imad/Documents/Project 1 L4 - Bank Extension 2/src/clsBankController.cpp",
-    "/home/imad/Documents/Project 1 L4 - Bank Extension 2/include/clsBankController.h",
-    "/home/imad/Documents/Project 1 L4 - Bank Extension 2/CMakeLists.txt",
-    "/home/imad/Documents/Project 2 L4 - ATM System/src/clsATMController.cpp",
-    "/home/imad/Documents/Project 2 L4 - ATM System/include/clsATMController.h",
-    "/home/imad/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp"
+  <component name="IdeDocumentHistory">{
+  &quot;changedPaths&quot;: [
+    &quot;/home/imad/.ideavimrc&quot;,
+    &quot;/home/imad/.config/JetBrains/CLion2025.3/clion64.vmoptions&quot;,
+    &quot;/home/imad/Documents/Coding/UserLib.cpp&quot;,
+    &quot;/home/imad/Documents/Coding/Project.cpp&quot;,
+    &quot;/home/imad/Documents/Coding/UserLib.h&quot;,
+    &quot;/home/imad/Documents/Coding/CMakeLists.txt&quot;,
+    &quot;/home/imad/Documents/Project 1 L4 - Bank Extension 2/include/clsUser.h&quot;,
+    &quot;/home/imad/Documents/Project 1 L4 - Bank Extension 2/include/clsDbObject.h&quot;,
+    &quot;/home/imad/Documents/Project 1 L4 - Bank Extension 2/src/clsBankController.cpp&quot;,
+    &quot;/home/imad/Documents/Project 1 L4 - Bank Extension 2/include/clsBankController.h&quot;,
+    &quot;/home/imad/Documents/Project 1 L4 - Bank Extension 2/CMakeLists.txt&quot;,
+    &quot;/home/imad/Documents/Project 2 L4 - ATM System/src/clsATMController.cpp&quot;,
+    &quot;/home/imad/Documents/Project 2 L4 - ATM System/include/clsATMController.h&quot;,
+    &quot;/home/imad/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp&quot;
   ]
-}]]></component>
+}</component>
   <component name="IgnoredFileRootStore">
     <option name="generatedRoots">
       <set>
@@ -3319,6 +3415,7 @@
         <entry key="06ed4a5b-d2d4-4ef2-b511-aa999466f4ed" value="false" />
         <entry key="093ba630-9251-43a9-a9e6-e86babb72a38" value="false" />
         <entry key="0b772592-bf08-4876-a3cd-6af1668f83d8" value="false" />
+        <entry key="0cb6a908-3b9e-4970-8ae5-1a710ca3bf59" value="false" />
         <entry key="0eb697d2-a6f5-47d2-9bb8-3d38e19fe495" value="false" />
         <entry key="10a050bc-d3a6-4778-a51f-c12ce7d01c22" value="false" />
         <entry key="1630e2ef-1dd9-4d60-b08b-1d467a9ff79e" value="false" />
@@ -3326,9 +3423,11 @@
         <entry key="21e752f4-2caf-43be-94d9-ccb34180d07a" value="false" />
         <entry key="230c1afd-cee1-4a15-8605-39337cc04d25" value="false" />
         <entry key="245e29ac-c112-44c1-9867-af5ae62eb18a" value="false" />
+        <entry key="24a6b7a9-cbae-4278-b855-863f85a223ef" value="false" />
         <entry key="26592162-9b5f-4987-8382-21826627da05" value="false" />
         <entry key="28bc0333-a4a6-426f-9c49-658cd841d474" value="false" />
         <entry key="28c2f586-3660-4e4c-8f2c-98c6df5e5ef3" value="false" />
+        <entry key="2ac73887-5144-4720-b273-e625611b2d40" value="false" />
         <entry key="2afc9266-bbd1-4203-b3d2-cb9ca34b28aa" value="false" />
         <entry key="2dc01007-1a96-4a48-bd7f-1a3377ad5deb" value="false" />
         <entry key="3284eef2-7c6a-44e7-975e-5e90355866ef" value="false" />
@@ -3372,6 +3471,7 @@
         <entry key="9b19a332-e6e9-41ba-96f8-b67095b80246" value="false" />
         <entry key="9e03dec7-1622-4e2e-a236-b24010854147" value="false" />
         <entry key="9e1d4fc2-562f-46b3-a119-34c6375f2f09" value="false" />
+        <entry key="9f486a0f-6bb9-48a8-80df-7eaa6071fea0" value="false" />
         <entry key="a0367c17-164e-435b-937e-8c886a310115" value="false" />
         <entry key="a2bceb2a-4d74-4138-aef7-2d494c463201" value="false" />
         <entry key="a693e3b5-c9df-46b8-bf90-b9fac71be98e" value="false" />
@@ -3400,6 +3500,7 @@
         <entry key="d0c9b4a2-a0f3-4d42-b770-785a40c3e877" value="false" />
         <entry key="d1b905d4-c2cf-4dce-bdad-d35e241c0de8" value="false" />
         <entry key="d3156078-5bbc-435a-baa1-d9efd02595cb" value="false" />
+        <entry key="d5b51295-d640-4b1d-ac20-fadb30f0b4e4" value="false" />
         <entry key="d8e0efed-9758-426f-bb8b-9704e50e9092" value="false" />
         <entry key="d9ded76b-21f3-4fa5-8517-bd1904c8dd3b" value="false" />
         <entry key="da9fb45f-e0ff-4489-8e56-d2d0eb1963ff" value="false" />
@@ -3411,6 +3512,7 @@
         <entry key="ec9a32ef-a3aa-457b-8699-64e3d8cfb907" value="false" />
         <entry key="ed8d88e4-7b51-42c0-b210-4035a2366944" value="false" />
         <entry key="eea4893e-a39c-4c3b-990a-772d4f677244" value="false" />
+        <entry key="ef46c0de-526d-48cc-a945-909ad4f58de3" value="false" />
         <entry key="f10d8a1f-478d-434c-bc97-9365e3bd1bd5" value="false" />
         <entry key="f1c6c0ef-1ead-438b-a78e-6573c0c194a3" value="false" />
         <entry key="f2dff384-92fa-4ca3-a8cb-5c1701f2f9ef" value="false" />
@@ -3421,7 +3523,7 @@
   </component>
   <component name="LanguageUsageStatistics">
     <language id="C++">
-      <summary usageCount="147" lastUsage="1774370514805" />
+      <summary usageCount="153" lastUsage="1775054220293" />
     </language>
     <language id="CMake">
       <summary usageCount="20" lastUsage="1774162408293" />
@@ -3608,13 +3710,13 @@
     </option>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="296093000" />
+    <option name="totallyTimeSpent" value="313544000" />
   </component>
   <component name="ToolWindowManager">
     <layoutV2>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5080049" visible="true" weight="0.17645201" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.51363635" visible="true" weight="0.17645201" />
       <window_info id="Commit" order="1" weight="0.1554445" />
-      <window_info active="true" id="Structure" order="2" sideWeight="0.4919951" side_tool="true" visible="true" weight="0.17645201" />
+      <window_info active="true" id="Structure" order="2" sideWeight="0.48636365" side_tool="true" visible="true" weight="0.17645201" />
       <window_info id="Pull Requests" order="3" weight="0.1554445" />
       <window_info anchor="bottom" id="Version Control" order="0" weight="0.32987142" />
       <window_info anchor="bottom" id="Problems" order="1" />
@@ -3623,7 +3725,7 @@
       <window_info anchor="bottom" id="Services" order="4" weight="0.32987142" />
       <window_info anchor="bottom" id="CMake" order="5" weight="0.33427602" />
       <window_info anchor="bottom" id="Messages" order="6" weight="0.3338889" />
-      <window_info active="true" anchor="bottom" x="814" y="-21" width="786" height="436" id="Run" maximized="true" order="7" type="WINDOWED" weight="0.6892202" />
+      <window_info anchor="bottom" x="814" y="-21" width="786" height="436" id="Run" maximized="true" order="7" show_stripe_button="false" type="WINDOWED" weight="0.6892202" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.32987142" />
       <window_info anchor="bottom" id="Python Packages" order="9" weight="0.32975113" />
       <window_info anchor="bottom" id="PythonProcessOutput" order="10" weight="0.32987142" />
@@ -3723,21 +3825,25 @@
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="738" y="283" width="426" height="497" key="FileChooserDialogImpl/0.0.1600.900@0.0.1600.900" timestamp="1774162627158" />
-    <state width="780" height="357" key="GridCell.Tab.0.bottom" timestamp="1774543030658">
+    <state width="780" height="357" key="GridCell.Tab.0.bottom" timestamp="1774812771132">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
+    <state width="780" height="357" key="GridCell.Tab.0.bottom/0.0.1600.900/1600.0.1024.768@0.0.1600.900" timestamp="1774812771132" />
     <state width="780" height="357" key="GridCell.Tab.0.bottom/0.0.1600.900@0.0.1600.900" timestamp="1774543030658" />
-    <state width="780" height="357" key="GridCell.Tab.0.center" timestamp="1774543030658">
+    <state width="780" height="357" key="GridCell.Tab.0.center" timestamp="1774812771132">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
+    <state width="780" height="357" key="GridCell.Tab.0.center/0.0.1600.900/1600.0.1024.768@0.0.1600.900" timestamp="1774812771132" />
     <state width="780" height="357" key="GridCell.Tab.0.center/0.0.1600.900@0.0.1600.900" timestamp="1774543030658" />
-    <state width="780" height="357" key="GridCell.Tab.0.left" timestamp="1774543030658">
+    <state width="780" height="357" key="GridCell.Tab.0.left" timestamp="1774812771132">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
+    <state width="780" height="357" key="GridCell.Tab.0.left/0.0.1600.900/1600.0.1024.768@0.0.1600.900" timestamp="1774812771132" />
     <state width="780" height="357" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1774543030658" />
-    <state width="780" height="357" key="GridCell.Tab.0.right" timestamp="1774543030658">
+    <state width="780" height="357" key="GridCell.Tab.0.right" timestamp="1774812771132">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
+    <state width="780" height="357" key="GridCell.Tab.0.right/0.0.1600.900/1600.0.1024.768@0.0.1600.900" timestamp="1774812771132" />
     <state width="780" height="357" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1774543030658" />
     <state x="459" y="137" width="1600" height="900" key="SettingsEditor" timestamp="1773963845239">
       <screen x="0" y="0" width="1600" height="900" />
@@ -3786,57 +3892,19 @@
     <entry file="file://$PROJECT_DIR$/src/clsUser.cpp" />
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt" />
     <entry file="file://$PROJECT_DIR$/include/clsUser.h" />
-    <entry file="file://$PROJECT_DIR$/include/Util.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/Clients.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/clsPerson.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/clsDbObject.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/clsATMController.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="22" column="40" lean-forward="true" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/clsClient.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="696">
-          <caret line="31" column="21" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/clsATMController.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/clsClient.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="14" column="34" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/include/Util.h" />
+    <entry file="file://$PROJECT_DIR$/data/Clients.txt" />
+    <entry file="file://$PROJECT_DIR$/include/clsPerson.h" />
+    <entry file="file://$PROJECT_DIR$/include/clsDbObject.h" />
+    <entry file="file://$PROJECT_DIR$/src/main.cpp" />
+    <entry file="file://$PROJECT_DIR$/src/clsATMController.cpp" />
+    <entry file="file://$PROJECT_DIR$/src/clsClient.cpp" />
+    <entry file="file://$PROJECT_DIR$/include/clsATMController.h" />
+    <entry file="file://$PROJECT_DIR$/include/clsClient.h" />
     <entry file="file://$PROJECT_DIR$/src/Test_Of_OOP.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-576">
-          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+        <state relative-caret-position="456">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
     </entry>

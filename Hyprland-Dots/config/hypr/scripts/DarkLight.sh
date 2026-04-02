@@ -252,3 +252,6 @@ notify-send -u low -i "$notif" " Themes switched to:" " $next_mode Mode"
 
 exit 0
 
+
+exit 0
+

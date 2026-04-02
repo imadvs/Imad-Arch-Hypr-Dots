@@ -25,6 +25,7 @@
         <entry key="38a4567f-f59b-4508-a7ac-b3c49c0198b6" value="false" />
         <entry key="3cdcfd88-4e7a-4c8f-9281-dd50f1df33de" value="false" />
         <entry key="4028ec44-58a2-401c-b37f-6bf9ff0e6afd" value="false" />
+        <entry key="44639c70-973f-43c6-9156-d98f210c47aa" value="false" />
         <entry key="48095878-7ac8-45f8-be64-e265254725cc" value="false" />
         <entry key="4bc8d75e-a38b-40a5-9187-c51a91b57b8e" value="false" />
         <entry key="5431cd0d-70c4-497f-998a-1f8ccc00e5a6" value="false" />
@@ -3336,8 +3337,8 @@
   <component name="FileTypeUsageLocalSummary"><![CDATA[{
   "data": {
     "C/C++": {
-      "usageCount": 119,
-      "lastUsed": 1775054220276
+      "usageCount": 120,
+      "lastUsed": 1775136414005
     },
     "CMakeLists.txt": {
       "usageCount": 20,
@@ -3435,6 +3436,7 @@
         <entry key="38a4567f-f59b-4508-a7ac-b3c49c0198b6" value="false" />
         <entry key="3cdcfd88-4e7a-4c8f-9281-dd50f1df33de" value="false" />
         <entry key="4028ec44-58a2-401c-b37f-6bf9ff0e6afd" value="false" />
+        <entry key="44639c70-973f-43c6-9156-d98f210c47aa" value="false" />
         <entry key="48095878-7ac8-45f8-be64-e265254725cc" value="false" />
         <entry key="4bc8d75e-a38b-40a5-9187-c51a91b57b8e" value="false" />
         <entry key="5431cd0d-70c4-497f-998a-1f8ccc00e5a6" value="false" />
@@ -3523,7 +3525,7 @@
   </component>
   <component name="LanguageUsageStatistics">
     <language id="C++">
-      <summary usageCount="153" lastUsage="1775054220293" />
+      <summary usageCount="154" lastUsage="1775136414016" />
     </language>
     <language id="CMake">
       <summary usageCount="20" lastUsage="1774162408293" />
@@ -3710,13 +3712,13 @@
     </option>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="313544000" />
+    <option name="totallyTimeSpent" value="314772000" />
   </component>
   <component name="ToolWindowManager">
     <layoutV2>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.51363635" visible="true" weight="0.17645201" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.51416254" visible="true" weight="0.17645201" />
       <window_info id="Commit" order="1" weight="0.1554445" />
-      <window_info active="true" id="Structure" order="2" sideWeight="0.48636365" side_tool="true" visible="true" weight="0.17645201" />
+      <window_info active="true" id="Structure" order="2" sideWeight="0.48583746" side_tool="true" visible="true" weight="0.17645201" />
       <window_info id="Pull Requests" order="3" weight="0.1554445" />
       <window_info anchor="bottom" id="Version Control" order="0" weight="0.32987142" />
       <window_info anchor="bottom" id="Problems" order="1" />

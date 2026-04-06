@@ -60,8 +60,8 @@ hyprctl dispatch splitratio 0.15
 echo "Visiting Workspace 4..."
 hyprctl dispatch workspace 4
 sleep 1
-echo "Launching YouTube Music..."
-uwsm app -- google-chrome-stable --class="chrome-youtubemusic" --password-store=basic --new-window --app="https://music.youtube.com" &
+echo "Launching RMPC..."
+uwsm app -- kitty --class "rmpc" --title "RMPC" -e rmpc &
 sleep 2
 
 echo "Launching Pomofocus..."

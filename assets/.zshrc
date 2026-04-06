@@ -56,3 +56,9 @@ alias mirrors='sudo cachyos-rate-mirrors'
 
 alias siteblock='/home/imad/.config/hypr/UserScripts/siteblock'
 alias siteblock='/home/imad/.config/hypr/UserScripts/siteblock'
+alias fixconfig='cd ~/.config && aider --model groq/llama-3.3-70b-versatile'
+source ~/.my_secrets
+
+
+
+alias ytdl='/home/imad/.config/hypr/UserScripts/ytdl-music.sh'

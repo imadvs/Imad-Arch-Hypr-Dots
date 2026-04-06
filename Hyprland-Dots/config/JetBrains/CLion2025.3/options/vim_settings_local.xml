@@ -233,26 +233,6 @@
       <jump line="5" column="6" filename="$USER_HOME$/Documents/Project 1 L4 - Bank Extension 2/include/clsPerson.h" protocol="file" />
     </project>
     <project id="Project1L4BankExtension2-e97d37cd">
-      <jump line="0" column="0" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/include/clsUser.h" protocol="file" />
-      <jump line="0" column="0" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/main.cpp" protocol="file" />
-      <jump line="5" column="0" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/main.cpp" protocol="file" />
-      <jump line="0" column="0" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/data/Clients.txt" protocol="file" />
-      <jump line="0" column="0" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/include/clsClient.h" protocol="file" />
-      <jump line="0" column="0" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/include/clsDbObject.h" protocol="file" />
-      <jump line="0" column="0" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/include/clsPerson.h" protocol="file" />
-      <jump line="0" column="0" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/include/Util.h" protocol="file" />
-      <jump line="0" column="0" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/clsClient.cpp" protocol="file" />
-      <jump line="0" column="0" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/clsATMController.cpp" protocol="file" />
-      <jump line="6" column="0" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/main.cpp" protocol="file" />
-      <jump line="47" column="23" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/clsATMController.cpp" protocol="file" />
-      <jump line="65" column="25" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/clsATMController.cpp" protocol="file" />
-      <jump line="70" column="19" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/clsATMController.cpp" protocol="file" />
-      <jump line="105" column="23" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/clsATMController.cpp" protocol="file" />
-      <jump line="115" column="30" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/clsATMController.cpp" protocol="file" />
-      <jump line="23" column="16" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/clsClient.cpp" protocol="file" />
-      <jump line="26" column="20" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/clsATMController.cpp" protocol="file" />
-      <jump line="135" column="58" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/clsATMController.cpp" protocol="file" />
-      <jump line="8" column="19" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/clsATMController.cpp" protocol="file" />
       <jump line="97" column="46" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/clsATMController.cpp" protocol="file" />
       <jump line="96" column="37" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/clsATMController.cpp" protocol="file" />
       <jump line="75" column="21" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/clsClient.cpp" protocol="file" />
@@ -285,48 +265,74 @@
       <jump line="51" column="0" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
       <jump line="11" column="9" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
       <jump line="20" column="4" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
-      <jump line="31" column="23" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
       <jump line="25" column="35" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
       <jump line="30" column="35" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
       <jump line="40" column="35" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
       <jump line="57" column="21" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
       <jump line="32" column="35" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
       <jump line="44" column="8" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
-      <jump line="42" column="9" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
-      <jump line="50" column="23" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
       <jump line="93" column="1" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
       <jump line="78" column="29" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
-      <jump line="75" column="19" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
       <jump line="6" column="26" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
       <jump line="12" column="4" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
       <jump line="67" column="5" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
       <jump line="62" column="49" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
       <jump line="24" column="1" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
       <jump line="73" column="21" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
-      <jump line="70" column="20" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
-      <jump line="21" column="21" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
       <jump line="10" column="9" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
       <jump line="66" column="1" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
       <jump line="37" column="1" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
-      <jump line="27" column="63" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
       <jump line="1" column="0" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
       <jump line="17" column="22" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
       <jump line="35" column="1" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
       <jump line="29" column="61" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
-      <jump line="19" column="0" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
       <jump line="23" column="0" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
       <jump line="26" column="1" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
       <jump line="18" column="65" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
-      <jump line="0" column="0" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
-      <jump line="5" column="0" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
-      <jump line="3" column="0" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
-      <jump line="2" column="15" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
       <jump line="7" column="26" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
       <jump line="9" column="23" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
       <jump line="15" column="15" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
-      <jump line="13" column="10" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
       <jump line="14" column="1" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
       <jump line="16" column="5" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
+      <jump line="22" column="0" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
+      <jump line="19" column="0" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
+      <jump line="21" column="19" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
+      <jump line="41" column="22" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
+      <jump line="27" column="11" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
+      <jump line="31" column="11" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
+      <jump line="34" column="5" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
+      <jump line="38" column="5" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
+      <jump line="39" column="11" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
+      <jump line="46" column="5" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
+      <jump line="47" column="11" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
+      <jump line="50" column="5" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
+      <jump line="5" column="15" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
+      <jump line="55" column="4" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
+      <jump line="42" column="5" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
+      <jump line="65" column="44" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
+      <jump line="64" column="52" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
+      <jump line="74" column="20" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
+      <jump line="70" column="85" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
+      <jump line="58" column="5" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
+      <jump line="59" column="7" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
+      <jump line="87" column="47" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
+      <jump line="75" column="5" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
+      <jump line="82" column="9" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
+      <jump line="81" column="1" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
+      <jump line="83" column="0" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
+      <jump line="76" column="48" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
+      <jump line="106" column="46" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
+      <jump line="107" column="5" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
+      <jump line="2" column="14" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
+      <jump line="114" column="27" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
+      <jump line="108" column="0" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
+      <jump line="111" column="3" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
+      <jump line="91" column="4" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
+      <jump line="136" column="2" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
+      <jump line="139" column="7" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
+      <jump line="13" column="26" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
+      <jump line="3" column="14" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" protocol="file" />
     </project>
   </component>
   <component name="VimMarksSettings">
@@ -353,12 +359,8 @@
       <file name="$USER_HOME$/Documents/Project 1 L4 - Bank Extension 2/include/Util.h" timestamp="1774162560283">
         <mark key="&quot;" line="3" column="0" />
       </file>
-      <file name="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" timestamp="1774717082268">
+      <file name="$USER_HOME$/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp" timestamp="1775387249720">
         <mark key="'" line="0" column="0" />
-        <mark key="[" line="6" column="11" />
-        <mark key="]" line="6" column="12" />
-        <mark key="." line="6" column="11" />
-        <mark key="^" line="6" column="12" />
       </file>
       <file name="$USER_HOME$/Documents/Project 2 L4 - ATM System/include/clsUser.h" timestamp="1774163295645">
         <mark key="&quot;" line="0" column="0" />
@@ -404,53 +406,53 @@
   </component>
   <component name="VimRegisterSettings">
     <registers>
-      <register name="&quot;" type="CHARACTER_WISE">
-        <text encoding="base64">Y2xzQQ==</text>
+      <register name="&quot;" type="LINE_WISE">
+        <text encoding="base64">I2luY2x1ZGUgPGlvc3RyZWFtPgp1c2luZyBuYW1lc3BhY2Ugc3RkOwoKY2xhc3MgY2xzUGVyc29uCnsKcHJpdmF0ZToKICAgIGludCBfSUQgPSAwOwogICAgc3RyaW5nIF9GaXJzdE5hbWUgPSAiIjsKICAgIHN0cmluZyBfTGFzdE5hbWUgPSAiIjsKICAgIHN0cmluZyBfRW1haWwgPSAiIjsKICAgIHN0cmluZyBfUGhvbmUgPSAiIjsKCnB1YmxpYzoKICAgIGNsc1BlcnNvbihpbnQgSUQsIHN0cmluZyBGaXJzdE5hbWUsIHN0cmluZyBMYXN0TmFtZSwgc3RyaW5nIEVtYWlsLCBzdHJpbmcgUGhvbmUpCiAgICB7CiAgICAgICAgX0lEID0gSUQ7CiAgICAgICAgX0ZpcnN0TmFtZSA9IEZpcnN0TmFtZTsKICAgICAgICBfTGFzdE5hbWUgPSBMYXN0TmFtZTsKICAgICAgICBfRW1haWwgPSBFbWFpbDsKICAgICAgICBfUGhvbmUgPSBQaG9uZTsKICAgIH0KCiAgICBpbnQgSUQoKQogICAgewogICAgICAgIHJldHVybiBfSUQ7CiAgICB9CgogICAgdm9pZCBzZXRGaXJzdE5hbWUoc3RyaW5nIEZpcnN0TmFtZSkKICAgIHsKICAgICAgICBfRmlyc3ROYW1lID0gRmlyc3ROYW1lOwogICAgfQoKICAgIHN0cmluZyBGaXJzdE5hbWUoKQogICAgewogICAgICAgIHJldHVybiBfRmlyc3ROYW1lOwogICAgfQoKICAgIHZvaWQgc2V0TGFzdE5hbWUoc3RyaW5nIExhc3ROYW1lKQogICAgewogICAgICAgIF9MYXN0TmFtZSA9IExhc3ROYW1lOwogICAgfQoKICAgIHN0cmluZyBMYXN0TmFtZSgpCiAgICB7CiAgICAgICAgcmV0dXJuIF9MYXN0TmFtZTsKICAgIH0KCiAgICBzdHJpbmcgRnVsbE5hbWUoKQogICAgewogICAgICAgIHJldHVybiBfRmlyc3ROYW1lICsgIiAiICsgX0xhc3ROYW1lOwogICAgfQoKICAgIHZvaWQgc2V0RW1haWwoc3RyaW5nIEVtYWlsKQogICAgewogICAgICAgIF9FbWFpbCA9IEVtYWlsOwogICAgfQoKICAgIHN0cmluZyBFbWFpbCgpCiAgICB7CiAgICAgICAgcmV0dXJuIF9FbWFpbDsKICAgIH0KCiAgICB2b2lkIHNldFBob25lKHN0cmluZyBQaG9uZSkKICAgIHsKICAgICAgICBfUGhvbmUgPSBQaG9uZTsKICAgIH0KCiAgICBzdHJpbmcgUGhvbmUoKQogICAgewogICAgICAgIHJldHVybiBfUGhvbmU7CiAgICB9CgogICAgdm9pZCBQcmludCgpCiAgICB7CiAgICAgICAgY291dCA8PCAiSUQ6ICIgPDwgX0lEIDw8IGVuZGw7CiAgICAgICAgY291dCA8PCAiRmlyc3QgTmFtZTogIiA8PCBfRmlyc3ROYW1lIDw8IGVuZGw7CiAgICAgICAgY291dCA8PCAiTGFzdCBOYW1lOiAiIDw8IF9MYXN0TmFtZSA8PCBlbmRsOwogICAgICAgIGNvdXQgPDwgIkZ1bGwgTmFtZTogIiA8PCBGdWxsTmFtZSgpIDw8IGVuZGw7CiAgICAgICAgY291dCA8PCAiRW1haWw6ICIgPDwgX0VtYWlsIDw8IGVuZGw7CiAgICAgICAgY291dCA8PCAiUGhvbmU6ICIgPDwgX1Bob25lIDw8IGVuZGw7CiAgICB9CgogICAgdm9pZCBTZW5kRW1haWwoc3RyaW5nIFN1YmplY3QsIHN0cmluZyBNZXNzYWdlKQogICAgewogICAgICAgIGNvdXQgPDwgIlRoZSBmb2xsb3dpbmcgbWVzc2FnZSBzZW50IHN1Y2Nlc3NmdWxseSB0byBtYWlsOiAiIDw8IF9FbWFpbCA8PCBlbmRsOwogICAgICAgIGNvdXQgPDwgIlN1YmplY3Q6ICIgPDwgU3ViamVjdCA8PCBlbmRsOwogICAgICAgIGNvdXQgPDwgIk1lc3NhZ2U6ICIgPDwgTWVzc2FnZSA8PCBlbmRsOwogICAgfQoKICAgIHZvaWQgU2VuZFNNUyhzdHJpbmcgTWVzc2FnZSkKICAgIHsKICAgICAgICBjb3V0IDw8ICJUaGUgZm9sbG93aW5nIG1lc3NhZ2Ugc2VudCBzdWNjZXNzZnVsbHkgdG8gcGhvbmU6ICIgPDwgX1Bob25lIDw8IGVuZGw7CiAgICAgICAgY291dCA8PCAiTWVzc2FnZTogIiA8PCBNZXNzYWdlIDw8IGVuZGw7CiAgICB9Cn07CgpjbGFzcyBjbHNFbXBsb3llZSA6IHB1YmxpYyBjbHNQZXJzb24Kewpwcml2YXRlOgogICAgc3RyaW5nIF9UaXRsZSA9ICIiOwogICAgZmxvYXQgX1NhbGFyeSA9IDA7CiAgICBzdHJpbmcgX0RlcGFydG1lbnQgPSAiIjsKCnB1YmxpYzoKICAgIGNsc0VtcGxveWVlKGludCBJRCwgc3RyaW5nIEZpcnN0TmFtZSwgc3RyaW5nIExhc3ROYW1lLCBzdHJpbmcgRW1haWwsIHN0cmluZyBQaG9uZSwKICAgICAgICAgICAgICAgIHN0cmluZyBUaXRsZSwgZmxvYXQgU2FsYXJ5LCBzdHJpbmcgRGVwYXJ0bWVudCkKICAgICAgICA6IGNsc1BlcnNvbihJRCwgRmlyc3ROYW1lLCBMYXN0TmFtZSwgRW1haWwsIFBob25lKQogICAgewogICAgICAgIF9UaXRsZSA9IFRpdGxlOwogICAgICAgIF9TYWxhcnkgPSBTYWxhcnk7CiAgICAgICAgX0RlcGFydG1lbnQgPSBEZXBhcnRtZW50OwogICAgfQoKICAgIHZvaWQgc2V0VGl0bGUoc3RyaW5nIFRpdGxlKQogICAgewogICAgICAgIF9UaXRsZSA9IFRpdGxlOwogICAgfQoKICAgIHN0cmluZyBUaXRsZSgpCiAgICB7CiAgICAgICAgcmV0dXJuIF9UaXRsZTsKICAgIH0KCiAgICB2b2lkIHNldFNhbGFyeShmbG9hdCBTYWxhcnkpCiAgICB7CiAgICAgICAgX1NhbGFyeSA9IFNhbGFyeTsKICAgIH0KCiAgICBmbG9hdCBTYWxhcnkoKQogICAgewogICAgICAgIHJldHVybiBfU2FsYXJ5OwogICAgfQoKICAgIHZvaWQgc2V0RGVwYXJ0bWVudChzdHJpbmcgRGVwYXJ0bWVudCkKICAgIHsKICAgICAgICBfRGVwYXJ0bWVudCA9IERlcGFydG1lbnQ7CiAgICB9CgogICAgc3RyaW5nIERlcGFydG1lbnQoKQogICAgewogICAgICAgIHJldHVybiBfRGVwYXJ0bWVudDsKICAgIH0KCiAgICB2b2lkIFByaW50KCkKICAgIHsKICAgICAgICBjbHNQZXJzb246OlByaW50KCk7CiAgICAgICAgY291dCA8PCAiVGl0bGU6ICIgPDwgX1RpdGxlIDw8IGVuZGw7CiAgICAgICAgY291dCA8PCAiU2FsYXJ5OiAiIDw8IF9TYWxhcnkgPDwgZW5kbDsKICAgICAgICBjb3V0IDw8ICJEZXBhcnRtZW50OiAiIDw8IF9EZXBhcnRtZW50IDw8IGVuZGw7CiAgICB9Cn07CgppbnQgbWFpbigpCnsKICAgIGNsc0VtcGxveWVlIGVtcCgxLCAiSm9obiIsICJEb2UiLCAiam9obkBleGFtcGxlLmNvbSIsICIwMTIzNDU2Nzg5IiwgIk1hbmFnZXIiLCAxMDAwMCwgIklUIik7CgogICAgZW1wLlByaW50KCk7CiAgICBlbXAuU2VuZEVtYWlsKCJTdWJqZWN0IiwgIk1lc3NhZ2UiKTsKICAgIGVtcC5TZW5kU01TKCJNZXNzYWdlIik7CgogICAgcmV0dXJuIDA7Cn0K</text>
       </register>
-      <register name="+" type="CHARACTER_WISE">
-        <text encoding="base64">Y2xzQQ==</text>
+      <register name="+" type="LINE_WISE">
+        <text encoding="base64">I2luY2x1ZGUgPGlvc3RyZWFtPgp1c2luZyBuYW1lc3BhY2Ugc3RkOwoKY2xhc3MgY2xzUGVyc29uCnsKcHJpdmF0ZToKICAgIGludCBfSUQgPSAwOwogICAgc3RyaW5nIF9GaXJzdE5hbWUgPSAiIjsKICAgIHN0cmluZyBfTGFzdE5hbWUgPSAiIjsKICAgIHN0cmluZyBfRW1haWwgPSAiIjsKICAgIHN0cmluZyBfUGhvbmUgPSAiIjsKCnB1YmxpYzoKICAgIGNsc1BlcnNvbihpbnQgSUQsIHN0cmluZyBGaXJzdE5hbWUsIHN0cmluZyBMYXN0TmFtZSwgc3RyaW5nIEVtYWlsLCBzdHJpbmcgUGhvbmUpCiAgICB7CiAgICAgICAgX0lEID0gSUQ7CiAgICAgICAgX0ZpcnN0TmFtZSA9IEZpcnN0TmFtZTsKICAgICAgICBfTGFzdE5hbWUgPSBMYXN0TmFtZTsKICAgICAgICBfRW1haWwgPSBFbWFpbDsKICAgICAgICBfUGhvbmUgPSBQaG9uZTsKICAgIH0KCiAgICBpbnQgSUQoKQogICAgewogICAgICAgIHJldHVybiBfSUQ7CiAgICB9CgogICAgdm9pZCBzZXRGaXJzdE5hbWUoc3RyaW5nIEZpcnN0TmFtZSkKICAgIHsKICAgICAgICBfRmlyc3ROYW1lID0gRmlyc3ROYW1lOwogICAgfQoKICAgIHN0cmluZyBGaXJzdE5hbWUoKQogICAgewogICAgICAgIHJldHVybiBfRmlyc3ROYW1lOwogICAgfQoKICAgIHZvaWQgc2V0TGFzdE5hbWUoc3RyaW5nIExhc3ROYW1lKQogICAgewogICAgICAgIF9MYXN0TmFtZSA9IExhc3ROYW1lOwogICAgfQoKICAgIHN0cmluZyBMYXN0TmFtZSgpCiAgICB7CiAgICAgICAgcmV0dXJuIF9MYXN0TmFtZTsKICAgIH0KCiAgICBzdHJpbmcgRnVsbE5hbWUoKQogICAgewogICAgICAgIHJldHVybiBfRmlyc3ROYW1lICsgIiAiICsgX0xhc3ROYW1lOwogICAgfQoKICAgIHZvaWQgc2V0RW1haWwoc3RyaW5nIEVtYWlsKQogICAgewogICAgICAgIF9FbWFpbCA9IEVtYWlsOwogICAgfQoKICAgIHN0cmluZyBFbWFpbCgpCiAgICB7CiAgICAgICAgcmV0dXJuIF9FbWFpbDsKICAgIH0KCiAgICB2b2lkIHNldFBob25lKHN0cmluZyBQaG9uZSkKICAgIHsKICAgICAgICBfUGhvbmUgPSBQaG9uZTsKICAgIH0KCiAgICBzdHJpbmcgUGhvbmUoKQogICAgewogICAgICAgIHJldHVybiBfUGhvbmU7CiAgICB9CgogICAgdm9pZCBQcmludCgpCiAgICB7CiAgICAgICAgY291dCA8PCAiSUQ6ICIgPDwgX0lEIDw8IGVuZGw7CiAgICAgICAgY291dCA8PCAiRmlyc3QgTmFtZTogIiA8PCBfRmlyc3ROYW1lIDw8IGVuZGw7CiAgICAgICAgY291dCA8PCAiTGFzdCBOYW1lOiAiIDw8IF9MYXN0TmFtZSA8PCBlbmRsOwogICAgICAgIGNvdXQgPDwgIkZ1bGwgTmFtZTogIiA8PCBGdWxsTmFtZSgpIDw8IGVuZGw7CiAgICAgICAgY291dCA8PCAiRW1haWw6ICIgPDwgX0VtYWlsIDw8IGVuZGw7CiAgICAgICAgY291dCA8PCAiUGhvbmU6ICIgPDwgX1Bob25lIDw8IGVuZGw7CiAgICB9CgogICAgdm9pZCBTZW5kRW1haWwoc3RyaW5nIFN1YmplY3QsIHN0cmluZyBNZXNzYWdlKQogICAgewogICAgICAgIGNvdXQgPDwgIlRoZSBmb2xsb3dpbmcgbWVzc2FnZSBzZW50IHN1Y2Nlc3NmdWxseSB0byBtYWlsOiAiIDw8IF9FbWFpbCA8PCBlbmRsOwogICAgICAgIGNvdXQgPDwgIlN1YmplY3Q6ICIgPDwgU3ViamVjdCA8PCBlbmRsOwogICAgICAgIGNvdXQgPDwgIk1lc3NhZ2U6ICIgPDwgTWVzc2FnZSA8PCBlbmRsOwogICAgfQoKICAgIHZvaWQgU2VuZFNNUyhzdHJpbmcgTWVzc2FnZSkKICAgIHsKICAgICAgICBjb3V0IDw8ICJUaGUgZm9sbG93aW5nIG1lc3NhZ2Ugc2VudCBzdWNjZXNzZnVsbHkgdG8gcGhvbmU6ICIgPDwgX1Bob25lIDw8IGVuZGw7CiAgICAgICAgY291dCA8PCAiTWVzc2FnZTogIiA8PCBNZXNzYWdlIDw8IGVuZGw7CiAgICB9Cn07CgpjbGFzcyBjbHNFbXBsb3llZSA6IHB1YmxpYyBjbHNQZXJzb24Kewpwcml2YXRlOgogICAgc3RyaW5nIF9UaXRsZSA9ICIiOwogICAgZmxvYXQgX1NhbGFyeSA9IDA7CiAgICBzdHJpbmcgX0RlcGFydG1lbnQgPSAiIjsKCnB1YmxpYzoKICAgIGNsc0VtcGxveWVlKGludCBJRCwgc3RyaW5nIEZpcnN0TmFtZSwgc3RyaW5nIExhc3ROYW1lLCBzdHJpbmcgRW1haWwsIHN0cmluZyBQaG9uZSwKICAgICAgICAgICAgICAgIHN0cmluZyBUaXRsZSwgZmxvYXQgU2FsYXJ5LCBzdHJpbmcgRGVwYXJ0bWVudCkKICAgICAgICA6IGNsc1BlcnNvbihJRCwgRmlyc3ROYW1lLCBMYXN0TmFtZSwgRW1haWwsIFBob25lKQogICAgewogICAgICAgIF9UaXRsZSA9IFRpdGxlOwogICAgICAgIF9TYWxhcnkgPSBTYWxhcnk7CiAgICAgICAgX0RlcGFydG1lbnQgPSBEZXBhcnRtZW50OwogICAgfQoKICAgIHZvaWQgc2V0VGl0bGUoc3RyaW5nIFRpdGxlKQogICAgewogICAgICAgIF9UaXRsZSA9IFRpdGxlOwogICAgfQoKICAgIHN0cmluZyBUaXRsZSgpCiAgICB7CiAgICAgICAgcmV0dXJuIF9UaXRsZTsKICAgIH0KCiAgICB2b2lkIHNldFNhbGFyeShmbG9hdCBTYWxhcnkpCiAgICB7CiAgICAgICAgX1NhbGFyeSA9IFNhbGFyeTsKICAgIH0KCiAgICBmbG9hdCBTYWxhcnkoKQogICAgewogICAgICAgIHJldHVybiBfU2FsYXJ5OwogICAgfQoKICAgIHZvaWQgc2V0RGVwYXJ0bWVudChzdHJpbmcgRGVwYXJ0bWVudCkKICAgIHsKICAgICAgICBfRGVwYXJ0bWVudCA9IERlcGFydG1lbnQ7CiAgICB9CgogICAgc3RyaW5nIERlcGFydG1lbnQoKQogICAgewogICAgICAgIHJldHVybiBfRGVwYXJ0bWVudDsKICAgIH0KCiAgICB2b2lkIFByaW50KCkKICAgIHsKICAgICAgICBjbHNQZXJzb246OlByaW50KCk7CiAgICAgICAgY291dCA8PCAiVGl0bGU6ICIgPDwgX1RpdGxlIDw8IGVuZGw7CiAgICAgICAgY291dCA8PCAiU2FsYXJ5OiAiIDw8IF9TYWxhcnkgPDwgZW5kbDsKICAgICAgICBjb3V0IDw8ICJEZXBhcnRtZW50OiAiIDw8IF9EZXBhcnRtZW50IDw8IGVuZGw7CiAgICB9Cn07CgppbnQgbWFpbigpCnsKICAgIGNsc0VtcGxveWVlIGVtcCgxLCAiSm9obiIsICJEb2UiLCAiam9obkBleGFtcGxlLmNvbSIsICIwMTIzNDU2Nzg5IiwgIk1hbmFnZXIiLCAxMDAwMCwgIklUIik7CgogICAgZW1wLlByaW50KCk7CiAgICBlbXAuU2VuZEVtYWlsKCJTdWJqZWN0IiwgIk1lc3NhZ2UiKTsKICAgIGVtcC5TZW5kU01TKCJNZXNzYWdlIik7CgogICAgcmV0dXJuIDA7Cn0K</text>
       </register>
       <register name="-" type="CHARACTER_WISE">
-        <text encoding="base64">Y2xzQQ==</text>
+        <text encoding="base64">TWFuYWdlbWVudA==</text>
       </register>
       <register name="." type="CHARACTER_WISE">
-        <text encoding="base64">Xw==</text>
+        <text encoding="base64">IA==</text>
       </register>
       <register name="/" type="CHARACTER_WISE">
         <text encoding="base64">bWFpbg==</text>
       </register>
       <register name="0" type="LINE_WISE">
-        <text encoding="base64">I2luY2x1ZGUgPGlvc3RyZWFtPgp1c2luZyBuYW1lc3BhY2Ugc3RkOwpjbGFzcyBjbHNBCnsKcHVibGljOgogICAgc3RhdGljIGludCBGdW5jdGlvbjEoKQogICAgewogICAgICAgIHJldHVybiAxMDsKICAgIH0KICAgIGludCBGdW5jdGlvbjIoKQogICAgewogICAgICAgIHJldHVybiAyMDsKICAgIH0KfTsKaW50IG1haW4oKQp7CiAgICAvL1RoZSBmb2xsb3dpbmcgbGluZSBjYWxscyBzdGF0aWMgZnVuY3Rpb24gZGlyZWN0bHkgdmlhIGNsYXNzIG5vdCB0aHJvdWdoIHRoZSBvYmplY3QKICAgIC8vQXQgY2xhc3MgbGV2ZWwgeW91IGNhbiBjYWxsIG9ubHkgc3RhdGljIG1ldGhvZHMgYW5kIHN0YXRpYyBtZW1iZXJzCiAgICBjb3V0IDw8IGNsc0E6OkZ1bmN0aW9uMSgpIDw8ZW5kbDsKICAgIC8vc3RhdGljIG1ldGhvZHMgY2FuIGFsc28gYmUgY2FsbGVkIHRocm91Z2h0IHRoZSBvYmplY3QuCiAgICBjbHNBIEExLCBBMjsKICAgIGNvdXQgPDwgQTEuRnVuY3Rpb24xKCkgPDwgZW5kbDsKICAgIGNvdXQgPDwgQTEuRnVuY3Rpb24yKCkgPDwgZW5kbDsKICAgIGNvdXQgPDwgQTIuRnVuY3Rpb24xKCkgPDwgZW5kbDsKfQo=</text>
+        <text encoding="base64">I2luY2x1ZGUgPGlvc3RyZWFtPgp1c2luZyBuYW1lc3BhY2Ugc3RkOwoKY2xhc3MgY2xzUGVyc29uCnsKcHJpdmF0ZToKICAgIGludCBfSUQgPSAwOwogICAgc3RyaW5nIF9GaXJzdE5hbWUgPSAiIjsKICAgIHN0cmluZyBfTGFzdE5hbWUgPSAiIjsKICAgIHN0cmluZyBfRW1haWwgPSAiIjsKICAgIHN0cmluZyBfUGhvbmUgPSAiIjsKCnB1YmxpYzoKICAgIGNsc1BlcnNvbihpbnQgSUQsIHN0cmluZyBGaXJzdE5hbWUsIHN0cmluZyBMYXN0TmFtZSwgc3RyaW5nIEVtYWlsLCBzdHJpbmcgUGhvbmUpCiAgICB7CiAgICAgICAgX0lEID0gSUQ7CiAgICAgICAgX0ZpcnN0TmFtZSA9IEZpcnN0TmFtZTsKICAgICAgICBfTGFzdE5hbWUgPSBMYXN0TmFtZTsKICAgICAgICBfRW1haWwgPSBFbWFpbDsKICAgICAgICBfUGhvbmUgPSBQaG9uZTsKICAgIH0KCiAgICBpbnQgSUQoKQogICAgewogICAgICAgIHJldHVybiBfSUQ7CiAgICB9CgogICAgdm9pZCBzZXRGaXJzdE5hbWUoc3RyaW5nIEZpcnN0TmFtZSkKICAgIHsKICAgICAgICBfRmlyc3ROYW1lID0gRmlyc3ROYW1lOwogICAgfQoKICAgIHN0cmluZyBGaXJzdE5hbWUoKQogICAgewogICAgICAgIHJldHVybiBfRmlyc3ROYW1lOwogICAgfQoKICAgIHZvaWQgc2V0TGFzdE5hbWUoc3RyaW5nIExhc3ROYW1lKQogICAgewogICAgICAgIF9MYXN0TmFtZSA9IExhc3ROYW1lOwogICAgfQoKICAgIHN0cmluZyBMYXN0TmFtZSgpCiAgICB7CiAgICAgICAgcmV0dXJuIF9MYXN0TmFtZTsKICAgIH0KCiAgICBzdHJpbmcgRnVsbE5hbWUoKQogICAgewogICAgICAgIHJldHVybiBfRmlyc3ROYW1lICsgIiAiICsgX0xhc3ROYW1lOwogICAgfQoKICAgIHZvaWQgc2V0RW1haWwoc3RyaW5nIEVtYWlsKQogICAgewogICAgICAgIF9FbWFpbCA9IEVtYWlsOwogICAgfQoKICAgIHN0cmluZyBFbWFpbCgpCiAgICB7CiAgICAgICAgcmV0dXJuIF9FbWFpbDsKICAgIH0KCiAgICB2b2lkIHNldFBob25lKHN0cmluZyBQaG9uZSkKICAgIHsKICAgICAgICBfUGhvbmUgPSBQaG9uZTsKICAgIH0KCiAgICBzdHJpbmcgUGhvbmUoKQogICAgewogICAgICAgIHJldHVybiBfUGhvbmU7CiAgICB9CgogICAgdm9pZCBQcmludCgpCiAgICB7CiAgICAgICAgY291dCA8PCAiSUQ6ICIgPDwgX0lEIDw8IGVuZGw7CiAgICAgICAgY291dCA8PCAiRmlyc3QgTmFtZTogIiA8PCBfRmlyc3ROYW1lIDw8IGVuZGw7CiAgICAgICAgY291dCA8PCAiTGFzdCBOYW1lOiAiIDw8IF9MYXN0TmFtZSA8PCBlbmRsOwogICAgICAgIGNvdXQgPDwgIkZ1bGwgTmFtZTogIiA8PCBGdWxsTmFtZSgpIDw8IGVuZGw7CiAgICAgICAgY291dCA8PCAiRW1haWw6ICIgPDwgX0VtYWlsIDw8IGVuZGw7CiAgICAgICAgY291dCA8PCAiUGhvbmU6ICIgPDwgX1Bob25lIDw8IGVuZGw7CiAgICB9CgogICAgdm9pZCBTZW5kRW1haWwoc3RyaW5nIFN1YmplY3QsIHN0cmluZyBNZXNzYWdlKQogICAgewogICAgICAgIGNvdXQgPDwgIlRoZSBmb2xsb3dpbmcgbWVzc2FnZSBzZW50IHN1Y2Nlc3NmdWxseSB0byBtYWlsOiAiIDw8IF9FbWFpbCA8PCBlbmRsOwogICAgICAgIGNvdXQgPDwgIlN1YmplY3Q6ICIgPDwgU3ViamVjdCA8PCBlbmRsOwogICAgICAgIGNvdXQgPDwgIk1lc3NhZ2U6ICIgPDwgTWVzc2FnZSA8PCBlbmRsOwogICAgfQoKICAgIHZvaWQgU2VuZFNNUyhzdHJpbmcgTWVzc2FnZSkKICAgIHsKICAgICAgICBjb3V0IDw8ICJUaGUgZm9sbG93aW5nIG1lc3NhZ2Ugc2VudCBzdWNjZXNzZnVsbHkgdG8gcGhvbmU6ICIgPDwgX1Bob25lIDw8IGVuZGw7CiAgICAgICAgY291dCA8PCAiTWVzc2FnZTogIiA8PCBNZXNzYWdlIDw8IGVuZGw7CiAgICB9Cn07CgpjbGFzcyBjbHNFbXBsb3llZSA6IHB1YmxpYyBjbHNQZXJzb24Kewpwcml2YXRlOgogICAgc3RyaW5nIF9UaXRsZSA9ICIiOwogICAgZmxvYXQgX1NhbGFyeSA9IDA7CiAgICBzdHJpbmcgX0RlcGFydG1lbnQgPSAiIjsKCnB1YmxpYzoKICAgIGNsc0VtcGxveWVlKGludCBJRCwgc3RyaW5nIEZpcnN0TmFtZSwgc3RyaW5nIExhc3ROYW1lLCBzdHJpbmcgRW1haWwsIHN0cmluZyBQaG9uZSwKICAgICAgICAgICAgICAgIHN0cmluZyBUaXRsZSwgZmxvYXQgU2FsYXJ5LCBzdHJpbmcgRGVwYXJ0bWVudCkKICAgICAgICA6IGNsc1BlcnNvbihJRCwgRmlyc3ROYW1lLCBMYXN0TmFtZSwgRW1haWwsIFBob25lKQogICAgewogICAgICAgIF9UaXRsZSA9IFRpdGxlOwogICAgICAgIF9TYWxhcnkgPSBTYWxhcnk7CiAgICAgICAgX0RlcGFydG1lbnQgPSBEZXBhcnRtZW50OwogICAgfQoKICAgIHZvaWQgc2V0VGl0bGUoc3RyaW5nIFRpdGxlKQogICAgewogICAgICAgIF9UaXRsZSA9IFRpdGxlOwogICAgfQoKICAgIHN0cmluZyBUaXRsZSgpCiAgICB7CiAgICAgICAgcmV0dXJuIF9UaXRsZTsKICAgIH0KCiAgICB2b2lkIHNldFNhbGFyeShmbG9hdCBTYWxhcnkpCiAgICB7CiAgICAgICAgX1NhbGFyeSA9IFNhbGFyeTsKICAgIH0KCiAgICBmbG9hdCBTYWxhcnkoKQogICAgewogICAgICAgIHJldHVybiBfU2FsYXJ5OwogICAgfQoKICAgIHZvaWQgc2V0RGVwYXJ0bWVudChzdHJpbmcgRGVwYXJ0bWVudCkKICAgIHsKICAgICAgICBfRGVwYXJ0bWVudCA9IERlcGFydG1lbnQ7CiAgICB9CgogICAgc3RyaW5nIERlcGFydG1lbnQoKQogICAgewogICAgICAgIHJldHVybiBfRGVwYXJ0bWVudDsKICAgIH0KCiAgICB2b2lkIFByaW50KCkKICAgIHsKICAgICAgICBjbHNQZXJzb246OlByaW50KCk7CiAgICAgICAgY291dCA8PCAiVGl0bGU6ICIgPDwgX1RpdGxlIDw8IGVuZGw7CiAgICAgICAgY291dCA8PCAiU2FsYXJ5OiAiIDw8IF9TYWxhcnkgPDwgZW5kbDsKICAgICAgICBjb3V0IDw8ICJEZXBhcnRtZW50OiAiIDw8IF9EZXBhcnRtZW50IDw8IGVuZGw7CiAgICB9Cn07CgppbnQgbWFpbigpCnsKICAgIGNsc0VtcGxveWVlIGVtcCgxLCAiSm9obiIsICJEb2UiLCAiam9obkBleGFtcGxlLmNvbSIsICIwMTIzNDU2Nzg5IiwgIk1hbmFnZXIiLCAxMDAwMCwgIklUIik7CgogICAgZW1wLlByaW50KCk7CiAgICBlbXAuU2VuZEVtYWlsKCJTdWJqZWN0IiwgIk1lc3NhZ2UiKTsKICAgIGVtcC5TZW5kU01TKCJNZXNzYWdlIik7CgogICAgcmV0dXJuIDA7Cn0K</text>
       </register>
       <register name="q" type="CHARACTER_WISE">
         <text encoding="base64" />
       </register>
-      <register name="1" type="LINE_WISE">
-        <text encoding="base64">ICAgIHN0YXRpYyBpbnQgRnVuY3Rpb24xKCkKICAgIHsKICAgICAgICByZXR1cm4gMTA7CiAgICB9CiAgICBpbnQgRnVuY3Rpb24yKCkKICAgIHsKICAgICAgICByZXR1cm4gMjA7CiAgICB9Cg==</text>
+      <register name="1" type="CHARACTER_WISE">
+        <text encoding="base64">Y2xzUGVyc29uIFBlcnNvbjEoMTAsIkltYWQiLCJKYW1qYW1pIiwibXlAZ21haWwuY29tIiwiMDYwOTEyMzQ1NiIpOwogICAgUGVyc29uMS5QcmludCgpOwoKICAgIFBlcnNvbjEuU2VuZGVNYWlsKCJIZWxsbyIsIlRoaXMgaXMgYSB0ZXN0IG1lc3NhZ2UiKTsKICAgIFBlcnNvbjEuU2VuZGVTTVMoIlRoaXMgaXMgYSB0ZXN0IG1lc3NhZ2UiKTs=</text>
       </register>
       <register name="2" type="LINE_WISE">
-        <text encoding="base64">ICAgIC8vVGhlIGZvbGxvd2luZyBsaW5lIGNhbGxzIHN0YXRpYyBmdW5jdGlvbiBkaXJlY3RseSB2aWEgY2xhc3Mgbm90IHRocm91Z2ggdGhlIG9iamVjdAogICAgLy9BdCBjbGFzcyBsZXZlbCB5b3UgY2FuIGNhbGwgb25seSBzdGF0aWMgbWV0aG9kcyBhbmQgc3RhdGljIG1lbWJlcnMKICAgIGNvdXQgPDwgY2xzQTo6RnVuY3Rpb24xKCkgPDxlbmRsOwogICAgLy9zdGF0aWMgbWV0aG9kcyBjYW4gYWxzbyBiZSBjYWxsZWQgdGhyb3VnaHQgdGhlIG9iamVjdC4KICAgIGNsc0EgQTEsIEEyOwogICAgY291dCA8PCBBMS5GdW5jdGlvbjEoKSA8PCBlbmRsOwogICAgY291dCA8PCBBMS5GdW5jdGlvbjIoKSA8PCBlbmRsOwogICAgY291dCA8PCBBMi5GdW5jdGlvbjEoKSA8PCBlbmRsOwo=</text>
+        <text encoding="base64">ICAgIHN0YXRpYyBpbnQgRnVuY3Rpb24xKCkKICAgIHsKICAgICAgICByZXR1cm4gMTA7CiAgICB9CiAgICBpbnQgRnVuY3Rpb24yKCkKICAgIHsKICAgICAgICByZXR1cm4gMjA7CiAgICB9Cg==</text>
       </register>
       <register name="3" type="LINE_WISE">
-        <text encoding="base64">ICAgIAo=</text>
+        <text encoding="base64">ICAgIC8vVGhlIGZvbGxvd2luZyBsaW5lIGNhbGxzIHN0YXRpYyBmdW5jdGlvbiBkaXJlY3RseSB2aWEgY2xhc3Mgbm90IHRocm91Z2ggdGhlIG9iamVjdAogICAgLy9BdCBjbGFzcyBsZXZlbCB5b3UgY2FuIGNhbGwgb25seSBzdGF0aWMgbWV0aG9kcyBhbmQgc3RhdGljIG1lbWJlcnMKICAgIGNvdXQgPDwgY2xzQTo6RnVuY3Rpb24xKCkgPDxlbmRsOwogICAgLy9zdGF0aWMgbWV0aG9kcyBjYW4gYWxzbyBiZSBjYWxsZWQgdGhyb3VnaHQgdGhlIG9iamVjdC4KICAgIGNsc0EgQTEsIEEyOwogICAgY291dCA8PCBBMS5GdW5jdGlvbjEoKSA8PCBlbmRsOwogICAgY291dCA8PCBBMS5GdW5jdGlvbjIoKSA8PCBlbmRsOwogICAgY291dCA8PCBBMi5GdW5jdGlvbjEoKSA8PCBlbmRsOwo=</text>
       </register>
       <register name="4" type="LINE_WISE">
-        <text encoding="base64">I2luY2x1ZGUgPHN0cmluZz4K</text>
-      </register>
-      <register name="5" type="LINE_WISE">
-        <text encoding="base64">ICAgIHZvaWQgQ2xlYXIoKTsK</text>
-      </register>
-      <register name="6" type="LINE_WISE">
         <text encoding="base64">ICAgIAo=</text>
       </register>
-      <register name="7" type="CHARACTER_WISE">
+      <register name="5" type="LINE_WISE">
+        <text encoding="base64">I2luY2x1ZGUgPHN0cmluZz4K</text>
+      </register>
+      <register name="6" type="LINE_WISE">
+        <text encoding="base64">ICAgIHZvaWQgQ2xlYXIoKTsK</text>
+      </register>
+      <register name="7" type="LINE_WISE">
+        <text encoding="base64">ICAgIAo=</text>
+      </register>
+      <register name="8" type="CHARACTER_WISE">
         <text encoding="base64">CnsKCn0=</text>
       </register>
-      <register name="8" type="LINE_WISE">
-        <text encoding="base64">ICAgIGNsc1BlcnNvbiBQZXJzb24xOwoKICAgIFBlcnNvbjEuU2V0Rmlyc3ROYW1lKCJNb2hhbW1lZCIpOwogICAgc3RkOjpjb3V0IDw8IFBlcnNvbjEuR2V0Rmlyc3ROYW1lKCkgPDwgJ1xuJzsK</text>
-      </register>
       <register name="9" type="LINE_WISE">
-        <text encoding="base64">Y2xhc3MgY2xzUGVyc29uCnsKcHJpdmF0ZToKICAgIHN0ZDo6c3RyaW5nIF9GaXJzdE5hbWU7CgpwdWJsaWM6CiAgICB2b2lkIFNldEZpcnN0TmFtZShjb25zdCBzdGQ6OnN0cmluZyYgRmlyc3ROYW1lKQogICAgewogICAgICAgIF9GaXJzdE5hbWUgPSBGaXJzdE5hbWU7CiAgICB9CgogICAgY29uc3Qgc3RkOjpzdHJpbmcmIEdldEZpcnN0TmFtZSgpIGNvbnN0CiAgICB7CiAgICAgICAgcmV0dXJuIF9GaXJzdE5hbWU7CiAgICB9Cn07Cg==</text>
+        <text encoding="base64">ICAgIGNsc1BlcnNvbiBQZXJzb24xOwoKICAgIFBlcnNvbjEuU2V0Rmlyc3ROYW1lKCJNb2hhbW1lZCIpOwogICAgc3RkOjpjb3V0IDw8IFBlcnNvbjEuR2V0Rmlyc3ROYW1lKCkgPDwgJ1xuJzsK</text>
       </register>
       <register name=":" type="CHARACTER_WISE">
         <text encoding="base64">aGVscA==</text>

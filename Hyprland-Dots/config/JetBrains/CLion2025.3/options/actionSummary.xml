@@ -16,7 +16,7 @@
       <i c="7" l="1774162668233" />
     </e>
     <e n="$Undo">
-      <i c="28" l="1774717230644" />
+      <i c="30" l="1775340854358" />
     </e>
     <e n="AIAssistant.ToolWindow.Chat.Copy.Chameleon">
       <i c="38" l="1774661629123" />
@@ -25,7 +25,7 @@
       <i c="7" l="1774068182633" />
     </e>
     <e n="AIAssistant.ToolWindow.HistoryAction">
-      <i c="34" l="1774146727981" />
+      <i c="35" l="1775386551659" />
     </e>
     <e n="AIAssistant.ToolWindow.Message.Copy">
       <i c="7" l="1774134218216" />
@@ -43,7 +43,7 @@
       <i c="14" l="1774661565146" />
     </e>
     <e n="AIAssistant.ToolWindow.Snippet.Apply.Smart">
-      <i c="28" l="1774408121982" />
+      <i c="30" l="1775386613899" />
     </e>
     <e n="AIAssistant.ToolWindow.Snippet.CopyToClipboard">
       <i c="4" l="1773964321087" />
@@ -124,10 +124,10 @@
       <i c="7" d="7" l="1772372056632" k="1772372056632" />
     </e>
     <e n="EditorBackSpace">
-      <i c="801" l="1774717573172" />
+      <i c="846" l="1775339794661" />
     </e>
     <e n="EditorChooseLookupItem">
-      <i c="17" l="1774717172439" />
+      <i c="18" l="1775249843580" />
     </e>
     <e n="EditorChooseLookupItemReplace">
       <i c="30" l="1774477969411" />
@@ -142,10 +142,10 @@
       <i c="2" l="1770152534642" />
     </e>
     <e n="EditorDown">
-      <i c="61" l="1774717164489" />
+      <i c="70" l="1775339280500" />
     </e>
     <e n="EditorEnter">
-      <i c="668" l="1774717938711" />
+      <i c="716" l="1775386577349" />
     </e>
     <e n="EditorEscape">
       <i c="72" l="1774063809594" />
@@ -172,7 +172,7 @@
       <i c="7" l="1771510923823" />
     </e>
     <e n="EditorPaste">
-      <i c="53" l="1774661573664" />
+      <i c="54" l="1775339798998" />
     </e>
     <e n="EditorResetFontSize">
       <i c="1" d="1" l="1770157178631" k="1770157178631" />
@@ -196,7 +196,7 @@
       <i c="13" l="1774667481244" />
     </e>
     <e n="EditorUp">
-      <i c="82" l="1774812631396" />
+      <i c="83" l="1775249826152" />
     </e>
     <e n="ExpandAllRegions">
       <i c="3" l="1771690140499" />
@@ -217,19 +217,19 @@
       <i c="4" l="1771680609269" />
     </e>
     <e n="GotoDeclaration">
-      <i c="268" l="1774377420642" />
+      <i c="270" l="1775339514854" />
     </e>
     <e n="GotoNextElementUnderCaretUsage">
       <i c="1" l="1771689813260" />
     </e>
     <e n="HideActiveWindow">
-      <i c="110" l="1774661230277" />
+      <i c="111" l="1775254199911" />
     </e>
     <e n="HideAllWindows">
       <i c="5" l="1774113555786" />
     </e>
     <e n="InsertInlineCompletionAction">
-      <i c="131" l="1774717942099" />
+      <i c="164" l="1775339787280" />
     </e>
     <e n="List-selectNextRow">
       <i c="1" l="1771005821639" />
@@ -271,13 +271,13 @@
       <i c="12" l="1774163380226" />
     </e>
     <e n="RenameElement">
-      <i c="42" l="1774377979636" />
+      <i c="44" l="1775339595232" />
     </e>
     <e n="RenameFile">
       <i c="1" l="1774162870982" />
     </e>
     <e n="Run">
-      <i c="119" l="1774543010579" />
+      <i c="120" l="1775254167918" />
     </e>
     <e n="RunAnything">
       <i c="7" l="1771151909828" />
@@ -331,7 +331,7 @@
       <i c="6" l="1770730919835" />
     </e>
     <e n="ToggleLineBreakpoint">
-      <i c="16" l="1773186791740" />
+      <i c="18" l="1775340098775" />
     </e>
     <e n="Tree-selectAll">
       <i c="1" l="1774064026441" />
@@ -409,7 +409,7 @@
       <i c="1" l="1774156797916" />
     </e>
     <e n="com.intellij.ml.llm.codeGeneration.popup.AcceptAction">
-      <i c="14" l="1774408181964" />
+      <i c="16" l="1775386626938" />
     </e>
     <e n="com.intellij.ml.llm.codeGeneration.popup.StopActionBlockMode">
       <i c="1" l="1773965041230" />
@@ -430,7 +430,7 @@
       <i c="2" l="1770125255409" />
     </e>
     <e n="com.intellij.openapi.actionSystem.AnActionWrapper">
-      <i c="2309" l="1774812631395" />
+      <i c="2399" l="1775386624873" />
     </e>
     <e n="com.intellij.openapi.actionSystem.DefaultActionGroup">
       <i c="5" l="1774145374477" />
@@ -451,7 +451,7 @@
       <i c="5" l="1770157383579" />
     </e>
     <e n="com.intellij.openapi.project.DumbAwareAction$SimpleDumbAwareAction">
-      <i c="68" l="1774542134014" />
+      <i c="69" l="1775339798174" />
     </e>
     <e n="com.intellij.openapi.ui.DialogWrapper$5">
       <i c="3" l="1774477921331" />
@@ -463,7 +463,7 @@
       <i c="1" l="1770152139645" />
     </e>
     <e n="com.intellij.openapi.wm.impl.SquareAnActionButton">
-      <i c="268" l="1774663591080" />
+      <i c="269" l="1775386634958" />
     </e>
     <e n="com.intellij.openapi.wm.impl.customFrameDecorations.header.toolbar.MainMenuButton$ShowMenuAction">
       <i c="14" l="1774162491776" />
@@ -496,7 +496,7 @@
       <i c="1" l="1770122772404" />
     </e>
     <e n="com.intellij.xdebugger.impl.breakpoints.RemoveBreakpointGutterIconAction">
-      <i c="12" l="1773186793198" />
+      <i c="14" l="1775340099983" />
     </e>
     <e n="com.jetbrains.rider.actions.RiderAWTEventPostResponseProcessorAction">
       <i c="3" l="1774145894543" />

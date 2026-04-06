@@ -10,6 +10,7 @@
         <entry key="10a050bc-d3a6-4778-a51f-c12ce7d01c22" value="false" />
         <entry key="1630e2ef-1dd9-4d60-b08b-1d467a9ff79e" value="false" />
         <entry key="1a3b7d6b-11c4-4d47-bd8a-c7fa2ddf8f78" value="false" />
+        <entry key="1dd9ec24-f07c-467d-945e-66075a028922" value="false" />
         <entry key="21e752f4-2caf-43be-94d9-ccb34180d07a" value="false" />
         <entry key="230c1afd-cee1-4a15-8605-39337cc04d25" value="false" />
         <entry key="245e29ac-c112-44c1-9867-af5ae62eb18a" value="false" />
@@ -17,6 +18,7 @@
         <entry key="26592162-9b5f-4987-8382-21826627da05" value="false" />
         <entry key="28bc0333-a4a6-426f-9c49-658cd841d474" value="false" />
         <entry key="28c2f586-3660-4e4c-8f2c-98c6df5e5ef3" value="false" />
+        <entry key="28c95731-4613-4e26-a9db-9dfac9f1b906" value="false" />
         <entry key="2ac73887-5144-4720-b273-e625611b2d40" value="false" />
         <entry key="2afc9266-bbd1-4203-b3d2-cb9ca34b28aa" value="false" />
         <entry key="2dc01007-1a96-4a48-bd7f-1a3377ad5deb" value="false" />
@@ -24,6 +26,7 @@
         <entry key="32c63f8a-101e-4407-86d9-378e505c29ca" value="false" />
         <entry key="38a4567f-f59b-4508-a7ac-b3c49c0198b6" value="false" />
         <entry key="3cdcfd88-4e7a-4c8f-9281-dd50f1df33de" value="false" />
+        <entry key="3e41d163-21c1-44d8-b1cb-950059db2b2e" value="false" />
         <entry key="4028ec44-58a2-401c-b37f-6bf9ff0e6afd" value="false" />
         <entry key="44639c70-973f-43c6-9156-d98f210c47aa" value="false" />
         <entry key="48095878-7ac8-45f8-be64-e265254725cc" value="false" />
@@ -35,6 +38,8 @@
         <entry key="59dc3418-01be-4e36-805b-110942728094" value="false" />
         <entry key="5ced5f69-93f9-40bf-8316-1ea792038522" value="false" />
         <entry key="5e148371-ff3b-4765-97ef-bb9090e1d990" value="false" />
+        <entry key="6619e99d-c079-4ad5-9b0a-15ea2c079ca8" value="false" />
+        <entry key="69971f12-e420-4311-af68-37c82a0e4516" value="false" />
         <entry key="6fe0caa9-f4c7-4604-9b51-ce2935ba223d" value="false" />
         <entry key="70157d71-c6c7-4e64-b669-d34595e2783b" value="false" />
         <entry key="721a139f-6969-4a4b-8219-6c308594f488" value="false" />
@@ -47,7 +52,9 @@
         <entry key="841788f3-30dd-4478-99cb-8aadac42fbc4" value="false" />
         <entry key="84bc3f4c-dfd1-4e44-b3ff-d6ec2ab66ba2" value="false" />
         <entry key="851f1859-1b4d-4ad1-980d-64f7f6160670" value="false" />
+        <entry key="85625d03-c7f7-4f7b-a35d-00f9fa7e2324" value="false" />
         <entry key="87b60daf-dd23-4978-8152-65207c3b5264" value="false" />
+        <entry key="8a630184-e882-472e-b96e-addfa7aee62f" value="false" />
         <entry key="8bd84471-5091-4fe8-a56e-c4df1a0b9f66" value="false" />
         <entry key="9274ecda-ac3e-48b5-bfca-7adda715fae7" value="false" />
         <entry key="92d9976e-d705-4fa4-a8e4-a839dc4c27f1" value="false" />
@@ -3313,6 +3320,168 @@
           </option>
           <option name="uid" value="24a6b7a9-cbae-4278-b855-863f85a223ef" />
         </SerializedChat>
+        <SerializedChat>
+          <option name="chatContext">
+            <SerializedChatContext />
+          </option>
+          <option name="chatModelId" value="chat_mode" />
+          <option name="messages">
+            <list>
+              <SerializedChatMessage>
+                <option name="attachments">
+                  <list>
+                    <SerializedChatAttachment>
+                      <option name="name" value="Console Selection" />
+                      <option name="text" value="10" />
+                    </SerializedChatAttachment>
+                    <SerializedChatAttachment>
+                      <option name="url" value="file://$PROJECT_DIR$/src/Test_Of_OOP.cpp" />
+                      <option name="name" value="Information about open file in the editor" />
+                      <option name="text" value="```c/c++&#10;#include &lt;iostream&gt;&#10;using namespace std;&#10;class clsPerson&#10;{&#10;private:&#10;    int _ID = 0;&#10;    string _FirstName = &quot;&quot;;&#10;    string _LastName = &quot;&quot;;&#10;    string _Email = &quot;&quot;;&#10;    string _Phone = &quot;&quot;;&#10;public:&#10;    clsPerson(int ID,string FirstName,string LastName,string Email,string Phone)&#10;    {&#10;        _ID = ID;&#10;        _FirstName = FirstName;&#10;        _LastName = LastName;&#10;        _Email = Email;&#10;        _Phone = Phone;&#10;    }&#10;    int ID()&#10;    {&#10;        return _ID;&#10;    }&#10;    void setFirstName(string FirstName)&#10;    {&#10;        _FirstName = FirstName;&#10;    }&#10;    string FirstName()&#10;    {&#10;        return _FirstName;&#10;    }&#10;    void setLastName(string LastName)&#10;    {&#10;        _LastName = LastName;&#10;    }&#10;    string LastName()&#10;    {&#10;        return _LastName;&#10;    }&#10;    void setEmail(string Email)&#10;    {&#10;        _Email = Email;&#10;    }&#10;    string Email()&#10;    {&#10;        return _Email;&#10;    }&#10;    void setPhone(string Phone)&#10;    {&#10;        _Phone = Phone;&#10;    }&#10;    string Phone()&#10;    {&#10;        return _Phone;&#10;    }&#10;&#10;};&#10;int main()&#10;{&#10;    clsPerson Person1(10,&quot;Imad&quot;,&quot;Jamjami&quot;,&quot;my@gmail.com&quot;,&quot;0609123456&quot;);&#10;&#10;}&#10;```" />
+                    </SerializedChatAttachment>
+                  </list>
+                </option>
+                <option name="markupLanguageID" value="ChatInput" />
+                <option name="uid" value="UUID(uuid=b9232e41-5767-437d-a9c3-174100e9ea48)" />
+                <option name="displayContent" value="Why we add a number to it if it is read only?" />
+                <option name="internalContent" value="Why we add a number to it if it is read only?" />
+              </SerializedChatMessage>
+              <SerializedChatMessage>
+                <option name="author" value="Assistant" />
+                <option name="uid" value="a4f03016-7b0f-48b0-8aed-d5e63b5bb30d" />
+                <option name="displayContent" value="Because **read-only means you can’t change it later**, not **you can’t set it at all**.&#10;&#10;So the number is added **when the object is created** to give that read-only value its **initial value**.&#10;&#10;### Think of it like this:&#10;- **Read-only** = “fixed after creation”&#10;- **Constructor parameter** = “how we initialize it the first time”&#10;&#10;### Example idea&#10;If an ID is read-only:&#10;- you set it once in the constructor&#10;- later, nobody can modify it&#10;&#10;That’s useful for things like:&#10;- **ID numbers**&#10;- **birth dates**&#10;- **serial numbers**&#10;&#10;These values should exist from the start, but should not be changed afterward.&#10;&#10;### In short&#10;You add the number because:&#10;1. the object needs an initial ID&#10;2. read-only only prevents changing it later&#10;3. it’s common to make unique identifiers immutable&#10;&#10;If you want, I can also explain the difference between **read-only**, **private**, and **setter/getter** in a very simple way." />
+                <option name="internalContent" value="Because **read-only means you can’t change it later**, not **you can’t set it at all**.&#10;&#10;So the number is added **when the object is created** to give that read-only value its **initial value**.&#10;&#10;### Think of it like this:&#10;- **Read-only** = “fixed after creation”&#10;- **Constructor parameter** = “how we initialize it the first time”&#10;&#10;### Example idea&#10;If an ID is read-only:&#10;- you set it once in the constructor&#10;- later, nobody can modify it&#10;&#10;That’s useful for things like:&#10;- **ID numbers**&#10;- **birth dates**&#10;- **serial numbers**&#10;&#10;These values should exist from the start, but should not be changed afterward.&#10;&#10;### In short&#10;You add the number because:&#10;1. the object needs an initial ID&#10;2. read-only only prevents changing it later&#10;3. it’s common to make unique identifiers immutable&#10;&#10;If you want, I can also explain the difference between **read-only**, **private**, and **setter/getter** in a very simple way." />
+              </SerializedChatMessage>
+            </list>
+          </option>
+          <option name="modifiedAt" value="1775249026829" />
+          <option name="statisticInformation">
+            <ChatStatisticInformation>
+              <option name="sourceActionType" value="NEW_CHAT_ON_START" />
+              <option name="timestamp" value="1775249026829" />
+            </ChatStatisticInformation>
+          </option>
+          <option name="title">
+            <SerializedChatTitle>
+              <option name="custom" value="true" />
+              <option name="text" value="Understanding Read-Only Initialization in Programming" />
+            </SerializedChatTitle>
+          </option>
+          <option name="uid" value="44639c70-973f-43c6-9156-d98f210c47aa" />
+        </SerializedChat>
+        <SerializedChat>
+          <option name="chatContext">
+            <SerializedChatContext />
+          </option>
+          <option name="chatModelId" value="chat_mode" />
+          <option name="messages">
+            <list>
+              <SerializedChatMessage>
+                <option name="attachments">
+                  <list>
+                    <SerializedChatAttachment>
+                      <option name="name" value="Console Selection" />
+                      <option name="text" value=" emp.SendeMail(&quot;Subject&quot;,&quot;Message&quot;);&#10;    emp.SendeSMS(&quot;Message&quot;);" />
+                    </SerializedChatAttachment>
+                    <SerializedChatAttachment>
+                      <option name="url" value="file://$PROJECT_DIR$/src/Test_Of_OOP.cpp" />
+                      <option name="name" value="Information about open file in the editor" />
+                      <option name="text" value="```c/c++&#10;#include &lt;iostream&gt;&#10;using namespace std;&#10;class clsPerson&#10;{&#10;private:&#10;    int _ID = 0;&#10;    string _FirstName = &quot;&quot;;&#10;    string _LastName = &quot;&quot;;&#10;    string _Email = &quot;&quot;;&#10;    string _Phone = &quot;&quot;;&#10;public:&#10;    clsPerson(int ID,string FirstName,string LastName,string Email,string Phone)&#10;    {&#10;        _ID = ID;&#10;        _FirstName = FirstName;&#10;        _LastName = LastName;&#10;        _Email = Email;&#10;        _Phone = Phone;&#10;    }&#10;    int ID()&#10;    {&#10;        return _ID;&#10;    }&#10;    void setFirstName(string FirstName)&#10;    {&#10;        _FirstName = FirstName;&#10;    }&#10;    string FirstName()&#10;    {&#10;        return _FirstName;&#10;    }&#10;    void setLastName(string LastName)&#10;    {&#10;        _LastName = LastName;&#10;    }&#10;    string LastName()&#10;    {&#10;        return _LastName;&#10;    }&#10;    string FullName()&#10;    {&#10;        return _FirstName + &quot; &quot; + _LastName;&#10;    }&#10;    void setEmail(string Email)&#10;    {&#10;        _Email = Email;&#10;    }&#10;    string Email()&#10;    {&#10;        return _Email;&#10;    }&#10;    void setPhone(string Phone)&#10;    {&#10;        _Phone = Phone;&#10;    }&#10;    string Phone()&#10;    {&#10;        return _Phone;&#10;    }&#10;    void Print()&#10;    {&#10;        cout &lt;&lt; &quot;ID: &quot; &lt;&lt; _ID &lt;&lt; endl;&#10;        cout &lt;&lt; &quot;First Name: &quot; &lt;&lt; _FirstName &lt;&lt; endl;&#10;        cout &lt;&lt; &quot;Last Name: &quot; &lt;&lt; _LastName &lt;&lt; endl;&#10;        cout &lt;&lt; &quot;Full Name: &quot; &lt;&lt; FullName() &lt;&lt; endl;&#10;        cout &lt;&lt; &quot;Email: &quot; &lt;&lt; _Email &lt;&lt; endl;&#10;        cout &lt;&lt; &quot;Phone: &quot; &lt;&lt; _Phone &lt;&lt; endl;&#10;    }&#10;    void SendeMail(string Subject,string Message)&#10;    {&#10;        cout &lt;&lt; &quot;The following message sent successfully to mail:&quot; &lt;&lt; _Email &lt;&lt; endl;&#10;        cout &lt;&lt; &quot;Subject: &quot; &lt;&lt; Subject &lt;&lt; endl;&#10;        cout &lt;&lt; &quot;Message: &quot; &lt;&lt; Message &lt;&lt; endl;&#10;    }&#10;    void SendeSMS(string Message)&#10;    {&#10;        cout &lt;&lt; &quot;The following message sent successfully to phone:&quot; &lt;&lt; _Phone &lt;&lt; endl;&#10;        cout &lt;&lt; &quot;Message: &quot; &lt;&lt; Message &lt;&lt; endl;&#10;    }&#10;&#10;&#10;};&#10;class clsEmployee : public clsPerson&#10;{&#10;private:&#10;    int _Salary = 0;&#10;public:&#10;    clsEmployee(int ID,string FirstName,string LastName,string Email,string Phone,int Salary) : clsPerson(ID,FirstName,LastName,Email,Phone)&#10;    {&#10;        _Salary = Salary;&#10;    }&#10;    int Salary()&#10;    {&#10;        return _Salary;&#10;    }&#10;    void setSalary(int Salary)&#10;    {&#10;        _Salary = Salary;&#10;    }&#10;    void Print()&#10;    {&#10;        clsPerson::Print();&#10;        cout &lt;&lt; &quot;Salary: &quot; &lt;&lt; _Salary &lt;&lt; endl;&#10;    }&#10;    void SendeMail(string Subject,string Message)&#10;    {&#10;        clsPerson::SendeMail(Subject,Message);&#10;    }&#10;}&#10;int main()&#10;{&#10;   clsEmployee emp(1,&quot;John&quot;,&quot;Doe&quot;,&quot;&quot;,&quot;0123456789&quot;,10000);&#10;    emp.Print();&#10;    emp.SendeMail(&quot;Subject&quot;,&quot;Message&quot;);&#10;    emp.SendeSMS(&quot;Message&quot;);&#10;&#10;}&#10;```" />
+                    </SerializedChatAttachment>
+                  </list>
+                </option>
+                <option name="markupLanguageID" value="ChatInput" />
+                <option name="uid" value="UUID(uuid=8bd66867-1f25-4e22-93f8-e3c2b63667c3)" />
+                <option name="displayContent" value="Should I add sendSMS in clssEmployee like sendMail?" />
+                <option name="internalContent" value="Should I add sendSMS in clssEmployee like sendMail?" />
+              </SerializedChatMessage>
+              <SerializedChatMessage>
+                <option name="author" value="Assistant" />
+                <option name="uid" value="11367190-e548-43a7-9fbc-5f2d23064fcc" />
+                <option name="displayContent" value="## Short answer&#10;&#10;**No, you don’t need to add `sendSMS` in `clsEmployee` if it already inherits it from `clsPerson`.**&#10;&#10;### Why&#10;`clsEmployee` inherits public methods from `clsPerson`, so it can already use:&#10;&#10;- `SendeMail(...)`&#10;- `SendeSMS(...)`&#10;&#10;directly, unless you override them.&#10;&#10;### When you *would* add it in `clsEmployee`&#10;Add a method in `clsEmployee` only if you want one of these:&#10;&#10;- **Employee-specific behavior** before/after sending&#10;- **Different message formatting**&#10;- **Access restrictions** or custom rules for employees&#10;- A **wrapper method** for readability or symmetry&#10;&#10;### Best practice here&#10;If the behavior is exactly the same, keep it only in `clsPerson`.  &#10;That avoids duplication and makes the design cleaner.&#10;&#10;If you want, I can also show you the **cleanest class design** for this case." />
+                <option name="internalContent" value="## Short answer&#10;&#10;**No, you don’t need to add `sendSMS` in `clsEmployee` if it already inherits it from `clsPerson`.**&#10;&#10;### Why&#10;`clsEmployee` inherits public methods from `clsPerson`, so it can already use:&#10;&#10;- `SendeMail(...)`&#10;- `SendeSMS(...)`&#10;&#10;directly, unless you override them.&#10;&#10;### When you *would* add it in `clsEmployee`&#10;Add a method in `clsEmployee` only if you want one of these:&#10;&#10;- **Employee-specific behavior** before/after sending&#10;- **Different message formatting**&#10;- **Access restrictions** or custom rules for employees&#10;- A **wrapper method** for readability or symmetry&#10;&#10;### Best practice here&#10;If the behavior is exactly the same, keep it only in `clsPerson`.  &#10;That avoids duplication and makes the design cleaner.&#10;&#10;If you want, I can also show you the **cleanest class design** for this case." />
+              </SerializedChatMessage>
+              <SerializedChatMessage>
+                <option name="markupLanguageID" value="ChatInput" />
+                <option name="uid" value="UUID(uuid=0dd17816-8d21-4def-b23b-e8df140509b8)" />
+                <option name="displayContent" value="Look if my solution is correct with the homework:&#10;Homework - Employee Exercise&#10;---&#10;اعملو كلاس للموظف فيها التالي:  &#10;ID  &#10;&#10;First name  &#10;Last name  &#10;FullName()  &#10;Title  &#10;Email  &#10;Phone  &#10;Salary  &#10;Department  &#10;SendEmail(..)  &#10;SendSMS(...)  &#10;Print()&#10;&#10;including all properties set and get, except for the ID readonly&#10;&#10;Use constructor to iniate all values" />
+                <option name="internalContent" value="Look if my solution is correct with the homework:&#10;Homework - Employee Exercise&#10;---&#10;اعملو كلاس للموظف فيها التالي:  &#10;ID  &#10;&#10;First name  &#10;Last name  &#10;FullName()  &#10;Title  &#10;Email  &#10;Phone  &#10;Salary  &#10;Department  &#10;SendEmail(..)  &#10;SendSMS(...)  &#10;Print()&#10;&#10;including all properties set and get, except for the ID readonly&#10;&#10;Use constructor to iniate all values" />
+              </SerializedChatMessage>
+              <SerializedChatMessage>
+                <option name="author" value="Assistant" />
+                <option name="uid" value="3e324469-d49e-479b-8e3f-644fb15a6096" />
+                <option name="displayContent" value="## Your solution is **partially correct**, but **not complete** for the homework.&#10;&#10;### What you did right&#10;- `ID` is effectively **read-only** because you did **not** add a setter.&#10;- You have:&#10;  - `FirstName`&#10;  - `LastName`&#10;  - `FullName()`&#10;  - `Email`&#10;  - `Phone`&#10;  - `Salary`&#10;  - `Print()`&#10;- You also added `SendEmail(...)` and `SendSMS(...)` behavior.&#10;&#10;### What is missing for the homework&#10;The homework requires the **employee class** to include:&#10;&#10;- `Title`&#10;- `Department`&#10;- `SendEmail(..)`&#10;- `SendSMS(...)`&#10;- `Print()`&#10;- **all properties with set/get**&#10;- **constructor to initialize all values**&#10;&#10;So your current class is **missing**:&#10;- `Title`&#10;- `Department`&#10;&#10;Also, your constructor does **not initialize all required values**, because it doesn’t take `Title` and `Department`.&#10;&#10;### About `SendSMS`&#10;Yes — for this homework, the employee should be able to send SMS, so **it should be available in `clsEmployee`**.&#10;If `clsEmployee` inherits it from `clsPerson`, that is fine **only if the homework allows inheritance**. But since the assignment says *make an employee class with these members*, it’s safer to include them clearly in the employee design.&#10;&#10;### Important note&#10;If the teacher expects **one complete `clsEmployee` class**, then your current design with `clsPerson` + `clsEmployee` may be acceptable **only if all required employee data exists in the final object**.&#10;&#10;### Verdict&#10;**Not fully correct yet.**&#10;You need to add:&#10;- `Title`&#10;- `Department`&#10;- constructor parameters for them&#10;- getters/setters for them&#10;&#10;If you want, I can rewrite your class so it matches the homework exactly." />
+                <option name="internalContent" value="## Your solution is **partially correct**, but **not complete** for the homework.&#10;&#10;### What you did right&#10;- `ID` is effectively **read-only** because you did **not** add a setter.&#10;- You have:&#10;  - `FirstName`&#10;  - `LastName`&#10;  - `FullName()`&#10;  - `Email`&#10;  - `Phone`&#10;  - `Salary`&#10;  - `Print()`&#10;- You also added `SendEmail(...)` and `SendSMS(...)` behavior.&#10;&#10;### What is missing for the homework&#10;The homework requires the **employee class** to include:&#10;&#10;- `Title`&#10;- `Department`&#10;- `SendEmail(..)`&#10;- `SendSMS(...)`&#10;- `Print()`&#10;- **all properties with set/get**&#10;- **constructor to initialize all values**&#10;&#10;So your current class is **missing**:&#10;- `Title`&#10;- `Department`&#10;&#10;Also, your constructor does **not initialize all required values**, because it doesn’t take `Title` and `Department`.&#10;&#10;### About `SendSMS`&#10;Yes — for this homework, the employee should be able to send SMS, so **it should be available in `clsEmployee`**.&#10;If `clsEmployee` inherits it from `clsPerson`, that is fine **only if the homework allows inheritance**. But since the assignment says *make an employee class with these members*, it’s safer to include them clearly in the employee design.&#10;&#10;### Important note&#10;If the teacher expects **one complete `clsEmployee` class**, then your current design with `clsPerson` + `clsEmployee` may be acceptable **only if all required employee data exists in the final object**.&#10;&#10;### Verdict&#10;**Not fully correct yet.**&#10;You need to add:&#10;- `Title`&#10;- `Department`&#10;- constructor parameters for them&#10;- getters/setters for them&#10;&#10;If you want, I can rewrite your class so it matches the homework exactly." />
+              </SerializedChatMessage>
+              <SerializedChatMessage>
+                <option name="attachments">
+                  <list>
+                    <SerializedChatAttachment>
+                      <option name="name" value="Project View" />
+                      <option name="text" value="Project View content:&#10;```&#10;extensions&#10;Project 2 L4 - ATM System&#10; src&#10;  Test_Of_OOP.cpp&#10; data&#10; .idea&#10; build&#10; include&#10; cmake-build-debug&#10; .gitignore&#10; .gitattributes&#10; CMakeLists.txt&#10;```" />
+                    </SerializedChatAttachment>
+                  </list>
+                </option>
+                <option name="markupLanguageID" value="ChatInput" />
+                <option name="uid" value="UUID(uuid=b9635d4d-b9a1-4fe6-a72f-eb53739bf5ba)" />
+                <option name="displayContent" value="y" />
+                <option name="internalContent" value="y" />
+              </SerializedChatMessage>
+              <SerializedChatMessage>
+                <option name="author" value="Assistant" />
+                <option name="uid" value="66a3bbce-c4cb-4f8e-8cef-a9abbe768b74" />
+                <option name="displayContent" value="## Yes — I can help with that.&#10;&#10;If you want, I can **rewrite your employee class so it matches the homework exactly**.&#10;&#10;### It should include:&#10;- `ID` read-only&#10;- `FirstName`&#10;- `LastName`&#10;- `FullName()`&#10;- `Title`&#10;- `Email`&#10;- `Phone`&#10;- `Salary`&#10;- `Department`&#10;- `SendEmail(...)`&#10;- `SendSMS(...)`&#10;- `Print()`&#10;- constructor that initializes **all values**&#10;&#10;If you’d like, I can give you:&#10;&#10;1. **a corrected version of your current design**, or  &#10;2. **a full clean class implementation** for the homework.&#10;&#10;Just reply with **“full code”** and I’ll prepare it." />
+                <option name="internalContent" value="## Yes — I can help with that.&#10;&#10;If you want, I can **rewrite your employee class so it matches the homework exactly**.&#10;&#10;### It should include:&#10;- `ID` read-only&#10;- `FirstName`&#10;- `LastName`&#10;- `FullName()`&#10;- `Title`&#10;- `Email`&#10;- `Phone`&#10;- `Salary`&#10;- `Department`&#10;- `SendEmail(...)`&#10;- `SendSMS(...)`&#10;- `Print()`&#10;- constructor that initializes **all values**&#10;&#10;If you’d like, I can give you:&#10;&#10;1. **a corrected version of your current design**, or  &#10;2. **a full clean class implementation** for the homework.&#10;&#10;Just reply with **“full code”** and I’ll prepare it." />
+              </SerializedChatMessage>
+              <SerializedChatMessage>
+                <option name="markupLanguageID" value="ChatInput" />
+                <option name="uid" value="UUID(uuid=73f4d971-1e58-497c-8497-6c07f42c7cc3)" />
+                <option name="displayContent" value="2" />
+                <option name="internalContent" value="2" />
+              </SerializedChatMessage>
+              <SerializedChatMessage>
+                <option name="author" value="Assistant" />
+                <option name="uid" value="2dc22384-e4d9-4234-afb3-b4c1bc09c90c" />
+                <option name="displayContent" value="## Sure — here is a clean `clsEmployee` implementation that matches the homework&#10;&#10;```cpp&#10;#include &lt;iostream&gt;&#10;using namespace std;&#10;&#10;class clsEmployee&#10;{&#10;private:&#10;    int _ID = 0;&#10;    string _FirstName = &quot;&quot;;&#10;    string _LastName = &quot;&quot;;&#10;    string _Title = &quot;&quot;;&#10;    string _Email = &quot;&quot;;&#10;    string _Phone = &quot;&quot;;&#10;    float _Salary = 0;&#10;    string _Department = &quot;&quot;;&#10;&#10;public:&#10;    clsEmployee(int ID, string FirstName, string LastName, string Title,&#10;                string Email, string Phone, float Salary, string Department)&#10;    {&#10;        _ID = ID;&#10;        _FirstName = FirstName;&#10;        _LastName = LastName;&#10;        _Title = Title;&#10;        _Email = Email;&#10;        _Phone = Phone;&#10;        _Salary = Salary;&#10;        _Department = Department;&#10;    }&#10;&#10;    int ID()&#10;    {&#10;        return _ID;&#10;    }&#10;&#10;    void setFirstName(string FirstName)&#10;    {&#10;        _FirstName = FirstName;&#10;    }&#10;&#10;    string FirstName()&#10;    {&#10;        return _FirstName;&#10;    }&#10;&#10;    void setLastName(string LastName)&#10;    {&#10;        _LastName = LastName;&#10;    }&#10;&#10;    string LastName()&#10;    {&#10;        return _LastName;&#10;    }&#10;&#10;    string FullName()&#10;    {&#10;        return _FirstName + &quot; &quot; + _LastName;&#10;    }&#10;&#10;    void setTitle(string Title)&#10;    {&#10;        _Title = Title;&#10;    }&#10;&#10;    string Title()&#10;    {&#10;        return _Title;&#10;    }&#10;&#10;    void setEmail(string Email)&#10;    {&#10;        _Email = Email;&#10;    }&#10;&#10;    string Email()&#10;    {&#10;        return _Email;&#10;    }&#10;&#10;    void setPhone(string Phone)&#10;    {&#10;        _Phone = Phone;&#10;    }&#10;&#10;    string Phone()&#10;    {&#10;        return _Phone;&#10;    }&#10;&#10;    void setSalary(float Salary)&#10;    {&#10;        _Salary = Salary;&#10;    }&#10;&#10;    float Salary()&#10;    {&#10;        return _Salary;&#10;    }&#10;&#10;    void setDepartment(string Department)&#10;    {&#10;        _Department = Department;&#10;    }&#10;&#10;    string Department()&#10;    {&#10;        return _Department;&#10;    }&#10;&#10;    void Print()&#10;    {&#10;        cout &lt;&lt; &quot;ID: &quot; &lt;&lt; _ID &lt;&lt; endl;&#10;        cout &lt;&lt; &quot;First Name: &quot; &lt;&lt; _FirstName &lt;&lt; endl;&#10;        cout &lt;&lt; &quot;Last Name: &quot; &lt;&lt; _LastName &lt;&lt; endl;&#10;        cout &lt;&lt; &quot;Full Name: &quot; &lt;&lt; FullName() &lt;&lt; endl;&#10;        cout &lt;&lt; &quot;Title: &quot; &lt;&lt; _Title &lt;&lt; endl;&#10;        cout &lt;&lt; &quot;Email: &quot; &lt;&lt; _Email &lt;&lt; endl;&#10;        cout &lt;&lt; &quot;Phone: &quot; &lt;&lt; _Phone &lt;&lt; endl;&#10;        cout &lt;&lt; &quot;Salary: &quot; &lt;&lt; _Salary &lt;&lt; endl;&#10;        cout &lt;&lt; &quot;Department: &quot; &lt;&lt; _Department &lt;&lt; endl;&#10;    }&#10;&#10;    void SendEmail(string Subject, string Message)&#10;    {&#10;        cout &lt;&lt; &quot;The following message sent successfully to mail: &quot; &lt;&lt; _Email &lt;&lt; endl;&#10;        cout &lt;&lt; &quot;Subject: &quot; &lt;&lt; Subject &lt;&lt; endl;&#10;        cout &lt;&lt; &quot;Message: &quot; &lt;&lt; Message &lt;&lt; endl;&#10;    }&#10;&#10;    void SendSMS(string Message)&#10;    {&#10;        cout &lt;&lt; &quot;The following message sent successfully to phone: &quot; &lt;&lt; _Phone &lt;&lt; endl;&#10;        cout &lt;&lt; &quot;Message: &quot; &lt;&lt; Message &lt;&lt; endl;&#10;    }&#10;};&#10;&#10;int main()&#10;{&#10;    clsEmployee emp(1, &quot;John&quot;, &quot;Doe&quot;, &quot;Manager&quot;, &quot;john@example.com&quot;, &quot;0123456789&quot;, 10000, &quot;IT&quot;);&#10;&#10;    emp.Print();&#10;    emp.SendEmail(&quot;Welcome&quot;, &quot;Hello John&quot;);&#10;    emp.SendSMS(&quot;Your request has been approved.&quot;);&#10;&#10;    return 0;&#10;}&#10;```&#10;&#10;## Why this matches the homework&#10;- `ID` is **read-only** because there is no setter&#10;- It includes **all required properties**&#10;- It has **set/get** for each property except `ID`&#10;- It includes:&#10;  - `FullName()`&#10;  - `SendEmail(...)`&#10;  - `SendSMS(...)`&#10;  - `Print()`&#10;- The constructor initializes **all values**&#10;&#10;If you want, I can also make it in the **same style as your course’s `clsPerson` and inheritance version**." />
+                <option name="internalContent" value="## Sure — here is a clean `clsEmployee` implementation that matches the homework&#10;&#10;```cpp&#10;#include &lt;iostream&gt;&#10;using namespace std;&#10;&#10;class clsEmployee&#10;{&#10;private:&#10;    int _ID = 0;&#10;    string _FirstName = &quot;&quot;;&#10;    string _LastName = &quot;&quot;;&#10;    string _Title = &quot;&quot;;&#10;    string _Email = &quot;&quot;;&#10;    string _Phone = &quot;&quot;;&#10;    float _Salary = 0;&#10;    string _Department = &quot;&quot;;&#10;&#10;public:&#10;    clsEmployee(int ID, string FirstName, string LastName, string Title,&#10;                string Email, string Phone, float Salary, string Department)&#10;    {&#10;        _ID = ID;&#10;        _FirstName = FirstName;&#10;        _LastName = LastName;&#10;        _Title = Title;&#10;        _Email = Email;&#10;        _Phone = Phone;&#10;        _Salary = Salary;&#10;        _Department = Department;&#10;    }&#10;&#10;    int ID()&#10;    {&#10;        return _ID;&#10;    }&#10;&#10;    void setFirstName(string FirstName)&#10;    {&#10;        _FirstName = FirstName;&#10;    }&#10;&#10;    string FirstName()&#10;    {&#10;        return _FirstName;&#10;    }&#10;&#10;    void setLastName(string LastName)&#10;    {&#10;        _LastName = LastName;&#10;    }&#10;&#10;    string LastName()&#10;    {&#10;        return _LastName;&#10;    }&#10;&#10;    string FullName()&#10;    {&#10;        return _FirstName + &quot; &quot; + _LastName;&#10;    }&#10;&#10;    void setTitle(string Title)&#10;    {&#10;        _Title = Title;&#10;    }&#10;&#10;    string Title()&#10;    {&#10;        return _Title;&#10;    }&#10;&#10;    void setEmail(string Email)&#10;    {&#10;        _Email = Email;&#10;    }&#10;&#10;    string Email()&#10;    {&#10;        return _Email;&#10;    }&#10;&#10;    void setPhone(string Phone)&#10;    {&#10;        _Phone = Phone;&#10;    }&#10;&#10;    string Phone()&#10;    {&#10;        return _Phone;&#10;    }&#10;&#10;    void setSalary(float Salary)&#10;    {&#10;        _Salary = Salary;&#10;    }&#10;&#10;    float Salary()&#10;    {&#10;        return _Salary;&#10;    }&#10;&#10;    void setDepartment(string Department)&#10;    {&#10;        _Department = Department;&#10;    }&#10;&#10;    string Department()&#10;    {&#10;        return _Department;&#10;    }&#10;&#10;    void Print()&#10;    {&#10;        cout &lt;&lt; &quot;ID: &quot; &lt;&lt; _ID &lt;&lt; endl;&#10;        cout &lt;&lt; &quot;First Name: &quot; &lt;&lt; _FirstName &lt;&lt; endl;&#10;        cout &lt;&lt; &quot;Last Name: &quot; &lt;&lt; _LastName &lt;&lt; endl;&#10;        cout &lt;&lt; &quot;Full Name: &quot; &lt;&lt; FullName() &lt;&lt; endl;&#10;        cout &lt;&lt; &quot;Title: &quot; &lt;&lt; _Title &lt;&lt; endl;&#10;        cout &lt;&lt; &quot;Email: &quot; &lt;&lt; _Email &lt;&lt; endl;&#10;        cout &lt;&lt; &quot;Phone: &quot; &lt;&lt; _Phone &lt;&lt; endl;&#10;        cout &lt;&lt; &quot;Salary: &quot; &lt;&lt; _Salary &lt;&lt; endl;&#10;        cout &lt;&lt; &quot;Department: &quot; &lt;&lt; _Department &lt;&lt; endl;&#10;    }&#10;&#10;    void SendEmail(string Subject, string Message)&#10;    {&#10;        cout &lt;&lt; &quot;The following message sent successfully to mail: &quot; &lt;&lt; _Email &lt;&lt; endl;&#10;        cout &lt;&lt; &quot;Subject: &quot; &lt;&lt; Subject &lt;&lt; endl;&#10;        cout &lt;&lt; &quot;Message: &quot; &lt;&lt; Message &lt;&lt; endl;&#10;    }&#10;&#10;    void SendSMS(string Message)&#10;    {&#10;        cout &lt;&lt; &quot;The following message sent successfully to phone: &quot; &lt;&lt; _Phone &lt;&lt; endl;&#10;        cout &lt;&lt; &quot;Message: &quot; &lt;&lt; Message &lt;&lt; endl;&#10;    }&#10;};&#10;&#10;int main()&#10;{&#10;    clsEmployee emp(1, &quot;John&quot;, &quot;Doe&quot;, &quot;Manager&quot;, &quot;john@example.com&quot;, &quot;0123456789&quot;, 10000, &quot;IT&quot;);&#10;&#10;    emp.Print();&#10;    emp.SendEmail(&quot;Welcome&quot;, &quot;Hello John&quot;);&#10;    emp.SendSMS(&quot;Your request has been approved.&quot;);&#10;&#10;    return 0;&#10;}&#10;```&#10;&#10;## Why this matches the homework&#10;- `ID` is **read-only** because there is no setter&#10;- It includes **all required properties**&#10;- It has **set/get** for each property except `ID`&#10;- It includes:&#10;  - `FullName()`&#10;  - `SendEmail(...)`&#10;  - `SendSMS(...)`&#10;  - `Print()`&#10;- The constructor initializes **all values**&#10;&#10;If you want, I can also make it in the **same style as your course’s `clsPerson` and inheritance version**." />
+              </SerializedChatMessage>
+              <SerializedChatMessage>
+                <option name="attachments">
+                  <list>
+                    <SerializedChatAttachment>
+                      <option name="name" value="Project View" />
+                      <option name="text" value="Project View content:&#10;```&#10;extensions&#10;Project 2 L4 - ATM System&#10; src&#10;  Test_Of_OOP.cpp&#10; data&#10; .idea&#10; build&#10; include&#10; cmake-build-debug&#10; .gitignore&#10; .gitattributes&#10; CMakeLists.txt&#10;```" />
+                    </SerializedChatAttachment>
+                  </list>
+                </option>
+                <option name="markupLanguageID" value="ChatInput" />
+                <option name="uid" value="UUID(uuid=a43dc6b1-4a11-4467-86d9-a9c812b3b2a1)" />
+                <option name="displayContent" value="I want the previous one with person class" />
+                <option name="internalContent" value="I want the previous one with person class" />
+              </SerializedChatMessage>
+              <SerializedChatMessage>
+                <option name="author" value="Assistant" />
+                <option name="uid" value="32752150-c0b1-48f8-80b0-83991f4ebf6d" />
+                <option name="displayContent" value="Absolutely — here’s the **same design with `clsPerson` + `clsEmployee`**, updated so it matches the homework better.&#10;&#10;```cpp&#10;#include &lt;iostream&gt;&#10;using namespace std;&#10;&#10;class clsPerson&#10;{&#10;private:&#10;    int _ID = 0;&#10;    string _FirstName = &quot;&quot;;&#10;    string _LastName = &quot;&quot;;&#10;    string _Email = &quot;&quot;;&#10;    string _Phone = &quot;&quot;;&#10;&#10;public:&#10;    clsPerson(int ID, string FirstName, string LastName, string Email, string Phone)&#10;    {&#10;        _ID = ID;&#10;        _FirstName = FirstName;&#10;        _LastName = LastName;&#10;        _Email = Email;&#10;        _Phone = Phone;&#10;    }&#10;&#10;    int ID()&#10;    {&#10;        return _ID;&#10;    }&#10;&#10;    void setFirstName(string FirstName)&#10;    {&#10;        _FirstName = FirstName;&#10;    }&#10;&#10;    string FirstName()&#10;    {&#10;        return _FirstName;&#10;    }&#10;&#10;    void setLastName(string LastName)&#10;    {&#10;        _LastName = LastName;&#10;    }&#10;&#10;    string LastName()&#10;    {&#10;        return _LastName;&#10;    }&#10;&#10;    string FullName()&#10;    {&#10;        return _FirstName + &quot; &quot; + _LastName;&#10;    }&#10;&#10;    void setEmail(string Email)&#10;    {&#10;        _Email = Email;&#10;    }&#10;&#10;    string Email()&#10;    {&#10;        return _Email;&#10;    }&#10;&#10;    void setPhone(string Phone)&#10;    {&#10;        _Phone = Phone;&#10;    }&#10;&#10;    string Phone()&#10;    {&#10;        return _Phone;&#10;    }&#10;&#10;    void Print()&#10;    {&#10;        cout &lt;&lt; &quot;ID: &quot; &lt;&lt; _ID &lt;&lt; endl;&#10;        cout &lt;&lt; &quot;First Name: &quot; &lt;&lt; _FirstName &lt;&lt; endl;&#10;        cout &lt;&lt; &quot;Last Name: &quot; &lt;&lt; _LastName &lt;&lt; endl;&#10;        cout &lt;&lt; &quot;Full Name: &quot; &lt;&lt; FullName() &lt;&lt; endl;&#10;        cout &lt;&lt; &quot;Email: &quot; &lt;&lt; _Email &lt;&lt; endl;&#10;        cout &lt;&lt; &quot;Phone: &quot; &lt;&lt; _Phone &lt;&lt; endl;&#10;    }&#10;&#10;    void SendEmail(string Subject, string Message)&#10;    {&#10;        cout &lt;&lt; &quot;The following message sent successfully to mail: &quot; &lt;&lt; _Email &lt;&lt; endl;&#10;        cout &lt;&lt; &quot;Subject: &quot; &lt;&lt; Subject &lt;&lt; endl;&#10;        cout &lt;&lt; &quot;Message: &quot; &lt;&lt; Message &lt;&lt; endl;&#10;    }&#10;&#10;    void SendSMS(string Message)&#10;    {&#10;        cout &lt;&lt; &quot;The following message sent successfully to phone: &quot; &lt;&lt; _Phone &lt;&lt; endl;&#10;        cout &lt;&lt; &quot;Message: &quot; &lt;&lt; Message &lt;&lt; endl;&#10;    }&#10;};&#10;&#10;class clsEmployee : public clsPerson&#10;{&#10;private:&#10;    string _Title = &quot;&quot;;&#10;    float _Salary = 0;&#10;    string _Department = &quot;&quot;;&#10;&#10;public:&#10;    clsEmployee(int ID, string FirstName, string LastName, string Email, string Phone,&#10;                string Title, float Salary, string Department)&#10;        : clsPerson(ID, FirstName, LastName, Email, Phone)&#10;    {&#10;        _Title = Title;&#10;        _Salary = Salary;&#10;        _Department = Department;&#10;    }&#10;&#10;    void setTitle(string Title)&#10;    {&#10;        _Title = Title;&#10;    }&#10;&#10;    string Title()&#10;    {&#10;        return _Title;&#10;    }&#10;&#10;    void setSalary(float Salary)&#10;    {&#10;        _Salary = Salary;&#10;    }&#10;&#10;    float Salary()&#10;    {&#10;        return _Salary;&#10;    }&#10;&#10;    void setDepartment(string Department)&#10;    {&#10;        _Department = Department;&#10;    }&#10;&#10;    string Department()&#10;    {&#10;        return _Department;&#10;    }&#10;&#10;    void Print()&#10;    {&#10;        clsPerson::Print();&#10;        cout &lt;&lt; &quot;Title: &quot; &lt;&lt; _Title &lt;&lt; endl;&#10;        cout &lt;&lt; &quot;Salary: &quot; &lt;&lt; _Salary &lt;&lt; endl;&#10;        cout &lt;&lt; &quot;Department: &quot; &lt;&lt; _Department &lt;&lt; endl;&#10;    }&#10;};&#10;&#10;int main()&#10;{&#10;    clsEmployee emp(1, &quot;John&quot;, &quot;Doe&quot;, &quot;john@example.com&quot;, &quot;0123456789&quot;, &quot;Manager&quot;, 10000, &quot;IT&quot;);&#10;&#10;    emp.Print();&#10;    emp.SendEmail(&quot;Subject&quot;, &quot;Message&quot;);&#10;    emp.SendSMS(&quot;Message&quot;);&#10;&#10;    return 0;&#10;}&#10;```&#10;&#10;## What was fixed&#10;Your earlier version was close, but this one now includes the missing homework fields:&#10;&#10;- `Title`&#10;- `Department`&#10;&#10;And it keeps:&#10;&#10;- `ID` as read-only&#10;- `FullName()`&#10;- `SendEmail(...)`&#10;- `SendSMS(...)`&#10;- `Print()`&#10;&#10;## Small note&#10;In this design, `SendEmail` and `SendSMS` are inherited from `clsPerson`, which is perfectly fine for this homework.&#10;&#10;If you want, I can also make it **match your exact coding style line-by-line** so it looks more like your course examples." />
+                <option name="internalContent" value="Absolutely — here’s the **same design with `clsPerson` + `clsEmployee`**, updated so it matches the homework better.&#10;&#10;```cpp&#10;#include &lt;iostream&gt;&#10;using namespace std;&#10;&#10;class clsPerson&#10;{&#10;private:&#10;    int _ID = 0;&#10;    string _FirstName = &quot;&quot;;&#10;    string _LastName = &quot;&quot;;&#10;    string _Email = &quot;&quot;;&#10;    string _Phone = &quot;&quot;;&#10;&#10;public:&#10;    clsPerson(int ID, string FirstName, string LastName, string Email, string Phone)&#10;    {&#10;        _ID = ID;&#10;        _FirstName = FirstName;&#10;        _LastName = LastName;&#10;        _Email = Email;&#10;        _Phone = Phone;&#10;    }&#10;&#10;    int ID()&#10;    {&#10;        return _ID;&#10;    }&#10;&#10;    void setFirstName(string FirstName)&#10;    {&#10;        _FirstName = FirstName;&#10;    }&#10;&#10;    string FirstName()&#10;    {&#10;        return _FirstName;&#10;    }&#10;&#10;    void setLastName(string LastName)&#10;    {&#10;        _LastName = LastName;&#10;    }&#10;&#10;    string LastName()&#10;    {&#10;        return _LastName;&#10;    }&#10;&#10;    string FullName()&#10;    {&#10;        return _FirstName + &quot; &quot; + _LastName;&#10;    }&#10;&#10;    void setEmail(string Email)&#10;    {&#10;        _Email = Email;&#10;    }&#10;&#10;    string Email()&#10;    {&#10;        return _Email;&#10;    }&#10;&#10;    void setPhone(string Phone)&#10;    {&#10;        _Phone = Phone;&#10;    }&#10;&#10;    string Phone()&#10;    {&#10;        return _Phone;&#10;    }&#10;&#10;    void Print()&#10;    {&#10;        cout &lt;&lt; &quot;ID: &quot; &lt;&lt; _ID &lt;&lt; endl;&#10;        cout &lt;&lt; &quot;First Name: &quot; &lt;&lt; _FirstName &lt;&lt; endl;&#10;        cout &lt;&lt; &quot;Last Name: &quot; &lt;&lt; _LastName &lt;&lt; endl;&#10;        cout &lt;&lt; &quot;Full Name: &quot; &lt;&lt; FullName() &lt;&lt; endl;&#10;        cout &lt;&lt; &quot;Email: &quot; &lt;&lt; _Email &lt;&lt; endl;&#10;        cout &lt;&lt; &quot;Phone: &quot; &lt;&lt; _Phone &lt;&lt; endl;&#10;    }&#10;&#10;    void SendEmail(string Subject, string Message)&#10;    {&#10;        cout &lt;&lt; &quot;The following message sent successfully to mail: &quot; &lt;&lt; _Email &lt;&lt; endl;&#10;        cout &lt;&lt; &quot;Subject: &quot; &lt;&lt; Subject &lt;&lt; endl;&#10;        cout &lt;&lt; &quot;Message: &quot; &lt;&lt; Message &lt;&lt; endl;&#10;    }&#10;&#10;    void SendSMS(string Message)&#10;    {&#10;        cout &lt;&lt; &quot;The following message sent successfully to phone: &quot; &lt;&lt; _Phone &lt;&lt; endl;&#10;        cout &lt;&lt; &quot;Message: &quot; &lt;&lt; Message &lt;&lt; endl;&#10;    }&#10;};&#10;&#10;class clsEmployee : public clsPerson&#10;{&#10;private:&#10;    string _Title = &quot;&quot;;&#10;    float _Salary = 0;&#10;    string _Department = &quot;&quot;;&#10;&#10;public:&#10;    clsEmployee(int ID, string FirstName, string LastName, string Email, string Phone,&#10;                string Title, float Salary, string Department)&#10;        : clsPerson(ID, FirstName, LastName, Email, Phone)&#10;    {&#10;        _Title = Title;&#10;        _Salary = Salary;&#10;        _Department = Department;&#10;    }&#10;&#10;    void setTitle(string Title)&#10;    {&#10;        _Title = Title;&#10;    }&#10;&#10;    string Title()&#10;    {&#10;        return _Title;&#10;    }&#10;&#10;    void setSalary(float Salary)&#10;    {&#10;        _Salary = Salary;&#10;    }&#10;&#10;    float Salary()&#10;    {&#10;        return _Salary;&#10;    }&#10;&#10;    void setDepartment(string Department)&#10;    {&#10;        _Department = Department;&#10;    }&#10;&#10;    string Department()&#10;    {&#10;        return _Department;&#10;    }&#10;&#10;    void Print()&#10;    {&#10;        clsPerson::Print();&#10;        cout &lt;&lt; &quot;Title: &quot; &lt;&lt; _Title &lt;&lt; endl;&#10;        cout &lt;&lt; &quot;Salary: &quot; &lt;&lt; _Salary &lt;&lt; endl;&#10;        cout &lt;&lt; &quot;Department: &quot; &lt;&lt; _Department &lt;&lt; endl;&#10;    }&#10;};&#10;&#10;int main()&#10;{&#10;    clsEmployee emp(1, &quot;John&quot;, &quot;Doe&quot;, &quot;john@example.com&quot;, &quot;0123456789&quot;, &quot;Manager&quot;, 10000, &quot;IT&quot;);&#10;&#10;    emp.Print();&#10;    emp.SendEmail(&quot;Subject&quot;, &quot;Message&quot;);&#10;    emp.SendSMS(&quot;Message&quot;);&#10;&#10;    return 0;&#10;}&#10;```&#10;&#10;## What was fixed&#10;Your earlier version was close, but this one now includes the missing homework fields:&#10;&#10;- `Title`&#10;- `Department`&#10;&#10;And it keeps:&#10;&#10;- `ID` as read-only&#10;- `FullName()`&#10;- `SendEmail(...)`&#10;- `SendSMS(...)`&#10;- `Print()`&#10;&#10;## Small note&#10;In this design, `SendEmail` and `SendSMS` are inherited from `clsPerson`, which is perfectly fine for this homework.&#10;&#10;If you want, I can also make it **match your exact coding style line-by-line** so it looks more like your course examples." />
+              </SerializedChatMessage>
+            </list>
+          </option>
+          <option name="modifiedAt" value="1775386583299" />
+          <option name="statisticInformation">
+            <ChatStatisticInformation>
+              <option name="sourceActionType" value="NEW_CHAT_ON_START" />
+              <option name="timestamp" value="1775386583299" />
+            </ChatStatisticInformation>
+          </option>
+          <option name="title">
+            <SerializedChatTitle>
+              <option name="custom" value="true" />
+              <option name="text" value="Inheriting Methods in Class Hierarchies" />
+            </SerializedChatTitle>
+          </option>
+          <option name="uid" value="85625d03-c7f7-4f7b-a35d-00f9fa7e2324" />
+        </SerializedChat>
       </list>
     </option>
   </component>
@@ -3321,12 +3490,14 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf ideFingerprint="a60gnc319wgx" SIDE_TABS_SIZE_LIMIT_KEY="-1">
+    <leaf ideFingerprint="2wtqaff7l49ch" SIDE_TABS_SIZE_LIMIT_KEY="-1">
       <file current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Test_Of_OOP.cpp" file-id="39670" managing-fs="1770122711113">
           <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="456">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            <state>
+              <folding>
+                <marker date="1775386936462" expanded="false" signature="57:1835" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -3337,8 +3508,8 @@
   <component name="FileTypeUsageLocalSummary"><![CDATA[{
   "data": {
     "C/C++": {
-      "usageCount": 120,
-      "lastUsed": 1775136414005
+      "usageCount": 129,
+      "lastUsed": 1775500110911
     },
     "CMakeLists.txt": {
       "usageCount": 20,
@@ -3421,6 +3592,7 @@
         <entry key="10a050bc-d3a6-4778-a51f-c12ce7d01c22" value="false" />
         <entry key="1630e2ef-1dd9-4d60-b08b-1d467a9ff79e" value="false" />
         <entry key="1a3b7d6b-11c4-4d47-bd8a-c7fa2ddf8f78" value="false" />
+        <entry key="1dd9ec24-f07c-467d-945e-66075a028922" value="false" />
         <entry key="21e752f4-2caf-43be-94d9-ccb34180d07a" value="false" />
         <entry key="230c1afd-cee1-4a15-8605-39337cc04d25" value="false" />
         <entry key="245e29ac-c112-44c1-9867-af5ae62eb18a" value="false" />
@@ -3428,6 +3600,7 @@
         <entry key="26592162-9b5f-4987-8382-21826627da05" value="false" />
         <entry key="28bc0333-a4a6-426f-9c49-658cd841d474" value="false" />
         <entry key="28c2f586-3660-4e4c-8f2c-98c6df5e5ef3" value="false" />
+        <entry key="28c95731-4613-4e26-a9db-9dfac9f1b906" value="false" />
         <entry key="2ac73887-5144-4720-b273-e625611b2d40" value="false" />
         <entry key="2afc9266-bbd1-4203-b3d2-cb9ca34b28aa" value="false" />
         <entry key="2dc01007-1a96-4a48-bd7f-1a3377ad5deb" value="false" />
@@ -3435,6 +3608,7 @@
         <entry key="32c63f8a-101e-4407-86d9-378e505c29ca" value="false" />
         <entry key="38a4567f-f59b-4508-a7ac-b3c49c0198b6" value="false" />
         <entry key="3cdcfd88-4e7a-4c8f-9281-dd50f1df33de" value="false" />
+        <entry key="3e41d163-21c1-44d8-b1cb-950059db2b2e" value="false" />
         <entry key="4028ec44-58a2-401c-b37f-6bf9ff0e6afd" value="false" />
         <entry key="44639c70-973f-43c6-9156-d98f210c47aa" value="false" />
         <entry key="48095878-7ac8-45f8-be64-e265254725cc" value="false" />
@@ -3446,6 +3620,8 @@
         <entry key="59dc3418-01be-4e36-805b-110942728094" value="false" />
         <entry key="5ced5f69-93f9-40bf-8316-1ea792038522" value="false" />
         <entry key="5e148371-ff3b-4765-97ef-bb9090e1d990" value="false" />
+        <entry key="6619e99d-c079-4ad5-9b0a-15ea2c079ca8" value="false" />
+        <entry key="69971f12-e420-4311-af68-37c82a0e4516" value="false" />
         <entry key="6fe0caa9-f4c7-4604-9b51-ce2935ba223d" value="false" />
         <entry key="70157d71-c6c7-4e64-b669-d34595e2783b" value="false" />
         <entry key="721a139f-6969-4a4b-8219-6c308594f488" value="false" />
@@ -3458,7 +3634,9 @@
         <entry key="841788f3-30dd-4478-99cb-8aadac42fbc4" value="false" />
         <entry key="84bc3f4c-dfd1-4e44-b3ff-d6ec2ab66ba2" value="false" />
         <entry key="851f1859-1b4d-4ad1-980d-64f7f6160670" value="false" />
+        <entry key="85625d03-c7f7-4f7b-a35d-00f9fa7e2324" value="false" />
         <entry key="87b60daf-dd23-4978-8152-65207c3b5264" value="false" />
+        <entry key="8a630184-e882-472e-b96e-addfa7aee62f" value="false" />
         <entry key="8bd84471-5091-4fe8-a56e-c4df1a0b9f66" value="false" />
         <entry key="9274ecda-ac3e-48b5-bfca-7adda715fae7" value="false" />
         <entry key="92d9976e-d705-4fa4-a8e4-a839dc4c27f1" value="false" />
@@ -3525,7 +3703,7 @@
   </component>
   <component name="LanguageUsageStatistics">
     <language id="C++">
-      <summary usageCount="154" lastUsage="1775136414016" />
+      <summary usageCount="163" lastUsage="1775500110917" />
     </language>
     <language id="CMake">
       <summary usageCount="20" lastUsage="1774162408293" />
@@ -3712,13 +3890,13 @@
     </option>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="314772000" />
+    <option name="totallyTimeSpent" value="333629000" />
   </component>
   <component name="ToolWindowManager">
     <layoutV2>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.51416254" visible="true" weight="0.17645201" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5233463" visible="true" weight="0.14046717" />
       <window_info id="Commit" order="1" weight="0.1554445" />
-      <window_info active="true" id="Structure" order="2" sideWeight="0.48583746" side_tool="true" visible="true" weight="0.17645201" />
+      <window_info active="true" id="Structure" order="2" sideWeight="0.4766537" side_tool="true" visible="true" weight="0.14046717" />
       <window_info id="Pull Requests" order="3" weight="0.1554445" />
       <window_info anchor="bottom" id="Version Control" order="0" weight="0.32987142" />
       <window_info anchor="bottom" id="Problems" order="1" />
@@ -3726,13 +3904,13 @@
       <window_info active="true" anchor="bottom" x="798" y="-37" width="786" height="884" id="Terminal" maximized="true" order="3" type="WINDOWED" weight="0.6572223" />
       <window_info anchor="bottom" id="Services" order="4" weight="0.32987142" />
       <window_info anchor="bottom" id="CMake" order="5" weight="0.33427602" />
-      <window_info anchor="bottom" id="Messages" order="6" weight="0.3338889" />
-      <window_info anchor="bottom" x="814" y="-21" width="786" height="436" id="Run" maximized="true" order="7" show_stripe_button="false" type="WINDOWED" weight="0.6892202" />
+      <window_info anchor="bottom" id="Messages" order="6" visible="true" weight="0.33427602" />
+      <window_info anchor="bottom" x="-802" y="411" width="786" height="884" id="Run" maximized="true" order="7" type="WINDOWED" visible="true" weight="0.33427602" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.32987142" />
       <window_info anchor="bottom" id="Python Packages" order="9" weight="0.32975113" />
       <window_info anchor="bottom" id="PythonProcessOutput" order="10" weight="0.32987142" />
       <window_info anchor="right" id="Notifications" order="0" weight="0.29766417" />
-      <window_info active="true" anchor="right" id="AIAssistant" order="1" sideWeight="0.5006158" visible="true" weight="0.2667298" />
+      <window_info anchor="right" id="AIAssistant" order="1" sideWeight="0.5006158" weight="0.21875" />
       <window_info anchor="right" id="Database" order="2" weight="0.5578125" />
       <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
       <window_info anchor="right" id="Maven" order="4" weight="0.25" />
@@ -3741,7 +3919,7 @@
       <window_info anchor="right" id="Recap" order="7" weight="0.25644398" />
       <window_info anchor="right" id="Python Console" order="8" weight="0.5578125" />
       <window_info anchor="right" id="documentation.v2" order="9" sideWeight="0.49938422" side_tool="true" weight="0.24526516" />
-      <unified_weights bottom="0.3338889" left="0.17645201" right="0.2667298" />
+      <unified_weights bottom="0.33427602" left="0.14046717" right="0.21875" />
     </layoutV2>
     <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1556187" />
@@ -3772,10 +3950,10 @@
     </layout-to-restore>
     <recentWindows>
       <value>AIAssistant</value>
+      <value>Run</value>
+      <value>Messages</value>
       <value>Project</value>
       <value>Structure</value>
-      <value>Messages</value>
-      <value>Run</value>
       <value>Problems View</value>
       <value>ElectroJunToolWindow</value>
       <value>CMake</value>
@@ -3905,8 +4083,10 @@
     <entry file="file://$PROJECT_DIR$/include/clsClient.h" />
     <entry file="file://$PROJECT_DIR$/src/Test_Of_OOP.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        <state>
+          <folding>
+            <marker date="1775386936462" expanded="false" signature="57:1835" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>

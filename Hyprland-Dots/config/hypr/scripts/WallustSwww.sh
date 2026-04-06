@@ -61,3 +61,25 @@ cp -f "$wallpaper_path" "$wallpaper_current" || true
 # Run wallust (silent) to regenerate templates defined in ~/.config/wallust/wallust.toml
 # -s is used in this repo to keep things quiet and avoid extra prompts
 wallust run -s "$wallpaper_path" || true
+
+# --- كود تحديث الألوان المباشر ---
+
+# 1. إرسال إشارة لـ Kitty ليعيد تحميل ملفاته بشكل آمن
+if pgrep -x kitty >/dev/null; then
+  killall -SIGUSR1 kitty 2>/dev/null || true
+fi
+
+# 2. حقن ألوان الـ sequences في التيرمينالات المفتوحة
+for tty in /dev/pts/[0-9]*; do
+  if [ -w "$tty" ]; then
+    cat ~/.cache/wallust/sequences >"$tty" 2>/dev/null || true
+  fi
+done
+
+# 3. تحديث Cava ليتناسب مع الألوان الجديدة
+if pgrep -x cava >/dev/null; then
+  # إعطاء النظام نصف ثانية لحفظ ملف إعدادات Cava الجديد
+  sleep 0.5
+  # إرسال إشارة لـ Cava لإعادة قراءة ملف الإعدادات (لن يتوقف السكربت هنا إذا فشل)
+  killall -SIGUSR1 cava 2>/dev/null || true
+fi

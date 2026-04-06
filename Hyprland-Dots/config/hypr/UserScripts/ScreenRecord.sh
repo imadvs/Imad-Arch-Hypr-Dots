@@ -4,6 +4,11 @@
 # Allows selecting between fullscreen and a selected region.
 
 # Check if recorder is running and stop it
+if pgrep -x "gpu-screen-reco" > /dev/null; then
+    pkill -INT -x gpu-screen-reco
+    notify-send "Screen Recording" "Recording stopped and saved to ~/Videos/Recordings" -i video-x-generic
+    exit 0
+fi
 if pgrep -x "wl-screenrec" > /dev/null; then
     pkill -INT -x wl-screenrec
     notify-send "Screen Recording" "Recording stopped and saved to ~/Videos/Recordings" -i video-x-generic
@@ -25,12 +30,18 @@ FILENAME="$VID_DIR/Rec_$(date +'%Y-%m-%d_%H-%M-%S').mp4"
 
 if [[ "$SELECTION" == *"Fullscreen"* ]]; then
     notify-send "Screen Recording" "Starting FULLSCREEN recording..." -i video-x-generic
-    if command -v wl-screenrec &> /dev/null; then
-        wl-screenrec -f "$FILENAME"
+    ACTIVE_MONITOR=$(hyprctl monitors -j | jq -r '.[] | select(.focused) | .name' | head -n 1)
+    if [ -z "$ACTIVE_MONITOR" ] || [ "$ACTIVE_MONITOR" == "null" ]; then
+        ACTIVE_MONITOR=$(hyprctl monitors -j | jq -r '.[0].name')
+    fi
+    if command -v gpu-screen-recorder &> /dev/null; then
+        gpu-screen-recorder -w "$ACTIVE_MONITOR" -f 60 -o "$FILENAME" > /tmp/screenrecord.log 2>&1 &
+    elif command -v wl-screenrec &> /dev/null; then
+        wl-screenrec -o "$ACTIVE_MONITOR" -f "$FILENAME" > /tmp/screenrecord.log 2>&1 &
     elif command -v wf-recorder &> /dev/null; then
-        wf-recorder -f "$FILENAME"
+        wf-recorder -o "$ACTIVE_MONITOR" -f "$FILENAME" > /tmp/screenrecord.log 2>&1 &
     else
-        notify-send "Screen Recording Error" "No recorder installed (wl-screenrec/wf-recorder)" -i dialog-error
+        notify-send "Screen Recording Error" "No recorder installed" -i dialog-error
     fi
 elif [[ "$SELECTION" == *"Selected Region"* ]]; then
     REGION=$(slurp)
@@ -38,11 +49,14 @@ elif [[ "$SELECTION" == *"Selected Region"* ]]; then
         exit 0
     fi
     notify-send "Screen Recording" "Starting REGION recording..." -i video-x-generic
-    if command -v wl-screenrec &> /dev/null; then
-        wl-screenrec -g "$REGION" -f "$FILENAME"
+    if command -v gpu-screen-recorder &> /dev/null; then
+        GSR_REGION=$(echo "$REGION" | awk -F'[, ]' '{print $3"+"$1"+"$2}')
+        gpu-screen-recorder -w region -region "$GSR_REGION" -f 60 -o "$FILENAME" > /tmp/screenrecord.log 2>&1 &
+    elif command -v wl-screenrec &> /dev/null; then
+        wl-screenrec -g "$REGION" -f "$FILENAME" > /tmp/screenrecord.log 2>&1 &
     elif command -v wf-recorder &> /dev/null; then
-        wf-recorder -g "$REGION" -f "$FILENAME"
+        wf-recorder -g "$REGION" -f "$FILENAME" > /tmp/screenrecord.log 2>&1 &
     else
-        notify-send "Screen Recording Error" "No recorder installed (wl-screenrec/wf-recorder)" -i dialog-error
+        notify-send "Screen Recording Error" "No recorder installed" -i dialog-error
     fi
 fi

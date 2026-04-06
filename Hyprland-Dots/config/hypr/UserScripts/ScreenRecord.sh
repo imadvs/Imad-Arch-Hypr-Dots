@@ -35,7 +35,7 @@ if [[ "$SELECTION" == *"Fullscreen"* ]]; then
         ACTIVE_MONITOR=$(hyprctl monitors -j | jq -r '.[0].name')
     fi
     if command -v gpu-screen-recorder &> /dev/null; then
-        gpu-screen-recorder -w "$ACTIVE_MONITOR" -f 60 -o "$FILENAME" > /tmp/screenrecord.log 2>&1 &
+        gpu-screen-recorder -w "$ACTIVE_MONITOR" -f 60 -a default_output -o "$FILENAME" > /tmp/screenrecord.log 2>&1 &
     elif command -v wl-screenrec &> /dev/null; then
         wl-screenrec -o "$ACTIVE_MONITOR" -f "$FILENAME" > /tmp/screenrecord.log 2>&1 &
     elif command -v wf-recorder &> /dev/null; then
@@ -51,7 +51,7 @@ elif [[ "$SELECTION" == *"Selected Region"* ]]; then
     notify-send "Screen Recording" "Starting REGION recording..." -i video-x-generic
     if command -v gpu-screen-recorder &> /dev/null; then
         GSR_REGION=$(echo "$REGION" | awk -F'[, ]' '{print $3"+"$1"+"$2}')
-        gpu-screen-recorder -w region -region "$GSR_REGION" -f 60 -o "$FILENAME" > /tmp/screenrecord.log 2>&1 &
+        gpu-screen-recorder -w region -region "$GSR_REGION" -f 60 -a default_output -o "$FILENAME" > /tmp/screenrecord.log 2>&1 &
     elif command -v wl-screenrec &> /dev/null; then
         wl-screenrec -g "$REGION" -f "$FILENAME" > /tmp/screenrecord.log 2>&1 &
     elif command -v wf-recorder &> /dev/null; then

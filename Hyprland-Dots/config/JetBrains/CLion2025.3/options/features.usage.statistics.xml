@@ -7,7 +7,7 @@
     <feature id="refactoring.changeSignature" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="navigation.popup.symbol" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="switcher" count="0" last-shown="0" last-used="0" shown-count="0" />
-    <feature id="editing.completion.replace" count="30" last-shown="1775386577009" last-used="1774477969451" shown-count="1426" />
+    <feature id="editing.completion.replace" count="30" last-shown="1775566227357" last-used="1774477969451" shown-count="1428" />
     <feature id="codeassists.complete.statement" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="refactoring.inlineTypedef" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="refactoring.introduceConstant" count="0" last-shown="0" last-used="0" shown-count="0" />
@@ -87,14 +87,14 @@
     <feature id="refactoring.introduceDefine" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="codeassists.surroundwith.expression" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="codeassists.generate.code" count="0" last-shown="0" last-used="0" shown-count="0" />
-    <feature id="navigation.goto.declaration" count="270" last-shown="0" last-used="1775339514859" shown-count="0" />
+    <feature id="navigation.goto.declaration" count="272" last-shown="0" last-used="1775564525714" shown-count="0" />
     <feature id="editing.completion.finishByDotEtc" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="refactoring.inlineMethod" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="ui.open.project.tool.window" count="14" last-shown="0" last-used="1770729747553" shown-count="0" />
     <feature id="editing.join.lines" count="17" last-shown="0" last-used="1770730879464" shown-count="0" />
     <feature id="debugger.breakpoint.non.suspending" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="editing.completion.finishByCtrlDot" count="0" last-shown="0" last-used="0" shown-count="0" />
-    <feature id="codeassists.context.actions" count="23" last-shown="0" last-used="1774407893647" shown-count="0" />
+    <feature id="codeassists.context.actions" count="24" last-shown="0" last-used="1775566418789" shown-count="0" />
     <feature id="navigation.select.in" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="ui.tree.speedsearch" count="2" last-shown="0" last-used="1770759353140" shown-count="0" />
     <feature id="ui.horizontal.scrolling" count="0" last-shown="0" last-used="0" shown-count="0" />

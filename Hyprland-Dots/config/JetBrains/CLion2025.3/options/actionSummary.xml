@@ -142,10 +142,10 @@
       <i c="2" l="1770152534642" />
     </e>
     <e n="EditorDown">
-      <i c="70" l="1775339280500" />
+      <i c="77" l="1775566244160" />
     </e>
     <e n="EditorEnter">
-      <i c="716" l="1775386577349" />
+      <i c="717" l="1775566222018" />
     </e>
     <e n="EditorEscape">
       <i c="72" l="1774063809594" />
@@ -217,7 +217,7 @@
       <i c="4" l="1771680609269" />
     </e>
     <e n="GotoDeclaration">
-      <i c="270" l="1775339514854" />
+      <i c="272" l="1775564525710" />
     </e>
     <e n="GotoNextElementUnderCaretUsage">
       <i c="1" l="1771689813260" />
@@ -301,7 +301,7 @@
       <i c="3" l="1770817563479" />
     </e>
     <e n="ShowIntentionActions">
-      <i c="4" l="1770508886821" />
+      <i c="5" l="1775566418746" />
     </e>
     <e n="ShowNavBar">
       <i c="1" l="1770508930691" />
@@ -359,6 +359,12 @@
     </e>
     <e n="com.intellij.clion.projectStatus.popup.ProjectFixWrappingAction">
       <i c="4" l="1774112547901" />
+    </e>
+    <e n="com.intellij.codeInsight.lookup.impl.LookupUi$MenuAction">
+      <i c="1" l="1775566250743" />
+    </e>
+    <e n="com.intellij.codeInsight.lookup.impl.LookupUi$ShowCompletionSettingsAction">
+      <i c="1" l="1775566253929" />
     </e>
     <e n="com.intellij.collaboration.ui.codereview.list.search.ReviewListSearchPanelFactory$QuickFilterButtonFactory$FilterPopupMenuAction">
       <i c="1" l="1770152082736" />
@@ -430,7 +436,7 @@
       <i c="2" l="1770125255409" />
     </e>
     <e n="com.intellij.openapi.actionSystem.AnActionWrapper">
-      <i c="2399" l="1775386624873" />
+      <i c="2400" l="1775566260624" />
     </e>
     <e n="com.intellij.openapi.actionSystem.DefaultActionGroup">
       <i c="5" l="1774145374477" />

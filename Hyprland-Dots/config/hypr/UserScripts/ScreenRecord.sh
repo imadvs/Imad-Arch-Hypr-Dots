@@ -29,7 +29,7 @@ mkdir -p "$VID_DIR"
 FILENAME="$VID_DIR/Rec_$(date +'%Y-%m-%d_%H-%M-%S').mp4"
 
 if [[ "$SELECTION" == *"Fullscreen"* ]]; then
-    notify-send "Screen Recording" "Starting FULLSCREEN recording..." -i video-x-generic
+    # Silent start to avoid notification in video
     ACTIVE_MONITOR=$(hyprctl monitors -j | jq -r '.[] | select(.focused) | .name' | head -n 1)
     if [ -z "$ACTIVE_MONITOR" ] || [ "$ACTIVE_MONITOR" == "null" ]; then
         ACTIVE_MONITOR=$(hyprctl monitors -j | jq -r '.[0].name')
@@ -48,7 +48,7 @@ elif [[ "$SELECTION" == *"Selected Region"* ]]; then
     if [ -z "$REGION" ]; then
         exit 0
     fi
-    notify-send "Screen Recording" "Starting REGION recording..." -i video-x-generic
+    # Silent start to avoid notification in video
     if command -v gpu-screen-recorder &> /dev/null; then
         GSR_REGION=$(echo "$REGION" | awk -F'[, ]' '{print $3"+"$1"+"$2}')
         gpu-screen-recorder -w region -region "$GSR_REGION" -f 60 -a default_output -o "$FILENAME" > /tmp/screenrecord.log 2>&1 &

@@ -186,7 +186,7 @@ apply_image_wallpaper() {
   "$SCRIPTSDIR/Refresh.sh"
   sleep 1
 
-  set_sddm_wallpaper
+  # set_sddm_wallpaper
 }
 
 apply_video_wallpaper() {

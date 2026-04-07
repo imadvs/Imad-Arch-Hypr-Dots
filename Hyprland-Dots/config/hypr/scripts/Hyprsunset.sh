@@ -19,27 +19,14 @@ ensure_state() {
   [[ -f "$STATE_FILE" ]] || echo "off" > "$STATE_FILE"
 }
 
-# Render icons using pango markup to allow colorization
 icon_off() {
-  # universally available sun symbol
-  printf "☀"
+  printf "󰖙"
 }
 
 icon_on() {
-  case "$ICON_MODE" in
-    sunset)
-      # sunset emoji (falls back to tofu if no emoji font)
-      printf "🌇"
-      ;;
-    blue)
-      # no color in text; rely on CSS .on to style if desired
-      printf "☀"
-      ;;
-    *)
-      printf "☀"
-      ;;
-  esac
+  printf "󰖔"
 }
+
 
 cmd_toggle() {
   ensure_state
@@ -81,11 +68,11 @@ cmd_status() {
   fi
 
   if [[ "$onoff" == "on" ]]; then
-    txt="<span size='18pt'>$(icon_on)</span>"
+    txt="$(icon_on)"
     cls="on"
     tip="Night light on @ ${TARGET_TEMP}K"
   else
-    txt="<span size='16pt'>$(icon_off)</span>"
+    txt="$(icon_off)"
     cls="off"
     tip="Night light off"
   fi

@@ -96,6 +96,7 @@
         <entry key="ce111d4b-79f5-4a9e-ba4a-804e03088293" value="false" />
         <entry key="cec61a0f-21a3-4487-95bb-21c66e7663bc" value="false" />
         <entry key="d0c9b4a2-a0f3-4d42-b770-785a40c3e877" value="false" />
+        <entry key="d1b723f0-5506-4bb7-a10f-50080ce27495" value="false" />
         <entry key="d1b905d4-c2cf-4dce-bdad-d35e241c0de8" value="false" />
         <entry key="d3156078-5bbc-435a-baa1-d9efd02595cb" value="false" />
         <entry key="d444cb8e-de44-4e56-b58f-6c27cb44a081" value="false" />
@@ -3495,20 +3496,23 @@
       <file current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Test_Of_OOP.cpp" file-id="39670" managing-fs="1770122711113">
           <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="1594">
-              <caret line="156" column="10" lean-forward="true" selection-start-line="156" selection-start-column="10" selection-end-line="156" selection-end-column="10" />
+            <state relative-caret-position="33">
+              <caret line="96" column="6" selection-start-line="96" selection-start-column="6" selection-end-line="96" selection-end-column="6" />
+              <folding>
+                <marker date="1775386936462" expanded="false" signature="57:1835" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
-        <tab><![CDATA[{"tabTitle":"Test_Of_OOP.cpp","foregroundColor":-9192071,"textAttributes":{"name":"a","children":[{"name":"option","attributes":{"name":"FOREGROUND","value":"73bd79"}}]},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,114,10,23,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,99,112,112,46,115,118,103,18,29,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,99,112,112,46,115,118,103,26,18,99,111,109,46,105,110,116,101,108,108,105,106,46,99,108,105,111,110,34,23,105,110,116,101,108,108,105,106,46,99,105,100,114,46,108,97,110,103,46,98,97,115,101,40,-21,-119,-10,-57,-3,-1,-1,-1,-1,1,48,0]}]]></tab>
+        <tab>{&quot;tabTitle&quot;:&quot;Test_Of_OOP.cpp&quot;,&quot;foregroundColor&quot;:-9192071,&quot;textAttributes&quot;:{&quot;name&quot;:&quot;a&quot;,&quot;children&quot;:[{&quot;name&quot;:&quot;option&quot;,&quot;attributes&quot;:{&quot;name&quot;:&quot;FOREGROUND&quot;,&quot;value&quot;:&quot;73bd79&quot;}}]},&quot;icon&quot;:[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,114,10,23,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,99,112,112,46,115,118,103,18,29,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,99,112,112,46,115,118,103,26,18,99,111,109,46,105,110,116,101,108,108,105,106,46,99,108,105,111,110,34,23,105,110,116,101,108,108,105,106,46,99,105,100,114,46,108,97,110,103,46,98,97,115,101,40,-21,-119,-10,-57,-3,-1,-1,-1,-1,1,48,0]}</tab>
       </file>
     </leaf>
   </component>
   <component name="FileTypeUsageLocalSummary"><![CDATA[{
   "data": {
     "C/C++": {
-      "usageCount": 131,
-      "lastUsed": 1775508615382
+      "usageCount": 133,
+      "lastUsed": 1775647297830
     },
     "CMakeLists.txt": {
       "usageCount": 20,
@@ -3677,6 +3681,7 @@
         <entry key="ce111d4b-79f5-4a9e-ba4a-804e03088293" value="false" />
         <entry key="cec61a0f-21a3-4487-95bb-21c66e7663bc" value="false" />
         <entry key="d0c9b4a2-a0f3-4d42-b770-785a40c3e877" value="false" />
+        <entry key="d1b723f0-5506-4bb7-a10f-50080ce27495" value="false" />
         <entry key="d1b905d4-c2cf-4dce-bdad-d35e241c0de8" value="false" />
         <entry key="d3156078-5bbc-435a-baa1-d9efd02595cb" value="false" />
         <entry key="d444cb8e-de44-4e56-b58f-6c27cb44a081" value="false" />
@@ -3703,7 +3708,7 @@
   </component>
   <component name="LanguageUsageStatistics">
     <language id="C++">
-      <summary usageCount="165" lastUsage="1775508615395" />
+      <summary usageCount="167" lastUsage="1775647297836" />
     </language>
     <language id="CMake">
       <summary usageCount="20" lastUsage="1774162408293" />
@@ -3890,13 +3895,13 @@
     </option>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="343800000" />
+    <option name="totallyTimeSpent" value="347212000" />
   </component>
   <component name="ToolWindowManager">
     <layoutV2>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5246433" visible="true" weight="0.14046717" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5258064" visible="true" weight="0.14046717" />
       <window_info id="Commit" order="1" weight="0.1554445" />
-      <window_info active="true" id="Structure" order="2" sideWeight="0.4753567" side_tool="true" visible="true" weight="0.14046717" />
+      <window_info active="true" id="Structure" order="2" sideWeight="0.47419354" side_tool="true" visible="true" weight="0.14046717" />
       <window_info id="Pull Requests" order="3" weight="0.1554445" />
       <window_info anchor="bottom" id="Version Control" order="0" weight="0.32987142" />
       <window_info anchor="bottom" id="Problems" order="1" />
@@ -3949,11 +3954,11 @@
       <unified_weights bottom="0.33427602" left="0.1556187" right="0.29766417" />
     </layout-to-restore>
     <recentWindows>
+      <value>Structure</value>
       <value>AIAssistant</value>
       <value>Run</value>
       <value>Messages</value>
       <value>Project</value>
-      <value>Structure</value>
       <value>Problems View</value>
       <value>ElectroJunToolWindow</value>
       <value>CMake</value>
@@ -4084,8 +4089,11 @@
     <entry file="file://$PROJECT_DIR$/include/clsClient.h" />
     <entry file="file://$PROJECT_DIR$/src/Test_Of_OOP.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1594">
-          <caret line="156" column="10" lean-forward="true" selection-start-line="156" selection-start-column="10" selection-end-line="156" selection-end-column="10" />
+        <state relative-caret-position="33">
+          <caret line="96" column="6" selection-start-line="96" selection-start-column="6" selection-end-line="96" selection-end-column="6" />
+          <folding>
+            <marker date="1775386936462" expanded="false" signature="57:1835" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>

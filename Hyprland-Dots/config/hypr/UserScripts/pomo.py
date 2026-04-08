@@ -3,7 +3,6 @@ import time
 import sys
 import os
 import json
-import select
 from datetime import datetime
 
 class PomodoroTimer:
@@ -20,21 +19,17 @@ class PomodoroTimer:
         self.state_dir = os.path.expanduser("~/.local/share/pomo")
         self.state_file = os.path.join(self.state_dir, "state.json")
         
-        # Color codes - Optimized for Pywal / Dynamic Themes
+        # Color codes - adjusted for better visibility on dark/green backgrounds
         self.RESET = '\033[0m'
         self.BOLD = '\033[1m'
-        self.RED = '\033[31m'
-        self.GREEN = '\033[32m'
-        self.YELLOW = '\033[33m'
-        self.BLUE = '\033[34m'
-        self.MAGENTA = '\033[35m'
-        self.CYAN = '\033[36m'
-        self.WHITE = '\033[39m'    # Default foreground 
-        
-        # Highlight Color Fix:
-        # Using 97m (Color 15) which Pywal guarantees as the brightest foreground color.
-        # We apply self.BOLD separately in the print statements to ensure the terminal respects it.
-        self.ORANGE = '\033[97m' 
+        self.RED = '\033[91m'
+        self.GREEN = '\033[92m'
+        self.YELLOW = '\033[93m'
+        self.BLUE = '\033[94m'
+        self.MAGENTA = '\033[95m'
+        self.CYAN = '\033[96m'
+        self.WHITE = '\033[97m'
+        self.ORANGE = '\033[38;5;208m'  # Bright orange for better visibility
         
         # Create state directory if it doesn't exist
         os.makedirs(self.state_dir, exist_ok=True)
@@ -108,9 +103,9 @@ class PomodoroTimer:
         print()
         
         # Configure total sessions
-        print(f"{self.ORANGE}{self.BOLD}Total number of sessions:{self.RESET}")
+        print(f"{self.YELLOW}Total number of sessions:{self.RESET}")
         print(f"{self.WHITE}Current: {self.total_sessions} sessions{self.RESET}")
-        print(f"{self.ORANGE}{self.BOLD}Enter new value (1-10) or press ENTER to keep:{self.RESET} ", end='')
+        print(f"{self.CYAN}Enter new value (1-10) or press ENTER to keep:{self.RESET} ", end='')
         try:
             response = input().strip()
             if response:
@@ -127,9 +122,9 @@ class PomodoroTimer:
         print()
         
         # Configure Pomodoro time
-        print(f"{self.ORANGE}{self.BOLD}Pomodoro work time (minutes):{self.RESET}")
+        print(f"{self.YELLOW}Pomodoro work time (minutes):{self.RESET}")
         print(f"{self.WHITE}Current: {self.pomodoro_time // 60} minutes{self.RESET}")
-        print(f"{self.ORANGE}{self.BOLD}Enter new value (1-240) or press ENTER to keep:{self.RESET} ", end='')
+        print(f"{self.CYAN}Enter new value (1-240) or press ENTER to keep:{self.RESET} ", end='')
         try:
             response = input().strip()
             if response:
@@ -146,9 +141,9 @@ class PomodoroTimer:
         print()
         
         # Configure short break time
-        print(f"{self.ORANGE}{self.BOLD}Short break time (minutes):{self.RESET}")
+        print(f"{self.YELLOW}Short break time (minutes):{self.RESET}")
         print(f"{self.WHITE}Current: {self.short_break // 60} minutes{self.RESET}")
-        print(f"{self.ORANGE}{self.BOLD}Enter new value (1-60) or press ENTER to keep:{self.RESET} ", end='')
+        print(f"{self.CYAN}Enter new value (1-60) or press ENTER to keep:{self.RESET} ", end='')
         try:
             response = input().strip()
             if response:
@@ -165,9 +160,9 @@ class PomodoroTimer:
         print()
         
         # Configure long break time
-        print(f"{self.ORANGE}{self.BOLD}Long break time (minutes):{self.RESET}")
+        print(f"{self.YELLOW}Long break time (minutes):{self.RESET}")
         print(f"{self.WHITE}Current: {self.long_break // 60} minutes{self.RESET}")
-        print(f"{self.ORANGE}{self.BOLD}Enter new value (1-120) or press ENTER to keep:{self.RESET} ", end='')
+        print(f"{self.CYAN}Enter new value (1-120) or press ENTER to keep:{self.RESET} ", end='')
         try:
             response = input().strip()
             if response:
@@ -184,9 +179,9 @@ class PomodoroTimer:
         print()
         
         # Configure long break interval
-        print(f"{self.ORANGE}{self.BOLD}Long break after how many sessions?{self.RESET}")
+        print(f"{self.YELLOW}Long break after how many sessions?{self.RESET}")
         print(f"{self.WHITE}Current: Every {self.long_break_interval} sessions{self.RESET}")
-        print(f"{self.ORANGE}{self.BOLD}Enter new value (2-{self.total_sessions}) or press ENTER to keep:{self.RESET} ", end='')
+        print(f"{self.CYAN}Enter new value (2-{self.total_sessions}) or press ENTER to keep:{self.RESET} ", end='')
         try:
             response = input().strip()
             if response:
@@ -217,15 +212,15 @@ class PomodoroTimer:
     def print_banner(self, mode, time_left):
         self.clear_screen()
         
-        # Banner
-        print(f"{self.WHITE}{self.BOLD}{'=' * 50}{self.RESET}")
-        print(f"{self.WHITE}{self.BOLD}{' ' * 15}POMODORO TIMER{self.RESET}")
-        print(f"{self.WHITE}{self.BOLD}{'=' * 50}{self.RESET}")
+        # Banner with colors
+        print(f"{self.CYAN}{self.BOLD}{'=' * 50}{self.RESET}")
+        print(f"{self.CYAN}{self.BOLD}{' ' * 15}POMODORO TIMER{self.RESET}")
+        print(f"{self.CYAN}{self.BOLD}{'=' * 50}{self.RESET}")
         print()
         
-        # Mode indicator (Changed from RED to bright ORANGE to prevent disappearing into Pywal red themes)
+        # Mode indicator with different colors (bold white for visibility)
         if mode == "pomodoro":
-            print(f"{self.ORANGE}{self.BOLD}🍅 POMODORO - Time to focus!{self.RESET}")
+            print(f"{self.CYAN}{self.BOLD}🍅 POMODORO - Time to focus!{self.RESET}")
         elif mode == "short_break":
             print(f"{self.CYAN}{self.BOLD}☕ SHORT BREAK - Take a breather{self.RESET}")
         else:
@@ -235,27 +230,28 @@ class PomodoroTimer:
         print(f"{self.WHITE}{self.BOLD}Session: #{self.pomodoro_count + 1}{self.RESET}")
         print()
         
-        # Timer display
+        # Timer display with color
         time_str = self.format_time(time_left)
-        print(f"{self.WHITE}{self.BOLD}{' ' * 18}┌─────────┐{self.RESET}")
-        print(f"{self.WHITE}{self.BOLD}{' ' * 18}│ {time_str} │{self.RESET}")
-        print(f"{self.WHITE}{self.BOLD}{' ' * 18}└─────────┘{self.RESET}")
+        timer_color = self.CYAN  # Use Cyan for both for better visibility
+        print(f"{timer_color}{' ' * 18}┌─────────┐{self.RESET}")
+        print(f"{timer_color}{' ' * 18}│ {self.WHITE}{self.BOLD}{time_str}{self.RESET}{timer_color} │{self.RESET}")
+        print(f"{timer_color}{' ' * 18}└─────────┘{self.RESET}")
         print()
         
-        # Progress bar
+        # Progress bar with color
         total = self.get_total_time(mode)
         progress = 1 - (time_left / total)
         bar_length = 40
         filled = int(bar_length * progress)
-        bar_color = self.RED if mode == "pomodoro" else self.CYAN
-        bar = f"{bar_color}{'█' * filled}{self.RESET}{self.WHITE}{'░' * (bar_length - filled)}{self.RESET}"
+        bar_color = self.CYAN  # Use Cyan for both for better visibility
+        bar = f"{bar_color}{'█' * filled}{self.RESET}{'░' * (bar_length - filled)}"
         print(f"     [{bar}] {self.WHITE}{self.BOLD}{int(progress * 100)}%{self.RESET}")
         print()
         
         # Controls
-        print(f"{self.WHITE}{self.BOLD}{'─' * 50}{self.RESET}")
-        print(f"{self.WHITE}{self.BOLD}Controls: {self.ORANGE}{self.BOLD}[SPACE]{self.RESET} {self.WHITE}{self.BOLD}Pause/Resume | {self.ORANGE}{self.BOLD}[R]{self.RESET} {self.WHITE}{self.BOLD}Reset | {self.ORANGE}{self.BOLD}[S]{self.RESET} {self.WHITE}{self.BOLD}Skip | {self.ORANGE}{self.BOLD}[Q]{self.RESET} {self.WHITE}{self.BOLD}Quit{self.RESET}")
-        print(f"{self.WHITE}{self.BOLD}{'─' * 50}{self.RESET}")
+        print(f"{self.CYAN}{'─' * 50}{self.RESET}")
+        print(f"{self.WHITE}Controls: {self.MAGENTA}[SPACE]{self.WHITE} Pause/Resume | {self.MAGENTA}[R]{self.WHITE} Reset | {self.MAGENTA}[S]{self.WHITE} Skip | {self.MAGENTA}[Q]{self.WHITE} Quit{self.RESET}")
+        print(f"{self.CYAN}{'─' * 50}{self.RESET}")
     
     def get_total_time(self, mode):
         if mode == "pomodoro":
@@ -266,10 +262,14 @@ class PomodoroTimer:
             return self.long_break
     
     def play_notification(self):
+        # Terminal bell - ring 3 times with delay
         for i in range(3):
             print("\a", flush=True)
             time.sleep(0.5)
+        
+        # System notification sound (works on most Linux systems)
         try:
+            # Play sound 3 times
             for _ in range(3):
                 os.system('paplay /usr/share/sounds/freedesktop/stereo/complete.oga 2>/dev/null &')
                 time.sleep(0.5)
@@ -277,6 +277,8 @@ class PomodoroTimer:
             pass
     
     def send_notification(self, title, message):
+        # Send desktop notification using normal urgency (not critical)
+        # This respects the 5-second timeout in SwayNC
         try:
             os.system(f'notify-send -a "Pomodoro" -u normal -t 5000 "{title}" "{message}" 2>/dev/null &')
         except:
@@ -288,7 +290,7 @@ class PomodoroTimer:
         paused = False
         one_min_warning_sent = False
         
-        # Set up terminal for raw input on Unix
+        # Set up non-blocking input
         if os.name != 'nt':
             import termios
             import tty
@@ -300,18 +302,21 @@ class PomodoroTimer:
                 self.print_banner(mode, time_left)
                 
                 if paused:
-                    print(f"\n{self.ORANGE}{self.BOLD}⏸  PAUSED - Press SPACE to continue{self.RESET}")
+                    print(f"\n{self.YELLOW}⏸  PAUSED - Press SPACE to continue{self.RESET}")
                 
+                # Send 1-minute warning
                 if time_left == 60 and not one_min_warning_sent and not paused:
                     one_min_warning_sent = True
                     if mode == "pomodoro":
                         self.send_notification("⏰ Pomodoro Timer", "1 minute remaining! Finish up your task.")
                     else:
                         self.send_notification("⏰ Break Timer", "1 minute remaining! Break almost over.")
+                    # Warning sound
                     os.system('paplay /usr/share/sounds/freedesktop/stereo/message.oga 2>/dev/null &')
                 
-                # Handle keyboard input
+                # Check for input (non-blocking)
                 if os.name != 'nt':
+                    import select
                     if select.select([sys.stdin], [], [], 0.1)[0]:
                         key = sys.stdin.read(1).lower()
                         if key == ' ':
@@ -341,6 +346,7 @@ class PomodoroTimer:
                 else:
                     time.sleep(0.1)
             
+            # Timer completed - play notification sound and send notification
             self.play_notification()
             if mode == "pomodoro":
                 self.send_notification("✅ Pomodoro Complete!", "Great work! Time for a break.")
@@ -352,7 +358,6 @@ class PomodoroTimer:
             return 'complete', 0
             
         finally:
-            # Restore terminal settings
             if os.name != 'nt':
                 termios.tcsetattr(sys.stdin, termios.TCSADRAIN, old_settings)
     
@@ -363,63 +368,60 @@ class PomodoroTimer:
         if mode == "pomodoro":
             print(f"{self.GREEN}{self.BOLD}{' ' * 10}✅ POMODORO COMPLETE!{self.RESET}")
             print()
-            print(f"{self.ORANGE}{self.BOLD}{' ' * 8}Great work! Time for a break.{self.RESET}")
+            print(f"{self.YELLOW}{' ' * 8}Great work! Time for a break.{self.RESET}")
         else:
             print(f"{self.GREEN}{self.BOLD}{' ' * 10}✅ BREAK COMPLETE!{self.RESET}")
             print()
-            print(f"{self.ORANGE}{self.BOLD}{' ' * 8}Ready to focus again?{self.RESET}")
+            print(f"{self.YELLOW}{' ' * 8}Ready to focus again?{self.RESET}")
         print(f"{self.GREEN}{self.BOLD}{'=' * 50}{self.RESET}")
         print("\n" * 2)
-        print(f"{self.ORANGE}{self.BOLD}Press ENTER to continue...{self.RESET}", end='')
+        print(f"{self.CYAN}Press ENTER to continue...{self.RESET}", end='')
         input()
     
     def show_welcome(self):
+        """Show welcome screen with current progress"""
         self.clear_screen()
         print("\n" * 5)
-        print(f"{self.WHITE}{self.BOLD}{'=' * 50}{self.RESET}")
-        # Changed from RED to bright ORANGE to prevent disappearing into Pywal red themes
-        print(f"{self.ORANGE}{self.BOLD}{' ' * 12}🍅 POMODORO TIMER 🍅{self.RESET}")
-        print(f"{self.WHITE}{self.BOLD}{'=' * 50}{self.RESET}")
+        print(f"{self.CYAN}{self.BOLD}{'=' * 50}{self.RESET}")
+        print(f"{self.CYAN}{self.BOLD}{' ' * 12}🍅 POMODORO TIMER 🍅{self.RESET}")
+        print(f"{self.CYAN}{self.BOLD}{'=' * 50}{self.RESET}")
         print()
         
+        # Show progress if sessions are in progress
         if self.was_paused and self.saved_time_left is not None:
             mins = self.saved_time_left // 60
             secs = self.saved_time_left % 60
             mode_name = "WORK" if self.saved_current_mode == "pomodoro" else "BREAK"
             
-            print(f"{self.ORANGE}{self.BOLD}  ⏸  Paused Timer Detected!{self.RESET}")
+            print(f"{self.YELLOW}{self.BOLD}  ⏸  Paused Timer Detected!{self.RESET}")
             print()
-            print(f"{self.WHITE}  Sessions completed: {self.pomodoro_count}/{self.total_sessions}{self.RESET}")
-            print(f"{self.WHITE}  {mode_name} timer paused at: {mins:02d}:{secs:02d}{self.RESET}")
+            print(f"{self.WHITE}{self.BOLD}  Sessions completed: {self.pomodoro_count}/{self.total_sessions}{self.RESET}")
+            print(f"{self.WHITE}{self.BOLD}  {mode_name} timer paused at: {mins:02d}:{secs:02d}{self.RESET}")
             print()
-            # FIXED: Made the resume/fresh lines BOLD as requested
-            print(f"{self.ORANGE}{self.BOLD}  Press ENTER to resume from where you left off{self.RESET}")
-            print(f"{self.ORANGE}{self.BOLD}  Press 'R' + ENTER to start fresh{self.RESET}")
+            print(f"{self.CYAN}  Press ENTER to resume from where you left off{self.RESET}")
+            print(f"{self.CYAN}  Press 'R' + ENTER to start fresh{self.RESET}")
             print()
         elif self.pomodoro_count > 0:
-            print(f"{self.ORANGE}{self.BOLD}  Welcome back!{self.RESET}")
+            print(f"{self.YELLOW}{self.BOLD}  Welcome back!{self.RESET}")
             print()
-            print(f"{self.WHITE}  Sessions completed: {self.pomodoro_count}/{self.total_sessions}{self.RESET}")
+            print(f"{self.WHITE}{self.BOLD}  Sessions completed: {self.pomodoro_count}/{self.total_sessions}{self.RESET}")
             print()
-            # FIXED: Made the continue/fresh/config lines BOLD as requested
-            print(f"{self.ORANGE}{self.BOLD}  Press ENTER to continue from Session {self.pomodoro_count + 1}{self.RESET}")
-            print(f"{self.ORANGE}{self.BOLD}  Press 'R' + ENTER to start fresh{self.RESET}")
-            print(f"{self.ORANGE}{self.BOLD}  Press 'C' + ENTER to configure times{self.RESET}")
+            print(f"{self.CYAN}  Press ENTER to continue from Session {self.pomodoro_count + 1}{self.RESET}")
+            print(f"{self.CYAN}  Press 'R' + ENTER to start fresh{self.RESET}")
+            print(f"{self.CYAN}  Press 'C' + ENTER to configure times{self.RESET}")
             print()
         else:
-            # FIXED: Made the start/config lines BOLD as requested
-            print(f"{self.ORANGE}{self.BOLD}  Press ENTER to start your first Pomodoro session!{self.RESET}")
-            print(f"{self.ORANGE}{self.BOLD}  Press 'C' + ENTER to configure times{self.RESET}")
+            print(f"{self.YELLOW}  Press ENTER to start your first Pomodoro session!{self.RESET}")
+            print(f"{self.CYAN}  Press 'C' + ENTER to configure times{self.RESET}")
             print()
         
-        # UNTOUCHED: Kept Current Settings exactly as they were (White, No Bold)
         print(f"{self.WHITE}  Current Settings:{self.RESET}")
-        print(f"{self.WHITE}  • Total sessions: {self.total_sessions}{self.RESET}")
-        print(f"{self.WHITE}  • Pomodoro: {self.pomodoro_time // 60} minutes{self.RESET}")
-        print(f"{self.WHITE}  • Short break: {self.short_break // 60} minutes{self.RESET}")
-        print(f"{self.WHITE}  • Long break: {self.long_break // 60} minutes (every {self.long_break_interval} sessions){self.RESET}")
+        print(f"{self.WHITE}{self.BOLD}  • Total sessions: {self.total_sessions}{self.RESET}")
+        print(f"{self.WHITE}{self.BOLD}  • Pomodoro: {self.pomodoro_time // 60} minutes{self.RESET}")
+        print(f"{self.WHITE}{self.BOLD}  • Short break: {self.short_break // 60} minutes{self.RESET}")
+        print(f"{self.WHITE}{self.BOLD}  • Long break: {self.long_break // 60} minutes (every {self.long_break_interval} sessions){self.RESET}")
         print()
-        print(f"{self.WHITE}{self.BOLD}{'=' * 50}{self.RESET}")
+        print(f"{self.CYAN}{self.BOLD}{'=' * 50}{self.RESET}")
         
         response = input().strip().lower()
         if response == 'r':
@@ -431,15 +433,16 @@ class PomodoroTimer:
             time.sleep(1)
         elif response == 'c':
             self.configure_times()
-            self.show_welcome()
+            self.show_welcome()  # Show welcome again after config
     
     def run(self):
         self.show_welcome()
         
+        # Check if we should resume a paused timer
         should_resume = self.was_paused and self.saved_time_left is not None and self.saved_current_mode is not None
         
         while True:
-            # Check if all sessions are complete
+            # Check if we've completed all sessions
             if self.pomodoro_count >= self.total_sessions:
                 self.clear_screen()
                 print("\n" * 5)
@@ -447,10 +450,10 @@ class PomodoroTimer:
                 print(f"{self.GREEN}{self.BOLD}{' ' * 8}🎉 ALL {self.total_sessions} SESSIONS COMPLETE! 🎉{self.RESET}")
                 print(f"{self.GREEN}{self.BOLD}{'=' * 50}{self.RESET}")
                 print()
-                print(f"{self.ORANGE}{self.BOLD}  You finished all Pomodoro sessions!{self.RESET}")
+                print(f"{self.YELLOW}  You finished all Pomodoro sessions!{self.RESET}")
                 print()
-                print(f"{self.ORANGE}{self.BOLD}  Press ENTER to start a new cycle{self.RESET}")
-                print(f"{self.ORANGE}{self.BOLD}  Press 'Q' + ENTER to quit{self.RESET}")
+                print(f"{self.CYAN}  Press ENTER to start a new cycle{self.RESET}")
+                print(f"{self.CYAN}  Press 'Q' + ENTER to quit{self.RESET}")
                 print()
                 response = input().strip().lower()
                 if response == 'q':
@@ -460,79 +463,89 @@ class PomodoroTimer:
                     should_resume = False
                     continue
             
-            # Determine current mode
-            current_mode = "pomodoro"
-            current_time = None
-            
+            # Resume from saved state if applicable
             if should_resume:
-                current_mode = self.saved_current_mode
-                current_time = self.saved_time_left
-                should_resume = False
-            
-            # Run the timer
-            result, time_left = self.run_timer(current_mode, current_time)
-            
-            # Handle quit
-            if result == 'quit':
-                self.save_state(time_left, current_mode)
-                break
-            
-            # Handle reset
-            if result == 'reset':
-                self.reset_state()
-                should_resume = False
-                continue
-            
-            # Handle skip
-            if result == 'skip':
-                if current_mode == "pomodoro":
-                    self.pomodoro_count += 1
-                    self.save_state()
-                # If we skip, we determine next mode immediately and loop
-                continue
-            
-            # Handle completion
-            if result == 'complete':
-                if current_mode == "pomodoro":
-                    self.show_completion("pomodoro")
-                    self.pomodoro_count += 1
-                    self.save_state()
-                    
-                    # Determine break type
-                    if self.pomodoro_count % self.long_break_interval == 0 and self.pomodoro_count > 0:
-                        break_mode = "long_break"
-                    else:
-                        break_mode = "short_break"
-                    
-                    # Start break
-                    print()
-                    if break_mode == "long_break":
-                        print(f"{self.BLUE}{self.BOLD}Starting Long Break...{self.RESET}")
-                    else:
-                        print(f"{self.CYAN}{self.BOLD}Starting Short Break...{self.RESET}")
-                    time.sleep(2)
-                    
-                    # Run break timer
-                    res_b, t_b = self.run_timer(break_mode)
-                    
-                    if res_b == 'quit':
-                        self.save_state(t_b, break_mode)
-                        break
-                    elif res_b == 'reset':
-                        self.reset_state()
-                        continue
-                    elif res_b == 'skip':
-                        self.save_state()
-                        continue
-                    elif res_b == 'complete':
-                        self.show_completion(break_mode)
-                        self.save_state()
-                        continue
-                        
-                else: # Current mode was a break
-                    self.show_completion(current_mode)
-                    self.save_state()
+                result, time_left = self.run_timer(self.saved_current_mode, self.saved_time_left)
+                should_resume = False  # Only resume once
+                
+                if result == 'quit':
+                    self.save_state(time_left, self.saved_current_mode)
+                    break
+                elif result == 'reset':
+                    self.reset_state()
                     continue
+                elif result == 'skip':
+                    # Determine what comes next based on saved mode
+                    if self.saved_current_mode == "pomodoro":
+                        # Skip work, count session and go to break
+                        self.pomodoro_count += 1
+                        self.save_state()
+                    # If was in break, just continue to next work session
+                    continue
+                elif result == 'complete':
+                    if self.saved_current_mode == "pomodoro":
+                        self.show_completion("pomodoro")
+                        self.pomodoro_count += 1
+                        self.save_state()
+                        # DON'T continue here - fall through to break
+                    else:
+                        self.show_completion(self.saved_current_mode)
+                        self.save_state()
+                        # Continue to next work session
+                        continue
+            
+            # Pomodoro work session
+            result, time_left = self.run_timer("pomodoro")
+            
+            if result == 'quit':
+                self.save_state(time_left, "pomodoro")
+                break
+            elif result == 'reset':
+                self.reset_state()
+                continue
+            elif result == 'skip':
+                # Skip work, but count it and go to break
+                self.pomodoro_count += 1
+                self.save_state()
+                # DON'T continue - fall through to break
+            elif result == 'complete':
+                self.show_completion("pomodoro")
+                self.pomodoro_count += 1
+                self.save_state()
+                # DON'T continue - fall through to break
+            
+            # Determine break type
+            if self.pomodoro_count % self.long_break_interval == 0 and self.pomodoro_count > 0:
+                break_mode = "long_break"
+            else:
+                break_mode = "short_break"
+            
+            # Show break message
+            print()
+            if break_mode == "long_break":
+                print(f"{self.BLUE}{self.BOLD}Starting Long Break (30m)...{self.RESET}")
+            else:
+                print(f"{self.CYAN}{self.BOLD}Starting Short Break (10m)...{self.RESET}")
+            time.sleep(2)
+            
+            # Break session
+            result, time_left = self.run_timer(break_mode)
+            
+            if result == 'quit':
+                self.save_state(time_left, break_mode)
+                break
+            elif result == 'reset':
+                self.reset_state()
+                continue
+            elif result == 'skip':
+                # Skip break, continue to next work session
+                self.save_state()
+                continue
+            elif result == 'complete':
+                self.show_completion(break_mode)
+                self.save_state()
+                # Continue to next work session
+                continue
         
         self.clear_screen()
         print("\n" * 5)
@@ -540,6 +553,7 @@ class PomodoroTimer:
         print("\n" * 5)
 
 if __name__ == "__main__":
+    # Check for test argument first
     if len(sys.argv) > 1 and sys.argv[1] == "test":
         print("Testing notification and sound...")
         timer = PomodoroTimer()
@@ -557,11 +571,12 @@ if __name__ == "__main__":
         
         sys.exit(0)
     
+    # Normal program
     timer = PomodoroTimer()
     try:
         timer.run()
     except KeyboardInterrupt:
         timer.clear_screen()
         timer.save_state()
-        print(f"\n\n{timer.ORANGE}{timer.BOLD}Pomodoro timer stopped. Progress saved! See you next time! 🍅{timer.RESET}\n")
+        print(f"\n\n{timer.YELLOW}Pomodoro timer stopped. Progress saved! See you next time! 🍅{timer.RESET}\n")
         sys.exit(0)

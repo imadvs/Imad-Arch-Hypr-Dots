@@ -302,7 +302,7 @@ class PomodoroTimer:
                 self.print_banner(mode, time_left)
                 
                 if paused:
-                    print(f"\n{self.YELLOW}⏸  PAUSED - Press SPACE to continue{self.RESET}")
+                    print(f"\n{self.CYAN}⏸  PAUSED - Press SPACE to continue{self.RESET}")
                 
                 # Send 1-minute warning
                 if time_left == 60 and not one_min_warning_sent and not paused:
@@ -393,7 +393,7 @@ class PomodoroTimer:
             secs = self.saved_time_left % 60
             mode_name = "WORK" if self.saved_current_mode == "pomodoro" else "BREAK"
             
-            print(f"{self.YELLOW}{self.BOLD}  ⏸  Paused Timer Detected!{self.RESET}")
+            print(f"{self.CYAN}{self.BOLD}  ⏸  Paused Timer Detected!{self.RESET}")
             print()
             print(f"{self.WHITE}{self.BOLD}  Sessions completed: {self.pomodoro_count}/{self.total_sessions}{self.RESET}")
             print(f"{self.WHITE}{self.BOLD}  {mode_name} timer paused at: {mins:02d}:{secs:02d}{self.RESET}")
@@ -411,7 +411,7 @@ class PomodoroTimer:
             print(f"{self.CYAN}  Press 'C' + ENTER to configure times{self.RESET}")
             print()
         else:
-            print(f"{self.YELLOW}  Press ENTER to start your first Pomodoro session!{self.RESET}")
+            print(f"{self.CYAN}  Press ENTER to start your first Pomodoro session!{self.RESET}")
             print(f"{self.CYAN}  Press 'C' + ENTER to configure times{self.RESET}")
             print()
         

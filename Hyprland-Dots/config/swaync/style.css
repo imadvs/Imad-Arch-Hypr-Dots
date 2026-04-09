@@ -327,3 +327,13 @@
     font-size: x-large;
     color: @text-color
 }
+/* Custom progress bar styles */
+progressbar > trough, progressbar trough {
+    background-color: @noti-bg-alt;
+    border-radius: 10px;
+}
+
+progressbar > trough > progress, progressbar progress {
+    background-color: @noti-border-color;
+    border-radius: 10px;
+}

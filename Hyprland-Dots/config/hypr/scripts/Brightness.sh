@@ -14,11 +14,13 @@ get_brightness() {
 # Determine the icon based on brightness level
 get_icon_path() {
     local brightness=$1
-    local level=$(( (brightness + 19) / 20 * 20 ))  # Round up to next 20
-    if (( level > 100 )); then
-        level=100
+    if (( brightness <= 20 )); then
+        echo "󰃞"
+    elif (( brightness <= 60 )); then
+        echo "󰃟"
+    else
+        echo "󰃠"
     fi
-    echo "$iDIR/brightness-${level}.png"
 }
 
 # Send notification
@@ -31,8 +33,7 @@ send_notification() {
         -h int:value:"$brightness" \
         -h boolean:SWAYNC_BYPASS_DND:true \
         -u low \
-        -i "$icon_path" \
-        "Brightness: ${brightness}%"
+        "$icon_path Brightness: ${brightness}%"
 }
 
 # Change brightness and notify

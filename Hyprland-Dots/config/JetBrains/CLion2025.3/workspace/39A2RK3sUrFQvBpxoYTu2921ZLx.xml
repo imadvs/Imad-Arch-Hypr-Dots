@@ -113,6 +113,7 @@
         <entry key="ed8d88e4-7b51-42c0-b210-4035a2366944" value="false" />
         <entry key="eea4893e-a39c-4c3b-990a-772d4f677244" value="false" />
         <entry key="ef46c0de-526d-48cc-a945-909ad4f58de3" value="false" />
+        <entry key="f0e7fb3b-5a16-47da-b341-b94b3c4113ff" value="false" />
         <entry key="f10d8a1f-478d-434c-bc97-9365e3bd1bd5" value="false" />
         <entry key="f1c6c0ef-1ead-438b-a78e-6573c0c194a3" value="false" />
         <entry key="f2dff384-92fa-4ca3-a8cb-5c1701f2f9ef" value="false" />
@@ -3698,6 +3699,7 @@
         <entry key="ed8d88e4-7b51-42c0-b210-4035a2366944" value="false" />
         <entry key="eea4893e-a39c-4c3b-990a-772d4f677244" value="false" />
         <entry key="ef46c0de-526d-48cc-a945-909ad4f58de3" value="false" />
+        <entry key="f0e7fb3b-5a16-47da-b341-b94b3c4113ff" value="false" />
         <entry key="f10d8a1f-478d-434c-bc97-9365e3bd1bd5" value="false" />
         <entry key="f1c6c0ef-1ead-438b-a78e-6573c0c194a3" value="false" />
         <entry key="f2dff384-92fa-4ca3-a8cb-5c1701f2f9ef" value="false" />
@@ -3895,13 +3897,13 @@
     </option>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="347212000" />
+    <option name="totallyTimeSpent" value="349206000" />
   </component>
   <component name="ToolWindowManager">
     <layoutV2>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5258064" visible="true" weight="0.14046717" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5264858" visible="true" weight="0.14046717" />
       <window_info id="Commit" order="1" weight="0.1554445" />
-      <window_info active="true" id="Structure" order="2" sideWeight="0.47419354" side_tool="true" visible="true" weight="0.14046717" />
+      <window_info active="true" id="Structure" order="2" sideWeight="0.4735142" side_tool="true" visible="true" weight="0.14046717" />
       <window_info id="Pull Requests" order="3" weight="0.1554445" />
       <window_info anchor="bottom" id="Version Control" order="0" weight="0.32987142" />
       <window_info anchor="bottom" id="Problems" order="1" />

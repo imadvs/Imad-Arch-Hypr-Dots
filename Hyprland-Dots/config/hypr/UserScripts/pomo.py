@@ -31,6 +31,9 @@ class PomodoroTimer:
         self.WHITE = '\033[97m'
         self.ORANGE = '\033[38;5;208m'  # Bright orange for better visibility
         
+        # Standard width for UI elements
+        self.WIDTH = 64
+        
         # Create state directory if it doesn't exist
         os.makedirs(self.state_dir, exist_ok=True)
         
@@ -97,9 +100,9 @@ class PomodoroTimer:
         """Configure work and break times"""
         self.clear_screen()
         print("\n" * 3)
-        print(f"{self.CYAN}{self.BOLD}{'=' * 50}{self.RESET}")
-        print(f"{self.CYAN}{self.BOLD}{' ' * 15}⚙️  CONFIGURATION{self.RESET}")
-        print(f"{self.CYAN}{self.BOLD}{'=' * 50}{self.RESET}")
+        self.print_line('═', self.CYAN, True)
+        self.center_print("⚙️  CONFIGURATION", self.CYAN, True, visible_width=17)
+        self.print_line('═', self.CYAN, True)
         print()
         
         # Configure total sessions
@@ -209,13 +212,26 @@ class PomodoroTimer:
         secs = seconds % 60
         return f"{mins:02d}:{secs:02d}"
     
+    def print_line(self, char='─', color='', bold=False):
+        """Print a horizontal line of standardized width"""
+        bold_code = self.BOLD if bold else ""
+        print(f"{color}{bold_code}{char * self.WIDTH}{self.RESET}")
+        
+    def center_print(self, text, color='', bold=False, visible_width=None):
+        """Print centered text within standardize width"""
+        bold_code = self.BOLD if bold else ""
+        # Use visible_width if provided (for strings with emojis)
+        text_width = visible_width if visible_width is not None else len(text)
+        padding = max(0, (self.WIDTH - text_width) // 2)
+        print(f"{' ' * padding}{color}{bold_code}{text}{self.RESET}")
+    
     def print_banner(self, mode, time_left):
         self.clear_screen()
         
         # Banner with colors
-        print(f"{self.CYAN}{self.BOLD}{'=' * 50}{self.RESET}")
-        print(f"{self.CYAN}{self.BOLD}{' ' * 15}POMODORO TIMER{self.RESET}")
-        print(f"{self.CYAN}{self.BOLD}{'=' * 50}{self.RESET}")
+        self.print_line('═', self.CYAN, True)
+        self.center_print("POMODORO TIMER", self.CYAN, True)
+        self.print_line('═', self.CYAN, True)
         print()
         
         # Mode indicator with different colors (bold white for visibility)
@@ -227,16 +243,17 @@ class PomodoroTimer:
             print(f"{self.BLUE}{self.BOLD}🌴 LONG BREAK - Relax and recharge{self.RESET}")
         
         print()
-        print(f"{self.WHITE}{self.BOLD}Session: #{self.pomodoro_count + 1}{self.RESET}")
+        self.center_print(f"Session: #{self.pomodoro_count + 1}", self.WHITE, True)
         print()
         
         # Timer display with color
         time_str = self.format_time(time_left)
         timer_color = self.CYAN  # Use Cyan for both for better visibility
         border_width = len(time_str) + 2
-        print(f"{timer_color}{' ' * 18}┌{'─' * border_width}┐{self.RESET}")
-        print(f"{timer_color}{' ' * 18}│ {self.WHITE}{self.BOLD}{time_str}{self.RESET}{timer_color} │{self.RESET}")
-        print(f"{timer_color}{' ' * 18}└{'─' * border_width}┘{self.RESET}")
+        padding = (self.WIDTH - (border_width + 2)) // 2
+        print(f"{' ' * padding}{timer_color}┌{'─' * border_width}┐{self.RESET}")
+        print(f"{' ' * padding}{timer_color}│ {self.WHITE}{self.BOLD}{time_str}{self.RESET}{timer_color} │{self.RESET}")
+        print(f"{' ' * padding}{timer_color}└{'─' * border_width}┘{self.RESET}")
         print()
         
         # Progress bar with color
@@ -246,13 +263,17 @@ class PomodoroTimer:
         filled = int(bar_length * progress)
         bar_color = self.CYAN  # Use Cyan for both for better visibility
         bar = f"{bar_color}{'█' * filled}{self.RESET}{'░' * (bar_length - filled)}"
-        print(f"     [{bar}] {self.WHITE}{self.BOLD}{int(progress * 100)}%{self.RESET}")
+        percent_str = f"{int(progress * 100)}%"
+        # Calculate padding: 1 ([) + bar_length (40) + 2 (]) + len(percent_str)
+        content_width = 1 + bar_length + 2 + len(percent_str)
+        padding = (self.WIDTH - content_width) // 2
+        print(f"{' ' * padding}[{bar}] {self.WHITE}{self.BOLD}{percent_str}{self.RESET}")
         print()
         
         # Controls
-        print(f"{self.CYAN}{'─' * 50}{self.RESET}")
+        self.print_line('─', self.CYAN)
         print(f"{self.WHITE}Controls: {self.MAGENTA}[SPACE]{self.WHITE} Pause/Resume | {self.MAGENTA}[R]{self.WHITE} Reset | {self.MAGENTA}[S]{self.WHITE} Skip | {self.MAGENTA}[Q]{self.WHITE} Quit{self.RESET}")
-        print(f"{self.CYAN}{'─' * 50}{self.RESET}")
+        self.print_line('─', self.CYAN)
     
     def get_total_time(self, mode):
         if mode == "pomodoro":
@@ -365,16 +386,16 @@ class PomodoroTimer:
     def show_completion(self, mode):
         self.clear_screen()
         print("\n" * 5)
-        print(f"{self.GREEN}{self.BOLD}{'=' * 50}{self.RESET}")
+        self.print_line('═', self.GREEN, True)
         if mode == "pomodoro":
-            print(f"{self.GREEN}{self.BOLD}{' ' * 10}✅ POMODORO COMPLETE!{self.RESET}")
+            self.center_print("✅ POMODORO COMPLETE!", self.GREEN, True, visible_width=21)
             print()
-            print(f"{self.YELLOW}{' ' * 8}Great work! Time for a break.{self.RESET}")
+            self.center_print("Great work! Time for a break.", self.YELLOW)
         else:
-            print(f"{self.GREEN}{self.BOLD}{' ' * 10}✅ BREAK COMPLETE!{self.RESET}")
+            self.center_print("✅ BREAK COMPLETE!", self.GREEN, True, visible_width=18)
             print()
-            print(f"{self.YELLOW}{' ' * 8}Ready to focus again?{self.RESET}")
-        print(f"{self.GREEN}{self.BOLD}{'=' * 50}{self.RESET}")
+            self.center_print("Ready to focus again?", self.YELLOW)
+        self.print_line('═', self.GREEN, True)
         print("\n" * 2)
         print(f"{self.CYAN}Press ENTER to continue...{self.RESET}", end='')
         input()
@@ -383,9 +404,9 @@ class PomodoroTimer:
         """Show welcome screen with current progress"""
         self.clear_screen()
         print("\n" * 5)
-        print(f"{self.CYAN}{self.BOLD}{'=' * 50}{self.RESET}")
-        print(f"{self.CYAN}{self.BOLD}{' ' * 12}🍅 POMODORO TIMER 🍅{self.RESET}")
-        print(f"{self.CYAN}{self.BOLD}{'=' * 50}{self.RESET}")
+        self.print_line('═', self.CYAN, True)
+        self.center_print("🍅 POMODORO TIMER 🍅", self.CYAN, True, visible_width=20)
+        self.print_line('═', self.CYAN, True)
         print()
         
         # Show progress if sessions are in progress
@@ -394,7 +415,7 @@ class PomodoroTimer:
             secs = self.saved_time_left % 60
             mode_name = "WORK" if self.saved_current_mode == "pomodoro" else "BREAK"
             
-            print(f"{self.CYAN}{self.BOLD}  ⏸  Paused Timer Detected!{self.RESET}")
+            self.center_print("⏸  Paused Timer Detected!", self.CYAN, True, visible_width=25)
             print()
             print(f"{self.WHITE}{self.BOLD}  Sessions completed: {self.pomodoro_count}/{self.total_sessions}{self.RESET}")
             print(f"{self.WHITE}{self.BOLD}  {mode_name} timer paused at: {mins:02d}:{secs:02d}{self.RESET}")
@@ -403,7 +424,7 @@ class PomodoroTimer:
             print(f"{self.CYAN}  Press 'R' + ENTER to start fresh{self.RESET}")
             print()
         elif self.pomodoro_count > 0:
-            print(f"{self.YELLOW}{self.BOLD}  Welcome back!{self.RESET}")
+            self.center_print("Welcome back!", self.YELLOW, True)
             print()
             print(f"{self.WHITE}{self.BOLD}  Sessions completed: {self.pomodoro_count}/{self.total_sessions}{self.RESET}")
             print()
@@ -412,8 +433,8 @@ class PomodoroTimer:
             print(f"{self.CYAN}  Press 'C' + ENTER to configure times{self.RESET}")
             print()
         else:
-            print(f"{self.CYAN}  Press ENTER to start your first Pomodoro session!{self.RESET}")
-            print(f"{self.CYAN}  Press 'C' + ENTER to configure times{self.RESET}")
+            self.center_print("Press ENTER to start your first Pomodoro session!", self.CYAN)
+            self.center_print("Press 'C' + ENTER to configure times", self.CYAN)
             print()
         
         print(f"{self.WHITE}  Current Settings:{self.RESET}")
@@ -422,7 +443,7 @@ class PomodoroTimer:
         print(f"{self.WHITE}{self.BOLD}  • Short break: {self.short_break // 60} minutes{self.RESET}")
         print(f"{self.WHITE}{self.BOLD}  • Long break: {self.long_break // 60} minutes (every {self.long_break_interval} sessions){self.RESET}")
         print()
-        print(f"{self.CYAN}{self.BOLD}{'=' * 50}{self.RESET}")
+        self.print_line('═', self.CYAN, True)
         
         response = input().strip().lower()
         if response == 'r':
@@ -447,9 +468,9 @@ class PomodoroTimer:
             if self.pomodoro_count >= self.total_sessions:
                 self.clear_screen()
                 print("\n" * 5)
-                print(f"{self.GREEN}{self.BOLD}{'=' * 50}{self.RESET}")
-                print(f"{self.GREEN}{self.BOLD}{' ' * 8}🎉 ALL {self.total_sessions} SESSIONS COMPLETE! 🎉{self.RESET}")
-                print(f"{self.GREEN}{self.BOLD}{'=' * 50}{self.RESET}")
+                self.print_line('═', self.GREEN, True)
+                self.center_print("🎉 ALL SESSIONS COMPLETE! 🎉", self.GREEN, True, visible_width=30)
+                self.print_line('═', self.GREEN, True)
                 print()
                 print(f"{self.YELLOW}  You finished all Pomodoro sessions!{self.RESET}")
                 print()

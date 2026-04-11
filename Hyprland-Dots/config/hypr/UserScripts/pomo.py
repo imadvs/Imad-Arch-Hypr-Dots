@@ -233,9 +233,10 @@ class PomodoroTimer:
         # Timer display with color
         time_str = self.format_time(time_left)
         timer_color = self.CYAN  # Use Cyan for both for better visibility
-        print(f"{timer_color}{' ' * 18}┌─────────┐{self.RESET}")
+        border_width = len(time_str) + 2
+        print(f"{timer_color}{' ' * 18}┌{'─' * border_width}┐{self.RESET}")
         print(f"{timer_color}{' ' * 18}│ {self.WHITE}{self.BOLD}{time_str}{self.RESET}{timer_color} │{self.RESET}")
-        print(f"{timer_color}{' ' * 18}└─────────┘{self.RESET}")
+        print(f"{timer_color}{' ' * 18}└{'─' * border_width}┘{self.RESET}")
         print()
         
         # Progress bar with color

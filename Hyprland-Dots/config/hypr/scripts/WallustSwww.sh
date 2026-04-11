@@ -83,3 +83,8 @@ if pgrep -x cava >/dev/null; then
   # إرسال إشارة لـ Cava لإعادة قراءة ملف الإعدادات (لن يتوقف السكربت هنا إذا فشل)
   killall -SIGUSR1 cava 2>/dev/null || true
 fi
+
+# 4. تحديث Clock-rs ليعيد تحميل ملف الإعدادات الجديد
+if pgrep -x clock-rs >/dev/null; then
+  killall -SIGUSR1 clock-rs 2>/dev/null || true
+fi

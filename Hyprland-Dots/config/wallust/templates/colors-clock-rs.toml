@@ -1,0 +1,5 @@
+# wallust template - colors-clock-rs
+[general]
+color = "{{color6}}"
+bold = true
+blink = true

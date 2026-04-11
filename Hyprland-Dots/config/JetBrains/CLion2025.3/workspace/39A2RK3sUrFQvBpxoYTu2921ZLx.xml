@@ -3,6 +3,7 @@
     <option name="sessions">
       <map>
         <entry key="06ed4a5b-d2d4-4ef2-b511-aa999466f4ed" value="false" />
+        <entry key="082f22eb-bab0-402c-a0b7-7efd17474e49" value="false" />
         <entry key="093ba630-9251-43a9-a9e6-e86babb72a38" value="false" />
         <entry key="0b772592-bf08-4876-a3cd-6af1668f83d8" value="false" />
         <entry key="0cb6a908-3b9e-4970-8ae5-1a710ca3bf59" value="false" />
@@ -29,6 +30,7 @@
         <entry key="3e41d163-21c1-44d8-b1cb-950059db2b2e" value="false" />
         <entry key="4028ec44-58a2-401c-b37f-6bf9ff0e6afd" value="false" />
         <entry key="44639c70-973f-43c6-9156-d98f210c47aa" value="false" />
+        <entry key="44df65c6-53c8-4d40-94eb-54e3b92882e7" value="false" />
         <entry key="48095878-7ac8-45f8-be64-e265254725cc" value="false" />
         <entry key="4bc8d75e-a38b-40a5-9187-c51a91b57b8e" value="false" />
         <entry key="5431cd0d-70c4-497f-998a-1f8ccc00e5a6" value="false" />
@@ -3497,11 +3499,8 @@
       <file current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Test_Of_OOP.cpp" file-id="39670" managing-fs="1770122711113">
           <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="584">
-              <caret line="161" selection-start-line="161" selection-end-line="161" />
-              <folding>
-                <marker date="1775386936462" expanded="false" signature="57:1835" ph="{...}" />
-              </folding>
+            <state relative-caret-position="7">
+              <caret line="195" column="6" selection-start-line="195" selection-start-column="6" selection-end-line="195" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -3512,8 +3511,8 @@
   <component name="FileTypeUsageLocalSummary"><![CDATA[{
   "data": {
     "C/C++": {
-      "usageCount": 133,
-      "lastUsed": 1775647297830
+      "usageCount": 136,
+      "lastUsed": 1775744871297
     },
     "CMakeLists.txt": {
       "usageCount": 20,
@@ -3589,6 +3588,7 @@
     <option name="sessions">
       <map>
         <entry key="06ed4a5b-d2d4-4ef2-b511-aa999466f4ed" value="false" />
+        <entry key="082f22eb-bab0-402c-a0b7-7efd17474e49" value="false" />
         <entry key="093ba630-9251-43a9-a9e6-e86babb72a38" value="false" />
         <entry key="0b772592-bf08-4876-a3cd-6af1668f83d8" value="false" />
         <entry key="0cb6a908-3b9e-4970-8ae5-1a710ca3bf59" value="false" />
@@ -3615,6 +3615,7 @@
         <entry key="3e41d163-21c1-44d8-b1cb-950059db2b2e" value="false" />
         <entry key="4028ec44-58a2-401c-b37f-6bf9ff0e6afd" value="false" />
         <entry key="44639c70-973f-43c6-9156-d98f210c47aa" value="false" />
+        <entry key="44df65c6-53c8-4d40-94eb-54e3b92882e7" value="false" />
         <entry key="48095878-7ac8-45f8-be64-e265254725cc" value="false" />
         <entry key="4bc8d75e-a38b-40a5-9187-c51a91b57b8e" value="false" />
         <entry key="5431cd0d-70c4-497f-998a-1f8ccc00e5a6" value="false" />
@@ -3710,7 +3711,7 @@
   </component>
   <component name="LanguageUsageStatistics">
     <language id="C++">
-      <summary usageCount="167" lastUsage="1775647297836" />
+      <summary usageCount="170" lastUsage="1775744871304" />
     </language>
     <language id="CMake">
       <summary usageCount="20" lastUsage="1774162408293" />
@@ -3897,13 +3898,13 @@
     </option>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="351164000" />
+    <option name="totallyTimeSpent" value="357411000" />
   </component>
   <component name="ToolWindowManager">
     <layoutV2>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5264858" visible="true" weight="0.14046717" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5289409" visible="true" weight="0.14046717" />
       <window_info id="Commit" order="1" weight="0.1554445" />
-      <window_info active="true" id="Structure" order="2" sideWeight="0.4735142" side_tool="true" visible="true" weight="0.14046717" />
+      <window_info active="true" id="Structure" order="2" sideWeight="0.4710591" side_tool="true" visible="true" weight="0.14046717" />
       <window_info id="Pull Requests" order="3" weight="0.1554445" />
       <window_info anchor="bottom" id="Version Control" order="0" weight="0.32987142" />
       <window_info anchor="bottom" id="Problems" order="1" />
@@ -4091,11 +4092,8 @@
     <entry file="file://$PROJECT_DIR$/include/clsClient.h" />
     <entry file="file://$PROJECT_DIR$/src/Test_Of_OOP.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="584">
-          <caret line="161" selection-start-line="161" selection-end-line="161" />
-          <folding>
-            <marker date="1775386936462" expanded="false" signature="57:1835" ph="{...}" />
-          </folding>
+        <state relative-caret-position="7">
+          <caret line="195" column="6" selection-start-line="195" selection-start-column="6" selection-end-line="195" selection-end-column="6" />
         </state>
       </provider>
     </entry>

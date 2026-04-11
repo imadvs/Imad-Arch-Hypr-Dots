@@ -8297,6 +8297,22 @@
       }
     }
   }, {
+    "id" : "llm.actions.kotlin.j2k",
+    "builds" : [ ],
+    "versions" : [ {
+      "from" : "1"
+    } ],
+    "rules" : {
+      "event_id" : [ "{enum:llm.actions.kotlin.j2k.convert}" ],
+      "event_data" : {
+        "conversion_time_ms" : [ "{regexp#integer}" ],
+        "files_count" : [ "{regexp#integer}" ],
+        "lines_after_count" : [ "{regexp#integer}" ],
+        "lines_before_count" : [ "{regexp#integer}" ],
+        "source_type" : [ "{enum:Files}" ]
+      }
+    }
+  }, {
     "id" : "llm.actions.limits",
     "builds" : [ ],
     "versions" : [ {
@@ -16276,5 +16292,5 @@
       "version" : "Unknown|unknown.format|unknown|UNKNOWN|((\\d+\\.?)*\\d+)"
     }
   },
-  "version" : "7052"
+  "version" : "7059"
 }

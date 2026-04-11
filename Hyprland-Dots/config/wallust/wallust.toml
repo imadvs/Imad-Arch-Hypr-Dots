@@ -72,3 +72,9 @@ btop.target = '~/.config/btop/themes/wallust.theme'
 
 pywal.template = 'colors-wal.vim'
 pywal.target = '~/.cache/wal/colors-wal.vim'
+
+rmpc.template = 'colors-rmpc.ron'
+rmpc.target = '~/.config/rmpc/themes/wallust.ron'
+
+clock-rs.template = 'colors-clock-rs.toml'
+clock-rs.target = '~/.config/clock-rs/conf.toml'

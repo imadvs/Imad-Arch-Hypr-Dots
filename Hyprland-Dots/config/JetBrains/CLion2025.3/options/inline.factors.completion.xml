@@ -1,28 +1,20 @@
 <application>
   <component name="AcceptanceRateFactors">
     <option name="lastSelectionTime" value="1775339787286" />
-    <option name="lastShowUpTime" value="1775566260686" />
+    <option name="lastShowUpTime" value="1775917999040" />
     <selectionCounts>
       <entry key="1" value="10.249796572365437" />
       <entry key="24" value="21.668053365692515" />
       <entry key="168" value="45.178427317958445" />
     </selectionCounts>
     <showUpCounts>
-      <entry key="1" value="1.0000000000000029" />
-      <entry key="24" value="8.544660341016094" />
-      <entry key="168" value="105.5921920444131" />
+      <entry key="1" value="1.9966684433988928" />
+      <entry key="24" value="2.5082403289610538" />
+      <entry key="168" value="72.56011351403805" />
     </showUpCounts>
   </component>
   <component name="CompletionFinishedType">
     <dailyDataMap>
-      <entry key="2026-03-20">
-        <DailyData>
-          <option name="explicitCancel" value="1" />
-          <option name="invalidated" value="12" />
-          <option name="other" value="5" />
-          <option name="selected" value="4" />
-        </DailyData>
-      </entry>
       <entry key="2026-03-21">
         <DailyData>
           <option name="explicitCancel" value="1" />
@@ -82,6 +74,12 @@
       <entry key="2026-04-07">
         <DailyData>
           <option name="explicitCancel" value="1" />
+        </DailyData>
+      </entry>
+      <entry key="2026-04-11">
+        <DailyData>
+          <option name="explicitCancel" value="1" />
+          <option name="invalidated" value="1" />
         </DailyData>
       </entry>
     </dailyDataMap>
@@ -247,8 +245,8 @@
       </entry>
       <entry key="2026-04-11">
         <DailyData>
-          <option name="count" value="6" />
-          <option name="totalTime" value="9325" />
+          <option name="count" value="35" />
+          <option name="totalTime" value="56448" />
         </DailyData>
       </entry>
     </dailyDataMap>

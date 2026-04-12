@@ -124,10 +124,10 @@
       <i c="7" d="7" l="1772372056632" k="1772372056632" />
     </e>
     <e n="EditorBackSpace">
-      <i c="846" l="1775339794661" />
+      <i c="852" l="1775918006047" />
     </e>
     <e n="EditorChooseLookupItem">
-      <i c="18" l="1775249843580" />
+      <i c="19" l="1775918094515" />
     </e>
     <e n="EditorChooseLookupItemReplace">
       <i c="30" l="1774477969411" />
@@ -142,10 +142,10 @@
       <i c="2" l="1770152534642" />
     </e>
     <e n="EditorDown">
-      <i c="77" l="1775566244160" />
+      <i c="96" l="1775918106649" />
     </e>
     <e n="EditorEnter">
-      <i c="717" l="1775566222018" />
+      <i c="720" l="1775918096507" />
     </e>
     <e n="EditorEscape">
       <i c="72" l="1774063809594" />
@@ -181,7 +181,7 @@
       <i c="1" d="1" l="1770157140275" k="1770157140275" />
     </e>
     <e n="EditorRight">
-      <i c="121" l="1774717621393" />
+      <i c="122" l="1775918105640" />
     </e>
     <e n="EditorSetContentBasedBidiTextDirection">
       <i c="2" l="1774377787202" />
@@ -196,7 +196,7 @@
       <i c="13" l="1774667481244" />
     </e>
     <e n="EditorUp">
-      <i c="83" l="1775249826152" />
+      <i c="84" l="1775918099003" />
     </e>
     <e n="ExpandAllRegions">
       <i c="3" l="1771690140499" />
@@ -217,7 +217,7 @@
       <i c="4" l="1771680609269" />
     </e>
     <e n="GotoDeclaration">
-      <i c="272" l="1775564525710" />
+      <i c="276" l="1775918173377" />
     </e>
     <e n="GotoNextElementUnderCaretUsage">
       <i c="1" l="1771689813260" />
@@ -439,7 +439,7 @@
       <i c="2" l="1770125255409" />
     </e>
     <e n="com.intellij.openapi.actionSystem.AnActionWrapper">
-      <i c="2400" l="1775566260624" />
+      <i c="2415" l="1775918106646" />
     </e>
     <e n="com.intellij.openapi.actionSystem.DefaultActionGroup">
       <i c="6" l="1775909636742" />

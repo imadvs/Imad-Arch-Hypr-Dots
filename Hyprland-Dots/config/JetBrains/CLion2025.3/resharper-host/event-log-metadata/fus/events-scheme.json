@@ -6726,13 +6726,16 @@
     "rules" : {
       "event_id" : [ "{enum:command_executed}" ],
       "event_data" : {
-        "command" : [ "{util#class_name}" ],
+        "command" : [ "{util#class_name}", "{enum#__command}" ],
         "command_type" : [ "{enum:DF_INFO|SLICE|SLICE_CSV|DF_DESCRIBE|VISUALIZATION_DATA|IMAGE_START_CHUNK_LOAD|IMAGE_CHUNK_LOAD}", "{enum:INSPECTIONS}" ],
         "duration_ms" : [ "{regexp#integer}" ],
         "plugin" : [ "{util#plugin}" ],
         "plugin_type" : [ "{util#plugin_type}" ],
         "plugin_version" : [ "{util#plugin_version}" ],
         "success" : [ "{enum#boolean}" ]
+      },
+      "enums" : {
+        "__command" : [ "GET_FRAME", "TABLE", "SET_TYPE_RENDERERS", "EVALUATE", "ARRAY", "IMAGE", "LOAD_ASYNC_VARIABLES", "UPDATE_POLICY", "LOAD_VARIABLE", "LOAD_SPECIAL_VARIABLES" ]
       }
     }
   }, {
@@ -11129,7 +11132,7 @@
     "rules" : {
       "event_id" : [ "{enum:Update Manager|Update_Manager}" ],
       "event_data" : {
-        "value" : [ "{enum#__value}" ]
+        "value" : [ "{enum#__value}", "{enum:Flatpak}" ]
       },
       "enums" : {
         "__value" : [ "Toolbox_App", "Snap", "IDE", "Other", "Homebrew" ]
@@ -16292,5 +16295,5 @@
       "version" : "Unknown|unknown.format|unknown|UNKNOWN|((\\d+\\.?)*\\d+)"
     }
   },
-  "version" : "7059"
+  "version" : "7061"
 }

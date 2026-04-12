@@ -95,6 +95,7 @@
         <entry key="c5f04ea8-cf4b-4025-94a4-d484f5979521" value="false" />
         <entry key="c855eda5-708b-40a3-a201-5047c48b83ea" value="false" />
         <entry key="c91d7ea9-cfaf-4d1d-8347-5b5843446167" value="false" />
+        <entry key="cb3d2b69-8e55-4375-801f-0c15656ae4b3" value="false" />
         <entry key="ce111d4b-79f5-4a9e-ba4a-804e03088293" value="false" />
         <entry key="cec61a0f-21a3-4487-95bb-21c66e7663bc" value="false" />
         <entry key="d0c9b4a2-a0f3-4d42-b770-785a40c3e877" value="false" />
@@ -3499,8 +3500,8 @@
       <file current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Test_Of_OOP.cpp" file-id="39670" managing-fs="1770122711113">
           <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="594">
-              <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
+            <state relative-caret-position="1104">
+              <caret line="46" selection-start-line="46" selection-end-line="46" />
             </state>
           </provider>
         </entry>
@@ -3511,8 +3512,8 @@
   <component name="FileTypeUsageLocalSummary"><![CDATA[{
   "data": {
     "C/C++": {
-      "usageCount": 136,
-      "lastUsed": 1775744871297
+      "usageCount": 137,
+      "lastUsed": 1775949327799
     },
     "CMakeLists.txt": {
       "usageCount": 20,
@@ -3680,6 +3681,7 @@
         <entry key="c5f04ea8-cf4b-4025-94a4-d484f5979521" value="false" />
         <entry key="c855eda5-708b-40a3-a201-5047c48b83ea" value="false" />
         <entry key="c91d7ea9-cfaf-4d1d-8347-5b5843446167" value="false" />
+        <entry key="cb3d2b69-8e55-4375-801f-0c15656ae4b3" value="false" />
         <entry key="ce111d4b-79f5-4a9e-ba4a-804e03088293" value="false" />
         <entry key="cec61a0f-21a3-4487-95bb-21c66e7663bc" value="false" />
         <entry key="d0c9b4a2-a0f3-4d42-b770-785a40c3e877" value="false" />
@@ -3711,7 +3713,7 @@
   </component>
   <component name="LanguageUsageStatistics">
     <language id="C++">
-      <summary usageCount="170" lastUsage="1775744871304" />
+      <summary usageCount="171" lastUsage="1775949327802" />
     </language>
     <language id="CMake">
       <summary usageCount="20" lastUsage="1774162408293" />
@@ -3898,13 +3900,13 @@
     </option>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="358597000" />
+    <option name="totallyTimeSpent" value="362429000" />
   </component>
   <component name="ToolWindowManager">
     <layoutV2>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5290698" visible="true" weight="0.14046717" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5303618" visible="true" weight="0.14046717" />
       <window_info id="Commit" order="1" weight="0.1554445" />
-      <window_info active="true" id="Structure" order="2" sideWeight="0.47093022" side_tool="true" visible="true" weight="0.14046717" />
+      <window_info active="true" id="Structure" order="2" sideWeight="0.46963823" side_tool="true" visible="true" weight="0.14046717" />
       <window_info id="Pull Requests" order="3" weight="0.1554445" />
       <window_info anchor="bottom" id="Version Control" order="0" weight="0.32987142" />
       <window_info anchor="bottom" id="Problems" order="1" />
@@ -4092,8 +4094,8 @@
     <entry file="file://$PROJECT_DIR$/include/clsClient.h" />
     <entry file="file://$PROJECT_DIR$/src/Test_Of_OOP.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
+        <state relative-caret-position="1104">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
         </state>
       </provider>
     </entry>

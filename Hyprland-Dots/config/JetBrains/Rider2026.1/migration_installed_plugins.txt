@@ -1,0 +1,5 @@
+com.intellij.ml.llm
+org.jetbrains.junie
+PerforceDirectPlugin
+hg4idea
+Subversion

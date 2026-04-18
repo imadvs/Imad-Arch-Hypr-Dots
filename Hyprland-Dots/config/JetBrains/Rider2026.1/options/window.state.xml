@@ -1,0 +1,21 @@
+<application>
+  <component name="WindowStateApplicationService">
+    <state x="2112" y="384" width="1024" height="768" key="WELCOME_SCREEN" timestamp="1776549511823">
+      <screen x="1600" y="0" width="1024" height="768" />
+    </state>
+    <state x="800" y="468" width="1901" height="1011" key="WELCOME_SCREEN/0.0.1600.900" timestamp="1770156959557" />
+    <state x="1919" y="1130" width="3801" height="2020" key="WELCOME_SCREEN/0.100.3840.2059" timestamp="1770121256163" />
+    <state x="959" y="565" width="1900" height="1010" key="WELCOME_SCREEN/0.50.1920.1029" timestamp="1770155967935" />
+    <state x="2112" y="384" width="1024" height="768" key="WELCOME_SCREEN/1600.0.1024.768/0.0.1600.900" timestamp="1776549511823" />
+    <state x="599" y="417" width="729" height="522" key="ide.config.custom.settings" timestamp="1770122925400">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state x="599" y="417" width="729" height="522" key="ide.config.custom.settings/0.0.1600.900" timestamp="1770122925400" />
+    <state x="1437" y="1053" width="954" height="123" key="ide.config.custom.settings/0.100.3840.2059" timestamp="1770121253833" />
+    <state x="0" y="0" width="673" height="186" key="search.everywhere.popup" timestamp="1770122826332">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state x="0" y="0" width="673" height="186" key="search.everywhere.popup/0.0.1600.900" timestamp="1770122826332" />
+    <state x="1582" y="582" width="672" height="698" key="search.everywhere.popup/0.100.3840.2059" timestamp="1770121152432" />
+  </component>
+</application>

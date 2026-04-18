@@ -4,16 +4,16 @@
 
 # Set variables for parameters. First numbers corresponts to Monitor Resolution
 # i.e 2160 means 2160p
-A_2160=600
-B_2160=600
-A_1600=400
-B_1600=400
-A_1440=400
-B_1440=400
-A_1080=200
-B_1080=200
-A_720=50
-B_720=50
+A_2160=840
+B_2160=840
+A_1600=620
+B_1600=620
+A_1440=560
+B_1440=560
+A_1080=420
+B_1080=420
+A_720=180
+B_720=180
 
 # Check if wlogout is already running
 if pgrep -x "wlogout" > /dev/null; then
@@ -50,7 +50,7 @@ elif ((resolution >= 720 && resolution < 1080)); then
     T_val=$(awk "BEGIN {printf \"%.0f\", $A_720 * 720 * $hypr_scale / $resolution}")
     B_val=$(awk "BEGIN {printf \"%.0f\", $B_720 * 720 * $hypr_scale / $resolution}")
     echo "Setting parameters for resolution >= 720p and < 1080p"
-    wlogout --protocol layer-shell -b 3 -T $T_val -B $B_val &
+    wlogout --protocol layer-shell -b 6 -T $T_val -B $B_val &
 else
     echo "Setting default parameters"
     wlogout &

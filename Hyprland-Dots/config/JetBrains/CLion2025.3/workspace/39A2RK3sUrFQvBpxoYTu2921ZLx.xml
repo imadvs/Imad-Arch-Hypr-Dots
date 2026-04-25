@@ -47,6 +47,7 @@
         <entry key="6fe0caa9-f4c7-4604-9b51-ce2935ba223d" value="false" />
         <entry key="70157d71-c6c7-4e64-b669-d34595e2783b" value="false" />
         <entry key="721a139f-6969-4a4b-8219-6c308594f488" value="false" />
+        <entry key="72ea6084-b215-4366-b6a1-b66ee31c1b6c" value="false" />
         <entry key="77e1175d-78d0-4908-a5be-b3b4290d8828" value="false" />
         <entry key="7bb174fb-c888-47ad-955f-1ac9d25d562d" value="false" />
         <entry key="7c4db34d-b8ae-4485-9213-4191d9135fd0" value="false" />
@@ -91,6 +92,7 @@
         <entry key="b5090a68-ab82-4af7-b098-194fbb8dbdc9" value="false" />
         <entry key="b6ea2863-b1ba-4972-b605-9c8d48ba589e" value="false" />
         <entry key="ba37f411-3404-41d1-97ed-f522da73d98d" value="false" />
+        <entry key="be4a3326-00fb-4964-986e-662c1a0c7885" value="false" />
         <entry key="c047facb-a64a-4e3f-b480-57e213e2e56c" value="false" />
         <entry key="c09d500a-80fd-4511-a267-e18282ba0b2c" value="false" />
         <entry key="c0e0ae23-084e-4ef1-854b-3d977fc21dee" value="false" />
@@ -100,6 +102,7 @@
         <entry key="c5f04ea8-cf4b-4025-94a4-d484f5979521" value="false" />
         <entry key="c855eda5-708b-40a3-a201-5047c48b83ea" value="false" />
         <entry key="c91d7ea9-cfaf-4d1d-8347-5b5843446167" value="false" />
+        <entry key="ca882f73-19cb-4db7-bf7a-b83d20ae4dba" value="false" />
         <entry key="cb3d2b69-8e55-4375-801f-0c15656ae4b3" value="false" />
         <entry key="ce111d4b-79f5-4a9e-ba4a-804e03088293" value="false" />
         <entry key="cec61a0f-21a3-4487-95bb-21c66e7663bc" value="false" />
@@ -4001,6 +4004,40 @@
           </option>
           <option name="uid" value="b1bb4151-dd0a-4025-8023-7053dd715395" />
         </SerializedChat>
+        <SerializedChat>
+          <option name="chatContext">
+            <SerializedChatContext />
+          </option>
+          <option name="chatModelId" value="agent_acp.registry.claude-acp" />
+          <option name="messages">
+            <list>
+              <SerializedChatMessage>
+                <option name="markupLanguageID" value="ChatInput" />
+                <option name="uid" value="UUID(uuid=6bd30366-ccd4-41bb-bfd8-543284f44bc0)" />
+                <option name="displayContent" value="Fix this iisues:&#10;Class field short clsDate::_Day cannot be used as a type&#10;Expected ',' or '}'&#10;Expected expression&#10;Clangd: Use of undeclared identifier 'maxDay'&#10;Clangd: Use of undeclared identifier 'maxDay'&#10;" />
+                <option name="internalContent" value="Fix this iisues:&#10;Class field short clsDate::_Day cannot be used as a type&#10;Expected ',' or '}'&#10;Expected expression&#10;Clangd: Use of undeclared identifier 'maxDay'&#10;Clangd: Use of undeclared identifier 'maxDay'&#10;" />
+              </SerializedChatMessage>
+              <SerializedChatMessage>
+                <option name="author" value="Assistant" />
+                <option name="uid" value="c11ccf0b-444e-44c7-94c6-f0f17105ed36" />
+              </SerializedChatMessage>
+            </list>
+          </option>
+          <option name="modifiedAt" value="1776639357971" />
+          <option name="statisticInformation">
+            <ChatStatisticInformation>
+              <option name="sourceActionType" value="NEW_CHAT_ON_START" />
+              <option name="timestamp" value="1776639357971" />
+            </ChatStatisticInformation>
+          </option>
+          <option name="title">
+            <SerializedChatTitle>
+              <option name="custom" value="true" />
+              <option name="text" value="&quot;Fix this iisues:&#10;Cl…&quot; with Claude Agent" />
+            </SerializedChatTitle>
+          </option>
+          <option name="uid" value="ca882f73-19cb-4db7-bf7a-b83d20ae4dba" />
+        </SerializedChat>
       </list>
     </option>
   </component>
@@ -4009,79 +4046,40 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf ideFingerprint="2mxhb0x3mtwkn" SIDE_TABS_SIZE_LIMIT_KEY="-1">
-      <file>
-        <entry file="file://$PROJECT_DIR$/src/main.cpp" file-id="43049" managing-fs="1770122711113">
-          <provider editor-type-id="text-editor" selected="true">
-            <state>
-              <folding>
-                <element signature="e#0#495#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-        <tab><![CDATA[{"tabTitle":"main.cpp","foregroundColor":-9192071,"textAttributes":{"name":"a","children":[{"name":"option","attributes":{"name":"FOREGROUND","value":"73bd79"}}]},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,114,10,23,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,99,112,112,46,115,118,103,18,29,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,99,112,112,46,115,118,103,26,18,99,111,109,46,105,110,116,101,108,108,105,106,46,99,108,105,111,110,34,23,105,110,116,101,108,108,105,106,46,99,105,100,114,46,108,97,110,103,46,98,97,115,101,40,-21,-119,-10,-57,-3,-1,-1,-1,-1,1,48,0]}]]></tab>
-      </file>
-      <file current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/include/clsDate.h" file-id="43073" managing-fs="1770122711113">
-          <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="230">
-              <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-              <folding>
-                <marker date="1776549679158" expanded="true" signature="100:191" ph="##include ..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-        <tab><![CDATA[{"tabTitle":"clsDate.h","foregroundColor":-9192071,"textAttributes":{"name":"a","children":[{"name":"option","attributes":{"name":"FOREGROUND","value":"73bd79"}}]},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,110,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,26,18,99,111,109,46,105,110,116,101,108,108,105,106,46,99,108,105,111,110,34,23,105,110,116,101,108,108,105,106,46,99,105,100,114,46,108,97,110,103,46,98,97,115,101,40,-48,-45,-18,-83,-7,-1,-1,-1,-1,1,48,0]}]]></tab>
-      </file>
-      <file>
-        <entry file="file://$PROJECT_DIR$/include/clsPeriod.h" file-id="43084" managing-fs="1770122711113">
-          <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="144">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
-              <folding>
-                <marker date="1776378070463" expanded="true" signature="0:36" ph="//..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-        <tab><![CDATA[{"tabTitle":"clsPeriod.h","foregroundColor":-1536119,"textAttributes":{"name":"a","children":[{"name":"option","attributes":{"name":"FOREGROUND","value":"e88f89"}}]},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,110,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,26,18,99,111,109,46,105,110,116,101,108,108,105,106,46,99,108,105,111,110,34,23,105,110,116,101,108,108,105,106,46,99,105,100,114,46,108,97,110,103,46,98,97,115,101,40,-48,-45,-18,-83,-7,-1,-1,-1,-1,1,48,0]}]]></tab>
-      </file>
-    </leaf>
+    <leaf ideFingerprint="2mxhb0x3mtwkn" SIDE_TABS_SIZE_LIMIT_KEY="-1" />
   </component>
-  <component name="FileTypeUsageLocalSummary"><![CDATA[{
-  "data": {
-    "C/C++": {
-      "usageCount": 145,
-      "lastUsed": 1776549466416
+  <component name="FileTypeUsageLocalSummary">{
+  &quot;data&quot;: {
+    &quot;C/C++&quot;: {
+      &quot;usageCount&quot;: 146,
+      &quot;lastUsed&quot;: 1776599749238
     },
-    "CMakeLists.txt": {
-      "usageCount": 20,
-      "lastUsed": 1774162408293
+    &quot;CMakeLists.txt&quot;: {
+      &quot;usageCount&quot;: 21,
+      &quot;lastUsed&quot;: 1776685841996
     },
-    "PLAIN_TEXT": {
-      "usageCount": 21,
-      "lastUsed": 1776207976402
+    &quot;PLAIN_TEXT&quot;: {
+      &quot;usageCount&quot;: 21,
+      &quot;lastUsed&quot;: 1776207976402
     },
-    "textmate": {
-      "usageCount": 66,
-      "lastUsed": 1773706762931
+    &quot;textmate&quot;: {
+      &quot;usageCount&quot;: 66,
+      &quot;lastUsed&quot;: 1773706762931
     },
-    "DIFF": {
-      "usageCount": 17,
-      "lastUsed": 1776258091880
+    &quot;DIFF&quot;: {
+      &quot;usageCount&quot;: 17,
+      &quot;lastUsed&quot;: 1776258091880
     },
-    "AUTO_DETECTED": {
-      "usageCount": 4,
-      "lastUsed": 1774143608208
+    &quot;AUTO_DETECTED&quot;: {
+      &quot;usageCount&quot;: 4,
+      &quot;lastUsed&quot;: 1774143608208
     },
-    "C/C++ Header": {
-      "usageCount": 47,
-      "lastUsed": 1776549466534
+    &quot;C/C++ Header&quot;: {
+      &quot;usageCount&quot;: 52,
+      &quot;lastUsed&quot;: 1776641396814
     }
   }
-}]]></component>
+}</component>
   <component name="GitBranchesPopupTreeState">
     <expand>
       <path>
@@ -4101,28 +4099,29 @@
     <select />
   </component>
   <component name="GitSEFilterConfiguration">{}</component>
-  <component name="IdeDocumentHistory"><![CDATA[{
-  "changedPaths": [
-    "/home/imad/.ideavimrc",
-    "/home/imad/.config/JetBrains/CLion2025.3/clion64.vmoptions",
-    "/home/imad/Documents/Coding/UserLib.cpp",
-    "/home/imad/Documents/Coding/Project.cpp",
-    "/home/imad/Documents/Coding/UserLib.h",
-    "/home/imad/Documents/Coding/CMakeLists.txt",
-    "/home/imad/Documents/Project 1 L4 - Bank Extension 2/include/clsUser.h",
-    "/home/imad/Documents/Project 1 L4 - Bank Extension 2/include/clsDbObject.h",
-    "/home/imad/Documents/Project 1 L4 - Bank Extension 2/src/clsBankController.cpp",
-    "/home/imad/Documents/Project 1 L4 - Bank Extension 2/include/clsBankController.h",
-    "/home/imad/Documents/Project 1 L4 - Bank Extension 2/CMakeLists.txt",
-    "/home/imad/Documents/Project 2 L4 - ATM System/src/clsATMController.cpp",
-    "/home/imad/Documents/Project 2 L4 - ATM System/include/clsATMController.h",
-    "/home/imad/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp",
-    "/home/imad/Documents/Project 2 L4 - ATM System/include/clsString.h",
-    "/home/imad/Documents/Project 2 L4 - ATM System/include/clsPeriod.h",
-    "/home/imad/Documents/Project 2 L4 - ATM System/src/main.cpp",
-    "/home/imad/Documents/Project 2 L4 - ATM System/include/clsDate.h"
+  <component name="IdeDocumentHistory">{
+  &quot;changedPaths&quot;: [
+    &quot;/home/imad/.ideavimrc&quot;,
+    &quot;/home/imad/.config/JetBrains/CLion2025.3/clion64.vmoptions&quot;,
+    &quot;/home/imad/Documents/Coding/UserLib.cpp&quot;,
+    &quot;/home/imad/Documents/Coding/Project.cpp&quot;,
+    &quot;/home/imad/Documents/Coding/UserLib.h&quot;,
+    &quot;/home/imad/Documents/Coding/CMakeLists.txt&quot;,
+    &quot;/home/imad/Documents/Project 1 L4 - Bank Extension 2/include/clsUser.h&quot;,
+    &quot;/home/imad/Documents/Project 1 L4 - Bank Extension 2/include/clsDbObject.h&quot;,
+    &quot;/home/imad/Documents/Project 1 L4 - Bank Extension 2/src/clsBankController.cpp&quot;,
+    &quot;/home/imad/Documents/Project 1 L4 - Bank Extension 2/include/clsBankController.h&quot;,
+    &quot;/home/imad/Documents/Project 1 L4 - Bank Extension 2/CMakeLists.txt&quot;,
+    &quot;/home/imad/Documents/Project 2 L4 - ATM System/src/clsATMController.cpp&quot;,
+    &quot;/home/imad/Documents/Project 2 L4 - ATM System/include/clsATMController.h&quot;,
+    &quot;/home/imad/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp&quot;,
+    &quot;/home/imad/Documents/Project 2 L4 - ATM System/include/clsString.h&quot;,
+    &quot;/home/imad/Documents/Project 2 L4 - ATM System/include/clsPeriod.h&quot;,
+    &quot;/home/imad/Documents/Project 2 L4 - ATM System/include/cldUtil.h&quot;,
+    &quot;/home/imad/Documents/Project 2 L4 - ATM System/src/main.cpp&quot;,
+    &quot;/home/imad/Documents/Project 2 L4 - ATM System/include/clsDate.h&quot;
   ]
-}]]></component>
+}</component>
   <component name="IgnoredFileRootStore">
     <option name="generatedRoots">
       <set>
@@ -4178,6 +4177,7 @@
         <entry key="6fe0caa9-f4c7-4604-9b51-ce2935ba223d" value="false" />
         <entry key="70157d71-c6c7-4e64-b669-d34595e2783b" value="false" />
         <entry key="721a139f-6969-4a4b-8219-6c308594f488" value="false" />
+        <entry key="72ea6084-b215-4366-b6a1-b66ee31c1b6c" value="false" />
         <entry key="77e1175d-78d0-4908-a5be-b3b4290d8828" value="false" />
         <entry key="7bb174fb-c888-47ad-955f-1ac9d25d562d" value="false" />
         <entry key="7c4db34d-b8ae-4485-9213-4191d9135fd0" value="false" />
@@ -4222,6 +4222,7 @@
         <entry key="b5090a68-ab82-4af7-b098-194fbb8dbdc9" value="false" />
         <entry key="b6ea2863-b1ba-4972-b605-9c8d48ba589e" value="false" />
         <entry key="ba37f411-3404-41d1-97ed-f522da73d98d" value="false" />
+        <entry key="be4a3326-00fb-4964-986e-662c1a0c7885" value="false" />
         <entry key="c047facb-a64a-4e3f-b480-57e213e2e56c" value="false" />
         <entry key="c09d500a-80fd-4511-a267-e18282ba0b2c" value="false" />
         <entry key="c0e0ae23-084e-4ef1-854b-3d977fc21dee" value="false" />
@@ -4231,6 +4232,7 @@
         <entry key="c5f04ea8-cf4b-4025-94a4-d484f5979521" value="false" />
         <entry key="c855eda5-708b-40a3-a201-5047c48b83ea" value="false" />
         <entry key="c91d7ea9-cfaf-4d1d-8347-5b5843446167" value="false" />
+        <entry key="ca882f73-19cb-4db7-bf7a-b83d20ae4dba" value="false" />
         <entry key="cb3d2b69-8e55-4375-801f-0c15656ae4b3" value="false" />
         <entry key="ce111d4b-79f5-4a9e-ba4a-804e03088293" value="false" />
         <entry key="cec61a0f-21a3-4487-95bb-21c66e7663bc" value="false" />
@@ -4267,10 +4269,10 @@
   </component>
   <component name="LanguageUsageStatistics">
     <language id="C++">
-      <summary usageCount="192" lastUsage="1776549466534" />
+      <summary usageCount="198" lastUsage="1776641396814" />
     </language>
     <language id="CMake">
-      <summary usageCount="20" lastUsage="1774162408293" />
+      <summary usageCount="21" lastUsage="1776685841996" />
     </language>
     <language id="TEXT">
       <summary usageCount="21" lastUsage="1776207976402" />
@@ -4283,32 +4285,22 @@
     <project-root url="file://$PROJECT_DIR$" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1" />
+    <navigator currentView="ProjectPane" proportions="" version="1" />
     <panes>
       <pane id="ProjectPane" />
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
             <path>
-              <item name="Project1L4BankExtension2" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Project 2 L4 - ATM System" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="~/Documents/Project 2 L4 - ATM System" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </path>
-            <path>
-              <item name="Project1L4BankExtension2" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="~/Documents/Project 2 L4 - ATM System" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="include" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="Project1L4BankExtension2" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="~/Documents/Project 2 L4 - ATM System" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
           <presentation>
             <attributes />
-            <data iconPath="nodes/project.svg" iconPlugin="com.intellij" isLeaf="false" text="Project1L4BankExtension2" />
-            <item name="Project1L4BankExtension2" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+            <data iconPath="expui/runConfigurations/application.svg" iconPlugin="com.intellij" isLeaf="false" text="Project 2 L4 - ATM System" />
+            <item name="Project 2 L4 - ATM System" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
             <presentation>
               <attributes>
                 <map>
@@ -4329,101 +4321,11 @@
               <presentation>
                 <attributes>
                   <map>
-                    <entry key="filePath" value="$PROJECT_DIR$/build" />
-                  </map>
-                </attributes>
-                <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="build" />
-                <item name="build" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              </presentation>
-              <presentation>
-                <attributes>
-                  <map>
                     <entry key="filePath" value="$PROJECT_DIR$/cmake-build-debug" />
                   </map>
                 </attributes>
                 <data iconPath="expui/nodes/excludeRoot.svg" iconPlugin="com.intellij" isLeaf="false" text="cmake-build-debug" />
                 <item name="cmake-build-debug" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              </presentation>
-              <presentation>
-                <attributes>
-                  <map>
-                    <entry key="filePath" value="$PROJECT_DIR$/include" />
-                  </map>
-                </attributes>
-                <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="include" />
-                <item name="include" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-                <presentation>
-                  <attributes>
-                    <map>
-                      <entry key="filePath" value="$PROJECT_DIR$/include/clsDate.h" />
-                    </map>
-                  </attributes>
-                  <data iconModule="intellij.cidr.lang.base" iconPath="icons/expui/fileTypes/h.svg" iconPlugin="com.intellij.clion" isLeaf="true" text="clsDate.h" />
-                  <item name="clsDate.h" type="ab9368bb:PsiFileNode" />
-                </presentation>
-                <presentation>
-                  <attributes>
-                    <map>
-                      <entry key="filePath" value="$PROJECT_DIR$/include/clsPeriod.h" />
-                    </map>
-                  </attributes>
-                  <data iconModule="intellij.cidr.lang.base" iconPath="icons/expui/fileTypes/h.svg" iconPlugin="com.intellij.clion" isLeaf="true" text="clsPeriod.h" />
-                  <item name="clsPeriod.h" type="ab9368bb:PsiFileNode" />
-                </presentation>
-                <presentation>
-                  <attributes>
-                    <map>
-                      <entry key="filePath" value="$PROJECT_DIR$/include/clsString.h" />
-                    </map>
-                  </attributes>
-                  <data iconModule="intellij.cidr.lang.base" iconPath="icons/expui/fileTypes/h.svg" iconPlugin="com.intellij.clion" isLeaf="true" text="clsString.h" />
-                  <item name="clsString.h" type="ab9368bb:PsiFileNode" />
-                </presentation>
-              </presentation>
-              <presentation>
-                <attributes>
-                  <map>
-                    <entry key="filePath" value="$PROJECT_DIR$/src" />
-                  </map>
-                </attributes>
-                <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="src" />
-                <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-                <presentation>
-                  <attributes>
-                    <map>
-                      <entry key="filePath" value="$PROJECT_DIR$/src/main.cpp" />
-                    </map>
-                  </attributes>
-                  <data iconModule="intellij.cidr.lang.base" iconPath="icons/expui/fileTypes/cpp.svg" iconPlugin="com.intellij.clion" isLeaf="true" text="main.cpp" />
-                  <item name="main.cpp" type="ab9368bb:PsiFileNode" />
-                </presentation>
-              </presentation>
-              <presentation>
-                <attributes>
-                  <map>
-                    <entry key="filePath" value="$PROJECT_DIR$/.gitattributes" />
-                  </map>
-                </attributes>
-                <data iconPath="expui/fileTypes/text.svg" iconPlugin="com.intellij" isLeaf="true" text=".gitattributes" />
-                <item name=".gitattributes" type="ab9368bb:PsiFileNode" />
-              </presentation>
-              <presentation>
-                <attributes>
-                  <map>
-                    <entry key="filePath" value="$PROJECT_DIR$/.gitignore" />
-                  </map>
-                </attributes>
-                <data iconPath="expui/fileTypes/ignored.svg" iconPlugin="com.intellij" isLeaf="true" text=".gitignore" />
-                <item name=".gitignore" type="ab9368bb:PsiFileNode" />
-              </presentation>
-              <presentation>
-                <attributes>
-                  <map>
-                    <entry key="filePath" value="$PROJECT_DIR$/CMakeLists.txt" />
-                  </map>
-                </attributes>
-                <data iconPath="icons/expui/CMake.svg" iconPlugin="com.intellij.cmake" isLeaf="true" text="CMakeLists.txt" />
-                <item name="CMakeLists.txt" type="ab9368bb:PsiFileNode" />
               </presentation>
             </presentation>
             <presentation>
@@ -4477,7 +4379,7 @@
     </option>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="399477000" />
+    <option name="totallyTimeSpent" value="407281000" />
   </component>
   <component name="TodoView">
     <todo-panel id="all">
@@ -4486,33 +4388,33 @@
   </component>
   <component name="ToolWindowManager">
     <layoutV2>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.53683573" visible="true" weight="0.15843749" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5398352" visible="true" weight="0.3225191" />
       <window_info id="Commit" order="1" weight="0.1554445" />
-      <window_info active="true" id="Structure" order="2" sideWeight="0.46316427" side_tool="true" visible="true" weight="0.15843749" />
+      <window_info active="true" id="Structure" order="2" sideWeight="0.46016484" side_tool="true" visible="true" weight="0.3225191" />
       <window_info id="Pull Requests" order="3" weight="0.1554445" />
       <window_info anchor="bottom" id="Version Control" order="0" weight="0.32987142" />
       <window_info anchor="bottom" id="Problems" order="1" />
-      <window_info anchor="bottom" id="Problems View" order="2" weight="0.35520095" />
-      <window_info active="true" anchor="bottom" x="798" y="-37" width="786" height="884" id="Terminal" maximized="true" order="3" type="WINDOWED" weight="0.6572223" />
-      <window_info anchor="bottom" id="Services" order="4" weight="0.32987142" />
-      <window_info anchor="bottom" id="CMake" order="5" weight="0.33427602" />
-      <window_info anchor="bottom" id="Messages" order="6" weight="0.37722224" />
-      <window_info anchor="bottom" x="-452" y="-37" width="786" height="846" id="Run" maximized="true" order="7" show_stripe_button="false" type="WINDOWED" weight="0.37765956" />
+      <window_info anchor="bottom" id="Problems View" order="2" weight="0.37765956" />
+      <window_info active="true" anchor="bottom" x="399" y="0" width="786" height="846" id="Terminal" maximized="true" order="3" type="WINDOWED" weight="0.37765956" />
+      <window_info anchor="bottom" id="Services" order="4" weight="0.37726244" />
+      <window_info anchor="bottom" id="CMake" order="5" visible="true" weight="0.37726244" />
+      <window_info anchor="bottom" id="Messages" order="6" weight="0.37726244" />
+      <window_info anchor="bottom" x="-802" y="1" width="786" height="884" id="Run" maximized="true" order="7" show_stripe_button="false" type="WINDOWED" weight="0.37726244" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.32987142" />
-      <window_info anchor="bottom" id="Python Packages" order="9" weight="0.32975113" />
-      <window_info anchor="bottom" id="PythonProcessOutput" order="10" weight="0.32987142" />
-      <window_info anchor="bottom" id="TODO" order="11" weight="0.37722224" />
+      <window_info anchor="bottom" id="Python Packages" order="9" weight="0.37726244" />
+      <window_info anchor="bottom" id="PythonProcessOutput" order="10" weight="0.37726244" />
+      <window_info anchor="bottom" id="TODO" order="11" weight="0.37726244" />
       <window_info anchor="right" id="Notifications" order="0" weight="0.2728125" />
-      <window_info anchor="right" id="AIAssistant" order="1" sideWeight="0.5006158" weight="0.2728125" />
-      <window_info anchor="right" id="Database" order="2" weight="0.2728125" />
+      <window_info anchor="right" id="AIAssistant" order="1" sideWeight="0.5006158" weight="0.5464376" />
+      <window_info anchor="right" id="Database" order="2" weight="0.27304292" />
       <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
       <window_info anchor="right" id="Maven" order="4" weight="0.25" />
       <window_info anchor="right" id="Meson" order="5" />
-      <window_info anchor="right" id="ElectroJunToolWindow" order="6" weight="0.2728125" />
+      <window_info anchor="right" id="ElectroJunToolWindow" order="6" weight="0.27304292" />
       <window_info anchor="right" id="Recap" order="7" weight="0.25644398" />
-      <window_info anchor="right" id="Python Console" order="8" weight="0.2728125" />
+      <window_info anchor="right" id="Python Console" order="8" weight="0.27304292" />
       <window_info anchor="right" id="documentation.v2" order="9" sideWeight="0.49938422" side_tool="true" weight="0.24526516" />
-      <unified_weights bottom="0.37722224" left="0.15843749" right="0.2728125" />
+      <unified_weights bottom="0.37726244" left="0.3225191" right="0.5464376" />
     </layoutV2>
     <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1556187" />
@@ -4542,28 +4444,28 @@
       <unified_weights bottom="0.33427602" left="0.1556187" right="0.29766417" />
     </layout-to-restore>
     <recentWindows>
-      <value>Notifications</value>
-      <value>Python Console</value>
-      <value>Database</value>
-      <value>AIAssistant</value>
-      <value>ElectroJunToolWindow</value>
-      <value>TODO</value>
-      <value>Messages</value>
       <value>Project</value>
-      <value>Structure</value>
-      <value>Run</value>
-      <value>Problems View</value>
       <value>CMake</value>
-      <value>documentation.v2</value>
-      <value>Terminal</value>
+      <value>Structure</value>
+      <value>Messages</value>
+      <value>Run</value>
+      <value>Services</value>
       <value>Python Packages</value>
-      <value>Recap</value>
       <value>PythonProcessOutput</value>
+      <value>TODO</value>
+      <value>Terminal</value>
+      <value>Problems View</value>
+      <value>AIAssistant</value>
+      <value>Python Console</value>
+      <value>ElectroJunToolWindow</value>
+      <value>Database</value>
+      <value>Notifications</value>
+      <value>documentation.v2</value>
+      <value>Recap</value>
       <value>Version Control</value>
       <value>Pull Requests</value>
       <value>Commit</value>
       <value>Debug</value>
-      <value>Services</value>
     </recentWindows>
   </component>
   <component name="WindowStateProjectService">
@@ -4595,34 +4497,39 @@
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state width="641" height="480" key="CreateCMakeListWizard.topPanel/0.0.1600.900@0.0.1600.900" timestamp="1770124698933" />
-    <state x="738" y="283" width="426" height="497" key="FileChooserDialogImpl" timestamp="1774162627158">
+    <state x="738" y="283" width="426" height="497" key="FileChooserDialogImpl" timestamp="1776686420295">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="738" y="283" width="426" height="497" key="FileChooserDialogImpl/0.0.1600.900@0.0.1600.900" timestamp="1774162627158" />
-    <state width="780" height="767" key="GridCell.Tab.0.bottom" timestamp="1776519368373">
+    <state x="738" y="283" key="FileChooserDialogImpl/1600.0.768.1024/0.0.1600.900@0.0.1600.900" timestamp="1776686420295" />
+    <state width="780" height="805" key="GridCell.Tab.0.bottom" timestamp="1776686357919">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state width="780" height="357" key="GridCell.Tab.0.bottom/0.0.1600.900/1600.0.1024.768@0.0.1600.900" timestamp="1774812771132" />
     <state width="780" height="357" key="GridCell.Tab.0.bottom/0.0.1600.900@0.0.1600.900" timestamp="1774543030658" />
     <state width="780" height="767" key="GridCell.Tab.0.bottom/1600.0.1024.768/0.0.1600.900@0.0.1600.900" timestamp="1776519368373" />
-    <state width="780" height="767" key="GridCell.Tab.0.center" timestamp="1776519368373">
+    <state width="780" height="805" key="GridCell.Tab.0.bottom/1600.0.768.1024/0.0.1600.900@0.0.1600.900" timestamp="1776686357919" />
+    <state width="780" height="805" key="GridCell.Tab.0.center" timestamp="1776686357919">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state width="780" height="357" key="GridCell.Tab.0.center/0.0.1600.900/1600.0.1024.768@0.0.1600.900" timestamp="1774812771132" />
     <state width="780" height="357" key="GridCell.Tab.0.center/0.0.1600.900@0.0.1600.900" timestamp="1774543030658" />
     <state width="780" height="767" key="GridCell.Tab.0.center/1600.0.1024.768/0.0.1600.900@0.0.1600.900" timestamp="1776519368373" />
-    <state width="780" height="767" key="GridCell.Tab.0.left" timestamp="1776519368373">
+    <state width="780" height="805" key="GridCell.Tab.0.center/1600.0.768.1024/0.0.1600.900@0.0.1600.900" timestamp="1776686357919" />
+    <state width="780" height="805" key="GridCell.Tab.0.left" timestamp="1776686357919">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state width="780" height="357" key="GridCell.Tab.0.left/0.0.1600.900/1600.0.1024.768@0.0.1600.900" timestamp="1774812771132" />
     <state width="780" height="357" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1774543030658" />
     <state width="780" height="767" key="GridCell.Tab.0.left/1600.0.1024.768/0.0.1600.900@0.0.1600.900" timestamp="1776519368373" />
-    <state width="780" height="767" key="GridCell.Tab.0.right" timestamp="1776519368373">
+    <state width="780" height="805" key="GridCell.Tab.0.left/1600.0.768.1024/0.0.1600.900@0.0.1600.900" timestamp="1776686357919" />
+    <state width="780" height="805" key="GridCell.Tab.0.right" timestamp="1776686357919">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state width="780" height="357" key="GridCell.Tab.0.right/0.0.1600.900/1600.0.1024.768@0.0.1600.900" timestamp="1774812771132" />
     <state width="780" height="357" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1774543030658" />
     <state width="780" height="767" key="GridCell.Tab.0.right/1600.0.1024.768/0.0.1600.900@0.0.1600.900" timestamp="1776519368373" />
+    <state width="780" height="805" key="GridCell.Tab.0.right/1600.0.768.1024/0.0.1600.900@0.0.1600.900" timestamp="1776686357919" />
     <state x="459" y="137" width="1600" height="900" key="SettingsEditor" timestamp="1775566257016">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
@@ -4670,7 +4577,6 @@
     <entry file="file://$PROJECT_DIR$/Users.txt" />
     <entry file="file://$PROJECT_DIR$/src/Util.cpp" />
     <entry file="file://$PROJECT_DIR$/src/clsUser.cpp" />
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt" />
     <entry file="file://$PROJECT_DIR$/include/clsUser.h" />
     <entry file="file://$PROJECT_DIR$/include/Util.h" />
     <entry file="file://$PROJECT_DIR$/data/Clients.txt" />
@@ -4698,45 +4604,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/include/clsDate.cpp" />
-    <entry file="file://$PROJECT_DIR$/include/clsString.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <marker date="1776261388703" expanded="true" signature="194:270" ph="##include ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#495#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/clsPeriod.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <marker date="1776378070463" expanded="true" signature="0:36" ph="//..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/clsDate.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-          <folding>
-            <marker date="1776549679158" expanded="true" signature="100:191" ph="##include ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/include/clsString.h" />
+    <entry file="file://$PROJECT_DIR$/include/clsPeriod.h" />
+    <entry file="file://$PROJECT_DIR$/include/clsUtil.h" />
+    <entry file="file://$PROJECT_DIR$/src/main.cpp" />
+    <entry file="file://$PROJECT_DIR$/include/clsDate.h" />
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt" />
   </component>
   <component name="masterDetails">
     <states>

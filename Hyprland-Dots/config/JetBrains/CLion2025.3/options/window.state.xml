@@ -6,14 +6,18 @@
     <size key="GridCell.Tab.0.center.0.0.4000.2250@240dpi" width="4548" height="755" />
     <size key="GridCell.Tab.0.right.0.0.4000.2250@240dpi" width="4548" height="755" />
     <size key="GridCell.Tab.0.bottom.0.0.4000.2250@240dpi" width="4548" height="755" />
-    <size key="GridCell.Tab.0.left.0.0.4800.2700@288dpi" width="2340" height="2301" />
-    <size key="GridCell.Tab.0.center.0.0.4800.2700@288dpi" width="2340" height="2301" />
-    <size key="GridCell.Tab.0.right.0.0.4800.2700@288dpi" width="2340" height="2301" />
-    <size key="GridCell.Tab.0.bottom.0.0.4800.2700@288dpi" width="2340" height="2301" />
+    <size key="GridCell.Tab.0.left.0.0.4800.2700@288dpi" width="2340" height="2415" />
+    <size key="GridCell.Tab.0.center.0.0.4800.2700@288dpi" width="2340" height="2415" />
+    <size key="GridCell.Tab.0.right.0.0.4800.2700@288dpi" width="2340" height="2415" />
+    <size key="GridCell.Tab.0.bottom.0.0.4800.2700@288dpi" width="2340" height="2415" />
     <size key="GridCell.Tab.0.left.4800.0.3072.2304@288dpi" width="2340" height="2301" />
     <size key="GridCell.Tab.0.center.4800.0.3072.2304@288dpi" width="2340" height="2301" />
     <size key="GridCell.Tab.0.right.4800.0.3072.2304@288dpi" width="2340" height="2301" />
     <size key="GridCell.Tab.0.bottom.4800.0.3072.2304@288dpi" width="2340" height="2301" />
+    <size key="GridCell.Tab.0.left.4800.0.2304.3072@288dpi" width="2340" height="2415" />
+    <size key="GridCell.Tab.0.center.4800.0.2304.3072@288dpi" width="2340" height="2415" />
+    <size key="GridCell.Tab.0.right.4800.0.2304.3072@288dpi" width="2340" height="2415" />
+    <size key="GridCell.Tab.0.bottom.4800.0.2304.3072@288dpi" width="2340" height="2415" />
   </component>
   <component name="WindowManager">
     <frame x="100" y="20" width="1584" height="846" extendedState="6" />

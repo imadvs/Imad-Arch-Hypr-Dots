@@ -1,1 +1,8 @@
-/home/imad/dotfiles/my-themes/IMAD/neovim.lua
+return {
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "neopywal",
+    },
+  },
+}

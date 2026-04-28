@@ -91,6 +91,7 @@
         <entry key="b3537d0d-d398-4104-9a05-cad4d4a2b00e" value="false" />
         <entry key="b5090a68-ab82-4af7-b098-194fbb8dbdc9" value="false" />
         <entry key="b6ea2863-b1ba-4972-b605-9c8d48ba589e" value="false" />
+        <entry key="ba0d13e0-0ba3-40e4-a5b7-b3afb174768e" value="false" />
         <entry key="ba37f411-3404-41d1-97ed-f522da73d98d" value="false" />
         <entry key="be4a3326-00fb-4964-986e-662c1a0c7885" value="false" />
         <entry key="c047facb-a64a-4e3f-b480-57e213e2e56c" value="false" />
@@ -115,6 +116,7 @@
         <entry key="d8e0efed-9758-426f-bb8b-9704e50e9092" value="false" />
         <entry key="d9ded76b-21f3-4fa5-8517-bd1904c8dd3b" value="false" />
         <entry key="da9fb45f-e0ff-4489-8e56-d2d0eb1963ff" value="false" />
+        <entry key="db10343f-3e80-4d40-9545-d4f318d11732" value="false" />
         <entry key="dbdbb2b6-23ad-4b92-a807-397122b11a52" value="false" />
         <entry key="dc256c97-74f0-4a52-9575-15db58a26b33" value="false" />
         <entry key="dd64ffe0-5a18-480e-bc60-1b779f5a0f6a" value="false" />
@@ -132,6 +134,7 @@
         <entry key="f1c6c0ef-1ead-438b-a78e-6573c0c194a3" value="false" />
         <entry key="f2dff384-92fa-4ca3-a8cb-5c1701f2f9ef" value="false" />
         <entry key="f614887c-f9de-45d0-84ce-d05e3ba95dc0" value="false" />
+        <entry key="f693077b-e5b7-4246-ac10-bef9e7d520a0" value="false" />
         <entry key="f7623557-2a9a-458e-98d6-7a6c9408047a" value="false" />
         <entry key="fba7af34-a3e8-404a-8754-c52e32807bfd" value="false" />
       </map>
@@ -4038,6 +4041,255 @@
           </option>
           <option name="uid" value="ca882f73-19cb-4db7-bf7a-b83d20ae4dba" />
         </SerializedChat>
+        <SerializedChat>
+          <option name="chatContext">
+            <SerializedChatContext />
+          </option>
+          <option name="chatModelId" value="chat_mode" />
+          <option name="messages">
+            <list>
+              <SerializedChatMessage>
+                <option name="attachments">
+                  <list>
+                    <SerializedChatAttachment>
+                      <option name="name" value="Project View" />
+                      <option name="text" value="Project View content:&#10;```&#10;Project1 - Utility library&#10; build&#10; cmake-build-debug&#10; Data&#10; include&#10;  clsBankClient.h&#10;  clsDate.h&#10;  clsInputValidate.h&#10;  clsPeriod.h&#10;  clsPerson.h&#10;  clsString.h&#10;  clsUtil.h&#10; src&#10;  main.cpp&#10; .gitattributes&#10; .gitignore&#10; CMakeLists.txt&#10;External Libraries&#10;Scratches and Consoles&#10;```" />
+                    </SerializedChatAttachment>
+                    <SerializedChatAttachment>
+                      <option name="url" value="file://$PROJECT_DIR$/include/clsBankClient.h" />
+                      <option name="name" value="Information about open file in the editor" />
+                      <option name="text" value="```c/c++&#10;//&#10;// Created by imad on 4/24/26.&#10;//&#10;&#10;#ifndef PROJECT1L4BANKEXTENSION2_CLSBANKCLIENT_H&#10;#define PROJECT1L4BANKEXTENSION2_CLSBANKCLIENT_H&#10;&#10;&#10;#pragma once&#10;#include &lt;iostream&gt;&#10;#include &lt;string&gt;&#10;#include &quot;clsPerson.h&quot;&#10;#include &quot;clsString.h&quot;&#10;#include &lt;fstream&gt;&#10;#include &lt;vector&gt;&#10;&#10;using namespace std;&#10;&#10;class clsBankClient :public clsPerson&#10;{&#10;private:&#10;&#9;enum enMode { EmptyMode = 0, UpdateMode = 1 };&#10;&#9;enMode _Mode;&#10;&#9;string _AccountNumber;&#10;&#9;string _PinCode;&#10;&#9;float _AccountBalance;&#10;&#10;    static clsBankClient _ConvertLinetoClientObject(string Line, string Seperator = &quot;#//#&quot;)&#10;    {&#10;        vector&lt;string&gt; vClientData;&#10;        vClientData = clsString::Split(Line, Seperator);&#10;&#10;        return clsBankClient(enMode::UpdateMode, vClientData[0], vClientData[1], vClientData[2],&#10;            vClientData[3], vClientData[4], vClientData[5], stod(vClientData[6]));&#10;&#10;    }&#10;&#10;    static clsBankClient _GetEmptyClientObject()&#10;    {&#10;        return clsBankClient(enMode::EmptyMode, &quot;&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;, 0);&#10;    }&#10;&#10;public:&#10;&#9;clsBankClient(enMode Mode, string FirstName, string LastName,&#10;&#9;&#9;string Email, string Phone, string AccountNumber, string PinCode,&#10;&#9;&#9;float AccountBalance) :&#10;&#9;&#9;clsPerson(FirstName, LastName, Email, Phone)&#10;&#10;&#9;{&#10;&#9;&#9;_Mode = Mode;&#10;&#9;&#9;_AccountNumber = AccountNumber;&#10;&#9;&#9;_PinCode = PinCode;&#10;&#9;&#9;_AccountBalance = AccountBalance;&#10;&#10;&#9;}&#10;&#10;    string AccountNumber()&#10;    {&#10;        return _AccountNumber;&#10;    }&#10;&#10;    void SetPinCode(string PinCode)&#10;    {&#10;        _PinCode = PinCode;&#10;    }&#10;&#10;    string GetPinCode()&#10;    {&#10;        return _PinCode;&#10;    }&#10;&#10;    void SetAccountBalance(float AccountBalance)&#10;    {&#10;        _AccountBalance = AccountBalance;&#10;    }&#10;&#10;    float GetAccountBalance()&#10;    {&#10;        return _AccountBalance;&#10;    }&#10;&#10;    void Print()&#10;    {&#10;        cout &lt;&lt; &quot;\nClient Card:&quot;;&#10;        cout &lt;&lt; &quot;\n___________________&quot;;&#10;        cout &lt;&lt; &quot;\nFirstName   : &quot; &lt;&lt; GetFirstName();&#10;        cout &lt;&lt; &quot;\nLastName    : &quot; &lt;&lt; GetLastName();&#10;        cout &lt;&lt; &quot;\nFull Name   : &quot; &lt;&lt; FullName();&#10;        cout &lt;&lt; &quot;\nEmail       : &quot; &lt;&lt; GetEmail();&#10;        cout &lt;&lt; &quot;\nPhone       : &quot; &lt;&lt; GetPhone();&#10;        cout &lt;&lt; &quot;\nAcc. Number : &quot; &lt;&lt; _AccountNumber;&#10;        cout &lt;&lt; &quot;\nPassword    : &quot; &lt;&lt; _PinCode;&#10;        cout &lt;&lt; &quot;\nBalance     : &quot; &lt;&lt; _AccountBalance;&#10;        cout &lt;&lt; &quot;\n___________________\n&quot;;&#10;&#10;    }&#10;&#10;    static clsBankClient Find(string AccountNumber)&#10;    {&#10;&#10;&#10;        fstream MyFile;&#10;        MyFile.open(&quot;Clients.txt&quot;, ios::in);//read Mode&#10;&#10;        if (MyFile.is_open())&#10;        {&#10;            string Line;&#10;            while (getline(MyFile, Line))&#10;            {&#10;                clsBankClient Client = _ConvertLinetoClientObject(Line);&#10;                if (Client.AccountNumber() == AccountNumber)&#10;                {&#10;                    MyFile.close();&#10;                    return Client;&#10;                }&#10;&#10;            }&#10;&#10;            MyFile.close();&#10;&#10;        }&#10;&#10;        return _GetEmptyClientObject();&#10;    }&#10;&#10;    static clsBankClient Find(string AccountNumber, string PinCode)&#10;    {&#10;&#10;&#10;&#10;        fstream MyFile;&#10;        MyFile.open(&quot;Clients.txt&quot;, ios::in);//read Mode&#10;&#10;        if (MyFile.is_open())&#10;        {&#10;            string Line;&#10;            while (getline(MyFile, Line))&#10;            {&#10;                clsBankClient Client = _ConvertLinetoClientObject(Line);&#10;                if (Client.AccountNumber() == AccountNumber &amp;&amp; Client.GetPinCode() == PinCode)&#10;                {&#10;                    MyFile.close();&#10;                    return Client;&#10;                }&#10;&#10;            }&#10;&#10;            MyFile.close();&#10;&#10;        }&#10;        return _GetEmptyClientObject();&#10;    }&#10;&#10;    bool IsEmpty()&#10;    {&#10;        return (_Mode == enMode::EmptyMode);&#10;    }&#10;&#10;    static bool IsClientExist(string AccountNumber)&#10;    {&#10;&#10;        clsBankClient Client1 = clsBankClient::Find(AccountNumber);&#10;&#10;        return (!Client1.IsEmpty());&#10;    }&#10;&#10;};&#10;&#10;&#10;#endif //PROJECT1L4BANKEXTENSION2_CLSBANKCLIENT_H&#10;```" />
+                    </SerializedChatAttachment>
+                  </list>
+                </option>
+                <option name="markupLanguageID" value="ChatInput" />
+                <option name="uid" value="UUID(uuid=fdc1ac0e-43f3-4153-9078-84c64c325996)" />
+                <option name="displayContent" value="what the issue?&#10;Cannot resolve symbol 'clsString'" />
+                <option name="internalContent" value="what the issue?&#10;Cannot resolve symbol 'clsString'" />
+              </SerializedChatMessage>
+              <SerializedChatMessage>
+                <option name="author" value="Assistant" />
+                <option name="uid" value="93cb4e13-8540-4b1b-82a0-3d02cc1ccf28" />
+                <option name="displayContent" value="The issue is **case/name mismatch**.&#10;&#10;In `clsBankClient.h` you use:&#10;&#10;```cpp&#10;clsString::Split(Line, Seperator);&#10;```&#10;&#10;But in `clsString.h`, the class is declared as:&#10;&#10;```cpp&#10;class clsstring&#10;```&#10;&#10;C++ is **case-sensitive**, so these are different names:&#10;&#10;```cpp&#10;clsString   // what you are using&#10;clsstring   // what actually exists&#10;```&#10;&#10;Also the function in `clsString.h` is named:&#10;&#10;```cpp&#10;split&#10;```&#10;&#10;not:&#10;&#10;```cpp&#10;Split&#10;```&#10;&#10;So `clsString::Split(...)` cannot be resolved.&#10;&#10;## Fix option 1: Change usage in `clsBankClient.h`&#10;&#10;Use the actual class/function names:&#10;&#10;&lt;llm-snippet-file&gt;include/clsBankClient.h&lt;/llm-snippet-file&gt;&#10;```cpp&#10;// ... existing code ...&#10;    static clsBankClient _ConvertLinetoClientObject(string Line, string Seperator = &quot;#//#&quot;)&#10;    {&#10;        vector&lt;string&gt; vClientData;&#10;        vClientData = clsstring::split(Line, Seperator);&#10;&#10;        return clsBankClient(enMode::UpdateMode, vClientData[0], vClientData[1], vClientData[2],&#10;            vClientData[3], vClientData[4], vClientData[5], stod(vClientData[6]));&#10;&#10;    }&#10;// ... existing code ...&#10;```&#10;&#10;## Fix option 2: Rename the class/function in `clsString.h`&#10;&#10;If your course/project expects `clsString::Split`, then rename:&#10;&#10;```cpp&#10;class clsstring&#10;```&#10;&#10;to:&#10;&#10;```cpp&#10;class clsString&#10;```&#10;&#10;and rename:&#10;&#10;```cpp&#10;split&#10;```&#10;&#10;to:&#10;&#10;```cpp&#10;Split&#10;```&#10;&#10;But then you must update other places in `clsString.h` that call `split(...)`.&#10;&#10;## Recommended quick fix&#10;&#10;Use this in `clsBankClient.h`:&#10;&#10;```cpp&#10;vClientData = clsstring::split(Line, Seperator);&#10;```&#10;&#10;That matches your current `clsString.h` exactly." />
+                <option name="internalContent" value="The issue is **case/name mismatch**.&#10;&#10;In `clsBankClient.h` you use:&#10;&#10;```cpp&#10;clsString::Split(Line, Seperator);&#10;```&#10;&#10;But in `clsString.h`, the class is declared as:&#10;&#10;```cpp&#10;class clsstring&#10;```&#10;&#10;C++ is **case-sensitive**, so these are different names:&#10;&#10;```cpp&#10;clsString   // what you are using&#10;clsstring   // what actually exists&#10;```&#10;&#10;Also the function in `clsString.h` is named:&#10;&#10;```cpp&#10;split&#10;```&#10;&#10;not:&#10;&#10;```cpp&#10;Split&#10;```&#10;&#10;So `clsString::Split(...)` cannot be resolved.&#10;&#10;## Fix option 1: Change usage in `clsBankClient.h`&#10;&#10;Use the actual class/function names:&#10;&#10;&lt;llm-snippet-file&gt;include/clsBankClient.h&lt;/llm-snippet-file&gt;&#10;```cpp&#10;// ... existing code ...&#10;    static clsBankClient _ConvertLinetoClientObject(string Line, string Seperator = &quot;#//#&quot;)&#10;    {&#10;        vector&lt;string&gt; vClientData;&#10;        vClientData = clsstring::split(Line, Seperator);&#10;&#10;        return clsBankClient(enMode::UpdateMode, vClientData[0], vClientData[1], vClientData[2],&#10;            vClientData[3], vClientData[4], vClientData[5], stod(vClientData[6]));&#10;&#10;    }&#10;// ... existing code ...&#10;```&#10;&#10;## Fix option 2: Rename the class/function in `clsString.h`&#10;&#10;If your course/project expects `clsString::Split`, then rename:&#10;&#10;```cpp&#10;class clsstring&#10;```&#10;&#10;to:&#10;&#10;```cpp&#10;class clsString&#10;```&#10;&#10;and rename:&#10;&#10;```cpp&#10;split&#10;```&#10;&#10;to:&#10;&#10;```cpp&#10;Split&#10;```&#10;&#10;But then you must update other places in `clsString.h` that call `split(...)`.&#10;&#10;## Recommended quick fix&#10;&#10;Use this in `clsBankClient.h`:&#10;&#10;```cpp&#10;vClientData = clsstring::split(Line, Seperator);&#10;```&#10;&#10;That matches your current `clsString.h` exactly." />
+              </SerializedChatMessage>
+              <SerializedChatMessage>
+                <option name="attachments">
+                  <list>
+                    <SerializedChatAttachment>
+                      <option name="name" value="Project View" />
+                      <option name="text" value="Project View content:&#10;```&#10;Project1 - Utility library&#10; build&#10; cmake-build-debug&#10; Data&#10; include&#10;  clsBankClient.h&#10;  clsDate.h&#10;  clsInputValidate.h&#10;  clsPeriod.h&#10;  clsPerson.h&#10;  clsString.h&#10;  clsUtil.h&#10; src&#10;  main.cpp&#10; .gitattributes&#10; .gitignore&#10; CMakeLists.txt&#10;External Libraries&#10;Scratches and Consoles&#10;```" />
+                    </SerializedChatAttachment>
+                  </list>
+                </option>
+                <option name="markupLanguageID" value="ChatInput" />
+                <option name="uid" value="UUID(uuid=32cffb88-f1f4-45e0-a697-19b4b392067f)" />
+                <option name="displayContent" value="Call to non-static member function without an object argument&#10;Function has 0 parameters, but is called with 2 arguments&#10;" />
+                <option name="internalContent" value="Call to non-static member function without an object argument&#10;Function has 0 parameters, but is called with 2 arguments&#10;" />
+              </SerializedChatMessage>
+              <SerializedChatMessage>
+                <option name="author" value="Assistant" />
+                <option name="uid" value="97c603a9-68d5-43d9-befb-7f2b0be24336" />
+                <option name="displayContent" value="The issue is in `clsString.h`: your static split function is currently named **`plit`**, not `Split`.&#10;&#10;You likely have this call somewhere:&#10;&#10;```cpp&#10;clsString::Split(Line, Seperator);&#10;```&#10;&#10;But in `clsString.h`, you currently have:&#10;&#10;```cpp&#10;static vector&lt;string&gt; plit(string str1, string delim = &quot; &quot;)&#10;```&#10;&#10;and:&#10;&#10;```cpp&#10;vector&lt;string&gt; Split()&#10;{&#10;    return plit(value, &quot; &quot;);&#10;}&#10;```&#10;&#10;So C++ finds `Split()`, but that one is **non-static** and takes **0 parameters**. That causes both errors:&#10;&#10;- **Call to non-static member function without an object argument**&#10;- **Function has 0 parameters, but is called with 2 arguments**&#10;&#10;## Fix&#10;&#10;Rename `plit` to `Split`, and update the internal calls.&#10;&#10;&lt;llm-snippet-file&gt;include/clsString.h&lt;/llm-snippet-file&gt;&#10;```cpp&#10;// ... existing code ...&#10;    short countvowels()&#10;    {&#10;        return countvowels(value);&#10;    }&#10;&#10;    static vector &lt;string&gt; Split(string str1, string delim = &quot; &quot;)&#10;    {&#10;        vector &lt;string&gt; vstring;&#10;&#10;        short pos = 0;&#10;        string sword;&#10;&#10;        while ((pos = str1.find(delim)) != string::npos)&#10;        {&#10;            sword = str1.substr(0, pos);&#10;            if (sword != &quot;&quot;)&#10;            {&#10;                vstring.push_back(sword);&#10;            }&#10;            str1.erase(0, pos + delim.length());&#10;        }&#10;        if (str1 != &quot;&quot;)&#10;        {&#10;            vstring.push_back(str1);&#10;        }&#10;        return vstring;&#10;    }&#10;    vector &lt;string&gt; Split()&#10;    {&#10;        return Split(value, &quot; &quot;);&#10;    }&#10;&#10;    static string trimleft(string str1)&#10;    {&#10;        for (short i = 0; i &lt; str1.length(); i++)&#10;// ... existing code ...&#10;```&#10;&#10;Also update these two places later in the same file:&#10;&#10;&lt;llm-snippet-file&gt;include/clsString.h&lt;/llm-snippet-file&gt;&#10;```cpp&#10;// ... existing code ...&#10;    static string reversewordsinstring(string s1)&#10;    {&#10;        vector &lt;string&gt; vstring;&#10;        string s2 = &quot;&quot;;&#10;&#10;        vstring = Split(s1, &quot; &quot;);&#10;&#10;        vector &lt;string&gt;::iterator iter = vstring.end();&#10;        while (iter != vstring.begin())&#10;        {&#10;            iter--;&#10;// ... existing code ...&#10;```&#10;&#10;&lt;llm-snippet-file&gt;include/clsString.h&lt;/llm-snippet-file&gt;&#10;```cpp&#10;// ... existing code ...&#10;    static string replaceword(string s1, string stringtoreplace, string srepalceto, bool matchcase = true)&#10;    {&#10;&#10;        vector&lt;string&gt; vstring = Split(s1, &quot; &quot;);&#10;&#10;        for (string&amp; s : vstring)&#10;        {&#10;&#10;            if (matchcase)&#10;// ... existing code ...&#10;```&#10;&#10;After that, this call should work:&#10;&#10;```cpp&#10;clsString::Split(Line, Seperator);&#10;```" />
+                <option name="internalContent" value="The issue is in `clsString.h`: your static split function is currently named **`plit`**, not `Split`.&#10;&#10;You likely have this call somewhere:&#10;&#10;```cpp&#10;clsString::Split(Line, Seperator);&#10;```&#10;&#10;But in `clsString.h`, you currently have:&#10;&#10;```cpp&#10;static vector&lt;string&gt; plit(string str1, string delim = &quot; &quot;)&#10;```&#10;&#10;and:&#10;&#10;```cpp&#10;vector&lt;string&gt; Split()&#10;{&#10;    return plit(value, &quot; &quot;);&#10;}&#10;```&#10;&#10;So C++ finds `Split()`, but that one is **non-static** and takes **0 parameters**. That causes both errors:&#10;&#10;- **Call to non-static member function without an object argument**&#10;- **Function has 0 parameters, but is called with 2 arguments**&#10;&#10;## Fix&#10;&#10;Rename `plit` to `Split`, and update the internal calls.&#10;&#10;&lt;llm-snippet-file&gt;include/clsString.h&lt;/llm-snippet-file&gt;&#10;```cpp&#10;// ... existing code ...&#10;    short countvowels()&#10;    {&#10;        return countvowels(value);&#10;    }&#10;&#10;    static vector &lt;string&gt; Split(string str1, string delim = &quot; &quot;)&#10;    {&#10;        vector &lt;string&gt; vstring;&#10;&#10;        short pos = 0;&#10;        string sword;&#10;&#10;        while ((pos = str1.find(delim)) != string::npos)&#10;        {&#10;            sword = str1.substr(0, pos);&#10;            if (sword != &quot;&quot;)&#10;            {&#10;                vstring.push_back(sword);&#10;            }&#10;            str1.erase(0, pos + delim.length());&#10;        }&#10;        if (str1 != &quot;&quot;)&#10;        {&#10;            vstring.push_back(str1);&#10;        }&#10;        return vstring;&#10;    }&#10;    vector &lt;string&gt; Split()&#10;    {&#10;        return Split(value, &quot; &quot;);&#10;    }&#10;&#10;    static string trimleft(string str1)&#10;    {&#10;        for (short i = 0; i &lt; str1.length(); i++)&#10;// ... existing code ...&#10;```&#10;&#10;Also update these two places later in the same file:&#10;&#10;&lt;llm-snippet-file&gt;include/clsString.h&lt;/llm-snippet-file&gt;&#10;```cpp&#10;// ... existing code ...&#10;    static string reversewordsinstring(string s1)&#10;    {&#10;        vector &lt;string&gt; vstring;&#10;        string s2 = &quot;&quot;;&#10;&#10;        vstring = Split(s1, &quot; &quot;);&#10;&#10;        vector &lt;string&gt;::iterator iter = vstring.end();&#10;        while (iter != vstring.begin())&#10;        {&#10;            iter--;&#10;// ... existing code ...&#10;```&#10;&#10;&lt;llm-snippet-file&gt;include/clsString.h&lt;/llm-snippet-file&gt;&#10;```cpp&#10;// ... existing code ...&#10;    static string replaceword(string s1, string stringtoreplace, string srepalceto, bool matchcase = true)&#10;    {&#10;&#10;        vector&lt;string&gt; vstring = Split(s1, &quot; &quot;);&#10;&#10;        for (string&amp; s : vstring)&#10;        {&#10;&#10;            if (matchcase)&#10;// ... existing code ...&#10;```&#10;&#10;After that, this call should work:&#10;&#10;```cpp&#10;clsString::Split(Line, Seperator);&#10;```" />
+              </SerializedChatMessage>
+            </list>
+          </option>
+          <option name="modifiedAt" value="1777118705783" />
+          <option name="statisticInformation">
+            <ChatStatisticInformation>
+              <option name="sourceActionType" value="NEW_CHAT_ON_START" />
+              <option name="timestamp" value="1777118705783" />
+            </ChatStatisticInformation>
+          </option>
+          <option name="title">
+            <SerializedChatTitle>
+              <option name="custom" value="true" />
+              <option name="text" value="Cannot Resolve Symbol in C++ Code" />
+            </SerializedChatTitle>
+          </option>
+          <option name="uid" value="f693077b-e5b7-4246-ac10-bef9e7d520a0" />
+        </SerializedChat>
+        <SerializedChat>
+          <option name="chatContext">
+            <SerializedChatContext />
+          </option>
+          <option name="chatModelId" value="chat_mode" />
+          <option name="messages">
+            <list>
+              <SerializedChatMessage>
+                <option name="attachments">
+                  <list>
+                    <SerializedChatAttachment>
+                      <option name="url" value="file://$PROJECT_DIR$/include/clsInputValidate.h" />
+                      <option name="name" value="Information about open file in the editor" />
+                      <option name="text" value="```c/c++&#10;//&#10;// Created by imad on 4/21/26.&#10;//&#10;&#10;#ifndef PROJECT1L4BANKEXTENSION2_CLSINPUTVALIDATE_H&#10;#define PROJECT1L4BANKEXTENSION2_CLSINPUTVALIDATE_H&#10;#include &quot;clsDate.h&quot;&#10;#include &lt;limits&gt;&#10;&#10;using namespace std;&#10;&#10;class clsInputValidate&#10;{&#10;    public:&#10;    static bool IsNumberBetween(short Number, short from, short to)&#10;    {&#10;       if (Number &gt;= from &amp;&amp; Number &lt;= to) return true;&#10;       else return false;&#10;    }&#10;&#10;&#10;    static bool IsNumberBetween(int Number, int from, int to)&#10;    {&#10;        if (Number &gt;= from &amp;&amp; Number &lt;= to) return true;&#10;        else return false;&#10;    }&#10;&#10;&#10;    static bool IsNumberBetween(float Number, float from, float to)&#10;    {&#10;        if (Number &gt;= from &amp;&amp; Number &lt;= to) return true;&#10;        else return false;&#10;    }&#10;&#10;    static bool IsNumberBetween(double Number, double From, double To)&#10;    {&#10;        if (Number &gt;= From &amp;&amp; Number &lt;= To)return true;&#10;        else return false;&#10;    }&#10;&#10;&#10;    static bool IsDateBetween(clsDate Date, clsDate From, clsDate To)&#10;    {&#10;        //Date&gt;=From &amp;&amp; Date&lt;=To&#10;        if ((clsDate::IsDate1AfterDate2(Date, From) || clsDate::IsDate1EqualDate2(Date, From))&#10;            &amp;&amp;&#10;            (clsDate::IsDate1BeforeDate2(Date, To) || clsDate::IsDate1EqualDate2(Date, To))&#10;          )&#10;        {&#10;            return true;&#10;        }&#10;&#10;        //Date&gt;=To &amp;&amp; Date&lt;=From&#10;        if ((clsDate::IsDate1AfterDate2(Date, To) || clsDate::IsDate1EqualDate2(Date, To))&#10;            &amp;&amp;&#10;            (clsDate::IsDate1BeforeDate2(Date, From) || clsDate::IsDate1EqualDate2(Date, From))&#10;           )&#10;        {&#10;            return true;&#10;        }&#10;&#10;        return false;&#10;    }&#10;&#10;    static int ReadIntNumber(string ErrorMessage=&quot;Invalid Number, Enter again\n&quot;)&#10;    {&#10;        int Number;&#10;        while (!(cin &gt;&gt; Number)) {&#10;            cin.clear();&#10;            cin.ignore(numeric_limits&lt;streamsize&gt;::max(), '\n');&#10;            cout &lt;&lt; ErrorMessage ;&#10;        }&#10;        return Number;&#10;    }&#10;&#10;    static int ReadIntNumberBetween(int From, int To, string ErrorMessage=&quot;Number is not within range, Enter again:\n&quot;)&#10;    {&#10;        int Number=ReadIntNumber();&#10;&#10;        while (!IsNumberBetween(Number,From,To))&#10;        {&#10;            cout &lt;&lt; ErrorMessage;&#10;            Number = ReadIntNumber();&#10;        }&#10;        return Number;&#10;    }&#10;&#10;    static double ReadFloatNumber(string ErrorMessage = &quot;Invalid Number, Enter again\n&quot;)&#10;    {&#10;        float Number;&#10;        while (!(cin &gt;&gt; Number)) {&#10;            cin.clear();&#10;            cin.ignore(numeric_limits&lt;streamsize&gt;::max(), '\n');&#10;            cout &lt;&lt; ErrorMessage;&#10;        }&#10;        return Number;&#10;    }&#10;&#10;    static double ReadFloatNumberBetween(double From, double To, string ErrorMessage = &quot;Number is not within range, Enter again:\n&quot;)&#10;    {&#10;        float Number = ReadFloatNumber();&#10;&#10;        while (!IsNumberBetween(Number, From, To)) {&#10;            cout &lt;&lt; ErrorMessage;&#10;            Number = ReadDblNumber();&#10;        }&#10;        return Number;&#10;    }&#10;&#10;    static double ReadDblNumber(string ErrorMessage = &quot;Invalid Number, Enter again\n&quot;)&#10;    {&#10;        double Number;&#10;        while (!(cin &gt;&gt; Number)) {&#10;            cin.clear();&#10;            cin.ignore(numeric_limits&lt;streamsize&gt;::max(), '\n');&#10;            cout &lt;&lt; ErrorMessage;&#10;        }&#10;        return Number;&#10;    }&#10;&#10;    static double ReadDblNumberBetween(double From, double To, string ErrorMessage = &quot;Number is not within range, Enter again:\n&quot;)&#10;    {&#10;        double Number = ReadDblNumber();&#10;&#10;        while (!IsNumberBetween(Number, From, To)) {&#10;            cout &lt;&lt; ErrorMessage;&#10;            Number = ReadDblNumber();&#10;        }&#10;        return Number;&#10;    }&#10;&#10;    static bool IsValideDate(clsDate Date)&#10;    {&#10;        return&#9;clsDate::IsValidDate(Date);&#10;    }&#9;&#10;    &#10;    static string ReadString()&#10;    {&#10;        string  S1=&quot;&quot;;&#10;        // Usage of std::ws will extract allthe whitespace character&#10;        getline(cin &gt;&gt; ws, S1);&#10;        return S1;&#10;    }&#10;};&#10;&#10;&#10;&#10;&#10;#endif //PROJECT1L4BANKEXTENSION2_CLSINPUTVALIDATE_H&#10;```" />
+                    </SerializedChatAttachment>
+                    <SerializedChatAttachment>
+                      <option name="url" value="file://$PROJECT_DIR$/src/main.cpp" />
+                      <option name="name" value="main.cpp" />
+                      <option name="text" value="```c/c++&#10;#include &lt;iostream&gt;&#10;#include &quot;clsBankClient.h&quot;&#10;#include &quot;clsInputValidate.h&quot;&#10;&#10;void ReadClientInfo(clsBankClient&amp; Client)&#10;{&#10;    cout &lt;&lt; &quot;\nEnter FirstName: &quot;;&#10;    Client.GetFirstName() = clsInputValidate::ReadString();&#10;&#10;    cout &lt;&lt; &quot;\nEnter LastName: &quot;;&#10;    Client.GetLastName() = clsInputValidate::ReadString();&#10;&#10;    cout &lt;&lt; &quot;\nEnter Email: &quot;;&#10;    Client.GetEmail() = clsInputValidate::ReadString();&#10;&#10;    cout &lt;&lt; &quot;\nEnter Phone: &quot;;&#10;    Client.GetPhone() = clsInputValidate::ReadString();&#10;&#10;    cout &lt;&lt; &quot;\nEnter PinCode: &quot;;&#10;    Client.GetPinCode() = clsInputValidate::ReadString();&#10;&#10;    cout &lt;&lt; &quot;\nEnter Account Balance: &quot;;&#10;    Client.GetAccountBalance() = clsInputValidate::ReadFloatNumber();&#10;}&#10;&#10;void UpdateClient()&#10;{&#10;    string AccountNumber = &quot;&quot;;&#10;&#10;    cout &lt;&lt; &quot;\nPlease Enter client Account Number: &quot;;&#10;    AccountNumber = clsInputValidate::ReadString();&#10;&#10;    while (!clsBankClient::IsClientExist(AccountNumber))&#10;    {&#10;        cout &lt;&lt; &quot;\nAccount number is not found, choose another one: &quot;;&#10;        AccountNumber = clsInputValidate::ReadString();&#10;    }&#10;&#10;    clsBankClient Client1 = clsBankClient::Find(AccountNumber);&#10;    Client1.Print();&#10;&#10;    cout &lt;&lt; &quot;\n\nUpdate Client Info:&quot;;&#10;    cout &lt;&lt; &quot;\n____________________\n&quot;;&#10;&#10;&#10;    ReadClientInfo(Client1);&#10;&#10;    clsBankClient::enSaveResults SaveResult;&#10;&#10;    SaveResult = Client1.Save();&#10;&#10;    switch (SaveResult)&#10;    {&#10;    case  clsBankClient::enSaveResults::svSucceeded:&#10;        {&#10;            cout &lt;&lt; &quot;\nAccount Updated Successfully :-)\n&quot;;&#10;            Client1.Print();&#10;            break;&#10;        }&#10;    case clsBankClient::enSaveResults::svFaildEmptyObject:&#10;        {&#10;            cout &lt;&lt; &quot;\nError account was not saved because it's Empty&quot;;&#10;            break;&#10;&#10;        }&#10;&#10;    }&#10;}&#10;&#10;int main()&#10;&#10;{&#10;    UpdateClient();&#10;    system(&quot;pause&gt;0&quot;);&#10;    return 0;&#10;}&#10;&#10;```" />
+                    </SerializedChatAttachment>
+                    <SerializedChatAttachment>
+                      <option name="url" value="file://$PROJECT_DIR$/include/clsDate.h" />
+                      <option name="name" value="clsDate.h" />
+                      <option name="text" value="```c/c++&#10;#ifndef PROJECT1L4BANKEXTENSION2_CLSDATE_H&#10;#define PROJECT1L4BANKEXTENSION2_CLSDATE_H&#10;&#10;#pragma once&#10;#include &lt;ctime&gt;&#10;#include &lt;iostream&gt;&#10;#include &lt;vector&gt;&#10;#include &lt;string&gt;&#10;#include &lt;iomanip&gt;&#10;&#10;using namespace std;&#10;&#10;class clsDate {&#10;private:&#10;    short _Day = 1;&#10;    short _Month = 1;&#10;    short _Year = 1900;&#10;&#10;    // Helper for string splitting (Teacher uses a separate clsString, we keep it internal or use this)&#10;    static vector&lt;string&gt; _Split(string Str, string Delim) {&#10;        short Pos = 0;&#10;        string word = &quot;&quot;;&#10;        vector&lt;string&gt; VWords;&#10;        while ((Pos = Str.find(Delim)) != std::string::npos) {&#10;            word = Str.substr(0, Pos);&#10;            if (word != &quot;&quot;) VWords.push_back(word);&#10;            Str.erase(0, Pos + Delim.length());&#10;        }&#10;        if (Str != &quot;&quot;) VWords.push_back(Str);&#10;        return VWords;&#10;    }&#10;&#10;public:&#10;    enum enDateCompare { Before = -1, Equal = 0, After = 1 };&#10;&#10;    // --- Constructors ---&#10;    clsDate() {&#10;        time_t t = time(0);&#10;        tm* now = localtime(&amp;t);&#10;        _Day = now-&gt;tm_mday;&#10;        _Month = now-&gt;tm_mon + 1;&#10;        _Year = now-&gt;tm_year + 1900;&#10;    }&#10;&#10;    clsDate(string sDate) {&#10;        vector&lt;string&gt; vDate = _Split(sDate, &quot;/&quot;);&#10;        if (vDate.size() &gt;= 3) {&#10;            _Day = (short)stoi(vDate[0]);&#10;            _Month = (short)stoi(vDate[1]);&#10;            _Year = (short)stoi(vDate[2]);&#10;        }&#10;    }&#10;&#10;    clsDate(short Day, short Month, short Year) {&#10;        _Day = Day;&#10;        _Month = Month;&#10;        _Year = Year;&#10;    }&#10;&#10;    clsDate(short DateOrderInYear, short Year) {&#10;        clsDate Date1 = GetDateFromDayOrderInYear(DateOrderInYear, Year);&#10;        _Day = Date1.GetDay();&#10;        _Month = Date1.GetMonth();&#10;        _Year = Date1.GetYear();&#10;    }&#10;&#10;&#10;    // --- Month Increase ---&#10;    static clsDate AddOneMonth(clsDate Date) {&#10;        if (Date.GetMonth() == 12) {&#10;            Date.SetMonth(1);&#10;            Date.SetYear(Date.GetYear() + 1);&#10;        } else {&#10;            Date.SetMonth(Date.GetMonth() + 1);&#10;        }&#10;        // Clamp the day if the new month has fewer days (e.g. Jan 31 -&gt; Feb 28)&#10;        short maxDay = NumberOfDaysInAMonth(Date.GetMonth(), Date.GetYear());&#10;        if (Date.GetDay() &gt; maxDay)&#10;            Date.SetDay(maxDay);&#10;&#10;        return Date;&#10;    }&#10;&#10;    void IncreaseDateByOneMonth() { *this = AddOneMonth(*this); }&#10;&#10;    // --- Age Calculator ---&#10;    static int CalculateMyAgeInDays(clsDate BirthDate) {&#10;        clsDate Today;&#10;        return GetDifferenceInDays(BirthDate, Today, true);&#10;    }&#10;&#10;&#10;    static void SwapDates(clsDate&amp; Date1, clsDate&amp; Date2) {&#10;        clsDate Temp = Date1;&#10;        Date1 = Date2;&#10;        Date2 = Temp;&#10;    }&#10;&#10;&#10;    // --- Accessors (Standard C++ compatible) ---&#10;    void SetDay(short Day) { _Day = Day; }&#10;    short GetDay() const { return _Day; }&#10;&#10;    void SetMonth(short Month) { _Month = Month; }&#10;    short GetMonth() const { return _Month; }&#10;&#10;    void SetYear(short Year) { _Year = Year; }&#10;    short GetYear() const { return _Year; }&#10;&#10;    // --- Static Utility Methods (Leap Year &amp; Month Days) ---&#10;    static bool isLeapYear(short Year) {&#10;        return (Year % 4 == 0 &amp;&amp; Year % 100 != 0) || (Year % 400 == 0);&#10;    }&#10;&#10;    bool isLeapYear() const { return isLeapYear(_Year); }&#10;&#10;    static short NumberOfDaysInAMonth(short Month, short Year) {&#10;        if (Month &lt; 1 || Month &gt; 12) return 0;&#10;        int days[12] = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };&#10;        return (Month == 2) ? (isLeapYear(Year) ? 29 : 28) : (short)days[Month - 1];&#10;    }&#10;&#10;    short NumberOfDaysInAMonth() const { return NumberOfDaysInAMonth(_Month, _Year); }&#10;&#10;    // --- Calendar &amp; Names ---&#10;    static short DayOfWeekOrder(short Day, short Month, short Year) {&#10;        short a, y, m;&#10;        a = (14 - Month) / 12;&#10;        y = Year - a;&#10;        m = Month + (12 * a) - 2;&#10;        return (Day + y + (y / 4) - (y / 100) + (y / 400) + ((31 * m) / 12)) % 7;&#10;    }&#10;&#10;    short DayOfWeekOrder() const { return DayOfWeekOrder(_Day, _Month, _Year); }&#10;&#10;    static string MonthShortName(short MonthNumber) {&#10;        string Months[12] = { &quot;Jan&quot;, &quot;Feb&quot;, &quot;Mar&quot;, &quot;Apr&quot;, &quot;May&quot;, &quot;Jun&quot;, &quot;Jul&quot;, &quot;Aug&quot;, &quot;Sep&quot;, &quot;Oct&quot;, &quot;Nov&quot;, &quot;Dec&quot; };&#10;        return Months[MonthNumber - 1];&#10;    }&#10;&#10;    string MonthShortName() const { return MonthShortName(_Month); }&#10;&#10;    static string DayShortName(short DayOrder) {&#10;        string arrDayNames[] = { &quot;Sun&quot;, &quot;Mon&quot;, &quot;Tue&quot;, &quot;Wed&quot;, &quot;Thu&quot;, &quot;Fri&quot;, &quot;Sat&quot; };&#10;        return arrDayNames[DayOrder];&#10;    }&#10;&#10;    string DayShortName() const { return DayShortName(DayOfWeekOrder()); }&#10;&#10;    // --- Calculations ---&#10;    static short DaysFromTheBeginingOfTheYear(short Day, short Month, short Year) {&#10;        short TotalDays = 0;&#10;        for (int i = 1; i &lt;= Month - 1; i++) TotalDays += NumberOfDaysInAMonth(i, Year);&#10;        TotalDays += Day;&#10;        return TotalDays;&#10;    }&#10;&#10;    short DaysFromTheBeginingOfTheYear() const { return DaysFromTheBeginingOfTheYear(_Day, _Month, _Year); }&#10;&#10;    static clsDate GetDateFromDayOrderInYear(short DateOrderInYear, short Year) {&#10;        clsDate Date(1, 1, Year);&#10;        short RemainingDays = DateOrderInYear;&#10;        short MonthDays = 0;&#10;        while (true) {&#10;            MonthDays = NumberOfDaysInAMonth(Date.GetMonth(), Year);&#10;            if (RemainingDays &gt; MonthDays) {&#10;                RemainingDays -= MonthDays;&#10;                Date.SetMonth(Date.GetMonth() + 1);&#10;            } else {&#10;                Date.SetDay(RemainingDays);&#10;                break;&#10;            }&#10;        }&#10;        return Date;&#10;    }&#10;&#10;    // --- Comparisons ---&#10;    static bool IsDate1BeforeDate2(clsDate Date1, clsDate Date2) {&#10;        return (Date1.GetYear() &lt; Date2.GetYear()) ? true :&#10;               ((Date1.GetYear() == Date2.GetYear()) ?&#10;                (Date1.GetMonth() &lt; Date2.GetMonth() ? true :&#10;                 (Date1.GetMonth() == Date2.GetMonth() ? Date1.GetDay() &lt; Date2.GetDay() : false)) : false);&#10;    }&#10;&#10;    bool IsBefore(clsDate Date2) const { return IsDate1BeforeDate2(*this, Date2); }&#10;&#10;    static bool IsDate1EqualDate2(clsDate Date1, clsDate Date2) {&#10;        return (Date1.GetYear() == Date2.GetYear() &amp;&amp; Date1.GetMonth() == Date2.GetMonth() &amp;&amp; Date1.GetDay() == Date2.GetDay());&#10;    }&#10;&#10;    bool IsEqual(clsDate Date2) const { return IsDate1EqualDate2(*this, Date2); }&#10;&#10;    static bool IsDate1AfterDate2(clsDate Date1, clsDate Date2) {&#10;        return (!IsDate1BeforeDate2(Date1, Date2) &amp;&amp; !IsDate1EqualDate2(Date1, Date2));&#10;    }&#10;&#10;    bool IsAfter(clsDate Date2) const { return IsDate1AfterDate2(*this, Date2); }&#10;&#10;    // --- Increase / Decrease Logic ---&#10;    static clsDate AddOneDay(clsDate Date) {&#10;        if (Date.GetDay() == NumberOfDaysInAMonth(Date.GetMonth(), Date.GetYear())) {&#10;            if (Date.GetMonth() == 12) {&#10;                Date.SetMonth(1); Date.SetDay(1); Date.SetYear(Date.GetYear() + 1);&#10;            } else {&#10;                Date.SetDay(1); Date.SetMonth(Date.GetMonth() + 1);&#10;            }&#10;        } else {&#10;            Date.SetDay(Date.GetDay() + 1);&#10;        }&#10;        return Date;&#10;    }&#10;&#10;    void IncreaseDateByOneDay() { *this = AddOneDay(*this); }&#10;&#10;    static clsDate DecreaseDateByOneDay(clsDate Date) {&#10;        if (Date.GetDay() == 1) {&#10;            if (Date.GetMonth() == 1) {&#10;                Date.SetMonth(12); Date.SetDay(31); Date.SetYear(Date.GetYear() - 1);&#10;            } else {&#10;                Date.SetMonth(Date.GetMonth() - 1);&#10;                Date.SetDay(NumberOfDaysInAMonth(Date.GetMonth(), Date.GetYear()));&#10;            }&#10;        } else {&#10;            Date.SetDay(Date.GetDay() - 1);&#10;        }&#10;        return Date;&#10;    }&#10;&#10;    void DecreaseDateByOneDay() { *this = DecreaseDateByOneDay(*this); }&#10;&#10;    // Example of Bulk Increase&#10;    void IncreaseDateByXDays(short Days) {&#10;        for (short i = 1; i &lt;= Days; i++) IncreaseDateByOneDay();&#10;    }&#10;&#10;    // --- Difference ---&#10;    static int GetDifferenceInDays(clsDate Date1, clsDate Date2, bool IncludeEndDay = false) {&#10;        int Days = 0;&#10;        short SwapFlagValue = 1;&#10;        if (!IsDate1BeforeDate2(Date1, Date2)) {&#10;            clsDate Temp = Date1; Date1 = Date2; Date2 = Temp; // Simple swap&#10;            SwapFlagValue = -1;&#10;        }&#10;        while (IsDate1BeforeDate2(Date1, Date2)) {&#10;            Days++;&#10;            Date1 = AddOneDay(Date1);&#10;        }&#10;        return IncludeEndDay ? (++Days * SwapFlagValue) : (Days * SwapFlagValue);&#10;    }&#10;&#10;    // --- Weekend Logic ---&#10;    static bool IsWeekEnd(clsDate Date) {&#10;        short DayIndex = DayOfWeekOrder(Date.GetDay(), Date.GetMonth(), Date.GetYear());&#10;        return (DayIndex == 5 || DayIndex == 6); // Fri and Sat&#10;    }&#10;&#10;    bool IsWeekEnd() const { return IsWeekEnd(*this); }&#10;&#10;    static bool IsBusinessDay(clsDate Date) {&#10;        return !IsWeekEnd(Date);&#10;    }&#10;&#10;    bool IsBusinessDay() const { return IsBusinessDay(*this); }&#10;&#10;    // --- Validation ---&#10;    static bool IsValidDate(clsDate Date) {&#10;        if (Date.GetMonth() &lt; 1 || Date.GetMonth() &gt; 12) return false;&#10;        short DaysInMonth = NumberOfDaysInAMonth(Date.GetMonth(), Date.GetYear());&#10;        if (Date.GetDay() &lt; 1 || Date.GetDay() &gt; DaysInMonth) return false;&#10;        return true;&#10;    }&#10;&#10;    bool IsValid() const { return IsValidDate(*this); }&#10;&#10;    // --- Print ---&#10;    static string DateToString(clsDate Date) {&#10;        return to_string(Date.GetDay()) + &quot;/&quot; + to_string(Date.GetMonth()) + &quot;/&quot; + to_string(Date.GetYear());&#10;    }&#10;&#10;    string DateToString() const { return DateToString(*this); }&#10;&#10;    string ToString() const { return DateToString(*this); }&#10;&#10;    void Print() const { cout &lt;&lt; ToString() &lt;&lt; endl; }&#10;&#10;    static void PrintMonthCalendar(short Month, short Year) {&#10;        int current = DayOfWeekOrder(1, Month, Year);&#10;        int numberOfDays = NumberOfDaysInAMonth(Month, Year);&#10;        printf(&quot;\n  _______________%s_______________\n\n&quot;, MonthShortName(Month).c_str());&#10;        printf(&quot;  Sun  Mon  Tue  Wed  Thu  Fri  Sat\n&quot;);&#10;        int i;&#10;        for (i = 0; i &lt; current; i++) printf(&quot;     &quot;);&#10;        for (int j = 1; j &lt;= numberOfDays; j++) {&#10;            printf(&quot;%5d&quot;, j);&#10;            if (++i == 7) { i = 0; printf(&quot;\n&quot;); }&#10;        }&#10;        printf(&quot;\n  _________________________________\n&quot;);&#10;    }&#10;&#10;    void PrintMonthCalendar() const { PrintMonthCalendar(_Month, _Year); }&#10;&#10;    void PrintYearCalendar() const {&#10;        printf(&quot;\n  _________________________________\n\n&quot;);&#10;        printf(&quot;           Calendar - %d\n&quot;, _Year);&#10;        printf(&quot;  _________________________________\n&quot;);&#10;        for (int i = 1; i &lt;= 12; i++) PrintMonthCalendar(i, _Year);&#10;    }&#10;};&#10;&#10;#endif //PROJECT1L4BANKEXTENSION2_CLSDATE_H&#10;```" />
+                    </SerializedChatAttachment>
+                  </list>
+                </option>
+                <option name="markupLanguageID" value="ChatInput" />
+                <option name="uid" value="UUID(uuid=cb041fb8-9126-48d7-a194-41b4dc644f30)" />
+                <option name="displayContent" value="&lt;html&gt;Ambiguous function call.&lt;br/&gt;Argument types: float, double, double.&lt;br/&gt;Viable candidates:&lt;br/&gt;static bool IsNumberBetween(short Number, short from, short to) (in class clsInputValidate)&lt;br/&gt;static bool IsNumberBetween(int Number, int from, int to) (in class clsInputValidate)&lt;br/&gt;static bool IsNumberBetween(float Number, float from, float to) (in class clsInputValidate)&lt;br/&gt;static bool IsNumberBetween(double Number, double From, double To) (in class clsInputValidate)" />
+                <option name="internalContent" value="&lt;html&gt;Ambiguous function call.&lt;br/&gt;Argument types: float, double, double.&lt;br/&gt;Viable candidates:&lt;br/&gt;static bool IsNumberBetween(short Number, short from, short to) (in class clsInputValidate)&lt;br/&gt;static bool IsNumberBetween(int Number, int from, int to) (in class clsInputValidate)&lt;br/&gt;static bool IsNumberBetween(float Number, float from, float to) (in class clsInputValidate)&lt;br/&gt;static bool IsNumberBetween(double Number, double From, double To) (in class clsInputValidate)" />
+              </SerializedChatMessage>
+              <SerializedChatMessage>
+                <option name="author" value="Assistant" />
+                <option name="uid" value="1cf7e05c-6529-4842-889a-e6abadf6e267" />
+                <option name="displayContent" value="The ambiguity happens here:&#10;&#10;```cpp&#10;IsNumberBetween(Number, From, To)&#10;```&#10;&#10;because the argument types are:&#10;&#10;```cpp&#10;float, double, double&#10;```&#10;&#10;Your overloads include both:&#10;&#10;```cpp&#10;static bool IsNumberBetween(float Number, float from, float to)&#10;static bool IsNumberBetween(double Number, double From, double To)&#10;```&#10;&#10;For this call, C++ can either:&#10;&#10;- convert `From` and `To` from `double` to `float`, matching the `float` overload&#10;- convert `Number` from `float` to `double`, matching the `double` overload&#10;&#10;Neither is clearly better, so the call is ambiguous.&#10;&#10;## Best fix&#10;&#10;In `ReadFloatNumberBetween`, keep everything consistently `float`.&#10;&#10;&lt;llm-snippet-file&gt;clsInputValidate.h&lt;/llm-snippet-file&gt;&#10;```cpp&#10;// ... existing code ...&#10;&#10;static double ReadFloatNumber(string ErrorMessage = &quot;Invalid Number, Enter again\n&quot;)&#10;{&#10;    float Number;&#10;    while (!(cin &gt;&gt; Number)) {&#10;        cin.clear();&#10;        cin.ignore(numeric_limits&lt;streamsize&gt;::max(), '\n');&#10;        cout &lt;&lt; ErrorMessage;&#10;    }&#10;    return Number;&#10;}&#10;&#10;static float ReadFloatNumberBetween(float From, float To, string ErrorMessage = &quot;Number is not within range, Enter again:\n&quot;)&#10;{&#10;    float Number = ReadFloatNumber();&#10;&#10;    while (!IsNumberBetween(Number, From, To)) {&#10;        cout &lt;&lt; ErrorMessage;&#10;        Number = ReadFloatNumber();&#10;    }&#10;    return Number;&#10;}&#10;&#10;static double ReadDblNumber(string ErrorMessage = &quot;Invalid Number, Enter again\n&quot;)&#10;{&#10;    double Number;&#10;&#10;// ... existing code ...&#10;```&#10;&#10;Also, I recommend changing `ReadFloatNumber` to return `float`, because right now it reads a `float` but returns `double`.&#10;&#10;&lt;llm-snippet-file&gt;clsInputValidate.h&lt;/llm-snippet-file&gt;&#10;```cpp&#10;// ... existing code ...&#10;&#10;static float ReadFloatNumber(string ErrorMessage = &quot;Invalid Number, Enter again\n&quot;)&#10;{&#10;    float Number;&#10;    while (!(cin &gt;&gt; Number)) {&#10;        cin.clear();&#10;        cin.ignore(numeric_limits&lt;streamsize&gt;::max(), '\n');&#10;        cout &lt;&lt; ErrorMessage;&#10;    }&#10;    return Number;&#10;}&#10;&#10;static float ReadFloatNumberBetween(float From, float To, string ErrorMessage = &quot;Number is not within range, Enter again:\n&quot;)&#10;{&#10;    float Number = ReadFloatNumber();&#10;&#10;    while (!IsNumberBetween(Number, From, To)) {&#10;        cout &lt;&lt; ErrorMessage;&#10;        Number = ReadFloatNumber();&#10;    }&#10;    return Number;&#10;}&#10;&#10;static double ReadDblNumber(string ErrorMessage = &quot;Invalid Number, Enter again\n&quot;)&#10;{&#10;    double Number;&#10;&#10;// ... existing code ...&#10;```&#10;&#10;## Small bug in your current code&#10;&#10;Inside `ReadFloatNumberBetween`, you currently have:&#10;&#10;```cpp&#10;Number = ReadDblNumber();&#10;```&#10;&#10;That should be:&#10;&#10;```cpp&#10;Number = ReadFloatNumber();&#10;```&#10;&#10;Otherwise, if the user enters an out-of-range float, you start reading a double instead.&#10;&#10;## Alternative quick fix&#10;&#10;If you don’t want to change function signatures, you can force the `double` overload:&#10;&#10;```cpp&#10;while (!IsNumberBetween(static_cast&lt;double&gt;(Number), From, To)) {&#10;```&#10;&#10;But the cleaner solution is to keep the float function fully `float`, and the double function fully `double`." />
+                <option name="internalContent" value="The ambiguity happens here:&#10;&#10;```cpp&#10;IsNumberBetween(Number, From, To)&#10;```&#10;&#10;because the argument types are:&#10;&#10;```cpp&#10;float, double, double&#10;```&#10;&#10;Your overloads include both:&#10;&#10;```cpp&#10;static bool IsNumberBetween(float Number, float from, float to)&#10;static bool IsNumberBetween(double Number, double From, double To)&#10;```&#10;&#10;For this call, C++ can either:&#10;&#10;- convert `From` and `To` from `double` to `float`, matching the `float` overload&#10;- convert `Number` from `float` to `double`, matching the `double` overload&#10;&#10;Neither is clearly better, so the call is ambiguous.&#10;&#10;## Best fix&#10;&#10;In `ReadFloatNumberBetween`, keep everything consistently `float`.&#10;&#10;&lt;llm-snippet-file&gt;clsInputValidate.h&lt;/llm-snippet-file&gt;&#10;```cpp&#10;// ... existing code ...&#10;&#10;static double ReadFloatNumber(string ErrorMessage = &quot;Invalid Number, Enter again\n&quot;)&#10;{&#10;    float Number;&#10;    while (!(cin &gt;&gt; Number)) {&#10;        cin.clear();&#10;        cin.ignore(numeric_limits&lt;streamsize&gt;::max(), '\n');&#10;        cout &lt;&lt; ErrorMessage;&#10;    }&#10;    return Number;&#10;}&#10;&#10;static float ReadFloatNumberBetween(float From, float To, string ErrorMessage = &quot;Number is not within range, Enter again:\n&quot;)&#10;{&#10;    float Number = ReadFloatNumber();&#10;&#10;    while (!IsNumberBetween(Number, From, To)) {&#10;        cout &lt;&lt; ErrorMessage;&#10;        Number = ReadFloatNumber();&#10;    }&#10;    return Number;&#10;}&#10;&#10;static double ReadDblNumber(string ErrorMessage = &quot;Invalid Number, Enter again\n&quot;)&#10;{&#10;    double Number;&#10;&#10;// ... existing code ...&#10;```&#10;&#10;Also, I recommend changing `ReadFloatNumber` to return `float`, because right now it reads a `float` but returns `double`.&#10;&#10;&lt;llm-snippet-file&gt;clsInputValidate.h&lt;/llm-snippet-file&gt;&#10;```cpp&#10;// ... existing code ...&#10;&#10;static float ReadFloatNumber(string ErrorMessage = &quot;Invalid Number, Enter again\n&quot;)&#10;{&#10;    float Number;&#10;    while (!(cin &gt;&gt; Number)) {&#10;        cin.clear();&#10;        cin.ignore(numeric_limits&lt;streamsize&gt;::max(), '\n');&#10;        cout &lt;&lt; ErrorMessage;&#10;    }&#10;    return Number;&#10;}&#10;&#10;static float ReadFloatNumberBetween(float From, float To, string ErrorMessage = &quot;Number is not within range, Enter again:\n&quot;)&#10;{&#10;    float Number = ReadFloatNumber();&#10;&#10;    while (!IsNumberBetween(Number, From, To)) {&#10;        cout &lt;&lt; ErrorMessage;&#10;        Number = ReadFloatNumber();&#10;    }&#10;    return Number;&#10;}&#10;&#10;static double ReadDblNumber(string ErrorMessage = &quot;Invalid Number, Enter again\n&quot;)&#10;{&#10;    double Number;&#10;&#10;// ... existing code ...&#10;```&#10;&#10;## Small bug in your current code&#10;&#10;Inside `ReadFloatNumberBetween`, you currently have:&#10;&#10;```cpp&#10;Number = ReadDblNumber();&#10;```&#10;&#10;That should be:&#10;&#10;```cpp&#10;Number = ReadFloatNumber();&#10;```&#10;&#10;Otherwise, if the user enters an out-of-range float, you start reading a double instead.&#10;&#10;## Alternative quick fix&#10;&#10;If you don’t want to change function signatures, you can force the `double` overload:&#10;&#10;```cpp&#10;while (!IsNumberBetween(static_cast&lt;double&gt;(Number), From, To)) {&#10;```&#10;&#10;But the cleaner solution is to keep the float function fully `float`, and the double function fully `double`." />
+              </SerializedChatMessage>
+              <SerializedChatMessage>
+                <option name="markupLanguageID" value="ChatInput" />
+                <option name="uid" value="UUID(uuid=d5a1d2ce-47cf-41c5-b38c-87cc10fe3e51)" />
+                <option name="displayContent" value="I commented out the IsNumberBetween." />
+                <option name="internalContent" value="I commented out the IsNumberBetween." />
+              </SerializedChatMessage>
+              <SerializedChatMessage>
+                <option name="author" value="Assistant" />
+                <option name="uid" value="04ab778c-0a96-402c-9ee5-8afa110d2543" />
+                <option name="displayContent" value="If you commented out **one or more `IsNumberBetween` overloads**, the ambiguity can go away — but it can also create a different problem depending on **which one** you commented.&#10;&#10;The original issue was caused by this call:&#10;&#10;```cpp&#10;IsNumberBetween(Number, From, To)&#10;```&#10;&#10;where:&#10;&#10;```cpp&#10;Number // float&#10;From   // double&#10;To     // double&#10;```&#10;&#10;So C++ saw multiple possible overloads and couldn’t choose safely.&#10;&#10;## If you commented out the `float` overload&#10;&#10;Then this call will likely use the `double` overload:&#10;&#10;```cpp&#10;static bool IsNumberBetween(double Number, double From, double To)&#10;```&#10;&#10;That is okay.&#10;&#10;## If you commented out the `double` overload&#10;&#10;Then C++ may use the `float` overload, but your `double From` and `double To` will be converted to `float`, which can lose precision.&#10;&#10;## If you commented out all `IsNumberBetween` functions&#10;&#10;Then these functions will fail:&#10;&#10;```cpp&#10;ReadIntNumberBetween(...)&#10;ReadFloatNumberBetween(...)&#10;ReadDblNumberBetween(...)&#10;```&#10;&#10;because they all call `IsNumberBetween(...)`.&#10;&#10;---&#10;&#10;## Better solution: don’t comment them out&#10;&#10;Keep the overloads, but make the float reading function consistent.&#10;&#10;Change this part:&#10;&#10;&lt;llm-snippet-file&gt;clsInputValidate.h&lt;/llm-snippet-file&gt;&#10;```cpp&#10;// ... existing code ...&#10;&#10;static float ReadFloatNumber(string ErrorMessage = &quot;Invalid Number, Enter again\n&quot;)&#10;{&#10;    float Number;&#10;    while (!(cin &gt;&gt; Number)) {&#10;        cin.clear();&#10;        cin.ignore(numeric_limits&lt;streamsize&gt;::max(), '\n');&#10;        cout &lt;&lt; ErrorMessage;&#10;    }&#10;    return Number;&#10;}&#10;&#10;static float ReadFloatNumberBetween(float From, float To, string ErrorMessage = &quot;Number is not within range, Enter again:\n&quot;)&#10;{&#10;    float Number = ReadFloatNumber();&#10;&#10;    while (!IsNumberBetween(Number, From, To)) {&#10;        cout &lt;&lt; ErrorMessage;&#10;        Number = ReadFloatNumber();&#10;    }&#10;    return Number;&#10;}&#10;&#10;static double ReadDblNumber(string ErrorMessage = &quot;Invalid Number, Enter again\n&quot;)&#10;{&#10;    double Number;&#10;&#10;// ... existing code ...&#10;```&#10;&#10;The important changes are:&#10;&#10;```cpp&#10;static float ReadFloatNumber(...)&#10;```&#10;&#10;instead of:&#10;&#10;```cpp&#10;static double ReadFloatNumber(...)&#10;```&#10;&#10;and:&#10;&#10;```cpp&#10;static float ReadFloatNumberBetween(float From, float To, ...)&#10;```&#10;&#10;instead of:&#10;&#10;```cpp&#10;static double ReadFloatNumberBetween(double From, double To, ...)&#10;```&#10;&#10;and inside the loop:&#10;&#10;```cpp&#10;Number = ReadFloatNumber();&#10;```&#10;&#10;instead of:&#10;&#10;```cpp&#10;Number = ReadDblNumber();&#10;```&#10;&#10;---&#10;&#10;## My recommendation&#10;&#10;Use this structure:&#10;&#10;```cpp&#10;ReadIntNumberBetween(...)   // uses int&#10;ReadFloatNumberBetween(...) // uses float&#10;ReadDblNumberBetween(...)   // uses double&#10;```&#10;&#10;Keep each type consistent. That avoids ambiguous overloads and keeps your code easier to debug." />
+                <option name="internalContent" value="If you commented out **one or more `IsNumberBetween` overloads**, the ambiguity can go away — but it can also create a different problem depending on **which one** you commented.&#10;&#10;The original issue was caused by this call:&#10;&#10;```cpp&#10;IsNumberBetween(Number, From, To)&#10;```&#10;&#10;where:&#10;&#10;```cpp&#10;Number // float&#10;From   // double&#10;To     // double&#10;```&#10;&#10;So C++ saw multiple possible overloads and couldn’t choose safely.&#10;&#10;## If you commented out the `float` overload&#10;&#10;Then this call will likely use the `double` overload:&#10;&#10;```cpp&#10;static bool IsNumberBetween(double Number, double From, double To)&#10;```&#10;&#10;That is okay.&#10;&#10;## If you commented out the `double` overload&#10;&#10;Then C++ may use the `float` overload, but your `double From` and `double To` will be converted to `float`, which can lose precision.&#10;&#10;## If you commented out all `IsNumberBetween` functions&#10;&#10;Then these functions will fail:&#10;&#10;```cpp&#10;ReadIntNumberBetween(...)&#10;ReadFloatNumberBetween(...)&#10;ReadDblNumberBetween(...)&#10;```&#10;&#10;because they all call `IsNumberBetween(...)`.&#10;&#10;---&#10;&#10;## Better solution: don’t comment them out&#10;&#10;Keep the overloads, but make the float reading function consistent.&#10;&#10;Change this part:&#10;&#10;&lt;llm-snippet-file&gt;clsInputValidate.h&lt;/llm-snippet-file&gt;&#10;```cpp&#10;// ... existing code ...&#10;&#10;static float ReadFloatNumber(string ErrorMessage = &quot;Invalid Number, Enter again\n&quot;)&#10;{&#10;    float Number;&#10;    while (!(cin &gt;&gt; Number)) {&#10;        cin.clear();&#10;        cin.ignore(numeric_limits&lt;streamsize&gt;::max(), '\n');&#10;        cout &lt;&lt; ErrorMessage;&#10;    }&#10;    return Number;&#10;}&#10;&#10;static float ReadFloatNumberBetween(float From, float To, string ErrorMessage = &quot;Number is not within range, Enter again:\n&quot;)&#10;{&#10;    float Number = ReadFloatNumber();&#10;&#10;    while (!IsNumberBetween(Number, From, To)) {&#10;        cout &lt;&lt; ErrorMessage;&#10;        Number = ReadFloatNumber();&#10;    }&#10;    return Number;&#10;}&#10;&#10;static double ReadDblNumber(string ErrorMessage = &quot;Invalid Number, Enter again\n&quot;)&#10;{&#10;    double Number;&#10;&#10;// ... existing code ...&#10;```&#10;&#10;The important changes are:&#10;&#10;```cpp&#10;static float ReadFloatNumber(...)&#10;```&#10;&#10;instead of:&#10;&#10;```cpp&#10;static double ReadFloatNumber(...)&#10;```&#10;&#10;and:&#10;&#10;```cpp&#10;static float ReadFloatNumberBetween(float From, float To, ...)&#10;```&#10;&#10;instead of:&#10;&#10;```cpp&#10;static double ReadFloatNumberBetween(double From, double To, ...)&#10;```&#10;&#10;and inside the loop:&#10;&#10;```cpp&#10;Number = ReadFloatNumber();&#10;```&#10;&#10;instead of:&#10;&#10;```cpp&#10;Number = ReadDblNumber();&#10;```&#10;&#10;---&#10;&#10;## My recommendation&#10;&#10;Use this structure:&#10;&#10;```cpp&#10;ReadIntNumberBetween(...)   // uses int&#10;ReadFloatNumberBetween(...) // uses float&#10;ReadDblNumberBetween(...)   // uses double&#10;```&#10;&#10;Keep each type consistent. That avoids ambiguous overloads and keeps your code easier to debug." />
+              </SerializedChatMessage>
+              <SerializedChatMessage>
+                <option name="attachments">
+                  <list>
+                    <SerializedChatAttachment>
+                      <option name="name" value="Project View" />
+                      <option name="text" value="Project View content:&#10;```&#10;Project1 - Utility library&#10; build&#10; cmake-build-debug&#10; Data&#10;  Clients.text&#10; include&#10;  clsBankClient.h&#10;  clsDate.h&#10;  clsInputValidate.h&#10;  clsPeriod.h&#10;  clsPerson.h&#10;  clsString.h&#10;  clsUtil.h&#10; src&#10;  main.cpp&#10; .gitattributes&#10; .gitignore&#10; CMakeLists.txt&#10;External Libraries&#10;Scratches and Consoles&#10;```" />
+                    </SerializedChatAttachment>
+                  </list>
+                </option>
+                <option name="markupLanguageID" value="ChatInput" />
+                <option name="uid" value="UUID(uuid=09eb1868-3cf8-4d30-86b0-4064e9f9c8ff)" />
+                <option name="displayContent" value="Function float clsInputValidate::ReadFloatNumber(string ErrorMessage) has already been declared with return type double&#10;Redefinition of default argument for parameter 'ErrorMessage'&#10;" />
+                <option name="internalContent" value="Function float clsInputValidate::ReadFloatNumber(string ErrorMessage) has already been declared with return type double&#10;Redefinition of default argument for parameter 'ErrorMessage'&#10;" />
+              </SerializedChatMessage>
+              <SerializedChatMessage>
+                <option name="author" value="Assistant" />
+                <option name="uid" value="47c23d31-27ee-4d80-a1ad-47229cf414fa" />
+                <option name="displayContent" value="You’re getting **two separate C++ errors**, both caused by having `ReadFloatNumber` declared/defined more than once in incompatible ways.&#10;&#10;## 1. Why this error happens&#10;&#10;### Error:&#10;&#10;```text&#10;Function float clsInputValidate::ReadFloatNumber(string ErrorMessage) has already been declared with return type double&#10;```&#10;&#10;C++ **does not allow overloading by return type only**.&#10;&#10;So these two are considered the **same function**, not two overloads:&#10;&#10;```cpp&#10;static double ReadFloatNumber(string ErrorMessage = &quot;Invalid Number, Enter again\n&quot;);&#10;static float ReadFloatNumber(string ErrorMessage = &quot;Invalid Number, Enter again\n&quot;);&#10;```&#10;&#10;The parameter list is the same:&#10;&#10;```cpp&#10;string ErrorMessage&#10;```&#10;&#10;Only the return type changed, and that is not enough for overloading.&#10;&#10;---&#10;&#10;## 2. Why the default argument error happens&#10;&#10;### Error:&#10;&#10;```text&#10;Redefinition of default argument for parameter 'ErrorMessage'&#10;```&#10;&#10;This happens if you write the default value more than once, for example:&#10;&#10;```cpp&#10;static float ReadFloatNumber(string ErrorMessage = &quot;Invalid Number, Enter again\n&quot;);&#10;&#10;float clsInputValidate::ReadFloatNumber(string ErrorMessage = &quot;Invalid Number, Enter again\n&quot;)&#10;{&#10;    // ...&#10;}&#10;```&#10;&#10;Default arguments should be written **only once**, usually in the declaration.&#10;&#10;---&#10;&#10;# Most likely fix&#10;&#10;In `clsInputValidate.h`, make sure you have **only one** `ReadFloatNumber` function.&#10;&#10;Use this version and remove/comment any other `ReadFloatNumber` declaration or definition.&#10;&#10;&lt;llm-snippet-file&gt;clsInputValidate.h&lt;/llm-snippet-file&gt;&#10;```cpp&#10;// ... existing code ...&#10;&#10;static float ReadFloatNumber(string ErrorMessage = &quot;Invalid Number, Enter again\n&quot;)&#10;{&#10;    float Number;&#10;    while (!(cin &gt;&gt; Number)) {&#10;        cin.clear();&#10;        cin.ignore(numeric_limits&lt;streamsize&gt;::max(), '\n');&#10;        cout &lt;&lt; ErrorMessage;&#10;    }&#10;    return Number;&#10;}&#10;&#10;static float ReadFloatNumberBetween(float From, float To, string ErrorMessage = &quot;Number is not within range, Enter again:\n&quot;)&#10;{&#10;    float Number = ReadFloatNumber();&#10;&#10;    while (!IsNumberBetween(Number, From, To)) {&#10;        cout &lt;&lt; ErrorMessage;&#10;        Number = ReadFloatNumber();&#10;    }&#10;    return Number;&#10;}&#10;&#10;static double ReadDblNumber(string ErrorMessage = &quot;Invalid Number, Enter again\n&quot;)&#10;{&#10;    double Number;&#10;&#10;// ... existing code ...&#10;```&#10;&#10;## Important&#10;&#10;If you currently still have this old version somewhere, remove it:&#10;&#10;```cpp&#10;static double ReadFloatNumber(string ErrorMessage = &quot;Invalid Number, Enter again\n&quot;)&#10;{&#10;    float Number;&#10;    // ...&#10;    return Number;&#10;}&#10;```&#10;&#10;You should not have both:&#10;&#10;```cpp&#10;static double ReadFloatNumber(...)&#10;```&#10;&#10;and:&#10;&#10;```cpp&#10;static float ReadFloatNumber(...)&#10;```&#10;&#10;Pick one. Since the function reads a `float`, this is the cleaner choice:&#10;&#10;```cpp&#10;static float ReadFloatNumber(...)&#10;```&#10;&#10;---&#10;&#10;## If you declared it in one place and defined it later&#10;&#10;If your class has a declaration like this:&#10;&#10;```cpp&#10;static float ReadFloatNumber(string ErrorMessage = &quot;Invalid Number, Enter again\n&quot;);&#10;```&#10;&#10;Then the later definition must **not** repeat the default value:&#10;&#10;```cpp&#10;float clsInputValidate::ReadFloatNumber(string ErrorMessage)&#10;{&#10;    float Number;&#10;    while (!(cin &gt;&gt; Number)) {&#10;        cin.clear();&#10;        cin.ignore(numeric_limits&lt;streamsize&gt;::max(), '\n');&#10;        cout &lt;&lt; ErrorMessage;&#10;    }&#10;    return Number;&#10;}&#10;```&#10;&#10;Notice: no `= &quot;Invalid Number, Enter again\n&quot;` in the definition.&#10;&#10;But in your current style, since the function is defined directly inside the class, just keep the single inline version. That’s simplest." />
+                <option name="internalContent" value="You’re getting **two separate C++ errors**, both caused by having `ReadFloatNumber` declared/defined more than once in incompatible ways.&#10;&#10;## 1. Why this error happens&#10;&#10;### Error:&#10;&#10;```text&#10;Function float clsInputValidate::ReadFloatNumber(string ErrorMessage) has already been declared with return type double&#10;```&#10;&#10;C++ **does not allow overloading by return type only**.&#10;&#10;So these two are considered the **same function**, not two overloads:&#10;&#10;```cpp&#10;static double ReadFloatNumber(string ErrorMessage = &quot;Invalid Number, Enter again\n&quot;);&#10;static float ReadFloatNumber(string ErrorMessage = &quot;Invalid Number, Enter again\n&quot;);&#10;```&#10;&#10;The parameter list is the same:&#10;&#10;```cpp&#10;string ErrorMessage&#10;```&#10;&#10;Only the return type changed, and that is not enough for overloading.&#10;&#10;---&#10;&#10;## 2. Why the default argument error happens&#10;&#10;### Error:&#10;&#10;```text&#10;Redefinition of default argument for parameter 'ErrorMessage'&#10;```&#10;&#10;This happens if you write the default value more than once, for example:&#10;&#10;```cpp&#10;static float ReadFloatNumber(string ErrorMessage = &quot;Invalid Number, Enter again\n&quot;);&#10;&#10;float clsInputValidate::ReadFloatNumber(string ErrorMessage = &quot;Invalid Number, Enter again\n&quot;)&#10;{&#10;    // ...&#10;}&#10;```&#10;&#10;Default arguments should be written **only once**, usually in the declaration.&#10;&#10;---&#10;&#10;# Most likely fix&#10;&#10;In `clsInputValidate.h`, make sure you have **only one** `ReadFloatNumber` function.&#10;&#10;Use this version and remove/comment any other `ReadFloatNumber` declaration or definition.&#10;&#10;&lt;llm-snippet-file&gt;clsInputValidate.h&lt;/llm-snippet-file&gt;&#10;```cpp&#10;// ... existing code ...&#10;&#10;static float ReadFloatNumber(string ErrorMessage = &quot;Invalid Number, Enter again\n&quot;)&#10;{&#10;    float Number;&#10;    while (!(cin &gt;&gt; Number)) {&#10;        cin.clear();&#10;        cin.ignore(numeric_limits&lt;streamsize&gt;::max(), '\n');&#10;        cout &lt;&lt; ErrorMessage;&#10;    }&#10;    return Number;&#10;}&#10;&#10;static float ReadFloatNumberBetween(float From, float To, string ErrorMessage = &quot;Number is not within range, Enter again:\n&quot;)&#10;{&#10;    float Number = ReadFloatNumber();&#10;&#10;    while (!IsNumberBetween(Number, From, To)) {&#10;        cout &lt;&lt; ErrorMessage;&#10;        Number = ReadFloatNumber();&#10;    }&#10;    return Number;&#10;}&#10;&#10;static double ReadDblNumber(string ErrorMessage = &quot;Invalid Number, Enter again\n&quot;)&#10;{&#10;    double Number;&#10;&#10;// ... existing code ...&#10;```&#10;&#10;## Important&#10;&#10;If you currently still have this old version somewhere, remove it:&#10;&#10;```cpp&#10;static double ReadFloatNumber(string ErrorMessage = &quot;Invalid Number, Enter again\n&quot;)&#10;{&#10;    float Number;&#10;    // ...&#10;    return Number;&#10;}&#10;```&#10;&#10;You should not have both:&#10;&#10;```cpp&#10;static double ReadFloatNumber(...)&#10;```&#10;&#10;and:&#10;&#10;```cpp&#10;static float ReadFloatNumber(...)&#10;```&#10;&#10;Pick one. Since the function reads a `float`, this is the cleaner choice:&#10;&#10;```cpp&#10;static float ReadFloatNumber(...)&#10;```&#10;&#10;---&#10;&#10;## If you declared it in one place and defined it later&#10;&#10;If your class has a declaration like this:&#10;&#10;```cpp&#10;static float ReadFloatNumber(string ErrorMessage = &quot;Invalid Number, Enter again\n&quot;);&#10;```&#10;&#10;Then the later definition must **not** repeat the default value:&#10;&#10;```cpp&#10;float clsInputValidate::ReadFloatNumber(string ErrorMessage)&#10;{&#10;    float Number;&#10;    while (!(cin &gt;&gt; Number)) {&#10;        cin.clear();&#10;        cin.ignore(numeric_limits&lt;streamsize&gt;::max(), '\n');&#10;        cout &lt;&lt; ErrorMessage;&#10;    }&#10;    return Number;&#10;}&#10;```&#10;&#10;Notice: no `= &quot;Invalid Number, Enter again\n&quot;` in the definition.&#10;&#10;But in your current style, since the function is defined directly inside the class, just keep the single inline version. That’s simplest." />
+              </SerializedChatMessage>
+              <SerializedChatMessage>
+                <option name="attachments">
+                  <list>
+                    <SerializedChatAttachment>
+                      <option name="name" value="Project View" />
+                      <option name="text" value="Project View content:&#10;```&#10;Project1 - Utility library&#10; build&#10; cmake-build-debug&#10; Data&#10;  Clients.text&#10; include&#10;  clsBankClient.h&#10;  clsDate.h&#10;  clsInputValidate.h&#10;  clsPeriod.h&#10;  clsPerson.h&#10;  clsString.h&#10;  clsUtil.h&#10; src&#10;  main.cpp&#10; .gitattributes&#10; .gitignore&#10; CMakeLists.txt&#10;External Libraries&#10;Scratches and Consoles&#10;```" />
+                    </SerializedChatAttachment>
+                  </list>
+                </option>
+                <option name="markupLanguageID" value="ChatInput" />
+                <option name="uid" value="UUID(uuid=927d0a35-6503-4084-af4d-c7aaa48306fa)" />
+                <option name="displayContent" value="Solve the issue in the main: Cannot assign to rvalue&#10;&#10;    Client.GetAccountBalance() = clsInputValidate::ReadFloatNumber();&#10;" />
+                <option name="internalContent" value="Solve the issue in the main: Cannot assign to rvalue&#10;&#10;    Client.GetAccountBalance() = clsInputValidate::ReadFloatNumber();&#10;" />
+              </SerializedChatMessage>
+              <SerializedChatMessage>
+                <option name="author" value="Assistant" />
+                <option name="uid" value="865581ba-6a22-4b19-9390-475abcda3293" />
+                <option name="displayContent" value="`Cannot assign to rvalue` means this function:&#10;&#10;```cpp&#10;Client.GetAccountBalance()&#10;```&#10;&#10;returns a **copy** of the balance, not the real variable inside `Client`.&#10;&#10;So this line tries to assign into a temporary value:&#10;&#10;```cpp&#10;Client.GetAccountBalance() = clsInputValidate::ReadFloatNumber();&#10;```&#10;&#10;That is not allowed.&#10;&#10;## Fix in `main.cpp`&#10;&#10;Use the setter function instead:&#10;&#10;&lt;llm-snippet-file&gt;src/main.cpp&lt;/llm-snippet-file&gt;&#10;```cpp&#10;// ... existing code ...&#10;&#10;    cout &lt;&lt; &quot;\nEnter PinCode: &quot;;&#10;    Client.GetPinCode() = clsInputValidate::ReadString();&#10;&#10;    cout &lt;&lt; &quot;\nEnter Account Balance: &quot;;&#10;    Client.SetAccountBalance(clsInputValidate::ReadFloatNumber());&#10;}&#10;&#10;// ... existing code ...&#10;```&#10;&#10;## Why this works&#10;&#10;You already have a setter:&#10;&#10;```cpp&#10;void SetAccountBalance(float AccountBalance)&#10;{&#10;    _AccountBalance = AccountBalance;&#10;}&#10;```&#10;&#10;So the correct way to update the balance is:&#10;&#10;```cpp&#10;Client.SetAccountBalance(newBalance);&#10;```&#10;&#10;---&#10;&#10;## Optional alternative&#10;&#10;If you wanted this style to work:&#10;&#10;```cpp&#10;Client.GetAccountBalance() = 500;&#10;```&#10;&#10;then `GetAccountBalance()` would need to return a reference:&#10;&#10;&lt;llm-snippet-file&gt;include/clsBankClient.h&lt;/llm-snippet-file&gt;&#10;```cpp&#10;// ... existing code ...&#10;&#10;    void SetAccountBalance(float AccountBalance)&#10;    {&#10;        _AccountBalance = AccountBalance;&#10;    }&#10;&#10;    float&amp; GetAccountBalance()&#10;    {&#10;        return _AccountBalance;&#10;    }&#10;&#10;    void Print()&#10;    {&#10;        cout &lt;&lt; &quot;\nClient Card:&quot;;&#10;&#10;// ... existing code ...&#10;```&#10;&#10;But I **recommend using the setter**:&#10;&#10;```cpp&#10;Client.SetAccountBalance(clsInputValidate::ReadFloatNumber());&#10;```&#10;&#10;It is clearer and safer." />
+                <option name="internalContent" value="`Cannot assign to rvalue` means this function:&#10;&#10;```cpp&#10;Client.GetAccountBalance()&#10;```&#10;&#10;returns a **copy** of the balance, not the real variable inside `Client`.&#10;&#10;So this line tries to assign into a temporary value:&#10;&#10;```cpp&#10;Client.GetAccountBalance() = clsInputValidate::ReadFloatNumber();&#10;```&#10;&#10;That is not allowed.&#10;&#10;## Fix in `main.cpp`&#10;&#10;Use the setter function instead:&#10;&#10;&lt;llm-snippet-file&gt;src/main.cpp&lt;/llm-snippet-file&gt;&#10;```cpp&#10;// ... existing code ...&#10;&#10;    cout &lt;&lt; &quot;\nEnter PinCode: &quot;;&#10;    Client.GetPinCode() = clsInputValidate::ReadString();&#10;&#10;    cout &lt;&lt; &quot;\nEnter Account Balance: &quot;;&#10;    Client.SetAccountBalance(clsInputValidate::ReadFloatNumber());&#10;}&#10;&#10;// ... existing code ...&#10;```&#10;&#10;## Why this works&#10;&#10;You already have a setter:&#10;&#10;```cpp&#10;void SetAccountBalance(float AccountBalance)&#10;{&#10;    _AccountBalance = AccountBalance;&#10;}&#10;```&#10;&#10;So the correct way to update the balance is:&#10;&#10;```cpp&#10;Client.SetAccountBalance(newBalance);&#10;```&#10;&#10;---&#10;&#10;## Optional alternative&#10;&#10;If you wanted this style to work:&#10;&#10;```cpp&#10;Client.GetAccountBalance() = 500;&#10;```&#10;&#10;then `GetAccountBalance()` would need to return a reference:&#10;&#10;&lt;llm-snippet-file&gt;include/clsBankClient.h&lt;/llm-snippet-file&gt;&#10;```cpp&#10;// ... existing code ...&#10;&#10;    void SetAccountBalance(float AccountBalance)&#10;    {&#10;        _AccountBalance = AccountBalance;&#10;    }&#10;&#10;    float&amp; GetAccountBalance()&#10;    {&#10;        return _AccountBalance;&#10;    }&#10;&#10;    void Print()&#10;    {&#10;        cout &lt;&lt; &quot;\nClient Card:&quot;;&#10;&#10;// ... existing code ...&#10;```&#10;&#10;But I **recommend using the setter**:&#10;&#10;```cpp&#10;Client.SetAccountBalance(clsInputValidate::ReadFloatNumber());&#10;```&#10;&#10;It is clearer and safer." />
+              </SerializedChatMessage>
+            </list>
+          </option>
+          <option name="modifiedAt" value="1777187971103" />
+          <option name="statisticInformation">
+            <ChatStatisticInformation>
+              <option name="sourceActionType" value="NEW_CHAT" />
+              <option name="timestamp" value="1777187971103" />
+            </ChatStatisticInformation>
+          </option>
+          <option name="title">
+            <SerializedChatTitle>
+              <option name="custom" value="true" />
+              <option name="text" value="Resolving Ambiguous Function Call in C++" />
+            </SerializedChatTitle>
+          </option>
+          <option name="uid" value="ba0d13e0-0ba3-40e4-a5b7-b3afb174768e" />
+        </SerializedChat>
+        <SerializedChat>
+          <option name="chatContext">
+            <SerializedChatContext />
+          </option>
+          <option name="chatModelId" value="chat_mode" />
+          <option name="messages">
+            <list>
+              <SerializedChatMessage>
+                <option name="attachments">
+                  <list>
+                    <SerializedChatAttachment>
+                      <option name="name" value="Console Selection" />
+                      <option name="text" value="    Client.GetAccountBalance()AccountBalance = clsInputValidate::ReadFloatNumber();&#10;" />
+                    </SerializedChatAttachment>
+                    <SerializedChatAttachment>
+                      <option name="name" value="Errors in selection" />
+                      <option name="text" value="&#10;Cannot resolve symbol 'AccountBalance'&#10;at: AccountBalance&#10;on the lines:&#10;    Client.GetAccountBalance()AccountBalance = clsInputValidate::ReadFloatNumber();&#10;" />
+                    </SerializedChatAttachment>
+                    <SerializedChatAttachment>
+                      <option name="url" value="file://$PROJECT_DIR$/src/main.cpp" />
+                      <option name="name" value="Information about open file in the editor" />
+                      <option name="text" value="```c/c++&#10;#include &lt;iostream&gt;&#10;#include &quot;clsPerson.h&quot;&#10;#include &quot;clsBankClient.h&quot;&#10;#include &quot;clsInputValidate.h&quot;&#10;&#10;void ReadClientInfo(clsBankClient&amp; Client)&#10;{&#10;    cout &lt;&lt; &quot;\nEnter FirstName: &quot;;&#10;    Client.GetFirstName() = clsInputValidate::ReadString();&#10;&#10;    cout &lt;&lt; &quot;\nEnter LastName: &quot;;&#10;    Client.GetLastName() = clsInputValidate::ReadString();&#10;&#10;    cout &lt;&lt; &quot;\nEnter Email: &quot;;&#10;    Client.GetEmail() = clsInputValidate::ReadString();&#10;&#10;    cout &lt;&lt; &quot;\nEnter Phone: &quot;;&#10;    Client.GetPhone() = clsInputValidate::ReadString();&#10;&#10;    cout &lt;&lt; &quot;\nEnter PinCode: &quot;;&#10;    Client.GetPinCode() = clsInputValidate::ReadString();&#10;&#10;    cout &lt;&lt; &quot;\nEnter Account Balance: &quot;;&#10;    Client.GetAccountBalance()AccountBalance = clsInputValidate::ReadFloatNumber();&#10;}&#10;&#10;void AddNewClient()&#10;{&#10;    string AccountNumber = &quot;&quot;;&#10;&#10;    cout &lt;&lt; &quot;\nPlease Enter Account Number: &quot;;&#10;    AccountNumber = clsInputValidate::ReadString();&#10;    while (clsBankClient::IsClientExist(AccountNumber))&#10;    {&#10;        cout &lt;&lt; &quot;\nAccount Number Is Already Used, Choose another one: &quot;;&#10;        AccountNumber = clsInputValidate::ReadString();&#10;    }&#10;&#10;    clsBankClient NewClient = clsBankClient::GetAddNewClientObject(AccountNumber);&#10;&#10;&#10;    ReadClientInfo(NewClient);&#10;&#10;    clsBankClient::enSaveResults SaveResult;&#10;&#10;    SaveResult = NewClient.Save();&#10;&#10;    switch (SaveResult)&#10;    {&#10;    case  clsBankClient::enSaveResults::svSucceeded:&#10;        {&#10;            cout &lt;&lt; &quot;\nAccount Addeded Successfully :-)\n&quot;;&#10;            NewClient.Print();&#10;            break;&#10;        }&#10;    case clsBankClient::enSaveResults::svFaildEmptyObject:&#10;        {&#10;            cout &lt;&lt; &quot;\nError account was not saved because it's Empty&quot;;&#10;            break;&#10;&#10;        }&#10;    case clsBankClient::enSaveResults::svFaildAccountNumberExists:&#10;        {&#10;            cout &lt;&lt; &quot;\nError account was not saved because account number is used!\n&quot;;&#10;            break;&#10;&#10;        }&#10;    }&#10;}&#10;&#10;&#10;int main()&#10;&#10;{&#10;    AddNewClient();&#10;    return 0;&#10;}&#10;&#10;```" />
+                    </SerializedChatAttachment>
+                  </list>
+                </option>
+                <option name="markupLanguageID" value="ChatInput" />
+                <option name="uid" value="UUID(uuid=6ec00740-9f31-4c6a-8530-876fe82dc98f)" />
+                <option name="displayContent" value="Why using Get  in readClient?" />
+                <option name="internalContent" value="Why using Get  in readClient?" />
+              </SerializedChatMessage>
+              <SerializedChatMessage>
+                <option name="author" value="Assistant" />
+                <option name="uid" value="f184acb8-f67d-48e9-b065-4b5b83415a8a" />
+                <option name="displayContent" value="`Get` is being used in `ReadClientInfo` because your class probably exposes fields through **getter methods** like:&#10;&#10;```cpp&#10;Client.GetFirstName()&#10;Client.GetLastName()&#10;Client.GetEmail()&#10;Client.GetPhone()&#10;Client.GetPinCode()&#10;Client.GetAccountBalance()&#10;```&#10;&#10;But here is the important part:&#10;&#10;```cpp&#10;Client.GetFirstName() = clsInputValidate::ReadString();&#10;```&#10;&#10;This only works if `GetFirstName()` returns a **reference**, like this:&#10;&#10;```cpp&#10;string&amp; GetFirstName()&#10;{&#10;    return _FirstName;&#10;}&#10;```&#10;&#10;That means the getter is not only “getting” the value — it is giving direct access to modify it.&#10;&#10;---&#10;&#10;The error is in this line:&#10;&#10;```cpp&#10;Client.GetAccountBalance()AccountBalance = clsInputValidate::ReadFloatNumber();&#10;```&#10;&#10;This is invalid C++ syntax. You probably meant:&#10;&#10;```cpp&#10;Client.GetAccountBalance() = clsInputValidate::ReadFloatNumber();&#10;```&#10;&#10;So your function should contain:&#10;&#10;```cpp&#10;cout &lt;&lt; &quot;\nEnter Account Balance: &quot;;&#10;Client.GetAccountBalance() = clsInputValidate::ReadFloatNumber();&#10;```&#10;&#10;---&#10;&#10;### Why not `AccountBalance` directly?&#10;&#10;Because `AccountBalance` is likely a **private member** inside `clsBankClient`, maybe something like:&#10;&#10;```cpp&#10;class clsBankClient&#10;{&#10;private:&#10;    float _AccountBalance;&#10;};&#10;```&#10;&#10;Private members cannot be accessed directly from outside the class. So instead of writing:&#10;&#10;```cpp&#10;Client.AccountBalance = 500;&#10;```&#10;&#10;you use a public function:&#10;&#10;```cpp&#10;Client.GetAccountBalance() = 500;&#10;```&#10;&#10;---&#10;&#10;### Better naming suggestion&#10;&#10;Technically, using `Get...()` for assignment is a bit confusing. Usually:&#10;&#10;```cpp&#10;GetAccountBalance()&#10;```&#10;&#10;means “read the value”, not “change the value”.&#10;&#10;A cleaner design would be to use a setter:&#10;&#10;```cpp&#10;Client.SetAccountBalance(clsInputValidate::ReadFloatNumber());&#10;```&#10;&#10;And inside the class:&#10;&#10;```cpp&#10;void SetAccountBalance(float AccountBalance)&#10;{&#10;    _AccountBalance = AccountBalance;&#10;}&#10;```&#10;&#10;Then `ReadClientInfo` would be clearer:&#10;&#10;```cpp&#10;cout &lt;&lt; &quot;\nEnter Account Balance: &quot;;&#10;Client.SetAccountBalance(clsInputValidate::ReadFloatNumber());&#10;```&#10;&#10;So in short:&#10;&#10;- `Get...()` is used because the class fields are probably private.&#10;- Your current error is because the line has extra text after the function call.&#10;- Use this:&#10;&#10;```cpp&#10;Client.GetAccountBalance() = clsInputValidate::ReadFloatNumber();&#10;```&#10;&#10;- But better design is to create/use `SetAccountBalance(...)`." />
+                <option name="internalContent" value="`Get` is being used in `ReadClientInfo` because your class probably exposes fields through **getter methods** like:&#10;&#10;```cpp&#10;Client.GetFirstName()&#10;Client.GetLastName()&#10;Client.GetEmail()&#10;Client.GetPhone()&#10;Client.GetPinCode()&#10;Client.GetAccountBalance()&#10;```&#10;&#10;But here is the important part:&#10;&#10;```cpp&#10;Client.GetFirstName() = clsInputValidate::ReadString();&#10;```&#10;&#10;This only works if `GetFirstName()` returns a **reference**, like this:&#10;&#10;```cpp&#10;string&amp; GetFirstName()&#10;{&#10;    return _FirstName;&#10;}&#10;```&#10;&#10;That means the getter is not only “getting” the value — it is giving direct access to modify it.&#10;&#10;---&#10;&#10;The error is in this line:&#10;&#10;```cpp&#10;Client.GetAccountBalance()AccountBalance = clsInputValidate::ReadFloatNumber();&#10;```&#10;&#10;This is invalid C++ syntax. You probably meant:&#10;&#10;```cpp&#10;Client.GetAccountBalance() = clsInputValidate::ReadFloatNumber();&#10;```&#10;&#10;So your function should contain:&#10;&#10;```cpp&#10;cout &lt;&lt; &quot;\nEnter Account Balance: &quot;;&#10;Client.GetAccountBalance() = clsInputValidate::ReadFloatNumber();&#10;```&#10;&#10;---&#10;&#10;### Why not `AccountBalance` directly?&#10;&#10;Because `AccountBalance` is likely a **private member** inside `clsBankClient`, maybe something like:&#10;&#10;```cpp&#10;class clsBankClient&#10;{&#10;private:&#10;    float _AccountBalance;&#10;};&#10;```&#10;&#10;Private members cannot be accessed directly from outside the class. So instead of writing:&#10;&#10;```cpp&#10;Client.AccountBalance = 500;&#10;```&#10;&#10;you use a public function:&#10;&#10;```cpp&#10;Client.GetAccountBalance() = 500;&#10;```&#10;&#10;---&#10;&#10;### Better naming suggestion&#10;&#10;Technically, using `Get...()` for assignment is a bit confusing. Usually:&#10;&#10;```cpp&#10;GetAccountBalance()&#10;```&#10;&#10;means “read the value”, not “change the value”.&#10;&#10;A cleaner design would be to use a setter:&#10;&#10;```cpp&#10;Client.SetAccountBalance(clsInputValidate::ReadFloatNumber());&#10;```&#10;&#10;And inside the class:&#10;&#10;```cpp&#10;void SetAccountBalance(float AccountBalance)&#10;{&#10;    _AccountBalance = AccountBalance;&#10;}&#10;```&#10;&#10;Then `ReadClientInfo` would be clearer:&#10;&#10;```cpp&#10;cout &lt;&lt; &quot;\nEnter Account Balance: &quot;;&#10;Client.SetAccountBalance(clsInputValidate::ReadFloatNumber());&#10;```&#10;&#10;So in short:&#10;&#10;- `Get...()` is used because the class fields are probably private.&#10;- Your current error is because the line has extra text after the function call.&#10;- Use this:&#10;&#10;```cpp&#10;Client.GetAccountBalance() = clsInputValidate::ReadFloatNumber();&#10;```&#10;&#10;- But better design is to create/use `SetAccountBalance(...)`." />
+              </SerializedChatMessage>
+              <SerializedChatMessage>
+                <option name="attachments">
+                  <list>
+                    <SerializedChatAttachment>
+                      <option name="url" value="file://$PROJECT_DIR$/include/clsPerson.h" />
+                      <option name="name" value="clsPerson.h" />
+                      <option name="text" value="```c/c++&#10;//&#10;// Created by imad on 4/24/26.&#10;//&#10;&#10;#ifndef PROJECT1L4BANKEXTENSION2_CLSPERSON_H&#10;#define PROJECT1L4BANKEXTENSION2_CLSPERSON_H&#10;&#10;&#10;#pragma once&#10;#include &lt;iostream&gt;&#10;#include &lt;string&gt;&#10;using namespace std;&#10;&#10;class clsPerson&#10;{&#10;&#10;private:&#10;&#10;    string _FirstName;&#10;    string _LastName;&#10;    string _Email;&#10;    string _Phone;&#10;&#10;public:&#10;&#10;    clsPerson( string FirstName, string LastName, string Email, string Phone)&#10;    {&#10;&#10;        _FirstName = FirstName;&#10;        _LastName = LastName;&#10;        _Email = Email;&#10;        _Phone = Phone;&#10;    }&#10;&#10;    //Property Get&#10;    string GetFirstName()&#10;    {&#10;        return _FirstName;&#10;    }&#10;&#10;    //Property Set&#10;    void SetLastName(string LastName)&#10;    {&#10;        _LastName = LastName;&#10;    }&#10;&#10;    //Property Get&#10;    string GetLastName()&#10;    {&#10;        return _LastName;&#10;    }&#10;&#10;    //Property Set&#10;    void SetEmail(string Email)&#10;    {&#10;        _Email = Email;&#10;    }&#10;&#10;    //Property Get&#10;    string GetEmail()&#10;    {&#10;        return _Email;&#10;    }&#10;&#10;    //Property Set&#10;    void SetPhone(string Phone)&#10;    {&#10;        _Phone = Phone;&#10;    }&#10;&#10;    //Property Get&#10;    string GetPhone()&#10;    {&#10;        return _Phone;&#10;    }&#10;&#10;    string FullName()&#10;    {&#10;        return _FirstName + &quot; &quot; + _LastName;&#10;    }&#10;&#10;    void Print()&#10;    {&#10;        cout &lt;&lt; &quot;\nInfo:&quot;;&#10;        cout &lt;&lt; &quot;\n___________________&quot;;&#10;        cout &lt;&lt; &quot;\nFirstName: &quot; &lt;&lt; _FirstName;&#10;        cout &lt;&lt; &quot;\nLastName : &quot; &lt;&lt; _LastName;&#10;        cout &lt;&lt; &quot;\nFull Name: &quot; &lt;&lt; FullName();&#10;        cout &lt;&lt; &quot;\nEmail    : &quot; &lt;&lt; _Email;&#10;        cout &lt;&lt; &quot;\nPhone    : &quot; &lt;&lt; _Phone;&#10;        cout &lt;&lt; &quot;\n___________________\n&quot;;&#10;&#10;    }&#10;&#10;};&#10;&#10;&#10;#endif //PROJECT1L4BANKEXTENSION2_CLSPERSON_H&#10;```" />
+                    </SerializedChatAttachment>
+                  </list>
+                </option>
+                <option name="markupLanguageID" value="ChatInput" />
+                <option name="uid" value="UUID(uuid=c8d5d45c-bddd-454f-a8ff-fd6abb635d96)" />
+                <option name="displayContent" value="Why Set not Get?" />
+                <option name="internalContent" value="Why Set not Get?" />
+              </SerializedChatMessage>
+              <SerializedChatMessage>
+                <option name="author" value="Assistant" />
+                <option name="uid" value="e43f3b20-d7c0-4e05-8ae3-e01e5d0972cc" />
+                <option name="displayContent" value="Use **`Set`** when you want to **change/write** a value.&#10;&#10;Use **`Get`** when you want to **read/return** a value.&#10;&#10;Think of it like this:&#10;&#10;| Function | Meaning | Example |&#10;|---|---|---|&#10;| `GetFirstName()` | Give me the current first name | print it, compare it, display it |&#10;| `SetFirstName(...)` | Change the first name to a new value | assign user input to it |&#10;&#10;So if you are reading input from the user and storing it inside the object, you are **setting** the value, not getting it.&#10;&#10;Example:&#10;&#10;```cpp&#10;Client.SetEmail(clsInputValidate::ReadString());&#10;```&#10;&#10;This means:&#10;&#10;&gt; Read a string from the user, then store it as the client email.&#10;&#10;But this:&#10;&#10;```cpp&#10;Client.GetEmail() = clsInputValidate::ReadString();&#10;```&#10;&#10;means:&#10;&#10;&gt; Get the email, then try to assign a new value to the returned result.&#10;&#10;That only works in C++ if `GetEmail()` returns a **reference**, like:&#10;&#10;```cpp&#10;string&amp; GetEmail()&#10;{&#10;    return _Email;&#10;}&#10;```&#10;&#10;But if your getter returns a normal `string`, like this:&#10;&#10;```cpp&#10;string GetEmail()&#10;{&#10;    return _Email;&#10;}&#10;```&#10;&#10;then it returns a **copy**, not the real private variable. So assigning to it is either invalid or useless.&#10;&#10;---&#10;&#10;In your class, getters return copies:&#10;&#10;```cpp&#10;string GetEmail()&#10;{&#10;    return _Email;&#10;}&#10;```&#10;&#10;So this is the correct style:&#10;&#10;```cpp&#10;Client.SetEmail(clsInputValidate::ReadString());&#10;```&#10;&#10;Not this:&#10;&#10;```cpp&#10;Client.GetEmail() = clsInputValidate::ReadString();&#10;```&#10;&#10;---&#10;&#10;Small note: you have `SetLastName`, `SetEmail`, and `SetPhone`, but you also need a setter for first name if you want to change it after construction:&#10;&#10;```cpp&#10;void SetFirstName(string FirstName)&#10;{&#10;    _FirstName = FirstName;&#10;}&#10;```&#10;&#10;In short:&#10;&#10;```cpp&#10;Get = read&#10;Set = write/change&#10;```&#10;&#10;Nice and clean." />
+                <option name="internalContent" value="Use **`Set`** when you want to **change/write** a value.&#10;&#10;Use **`Get`** when you want to **read/return** a value.&#10;&#10;Think of it like this:&#10;&#10;| Function | Meaning | Example |&#10;|---|---|---|&#10;| `GetFirstName()` | Give me the current first name | print it, compare it, display it |&#10;| `SetFirstName(...)` | Change the first name to a new value | assign user input to it |&#10;&#10;So if you are reading input from the user and storing it inside the object, you are **setting** the value, not getting it.&#10;&#10;Example:&#10;&#10;```cpp&#10;Client.SetEmail(clsInputValidate::ReadString());&#10;```&#10;&#10;This means:&#10;&#10;&gt; Read a string from the user, then store it as the client email.&#10;&#10;But this:&#10;&#10;```cpp&#10;Client.GetEmail() = clsInputValidate::ReadString();&#10;```&#10;&#10;means:&#10;&#10;&gt; Get the email, then try to assign a new value to the returned result.&#10;&#10;That only works in C++ if `GetEmail()` returns a **reference**, like:&#10;&#10;```cpp&#10;string&amp; GetEmail()&#10;{&#10;    return _Email;&#10;}&#10;```&#10;&#10;But if your getter returns a normal `string`, like this:&#10;&#10;```cpp&#10;string GetEmail()&#10;{&#10;    return _Email;&#10;}&#10;```&#10;&#10;then it returns a **copy**, not the real private variable. So assigning to it is either invalid or useless.&#10;&#10;---&#10;&#10;In your class, getters return copies:&#10;&#10;```cpp&#10;string GetEmail()&#10;{&#10;    return _Email;&#10;}&#10;```&#10;&#10;So this is the correct style:&#10;&#10;```cpp&#10;Client.SetEmail(clsInputValidate::ReadString());&#10;```&#10;&#10;Not this:&#10;&#10;```cpp&#10;Client.GetEmail() = clsInputValidate::ReadString();&#10;```&#10;&#10;---&#10;&#10;Small note: you have `SetLastName`, `SetEmail`, and `SetPhone`, but you also need a setter for first name if you want to change it after construction:&#10;&#10;```cpp&#10;void SetFirstName(string FirstName)&#10;{&#10;    _FirstName = FirstName;&#10;}&#10;```&#10;&#10;In short:&#10;&#10;```cpp&#10;Get = read&#10;Set = write/change&#10;```&#10;&#10;Nice and clean." />
+              </SerializedChatMessage>
+            </list>
+          </option>
+          <option name="modifiedAt" value="1777314297423" />
+          <option name="statisticInformation">
+            <ChatStatisticInformation>
+              <option name="sourceActionType" value="NEW_CHAT_ON_START" />
+            </ChatStatisticInformation>
+          </option>
+          <option name="title">
+            <SerializedChatTitle>
+              <option name="custom" value="true" />
+              <option name="text" value="Using Get in ReadClientInfo Explanation" />
+            </SerializedChatTitle>
+          </option>
+          <option name="uid" value="db10343f-3e80-4d40-9545-d4f318d11732" />
+        </SerializedChat>
       </list>
     </option>
   </component>
@@ -4046,40 +4298,109 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf ideFingerprint="2mxhb0x3mtwkn" SIDE_TABS_SIZE_LIMIT_KEY="-1" />
+    <leaf ideFingerprint="1nftikdtm7u0m" SIDE_TABS_SIZE_LIMIT_KEY="-1">
+      <file current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main.cpp" file-id="43140" managing-fs="1770122711113">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="1008">
+              <caret line="42" column="9" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
+              <folding>
+                <marker date="1777409399390" expanded="true" signature="0:95" ph="##include ..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"main.cpp","foregroundColor":-9192071,"textAttributes":{"name":"a","children":[{"name":"option","attributes":{"name":"FOREGROUND","value":"73bd79"}}]},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,114,10,23,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,99,112,112,46,115,118,103,18,29,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,99,112,112,46,115,118,103,26,18,99,111,109,46,105,110,116,101,108,108,105,106,46,99,108,105,111,110,34,23,105,110,116,101,108,108,105,106,46,99,105,100,114,46,108,97,110,103,46,98,97,115,101,40,-21,-119,-10,-57,-3,-1,-1,-1,-1,1,48,0]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/include/clsBankClient.h" file-id="43328" managing-fs="1770122711113">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="474">
+              <caret line="307" column="4" selection-start-line="307" selection-start-column="4" selection-end-line="307" selection-end-column="4" />
+              <folding>
+                <marker date="1777409550628" expanded="true" signature="0:36" ph="//..." />
+                <marker date="1777409550628" expanded="true" signature="150:270" ph="##include ..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"clsBankClient.h","foregroundColor":-1536119,"textAttributes":{"name":"a","children":[{"name":"option","attributes":{"name":"FOREGROUND","value":"e88f89"}}]},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,110,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,26,18,99,111,109,46,105,110,116,101,108,108,105,106,46,99,108,105,111,110,34,23,105,110,116,101,108,108,105,106,46,99,105,100,114,46,108,97,110,103,46,98,97,115,101,40,-48,-45,-18,-83,-7,-1,-1,-1,-1,1,48,0]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/include/clsInputValidate.h" file-id="43309" managing-fs="1770122711113">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="96">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
+              <folding>
+                <marker date="1777187323290" expanded="true" signature="0:36" ph="//..." />
+                <marker date="1777187323290" expanded="true" signature="142:180" ph="##include ..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"clsInputValidate.h","foregroundColor":-1536119,"textAttributes":{"name":"a","children":[{"name":"option","attributes":{"name":"FOREGROUND","value":"e88f89"}}]},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,110,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,26,18,99,111,109,46,105,110,116,101,108,108,105,106,46,99,108,105,111,110,34,23,105,110,116,101,108,108,105,106,46,99,105,100,114,46,108,97,110,103,46,98,97,115,101,40,-48,-45,-18,-83,-7,-1,-1,-1,-1,1,48,0]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/include/clsString.h" file-id="43137" managing-fs="1770122711113">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="7560">
+              <caret line="315" column="9" selection-start-line="315" selection-start-column="9" selection-end-line="315" selection-end-column="9" />
+              <folding>
+                <marker date="1777118808363" expanded="true" signature="0:36" ph="//..." />
+                <marker date="1777118808363" expanded="true" signature="192:268" ph="##include ..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"clsString.h","foregroundColor":-1536119,"textAttributes":{"name":"a","children":[{"name":"option","attributes":{"name":"FOREGROUND","value":"e88f89"}}]},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,110,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,26,18,99,111,109,46,105,110,116,101,108,108,105,106,46,99,108,105,111,110,34,23,105,110,116,101,108,108,105,106,46,99,105,100,114,46,108,97,110,103,46,98,97,115,101,40,-48,-45,-18,-83,-7,-1,-1,-1,-1,1,48,0]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/include/clsDate.h" file-id="43141" managing-fs="1770122711113">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="3192">
+              <caret line="133" column="10" selection-start-line="133" selection-start-column="10" selection-end-line="133" selection-end-column="10" />
+              <folding>
+                <marker date="1776685712936" expanded="true" signature="100:191" ph="##include ..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"clsDate.h","foregroundColor":-9192071,"textAttributes":{"name":"a","children":[{"name":"option","attributes":{"name":"FOREGROUND","value":"73bd79"}}]},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,110,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,26,18,99,111,109,46,105,110,116,101,108,108,105,106,46,99,108,105,111,110,34,23,105,110,116,101,108,108,105,106,46,99,105,100,114,46,108,97,110,103,46,98,97,115,101,40,-48,-45,-18,-83,-7,-1,-1,-1,-1,1,48,0]}]]></tab>
+      </file>
+    </leaf>
   </component>
-  <component name="FileTypeUsageLocalSummary">{
-  &quot;data&quot;: {
-    &quot;C/C++&quot;: {
-      &quot;usageCount&quot;: 146,
-      &quot;lastUsed&quot;: 1776599749238
+  <component name="FileTypeUsageLocalSummary"><![CDATA[{
+  "data": {
+    "C/C++": {
+      "usageCount": 148,
+      "lastUsed": 1777292204240
     },
-    &quot;CMakeLists.txt&quot;: {
-      &quot;usageCount&quot;: 21,
-      &quot;lastUsed&quot;: 1776685841996
+    "CMakeLists.txt": {
+      "usageCount": 21,
+      "lastUsed": 1776685841996
     },
-    &quot;PLAIN_TEXT&quot;: {
-      &quot;usageCount&quot;: 21,
-      &quot;lastUsed&quot;: 1776207976402
+    "PLAIN_TEXT": {
+      "usageCount": 21,
+      "lastUsed": 1776207976402
     },
-    &quot;textmate&quot;: {
-      &quot;usageCount&quot;: 66,
-      &quot;lastUsed&quot;: 1773706762931
+    "textmate": {
+      "usageCount": 66,
+      "lastUsed": 1773706762931
     },
-    &quot;DIFF&quot;: {
-      &quot;usageCount&quot;: 17,
-      &quot;lastUsed&quot;: 1776258091880
+    "DIFF": {
+      "usageCount": 17,
+      "lastUsed": 1776258091880
     },
-    &quot;AUTO_DETECTED&quot;: {
-      &quot;usageCount&quot;: 4,
-      &quot;lastUsed&quot;: 1774143608208
+    "AUTO_DETECTED": {
+      "usageCount": 4,
+      "lastUsed": 1774143608208
     },
-    &quot;C/C++ Header&quot;: {
-      &quot;usageCount&quot;: 52,
-      &quot;lastUsed&quot;: 1776641396814
+    "C/C++ Header": {
+      "usageCount": 61,
+      "lastUsed": 1777292205291
     }
   }
-}</component>
+}]]></component>
   <component name="GitBranchesPopupTreeState">
     <expand>
       <path>
@@ -4099,29 +4420,33 @@
     <select />
   </component>
   <component name="GitSEFilterConfiguration">{}</component>
-  <component name="IdeDocumentHistory">{
-  &quot;changedPaths&quot;: [
-    &quot;/home/imad/.ideavimrc&quot;,
-    &quot;/home/imad/.config/JetBrains/CLion2025.3/clion64.vmoptions&quot;,
-    &quot;/home/imad/Documents/Coding/UserLib.cpp&quot;,
-    &quot;/home/imad/Documents/Coding/Project.cpp&quot;,
-    &quot;/home/imad/Documents/Coding/UserLib.h&quot;,
-    &quot;/home/imad/Documents/Coding/CMakeLists.txt&quot;,
-    &quot;/home/imad/Documents/Project 1 L4 - Bank Extension 2/include/clsUser.h&quot;,
-    &quot;/home/imad/Documents/Project 1 L4 - Bank Extension 2/include/clsDbObject.h&quot;,
-    &quot;/home/imad/Documents/Project 1 L4 - Bank Extension 2/src/clsBankController.cpp&quot;,
-    &quot;/home/imad/Documents/Project 1 L4 - Bank Extension 2/include/clsBankController.h&quot;,
-    &quot;/home/imad/Documents/Project 1 L4 - Bank Extension 2/CMakeLists.txt&quot;,
-    &quot;/home/imad/Documents/Project 2 L4 - ATM System/src/clsATMController.cpp&quot;,
-    &quot;/home/imad/Documents/Project 2 L4 - ATM System/include/clsATMController.h&quot;,
-    &quot;/home/imad/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp&quot;,
-    &quot;/home/imad/Documents/Project 2 L4 - ATM System/include/clsString.h&quot;,
-    &quot;/home/imad/Documents/Project 2 L4 - ATM System/include/clsPeriod.h&quot;,
-    &quot;/home/imad/Documents/Project 2 L4 - ATM System/include/cldUtil.h&quot;,
-    &quot;/home/imad/Documents/Project 2 L4 - ATM System/src/main.cpp&quot;,
-    &quot;/home/imad/Documents/Project 2 L4 - ATM System/include/clsDate.h&quot;
+  <component name="IdeDocumentHistory"><![CDATA[{
+  "changedPaths": [
+    "/home/imad/.ideavimrc",
+    "/home/imad/.config/JetBrains/CLion2025.3/clion64.vmoptions",
+    "/home/imad/Documents/Coding/UserLib.cpp",
+    "/home/imad/Documents/Coding/Project.cpp",
+    "/home/imad/Documents/Coding/UserLib.h",
+    "/home/imad/Documents/Coding/CMakeLists.txt",
+    "/home/imad/Documents/Project 1 L4 - Bank Extension 2/include/clsUser.h",
+    "/home/imad/Documents/Project 1 L4 - Bank Extension 2/include/clsDbObject.h",
+    "/home/imad/Documents/Project 1 L4 - Bank Extension 2/src/clsBankController.cpp",
+    "/home/imad/Documents/Project 1 L4 - Bank Extension 2/include/clsBankController.h",
+    "/home/imad/Documents/Project 1 L4 - Bank Extension 2/CMakeLists.txt",
+    "/home/imad/Documents/Project 2 L4 - ATM System/src/clsATMController.cpp",
+    "/home/imad/Documents/Project 2 L4 - ATM System/include/clsATMController.h",
+    "/home/imad/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp",
+    "/home/imad/Documents/Project 2 L4 - ATM System/include/clsString.h",
+    "/home/imad/Documents/Project 2 L4 - ATM System/include/clsPeriod.h",
+    "/home/imad/Documents/Project 2 L4 - ATM System/include/cldUtil.h",
+    "/home/imad/Documents/Project 2 L4 - ATM System/src/main.cpp",
+    "/home/imad/Documents/Project 2 L4 - ATM System/include/clsDate.h",
+    "/home/imad/Documents/Project1 - Utility library/include/clsString.h",
+    "/home/imad/Documents/Project1 - Utility library/include/clsInputValidate.h",
+    "/home/imad/Documents/Project1 - Utility library/src/main.cpp",
+    "/home/imad/Documents/Project1 - Utility library/include/clsBankClient.h"
   ]
-}</component>
+}]]></component>
   <component name="IgnoredFileRootStore">
     <option name="generatedRoots">
       <set>
@@ -4221,6 +4546,7 @@
         <entry key="b3537d0d-d398-4104-9a05-cad4d4a2b00e" value="false" />
         <entry key="b5090a68-ab82-4af7-b098-194fbb8dbdc9" value="false" />
         <entry key="b6ea2863-b1ba-4972-b605-9c8d48ba589e" value="false" />
+        <entry key="ba0d13e0-0ba3-40e4-a5b7-b3afb174768e" value="false" />
         <entry key="ba37f411-3404-41d1-97ed-f522da73d98d" value="false" />
         <entry key="be4a3326-00fb-4964-986e-662c1a0c7885" value="false" />
         <entry key="c047facb-a64a-4e3f-b480-57e213e2e56c" value="false" />
@@ -4245,6 +4571,7 @@
         <entry key="d8e0efed-9758-426f-bb8b-9704e50e9092" value="false" />
         <entry key="d9ded76b-21f3-4fa5-8517-bd1904c8dd3b" value="false" />
         <entry key="da9fb45f-e0ff-4489-8e56-d2d0eb1963ff" value="false" />
+        <entry key="db10343f-3e80-4d40-9545-d4f318d11732" value="false" />
         <entry key="dbdbb2b6-23ad-4b92-a807-397122b11a52" value="false" />
         <entry key="dc256c97-74f0-4a52-9575-15db58a26b33" value="false" />
         <entry key="dd64ffe0-5a18-480e-bc60-1b779f5a0f6a" value="false" />
@@ -4262,6 +4589,7 @@
         <entry key="f1c6c0ef-1ead-438b-a78e-6573c0c194a3" value="false" />
         <entry key="f2dff384-92fa-4ca3-a8cb-5c1701f2f9ef" value="false" />
         <entry key="f614887c-f9de-45d0-84ce-d05e3ba95dc0" value="false" />
+        <entry key="f693077b-e5b7-4246-ac10-bef9e7d520a0" value="false" />
         <entry key="f7623557-2a9a-458e-98d6-7a6c9408047a" value="false" />
         <entry key="fba7af34-a3e8-404a-8754-c52e32807bfd" value="false" />
       </map>
@@ -4269,7 +4597,7 @@
   </component>
   <component name="LanguageUsageStatistics">
     <language id="C++">
-      <summary usageCount="198" lastUsage="1776641396814" />
+      <summary usageCount="209" lastUsage="1777292205291" />
     </language>
     <language id="CMake">
       <summary usageCount="21" lastUsage="1776685841996" />
@@ -4287,7 +4615,209 @@
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" />
     <panes>
-      <pane id="ProjectPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Project1L4BankExtension2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/imad/Documents/Project1 - Utility library}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Project1L4BankExtension2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/imad/Documents/Project1 - Utility library}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/imad/Documents/Project1 - Utility library/Data}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Project1L4BankExtension2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/imad/Documents/Project1 - Utility library}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/imad/Documents/Project1 - Utility library/include}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Project1L4BankExtension2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/imad/Documents/Project1 - Utility library}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/imad/Documents/Project1 - Utility library/src}" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+          <presentation>
+            <attributes />
+            <data iconPath="expui/toolwindows/project.svg" iconPlugin="com.intellij" isLeaf="false" text="Project1L4BankExtension2" />
+            <item name="Project1L4BankExtension2" type="b2602c69:ProjectViewProjectNode" />
+            <presentation>
+              <attributes>
+                <map>
+                  <entry key="filePath" value="$PROJECT_DIR$" />
+                </map>
+              </attributes>
+              <data iconPath="expui/nodes/module.svg" iconPlugin="com.intellij" isLeaf="false" text="Project1 - Utility library" />
+              <item name="dir{file:///home/imad/Documents/Project1 - Utility library}" type="462c0819:PsiDirectoryNode" />
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/build" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="build" />
+                <item name="dir{file:///home/imad/Documents/Project1 - Utility library/build}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/cmake-build-debug" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/excludeRoot.svg" iconPlugin="com.intellij" isLeaf="false" text="cmake-build-debug" />
+                <item name="dir{file:///home/imad/Documents/Project1 - Utility library/cmake-build-debug}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/Data" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="Data" />
+                <item name="dir{file:///home/imad/Documents/Project1 - Utility library/Data}" type="462c0819:PsiDirectoryNode" />
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/Data/Clients.text" />
+                    </map>
+                  </attributes>
+                  <data iconPath="expui/fileTypes/text.svg" iconPlugin="com.intellij" isLeaf="true" text="Clients.text" />
+                  <item name="Clients.text" type="ab9368bb:PsiFileNode" />
+                </presentation>
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/include" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="include" />
+                <item name="dir{file:///home/imad/Documents/Project1 - Utility library/include}" type="462c0819:PsiDirectoryNode" />
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/include/clsBankClient.h" />
+                    </map>
+                  </attributes>
+                  <data iconModule="intellij.cidr.lang.base" iconPath="icons/expui/fileTypes/h.svg" iconPlugin="com.intellij.clion" isLeaf="true" text="clsBankClient.h" />
+                  <item name="clsBankClient.h" type="ab9368bb:PsiFileNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/include/clsDate.h" />
+                    </map>
+                  </attributes>
+                  <data iconModule="intellij.cidr.lang.base" iconPath="icons/expui/fileTypes/h.svg" iconPlugin="com.intellij.clion" isLeaf="true" text="clsDate.h" />
+                  <item name="clsDate.h" type="ab9368bb:PsiFileNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/include/clsInputValidate.h" />
+                    </map>
+                  </attributes>
+                  <data iconModule="intellij.cidr.lang.base" iconPath="icons/expui/fileTypes/h.svg" iconPlugin="com.intellij.clion" isLeaf="true" text="clsInputValidate.h" />
+                  <item name="clsInputValidate.h" type="ab9368bb:PsiFileNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/include/clsPeriod.h" />
+                    </map>
+                  </attributes>
+                  <data iconModule="intellij.cidr.lang.base" iconPath="icons/expui/fileTypes/h.svg" iconPlugin="com.intellij.clion" isLeaf="true" text="clsPeriod.h" />
+                  <item name="clsPeriod.h" type="ab9368bb:PsiFileNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/include/clsPerson.h" />
+                    </map>
+                  </attributes>
+                  <data iconModule="intellij.cidr.lang.base" iconPath="icons/expui/fileTypes/h.svg" iconPlugin="com.intellij.clion" isLeaf="true" text="clsPerson.h" />
+                  <item name="clsPerson.h" type="ab9368bb:PsiFileNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/include/clsString.h" />
+                    </map>
+                  </attributes>
+                  <data iconModule="intellij.cidr.lang.base" iconPath="icons/expui/fileTypes/h.svg" iconPlugin="com.intellij.clion" isLeaf="true" text="clsString.h" />
+                  <item name="clsString.h" type="ab9368bb:PsiFileNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/include/clsUtil.h" />
+                    </map>
+                  </attributes>
+                  <data iconModule="intellij.cidr.lang.base" iconPath="icons/expui/fileTypes/h.svg" iconPlugin="com.intellij.clion" isLeaf="true" text="clsUtil.h" />
+                  <item name="clsUtil.h" type="ab9368bb:PsiFileNode" />
+                </presentation>
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/src" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="src" />
+                <item name="dir{file:///home/imad/Documents/Project1 - Utility library/src}" type="462c0819:PsiDirectoryNode" />
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/src/main.cpp" />
+                    </map>
+                  </attributes>
+                  <data iconModule="intellij.cidr.lang.base" iconPath="icons/expui/fileTypes/cpp.svg" iconPlugin="com.intellij.clion" isLeaf="true" text="main.cpp" />
+                  <item name="main.cpp" type="ab9368bb:PsiFileNode" />
+                </presentation>
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/.gitattributes" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/fileTypes/text.svg" iconPlugin="com.intellij" isLeaf="true" text=".gitattributes" />
+                <item name=".gitattributes" type="ab9368bb:PsiFileNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/.gitignore" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/fileTypes/ignored.svg" iconPlugin="com.intellij" isLeaf="true" text=".gitignore" />
+                <item name=".gitignore" type="ab9368bb:PsiFileNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/CMakeLists.txt" />
+                  </map>
+                </attributes>
+                <data iconPath="icons/expui/CMake.svg" iconPlugin="com.intellij.cmake" isLeaf="true" text="CMakeLists.txt" />
+                <item name="CMakeLists.txt" type="ab9368bb:PsiFileNode" />
+              </presentation>
+            </presentation>
+            <presentation>
+              <attributes />
+              <data iconPath="expui/nodes/library.svg" iconPlugin="com.intellij" isLeaf="false" text="External Libraries" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </presentation>
+            <presentation>
+              <attributes />
+              <data iconPath="expui/fileTypes/scratches.svg" iconPlugin="com.intellij" isLeaf="false" text="Scratches and Consoles" />
+              <item name="Scratches and Consoles" type="b85a3e1f:ScratchTreeStructureProvider$MyProjectNode" />
+            </presentation>
+          </presentation>
+        </subPane>
+      </pane>
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -4379,7 +4909,7 @@
     </option>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="407281000" />
+    <option name="totallyTimeSpent" value="435648000" />
   </component>
   <component name="TodoView">
     <todo-panel id="all">
@@ -4388,24 +4918,24 @@
   </component>
   <component name="ToolWindowManager">
     <layoutV2>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5398352" visible="true" weight="0.3225191" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5461823" visible="true" weight="0.14678031" />
       <window_info id="Commit" order="1" weight="0.1554445" />
-      <window_info active="true" id="Structure" order="2" sideWeight="0.46016484" side_tool="true" visible="true" weight="0.3225191" />
+      <window_info id="Structure" order="2" sideWeight="0.45381773" side_tool="true" weight="0.14678031" />
       <window_info id="Pull Requests" order="3" weight="0.1554445" />
       <window_info anchor="bottom" id="Version Control" order="0" weight="0.32987142" />
       <window_info anchor="bottom" id="Problems" order="1" />
-      <window_info anchor="bottom" id="Problems View" order="2" weight="0.37765956" />
+      <window_info anchor="bottom" id="Problems View" order="2" weight="0.40130025" />
       <window_info active="true" anchor="bottom" x="399" y="0" width="786" height="846" id="Terminal" maximized="true" order="3" type="WINDOWED" weight="0.37765956" />
       <window_info anchor="bottom" id="Services" order="4" weight="0.37726244" />
-      <window_info anchor="bottom" id="CMake" order="5" visible="true" weight="0.37726244" />
-      <window_info anchor="bottom" id="Messages" order="6" weight="0.37726244" />
-      <window_info anchor="bottom" x="-802" y="1" width="786" height="884" id="Run" maximized="true" order="7" show_stripe_button="false" type="WINDOWED" weight="0.37726244" />
+      <window_info anchor="bottom" id="CMake" order="5" weight="0.37765956" />
+      <window_info anchor="bottom" id="Messages" order="6" weight="0.40130025" />
+      <window_info anchor="bottom" x="-786" y="-21" width="786" height="846" id="Run" maximized="true" order="7" show_stripe_button="false" type="WINDOWED" weight="0.40130025" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.32987142" />
       <window_info anchor="bottom" id="Python Packages" order="9" weight="0.37726244" />
       <window_info anchor="bottom" id="PythonProcessOutput" order="10" weight="0.37726244" />
       <window_info anchor="bottom" id="TODO" order="11" weight="0.37726244" />
       <window_info anchor="right" id="Notifications" order="0" weight="0.2728125" />
-      <window_info anchor="right" id="AIAssistant" order="1" sideWeight="0.5006158" weight="0.5464376" />
+      <window_info anchor="right" id="AIAssistant" order="1" sideWeight="0.5006158" weight="0.29829544" />
       <window_info anchor="right" id="Database" order="2" weight="0.27304292" />
       <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
       <window_info anchor="right" id="Maven" order="4" weight="0.25" />
@@ -4414,7 +4944,7 @@
       <window_info anchor="right" id="Recap" order="7" weight="0.25644398" />
       <window_info anchor="right" id="Python Console" order="8" weight="0.27304292" />
       <window_info anchor="right" id="documentation.v2" order="9" sideWeight="0.49938422" side_tool="true" weight="0.24526516" />
-      <unified_weights bottom="0.37726244" left="0.3225191" right="0.5464376" />
+      <unified_weights bottom="0.40130025" left="0.14678031" right="0.29829544" />
     </layoutV2>
     <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1556187" />
@@ -4445,17 +4975,17 @@
     </layout-to-restore>
     <recentWindows>
       <value>Project</value>
-      <value>CMake</value>
       <value>Structure</value>
+      <value>Problems View</value>
+      <value>AIAssistant</value>
       <value>Messages</value>
       <value>Run</value>
+      <value>CMake</value>
       <value>Services</value>
       <value>Python Packages</value>
       <value>PythonProcessOutput</value>
       <value>TODO</value>
       <value>Terminal</value>
-      <value>Problems View</value>
-      <value>AIAssistant</value>
       <value>Python Console</value>
       <value>ElectroJunToolWindow</value>
       <value>Database</value>
@@ -4502,33 +5032,33 @@
     </state>
     <state x="738" y="283" width="426" height="497" key="FileChooserDialogImpl/0.0.1600.900@0.0.1600.900" timestamp="1774162627158" />
     <state x="738" y="283" key="FileChooserDialogImpl/1600.0.768.1024/0.0.1600.900@0.0.1600.900" timestamp="1776686420295" />
-    <state width="780" height="805" key="GridCell.Tab.0.bottom" timestamp="1776686357919">
+    <state width="780" height="767" key="GridCell.Tab.0.bottom" timestamp="1777219090571">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state width="780" height="357" key="GridCell.Tab.0.bottom/0.0.1600.900/1600.0.1024.768@0.0.1600.900" timestamp="1774812771132" />
     <state width="780" height="357" key="GridCell.Tab.0.bottom/0.0.1600.900@0.0.1600.900" timestamp="1774543030658" />
-    <state width="780" height="767" key="GridCell.Tab.0.bottom/1600.0.1024.768/0.0.1600.900@0.0.1600.900" timestamp="1776519368373" />
+    <state width="780" height="767" key="GridCell.Tab.0.bottom/1600.0.1024.768/0.0.1600.900@0.0.1600.900" timestamp="1777219090571" />
     <state width="780" height="805" key="GridCell.Tab.0.bottom/1600.0.768.1024/0.0.1600.900@0.0.1600.900" timestamp="1776686357919" />
-    <state width="780" height="805" key="GridCell.Tab.0.center" timestamp="1776686357919">
+    <state width="780" height="767" key="GridCell.Tab.0.center" timestamp="1777219090571">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state width="780" height="357" key="GridCell.Tab.0.center/0.0.1600.900/1600.0.1024.768@0.0.1600.900" timestamp="1774812771132" />
     <state width="780" height="357" key="GridCell.Tab.0.center/0.0.1600.900@0.0.1600.900" timestamp="1774543030658" />
-    <state width="780" height="767" key="GridCell.Tab.0.center/1600.0.1024.768/0.0.1600.900@0.0.1600.900" timestamp="1776519368373" />
+    <state width="780" height="767" key="GridCell.Tab.0.center/1600.0.1024.768/0.0.1600.900@0.0.1600.900" timestamp="1777219090571" />
     <state width="780" height="805" key="GridCell.Tab.0.center/1600.0.768.1024/0.0.1600.900@0.0.1600.900" timestamp="1776686357919" />
-    <state width="780" height="805" key="GridCell.Tab.0.left" timestamp="1776686357919">
+    <state width="780" height="767" key="GridCell.Tab.0.left" timestamp="1777219090571">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state width="780" height="357" key="GridCell.Tab.0.left/0.0.1600.900/1600.0.1024.768@0.0.1600.900" timestamp="1774812771132" />
     <state width="780" height="357" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1774543030658" />
-    <state width="780" height="767" key="GridCell.Tab.0.left/1600.0.1024.768/0.0.1600.900@0.0.1600.900" timestamp="1776519368373" />
+    <state width="780" height="767" key="GridCell.Tab.0.left/1600.0.1024.768/0.0.1600.900@0.0.1600.900" timestamp="1777219090571" />
     <state width="780" height="805" key="GridCell.Tab.0.left/1600.0.768.1024/0.0.1600.900@0.0.1600.900" timestamp="1776686357919" />
-    <state width="780" height="805" key="GridCell.Tab.0.right" timestamp="1776686357919">
+    <state width="780" height="767" key="GridCell.Tab.0.right" timestamp="1777219090571">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state width="780" height="357" key="GridCell.Tab.0.right/0.0.1600.900/1600.0.1024.768@0.0.1600.900" timestamp="1774812771132" />
     <state width="780" height="357" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1774543030658" />
-    <state width="780" height="767" key="GridCell.Tab.0.right/1600.0.1024.768/0.0.1600.900@0.0.1600.900" timestamp="1776519368373" />
+    <state width="780" height="767" key="GridCell.Tab.0.right/1600.0.1024.768/0.0.1600.900@0.0.1600.900" timestamp="1777219090571" />
     <state width="780" height="805" key="GridCell.Tab.0.right/1600.0.768.1024/0.0.1600.900@0.0.1600.900" timestamp="1776686357919" />
     <state x="459" y="137" width="1600" height="900" key="SettingsEditor" timestamp="1775566257016">
       <screen x="0" y="0" width="1600" height="900" />
@@ -4547,10 +5077,11 @@
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="651" y="247" width="524" height="390" key="com.jetbrains.cidr.cpp.cmake.actions.CMakeAddFileToProjectDialog/0.0.1600.900@0.0.1600.900" timestamp="1774112551215" />
-    <state x="192" y="240" key="run.anything.popup" timestamp="1771151911678">
+    <state x="192" y="240" key="run.anything.popup" timestamp="1777185003531">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="192" y="240" key="run.anything.popup/0.0.1600.900@0.0.1600.900" timestamp="1771151911678" />
+    <state x="192" y="240" key="run.anything.popup/1600.0.1024.768/0.0.1600.900@0.0.1600.900" timestamp="1777185003531" />
     <state x="0" y="0" width="678" height="183" key="search.everywhere.popup" timestamp="1776549690370">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
@@ -4604,12 +5135,62 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/include/clsDate.cpp" />
-    <entry file="file://$PROJECT_DIR$/include/clsString.h" />
     <entry file="file://$PROJECT_DIR$/include/clsPeriod.h" />
     <entry file="file://$PROJECT_DIR$/include/clsUtil.h" />
-    <entry file="file://$PROJECT_DIR$/src/main.cpp" />
-    <entry file="file://$PROJECT_DIR$/include/clsDate.h" />
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt" />
+    <entry file="file://$PROJECT_DIR$/include/clsDate.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3192">
+          <caret line="133" column="10" selection-start-line="133" selection-start-column="10" selection-end-line="133" selection-end-column="10" />
+          <folding>
+            <marker date="1776685712936" expanded="true" signature="100:191" ph="##include ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/clsString.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7560">
+          <caret line="315" column="9" selection-start-line="315" selection-start-column="9" selection-end-line="315" selection-end-column="9" />
+          <folding>
+            <marker date="1777118808363" expanded="true" signature="0:36" ph="//..." />
+            <marker date="1777118808363" expanded="true" signature="192:268" ph="##include ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/clsInputValidate.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <marker date="1777187323290" expanded="true" signature="0:36" ph="//..." />
+            <marker date="1777187323290" expanded="true" signature="142:180" ph="##include ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/clsBankClient.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="474">
+          <caret line="307" column="4" selection-start-line="307" selection-start-column="4" selection-end-line="307" selection-end-column="4" />
+          <folding>
+            <marker date="1777409550628" expanded="true" signature="0:36" ph="//..." />
+            <marker date="1777409550628" expanded="true" signature="150:270" ph="##include ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1008">
+          <caret line="42" column="9" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
+          <folding>
+            <marker date="1777409399390" expanded="true" signature="0:95" ph="##include ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="masterDetails">
     <states>

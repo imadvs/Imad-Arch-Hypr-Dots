@@ -41,7 +41,11 @@
 
 "modules-right": [
 	"group/laptop",
+	"custom/separator#dot-line",
+	"network",
 	"custom/separator#blank",
+	"bluetooth",
+	"custom/separator#dot-line",
 	"group/mobo_drawer",
 	"custom/separator#line",  
 	"group/audio",

@@ -4416,7 +4416,8 @@
     "id" : "federatedCompute",
     "builds" : [ ],
     "versions" : [ {
-      "from" : "1"
+      "from" : "1",
+      "to" : "2"
     } ],
     "rules" : {
       "event_id" : [ "{enum#__event_id}" ],
@@ -14128,7 +14129,8 @@
     "id" : "spring.debugger.bean.definition.load",
     "builds" : [ ],
     "versions" : [ {
-      "from" : "1"
+      "from" : "1",
+      "to" : "2"
     } ],
     "rules" : {
       "event_id" : [ "{enum:definition.load|definition.load.fallback}" ]
@@ -14151,7 +14153,8 @@
     "id" : "spring.debugger.evaluator.usages",
     "builds" : [ ],
     "versions" : [ {
-      "from" : "1"
+      "from" : "1",
+      "to" : "2"
     } ],
     "rules" : {
       "event_id" : [ "{enum:bean.evaluated|property.evaluated}" ]
@@ -14160,7 +14163,8 @@
     "id" : "spring.debugger.property.inlay.usages",
     "builds" : [ ],
     "versions" : [ {
-      "from" : "1"
+      "from" : "1",
+      "to" : "2"
     } ],
     "rules" : {
       "event_id" : [ "{enum:navigated.to.property.definition|navigated.to.property.definition.in.context}" ]
@@ -14169,7 +14173,8 @@
     "id" : "spring.debugger.watches.usages",
     "builds" : [ ],
     "versions" : [ {
-      "from" : "1"
+      "from" : "1",
+      "to" : "2"
     } ],
     "rules" : {
       "event_id" : [ "{enum#__event_id}" ],
@@ -16523,5 +16528,5 @@
       "version" : "Unknown|unknown.format|unknown|UNKNOWN|((\\d+\\.?)*\\d+)"
     }
   },
-  "version" : "7108"
+  "version" : "7128"
 }

@@ -1,5 +1,6 @@
 <application>
   <component name="LLMSettings">
+    <option name="agent_id" value="codex" />
     <option name="chat_forced_llm_per_mode">
       <map>
         <entry key="chat" value="6" />

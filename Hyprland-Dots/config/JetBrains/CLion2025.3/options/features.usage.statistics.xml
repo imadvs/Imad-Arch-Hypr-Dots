@@ -7,7 +7,7 @@
     <feature id="refactoring.changeSignature" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="navigation.popup.symbol" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="switcher" count="0" last-shown="0" last-used="0" shown-count="0" />
-    <feature id="editing.completion.replace" count="30" last-shown="1777929617776" last-used="1774477969451" shown-count="2011" />
+    <feature id="editing.completion.replace" count="30" last-shown="1777982206644" last-used="1774477969451" shown-count="2060" />
     <feature id="codeassists.complete.statement" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="refactoring.inlineTypedef" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="refactoring.introduceConstant" count="0" last-shown="0" last-used="0" shown-count="0" />
@@ -66,9 +66,9 @@
     <feature id="navigation.find.usages" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="editing.clipboard.history" count="5" last-shown="0" last-used="1770729166361" shown-count="0" />
     <feature id="editing.compare.editor.with.clipboard" count="0" last-shown="0" last-used="0" shown-count="0" />
-    <feature id="refactoring.rename" count="51" last-shown="0" last-used="1777118776480" shown-count="0" />
+    <feature id="refactoring.rename" count="52" last-shown="0" last-used="1777982062084" shown-count="0" />
     <feature id="navigation.popup.action" count="5" last-shown="0" last-used="1776204463845" shown-count="0" />
-    <feature id="refactoring.show.quick.list" count="9" last-shown="0" last-used="1777118773081" shown-count="0" />
+    <feature id="refactoring.show.quick.list" count="10" last-shown="0" last-used="1777982059378" shown-count="0" />
     <feature id="db.forget.cached.schemas" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="editing.completion.cancelByControlArrows" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="find.recent.search" count="0" last-shown="0" last-used="0" shown-count="0" />
@@ -87,16 +87,16 @@
     <feature id="refactoring.introduceDefine" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="codeassists.surroundwith.expression" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="codeassists.generate.code" count="0" last-shown="0" last-used="0" shown-count="0" />
-    <feature id="navigation.goto.declaration" count="390" last-shown="0" last-used="1777980994889" shown-count="0" />
+    <feature id="navigation.goto.declaration" count="392" last-shown="0" last-used="1777981970918" shown-count="0" />
     <feature id="editing.completion.finishByDotEtc" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="refactoring.inlineMethod" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="ui.open.project.tool.window" count="14" last-shown="0" last-used="1770729747553" shown-count="0" />
     <feature id="editing.join.lines" count="22" last-shown="0" last-used="1776367660474" shown-count="0" />
     <feature id="debugger.breakpoint.non.suspending" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="editing.completion.finishByCtrlDot" count="0" last-shown="0" last-used="0" shown-count="0" />
-    <feature id="codeassists.context.actions" count="31" last-shown="0" last-used="1777897876678" shown-count="0" />
+    <feature id="codeassists.context.actions" count="32" last-shown="0" last-used="1777982458528" shown-count="0" />
     <feature id="navigation.select.in" count="0" last-shown="0" last-used="0" shown-count="0" />
-    <feature id="ui.tree.speedsearch" count="27" last-shown="0" last-used="1777651083071" shown-count="0" />
+    <feature id="ui.tree.speedsearch" count="28" last-shown="0" last-used="1777981780220" shown-count="0" />
     <feature id="ui.horizontal.scrolling" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="navigation.replace" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="refactoring.inlineMacro" count="0" last-shown="0" last-used="0" shown-count="0" />

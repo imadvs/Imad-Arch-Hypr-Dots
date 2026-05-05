@@ -172,8 +172,12 @@ tooltip {
 	padding-left: 6px;
 }
 
+#temperature.warning {
+    color: #f5a97f;
+}
+
 #temperature.critical {
-    background-color: #ff0000;
+    color: #ed8796;
 }
 
 @keyframes blink {

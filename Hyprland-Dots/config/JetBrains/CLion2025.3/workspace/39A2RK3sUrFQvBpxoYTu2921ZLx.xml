@@ -4634,6 +4634,66 @@
           </option>
           <option name="uid" value="a583e9bc-7054-4785-858b-161aec3b56db" />
         </SerializedChat>
+        <SerializedChat>
+          <option name="chatContext">
+            <SerializedChatContext />
+          </option>
+          <option name="chatModelId" value="chat_mode" />
+          <option name="messages">
+            <list>
+              <SerializedChatMessage>
+                <option name="attachments">
+                  <list>
+                    <SerializedChatAttachment>
+                      <option name="name" value="Console Selection" />
+                      <option name="text" value="_ReadClientInfo" />
+                    </SerializedChatAttachment>
+                    <SerializedChatAttachment>
+                      <option name="url" value="file://$PROJECT_DIR$/include/clsUpdateClientScreen.h" />
+                      <option name="name" value="Information about open file in the editor" />
+                      <option name="text" value="```c/c++&#10;//&#10;// Created by imad on 5/4/26.&#10;//&#10;&#10;#ifndef PROJECT1L4BANKEXTENSION2_CLSUPDATECLIENTSCREEN_H&#10;#define PROJECT1L4BANKEXTENSION2_CLSUPDATECLIENTSCREEN_H&#10;&#10;&#10;#pragma once&#10;#include &lt;iostream&gt;&#10;#include &quot;clsScreen.h&quot;&#10;#include &quot;clsPerson.h&quot;&#10;#include &quot;clsBankClient.h&quot;&#10;#include &quot;clsInputValidate.h&quot;&#10;&#10;class clsUpdateClientScreen :protected clsScreen&#10;&#10;{&#10;private:&#10;    static void _PrintClient(clsBankClient Client)&#10;    {&#10;        cout &lt;&lt; &quot;\nClient Card:&quot;;&#10;        cout &lt;&lt; &quot;\n___________________&quot;;&#10;        cout &lt;&lt; &quot;\nFirstName   : &quot; &lt;&lt; Client.GetFirstName();&#10;        cout &lt;&lt; &quot;\nLastName    : &quot; &lt;&lt; Client.GetLastName();&#10;        cout &lt;&lt; &quot;\nFull Name   : &quot; &lt;&lt; Client.FullName();&#10;        cout &lt;&lt; &quot;\nEmail       : &quot; &lt;&lt; Client.GetEmail();&#10;        cout &lt;&lt; &quot;\nPhone       : &quot; &lt;&lt; Client.GetPhone();&#10;        cout &lt;&lt; &quot;\nAcc. Number : &quot; &lt;&lt; Client.AccountNumber();&#10;        cout &lt;&lt; &quot;\nPassword    : &quot; &lt;&lt; Client.GetPinCode();&#10;        cout &lt;&lt; &quot;\nBalance     : &quot; &lt;&lt; Client.GetAccountBalance();&#10;        cout &lt;&lt; &quot;\n___________________\n&quot;;&#10;&#10;    }&#10;&#10;    static void _ReadClientInfo(clsBankClient&amp; Client)&#10;    {&#10;        cout &lt;&lt; &quot;\nEnter FirstName: &quot;;&#10;        Client.SetFirstName(clsInputValidate::ReadString());&#10;&#10;        cout &lt;&lt; &quot;\nEnter LastName: &quot;;&#10;        Client.SetLastName(clsInputValidate::ReadString());&#10;&#10;        cout &lt;&lt; &quot;\nEnter Email: &quot;;&#10;        Client.SetEmail(clsInputValidate::ReadString());&#10;&#10;        cout &lt;&lt; &quot;\nEnter Phone: &quot;;&#10;        Client.SetPhone(clsInputValidate::ReadString());&#10;&#10;        cout &lt;&lt; &quot;\nEnter PinCode: &quot;;&#10;        Client.SetPinCode(clsInputValidate::ReadString());&#10;&#10;        cout &lt;&lt; &quot;\nEnter Account Balance: &quot;;&#10;        Client.SetAccountBalance(clsInputValidate::ReadFloatNumber());&#10;    }&#10;&#10;public:&#10;    static void ShowUpdateClientScreen()&#10;    {&#10;        _DrawScreenHeader(&quot;\tUpdate Client Screen&quot;);&#10;&#10;        string AccountNumber = &quot;&quot;;&#10;&#10;        cout &lt;&lt; &quot;\nPlease Enter client Account Number: &quot;;&#10;        AccountNumber = clsInputValidate::ReadString();&#10;&#10;        while (!clsBankClient::IsClientExist(AccountNumber))&#10;        {&#10;            cout &lt;&lt; &quot;\nAccount number is not found, choose another one: &quot;;&#10;            AccountNumber = clsInputValidate::ReadString();&#10;        }&#10;&#10;        clsBankClient Client1 = clsBankClient::Find(AccountNumber);&#10;&#10;        _PrintClient(Client1);&#10;&#10;        cout &lt;&lt; &quot;\nAre you sure you want to update this client y/n? &quot;;&#10;&#10;        char Answer = 'n';&#10;        cin &gt;&gt; Answer;&#10;&#10;        if (Answer == 'y' || Answer == 'Y')&#10;        {&#10;            cout &lt;&lt; &quot;\n\nUpdate Client Info:&quot;;&#10;            cout &lt;&lt; &quot;\n____________________\n&quot;;&#10;&#10;            _ReadClientInfo(Client1);&#10;&#10;            clsBankClient::enSaveResults SaveResult;&#10;&#10;            SaveResult = Client1.Save();&#10;&#10;            switch (SaveResult)&#10;            {&#10;            case  clsBankClient::enSaveResults::svSucceeded:&#10;            {&#10;                cout &lt;&lt; &quot;\nAccount Updated Successfully :-)\n&quot;;&#10;&#10;                _PrintClient(Client1);&#10;                break;&#10;            }&#10;            case clsBankClient::enSaveResults::svFaildEmptyObject:&#10;            {&#10;                cout &lt;&lt; &quot;\nError account was not saved because it's Empty&quot;;&#10;                break;&#10;&#10;            }&#10;&#10;            }&#10;&#10;        }&#10;&#10;    }&#10;};&#10;&#10;&#10;&#10;#endif //PROJECT1L4BANKEXTENSION2_CLSUPDATECLIENTSCREEN_H&#10;```" />
+                    </SerializedChatAttachment>
+                  </list>
+                </option>
+                <option name="markupLanguageID" value="ChatInput" />
+                <option name="uid" value="UUID(uuid=9b3666e5-b8a4-4370-a1a9-1461c67ce02a)" />
+                <option name="displayContent" value="Is there any ReadClientInfo in other classes?" />
+                <option name="internalContent" value="Is there any ReadClientInfo in other classes?" />
+              </SerializedChatMessage>
+              <SerializedChatMessage>
+                <option name="author" value="Assistant" />
+                <option name="uid" value="74e7d781-025b-44cc-a47d-b8b503353e4a" />
+                <option name="displayContent" value="Yes — there is another `_ReadClientInfo` in:&#10;&#10;- `include/clsAddNewClientScreen.h`&#10;  - Defined around line **21**&#10;  - Used around line **71**&#10;&#10;The one in your currently open class is in:&#10;&#10;- `include/clsUpdateClientScreen.h`&#10;  - Defined around line **36**&#10;  - Used around line **87**&#10;&#10;So `_ReadClientInfo` exists in **two classes**:&#10;&#10;```cpp&#10;clsUpdateClientScreen&#10;clsAddNewClientScreen&#10;```" />
+                <option name="internalContent" value="Yes — there is another `_ReadClientInfo` in:&#10;&#10;- `include/clsAddNewClientScreen.h`&#10;  - Defined around line **21**&#10;  - Used around line **71**&#10;&#10;The one in your currently open class is in:&#10;&#10;- `include/clsUpdateClientScreen.h`&#10;  - Defined around line **36**&#10;  - Used around line **87**&#10;&#10;So `_ReadClientInfo` exists in **two classes**:&#10;&#10;```cpp&#10;clsUpdateClientScreen&#10;clsAddNewClientScreen&#10;```" />
+              </SerializedChatMessage>
+              <SerializedChatMessage>
+                <option name="markupLanguageID" value="ChatInput" />
+                <option name="uid" value="UUID(uuid=5f9e02d9-7138-43fb-97c6-a83e7a37fad2)" />
+                <option name="displayContent" value="I think we should have one and cll it in both classes." />
+                <option name="internalContent" value="I think we should have one and cll it in both classes." />
+              </SerializedChatMessage>
+              <SerializedChatMessage>
+                <option name="author" value="Assistant" />
+                <option name="uid" value="5d31f3bf-955b-46b2-ac3a-cfeffb47f78d" />
+                <option name="displayContent" value="Yes, you’re absolutely right   &#10;This is duplicate code, so it’s better to keep **one shared function** and call it from both screens.&#10;&#10;A clean option is to create a small helper class, for example:&#10;&#10;```cpp&#10;clsClientHelper&#10;```&#10;&#10;Then put `ReadClientInfo` there and call it from:&#10;&#10;```cpp&#10;clsAddNewClientScreen&#10;clsUpdateClientScreen&#10;```&#10;&#10;## 1. Add a new shared helper file&#10;&#10;Create this new file:&#10;&#10;`include/clsClientHelper.h`&#10;&#10;```cpp&#10;#ifndef PROJECT1L4BANKEXTENSION2_CLSCLIENTHELPER_H&#10;#define PROJECT1L4BANKEXTENSION2_CLSCLIENTHELPER_H&#10;&#10;#pragma once&#10;&#10;#include &lt;iostream&gt;&#10;#include &quot;clsBankClient.h&quot;&#10;#include &quot;clsInputValidate.h&quot;&#10;&#10;using namespace std;&#10;&#10;class clsClientHelper&#10;{&#10;public:&#10;    static void ReadClientInfo(clsBankClient&amp; Client)&#10;    {&#10;        cout &lt;&lt; &quot;\nEnter FirstName: &quot;;&#10;        Client.SetFirstName(clsInputValidate::ReadString());&#10;&#10;        cout &lt;&lt; &quot;\nEnter LastName: &quot;;&#10;        Client.SetLastName(clsInputValidate::ReadString());&#10;&#10;        cout &lt;&lt; &quot;\nEnter Email: &quot;;&#10;        Client.SetEmail(clsInputValidate::ReadString());&#10;&#10;        cout &lt;&lt; &quot;\nEnter Phone: &quot;;&#10;        Client.SetPhone(clsInputValidate::ReadString());&#10;&#10;        cout &lt;&lt; &quot;\nEnter PinCode: &quot;;&#10;        Client.SetPinCode(clsInputValidate::ReadString());&#10;&#10;        cout &lt;&lt; &quot;\nEnter Account Balance: &quot;;&#10;        Client.SetAccountBalance(clsInputValidate::ReadFloatNumber());&#10;    }&#10;};&#10;&#10;#endif //PROJECT1L4BANKEXTENSION2_CLSCLIENTHELPER_H&#10;```&#10;&#10;## 2. Update `clsAddNewClientScreen.h`&#10;&#10;Remove its private `_ReadClientInfo` function, include the helper, then call the shared function.&#10;&#10;&lt;llm-snippet-file&gt;include/clsAddNewClientScreen.h&lt;/llm-snippet-file&gt;&#10;```cpp&#10;// ... existing code ...&#10;#include &lt;iostream&gt;&#10;#include &quot;clsScreen.h&quot;&#10;#include &quot;clsBankClient.h&quot;&#10;#include &quot;clsInputValidate.h&quot;&#10;#include &quot;clsClientHelper.h&quot;&#10;#include &lt;iomanip&gt;&#10;&#10;class clsAddNewClientScreen : protected clsScreen&#10;{&#10;private:&#10;    static void _PrintClient(clsBankClient Client)&#10;    {&#10;        cout &lt;&lt; &quot;\nClient Card:&quot;;&#10;        cout &lt;&lt; &quot;\n___________________&quot;;&#10;// ... existing code ...&#10;        clsBankClient NewClient = clsBankClient::GetAddNewClientObject(AccountNumber);&#10;&#10;&#10;        clsClientHelper::ReadClientInfo(NewClient);&#10;&#10;        clsBankClient::enSaveResults SaveResult;&#10;&#10;        SaveResult = NewClient.Save();&#10;// ... existing code ...&#10;```&#10;&#10;## 3. Update `clsUpdateClientScreen.h`&#10;&#10;Remove its private `ReadClientInfo` function, include the helper, then call the shared function.&#10;&#10;&lt;llm-snippet-file&gt;include/clsUpdateClientScreen.h&lt;/llm-snippet-file&gt;&#10;```cpp&#10;// ... existing code ...&#10;#include &quot;clsScreen.h&quot;&#10;#include &quot;clsPerson.h&quot;&#10;#include &quot;clsBankClient.h&quot;&#10;#include &quot;clsInputValidate.h&quot;&#10;#include &quot;clsClientHelper.h&quot;&#10;&#10;class clsUpdateClientScreen :protected clsScreen&#10;&#10;{&#10;private:&#10;// ... existing code ...&#10;        if (Answer == 'y' || Answer == 'Y')&#10;        {&#10;            cout &lt;&lt; &quot;\n\nUpdate Client Info:&quot;;&#10;            cout &lt;&lt; &quot;\n____________________\n&quot;;&#10;&#10;            clsClientHelper::ReadClientInfo(Client1);&#10;&#10;            clsBankClient::enSaveResults SaveResult;&#10;&#10;            SaveResult = Client1.Save();&#10;// ... existing code ...&#10;```&#10;&#10;After this, both classes use the same function:&#10;&#10;```cpp&#10;clsClientHelper::ReadClientInfo(Client);&#10;```&#10;&#10;Much better: one place to maintain, fewer bugs, and your future self gets a small gift " />
+                <option name="internalContent" value="Yes, you’re absolutely right   &#10;This is duplicate code, so it’s better to keep **one shared function** and call it from both screens.&#10;&#10;A clean option is to create a small helper class, for example:&#10;&#10;```cpp&#10;clsClientHelper&#10;```&#10;&#10;Then put `ReadClientInfo` there and call it from:&#10;&#10;```cpp&#10;clsAddNewClientScreen&#10;clsUpdateClientScreen&#10;```&#10;&#10;## 1. Add a new shared helper file&#10;&#10;Create this new file:&#10;&#10;`include/clsClientHelper.h`&#10;&#10;```cpp&#10;#ifndef PROJECT1L4BANKEXTENSION2_CLSCLIENTHELPER_H&#10;#define PROJECT1L4BANKEXTENSION2_CLSCLIENTHELPER_H&#10;&#10;#pragma once&#10;&#10;#include &lt;iostream&gt;&#10;#include &quot;clsBankClient.h&quot;&#10;#include &quot;clsInputValidate.h&quot;&#10;&#10;using namespace std;&#10;&#10;class clsClientHelper&#10;{&#10;public:&#10;    static void ReadClientInfo(clsBankClient&amp; Client)&#10;    {&#10;        cout &lt;&lt; &quot;\nEnter FirstName: &quot;;&#10;        Client.SetFirstName(clsInputValidate::ReadString());&#10;&#10;        cout &lt;&lt; &quot;\nEnter LastName: &quot;;&#10;        Client.SetLastName(clsInputValidate::ReadString());&#10;&#10;        cout &lt;&lt; &quot;\nEnter Email: &quot;;&#10;        Client.SetEmail(clsInputValidate::ReadString());&#10;&#10;        cout &lt;&lt; &quot;\nEnter Phone: &quot;;&#10;        Client.SetPhone(clsInputValidate::ReadString());&#10;&#10;        cout &lt;&lt; &quot;\nEnter PinCode: &quot;;&#10;        Client.SetPinCode(clsInputValidate::ReadString());&#10;&#10;        cout &lt;&lt; &quot;\nEnter Account Balance: &quot;;&#10;        Client.SetAccountBalance(clsInputValidate::ReadFloatNumber());&#10;    }&#10;};&#10;&#10;#endif //PROJECT1L4BANKEXTENSION2_CLSCLIENTHELPER_H&#10;```&#10;&#10;## 2. Update `clsAddNewClientScreen.h`&#10;&#10;Remove its private `_ReadClientInfo` function, include the helper, then call the shared function.&#10;&#10;&lt;llm-snippet-file&gt;include/clsAddNewClientScreen.h&lt;/llm-snippet-file&gt;&#10;```cpp&#10;// ... existing code ...&#10;#include &lt;iostream&gt;&#10;#include &quot;clsScreen.h&quot;&#10;#include &quot;clsBankClient.h&quot;&#10;#include &quot;clsInputValidate.h&quot;&#10;#include &quot;clsClientHelper.h&quot;&#10;#include &lt;iomanip&gt;&#10;&#10;class clsAddNewClientScreen : protected clsScreen&#10;{&#10;private:&#10;    static void _PrintClient(clsBankClient Client)&#10;    {&#10;        cout &lt;&lt; &quot;\nClient Card:&quot;;&#10;        cout &lt;&lt; &quot;\n___________________&quot;;&#10;// ... existing code ...&#10;        clsBankClient NewClient = clsBankClient::GetAddNewClientObject(AccountNumber);&#10;&#10;&#10;        clsClientHelper::ReadClientInfo(NewClient);&#10;&#10;        clsBankClient::enSaveResults SaveResult;&#10;&#10;        SaveResult = NewClient.Save();&#10;// ... existing code ...&#10;```&#10;&#10;## 3. Update `clsUpdateClientScreen.h`&#10;&#10;Remove its private `ReadClientInfo` function, include the helper, then call the shared function.&#10;&#10;&lt;llm-snippet-file&gt;include/clsUpdateClientScreen.h&lt;/llm-snippet-file&gt;&#10;```cpp&#10;// ... existing code ...&#10;#include &quot;clsScreen.h&quot;&#10;#include &quot;clsPerson.h&quot;&#10;#include &quot;clsBankClient.h&quot;&#10;#include &quot;clsInputValidate.h&quot;&#10;#include &quot;clsClientHelper.h&quot;&#10;&#10;class clsUpdateClientScreen :protected clsScreen&#10;&#10;{&#10;private:&#10;// ... existing code ...&#10;        if (Answer == 'y' || Answer == 'Y')&#10;        {&#10;            cout &lt;&lt; &quot;\n\nUpdate Client Info:&quot;;&#10;            cout &lt;&lt; &quot;\n____________________\n&quot;;&#10;&#10;            clsClientHelper::ReadClientInfo(Client1);&#10;&#10;            clsBankClient::enSaveResults SaveResult;&#10;&#10;            SaveResult = Client1.Save();&#10;// ... existing code ...&#10;```&#10;&#10;After this, both classes use the same function:&#10;&#10;```cpp&#10;clsClientHelper::ReadClientInfo(Client);&#10;```&#10;&#10;Much better: one place to maintain, fewer bugs, and your future self gets a small gift " />
+              </SerializedChatMessage>
+            </list>
+          </option>
+          <option name="modifiedAt" value="1777982228127" />
+          <option name="statisticInformation">
+            <ChatStatisticInformation>
+              <option name="sourceActionType" value="NEW_CHAT_ON_START" />
+            </ChatStatisticInformation>
+          </option>
+          <option name="title">
+            <SerializedChatTitle>
+              <option name="custom" value="true" />
+              <option name="text" value="ReadClientInfo in Multiple Classes Inquiry" />
+            </SerializedChatTitle>
+          </option>
+          <option name="uid" value="54166bc1-9816-4545-8267-2d9baf377f7c" />
+        </SerializedChat>
       </list>
     </option>
   </component>
@@ -4656,8 +4716,10 @@
       <file>
         <entry file="file://$PROJECT_DIR$/include/clsAddNewClientScreen.h" file-id="43639" managing-fs="1770122711113">
           <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="-18">
-              <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+            <state relative-caret-position="-192">
+              <folding>
+                <marker date="1777890497698" expanded="true" signature="0:35" ph="//..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -4699,17 +4761,12 @@
       <file current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/include/clsUpdateClientScreen.h" file-id="45826" managing-fs="1770122711113">
           <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="344">
-              <caret line="74" column="10" selection-start-line="74" selection-start-column="10" selection-end-line="74" selection-end-column="10" />
+            <state relative-caret-position="264">
+              <caret line="86" column="26" selection-start-line="86" selection-start-column="26" selection-end-line="86" selection-end-column="26" />
               <folding>
-                <marker date="1777980798005" expanded="true" signature="0:35" ph="//..." />
-                <marker date="1777980798005" expanded="true" signature="166:288" ph="##include ..." />
-                <marker date="1777980798005" expanded="false" signature="401:1011" ph="{...}" />
-                <marker date="1777980798005" expanded="false" signature="1066:1677" ph="{...}" />
-                <marker date="1777980798005" expanded="false" signature="2423:3148" ph="{...}" />
-                <marker date="1777980798005" expanded="false" signature="2697:3137" ph="{...}" />
-                <marker date="1777980798005" expanded="false" signature="2772:2927" ph="{...}" />
-                <marker date="1777980798005" expanded="false" signature="2994:3122" ph="{...}" />
+                <marker date="1777982692300" expanded="true" signature="0:35" ph="//..." />
+                <marker date="1777982692300" expanded="true" signature="166:288" ph="##include ..." />
+                <marker date="1777982692300" expanded="false" signature="401:1011" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -4733,10 +4790,6 @@
           <provider editor-type-id="text-editor" selected="true">
             <state relative-caret-position="392">
               <caret line="24" selection-start-line="24" selection-end-line="24" />
-              <folding>
-                <marker date="1777929680112" expanded="true" signature="0:35" ph="//..." />
-                <marker date="1777929680112" expanded="true" signature="167:289" ph="##include ..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -4745,8 +4798,8 @@
       <file>
         <entry file="file://$PROJECT_DIR$/include/clsBankClient.h" file-id="43328" managing-fs="1770122711113">
           <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="306">
-              <caret line="280" column="16" selection-start-line="280" selection-start-column="16" selection-end-line="280" selection-end-column="16" />
+            <state relative-caret-position="240">
+              <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -4765,8 +4818,35 @@
       <file>
         <entry file="file://$PROJECT_DIR$/include/clsInputValidate.h" file-id="43309" managing-fs="1770122711113">
           <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="1968">
-              <caret line="82" column="8" selection-start-line="82" selection-start-column="8" selection-end-line="82" selection-end-column="8" />
+            <state relative-caret-position="264">
+              <caret line="24" column="26" lean-forward="true" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+              <folding>
+                <marker date="1777467039024" expanded="true" signature="0:36" ph="//..." />
+                <marker date="1777467039024" expanded="true" signature="142:180" ph="##include ..." />
+                <marker date="1777467039024" expanded="false" signature="474:570" ph="{...}" />
+                <marker date="1777467039024" expanded="false" signature="815:910" ph="{...}" />
+                <marker date="1777467039024" expanded="false" signature="980:1601" ph="{...}" />
+                <marker date="1777467039024" expanded="false" signature="1233:1278" ph="{...}" />
+                <marker date="1777467039024" expanded="false" signature="1527:1572" ph="{...}" />
+                <marker date="1777467039024" expanded="false" signature="1690:1916" ph="{...}" />
+                <marker date="1777467039024" expanded="false" signature="1751:1887" ph="{...}" />
+                <marker date="1777467039024" expanded="false" signature="1998:2223" ph="{...}" />
+                <marker date="1777467039024" expanded="false" signature="2057:2194" ph="{...}" />
+                <marker date="1777467039024" expanded="false" signature="2353:2574" ph="{...}" />
+                <marker date="1777467039024" expanded="false" signature="2451:2545" ph="{...}" />
+                <marker date="1777467039024" expanded="false" signature="2694:2907" ph="{...}" />
+                <marker date="1777467039024" expanded="false" signature="2786:2878" ph="{...}" />
+                <marker date="1777467039024" expanded="false" signature="2995:3221" ph="{...}" />
+                <marker date="1777467039024" expanded="false" signature="3056:3192" ph="{...}" />
+                <marker date="1777467039024" expanded="false" signature="3351:3566" ph="{...}" />
+                <marker date="1777467039024" expanded="false" signature="3451:3537" ph="{...}" />
+                <marker date="1777467039024" expanded="false" signature="3653:3880" ph="{...}" />
+                <marker date="1777467039024" expanded="false" signature="3715:3851" ph="{...}" />
+                <marker date="1777467039024" expanded="false" signature="4011:4223" ph="{...}" />
+                <marker date="1777467039024" expanded="false" signature="4110:4194" ph="{...}" />
+                <marker date="1777467039024" expanded="false" signature="4267:4322" ph="{...}" />
+                <marker date="1777467039024" expanded="false" signature="4354:4509" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -4775,8 +4855,8 @@
       <file>
         <entry file="file://$PROJECT_DIR$/include/clsUtil.h" file-id="43139" managing-fs="1770122711113">
           <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="6120">
-              <caret line="255" column="41" selection-start-line="255" selection-start-column="41" selection-end-line="255" selection-end-column="41" />
+            <state relative-caret-position="-1607">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
         </entry>
@@ -4884,7 +4964,6 @@
     "/home/imad/Documents/Project 2 L4 - ATM System/src/main.cpp",
     "/home/imad/Documents/Project 2 L4 - ATM System/include/clsDate.h",
     "/home/imad/Documents/Project1 - Utility library/include/clsString.h",
-    "/home/imad/Documents/Project1 - Utility library/include/clsUtil.h",
     "/home/imad/Documents/Project1 - Utility library/include/clsScreen.h",
     "/home/imad/Documents/Project1 - Utility library/include/clsInputValidate.h",
     "/home/imad/Documents/Project1 - Utility library/include/clsBankClient.h",
@@ -4895,7 +4974,8 @@
     "/home/imad/Documents/Project1 - Utility library/CMakeLists.txt",
     "/home/imad/Documents/Project1 - Utility library/include/clsMainScreen.h",
     "/home/imad/Documents/Project1 - Utility library/include/clsDeleteClientScreen.h",
-    "/home/imad/Documents/Project1 - Utility library/include/clsUpdateClientScreen.h"
+    "/home/imad/Documents/Project1 - Utility library/include/clsUpdateClientScreen.h",
+    "/home/imad/Documents/Project1 - Utility library/include/clsUtil.h"
   ]
 }]]></component>
   <component name="IgnoredFileRootStore">
@@ -5428,7 +5508,7 @@
     </option>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="465448000" />
+    <option name="totallyTimeSpent" value="467437000" />
   </component>
   <component name="TodoView">
     <todo-panel id="all">
@@ -5454,7 +5534,7 @@
       <window_info anchor="bottom" id="PythonProcessOutput" order="10" weight="0.37726244" />
       <window_info anchor="bottom" id="TODO" order="11" weight="0.37726244" />
       <window_info anchor="right" id="Notifications" order="0" weight="0.2728125" />
-      <window_info anchor="right" id="AIAssistant" order="1" sideWeight="0.5006158" weight="0.2869318" />
+      <window_info active="true" anchor="right" id="AIAssistant" order="1" sideWeight="0.5006158" visible="true" weight="0.2869318" />
       <window_info anchor="right" id="Database" order="2" weight="0.27304292" />
       <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
       <window_info anchor="right" id="Maven" order="4" weight="0.25" />
@@ -5662,20 +5742,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/clsInputValidate.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1968">
-          <caret line="82" column="8" selection-start-line="82" selection-start-column="8" selection-end-line="82" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/clsUtil.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6120">
-          <caret line="255" column="41" selection-start-line="255" selection-start-column="41" selection-end-line="255" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/include/clsPerson.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1824">
@@ -5714,21 +5780,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/clsAddNewClientScreen.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-18">
-          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/include/clsDeleteClientScreen.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="392">
           <caret line="24" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <marker date="1777929680112" expanded="true" signature="0:35" ph="//..." />
-            <marker date="1777929680112" expanded="true" signature="167:289" ph="##include ..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -5760,24 +5815,69 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/include/clsBankClient.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="280" column="16" selection-start-line="280" selection-start-column="16" selection-end-line="280" selection-end-column="16" />
+        <state relative-caret-position="240">
+          <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/clsUtil.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1607">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/clsInputValidate.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="24" column="26" lean-forward="true" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+          <folding>
+            <marker date="1777467039024" expanded="true" signature="0:36" ph="//..." />
+            <marker date="1777467039024" expanded="true" signature="142:180" ph="##include ..." />
+            <marker date="1777467039024" expanded="false" signature="474:570" ph="{...}" />
+            <marker date="1777467039024" expanded="false" signature="815:910" ph="{...}" />
+            <marker date="1777467039024" expanded="false" signature="980:1601" ph="{...}" />
+            <marker date="1777467039024" expanded="false" signature="1233:1278" ph="{...}" />
+            <marker date="1777467039024" expanded="false" signature="1527:1572" ph="{...}" />
+            <marker date="1777467039024" expanded="false" signature="1690:1916" ph="{...}" />
+            <marker date="1777467039024" expanded="false" signature="1751:1887" ph="{...}" />
+            <marker date="1777467039024" expanded="false" signature="1998:2223" ph="{...}" />
+            <marker date="1777467039024" expanded="false" signature="2057:2194" ph="{...}" />
+            <marker date="1777467039024" expanded="false" signature="2353:2574" ph="{...}" />
+            <marker date="1777467039024" expanded="false" signature="2451:2545" ph="{...}" />
+            <marker date="1777467039024" expanded="false" signature="2694:2907" ph="{...}" />
+            <marker date="1777467039024" expanded="false" signature="2786:2878" ph="{...}" />
+            <marker date="1777467039024" expanded="false" signature="2995:3221" ph="{...}" />
+            <marker date="1777467039024" expanded="false" signature="3056:3192" ph="{...}" />
+            <marker date="1777467039024" expanded="false" signature="3351:3566" ph="{...}" />
+            <marker date="1777467039024" expanded="false" signature="3451:3537" ph="{...}" />
+            <marker date="1777467039024" expanded="false" signature="3653:3880" ph="{...}" />
+            <marker date="1777467039024" expanded="false" signature="3715:3851" ph="{...}" />
+            <marker date="1777467039024" expanded="false" signature="4011:4223" ph="{...}" />
+            <marker date="1777467039024" expanded="false" signature="4110:4194" ph="{...}" />
+            <marker date="1777467039024" expanded="false" signature="4267:4322" ph="{...}" />
+            <marker date="1777467039024" expanded="false" signature="4354:4509" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/clsAddNewClientScreen.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-192">
+          <folding>
+            <marker date="1777890497698" expanded="true" signature="0:35" ph="//..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/include/clsUpdateClientScreen.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="74" column="10" selection-start-line="74" selection-start-column="10" selection-end-line="74" selection-end-column="10" />
+        <state relative-caret-position="264">
+          <caret line="86" column="26" selection-start-line="86" selection-start-column="26" selection-end-line="86" selection-end-column="26" />
           <folding>
-            <marker date="1777980798005" expanded="true" signature="0:35" ph="//..." />
-            <marker date="1777980798005" expanded="true" signature="166:288" ph="##include ..." />
-            <marker date="1777980798005" expanded="false" signature="401:1011" ph="{...}" />
-            <marker date="1777980798005" expanded="false" signature="1066:1677" ph="{...}" />
-            <marker date="1777980798005" expanded="false" signature="2423:3148" ph="{...}" />
-            <marker date="1777980798005" expanded="false" signature="2697:3137" ph="{...}" />
-            <marker date="1777980798005" expanded="false" signature="2772:2927" ph="{...}" />
-            <marker date="1777980798005" expanded="false" signature="2994:3122" ph="{...}" />
+            <marker date="1777982692300" expanded="true" signature="0:35" ph="//..." />
+            <marker date="1777982692300" expanded="true" signature="166:288" ph="##include ..." />
+            <marker date="1777982692300" expanded="false" signature="401:1011" ph="{...}" />
           </folding>
         </state>
       </provider>

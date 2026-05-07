@@ -61,29 +61,52 @@ toggle_play_pause() {
 stop_playback() {
   mpc stop
   $PCTL stop 2>/dev/null
-  notify-send -e -u low -i $music_icon " Playback:" " Stopped"
+  notify-send -e -h string:x-canonical-private-synchronous:music_notif -h boolean:SWAYNC_BYPASS_DND:true -u low "󰓛  Playback:" " Stopped"
+}
+
+# Get playback progress
+get_progress() {
+  local target=$(get_state)
+  if [ "$target" = "mpd" ]; then
+    mpc status | grep -oP '\(\d+%\)' | tr -d '()%'
+  else
+    local pos=$($PCTL metadata --format "{{position}}" 2>/dev/null)
+    local len=$($PCTL metadata --format "{{mpris:length}}" 2>/dev/null)
+    if [ -n "$pos" ] && [ -n "$len" ] && [ "$len" -gt 0 ]; then
+      echo $(( pos * 100 / len ))
+    else
+      echo 0
+    fi
+  fi
 }
 
 # Notification logic
 show_music_notification() {
   local target=$(get_state)
+  local progress=$(get_progress)
+  local icon="󰎆"
+  local pause_icon="󰏤"
+  local sync_hint="-h string:x-canonical-private-synchronous:music_notif"
+  local bypass_hint="-h boolean:SWAYNC_BYPASS_DND:true"
+  local value_hint="-h int:value:$progress"
+
   if [ "$target" = "mpd" ]; then
     status=$(mpc status | grep -o '\[playing\]' || echo "Paused")
+    song_title=$(mpc -f %title% current)
+    song_artist=$(mpc -f %artist% current)
     if [[ "$status" == "[playing]" ]]; then
-      song_title=$(mpc -f %title% current)
-      song_artist=$(mpc -f %artist% current)
-      notify-send -e -u low -i $music_icon "MPD Playing:" "$song_title by $song_artist"
+      notify-send -e $sync_hint $value_hint $bypass_hint -u low "$icon  Playing: $song_title" "$song_artist"
     else
-      notify-send -e -u low -i $music_icon "MPD:" "Paused"
+      notify-send -e $sync_hint $value_hint $bypass_hint -u low "$pause_icon  Paused: $song_title" "$song_artist"
     fi
   else
     status=$($PCTL status 2>/dev/null)
+    song_title=$($PCTL metadata title 2>/dev/null)
+    song_artist=$($PCTL metadata artist 2>/dev/null)
     if [[ "$status" == "Playing" ]]; then
-      song_title=$($PCTL metadata title)
-      song_artist=$($PCTL metadata artist)
-      notify-send -e -u low -i $music_icon "Browser Playing:" "$song_title by $song_artist"
+      notify-send -e $sync_hint $value_hint $bypass_hint -u low "$icon  Playing: $song_title" "$song_artist"
     elif [[ "$status" == "Paused" ]]; then
-      notify-send -e -u low -i $music_icon "Browser:" "Paused"
+      notify-send -e $sync_hint $value_hint $bypass_hint -u low "$pause_icon  Paused: $song_title" "$song_artist"
     fi
   fi
 }

@@ -29,6 +29,12 @@ check_root() {
 is_blocking_active() {
   [ ! -f "$CONFIG_FILE" ] && return 1
 
+  # Sunday is completely free
+  local current_day=$(LC_TIME=en_US.UTF-8 date +%a)
+  if [ "$current_day" = "Sun" ]; then
+    return 1
+  fi
+
   while IFS='|' read -r site start_time end_time days; do
     [[ "$site" =~ ^#.*$ ]] || [[ -z "$site" ]] && continue
 
@@ -175,9 +181,15 @@ is_time_in_range() {
 is_day_match() {
   local days="$1"
   # Force English locale for day names
-  local current_day=$(LC_TIME=en_US.UTF-8 date +%a | tr '[:upper:]' '[:lower:]')
+  local current_day_short=$(LC_TIME=en_US.UTF-8 date +%a | tr '[:upper:]' '[:lower:]')
+  local current_day_full=$(LC_TIME=en_US.UTF-8 date +%a)
 
-  [[ "$days" == "all" ]] || [[ "$days" =~ $current_day ]]
+  # Sunday is completely free
+  if [ "$current_day_full" = "Sun" ]; then
+    return 1
+  fi
+
+  [[ "$days" == "all" ]] || [[ "$days" =~ $current_day_short ]]
 }
 
 block_site() {
@@ -370,14 +382,7 @@ emergency_disable() {
 }
 
 pause_blocker() {
-  local hours="$1"
-
-  if [ -z "$hours" ]; then
-    echo -e "${RED}Error: Please specify number of hours${NC}"
-    echo "Usage: sudo $0 pause <hours>"
-    echo "Example: sudo $0 pause 3"
-    exit 1
-  fi
+  local hours="${1:-3}" # Default to 3 hours if not specified
 
   # Validate hours is a number
   if ! [[ "$hours" =~ ^[0-9]+$ ]]; then
@@ -435,6 +440,8 @@ ${YELLOW}Scheduling:${NC}
 ${YELLOW}Manual Control:${NC}
   block <site>    Manually block a site (requires sudo)
   unblock <site>  Manually unblock a site (blocked during scheduled blocks)
+  pause [hours]   Pause blocker (defaults to 3 hours, requires sudo)
+  resume          Resume blocker early (requires sudo)
   
 ${YELLOW}Emergency:${NC}
   emergency       Emergency disable (use only if absolutely necessary)

@@ -47,14 +47,14 @@ if [[ "$state" == "on" ]]; then
       sleep 0.3 && pkill -x hyprsunset || true
     fi
     echo off > "$STATE_FILE"
-    notify-send -u low "Hyprsunset: Disabled" || true
+    notify-send -e -h string:x-canonical-private-synchronous:sunset_notif -u low "󰖙  Hyprsunset:" "Disabled" || true
   else
     # Turning ON: start hyprsunset at target temp in background
     if command -v hyprsunset >/dev/null 2>&1; then
       nohup hyprsunset >/dev/null 2>&1 &
     fi
     echo on > "$STATE_FILE"
-    notify-send -u low "Hyprsunset: Enabled" "${TARGET_TEMP}K" || true
+    notify-send -e -h string:x-canonical-private-synchronous:sunset_notif -u low "󰖔  Hyprsunset:" "Enabled (${TARGET_TEMP}K)" || true
   fi
 }
 

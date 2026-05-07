@@ -36,12 +36,14 @@
         <entry key="44df65c6-53c8-4d40-94eb-54e3b92882e7" value="false" />
         <entry key="48095878-7ac8-45f8-be64-e265254725cc" value="false" />
         <entry key="4bc8d75e-a38b-40a5-9187-c51a91b57b8e" value="false" />
+        <entry key="4ecf5b18-856d-4559-af90-94952883632c" value="false" />
         <entry key="54166bc1-9816-4545-8267-2d9baf377f7c" value="false" />
         <entry key="5431cd0d-70c4-497f-998a-1f8ccc00e5a6" value="false" />
         <entry key="54d691b1-f170-4412-954a-f6ea7edb6999" value="false" />
         <entry key="552b9fae-10f8-4a72-b570-c00b2d40e38a" value="false" />
         <entry key="55667997-c0e1-4f72-940c-5c9c2cb1b6d5" value="false" />
         <entry key="57cdc852-2296-4816-8be0-38b4c4704520" value="false" />
+        <entry key="583f1a41-9dbd-46bb-9d69-56d0ea879caa" value="false" />
         <entry key="59dc3418-01be-4e36-805b-110942728094" value="false" />
         <entry key="5ced5f69-93f9-40bf-8316-1ea792038522" value="false" />
         <entry key="5e148371-ff3b-4765-97ef-bb9090e1d990" value="false" />
@@ -52,6 +54,8 @@
         <entry key="70157d71-c6c7-4e64-b669-d34595e2783b" value="false" />
         <entry key="721a139f-6969-4a4b-8219-6c308594f488" value="false" />
         <entry key="72ea6084-b215-4366-b6a1-b66ee31c1b6c" value="false" />
+        <entry key="74128f31-b9cb-44a4-a75c-5fe18d3662b7" value="false" />
+        <entry key="75bc4afb-1650-4a99-81ce-c200831995a3" value="false" />
         <entry key="77e1175d-78d0-4908-a5be-b3b4290d8828" value="false" />
         <entry key="7aadfe54-7658-40a3-9959-5a390f233ba1" value="false" />
         <entry key="7bb174fb-c888-47ad-955f-1ac9d25d562d" value="false" />
@@ -129,6 +133,7 @@
         <entry key="d9ded76b-21f3-4fa5-8517-bd1904c8dd3b" value="false" />
         <entry key="da9fb45f-e0ff-4489-8e56-d2d0eb1963ff" value="false" />
         <entry key="db10343f-3e80-4d40-9545-d4f318d11732" value="false" />
+        <entry key="db3e1ecf-41b3-4ee3-959d-381be146884e" value="false" />
         <entry key="dbdbb2b6-23ad-4b92-a807-397122b11a52" value="false" />
         <entry key="dc256c97-74f0-4a52-9575-15db58a26b33" value="false" />
         <entry key="dd64ffe0-5a18-480e-bc60-1b779f5a0f6a" value="false" />
@@ -151,6 +156,7 @@
         <entry key="f7623557-2a9a-458e-98d6-7a6c9408047a" value="false" />
         <entry key="fba7af34-a3e8-404a-8754-c52e32807bfd" value="false" />
         <entry key="fd4bd021-ac5b-418f-a4a3-fcfe54ea699a" value="false" />
+        <entry key="fe4805ab-25f7-40e0-a269-424426fbf85b" value="false" />
       </map>
     </option>
   </component>
@@ -4025,7 +4031,7 @@
           <option name="chatContext">
             <SerializedChatContext />
           </option>
-          <option name="chatModelId" value="chat_mode" />
+          <option name="chatModelId" value="agent_acp.registry.claude-acp" />
           <option name="messages">
             <list>
               <SerializedChatMessage>
@@ -4684,6 +4690,7 @@
           <option name="statisticInformation">
             <ChatStatisticInformation>
               <option name="sourceActionType" value="NEW_CHAT_ON_START" />
+              <option name="timestamp" value="1777982228127" />
             </ChatStatisticInformation>
           </option>
           <option name="title">
@@ -4694,6 +4701,314 @@
           </option>
           <option name="uid" value="54166bc1-9816-4545-8267-2d9baf377f7c" />
         </SerializedChat>
+        <SerializedChat>
+          <option name="chatContext">
+            <SerializedChatContext />
+          </option>
+          <option name="chatModelId" value="chat_mode" />
+          <option name="messages">
+            <list>
+              <SerializedChatMessage>
+                <option name="attachments">
+                  <list>
+                    <SerializedChatAttachment>
+                      <option name="name" value="Console Selection" />
+                      <option name="text" value="        clsBankClient Client1 = clsBankClient::Find(AccountNumber);&#10;" />
+                    </SerializedChatAttachment>
+                    <SerializedChatAttachment>
+                      <option name="name" value="Project View" />
+                      <option name="text" value="Project View content:&#10;```&#10;Project1 - Utility library&#10; build&#10; cmake-build-debug&#10; Data&#10;  Clients.text&#10; include&#10;  clsAddNewClientScreen.h&#10;  clsBankClient.h&#10;  clsClientListScreen.h&#10;  clsDate.h&#10;  clsDeleteClientScreen.h&#10;  clsFindClientScreen.h&#10;  clsInputValidate.h&#10;  clsMainScreen.h&#10;  clsPeriod.h&#10;  clsPerson.h&#10;  clsScreen.h&#10;  clsString.h&#10;  clsUpdateClientScreen.h&#10;  clsUtil.h&#10; src&#10;  main.cpp&#10; .gitattributes&#10; .gitignore&#10; CMakeLists.txt&#10;External Libraries&#10;Scratches and Consoles&#10;```" />
+                    </SerializedChatAttachment>
+                    <SerializedChatAttachment>
+                      <option name="url" value="file://$PROJECT_DIR$/include/clsFindClientScreen.h" />
+                      <option name="name" value="Information about open file in the editor" />
+                      <option name="text" value="```c/c++&#10;//&#10;// Created by imad on 5/6/26.&#10;//&#10;&#10;#ifndef PROJECT1L4BANKEXTENSION2_CLSFINDCLIENTSCREEN_H&#10;#define PROJECT1L4BANKEXTENSION2_CLSFINDCLIENTSCREEN_H&#10;&#10;&#10;#pragma once&#10;#include &lt;iostream&gt;&#10;#include &quot;clsScreen.h&quot;&#10;#include &quot;clsPerson.h&quot;&#10;#include &quot;clsBankClient.h&quot;&#10;#include &quot;clsInputValidate.h&quot;&#10;&#10;class clsFindClientScreen :protected clsScreen&#10;{&#10;&#10;private :&#10;    static void _PrintClient(clsBankClient Client)&#10;    {&#10;        cout &lt;&lt; &quot;\nClient Card:&quot;;&#10;        cout &lt;&lt; &quot;\n___________________&quot;;&#10;        cout &lt;&lt; &quot;\nFirstName   : &quot; &lt;&lt; Client.GetFirstName();&#10;        cout &lt;&lt; &quot;\nLastName    : &quot; &lt;&lt; Client.GetLastName();&#10;        cout &lt;&lt; &quot;\nFull Name   : &quot; &lt;&lt; Client.FullName();&#10;        cout &lt;&lt; &quot;\nEmail       : &quot; &lt;&lt; Client.GetEmail();&#10;        cout &lt;&lt; &quot;\nPhone       : &quot; &lt;&lt; Client.GetPhone();&#10;        cout &lt;&lt; &quot;\nAcc. Number : &quot; &lt;&lt; Client.AccountNumber();&#10;        cout &lt;&lt; &quot;\nPassword    : &quot; &lt;&lt; Client.GetPinCode();&#10;        cout &lt;&lt; &quot;\nBalance     : &quot; &lt;&lt; Client.GetAccountBalance();&#10;        cout &lt;&lt; &quot;\n___________________\n&quot;;&#10;    }&#10;&#10;public:&#10;&#10;    static void ShowFindClientScreen()&#10;    {&#10;        _DrawScreenHeader(&quot;\tFind Client Screen&quot;);&#10;&#10;        string AccountNumber;&#10;        cout &lt;&lt; &quot;\nPlease Enter Account Number: &quot;;&#10;        AccountNumber = clsInputValidate::ReadString();&#10;        while (!clsBankClient::IsClientExist(AccountNumber))&#10;        {&#10;            cout &lt;&lt; &quot;\nAccount number is not found, choose another one: &quot;;&#10;            AccountNumber = clsInputValidate::ReadString();&#10;        }&#10;&#10;        clsBankClient Client1 = clsBankClient::Find(AccountNumber);&#10;&#10;        if (!Client1.IsEmpty())&#10;        {&#10;            cout &lt;&lt; &quot;\nClient Found :-)\n&quot;;&#10;        }&#10;        else&#10;        {&#10;            cout &lt;&lt; &quot;\nClient Was not Found :-(\n&quot;;&#10;        }&#10;        _PrintClient(Client1);&#10;    }&#10;};&#10;&#10;&#10;&#10;#endif //PROJECT1L4BANKEXTENSION2_CLSFINDCLIENTSCREEN_H&#10;```" />
+                    </SerializedChatAttachment>
+                  </list>
+                </option>
+                <option name="markupLanguageID" value="ChatInput" />
+                <option name="uid" value="UUID(uuid=31bdbd1e-7be8-4244-8b23-d7ebba86c087)" />
+                <option name="displayContent" value="Why we need to use this if we do IsClientExist first?" />
+                <option name="internalContent" value="Why we need to use this if we do IsClientExist first?" />
+              </SerializedChatMessage>
+              <SerializedChatMessage>
+                <option name="author" value="Assistant" />
+                <option name="uid" value="c7df69d3-a84d-49be-a82c-3e38315ce536" />
+                <option name="displayContent" value="Because `IsClientExist(AccountNumber)` only answers **yes/no**.&#10;&#10;After the loop finishes, you know:&#10;&#10;&gt; “There is a client with this account number.”&#10;&#10;But you still don’t have the actual client object yet.&#10;&#10;So this line:&#10;&#10;```cpp&#10;clsBankClient Client1 = clsBankClient::Find(AccountNumber);&#10;```&#10;&#10;is used to **load/get the full client data**: first name, last name, email, phone, balance, PIN code, etc.&#10;&#10;Think of it like this:&#10;&#10;```cpp&#10;if (fileExists(&quot;client.txt&quot;))&#10;{&#10;    // Good, it exists.&#10;    // But we still need to open/read it to get the data.&#10;}&#10;```&#10;&#10;Same idea:&#10;&#10;```cpp&#10;IsClientExist(AccountNumber); // checks if the client exists&#10;Find(AccountNumber);          // returns the client object/data&#10;```&#10;&#10;However, in your current logic, this part becomes mostly unnecessary:&#10;&#10;```cpp&#10;if (!Client1.IsEmpty())&#10;{&#10;    cout &lt;&lt; &quot;\nClient Found :-)\n&quot;;&#10;}&#10;else&#10;{&#10;    cout &lt;&lt; &quot;\nClient Was not Found :-(\n&quot;;&#10;}&#10;```&#10;&#10;Because the `while` loop already guarantees the account number exists before calling `Find`.&#10;&#10;So you could simplify it to:&#10;&#10;```cpp&#10;clsBankClient Client1 = clsBankClient::Find(AccountNumber);&#10;&#10;cout &lt;&lt; &quot;\nClient Found :-)\n&quot;;&#10;_PrintClient(Client1);&#10;```&#10;&#10;Unless there is a chance that the data changes between `IsClientExist` and `Find`, the `IsEmpty()` check is redundant here.&#10;&#10;A better design could be to call `Find` directly and check `IsEmpty()`, avoiding searching twice:&#10;&#10;```cpp&#10;clsBankClient Client1 = clsBankClient::Find(AccountNumber);&#10;&#10;while (Client1.IsEmpty())&#10;{&#10;    cout &lt;&lt; &quot;\nAccount number is not found, choose another one: &quot;;&#10;    AccountNumber = clsInputValidate::ReadString();&#10;    Client1 = clsBankClient::Find(AccountNumber);&#10;}&#10;&#10;cout &lt;&lt; &quot;\nClient Found :-)\n&quot;;&#10;_PrintClient(Client1);&#10;```&#10;&#10;That way, you use `Find` both to check existence **and** get the client data in one step." />
+                <option name="internalContent" value="Because `IsClientExist(AccountNumber)` only answers **yes/no**.&#10;&#10;After the loop finishes, you know:&#10;&#10;&gt; “There is a client with this account number.”&#10;&#10;But you still don’t have the actual client object yet.&#10;&#10;So this line:&#10;&#10;```cpp&#10;clsBankClient Client1 = clsBankClient::Find(AccountNumber);&#10;```&#10;&#10;is used to **load/get the full client data**: first name, last name, email, phone, balance, PIN code, etc.&#10;&#10;Think of it like this:&#10;&#10;```cpp&#10;if (fileExists(&quot;client.txt&quot;))&#10;{&#10;    // Good, it exists.&#10;    // But we still need to open/read it to get the data.&#10;}&#10;```&#10;&#10;Same idea:&#10;&#10;```cpp&#10;IsClientExist(AccountNumber); // checks if the client exists&#10;Find(AccountNumber);          // returns the client object/data&#10;```&#10;&#10;However, in your current logic, this part becomes mostly unnecessary:&#10;&#10;```cpp&#10;if (!Client1.IsEmpty())&#10;{&#10;    cout &lt;&lt; &quot;\nClient Found :-)\n&quot;;&#10;}&#10;else&#10;{&#10;    cout &lt;&lt; &quot;\nClient Was not Found :-(\n&quot;;&#10;}&#10;```&#10;&#10;Because the `while` loop already guarantees the account number exists before calling `Find`.&#10;&#10;So you could simplify it to:&#10;&#10;```cpp&#10;clsBankClient Client1 = clsBankClient::Find(AccountNumber);&#10;&#10;cout &lt;&lt; &quot;\nClient Found :-)\n&quot;;&#10;_PrintClient(Client1);&#10;```&#10;&#10;Unless there is a chance that the data changes between `IsClientExist` and `Find`, the `IsEmpty()` check is redundant here.&#10;&#10;A better design could be to call `Find` directly and check `IsEmpty()`, avoiding searching twice:&#10;&#10;```cpp&#10;clsBankClient Client1 = clsBankClient::Find(AccountNumber);&#10;&#10;while (Client1.IsEmpty())&#10;{&#10;    cout &lt;&lt; &quot;\nAccount number is not found, choose another one: &quot;;&#10;    AccountNumber = clsInputValidate::ReadString();&#10;    Client1 = clsBankClient::Find(AccountNumber);&#10;}&#10;&#10;cout &lt;&lt; &quot;\nClient Found :-)\n&quot;;&#10;_PrintClient(Client1);&#10;```&#10;&#10;That way, you use `Find` both to check existence **and** get the client data in one step." />
+              </SerializedChatMessage>
+            </list>
+          </option>
+          <option name="modifiedAt" value="1778091677874" />
+          <option name="statisticInformation">
+            <ChatStatisticInformation>
+              <option name="sourceActionType" value="NEW_CHAT" />
+              <option name="timestamp" value="1778091677874" />
+            </ChatStatisticInformation>
+          </option>
+          <option name="title">
+            <SerializedChatTitle>
+              <option name="custom" value="true" />
+              <option name="text" value="Client Existence Check and Data Retrieval" />
+            </SerializedChatTitle>
+          </option>
+          <option name="uid" value="583f1a41-9dbd-46bb-9d69-56d0ea879caa" />
+        </SerializedChat>
+        <SerializedChat>
+          <option name="chatContext">
+            <SerializedChatContext />
+          </option>
+          <option name="chatModelId" value="chat_mode" />
+          <option name="messages">
+            <list>
+              <SerializedChatMessage>
+                <option name="attachments">
+                  <list>
+                    <SerializedChatAttachment>
+                      <option name="url" value="file://$PROJECT_DIR$/include/clsTransactionsScreen.h" />
+                      <option name="name" value="Information about open file in the editor" />
+                      <option name="text" value="```c/c++&#10;//&#10;// Created by imad on 5/6/26.&#10;//&#10;&#10;#ifndef PROJECT1L4BANKEXTENSION2_CLSTRANSACTIONSSCREEN_H&#10;#define PROJECT1L4BANKEXTENSION2_CLSTRANSACTIONSSCREEN_H&#10;&#10;&#10;&#10;#pragma once&#10;#include &lt;iostream&gt;&#10;#include &quot;clsScreen.h&quot;&#10;#include &quot;clsInputValidate.h&quot;&#10;#include &lt;iomanip&gt;&#10;&#10;using namespace std;&#10;&#10;class clsTransactionsScreen :protected clsScreen&#10;{&#10;private:&#10;    enum enTransactionsMenueOptions {&#10;        eDeposit = 1, eWithdraw = 2,&#10;        eShowTotalBalance = 3, eShowMainMenue = 4&#10;    };&#10;&#10;    static short ReadTransactionsMenueOption()&#10;    {&#10;        cout &lt;&lt; setw(37) &lt;&lt; left &lt;&lt; &quot;&quot; &lt;&lt; &quot;Choose what do you want to do? [1 to 4]? &quot;;&#10;        short Choice = clsInputValidate::ReadShortNumberBetween(1, 4, &quot;Enter Number between 1 to 4? &quot;);&#10;        return Choice;&#10;    }&#10;&#10;    static void _ShowDepositScreen()&#10;    {&#10;        cout &lt;&lt; &quot;\n Deposit Screen will be here.\n&quot;;&#10;    }&#10;&#10;    static void _ShowWithdrawScreen()&#10;    {&#10;        cout &lt;&lt; &quot;\n Withdraw Screen will be here.\n&quot;;&#10;    }&#10;&#10;    static void _ShowTotalBalancesScreen()&#10;    {&#10;        cout &lt;&lt; &quot;\n Balances Screen will be here.\n&quot;;&#10;    }&#10;&#10;    static void _GoBackToTransactionsMenue()&#10;    {&#10;        cout &lt;&lt; &quot;\n\nPress any key to go back to Transactions Menue...&quot;;&#10;        system(&quot;pause&gt;0&quot;);&#10;        ShowTransactionsMenue();&#10;    }&#10;&#10;    static void _PerformTransactionsMenueOption(enTransactionsMenueOptions TransactionsMenueOption)&#10;    {&#10;        switch (TransactionsMenueOption)&#10;        {&#10;        case enTransactionsMenueOptions::eDeposit:&#10;        {&#10;            system(&quot;cls&quot;);&#10;            _ShowDepositScreen();&#10;            _GoBackToTransactionsMenue();&#10;            break;&#10;        }&#10;        case enTransactionsMenueOptions::eWithdraw:&#10;        {&#10;            system(&quot;cls&quot;);&#10;            _ShowWithdrawScreen();&#10;            _GoBackToTransactionsMenue();&#10;            break;&#10;        }&#10;        case enTransactionsMenueOptions::eShowTotalBalance:&#10;        {&#10;            system(&quot;cls&quot;);&#10;            _ShowTotalBalancesScreen();&#10;            _GoBackToTransactionsMenue();&#10;            break;&#10;        }&#10;        case enTransactionsMenueOptions::eShowMainMenue:&#10;        {&#10;            //do nothing here the main screen will handle it :-) ;&#10;        }&#10;        }&#10;    }&#10;&#10;&#10;&#10;public:&#10;    static void ShowTransactionsMenue()&#10;    {&#10;        system(&quot;cls&quot;);&#10;        _DrawScreenHeader(&quot;\t  Transactions Screen&quot;);&#10;&#10;        cout &lt;&lt; setw(37) &lt;&lt; left &lt;&lt; &quot;&quot; &lt;&lt; &quot;===========================================\n&quot;;&#10;        cout &lt;&lt; setw(37) &lt;&lt; left &lt;&lt; &quot;&quot; &lt;&lt; &quot;\t\t  Transactions Menue\n&quot;;&#10;        cout &lt;&lt; setw(37) &lt;&lt; left &lt;&lt; &quot;&quot; &lt;&lt; &quot;===========================================\n&quot;;&#10;        cout &lt;&lt; setw(37) &lt;&lt; left &lt;&lt; &quot;&quot; &lt;&lt; &quot;\t[1] Deposit.\n&quot;;&#10;        cout &lt;&lt; setw(37) &lt;&lt; left &lt;&lt; &quot;&quot; &lt;&lt; &quot;\t[2] Withdraw.\n&quot;;&#10;        cout &lt;&lt; setw(37) &lt;&lt; left &lt;&lt; &quot;&quot; &lt;&lt; &quot;\t[3] Total Balances.\n&quot;;&#10;        cout &lt;&lt; setw(37) &lt;&lt; left &lt;&lt; &quot;&quot; &lt;&lt; &quot;\t[4] Main Menue.\n&quot;;&#10;        cout &lt;&lt; setw(37) &lt;&lt; left &lt;&lt; &quot;&quot; &lt;&lt; &quot;===========================================\n&quot;;&#10;&#10;        _PerformTransactionsMenueOption((enTransactionsMenueOptions)ReadTransactionsMenueOption());&#10;    }&#10;};&#10;&#10;&#10;&#10;#endif //PROJECT1L4BANKEXTENSION2_CLSTRANSACTIONSSCREEN_H&#10;```" />
+                    </SerializedChatAttachment>
+                    <SerializedChatAttachment>
+                      <option name="url" value="file://$PROJECT_DIR$/include/clsAddNewClientScreen.h" />
+                      <option name="name" value="clsAddNewClientScreen.h" />
+                      <option name="text" value="```c/c++&#10;//&#10;// Created by imad on 5/1/26.&#10;//&#10;&#10;#ifndef PROJECT1L4BANKEXTENSION2_CLSADDNEWCLIENTSCREEN_H&#10;#define PROJECT1L4BANKEXTENSION2_CLSADDNEWCLIENTSCREEN_H&#10;&#10;&#10;&#10;#pragma once&#10;&#10;#include &lt;iostream&gt;&#10;#include &quot;clsScreen.h&quot;&#10;#include &quot;clsBankClient.h&quot;&#10;#include &quot;clsInputValidate.h&quot;&#10;#include &lt;iomanip&gt;&#10;&#10;class clsAddNewClientScreen : protected clsScreen&#10;{&#10;private:&#10;    static void _ReadClientInfo(clsBankClient&amp; Client)&#10;    {&#10;        cout &lt;&lt; &quot;\nEnter FirstName: &quot;;&#10;        Client.SetFirstName(clsInputValidate::ReadString());&#10;        cout &lt;&lt; &quot;\nEnter LastName: &quot;;&#10;        Client.SetLastName(clsInputValidate::ReadString());&#10;        cout &lt;&lt; &quot;\nEnter Email: &quot;;&#10;        Client.SetEmail(clsInputValidate::ReadString());&#10;        cout &lt;&lt; &quot;\nEnter Phone: &quot;;&#10;        Client.SetPhone(clsInputValidate::ReadString());&#10;        cout &lt;&lt; &quot;\nEnter PinCode: &quot;;&#10;        Client.SetPinCode(clsInputValidate::ReadString());&#10;        cout &lt;&lt; &quot;\nEnter Account Balance: &quot;;&#10;        Client.SetAccountBalance(clsInputValidate::ReadFloatNumber());&#10;    }&#10;&#10;    static void _PrintClient(clsBankClient Client)&#10;    {&#10;        cout &lt;&lt; &quot;\nClient Card:&quot;;&#10;        cout &lt;&lt; &quot;\n___________________&quot;;&#10;        cout &lt;&lt; &quot;\nFirstName   : &quot; &lt;&lt; Client.GetFirstName();&#10;        cout &lt;&lt; &quot;\nLastName    : &quot; &lt;&lt; Client.GetLastName();&#10;        cout &lt;&lt; &quot;\nFull Name   : &quot; &lt;&lt; Client.FullName();&#10;        cout &lt;&lt; &quot;\nEmail       : &quot; &lt;&lt; Client.GetEmail();&#10;        cout &lt;&lt; &quot;\nPhone       : &quot; &lt;&lt; Client.GetPhone();&#10;        cout &lt;&lt; &quot;\nAcc. Number : &quot; &lt;&lt; Client.AccountNumber();&#10;        cout &lt;&lt; &quot;\nPassword    : &quot; &lt;&lt; Client.GetPinCode();&#10;        cout &lt;&lt; &quot;\nBalance     : &quot; &lt;&lt; Client.GetAccountBalance();&#10;        cout &lt;&lt; &quot;\n___________________\n&quot;;&#10;    }&#10;&#10;public:&#10;&#10;    static void ShowAddNewClientScreen()&#10;    {&#10;        _DrawScreenHeader(&quot;\t  Add New Client Screen&quot;);&#10;&#10;        string AccountNumber = &quot;&quot;;&#10;&#10;        cout &lt;&lt; &quot;\nPlease Enter Account Number: &quot;;&#10;        AccountNumber = clsInputValidate::ReadString();&#10;        while (clsBankClient::IsClientExist(AccountNumber))&#10;        {&#10;            cout &lt;&lt; &quot;\nAccount Number Is Already Used, Choose another one: &quot;;&#10;            AccountNumber = clsInputValidate::ReadString();&#10;        }&#10;&#10;        clsBankClient NewClient = clsBankClient::GetAddNewClientObject(AccountNumber);&#10;&#10;&#10;        _ReadClientInfo(NewClient);&#10;&#10;        clsBankClient::enSaveResults SaveResult;&#10;&#10;        SaveResult = NewClient.Save();&#10;&#10;        switch (SaveResult)&#10;        {&#10;        case  clsBankClient::enSaveResults::svSucceeded:&#10;        {&#10;            cout &lt;&lt; &quot;\nAccount Addeded Successfully :-)\n&quot;;&#10;            _PrintClient(NewClient);&#10;            break;&#10;        }&#10;        case clsBankClient::enSaveResults::svFaildEmptyObject:&#10;        {&#10;            cout &lt;&lt; &quot;\nError account was not saved because it's Empty&quot;;&#10;            break;&#10;        }&#10;        case clsBankClient::enSaveResults::svFaildAccountNumberExists:&#10;        {&#10;            cout &lt;&lt; &quot;\nError account was not saved because account number is used!\n&quot;;&#10;            break;&#10;        }&#10;        }&#10;    }&#10;};&#10;&#10;&#10;&#10;#endif //PROJECT1L4BANKEXTENSION2_CLSADDNEWCLIENTSCREEN_H&#10;```" />
+                    </SerializedChatAttachment>
+                    <SerializedChatAttachment>
+                      <option name="url" value="file://$PROJECT_DIR$/include/clsMainScreen.h" />
+                      <option name="name" value="clsMainScreen.h" />
+                      <option name="text" value="```c/c++&#10;//&#10;// Created by imad on 4/29/26.&#10;//&#10;&#10;#ifndef PROJECT1L4BANKEXTENSION2_CLSMAINSCREEN_H&#10;#define PROJECT1L4BANKEXTENSION2_CLSMAINSCREEN_H&#10;&#10;&#10;#pragma once&#10;#include &lt;iostream&gt;&#10;#include &lt;iomanip&gt;&#10;#include &lt;limits&gt;&#10;&#10;#include &quot;clsScreen.h&quot;&#10;#include &quot;clsInputValidate.h&quot;&#10;#include &quot;clsClientListScreen.h&quot;&#10;#include &quot;clsAddNewClientScreen.h&quot;&#10;#include &quot;clsDeleteClientScreen.h&quot;&#10;#include &quot;clsUpdateClientScreen.h&quot;&#10;#include &quot;clsFindClientScreen.h&quot;&#10;#include &quot;clsTransactionsScreen.h&quot;&#10;&#10;&#10;using namespace std;&#10;&#10;class clsMainScreen : protected clsScreen&#10;{&#10;private:&#10;&#10;    enum enMainMenueOptions&#10;    {&#10;        eListClients = 1,&#10;        eAddNewClient = 2,&#10;        eDeleteClient = 3,&#10;        eUpdateClient = 4,&#10;        eFindClient = 5,&#10;        eShowTransactionsMenue = 6,&#10;        eManageUsers = 7,&#10;        eExit = 8&#10;    };&#10;&#10;    static void _ClearScreen()&#10;    {&#10;#ifdef _WIN32&#10;        system(&quot;cls&quot;);&#10;#else&#10;        cout &lt;&lt; &quot;\033[2J\033[H&quot;;&#10;#endif&#10;    }&#10;&#10;    static short _ReadMainMenueOption()&#10;    {&#10;        cout &lt;&lt; setw(38) &lt;&lt; left &lt;&lt; &quot;&quot; &lt;&lt; &quot;Choose what do you want to do? [1 to 8]? &quot;;&#10;        short Choice = clsInputValidate::ReadShortNumberBetween(1,8,&quot;Enter Number between 1 to 8? &quot;);&#10;        return Choice;&#10;    }&#10;&#10;    static void _GoBackToMainMenue()&#10;    {&#10;        cout &lt;&lt; setw(37) &lt;&lt; left &lt;&lt; &quot;&quot;&#10;             &lt;&lt; &quot;\n\tPress Enter to go back to Main Menue...\n&quot;;&#10;&#10;        cin.ignore(numeric_limits&lt;streamsize&gt;::max(), '\n');&#10;        cin.get();&#10;&#10;        ShowMainMenue();&#10;    }&#10;&#10;    static void _ShowAllClientsScreen()&#10;    {&#10;        //  cout &lt;&lt; &quot;\nClient List Screen Will be here...\n&quot;;&#10;        clsClientListScreen::ShowClientsList();&#10;    }&#10;&#10;    static void _ShowAddNewClientsScreen()&#10;    {&#10;        // cout &lt;&lt; &quot;\nAdd New Client Screen Will be here...\n&quot;;&#10;        clsAddNewClientScreen::ShowAddNewClientScreen();&#10;    }&#10;&#10;    static void _ShowDeleteClientScreen()&#10;    {&#10;        //cout &lt;&lt; &quot;\nDelete Client Screen Will be here...\n&quot;;&#10;        clsDeleteClientScreen::ShowDeleteClientScreen();&#10;&#10;    }&#10;&#10;    static void _ShowUpdateClientScreen()&#10;    {&#10;        //cout &lt;&lt; &quot;\nUpdate Client Screen Will be here...\n&quot;;&#10;        clsUpdateClientScreen::ShowUpdateClientScreen();&#10;    }&#10;&#10;    static void _ShowFindClientScreen()&#10;    {&#10;       // cout &lt;&lt; &quot;\nFind Client Screen Will be here...\n&quot;;&#10;        clsFindClientScreen::ShowFindClientScreen();&#10;    }&#10;&#10;    static void _ShowTransactionsMenue()&#10;    {&#10;        // cout &lt;&lt; &quot;\nTransactions Menue Will be here...\n&quot;;&#10;        clsTransactionsScreen::ShowTransactionsMenue();&#10;    }&#10;&#10;    static void _ShowManageUsersMenue()&#10;    {&#10;        cout &lt;&lt; &quot;\nUsers Menue Will be here...\n&quot;;&#10;    }&#10;&#10;    static void _ShowEndScreen()&#10;    {&#10;        cout &lt;&lt; &quot;\nEnd Screen Will be here...\n&quot;;&#10;    }&#10;&#10;    static void _PerfromMainMenueOption(enMainMenueOptions MainMenueOption)&#10;    {&#10;        switch (MainMenueOption)&#10;        {&#10;        case enMainMenueOptions::eListClients:&#10;            _ClearScreen();&#10;            _ShowAllClientsScreen();&#10;            _GoBackToMainMenue();&#10;            break;&#10;        case enMainMenueOptions::eAddNewClient:&#10;            _ClearScreen();&#10;            _ShowAddNewClientsScreen();&#10;            _GoBackToMainMenue();&#10;            break;&#10;        case enMainMenueOptions::eDeleteClient:&#10;            _ClearScreen();&#10;            _ShowDeleteClientScreen();&#10;            _GoBackToMainMenue();&#10;            break;&#10;        case enMainMenueOptions::eUpdateClient:&#10;            _ClearScreen();&#10;            _ShowUpdateClientScreen();&#10;            _GoBackToMainMenue();&#10;            break;&#10;        case enMainMenueOptions::eFindClient:&#10;            _ClearScreen();&#10;            _ShowFindClientScreen();&#10;            _GoBackToMainMenue();&#10;            break;&#10;        case enMainMenueOptions::eShowTransactionsMenue:&#10;            _ClearScreen();&#10;            _ShowTransactionsMenue();&#10;            break;&#10;        case enMainMenueOptions::eManageUsers:&#10;            _ClearScreen();&#10;            _ShowManageUsersMenue();&#10;            break;&#10;        case enMainMenueOptions::eExit:&#10;            _ClearScreen();&#10;            _ShowEndScreen();&#10;            // Login();&#10;            break;&#10;        }&#10;    }&#10;&#10;public:&#10;&#10;    static void ShowMainMenue()&#10;    {&#10;        _DrawScreenHeader(&quot;\t\tMain Screen&quot;);&#10;&#10;        cout &lt;&lt; setw(37) &lt;&lt; left &lt;&lt; &quot;&quot; &lt;&lt; &quot;===========================================\n&quot;;&#10;        cout &lt;&lt; setw(37) &lt;&lt; left &lt;&lt; &quot;&quot; &lt;&lt; &quot;\t\t\tMain Menue\n&quot;;&#10;        cout &lt;&lt; setw(37) &lt;&lt; left &lt;&lt; &quot;&quot; &lt;&lt; &quot;===========================================\n&quot;;&#10;        cout &lt;&lt; setw(37) &lt;&lt; left &lt;&lt; &quot;&quot; &lt;&lt; &quot;\t[1] Show Client List.\n&quot;;&#10;        cout &lt;&lt; setw(37) &lt;&lt; left &lt;&lt; &quot;&quot; &lt;&lt; &quot;\t[2] Add New Client.\n&quot;;&#10;        cout &lt;&lt; setw(37) &lt;&lt; left &lt;&lt; &quot;&quot; &lt;&lt; &quot;\t[3] Delete Client.\n&quot;;&#10;        cout &lt;&lt; setw(37) &lt;&lt; left &lt;&lt; &quot;&quot; &lt;&lt; &quot;\t[4] Update Client Info.\n&quot;;&#10;        cout &lt;&lt; setw(37) &lt;&lt; left &lt;&lt; &quot;&quot; &lt;&lt; &quot;\t[5] Find Client.\n&quot;;&#10;        cout &lt;&lt; setw(37) &lt;&lt; left &lt;&lt; &quot;&quot; &lt;&lt; &quot;\t[6] Transactions.\n&quot;;&#10;        cout &lt;&lt; setw(37) &lt;&lt; left &lt;&lt; &quot;&quot; &lt;&lt; &quot;\t[7] Manage Users.\n&quot;;&#10;        cout &lt;&lt; setw(37) &lt;&lt; left &lt;&lt; &quot;&quot; &lt;&lt; &quot;\t[8] Logout.\n&quot;;&#10;        cout &lt;&lt; setw(37) &lt;&lt; left &lt;&lt; &quot;&quot; &lt;&lt; &quot;===========================================\n&quot;;&#10;&#10;        _PerfromMainMenueOption(static_cast&lt;enMainMenueOptions&gt;(_ReadMainMenueOption())&#10;        );&#10;    }&#10;};&#10;&#10;#endif // PROJECT1L4BANKEXTENSION2_CLSMAINSCREEN_H&#10;```" />
+                    </SerializedChatAttachment>
+                  </list>
+                </option>
+                <option name="markupLanguageID" value="ChatInput" />
+                <option name="uid" value="UUID(uuid=f30f9e42-699a-4394-a048-0eef3bdfc195)" />
+                <option name="displayContent" value="Replace cls with my ClearScreen function.&#10;" />
+                <option name="internalContent" value="Replace cls with my ClearScreen function.&#10;" />
+              </SerializedChatMessage>
+              <SerializedChatMessage>
+                <option name="author" value="Assistant" />
+                <option name="uid" value="4975b038-e671-41e3-a530-4f2c3e4fb126" />
+                <option name="displayContent" value="Sure — replace the `system(&quot;cls&quot;)` calls with your `_ClearScreen()` function by moving/adding `_ClearScreen()` into `clsScreen`, so all screens can use it.&#10;&#10;&lt;llm-snippet-file&gt;include/clsScreen.h&lt;/llm-snippet-file&gt;&#10;```cpp&#10;// ... existing code ...&#10;using namespace std;&#10;&#10;class clsScreen&#10;{&#10;protected :&#10;    static void _ClearScreen()&#10;    {&#10;#ifdef _WIN32&#10;        system(&quot;cls&quot;);&#10;#else&#10;        cout &lt;&lt; &quot;\033[2J\033[H&quot;;&#10;#endif&#10;    }&#10;&#10;    static void _DrawScreenHeader(string Title,string SubTitle =&quot;&quot;)&#10;{&#10;    cout &lt;&lt; &quot;\t\t\t\t\t______________________________________&quot;;&#10;// ... existing code ...&#10;```&#10;&#10;Then update `clsTransactionsScreen.h`:&#10;&#10;&lt;llm-snippet-file&gt;include/clsTransactionsScreen.h&lt;/llm-snippet-file&gt;&#10;```cpp&#10;// ... existing code ...&#10;    static void _PerformTransactionsMenueOption(enTransactionsMenueOptions TransactionsMenueOption)&#10;    {&#10;        switch (TransactionsMenueOption)&#10;        {&#10;        case enTransactionsMenueOptions::eDeposit:&#10;        {&#10;            _ClearScreen();&#10;            _ShowDepositScreen();&#10;            _GoBackToTransactionsMenue();&#10;            break;&#10;        }&#10;&#10;        case enTransactionsMenueOptions::eWithdraw:&#10;        {&#10;            _ClearScreen();&#10;            _ShowWithdrawScreen();&#10;            _GoBackToTransactionsMenue();&#10;            break;&#10;        }&#10;&#10;        case enTransactionsMenueOptions::eShowTotalBalance:&#10;        {&#10;            _ClearScreen();&#10;            _ShowTotalBalancesScreen();&#10;            _GoBackToTransactionsMenue();&#10;            break;&#10;        }&#10;// ... existing code ...&#10;public:&#10;&#10;&#10;    static void ShowTransactionsMenue()&#10;    {&#10;&#10;&#10;        _ClearScreen();&#10;        _DrawScreenHeader(&quot;\t  Transactions Screen&quot;);&#10;&#10;        cout &lt;&lt; setw(37) &lt;&lt; left &lt;&lt; &quot;&quot; &lt;&lt; &quot;===========================================\n&quot;;&#10;// ... existing code ...&#10;```&#10;&#10;Since `clsTransactionsScreen` inherits from `clsScreen`, it can now call `_ClearScreen()` directly. This also keeps the Linux escape-code behavior you already used instead of relying on Windows-only `cls`." />
+                <option name="internalContent" value="Sure — replace the `system(&quot;cls&quot;)` calls with your `_ClearScreen()` function by moving/adding `_ClearScreen()` into `clsScreen`, so all screens can use it.&#10;&#10;&lt;llm-snippet-file&gt;include/clsScreen.h&lt;/llm-snippet-file&gt;&#10;```cpp&#10;// ... existing code ...&#10;using namespace std;&#10;&#10;class clsScreen&#10;{&#10;protected :&#10;    static void _ClearScreen()&#10;    {&#10;#ifdef _WIN32&#10;        system(&quot;cls&quot;);&#10;#else&#10;        cout &lt;&lt; &quot;\033[2J\033[H&quot;;&#10;#endif&#10;    }&#10;&#10;    static void _DrawScreenHeader(string Title,string SubTitle =&quot;&quot;)&#10;{&#10;    cout &lt;&lt; &quot;\t\t\t\t\t______________________________________&quot;;&#10;// ... existing code ...&#10;```&#10;&#10;Then update `clsTransactionsScreen.h`:&#10;&#10;&lt;llm-snippet-file&gt;include/clsTransactionsScreen.h&lt;/llm-snippet-file&gt;&#10;```cpp&#10;// ... existing code ...&#10;    static void _PerformTransactionsMenueOption(enTransactionsMenueOptions TransactionsMenueOption)&#10;    {&#10;        switch (TransactionsMenueOption)&#10;        {&#10;        case enTransactionsMenueOptions::eDeposit:&#10;        {&#10;            _ClearScreen();&#10;            _ShowDepositScreen();&#10;            _GoBackToTransactionsMenue();&#10;            break;&#10;        }&#10;&#10;        case enTransactionsMenueOptions::eWithdraw:&#10;        {&#10;            _ClearScreen();&#10;            _ShowWithdrawScreen();&#10;            _GoBackToTransactionsMenue();&#10;            break;&#10;        }&#10;&#10;        case enTransactionsMenueOptions::eShowTotalBalance:&#10;        {&#10;            _ClearScreen();&#10;            _ShowTotalBalancesScreen();&#10;            _GoBackToTransactionsMenue();&#10;            break;&#10;        }&#10;// ... existing code ...&#10;public:&#10;&#10;&#10;    static void ShowTransactionsMenue()&#10;    {&#10;&#10;&#10;        _ClearScreen();&#10;        _DrawScreenHeader(&quot;\t  Transactions Screen&quot;);&#10;&#10;        cout &lt;&lt; setw(37) &lt;&lt; left &lt;&lt; &quot;&quot; &lt;&lt; &quot;===========================================\n&quot;;&#10;// ... existing code ...&#10;```&#10;&#10;Since `clsTransactionsScreen` inherits from `clsScreen`, it can now call `_ClearScreen()` directly. This also keeps the Linux escape-code behavior you already used instead of relying on Windows-only `cls`." />
+              </SerializedChatMessage>
+              <SerializedChatMessage>
+                <option name="attachments">
+                  <list>
+                    <SerializedChatAttachment>
+                      <option name="name" value="Console Selection" />
+                      <option name="text" value="    static void _ClearScreen()&#10;    {&#10;#ifdef _WIN32&#10;        system(&quot;cls&quot;);&#10;#else&#10;        cout &lt;&lt; &quot;\033[2J\033[H&quot;;&#10;#endif&#10;    }&#10;" />
+                    </SerializedChatAttachment>
+                    <SerializedChatAttachment>
+                      <option name="name" value="Project View" />
+                      <option name="text" value="Project View content:&#10;```&#10;Project1 - Utility library&#10; build&#10; cmake-build-debug&#10; Data&#10;  Clients.text&#10; include&#10;  clsAddNewClientScreen.h&#10;  clsBankClient.h&#10;  clsClientListScreen.h&#10;  clsDate.h&#10;  clsDeleteClientScreen.h&#10;  clsFindClientScreen.h&#10;  clsInputValidate.h&#10;  clsMainScreen.h&#10;  clsPeriod.h&#10;  clsPerson.h&#10;  clsScreen.h&#10;  clsString.h&#10;  clsTransactionsScreen.h&#10;  clsUpdateClientScreen.h&#10;  clsUtil.h&#10; src&#10;  main.cpp&#10; .gitattributes&#10; .gitignore&#10; CMakeLists.txt&#10;External Libraries&#10;Scratches and Consoles&#10;```" />
+                    </SerializedChatAttachment>
+                  </list>
+                </option>
+                <option name="markupLanguageID" value="ChatInput" />
+                <option name="uid" value="UUID(uuid=1e7b92e0-f4bc-4d0d-a73c-ad072086e52b)" />
+                <option name="displayContent" value="Can I remove this one and use the one from `clsScreen`?" />
+                <option name="internalContent" value="Can I remove this one and use the one from `clsScreen`?" />
+              </SerializedChatMessage>
+              <SerializedChatMessage>
+                <option name="author" value="Assistant" />
+                <option name="uid" value="46e103e2-9233-430a-9983-f5b9e5648a48" />
+                <option name="displayContent" value="Yes — **you can remove that `_ClearScreen()` from `clsMainScreen`** and use the one from `clsScreen`, **as long as `_ClearScreen()` exists in `clsScreen` under `protected:`**.&#10;&#10;Because `clsMainScreen : protected clsScreen`, all `protected` static functions from `clsScreen` are available inside `clsMainScreen`.&#10;&#10;So your `clsMainScreen.h` can become:&#10;&#10;&lt;llm-snippet-file&gt;include/clsMainScreen.h&lt;/llm-snippet-file&gt;&#10;```cpp&#10;// ... existing code ...&#10;class clsMainScreen : protected clsScreen&#10;{&#10;private:&#10;&#10;    enum enMainMenueOptions&#10;    {&#10;        eListClients = 1,&#10;        eAddNewClient = 2,&#10;        eDeleteClient = 3,&#10;        eUpdateClient = 4,&#10;        eFindClient = 5,&#10;        eShowTransactionsMenue = 6,&#10;        eManageUsers = 7,&#10;        eExit = 8&#10;    };&#10;&#10;    static short _ReadMainMenueOption()&#10;    {&#10;        cout &lt;&lt; setw(38) &lt;&lt; left &lt;&lt; &quot;&quot; &lt;&lt; &quot;Choose what do you want to do? [1 to 8]? &quot;;&#10;        short Choice = clsInputValidate::ReadShortNumberBetween(1,8,&quot;Enter Number between 1 to 8? &quot;);&#10;        return Choice;&#10;    }&#10;// ... existing code ...&#10;```&#10;&#10;And keep this in `clsScreen.h`:&#10;&#10;&lt;llm-snippet-file&gt;include/clsScreen.h&lt;/llm-snippet-file&gt;&#10;```cpp&#10;// ... existing code ...&#10;class clsScreen&#10;{&#10;protected :&#10;    static void _ClearScreen()&#10;    {&#10;#ifdef _WIN32&#10;        system(&quot;cls&quot;);&#10;#else&#10;        cout &lt;&lt; &quot;\033[2J\033[H&quot;;&#10;#endif&#10;    }&#10;&#10;    static void _DrawScreenHeader(string Title,string SubTitle =&quot;&quot;)&#10;    {&#10;        cout &lt;&lt; &quot;\t\t\t\t\t______________________________________&quot;;&#10;// ... existing code ...&#10;```&#10;&#10;After that, calls like this inside `clsMainScreen` will still work:&#10;&#10;```cpp&#10;_ClearScreen();&#10;```&#10;&#10;No need to write:&#10;&#10;```cpp&#10;clsScreen::_ClearScreen();&#10;```&#10;&#10;because inheritance already makes it accessible inside the derived class." />
+                <option name="internalContent" value="Yes — **you can remove that `_ClearScreen()` from `clsMainScreen`** and use the one from `clsScreen`, **as long as `_ClearScreen()` exists in `clsScreen` under `protected:`**.&#10;&#10;Because `clsMainScreen : protected clsScreen`, all `protected` static functions from `clsScreen` are available inside `clsMainScreen`.&#10;&#10;So your `clsMainScreen.h` can become:&#10;&#10;&lt;llm-snippet-file&gt;include/clsMainScreen.h&lt;/llm-snippet-file&gt;&#10;```cpp&#10;// ... existing code ...&#10;class clsMainScreen : protected clsScreen&#10;{&#10;private:&#10;&#10;    enum enMainMenueOptions&#10;    {&#10;        eListClients = 1,&#10;        eAddNewClient = 2,&#10;        eDeleteClient = 3,&#10;        eUpdateClient = 4,&#10;        eFindClient = 5,&#10;        eShowTransactionsMenue = 6,&#10;        eManageUsers = 7,&#10;        eExit = 8&#10;    };&#10;&#10;    static short _ReadMainMenueOption()&#10;    {&#10;        cout &lt;&lt; setw(38) &lt;&lt; left &lt;&lt; &quot;&quot; &lt;&lt; &quot;Choose what do you want to do? [1 to 8]? &quot;;&#10;        short Choice = clsInputValidate::ReadShortNumberBetween(1,8,&quot;Enter Number between 1 to 8? &quot;);&#10;        return Choice;&#10;    }&#10;// ... existing code ...&#10;```&#10;&#10;And keep this in `clsScreen.h`:&#10;&#10;&lt;llm-snippet-file&gt;include/clsScreen.h&lt;/llm-snippet-file&gt;&#10;```cpp&#10;// ... existing code ...&#10;class clsScreen&#10;{&#10;protected :&#10;    static void _ClearScreen()&#10;    {&#10;#ifdef _WIN32&#10;        system(&quot;cls&quot;);&#10;#else&#10;        cout &lt;&lt; &quot;\033[2J\033[H&quot;;&#10;#endif&#10;    }&#10;&#10;    static void _DrawScreenHeader(string Title,string SubTitle =&quot;&quot;)&#10;    {&#10;        cout &lt;&lt; &quot;\t\t\t\t\t______________________________________&quot;;&#10;// ... existing code ...&#10;```&#10;&#10;After that, calls like this inside `clsMainScreen` will still work:&#10;&#10;```cpp&#10;_ClearScreen();&#10;```&#10;&#10;No need to write:&#10;&#10;```cpp&#10;clsScreen::_ClearScreen();&#10;```&#10;&#10;because inheritance already makes it accessible inside the derived class." />
+              </SerializedChatMessage>
+            </list>
+          </option>
+          <option name="modifiedAt" value="1778093824276" />
+          <option name="statisticInformation">
+            <ChatStatisticInformation>
+              <option name="sourceActionType" value="NEW_CHAT" />
+              <option name="timestamp" value="1778093824276" />
+            </ChatStatisticInformation>
+          </option>
+          <option name="title">
+            <SerializedChatTitle>
+              <option name="custom" value="true" />
+              <option name="text" value="Replace cls with ClearScreen Function" />
+            </SerializedChatTitle>
+          </option>
+          <option name="uid" value="fe4805ab-25f7-40e0-a269-424426fbf85b" />
+        </SerializedChat>
+        <SerializedChat>
+          <option name="chatContext">
+            <SerializedChatContext />
+          </option>
+          <option name="chatModelId" value="chat_mode" />
+          <option name="messages">
+            <list>
+              <SerializedChatMessage>
+                <option name="attachments">
+                  <list>
+                    <SerializedChatAttachment>
+                      <option name="name" value="Project View" />
+                      <option name="text" value="Project View content:&#10;```&#10;Project1 - Utility library&#10; build&#10; cmake-build-debug&#10; Data&#10;  Clients.text&#10; include&#10;  Screens&#10;   Transactions&#10;    clsTransactionsScreen.h&#10;   clsAddNewClientScreen.h&#10;   clsClientListScreen.h&#10;   clsDeleteClientScreen.h&#10;   clsFindClientScreen.h&#10;   clsMainScreen.h&#10;   clsScreen.h&#10;   clsUpdateClientScreen.h&#10;  clsBankClient.h&#10;  clsDate.h&#10;  clsInputValidate.h&#10;  clsPeriod.h&#10;  clsPerson.h&#10;  clsString.h&#10;  clsUtil.h&#10; src&#10;  main.cpp&#10; .gitattributes&#10; .gitignore&#10; CMakeLists.txt&#10;External Libraries&#10;Scratches and Consoles&#10;```" />
+                    </SerializedChatAttachment>
+                    <SerializedChatAttachment>
+                      <option name="url" value="file://$PROJECT_DIR$/include/Screens/clsMainScreen.h" />
+                      <option name="name" value="Information about open file in the editor" />
+                      <option name="text" value="```c/c++&#10;//&#10;// Created by imad on 4/29/26.&#10;//&#10;&#10;#ifndef PROJECT1L4BANKEXTENSION2_CLSMAINSCREEN_H&#10;#define PROJECT1L4BANKEXTENSION2_CLSMAINSCREEN_H&#10;&#10;&#10;#pragma once&#10;#include &lt;iostream&gt;&#10;#include &lt;iomanip&gt;&#10;#include &lt;limits&gt;&#10;&#10;#include &quot;clsScreen.h&quot;&#10;#include &quot;../clsInputValidate.h&quot;&#10;#include &quot;clsClientListScreen.h&quot;&#10;#include &quot;clsAddNewClientScreen.h&quot;&#10;#include &quot;clsDeleteClientScreen.h&quot;&#10;#include &quot;../clsUpdateClientScreen.h&quot;&#10;#include &quot;clsFindClientScreen.h&quot;&#10;#include &quot;../clsTransactionsScreen.h&quot;&#10;&#10;&#10;using namespace std;&#10;&#10;class clsMainScreen : protected clsScreen&#10;{&#10;private:&#10;&#10;    enum enMainMenueOptions&#10;    {&#10;        eListClients = 1,&#10;        eAddNewClient = 2,&#10;        eDeleteClient = 3,&#10;        eUpdateClient = 4,&#10;        eFindClient = 5,&#10;        eShowTransactionsMenue = 6,&#10;        eManageUsers = 7,&#10;        eExit = 8&#10;    };&#10;&#10;    static short _ReadMainMenueOption()&#10;    {&#10;        cout &lt;&lt; setw(38) &lt;&lt; left &lt;&lt; &quot;&quot; &lt;&lt; &quot;Choose what do you want to do? [1 to 8]? &quot;;&#10;        short Choice = clsInputValidate::ReadShortNumberBetween(1,8,&quot;Enter Number between 1 to 8? &quot;);&#10;        return Choice;&#10;    }&#10;&#10;    static void _GoBackToMainMenue()&#10;    {&#10;        cout &lt;&lt; setw(37) &lt;&lt; left &lt;&lt; &quot;&quot;&#10;             &lt;&lt; &quot;\n\tPress Enter to go back to Main Menue...\n&quot;;&#10;&#10;        cin.ignore(numeric_limits&lt;streamsize&gt;::max(), '\n');&#10;        cin.get();&#10;&#10;        ShowMainMenue();&#10;    }&#10;&#10;    static void _ShowAllClientsScreen()&#10;    {&#10;        //  cout &lt;&lt; &quot;\nClient List Screen Will be here...\n&quot;;&#10;        clsClientListScreen::ShowClientsList();&#10;    }&#10;&#10;    static void _ShowAddNewClientsScreen()&#10;    {&#10;        // cout &lt;&lt; &quot;\nAdd New Client Screen Will be here...\n&quot;;&#10;        clsAddNewClientScreen::ShowAddNewClientScreen();&#10;    }&#10;&#10;    static void _ShowDeleteClientScreen()&#10;    {&#10;        //cout &lt;&lt; &quot;\nDelete Client Screen Will be here...\n&quot;;&#10;        clsDeleteClientScreen::ShowDeleteClientScreen();&#10;&#10;    }&#10;&#10;    static void _ShowUpdateClientScreen()&#10;    {&#10;        //cout &lt;&lt; &quot;\nUpdate Client Screen Will be here...\n&quot;;&#10;        clsUpdateClientScreen::ShowUpdateClientScreen();&#10;    }&#10;&#10;    static void _ShowFindClientScreen()&#10;    {&#10;       // cout &lt;&lt; &quot;\nFind Client Screen Will be here...\n&quot;;&#10;        clsFindClientScreen::ShowFindClientScreen();&#10;    }&#10;&#10;    static void _ShowTransactionsMenue()&#10;    {&#10;        // cout &lt;&lt; &quot;\nTransactions Menue Will be here...\n&quot;;&#10;        clsTransactionsScreen::ShowTransactionsMenue();&#10;    }&#10;&#10;    static void _ShowManageUsersMenue()&#10;    {&#10;        cout &lt;&lt; &quot;\nUsers Menue Will be here...\n&quot;;&#10;    }&#10;&#10;    static void _ShowEndScreen()&#10;    {&#10;        cout &lt;&lt; &quot;\nEnd Screen Will be here...\n&quot;;&#10;    }&#10;&#10;    static void _PerfromMainMenueOption(enMainMenueOptions MainMenueOption)&#10;    {&#10;        switch (MainMenueOption)&#10;        {&#10;        case enMainMenueOptions::eListClients:&#10;            _ClearScreen();&#10;            _ShowAllClientsScreen();&#10;            _GoBackToMainMenue();&#10;            break;&#10;        case enMainMenueOptions::eAddNewClient:&#10;            _ClearScreen();&#10;            _ShowAddNewClientsScreen();&#10;            _GoBackToMainMenue();&#10;            break;&#10;        case enMainMenueOptions::eDeleteClient:&#10;            _ClearScreen();&#10;            _ShowDeleteClientScreen();&#10;            _GoBackToMainMenue();&#10;            break;&#10;        case enMainMenueOptions::eUpdateClient:&#10;            _ClearScreen();&#10;            _ShowUpdateClientScreen();&#10;            _GoBackToMainMenue();&#10;            break;&#10;        case enMainMenueOptions::eFindClient:&#10;            _ClearScreen();&#10;            _ShowFindClientScreen();&#10;            _GoBackToMainMenue();&#10;            break;&#10;        case enMainMenueOptions::eShowTransactionsMenue:&#10;            _ClearScreen();&#10;            _ShowTransactionsMenue();&#10;            break;&#10;        case enMainMenueOptions::eManageUsers:&#10;            _ClearScreen();&#10;            _ShowManageUsersMenue();&#10;            break;&#10;        case enMainMenueOptions::eExit:&#10;            _ClearScreen();&#10;            _ShowEndScreen();&#10;            // Login();&#10;            break;&#10;        }&#10;    }&#10;&#10;public:&#10;&#10;    static void ShowMainMenue()&#10;    {&#10;        _DrawScreenHeader(&quot;\t\tMain Screen&quot;);&#10;&#10;        cout &lt;&lt; setw(37) &lt;&lt; left &lt;&lt; &quot;&quot; &lt;&lt; &quot;===========================================\n&quot;;&#10;        cout &lt;&lt; setw(37) &lt;&lt; left &lt;&lt; &quot;&quot; &lt;&lt; &quot;\t\t\tMain Menue\n&quot;;&#10;        cout &lt;&lt; setw(37) &lt;&lt; left &lt;&lt; &quot;&quot; &lt;&lt; &quot;===========================================\n&quot;;&#10;        cout &lt;&lt; setw(37) &lt;&lt; left &lt;&lt; &quot;&quot; &lt;&lt; &quot;\t[1] Show Client List.\n&quot;;&#10;        cout &lt;&lt; setw(37) &lt;&lt; left &lt;&lt; &quot;&quot; &lt;&lt; &quot;\t[2] Add New Client.\n&quot;;&#10;        cout &lt;&lt; setw(37) &lt;&lt; left &lt;&lt; &quot;&quot; &lt;&lt; &quot;\t[3] Delete Client.\n&quot;;&#10;        cout &lt;&lt; setw(37) &lt;&lt; left &lt;&lt; &quot;&quot; &lt;&lt; &quot;\t[4] Update Client Info.\n&quot;;&#10;        cout &lt;&lt; setw(37) &lt;&lt; left &lt;&lt; &quot;&quot; &lt;&lt; &quot;\t[5] Find Client.\n&quot;;&#10;        cout &lt;&lt; setw(37) &lt;&lt; left &lt;&lt; &quot;&quot; &lt;&lt; &quot;\t[6] Transactions.\n&quot;;&#10;        cout &lt;&lt; setw(37) &lt;&lt; left &lt;&lt; &quot;&quot; &lt;&lt; &quot;\t[7] Manage Users.\n&quot;;&#10;        cout &lt;&lt; setw(37) &lt;&lt; left &lt;&lt; &quot;&quot; &lt;&lt; &quot;\t[8] Logout.\n&quot;;&#10;        cout &lt;&lt; setw(37) &lt;&lt; left &lt;&lt; &quot;&quot; &lt;&lt; &quot;===========================================\n&quot;;&#10;&#10;        _PerfromMainMenueOption(static_cast&lt;enMainMenueOptions&gt;(_ReadMainMenueOption())&#10;        );&#10;    }&#10;};&#10;&#10;#endif // PROJECT1L4BANKEXTENSION2_CLSMAINSCREEN_H&#10;```" />
+                    </SerializedChatAttachment>
+                  </list>
+                </option>
+                <option name="markupLanguageID" value="ChatInput" />
+                <option name="uid" value="UUID(uuid=5eedb275-0826-4da6-8985-025958c1f6ca)" />
+                <option name="displayContent" value="&lt;html&gt;Cannot find file 'clsUpdateClientScreen.h' in search paths:&lt;br/&gt;/home/imad/Documents/Project1 - Utility library/include&lt;br/&gt;/home/imad/Documents/Project1 - Utility library&lt;br/&gt;/usr/include/c++&lt;br/&gt;/usr/include/c++/16.1.1&lt;br/&gt;/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1&lt;br/&gt;/usr/local&lt;br/&gt;/usr&lt;br/&gt;(in the context of /home/imad/Documents/Project1 - Utility library/src/main.cpp in project Project1L4BankExtension2)&#10;&lt;html&gt;Cannot find file 'clsTransactionsScreen.h' in search paths:&lt;br/&gt;/home/imad/Documents/Project1 - Utility library/include&lt;br/&gt;/home/imad/Documents/Project1 - Utility library&lt;br/&gt;/usr/include/c++&lt;br/&gt;/usr/include/c++/16.1.1&lt;br/&gt;/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1&lt;br/&gt;/usr/local&lt;br/&gt;/usr&lt;br/&gt;(in the context of /home/imad/Documents/Project1 - Utility library/src/main.cpp in project Project1L4BankExtension2)&#10;Cannot resolve symbol 'clsUpdateClientScreen'&#10;Cannot resolve symbol 'clsTransactionsScreen'&#10;" />
+                <option name="internalContent" value="&lt;html&gt;Cannot find file 'clsUpdateClientScreen.h' in search paths:&lt;br/&gt;/home/imad/Documents/Project1 - Utility library/include&lt;br/&gt;/home/imad/Documents/Project1 - Utility library&lt;br/&gt;/usr/include/c++&lt;br/&gt;/usr/include/c++/16.1.1&lt;br/&gt;/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1&lt;br/&gt;/usr/local&lt;br/&gt;/usr&lt;br/&gt;(in the context of /home/imad/Documents/Project1 - Utility library/src/main.cpp in project Project1L4BankExtension2)&#10;&lt;html&gt;Cannot find file 'clsTransactionsScreen.h' in search paths:&lt;br/&gt;/home/imad/Documents/Project1 - Utility library/include&lt;br/&gt;/home/imad/Documents/Project1 - Utility library&lt;br/&gt;/usr/include/c++&lt;br/&gt;/usr/include/c++/16.1.1&lt;br/&gt;/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1&lt;br/&gt;/usr/local&lt;br/&gt;/usr&lt;br/&gt;(in the context of /home/imad/Documents/Project1 - Utility library/src/main.cpp in project Project1L4BankExtension2)&#10;Cannot resolve symbol 'clsUpdateClientScreen'&#10;Cannot resolve symbol 'clsTransactionsScreen'&#10;" />
+              </SerializedChatMessage>
+              <SerializedChatMessage>
+                <option name="author" value="Assistant" />
+                <option name="uid" value="1e57b3f1-9e2c-4238-9f4d-76c2307e15a0" />
+                <option name="displayContent" value="The files **do exist**, but the `#include` paths in `clsMainScreen.h` are pointing to the wrong locations.&#10;&#10;Your current file is:&#10;&#10;```text&#10;include/Screens/clsMainScreen.h&#10;```&#10;&#10;And the headers are located at:&#10;&#10;```text&#10;include/Screens/clsUpdateClientScreen.h&#10;include/Screens/Transactions/clsTransactionsScreen.h&#10;```&#10;&#10;So from `clsMainScreen.h`:&#10;&#10;- `clsUpdateClientScreen.h` is in the **same folder**&#10;- `clsTransactionsScreen.h` is inside the **Transactions** subfolder&#10;&#10;Change these includes:&#10;&#10;```cpp&#10;#include &quot;../clsUpdateClientScreen.h&quot;&#10;#include &quot;../clsTransactionsScreen.h&quot;&#10;```&#10;&#10;to:&#10;&#10;&lt;llm-snippet-file&gt;include/Screens/clsMainScreen.h&lt;/llm-snippet-file&gt;&#10;```cpp&#10;// ... existing code ...&#10;#include &quot;clsClientListScreen.h&quot;&#10;#include &quot;clsAddNewClientScreen.h&quot;&#10;#include &quot;clsDeleteClientScreen.h&quot;&#10;#include &quot;clsUpdateClientScreen.h&quot;&#10;#include &quot;clsFindClientScreen.h&quot;&#10;#include &quot;Transactions/clsTransactionsScreen.h&quot;&#10;&#10;&#10;using namespace std;&#10;// ... existing code ...&#10;```&#10;&#10;### Why this fixes it&#10;&#10;`../clsUpdateClientScreen.h` means:&#10;&#10;```text&#10;include/clsUpdateClientScreen.h&#10;```&#10;&#10;But your file is actually here:&#10;&#10;```text&#10;include/Screens/clsUpdateClientScreen.h&#10;```&#10;&#10;Likewise, `../clsTransactionsScreen.h` means:&#10;&#10;```text&#10;include/clsTransactionsScreen.h&#10;```&#10;&#10;But your file is actually here:&#10;&#10;```text&#10;include/Screens/Transactions/clsTransactionsScreen.h&#10;```&#10;&#10;After changing the includes, CLion should resolve:&#10;&#10;```cpp&#10;clsUpdateClientScreen&#10;clsTransactionsScreen&#10;```&#10;&#10;correctly. If CLion still shows red squiggles after the fix, try **Reload CMake Project** or **File | Invalidate Caches** if needed." />
+                <option name="internalContent" value="The files **do exist**, but the `#include` paths in `clsMainScreen.h` are pointing to the wrong locations.&#10;&#10;Your current file is:&#10;&#10;```text&#10;include/Screens/clsMainScreen.h&#10;```&#10;&#10;And the headers are located at:&#10;&#10;```text&#10;include/Screens/clsUpdateClientScreen.h&#10;include/Screens/Transactions/clsTransactionsScreen.h&#10;```&#10;&#10;So from `clsMainScreen.h`:&#10;&#10;- `clsUpdateClientScreen.h` is in the **same folder**&#10;- `clsTransactionsScreen.h` is inside the **Transactions** subfolder&#10;&#10;Change these includes:&#10;&#10;```cpp&#10;#include &quot;../clsUpdateClientScreen.h&quot;&#10;#include &quot;../clsTransactionsScreen.h&quot;&#10;```&#10;&#10;to:&#10;&#10;&lt;llm-snippet-file&gt;include/Screens/clsMainScreen.h&lt;/llm-snippet-file&gt;&#10;```cpp&#10;// ... existing code ...&#10;#include &quot;clsClientListScreen.h&quot;&#10;#include &quot;clsAddNewClientScreen.h&quot;&#10;#include &quot;clsDeleteClientScreen.h&quot;&#10;#include &quot;clsUpdateClientScreen.h&quot;&#10;#include &quot;clsFindClientScreen.h&quot;&#10;#include &quot;Transactions/clsTransactionsScreen.h&quot;&#10;&#10;&#10;using namespace std;&#10;// ... existing code ...&#10;```&#10;&#10;### Why this fixes it&#10;&#10;`../clsUpdateClientScreen.h` means:&#10;&#10;```text&#10;include/clsUpdateClientScreen.h&#10;```&#10;&#10;But your file is actually here:&#10;&#10;```text&#10;include/Screens/clsUpdateClientScreen.h&#10;```&#10;&#10;Likewise, `../clsTransactionsScreen.h` means:&#10;&#10;```text&#10;include/clsTransactionsScreen.h&#10;```&#10;&#10;But your file is actually here:&#10;&#10;```text&#10;include/Screens/Transactions/clsTransactionsScreen.h&#10;```&#10;&#10;After changing the includes, CLion should resolve:&#10;&#10;```cpp&#10;clsUpdateClientScreen&#10;clsTransactionsScreen&#10;```&#10;&#10;correctly. If CLion still shows red squiggles after the fix, try **Reload CMake Project** or **File | Invalidate Caches** if needed." />
+              </SerializedChatMessage>
+            </list>
+          </option>
+          <option name="modifiedAt" value="1778094585749" />
+          <option name="statisticInformation">
+            <ChatStatisticInformation>
+              <option name="sourceActionType" value="NEW_CHAT" />
+              <option name="timestamp" value="1778094585749" />
+            </ChatStatisticInformation>
+          </option>
+          <option name="title">
+            <SerializedChatTitle>
+              <option name="custom" value="true" />
+              <option name="text" value="Resolving Header File Inclusion Issues" />
+            </SerializedChatTitle>
+          </option>
+          <option name="uid" value="74128f31-b9cb-44a4-a75c-5fe18d3662b7" />
+        </SerializedChat>
+        <SerializedChat>
+          <option name="chatContext">
+            <SerializedChatContext />
+          </option>
+          <option name="chatModelId" value="chat_mode" />
+          <option name="messages">
+            <list>
+              <SerializedChatMessage>
+                <option name="attachments">
+                  <list>
+                    <SerializedChatAttachment>
+                      <option name="name" value="Project View" />
+                      <option name="text" value="Project View content:&#10;```&#10;Project1 - Utility library&#10; build&#10; cmake-build-debug&#10; Data&#10;  Clients.text&#10; include&#10;  Screens&#10;   Transactions&#10;    clsDepositScreen.h&#10;    clsTransactionsScreen.h&#10;   clsAddNewClientScreen.h&#10;   clsClientListScreen.h&#10;   clsDeleteClientScreen.h&#10;   clsFindClientScreen.h&#10;   clsMainScreen.h&#10;   clsScreen.h&#10;   clsUpdateClientScreen.h&#10;  clsBankClient.h&#10;  clsDate.h&#10;  clsInputValidate.h&#10;  clsPeriod.h&#10;  clsPerson.h&#10;  clsString.h&#10;  clsUtil.h&#10; src&#10;  main.cpp&#10; .gitattributes&#10; .gitignore&#10; CMakeLists.txt&#10;External Libraries&#10;Scratches and Consoles&#10;```" />
+                    </SerializedChatAttachment>
+                    <SerializedChatAttachment>
+                      <option name="url" value="file://$PROJECT_DIR$/include/Screens/Transactions/clsDepositScreen.h" />
+                      <option name="name" value="Information about open file in the editor" />
+                      <option name="text" value="```c/c++&#10;//&#10;// Created by imad on 5/7/26.&#10;//&#10;&#10;#ifndef PROJECT1L4BANKEXTENSION2_CLSDEPOSITSCREEN_H&#10;#define PROJECT1L4BANKEXTENSION2_CLSDEPOSITSCREEN_H&#10;&#10;&#10;&#10;#pragma once&#10;&#10;#include &lt;iostream&gt;&#10;#include &quot;../clsScreen.h&quot;&#10;#include &quot;clsBankClient.h&quot;&#10;#include &quot;clsInputValidate.h&quot;&#10;&#10;class clsDepositScreen : protected clsScreen&#10;{&#10;&#10;private:&#10;&#10;    static void _PrintClient(clsBankClient Client)&#10;    {&#10;        cout &lt;&lt; &quot;\nClient Card:&quot;;&#10;        cout &lt;&lt; &quot;\n___________________&quot;;&#10;        cout &lt;&lt; &quot;\nFirstName   : &quot; &lt;&lt; Client.GetFirstName();&#10;        cout &lt;&lt; &quot;\nLastName    : &quot; &lt;&lt; Client.GetLastName();&#10;        cout &lt;&lt; &quot;\nFull Name   : &quot; &lt;&lt; Client.FullName();&#10;        cout &lt;&lt; &quot;\nEmail       : &quot; &lt;&lt; Client.GetEmail();&#10;        cout &lt;&lt; &quot;\nPhone       : &quot; &lt;&lt; Client.GetPhone();&#10;        cout &lt;&lt; &quot;\nAcc. Number : &quot; &lt;&lt; Client.AccountNumber();&#10;        cout &lt;&lt; &quot;\nPassword    : &quot; &lt;&lt; Client.GetPinCode();&#10;        cout &lt;&lt; &quot;\nBalance     : &quot; &lt;&lt; Client.GetAccountBalance();&#10;        cout &lt;&lt; &quot;\n___________________\n&quot;;&#10;    }&#10;&#10;    static string _ReadAccountNumber()&#10;    {&#10;        string AccountNumber = &quot;&quot;;&#10;        cout &lt;&lt; &quot;\nPlease enter AccountNumber? &quot;;&#10;        cin &gt;&gt; AccountNumber;&#10;        return AccountNumber;&#10;    }&#10;&#10;&#10;public:&#10;&#10;    static void ShowDepositScreen()&#10;    {&#10;        _DrawScreenHeader(&quot;\t   Deposit Screen&quot;);&#10;&#10;        string AccountNumber = _ReadAccountNumber();&#10;&#10;&#10;        while (!clsBankClient::IsClientExist(AccountNumber))&#10;        {&#10;            cout &lt;&lt; &quot;\nClient with [&quot; &lt;&lt; AccountNumber &lt;&lt; &quot;] does not exist.\n&quot;;&#10;            AccountNumber = _ReadAccountNumber();&#10;        }&#10;&#10;        clsBankClient Client1 = clsBankClient::Find(AccountNumber);&#10;        _PrintClient(Client1);&#10;&#10;        double Amount = 0;&#10;        cout &lt;&lt; &quot;\nPlease enter deposit amount? &quot;;&#10;        Amount = clsInputValidate::ReadDblNumber();&#10;&#10;        cout &lt;&lt; &quot;\nAre you sure you want to perform this transaction? &quot;;&#10;        char Answer = 'n';&#10;        cin &gt;&gt; Answer;&#10;&#10;        if (Answer == 'Y' || Answer == 'y')&#10;        {&#10;            Client1.Deposit(Amount);&#10;            cout &lt;&lt; &quot;\nAmount Deposited Successfully.\n&quot;;&#10;            cout &lt;&lt; &quot;\nNew Balance Is: &quot; &lt;&lt; Client1.AccountBalance;&#10;&#10;        }&#10;        else&#10;        {&#10;            cout &lt;&lt; &quot;\nOperation was cancelled.\n&quot;;&#10;        }&#10;&#10;    }&#10;&#10;};&#10;&#10;&#10;&#10;#endif //PROJECT1L4BANKEXTENSION2_CLSDEPOSITSCREEN_H&#10;```" />
+                    </SerializedChatAttachment>
+                  </list>
+                </option>
+                <option name="markupLanguageID" value="ChatInput" />
+                <option name="uid" value="UUID(uuid=374f81fa-e5cf-4e39-835b-c6075eec94d0)" />
+                <option name="displayContent" value="Should I use Get function here?" />
+                <option name="internalContent" value="Should I use Get function here?" />
+              </SerializedChatMessage>
+              <SerializedChatMessage>
+                <option name="author" value="Assistant" />
+                <option name="uid" value="9141f96d-b325-43b0-a4e5-13ec9116a709" />
+                <option name="displayContent" value="Yes — **use the getter function here**:&#10;&#10;```cpp&#10;Client1.GetAccountBalance()&#10;```&#10;&#10;instead of directly accessing:&#10;&#10;```cpp&#10;Client1.AccountBalance&#10;```&#10;&#10;So this line:&#10;&#10;&lt;llm-snippet-file&gt;include/Screens/Transactions/clsDepositScreen.h&lt;/llm-snippet-file&gt;&#10;```cpp&#10;// ... existing code ...&#10;            if (Answer == 'Y' || Answer == 'y')&#10;            {&#10;                Client1.Deposit(Amount);&#10;                cout &lt;&lt; &quot;\nAmount Deposited Successfully.\n&quot;;&#10;                cout &lt;&lt; &quot;\nNew Balance Is: &quot; &lt;&lt; Client1.GetAccountBalance();&#10;&#10;            }&#10;            else&#10;            {&#10;                cout &lt;&lt; &quot;\nOperation was cancelled.\n&quot;;&#10;            }&#10;// ... existing code ...&#10;```&#10;&#10;### Why?&#10;&#10;Using `GetAccountBalance()` is better because:&#10;&#10;- It respects **encapsulation**.&#10;- It matches the style you already use above:&#10;&#10;```cpp&#10;cout &lt;&lt; &quot;\nBalance     : &quot; &lt;&lt; Client.GetAccountBalance();&#10;```&#10;&#10;- If `AccountBalance` is private or protected, direct access will not compile.&#10;- Even if it is public, using the getter keeps your class design cleaner.&#10;&#10;So yes, here the getter is the right choice." />
+                <option name="internalContent" value="Yes — **use the getter function here**:&#10;&#10;```cpp&#10;Client1.GetAccountBalance()&#10;```&#10;&#10;instead of directly accessing:&#10;&#10;```cpp&#10;Client1.AccountBalance&#10;```&#10;&#10;So this line:&#10;&#10;&lt;llm-snippet-file&gt;include/Screens/Transactions/clsDepositScreen.h&lt;/llm-snippet-file&gt;&#10;```cpp&#10;// ... existing code ...&#10;            if (Answer == 'Y' || Answer == 'y')&#10;            {&#10;                Client1.Deposit(Amount);&#10;                cout &lt;&lt; &quot;\nAmount Deposited Successfully.\n&quot;;&#10;                cout &lt;&lt; &quot;\nNew Balance Is: &quot; &lt;&lt; Client1.GetAccountBalance();&#10;&#10;            }&#10;            else&#10;            {&#10;                cout &lt;&lt; &quot;\nOperation was cancelled.\n&quot;;&#10;            }&#10;// ... existing code ...&#10;```&#10;&#10;### Why?&#10;&#10;Using `GetAccountBalance()` is better because:&#10;&#10;- It respects **encapsulation**.&#10;- It matches the style you already use above:&#10;&#10;```cpp&#10;cout &lt;&lt; &quot;\nBalance     : &quot; &lt;&lt; Client.GetAccountBalance();&#10;```&#10;&#10;- If `AccountBalance` is private or protected, direct access will not compile.&#10;- Even if it is public, using the getter keeps your class design cleaner.&#10;&#10;So yes, here the getter is the right choice." />
+              </SerializedChatMessage>
+              <SerializedChatMessage>
+                <option name="attachments">
+                  <list>
+                    <SerializedChatAttachment>
+                      <option name="name" value="Console Selection" />
+                      <option name="text" value="            Client1.Deposit(Amount);&#10;" />
+                    </SerializedChatAttachment>
+                    <SerializedChatAttachment>
+                      <option name="name" value="Errors in selection" />
+                      <option name="text" value="&#10;Cannot resolve symbol 'Deposit'&#10;at: Deposit&#10;on the lines:&#10;            Client1.Deposit(Amount);&#10;" />
+                    </SerializedChatAttachment>
+                  </list>
+                </option>
+                <option name="markupLanguageID" value="ChatInput" />
+                <option name="uid" value="UUID(uuid=5c176ff9-ad4f-46e4-b999-40154ab24c36)" />
+                <option name="displayContent" value="What about this code?" />
+                <option name="internalContent" value="What about this code?" />
+              </SerializedChatMessage>
+              <SerializedChatMessage>
+                <option name="author" value="Assistant" />
+                <option name="uid" value="35b52e98-8501-4de6-80dd-25c4d3148e6b" />
+                <option name="displayContent" value="`Client1.Deposit(Amount);` is **the right idea**, but CLion says **“Cannot resolve symbol `Deposit`”** because `clsBankClient` currently does **not have a `Deposit` member function**.&#10;&#10;So you have two choices:&#10;&#10;## Best choice: add a `Deposit` function to `clsBankClient`&#10;&#10;Since depositing money is a **bank-client behavior**, it belongs inside `clsBankClient`, not directly in the screen class.&#10;&#10;Add this public method inside `clsBankClient`, near `GetAccountBalance()` / `SetAccountBalance()`:&#10;&#10;&lt;llm-snippet-file&gt;include/clsBankClient.h&lt;/llm-snippet-file&gt;&#10;```cpp&#10;// ... existing code ...&#10;    void SetAccountBalance(float AccountBalance)&#10;    {&#10;        _AccountBalance = AccountBalance;&#10;    }&#10;&#10;    float GetAccountBalance()&#10;    {&#10;        return _AccountBalance;&#10;    }&#10;&#10;    void Deposit(float Amount)&#10;    {&#10;        _AccountBalance += Amount;&#10;        Save();&#10;    }&#10;&#10;    /*&#10;    No UI Related code iside object.&#10;    void Print()&#10;    {&#10;// ... existing code ...&#10;```&#10;&#10;Then this line becomes valid:&#10;&#10;```cpp&#10;Client1.Deposit(Amount);&#10;```&#10;&#10;## Small improvement&#10;&#10;Your `Amount` variable is `double`, but account balance uses `float`. To match your class, you can use:&#10;&#10;```cpp&#10;float Amount = 0;&#10;```&#10;&#10;Or keep `double`, but then maybe change balances to `double` later for consistency.&#10;&#10;## Important note&#10;&#10;`Deposit()` should call `Save()` because otherwise the balance changes only in memory and may not be written back to the file.&#10;&#10;So yes: **keep `Client1.Deposit(Amount);`, but first define the `Deposit` function in `clsBankClient`.**" />
+                <option name="internalContent" value="`Client1.Deposit(Amount);` is **the right idea**, but CLion says **“Cannot resolve symbol `Deposit`”** because `clsBankClient` currently does **not have a `Deposit` member function**.&#10;&#10;So you have two choices:&#10;&#10;## Best choice: add a `Deposit` function to `clsBankClient`&#10;&#10;Since depositing money is a **bank-client behavior**, it belongs inside `clsBankClient`, not directly in the screen class.&#10;&#10;Add this public method inside `clsBankClient`, near `GetAccountBalance()` / `SetAccountBalance()`:&#10;&#10;&lt;llm-snippet-file&gt;include/clsBankClient.h&lt;/llm-snippet-file&gt;&#10;```cpp&#10;// ... existing code ...&#10;    void SetAccountBalance(float AccountBalance)&#10;    {&#10;        _AccountBalance = AccountBalance;&#10;    }&#10;&#10;    float GetAccountBalance()&#10;    {&#10;        return _AccountBalance;&#10;    }&#10;&#10;    void Deposit(float Amount)&#10;    {&#10;        _AccountBalance += Amount;&#10;        Save();&#10;    }&#10;&#10;    /*&#10;    No UI Related code iside object.&#10;    void Print()&#10;    {&#10;// ... existing code ...&#10;```&#10;&#10;Then this line becomes valid:&#10;&#10;```cpp&#10;Client1.Deposit(Amount);&#10;```&#10;&#10;## Small improvement&#10;&#10;Your `Amount` variable is `double`, but account balance uses `float`. To match your class, you can use:&#10;&#10;```cpp&#10;float Amount = 0;&#10;```&#10;&#10;Or keep `double`, but then maybe change balances to `double` later for consistency.&#10;&#10;## Important note&#10;&#10;`Deposit()` should call `Save()` because otherwise the balance changes only in memory and may not be written back to the file.&#10;&#10;So yes: **keep `Client1.Deposit(Amount);`, but first define the `Deposit` function in `clsBankClient`.**" />
+              </SerializedChatMessage>
+            </list>
+          </option>
+          <option name="modifiedAt" value="1778149132630" />
+          <option name="statisticInformation">
+            <ChatStatisticInformation>
+              <option name="sourceActionType" value="NEW_CHAT" />
+              <option name="timestamp" value="1778149132630" />
+            </ChatStatisticInformation>
+          </option>
+          <option name="title">
+            <SerializedChatTitle>
+              <option name="custom" value="true" />
+              <option name="text" value="Using Getter Functions for Class Properties" />
+            </SerializedChatTitle>
+          </option>
+          <option name="uid" value="db3e1ecf-41b3-4ee3-959d-381be146884e" />
+        </SerializedChat>
+        <SerializedChat>
+          <option name="chatContext">
+            <SerializedChatContext />
+          </option>
+          <option name="chatModelId" value="chat_mode" />
+          <option name="messages">
+            <list>
+              <SerializedChatMessage>
+                <option name="attachments">
+                  <list>
+                    <SerializedChatAttachment>
+                      <option name="name" value="Console Selection" />
+                      <option name="text" value="           if( Client1.Withdraw(Amount))&#10;" />
+                    </SerializedChatAttachment>
+                    <SerializedChatAttachment>
+                      <option name="name" value="Errors in selection" />
+                      <option name="text" value="&#10;Cannot convert void to bool&#10;at: Client1.Withdraw(Amount)&#10;on the lines:&#10;           if( Client1.Withdraw(Amount))&#10;" />
+                    </SerializedChatAttachment>
+                    <SerializedChatAttachment>
+                      <option name="url" value="file://$PROJECT_DIR$/include/Screens/Transactions/clsWithdrawScreen.h" />
+                      <option name="name" value="Information about open file in the editor" />
+                      <option name="text" value="```c/c++&#10;//&#10;// Created by imad on 5/7/26.&#10;//&#10;&#10;#ifndef PROJECT1L4BANKEXTENSION2_CLSWITHDRAWSCREEN_H&#10;#define PROJECT1L4BANKEXTENSION2_CLSWITHDRAWSCREEN_H&#10;&#10;&#10;&#10;&#10;#pragma once&#10;&#10;#include &lt;iostream&gt;&#10;#include &quot;../clsScreen.h&quot;&#10;#include &quot;clsBankClient.h&quot;&#10;#include &quot;clsInputValidate.h&quot;&#10;&#10;class clsWithdrawScreen : protected clsScreen&#10;{&#10;private:&#10;    static void _PrintClient(clsBankClient Client)&#10;    {&#10;        cout &lt;&lt; &quot;\nClient Card:&quot;;&#10;        cout &lt;&lt; &quot;\n___________________&quot;;&#10;        cout &lt;&lt; &quot;\nFirstName   : &quot; &lt;&lt; Client.GetFirstName();&#10;        cout &lt;&lt; &quot;\nLastName    : &quot; &lt;&lt; Client.GetLastName();&#10;        cout &lt;&lt; &quot;\nFull Name   : &quot; &lt;&lt; Client.FullName();&#10;        cout &lt;&lt; &quot;\nEmail       : &quot; &lt;&lt; Client.GetEmail();&#10;        cout &lt;&lt; &quot;\nPhone       : &quot; &lt;&lt; Client.GetPhone();&#10;        cout &lt;&lt; &quot;\nAcc. Number : &quot; &lt;&lt; Client.AccountNumber();&#10;        cout &lt;&lt; &quot;\nPassword    : &quot; &lt;&lt; Client.GetPinCode();&#10;        cout &lt;&lt; &quot;\nBalance     : &quot; &lt;&lt; Client.GetAccountBalance();&#10;        cout &lt;&lt; &quot;\n___________________\n&quot;;&#10;&#10;    }&#10;&#10;    static string _ReadAccountNumber()&#10;    {&#10;        string AccountNumber = &quot;&quot;;&#10;        cout &lt;&lt; &quot;\nPlease enter AccountNumber? &quot;;&#10;        cin &gt;&gt; AccountNumber;&#10;        return AccountNumber;&#10;    }&#10;&#10;public:&#10;    static void ShowWithdrawScreen()&#10;    {&#10;        _DrawScreenHeader(&quot;\t   Withdraw Screen&quot;);&#10;&#10;        string AccountNumber = _ReadAccountNumber();&#10;&#10;        while (!clsBankClient::IsClientExist(AccountNumber))&#10;        {&#10;            cout &lt;&lt; &quot;\nClient with [&quot; &lt;&lt; AccountNumber &lt;&lt; &quot;] does not exist.\n&quot;;&#10;            AccountNumber = _ReadAccountNumber();&#10;        }&#10;&#10;        clsBankClient Client1 = clsBankClient::Find(AccountNumber);&#10;        _PrintClient(Client1);&#10;&#10;        double Amount = 0;&#10;        cout &lt;&lt; &quot;\nPlease enter Withdraw amount? &quot;;&#10;        Amount = clsInputValidate::ReadDblNumber();&#10;&#10;        cout &lt;&lt; &quot;\nAre you sure you want to perform this transaction? &quot;;&#10;        char Answer = 'n';&#10;        cin &gt;&gt; Answer;&#10;&#10;        if (Answer == 'Y' || Answer == 'y')&#10;        {&#10;           if( Client1.Withdraw(Amount))&#10;           { &#10;            cout &lt;&lt; &quot;\nAmount Withdrew Successfully.\n&quot;;&#10;            cout &lt;&lt; &quot;\nNew Balance Is: &quot; &lt;&lt; Client1.GetAccountBalance();&#10;           }&#10;           else&#10;           {&#10;               cout &lt;&lt; &quot;\nCannot withdraw, Insuffecient Balance!\n&quot;;&#10;               cout &lt;&lt; &quot;\nAmout to withdraw is: &quot; &lt;&lt; Amount;&#10;               cout &lt;&lt; &quot;\nYour Balance is: &quot; &lt;&lt; Client1.GetAccountBalance();&#10;           }&#10;        }&#10;        else&#10;        {&#10;            cout &lt;&lt; &quot;\nOperation was cancelled.\n&quot;;&#10;        }&#10;    }&#10;};&#10;&#10;&#10;&#10;&#10;#endif //PROJECT1L4BANKEXTENSION2_CLSWITHDRAWSCREEN_H&#10;```" />
+                    </SerializedChatAttachment>
+                  </list>
+                </option>
+                <option name="markupLanguageID" value="ChatInput" />
+                <option name="uid" value="UUID(uuid=83be5a86-0f31-4bd5-83ff-8f2da561a89d)" />
+                <option name="displayContent" value="What the solution is?" />
+                <option name="internalContent" value="What the solution is?" />
+              </SerializedChatMessage>
+              <SerializedChatMessage>
+                <option name="author" value="Assistant" />
+                <option name="rating" value="Like" />
+                <option name="uid" value="2afaa63d-c0f8-4196-a147-f22df476cf54" />
+                <option name="displayContent" value="The error happens because `Client1.Withdraw(Amount)` returns **`void`**, meaning “nothing”, but you are using it inside an `if`:&#10;&#10;```cpp&#10;if (Client1.Withdraw(Amount))&#10;```&#10;&#10;An `if` needs a `bool` condition: `true` or `false`.&#10;&#10;## Best solution&#10;&#10;Change `Withdraw` in `clsBankClient.h` so it returns `bool`.&#10;&#10;If the amount is greater than the balance, return `false`. Otherwise withdraw and return `true`.&#10;&#10;&lt;llm-snippet-file&gt;include/clsBankClient.h&lt;/llm-snippet-file&gt;&#10;```cpp&#10;// ... existing code ...&#10;&#10;    void Deposit(double Amount)&#10;    {&#10;        _AccountBalance += Amount;&#10;        Save();&#10;    }&#10;&#10;    bool Withdraw(double Amount)&#10;    {&#10;        if (Amount &gt; _AccountBalance)&#10;            return false;&#10;&#10;        _AccountBalance -= Amount;&#10;        Save();&#10;        return true;&#10;    }&#10;};&#10;&#10;// ... existing code ...&#10;```&#10;&#10;Then your existing code in `clsWithdrawScreen.h` becomes valid:&#10;&#10;```cpp&#10;if (Client1.Withdraw(Amount))&#10;{&#10;    cout &lt;&lt; &quot;\nAmount Withdrew Successfully.\n&quot;;&#10;    cout &lt;&lt; &quot;\nNew Balance Is: &quot; &lt;&lt; Client1.GetAccountBalance();&#10;}&#10;else&#10;{&#10;    cout &lt;&lt; &quot;\nCannot withdraw, Insuffecient Balance!\n&quot;;&#10;    cout &lt;&lt; &quot;\nAmout to withdraw is: &quot; &lt;&lt; Amount;&#10;    cout &lt;&lt; &quot;\nYour Balance is: &quot; &lt;&lt; Client1.GetAccountBalance();&#10;}&#10;```&#10;&#10;## Small note&#10;&#10;You may also want to fix the spelling in the messages:&#10;&#10;```cpp&#10;&quot;Insufficient Balance&quot;&#10;&quot;Amount&quot;&#10;```&#10;&#10;But the main fix is: **make `Withdraw` return `bool` instead of `void`**." />
+                <option name="internalContent" value="The error happens because `Client1.Withdraw(Amount)` returns **`void`**, meaning “nothing”, but you are using it inside an `if`:&#10;&#10;```cpp&#10;if (Client1.Withdraw(Amount))&#10;```&#10;&#10;An `if` needs a `bool` condition: `true` or `false`.&#10;&#10;## Best solution&#10;&#10;Change `Withdraw` in `clsBankClient.h` so it returns `bool`.&#10;&#10;If the amount is greater than the balance, return `false`. Otherwise withdraw and return `true`.&#10;&#10;&lt;llm-snippet-file&gt;include/clsBankClient.h&lt;/llm-snippet-file&gt;&#10;```cpp&#10;// ... existing code ...&#10;&#10;    void Deposit(double Amount)&#10;    {&#10;        _AccountBalance += Amount;&#10;        Save();&#10;    }&#10;&#10;    bool Withdraw(double Amount)&#10;    {&#10;        if (Amount &gt; _AccountBalance)&#10;            return false;&#10;&#10;        _AccountBalance -= Amount;&#10;        Save();&#10;        return true;&#10;    }&#10;};&#10;&#10;// ... existing code ...&#10;```&#10;&#10;Then your existing code in `clsWithdrawScreen.h` becomes valid:&#10;&#10;```cpp&#10;if (Client1.Withdraw(Amount))&#10;{&#10;    cout &lt;&lt; &quot;\nAmount Withdrew Successfully.\n&quot;;&#10;    cout &lt;&lt; &quot;\nNew Balance Is: &quot; &lt;&lt; Client1.GetAccountBalance();&#10;}&#10;else&#10;{&#10;    cout &lt;&lt; &quot;\nCannot withdraw, Insuffecient Balance!\n&quot;;&#10;    cout &lt;&lt; &quot;\nAmout to withdraw is: &quot; &lt;&lt; Amount;&#10;    cout &lt;&lt; &quot;\nYour Balance is: &quot; &lt;&lt; Client1.GetAccountBalance();&#10;}&#10;```&#10;&#10;## Small note&#10;&#10;You may also want to fix the spelling in the messages:&#10;&#10;```cpp&#10;&quot;Insufficient Balance&quot;&#10;&quot;Amount&quot;&#10;```&#10;&#10;But the main fix is: **make `Withdraw` return `bool` instead of `void`**." />
+              </SerializedChatMessage>
+            </list>
+          </option>
+          <option name="modifiedAt" value="1778152748705" />
+          <option name="statisticInformation">
+            <ChatStatisticInformation>
+              <option name="sourceActionType" value="NEW_CHAT" />
+              <option name="timestamp" value="1778152748705" />
+            </ChatStatisticInformation>
+          </option>
+          <option name="title">
+            <SerializedChatTitle>
+              <option name="custom" value="true" />
+              <option name="text" value="Fixing Withdraw Method Return Type" />
+            </SerializedChatTitle>
+          </option>
+          <option name="uid" value="4ecf5b18-856d-4559-af90-94952883632c" />
+        </SerializedChat>
       </list>
     </option>
   </component>
@@ -4702,23 +5017,65 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf ideFingerprint="2imvlj1t9v9dk" SIDE_TABS_SIZE_LIMIT_KEY="-1">
+    <leaf ideFingerprint="43e96p19xetl" SIDE_TABS_SIZE_LIMIT_KEY="-1">
       <file>
         <entry file="file://$PROJECT_DIR$/src/main.cpp" file-id="43140" managing-fs="1770122711113">
           <provider editor-type-id="text-editor" selected="true">
             <state relative-caret-position="120">
-              <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+              <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
             </state>
           </provider>
         </entry>
         <tab><![CDATA[{"tabTitle":"main.cpp","foregroundColor":-9192071,"textAttributes":{"name":"a","children":[{"name":"option","attributes":{"name":"FOREGROUND","value":"73bd79"}}]},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,114,10,23,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,99,112,112,46,115,118,103,18,29,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,99,112,112,46,115,118,103,26,18,99,111,109,46,105,110,116,101,108,108,105,106,46,99,108,105,111,110,34,23,105,110,116,101,108,108,105,106,46,99,105,100,114,46,108,97,110,103,46,98,97,115,101,40,-21,-119,-10,-57,-3,-1,-1,-1,-1,1,48,0]}]]></tab>
       </file>
       <file>
-        <entry file="file://$PROJECT_DIR$/include/clsAddNewClientScreen.h" file-id="43639" managing-fs="1770122711113">
+        <entry file="file://$PROJECT_DIR$/include/Screens/Transactions/clsTransactionsScreen.h" file-id="45828" managing-fs="1770122711113">
           <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="-192">
+            <state relative-caret-position="1032">
+              <caret line="43" column="37" selection-start-line="43" selection-start-column="37" selection-end-line="43" selection-end-column="37" />
               <folding>
-                <marker date="1777890497698" expanded="true" signature="0:35" ph="//..." />
+                <marker date="1778152754925" expanded="true" signature="166:327" ph="##include ..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"clsTransactionsScreen.h","foregroundColor":-1536119,"textAttributes":{"name":"a","children":[{"name":"option","attributes":{"name":"FOREGROUND","value":"e88f89"}}]},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,110,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,26,18,99,111,109,46,105,110,116,101,108,108,105,106,46,99,108,105,111,110,34,23,105,110,116,101,108,108,105,106,46,99,105,100,114,46,108,97,110,103,46,98,97,115,101,40,-48,-45,-18,-83,-7,-1,-1,-1,-1,1,48,0]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/include/Screens/Transactions/clsDepositScreen.h" file-id="45832" managing-fs="1770122711113">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="576">
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
+              <folding>
+                <marker date="1778150008427" expanded="true" signature="158:260" ph="##include ..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"clsDepositScreen.h","foregroundColor":-1536119,"textAttributes":{"name":"a","children":[{"name":"option","attributes":{"name":"FOREGROUND","value":"e88f89"}}]},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,110,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,26,18,99,111,109,46,105,110,116,101,108,108,105,106,46,99,108,105,111,110,34,23,105,110,116,101,108,108,105,106,46,99,105,100,114,46,108,97,110,103,46,98,97,115,101,40,-48,-45,-18,-83,-7,-1,-1,-1,-1,1,48,0]}]]></tab>
+      </file>
+      <file current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/include/Screens/Transactions/clsWithdrawScreen.h" file-id="45834" managing-fs="1770122711113">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="480">
+              <caret line="74" column="11" selection-start-line="74" selection-start-column="11" selection-end-line="74" selection-end-column="11" />
+              <folding>
+                <marker date="1778152754920" expanded="true" signature="0:35" ph="//..." />
+                <marker date="1778152754920" expanded="true" signature="161:263" ph="##include ..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"clsWithdrawScreen.h","foregroundColor":-1536119,"textAttributes":{"name":"a","children":[{"name":"option","attributes":{"name":"FOREGROUND","value":"e88f89"}}]},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,110,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,26,18,99,111,109,46,105,110,116,101,108,108,105,106,46,99,108,105,111,110,34,23,105,110,116,101,108,108,105,106,46,99,105,100,114,46,108,97,110,103,46,98,97,115,101,40,-48,-45,-18,-83,-7,-1,-1,-1,-1,1,48,0]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/include/Screens/clsAddNewClientScreen.h" file-id="43639" managing-fs="1770122711113">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="408">
+              <caret line="17" column="49" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
+              <folding>
+                <marker date="1778094200433" expanded="true" signature="0:35" ph="//..." />
+                <marker date="1778094200433" expanded="true" signature="168:292" ph="##include ..." />
               </folding>
             </state>
           </provider>
@@ -4736,60 +5093,56 @@
         <tab><![CDATA[{"tabTitle":"clsPerson.h","foregroundColor":-1536119,"textAttributes":{"name":"a","children":[{"name":"option","attributes":{"name":"FOREGROUND","value":"e88f89"}}]},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,110,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,26,18,99,111,109,46,105,110,116,101,108,108,105,106,46,99,108,105,111,110,34,23,105,110,116,101,108,108,105,106,46,99,105,100,114,46,108,97,110,103,46,98,97,115,101,40,-48,-45,-18,-83,-7,-1,-1,-1,-1,1,48,0]}]]></tab>
       </file>
       <file>
-        <entry file="file://$PROJECT_DIR$/include/clsScreen.h" file-id="43634" managing-fs="1770122711113">
+        <entry file="file://$PROJECT_DIR$/include/Screens/clsScreen.h" file-id="43634" managing-fs="1770122711113">
           <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="288">
-              <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+            <state relative-caret-position="648">
+              <caret line="27" column="16" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
             </state>
           </provider>
         </entry>
         <tab><![CDATA[{"tabTitle":"clsScreen.h","foregroundColor":-1536119,"textAttributes":{"name":"a","children":[{"name":"option","attributes":{"name":"FOREGROUND","value":"e88f89"}}]},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,110,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,26,18,99,111,109,46,105,110,116,101,108,108,105,106,46,99,108,105,111,110,34,23,105,110,116,101,108,108,105,106,46,99,105,100,114,46,108,97,110,103,46,98,97,115,101,40,-48,-45,-18,-83,-7,-1,-1,-1,-1,1,48,0]}]]></tab>
       </file>
       <file>
-        <entry file="file://$PROJECT_DIR$/include/clsMainScreen.h" file-id="43633" managing-fs="1770122711113">
+        <entry file="file://$PROJECT_DIR$/include/Screens/clsMainScreen.h" file-id="43633" managing-fs="1770122711113">
           <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="264">
-              <caret line="88" column="39" lean-forward="true" selection-start-line="88" selection-start-column="39" selection-end-line="88" selection-end-column="39" />
-              <folding>
-                <marker date="1777929266368" expanded="true" signature="151:399" ph="##include ..." />
-              </folding>
+            <state relative-caret-position="3432">
+              <caret line="143" column="12" selection-start-line="143" selection-start-column="12" selection-end-line="143" selection-end-column="12" />
             </state>
           </provider>
         </entry>
         <tab><![CDATA[{"tabTitle":"clsMainScreen.h","foregroundColor":-1536119,"textAttributes":{"name":"a","children":[{"name":"option","attributes":{"name":"FOREGROUND","value":"e88f89"}}]},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,110,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,26,18,99,111,109,46,105,110,116,101,108,108,105,106,46,99,108,105,111,110,34,23,105,110,116,101,108,108,105,106,46,99,105,100,114,46,108,97,110,103,46,98,97,115,101,40,-48,-45,-18,-83,-7,-1,-1,-1,-1,1,48,0]}]]></tab>
       </file>
-      <file current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/include/clsUpdateClientScreen.h" file-id="45826" managing-fs="1770122711113">
+      <file>
+        <entry file="file://$PROJECT_DIR$/include/Screens/clsUpdateClientScreen.h" file-id="45826" managing-fs="1770122711113">
           <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="264">
-              <caret line="86" column="26" selection-start-line="86" selection-start-column="26" selection-end-line="86" selection-end-column="26" />
-              <folding>
-                <marker date="1777982692300" expanded="true" signature="0:35" ph="//..." />
-                <marker date="1777982692300" expanded="true" signature="166:288" ph="##include ..." />
-                <marker date="1777982692300" expanded="false" signature="401:1011" ph="{...}" />
-              </folding>
+            <state relative-caret-position="456">
+              <caret line="19" column="49" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
             </state>
           </provider>
         </entry>
         <tab><![CDATA[{"tabTitle":"clsUpdateClientScreen.h","foregroundColor":-1536119,"textAttributes":{"name":"a","children":[{"name":"option","attributes":{"name":"FOREGROUND","value":"e88f89"}}]},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,110,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,26,18,99,111,109,46,105,110,116,101,108,108,105,106,46,99,108,105,111,110,34,23,105,110,116,101,108,108,105,106,46,99,105,100,114,46,108,97,110,103,46,98,97,115,101,40,-48,-45,-18,-83,-7,-1,-1,-1,-1,1,48,0]}]]></tab>
       </file>
       <file>
-        <entry file="file://$PROJECT_DIR$/include/clsPeriod.h" file-id="43138" managing-fs="1770122711113">
+        <entry file="file://$PROJECT_DIR$/include/Screens/clsFindClientScreen.h" file-id="45827" managing-fs="1770122711113">
           <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="-720">
-              <folding>
-                <marker date="1776378070463" expanded="true" signature="0:36" ph="//..." />
-              </folding>
+            <state relative-caret-position="1296">
+              <caret line="54" column="29" selection-start-line="54" selection-start-column="29" selection-end-line="54" selection-end-column="29" />
             </state>
           </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"clsFindClientScreen.h","foregroundColor":-1536119,"textAttributes":{"name":"a","children":[{"name":"option","attributes":{"name":"FOREGROUND","value":"e88f89"}}]},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,110,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,26,18,99,111,109,46,105,110,116,101,108,108,105,106,46,99,108,105,111,110,34,23,105,110,116,101,108,108,105,106,46,99,105,100,114,46,108,97,110,103,46,98,97,115,101,40,-48,-45,-18,-83,-7,-1,-1,-1,-1,1,48,0]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/include/clsPeriod.h" file-id="43138" managing-fs="1770122711113">
+          <provider editor-type-id="text-editor" selected="true" />
         </entry>
         <tab><![CDATA[{"tabTitle":"clsPeriod.h","foregroundColor":-1536119,"textAttributes":{"name":"a","children":[{"name":"option","attributes":{"name":"FOREGROUND","value":"e88f89"}}]},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,110,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,26,18,99,111,109,46,105,110,116,101,108,108,105,106,46,99,108,105,111,110,34,23,105,110,116,101,108,108,105,106,46,99,105,100,114,46,108,97,110,103,46,98,97,115,101,40,-48,-45,-18,-83,-7,-1,-1,-1,-1,1,48,0]}]]></tab>
       </file>
       <file>
-        <entry file="file://$PROJECT_DIR$/include/clsDeleteClientScreen.h" file-id="45824" managing-fs="1770122711113">
+        <entry file="file://$PROJECT_DIR$/include/Screens/clsDeleteClientScreen.h" file-id="45824" managing-fs="1770122711113">
           <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="392">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="528">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
             </state>
           </provider>
         </entry>
@@ -4798,17 +5151,17 @@
       <file>
         <entry file="file://$PROJECT_DIR$/include/clsBankClient.h" file-id="43328" managing-fs="1770122711113">
           <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="240">
-              <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+            <state relative-caret-position="8136">
+              <caret line="339" column="16" selection-start-line="339" selection-start-column="16" selection-end-line="339" selection-end-column="16" />
             </state>
           </provider>
         </entry>
         <tab><![CDATA[{"tabTitle":"clsBankClient.h","foregroundColor":-1536119,"textAttributes":{"name":"a","children":[{"name":"option","attributes":{"name":"FOREGROUND","value":"e88f89"}}]},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,110,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,26,18,99,111,109,46,105,110,116,101,108,108,105,106,46,99,108,105,111,110,34,23,105,110,116,101,108,108,105,106,46,99,105,100,114,46,108,97,110,103,46,98,97,115,101,40,-48,-45,-18,-83,-7,-1,-1,-1,-1,1,48,0]}]]></tab>
       </file>
       <file>
-        <entry file="file://$PROJECT_DIR$/include/clsClientListScreen.h" file-id="43637" managing-fs="1770122711113">
+        <entry file="file://$PROJECT_DIR$/include/Screens/clsClientListScreen.h" file-id="43637" managing-fs="1770122711113">
           <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="-712">
+            <state relative-caret-position="624">
               <caret line="26" column="61" selection-start-line="26" selection-start-column="61" selection-end-line="26" selection-end-column="61" />
             </state>
           </provider>
@@ -4818,35 +5171,8 @@
       <file>
         <entry file="file://$PROJECT_DIR$/include/clsInputValidate.h" file-id="43309" managing-fs="1770122711113">
           <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="264">
-              <caret line="24" column="26" lean-forward="true" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
-              <folding>
-                <marker date="1777467039024" expanded="true" signature="0:36" ph="//..." />
-                <marker date="1777467039024" expanded="true" signature="142:180" ph="##include ..." />
-                <marker date="1777467039024" expanded="false" signature="474:570" ph="{...}" />
-                <marker date="1777467039024" expanded="false" signature="815:910" ph="{...}" />
-                <marker date="1777467039024" expanded="false" signature="980:1601" ph="{...}" />
-                <marker date="1777467039024" expanded="false" signature="1233:1278" ph="{...}" />
-                <marker date="1777467039024" expanded="false" signature="1527:1572" ph="{...}" />
-                <marker date="1777467039024" expanded="false" signature="1690:1916" ph="{...}" />
-                <marker date="1777467039024" expanded="false" signature="1751:1887" ph="{...}" />
-                <marker date="1777467039024" expanded="false" signature="1998:2223" ph="{...}" />
-                <marker date="1777467039024" expanded="false" signature="2057:2194" ph="{...}" />
-                <marker date="1777467039024" expanded="false" signature="2353:2574" ph="{...}" />
-                <marker date="1777467039024" expanded="false" signature="2451:2545" ph="{...}" />
-                <marker date="1777467039024" expanded="false" signature="2694:2907" ph="{...}" />
-                <marker date="1777467039024" expanded="false" signature="2786:2878" ph="{...}" />
-                <marker date="1777467039024" expanded="false" signature="2995:3221" ph="{...}" />
-                <marker date="1777467039024" expanded="false" signature="3056:3192" ph="{...}" />
-                <marker date="1777467039024" expanded="false" signature="3351:3566" ph="{...}" />
-                <marker date="1777467039024" expanded="false" signature="3451:3537" ph="{...}" />
-                <marker date="1777467039024" expanded="false" signature="3653:3880" ph="{...}" />
-                <marker date="1777467039024" expanded="false" signature="3715:3851" ph="{...}" />
-                <marker date="1777467039024" expanded="false" signature="4011:4223" ph="{...}" />
-                <marker date="1777467039024" expanded="false" signature="4110:4194" ph="{...}" />
-                <marker date="1777467039024" expanded="false" signature="4267:4322" ph="{...}" />
-                <marker date="1777467039024" expanded="false" signature="4354:4509" ph="{...}" />
-              </folding>
+            <state relative-caret-position="576">
+              <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -4855,7 +5181,7 @@
       <file>
         <entry file="file://$PROJECT_DIR$/include/clsUtil.h" file-id="43139" managing-fs="1770122711113">
           <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="-1607">
+            <state relative-caret-position="504">
               <caret line="21" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
@@ -4894,8 +5220,8 @@
   <component name="FileTypeUsageLocalSummary"><![CDATA[{
   "data": {
     "C/C++": {
-      "usageCount": 157,
-      "lastUsed": 1777924401469
+      "usageCount": 158,
+      "lastUsed": 1778161853976
     },
     "CMakeLists.txt": {
       "usageCount": 27,
@@ -4918,8 +5244,8 @@
       "lastUsed": 1774143608208
     },
     "C/C++ Header": {
-      "usageCount": 165,
-      "lastUsed": 1777980798231
+      "usageCount": 186,
+      "lastUsed": 1778161854044
     }
   }
 }]]></component>
@@ -4942,42 +5268,49 @@
     <select />
   </component>
   <component name="GitSEFilterConfiguration">{}</component>
-  <component name="IdeDocumentHistory"><![CDATA[{
-  "changedPaths": [
-    "/home/imad/.ideavimrc",
-    "/home/imad/.config/JetBrains/CLion2025.3/clion64.vmoptions",
-    "/home/imad/Documents/Coding/UserLib.cpp",
-    "/home/imad/Documents/Coding/Project.cpp",
-    "/home/imad/Documents/Coding/UserLib.h",
-    "/home/imad/Documents/Coding/CMakeLists.txt",
-    "/home/imad/Documents/Project 1 L4 - Bank Extension 2/include/clsUser.h",
-    "/home/imad/Documents/Project 1 L4 - Bank Extension 2/include/clsDbObject.h",
-    "/home/imad/Documents/Project 1 L4 - Bank Extension 2/src/clsBankController.cpp",
-    "/home/imad/Documents/Project 1 L4 - Bank Extension 2/include/clsBankController.h",
-    "/home/imad/Documents/Project 1 L4 - Bank Extension 2/CMakeLists.txt",
-    "/home/imad/Documents/Project 2 L4 - ATM System/src/clsATMController.cpp",
-    "/home/imad/Documents/Project 2 L4 - ATM System/include/clsATMController.h",
-    "/home/imad/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp",
-    "/home/imad/Documents/Project 2 L4 - ATM System/include/clsString.h",
-    "/home/imad/Documents/Project 2 L4 - ATM System/include/clsPeriod.h",
-    "/home/imad/Documents/Project 2 L4 - ATM System/include/cldUtil.h",
-    "/home/imad/Documents/Project 2 L4 - ATM System/src/main.cpp",
-    "/home/imad/Documents/Project 2 L4 - ATM System/include/clsDate.h",
-    "/home/imad/Documents/Project1 - Utility library/include/clsString.h",
-    "/home/imad/Documents/Project1 - Utility library/include/clsScreen.h",
-    "/home/imad/Documents/Project1 - Utility library/include/clsInputValidate.h",
-    "/home/imad/Documents/Project1 - Utility library/include/clsBankClient.h",
-    "/home/imad/Documents/Project1 - Utility library/include/clsPerson.h",
-    "/home/imad/Documents/Project1 - Utility library/src/main.cpp",
-    "/home/imad/Documents/Project1 - Utility library/include/clsClientListScreen.h",
-    "/home/imad/Documents/Project1 - Utility library/include/clsAddNewClientScreen.h",
-    "/home/imad/Documents/Project1 - Utility library/CMakeLists.txt",
-    "/home/imad/Documents/Project1 - Utility library/include/clsMainScreen.h",
-    "/home/imad/Documents/Project1 - Utility library/include/clsDeleteClientScreen.h",
-    "/home/imad/Documents/Project1 - Utility library/include/clsUpdateClientScreen.h",
-    "/home/imad/Documents/Project1 - Utility library/include/clsUtil.h"
+  <component name="IdeDocumentHistory">{
+  &quot;changedPaths&quot;: [
+    &quot;/home/imad/.ideavimrc&quot;,
+    &quot;/home/imad/.config/JetBrains/CLion2025.3/clion64.vmoptions&quot;,
+    &quot;/home/imad/Documents/Coding/UserLib.cpp&quot;,
+    &quot;/home/imad/Documents/Coding/Project.cpp&quot;,
+    &quot;/home/imad/Documents/Coding/UserLib.h&quot;,
+    &quot;/home/imad/Documents/Coding/CMakeLists.txt&quot;,
+    &quot;/home/imad/Documents/Project 1 L4 - Bank Extension 2/include/clsUser.h&quot;,
+    &quot;/home/imad/Documents/Project 1 L4 - Bank Extension 2/include/clsDbObject.h&quot;,
+    &quot;/home/imad/Documents/Project 1 L4 - Bank Extension 2/src/clsBankController.cpp&quot;,
+    &quot;/home/imad/Documents/Project 1 L4 - Bank Extension 2/include/clsBankController.h&quot;,
+    &quot;/home/imad/Documents/Project 1 L4 - Bank Extension 2/CMakeLists.txt&quot;,
+    &quot;/home/imad/Documents/Project 2 L4 - ATM System/src/clsATMController.cpp&quot;,
+    &quot;/home/imad/Documents/Project 2 L4 - ATM System/include/clsATMController.h&quot;,
+    &quot;/home/imad/Documents/Project 2 L4 - ATM System/src/Test_Of_OOP.cpp&quot;,
+    &quot;/home/imad/Documents/Project 2 L4 - ATM System/include/clsString.h&quot;,
+    &quot;/home/imad/Documents/Project 2 L4 - ATM System/include/clsPeriod.h&quot;,
+    &quot;/home/imad/Documents/Project 2 L4 - ATM System/include/cldUtil.h&quot;,
+    &quot;/home/imad/Documents/Project 2 L4 - ATM System/src/main.cpp&quot;,
+    &quot;/home/imad/Documents/Project 2 L4 - ATM System/include/clsDate.h&quot;,
+    &quot;/home/imad/Documents/Project1 - Utility library/include/clsString.h&quot;,
+    &quot;/home/imad/Documents/Project1 - Utility library/include/clsInputValidate.h&quot;,
+    &quot;/home/imad/Documents/Project1 - Utility library/include/clsPerson.h&quot;,
+    &quot;/home/imad/Documents/Project1 - Utility library/src/main.cpp&quot;,
+    &quot;/home/imad/Documents/Project1 - Utility library/include/clsClientListScreen.h&quot;,
+    &quot;/home/imad/Documents/Project1 - Utility library/CMakeLists.txt&quot;,
+    &quot;/home/imad/Documents/Project1 - Utility library/include/clsDeleteClientScreen.h&quot;,
+    &quot;/home/imad/Documents/Project1 - Utility library/include/clsUtil.h&quot;,
+    &quot;/home/imad/Documents/Project1 - Utility library/include/clsUpdateClientScreen.h&quot;,
+    &quot;/home/imad/Documents/Project1 - Utility library/include/clsFindClientScreen.h&quot;,
+    &quot;/home/imad/Documents/Project1 - Utility library/include/clsScreen.h&quot;,
+    &quot;/home/imad/Documents/Project1 - Utility library/include/clsTransactionsScreen.h&quot;,
+    &quot;/home/imad/Documents/Project1 - Utility library/include/clsMainScreen.h&quot;,
+    &quot;/home/imad/Documents/Project1 - Utility library/include/clsAddNewClientScreen.h&quot;,
+    &quot;/home/imad/Documents/Project1 - Utility library/include/Screens/clsAddNewClientScreen.h&quot;,
+    &quot;/home/imad/Documents/Project1 - Utility library/include/Screens/clsMainScreen.h&quot;,
+    &quot;/home/imad/Documents/Project1 - Utility library/include/Screens/Transactions/clsDepositScreen.h&quot;,
+    &quot;/home/imad/Documents/Project1 - Utility library/include/Screens/Transactions/clsTransactionsScreen.h&quot;,
+    &quot;/home/imad/Documents/Project1 - Utility library/include/clsBankClient.h&quot;,
+    &quot;/home/imad/Documents/Project1 - Utility library/include/Screens/Transactions/clsWithdrawScreen.h&quot;
   ]
-}]]></component>
+}</component>
   <component name="IgnoredFileRootStore">
     <option name="generatedRoots">
       <set>
@@ -5022,12 +5355,14 @@
         <entry key="44df65c6-53c8-4d40-94eb-54e3b92882e7" value="false" />
         <entry key="48095878-7ac8-45f8-be64-e265254725cc" value="false" />
         <entry key="4bc8d75e-a38b-40a5-9187-c51a91b57b8e" value="false" />
+        <entry key="4ecf5b18-856d-4559-af90-94952883632c" value="false" />
         <entry key="54166bc1-9816-4545-8267-2d9baf377f7c" value="false" />
         <entry key="5431cd0d-70c4-497f-998a-1f8ccc00e5a6" value="false" />
         <entry key="54d691b1-f170-4412-954a-f6ea7edb6999" value="false" />
         <entry key="552b9fae-10f8-4a72-b570-c00b2d40e38a" value="false" />
         <entry key="55667997-c0e1-4f72-940c-5c9c2cb1b6d5" value="false" />
         <entry key="57cdc852-2296-4816-8be0-38b4c4704520" value="false" />
+        <entry key="583f1a41-9dbd-46bb-9d69-56d0ea879caa" value="false" />
         <entry key="59dc3418-01be-4e36-805b-110942728094" value="false" />
         <entry key="5ced5f69-93f9-40bf-8316-1ea792038522" value="false" />
         <entry key="5e148371-ff3b-4765-97ef-bb9090e1d990" value="false" />
@@ -5038,6 +5373,8 @@
         <entry key="70157d71-c6c7-4e64-b669-d34595e2783b" value="false" />
         <entry key="721a139f-6969-4a4b-8219-6c308594f488" value="false" />
         <entry key="72ea6084-b215-4366-b6a1-b66ee31c1b6c" value="false" />
+        <entry key="74128f31-b9cb-44a4-a75c-5fe18d3662b7" value="false" />
+        <entry key="75bc4afb-1650-4a99-81ce-c200831995a3" value="false" />
         <entry key="77e1175d-78d0-4908-a5be-b3b4290d8828" value="false" />
         <entry key="7aadfe54-7658-40a3-9959-5a390f233ba1" value="false" />
         <entry key="7bb174fb-c888-47ad-955f-1ac9d25d562d" value="false" />
@@ -5115,6 +5452,7 @@
         <entry key="d9ded76b-21f3-4fa5-8517-bd1904c8dd3b" value="false" />
         <entry key="da9fb45f-e0ff-4489-8e56-d2d0eb1963ff" value="false" />
         <entry key="db10343f-3e80-4d40-9545-d4f318d11732" value="false" />
+        <entry key="db3e1ecf-41b3-4ee3-959d-381be146884e" value="false" />
         <entry key="dbdbb2b6-23ad-4b92-a807-397122b11a52" value="false" />
         <entry key="dc256c97-74f0-4a52-9575-15db58a26b33" value="false" />
         <entry key="dd64ffe0-5a18-480e-bc60-1b779f5a0f6a" value="false" />
@@ -5137,12 +5475,13 @@
         <entry key="f7623557-2a9a-458e-98d6-7a6c9408047a" value="false" />
         <entry key="fba7af34-a3e8-404a-8754-c52e32807bfd" value="false" />
         <entry key="fd4bd021-ac5b-418f-a4a3-fcfe54ea699a" value="false" />
+        <entry key="fe4805ab-25f7-40e0-a269-424426fbf85b" value="false" />
       </map>
     </option>
   </component>
   <component name="LanguageUsageStatistics">
     <language id="C++">
-      <summary usageCount="322" lastUsage="1777980798231" />
+      <summary usageCount="344" lastUsage="1778161854044" />
     </language>
     <language id="CMake">
       <summary usageCount="27" lastUsage="1777924401432" />
@@ -5176,6 +5515,19 @@
               <item name="Project1L4BankExtension2" type="b2602c69:ProjectViewProjectNode" />
               <item name="dir{file:///home/imad/Documents/Project1 - Utility library}" type="462c0819:PsiDirectoryNode" />
               <item name="dir{file:///home/imad/Documents/Project1 - Utility library/include}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Project1L4BankExtension2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/imad/Documents/Project1 - Utility library}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/imad/Documents/Project1 - Utility library/include}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/imad/Documents/Project1 - Utility library/include/Screens}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Project1L4BankExtension2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/imad/Documents/Project1 - Utility library}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/imad/Documents/Project1 - Utility library/include}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/imad/Documents/Project1 - Utility library/include/Screens}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/imad/Documents/Project1 - Utility library/include/Screens/Transactions}" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Project1L4BankExtension2" type="b2602c69:ProjectViewProjectNode" />
@@ -5243,11 +5595,110 @@
                 <presentation>
                   <attributes>
                     <map>
-                      <entry key="filePath" value="$PROJECT_DIR$/include/clsAddNewClientScreen.h" />
+                      <entry key="filePath" value="$PROJECT_DIR$/include/Screens" />
                     </map>
                   </attributes>
-                  <data iconModule="intellij.cidr.lang.base" iconPath="icons/expui/fileTypes/h.svg" iconPlugin="com.intellij.clion" isLeaf="true" text="clsAddNewClientScreen.h" />
-                  <item name="clsAddNewClientScreen.h" type="ab9368bb:PsiFileNode" />
+                  <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="Screens" />
+                  <item name="dir{file:///home/imad/Documents/Project1 - Utility library/include/Screens}" type="462c0819:PsiDirectoryNode" />
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/include/Screens/Transactions" />
+                      </map>
+                    </attributes>
+                    <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="Transactions" />
+                    <item name="dir{file:///home/imad/Documents/Project1 - Utility library/include/Screens/Transactions}" type="462c0819:PsiDirectoryNode" />
+                    <presentation>
+                      <attributes>
+                        <map>
+                          <entry key="filePath" value="$PROJECT_DIR$/include/Screens/Transactions/clsDepositScreen.h" />
+                        </map>
+                      </attributes>
+                      <data iconModule="intellij.cidr.lang.base" iconPath="icons/expui/fileTypes/h.svg" iconPlugin="com.intellij.clion" isLeaf="true" text="clsDepositScreen.h" />
+                      <item name="clsDepositScreen.h" type="ab9368bb:PsiFileNode" />
+                    </presentation>
+                    <presentation>
+                      <attributes>
+                        <map>
+                          <entry key="filePath" value="$PROJECT_DIR$/include/Screens/Transactions/clsTransactionsScreen.h" />
+                        </map>
+                      </attributes>
+                      <data iconModule="intellij.cidr.lang.base" iconPath="icons/expui/fileTypes/h.svg" iconPlugin="com.intellij.clion" isLeaf="true" text="clsTransactionsScreen.h" />
+                      <item name="clsTransactionsScreen.h" type="ab9368bb:PsiFileNode" />
+                    </presentation>
+                    <presentation>
+                      <attributes>
+                        <map>
+                          <entry key="filePath" value="$PROJECT_DIR$/include/Screens/Transactions/clsWithdrawScreen.h" />
+                        </map>
+                      </attributes>
+                      <data iconModule="intellij.cidr.lang.base" iconPath="icons/expui/fileTypes/h.svg" iconPlugin="com.intellij.clion" isLeaf="true" text="clsWithdrawScreen.h" />
+                      <item name="clsWithdrawScreen.h" type="ab9368bb:PsiFileNode" />
+                    </presentation>
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/include/Screens/clsAddNewClientScreen.h" />
+                      </map>
+                    </attributes>
+                    <data iconModule="intellij.cidr.lang.base" iconPath="icons/expui/fileTypes/h.svg" iconPlugin="com.intellij.clion" isLeaf="true" text="clsAddNewClientScreen.h" />
+                    <item name="clsAddNewClientScreen.h" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/include/Screens/clsClientListScreen.h" />
+                      </map>
+                    </attributes>
+                    <data iconModule="intellij.cidr.lang.base" iconPath="icons/expui/fileTypes/h.svg" iconPlugin="com.intellij.clion" isLeaf="true" text="clsClientListScreen.h" />
+                    <item name="clsClientListScreen.h" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/include/Screens/clsDeleteClientScreen.h" />
+                      </map>
+                    </attributes>
+                    <data iconModule="intellij.cidr.lang.base" iconPath="icons/expui/fileTypes/h.svg" iconPlugin="com.intellij.clion" isLeaf="true" text="clsDeleteClientScreen.h" />
+                    <item name="clsDeleteClientScreen.h" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/include/Screens/clsFindClientScreen.h" />
+                      </map>
+                    </attributes>
+                    <data iconModule="intellij.cidr.lang.base" iconPath="icons/expui/fileTypes/h.svg" iconPlugin="com.intellij.clion" isLeaf="true" text="clsFindClientScreen.h" />
+                    <item name="clsFindClientScreen.h" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/include/Screens/clsMainScreen.h" />
+                      </map>
+                    </attributes>
+                    <data iconModule="intellij.cidr.lang.base" iconPath="icons/expui/fileTypes/h.svg" iconPlugin="com.intellij.clion" isLeaf="true" text="clsMainScreen.h" />
+                    <item name="clsMainScreen.h" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/include/Screens/clsScreen.h" />
+                      </map>
+                    </attributes>
+                    <data iconModule="intellij.cidr.lang.base" iconPath="icons/expui/fileTypes/h.svg" iconPlugin="com.intellij.clion" isLeaf="true" text="clsScreen.h" />
+                    <item name="clsScreen.h" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/include/Screens/clsUpdateClientScreen.h" />
+                      </map>
+                    </attributes>
+                    <data iconModule="intellij.cidr.lang.base" iconPath="icons/expui/fileTypes/h.svg" iconPlugin="com.intellij.clion" isLeaf="true" text="clsUpdateClientScreen.h" />
+                    <item name="clsUpdateClientScreen.h" type="ab9368bb:PsiFileNode" />
+                  </presentation>
                 </presentation>
                 <presentation>
                   <attributes>
@@ -5261,15 +5712,6 @@
                 <presentation>
                   <attributes>
                     <map>
-                      <entry key="filePath" value="$PROJECT_DIR$/include/clsClientListScreen.h" />
-                    </map>
-                  </attributes>
-                  <data iconModule="intellij.cidr.lang.base" iconPath="icons/expui/fileTypes/h.svg" iconPlugin="com.intellij.clion" isLeaf="true" text="clsClientListScreen.h" />
-                  <item name="clsClientListScreen.h" type="ab9368bb:PsiFileNode" />
-                </presentation>
-                <presentation>
-                  <attributes>
-                    <map>
                       <entry key="filePath" value="$PROJECT_DIR$/include/clsDate.h" />
                     </map>
                   </attributes>
@@ -5279,29 +5721,11 @@
                 <presentation>
                   <attributes>
                     <map>
-                      <entry key="filePath" value="$PROJECT_DIR$/include/clsDeleteClientScreen.h" />
-                    </map>
-                  </attributes>
-                  <data iconModule="intellij.cidr.lang.base" iconPath="icons/expui/fileTypes/h.svg" iconPlugin="com.intellij.clion" isLeaf="true" text="clsDeleteClientScreen.h" />
-                  <item name="clsDeleteClientScreen.h" type="ab9368bb:PsiFileNode" />
-                </presentation>
-                <presentation>
-                  <attributes>
-                    <map>
                       <entry key="filePath" value="$PROJECT_DIR$/include/clsInputValidate.h" />
                     </map>
                   </attributes>
                   <data iconModule="intellij.cidr.lang.base" iconPath="icons/expui/fileTypes/h.svg" iconPlugin="com.intellij.clion" isLeaf="true" text="clsInputValidate.h" />
                   <item name="clsInputValidate.h" type="ab9368bb:PsiFileNode" />
-                </presentation>
-                <presentation>
-                  <attributes>
-                    <map>
-                      <entry key="filePath" value="$PROJECT_DIR$/include/clsMainScreen.h" />
-                    </map>
-                  </attributes>
-                  <data iconModule="intellij.cidr.lang.base" iconPath="icons/expui/fileTypes/h.svg" iconPlugin="com.intellij.clion" isLeaf="true" text="clsMainScreen.h" />
-                  <item name="clsMainScreen.h" type="ab9368bb:PsiFileNode" />
                 </presentation>
                 <presentation>
                   <attributes>
@@ -5324,29 +5748,11 @@
                 <presentation>
                   <attributes>
                     <map>
-                      <entry key="filePath" value="$PROJECT_DIR$/include/clsScreen.h" />
-                    </map>
-                  </attributes>
-                  <data iconModule="intellij.cidr.lang.base" iconPath="icons/expui/fileTypes/h.svg" iconPlugin="com.intellij.clion" isLeaf="true" text="clsScreen.h" />
-                  <item name="clsScreen.h" type="ab9368bb:PsiFileNode" />
-                </presentation>
-                <presentation>
-                  <attributes>
-                    <map>
                       <entry key="filePath" value="$PROJECT_DIR$/include/clsString.h" />
                     </map>
                   </attributes>
                   <data iconModule="intellij.cidr.lang.base" iconPath="icons/expui/fileTypes/h.svg" iconPlugin="com.intellij.clion" isLeaf="true" text="clsString.h" />
                   <item name="clsString.h" type="ab9368bb:PsiFileNode" />
-                </presentation>
-                <presentation>
-                  <attributes>
-                    <map>
-                      <entry key="filePath" value="$PROJECT_DIR$/include/clsUpdateClientScreen.h" />
-                    </map>
-                  </attributes>
-                  <data iconModule="intellij.cidr.lang.base" iconPath="icons/expui/fileTypes/h.svg" iconPlugin="com.intellij.clion" isLeaf="true" text="clsUpdateClientScreen.h" />
-                  <item name="clsUpdateClientScreen.h" type="ab9368bb:PsiFileNode" />
                 </presentation>
                 <presentation>
                   <attributes>
@@ -5391,7 +5797,7 @@
                     <entry key="filePath" value="$PROJECT_DIR$/.gitignore" />
                   </map>
                 </attributes>
-                <data iconPath="expui/fileTypes/ignored.svg" iconPlugin="com.intellij" isLeaf="true" text=".gitignore" />
+                <data iconPath="vcs/ignore_file.svg" iconPlugin="com.intellij" isLeaf="true" text=".gitignore" />
                 <item name=".gitignore" type="ab9368bb:PsiFileNode" />
               </presentation>
               <presentation>
@@ -5406,12 +5812,12 @@
             </presentation>
             <presentation>
               <attributes />
-              <data iconPath="expui/nodes/library.svg" iconPlugin="com.intellij" isLeaf="false" text="External Libraries" />
+              <data iconPath="nodes/ppLib.svg" iconPlugin="com.intellij" isLeaf="false" text="External Libraries" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </presentation>
             <presentation>
               <attributes />
-              <data iconPath="expui/fileTypes/scratches.svg" iconPlugin="com.intellij" isLeaf="false" text="Scratches and Consoles" />
+              <data iconPath="scope/scratches.svg" iconPlugin="com.intellij" isLeaf="false" text="Scratches and Consoles" />
               <item name="Scratches and Consoles" type="b85a3e1f:ScratchTreeStructureProvider$MyProjectNode" />
             </presentation>
           </presentation>
@@ -5508,7 +5914,7 @@
     </option>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="467437000" />
+    <option name="totallyTimeSpent" value="482270000" />
   </component>
   <component name="TodoView">
     <todo-panel id="all">
@@ -5517,13 +5923,13 @@
   </component>
   <component name="ToolWindowManager">
     <layoutV2>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5562016" visible="true" weight="0.1556187" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.55495167" visible="true" weight="0.15281251" />
       <window_info id="Commit" order="1" weight="0.1554445" />
-      <window_info active="true" id="Structure" order="2" sideWeight="0.44379845" side_tool="true" visible="true" weight="0.1556187" />
+      <window_info active="true" id="Structure" order="2" sideWeight="0.44504833" side_tool="true" visible="true" weight="0.15281251" />
       <window_info id="Pull Requests" order="3" weight="0.1554445" />
       <window_info anchor="bottom" id="Version Control" order="0" weight="0.32987142" />
       <window_info anchor="bottom" id="Problems" order="1" />
-      <window_info anchor="bottom" id="Problems View" order="2" weight="0.40130025" />
+      <window_info anchor="bottom" id="Problems View" order="2" weight="0.40166667" />
       <window_info active="true" anchor="bottom" x="399" y="0" width="786" height="846" id="Terminal" maximized="true" order="3" type="WINDOWED" weight="0.37765956" />
       <window_info anchor="bottom" id="Services" order="4" weight="0.37726244" />
       <window_info anchor="bottom" id="CMake" order="5" weight="0.37765956" />
@@ -5534,7 +5940,7 @@
       <window_info anchor="bottom" id="PythonProcessOutput" order="10" weight="0.37726244" />
       <window_info anchor="bottom" id="TODO" order="11" weight="0.37726244" />
       <window_info anchor="right" id="Notifications" order="0" weight="0.2728125" />
-      <window_info active="true" anchor="right" id="AIAssistant" order="1" sideWeight="0.5006158" visible="true" weight="0.2869318" />
+      <window_info active="true" anchor="right" id="AIAssistant" order="1" sideWeight="0.5006158" visible="true" weight="0.2784375" />
       <window_info anchor="right" id="Database" order="2" weight="0.27304292" />
       <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
       <window_info anchor="right" id="Maven" order="4" weight="0.25" />
@@ -5543,7 +5949,7 @@
       <window_info anchor="right" id="Recap" order="7" weight="0.25644398" />
       <window_info anchor="right" id="Python Console" order="8" weight="0.27304292" />
       <window_info anchor="right" id="documentation.v2" order="9" sideWeight="0.49938422" side_tool="true" weight="0.24526516" />
-      <unified_weights bottom="0.40130025" left="0.1556187" right="0.2869318" />
+      <unified_weights bottom="0.40166667" left="0.15281251" right="0.2784375" />
     </layoutV2>
     <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1556187" />
@@ -5573,12 +5979,12 @@
       <unified_weights bottom="0.33427602" left="0.1556187" right="0.29766417" />
     </layout-to-restore>
     <recentWindows>
-      <value>Project</value>
       <value>AIAssistant</value>
       <value>Problems View</value>
+      <value>Project</value>
+      <value>Structure</value>
       <value>Messages</value>
       <value>Run</value>
-      <value>Structure</value>
       <value>CMake</value>
       <value>Services</value>
       <value>Python Packages</value>
@@ -5735,10 +6141,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.cpp">
+    <entry file="file://$PROJECT_DIR$/Data/Clients.text">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/Screens/clsMainScreen.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+        <state relative-caret-position="3432">
+          <caret line="143" column="12" selection-start-line="143" selection-start-column="12" selection-end-line="143" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/clsInputValidate.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/Screens/Transactions/clsTransactionsScreen.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1032">
+          <caret line="43" column="37" selection-start-line="43" selection-start-column="37" selection-end-line="43" selection-end-column="37" />
+          <folding>
+            <marker date="1778152754925" expanded="true" signature="166:327" ph="##include ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/Screens/Transactions/clsDepositScreen.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <marker date="1778150008427" expanded="true" signature="158:260" ph="##include ..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -5746,6 +6182,73 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1824">
           <caret line="76" column="11" selection-start-line="76" selection-start-column="11" selection-end-line="76" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/Screens/clsDeleteClientScreen.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/Screens/clsClientListScreen.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="26" column="61" selection-start-line="26" selection-start-column="61" selection-end-line="26" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/clsBankClient.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8136">
+          <caret line="339" column="16" selection-start-line="339" selection-start-column="16" selection-end-line="339" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/Screens/clsScreen.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="27" column="16" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/clsPeriod.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/Screens/clsAddNewClientScreen.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="17" column="49" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
+          <folding>
+            <marker date="1778094200433" expanded="true" signature="0:35" ph="//..." />
+            <marker date="1778094200433" expanded="true" signature="168:292" ph="##include ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/Screens/Transactions/clsWithdrawScreen.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="74" column="11" selection-start-line="74" selection-start-column="11" selection-end-line="74" selection-end-column="11" />
+          <folding>
+            <marker date="1778152754920" expanded="true" signature="0:35" ph="//..." />
+            <marker date="1778152754920" expanded="true" signature="161:263" ph="##include ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/clsUtil.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
@@ -5770,115 +6273,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Data/Clients.text">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/clsScreen.h">
+    <entry file="file://$PROJECT_DIR$/include/Screens/clsFindClientScreen.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+        <state relative-caret-position="1296">
+          <caret line="54" column="29" selection-start-line="54" selection-start-column="29" selection-end-line="54" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/clsDeleteClientScreen.h">
+    <entry file="file://$PROJECT_DIR$/include/Screens/clsUpdateClientScreen.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/clsClientListScreen.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-712">
-          <caret line="26" column="61" selection-start-line="26" selection-start-column="61" selection-end-line="26" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/clsPeriod.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-720">
-          <folding>
-            <marker date="1776378070463" expanded="true" signature="0:36" ph="//..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/clsMainScreen.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="88" column="39" lean-forward="true" selection-start-line="88" selection-start-column="39" selection-end-line="88" selection-end-column="39" />
-          <folding>
-            <marker date="1777929266368" expanded="true" signature="151:399" ph="##include ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/clsBankClient.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/clsUtil.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1607">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/clsInputValidate.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="24" column="26" lean-forward="true" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
-          <folding>
-            <marker date="1777467039024" expanded="true" signature="0:36" ph="//..." />
-            <marker date="1777467039024" expanded="true" signature="142:180" ph="##include ..." />
-            <marker date="1777467039024" expanded="false" signature="474:570" ph="{...}" />
-            <marker date="1777467039024" expanded="false" signature="815:910" ph="{...}" />
-            <marker date="1777467039024" expanded="false" signature="980:1601" ph="{...}" />
-            <marker date="1777467039024" expanded="false" signature="1233:1278" ph="{...}" />
-            <marker date="1777467039024" expanded="false" signature="1527:1572" ph="{...}" />
-            <marker date="1777467039024" expanded="false" signature="1690:1916" ph="{...}" />
-            <marker date="1777467039024" expanded="false" signature="1751:1887" ph="{...}" />
-            <marker date="1777467039024" expanded="false" signature="1998:2223" ph="{...}" />
-            <marker date="1777467039024" expanded="false" signature="2057:2194" ph="{...}" />
-            <marker date="1777467039024" expanded="false" signature="2353:2574" ph="{...}" />
-            <marker date="1777467039024" expanded="false" signature="2451:2545" ph="{...}" />
-            <marker date="1777467039024" expanded="false" signature="2694:2907" ph="{...}" />
-            <marker date="1777467039024" expanded="false" signature="2786:2878" ph="{...}" />
-            <marker date="1777467039024" expanded="false" signature="2995:3221" ph="{...}" />
-            <marker date="1777467039024" expanded="false" signature="3056:3192" ph="{...}" />
-            <marker date="1777467039024" expanded="false" signature="3351:3566" ph="{...}" />
-            <marker date="1777467039024" expanded="false" signature="3451:3537" ph="{...}" />
-            <marker date="1777467039024" expanded="false" signature="3653:3880" ph="{...}" />
-            <marker date="1777467039024" expanded="false" signature="3715:3851" ph="{...}" />
-            <marker date="1777467039024" expanded="false" signature="4011:4223" ph="{...}" />
-            <marker date="1777467039024" expanded="false" signature="4110:4194" ph="{...}" />
-            <marker date="1777467039024" expanded="false" signature="4267:4322" ph="{...}" />
-            <marker date="1777467039024" expanded="false" signature="4354:4509" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/clsAddNewClientScreen.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-192">
-          <folding>
-            <marker date="1777890497698" expanded="true" signature="0:35" ph="//..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/clsUpdateClientScreen.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="86" column="26" selection-start-line="86" selection-start-column="26" selection-end-line="86" selection-end-column="26" />
-          <folding>
-            <marker date="1777982692300" expanded="true" signature="0:35" ph="//..." />
-            <marker date="1777982692300" expanded="true" signature="166:288" ph="##include ..." />
-            <marker date="1777982692300" expanded="false" signature="401:1011" ph="{...}" />
-          </folding>
+        <state relative-caret-position="456">
+          <caret line="19" column="49" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
         </state>
       </provider>
     </entry>

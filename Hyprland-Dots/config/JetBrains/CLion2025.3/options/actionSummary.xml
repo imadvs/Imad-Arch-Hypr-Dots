@@ -94,7 +94,7 @@
       <i c="2" l="1776201232749" />
     </e>
     <e n="CPP.NewHeaderFile">
-      <i c="13" l="1778151551912" />
+      <i c="14" l="1778264882093" />
     </e>
     <e n="CWMHostShowPopupAction">
       <i c="1" l="1770761150874" />
@@ -142,10 +142,10 @@
       <i c="7" d="7" l="1772372056632" k="1772372056632" />
     </e>
     <e n="EditorBackSpace">
-      <i c="1139" l="1778152438326" />
+      <i c="1140" l="1778265101772" />
     </e>
     <e n="EditorChooseLookupItem">
-      <i c="80" l="1778151819023" />
+      <i c="83" l="1778265126563" />
     </e>
     <e n="EditorChooseLookupItemReplace">
       <i c="30" l="1774477969411" />
@@ -160,10 +160,10 @@
       <i c="2" l="1770152534642" />
     </e>
     <e n="EditorDown">
-      <i c="372" l="1777929612238" />
+      <i c="373" l="1778265115954" />
     </e>
     <e n="EditorEnter">
-      <i c="984" l="1778152399251" />
+      <i c="991" l="1778265102694" />
     </e>
     <e n="EditorEscape">
       <i c="72" l="1774063809594" />
@@ -196,7 +196,7 @@
       <i c="7" l="1771510923823" />
     </e>
     <e n="EditorPaste">
-      <i c="86" l="1778151553893" />
+      <i c="87" l="1778264884353" />
     </e>
     <e n="EditorPasteFromX11">
       <i c="1" l="1776549616044" />
@@ -226,7 +226,7 @@
       <i c="1" l="1776205445030" />
     </e>
     <e n="EditorUp">
-      <i c="190" l="1778151564709" />
+      <i c="192" l="1778264895076" />
     </e>
     <e n="ExpandAll">
       <i c="1" l="1776164145875" />
@@ -268,7 +268,7 @@
       <i c="5" l="1774113555786" />
     </e>
     <e n="InsertInlineCompletionAction">
-      <i c="202" l="1778151962839" />
+      <i c="203" l="1778264970346" />
     </e>
     <e n="List-selectNextRow">
       <i c="1" l="1771005821639" />
@@ -340,7 +340,7 @@
       <i c="72" l="1777217366090" />
     </e>
     <e n="SearchEverywhere">
-      <i c="48" l="1777898900103" />
+      <i c="49" l="1778265007711" />
     </e>
     <e n="SearchEverywhereActions">
       <i c="3" d="3" l="1770124091831" k="1770124091831" />
@@ -514,7 +514,7 @@
       <i c="2" l="1770125255409" />
     </e>
     <e n="com.intellij.openapi.actionSystem.AnActionWrapper">
-      <i c="4575" l="1778152746032" />
+      <i c="4586" l="1778265102691" />
     </e>
     <e n="com.intellij.openapi.actionSystem.DefaultActionGroup">
       <i c="6" l="1775909636742" />
@@ -538,7 +538,7 @@
       <i c="5" l="1770157383579" />
     </e>
     <e n="com.intellij.openapi.project.DumbAwareAction$SimpleDumbAwareAction">
-      <i c="89" l="1778093162156" />
+      <i c="90" l="1778265009336" />
     </e>
     <e n="com.intellij.openapi.ui.DialogWrapper$5">
       <i c="9" l="1777117095518" />

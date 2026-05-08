@@ -3,7 +3,7 @@ import time
 import sys
 import os
 import json
-from datetime import datetime
+from datetime import datetime, timedelta
 
 class PomodoroTimer:
     def __init__(self):
@@ -96,6 +96,40 @@ class PomodoroTimer:
         except:
             pass
     
+    def get_finish_time(self, time_left_seconds):
+        """Return a formatted clock time when the current timer will end."""
+        finish = datetime.now() + timedelta(seconds=time_left_seconds)
+        # 12-hour format with AM/PM — change to "%H:%M" for 24-hour
+        return finish.strftime("%I:%M %p")
+
+    def get_all_done_time(self, time_left_seconds):
+        """
+        Estimate the wall-clock time when ALL remaining sessions + breaks will finish.
+        Accounts for the current timer's remaining time plus every future block.
+        """
+        remaining_sessions = self.total_sessions - self.pomodoro_count
+        # We're currently inside a work session, so subtract one (it's already running)
+        future_work_sessions = max(0, remaining_sessions - 1)
+
+        # Count future breaks
+        future_short_breaks = 0
+        future_long_breaks = 0
+        for i in range(1, remaining_sessions):
+            session_index = self.pomodoro_count + i  # 1-based completed count after this block
+            if session_index % self.long_break_interval == 0:
+                future_long_breaks += 1
+            else:
+                future_short_breaks += 1
+
+        total_future_seconds = (
+            time_left_seconds
+            + future_work_sessions * self.pomodoro_time
+            + future_short_breaks * self.short_break
+            + future_long_breaks * self.long_break
+        )
+        finish = datetime.now() + timedelta(seconds=total_future_seconds)
+        return finish.strftime("%I:%M %p")
+
     def configure_times(self):
         """Configure work and break times"""
         self.clear_screen()
@@ -268,6 +302,37 @@ class PomodoroTimer:
         content_width = 1 + bar_length + 2 + len(percent_str)
         padding = (self.WIDTH - content_width) // 2
         print(f"{' ' * padding}[{bar}] {self.WHITE}{self.BOLD}{percent_str}{self.RESET}")
+        print()
+
+        # ── Finish-time line ──────────────────────────────────────────────
+        finish_this = self.get_finish_time(time_left)
+        finish_all  = self.get_all_done_time(time_left)
+
+        # "Ends at" line (current block)
+        ends_label = "Ends at:"
+        ends_value = finish_this
+        ends_line  = f"{ends_label} {ends_value}"
+        padding    = (self.WIDTH - len(ends_line)) // 2
+        print(
+            f"{' ' * padding}"
+            f"{self.WHITE}{ends_label}{self.RESET} "
+            f"{self.YELLOW}{self.BOLD}{ends_value}{self.RESET}"
+        )
+
+        # "All done at" line — only shown when more than one session remains
+        remaining = self.total_sessions - self.pomodoro_count
+        if remaining > 1:
+            all_label = "All done at:"
+            all_value = finish_all
+            all_line  = f"{all_label} {all_value}"
+            padding   = (self.WIDTH - len(all_line)) // 2
+            print(
+                f"{' ' * padding}"
+                f"{self.WHITE}{all_label}{self.RESET} "
+                f"{self.MAGENTA}{self.BOLD}{all_value}{self.RESET}"
+            )
+        # ─────────────────────────────────────────────────────────────────
+
         print()
         
         # Controls

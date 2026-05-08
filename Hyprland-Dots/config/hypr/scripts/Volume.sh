@@ -43,7 +43,7 @@ inc_volume() {
     if [ "$(pamixer --get-mute)" == "true" ]; then
         toggle_mute
     else
-        pamixer -i 10 --allow-boost --set-limit 100 && notify_user
+        pamixer -i 10 && notify_user
     fi
 }
 

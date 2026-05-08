@@ -745,16 +745,36 @@
       <jump line="78" column="31" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/Transactions/clsWithdrawScreen.h" protocol="file" />
       <jump line="79" column="43" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/Transactions/clsWithdrawScreen.h" protocol="file" />
     </project>
+    <project id="vrbh81hp65d831e42s1p">
+      <jump line="74" column="11" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/Transactions/clsWithdrawScreen.h" protocol="file" />
+      <jump line="47" column="49" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/Transactions/clsWithdrawScreen.h" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/Transactions/clsWithdrawScreen.h" protocol="file" />
+      <jump line="43" column="37" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/Transactions/clsTransactionsScreen.h" protocol="file" />
+      <jump line="9" column="0" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/Transactions/clsTransactionsScreen.h" protocol="file" />
+      <jump line="14" column="35" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/Transactions/clsTransactionsScreen.h" protocol="file" />
+      <jump line="9" column="0" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/Transactions/clsTotalBalancesScreen.h" protocol="file" />
+      <jump line="24" column="51" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/Transactions/clsTotalBalancesScreen.h" protocol="file" />
+      <jump line="25" column="70" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/Transactions/clsTotalBalancesScreen.h" protocol="file" />
+      <jump line="11" column="13" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/Transactions/clsTotalBalancesScreen.h" protocol="file" />
+      <jump line="24" column="0" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/Transactions/clsDepositScreen.h" protocol="file" />
+      <jump line="49" column="54" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/Transactions/clsTransactionsScreen.h" protocol="file" />
+      <jump line="50" column="52" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/Transactions/clsTransactionsScreen.h" protocol="file" />
+      <jump line="48" column="4" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/Transactions/clsTransactionsScreen.h" protocol="file" />
+      <jump line="45" column="4" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/Transactions/clsTransactionsScreen.h" protocol="file" />
+      <jump line="10" column="18" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/Transactions/clsTotalBalancesScreen.h" protocol="file" />
+      <jump line="49" column="28" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/Transactions/clsTotalBalancesScreen.h" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/Transactions/clsTotalBalancesScreen.h" protocol="file" />
+    </project>
   </component>
   <component name="VimMarksSettings">
     <globalmarks />
     <localmarks>
-      <file name="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/Transactions/clsTransactionsScreen.h" timestamp="1778151757134">
-        <mark key="'" line="43" column="37" />
-        <mark key="[" line="12" column="29" />
-        <mark key="]" line="43" column="38" />
-        <mark key="." line="43" column="37" />
-        <mark key="^" line="43" column="38" />
+      <file name="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/Transactions/clsTransactionsScreen.h" timestamp="1778265218253">
+        <mark key="'" line="45" column="4" />
+        <mark key="[" line="49" column="0" />
+        <mark key="]" line="48" column="5" />
+        <mark key="." line="48" column="4" />
+        <mark key="^" line="48" column="5" />
       </file>
       <file name="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsAddNewClientScreen.h" timestamp="1778094180354">
         <mark key="'" line="17" column="49" />
@@ -787,8 +807,9 @@
       <file name="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsTransactionsScreen.h" timestamp="1778094467831">
         <mark key="'" line="15" column="0" />
       </file>
-      <file name="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/Transactions/clsDepositScreen.h" timestamp="1778151778799">
-        <mark key="'" line="11" column="0" />
+      <file name="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/Transactions/clsDepositScreen.h" timestamp="1778265083883">
+        <mark key="&quot;" line="82" column="52" />
+        <mark key="'" line="24" column="0" />
         <mark key="[" line="20" column="0" />
         <mark key="]" line="20" column="0" />
         <mark key="." line="20" column="0" />
@@ -806,6 +827,13 @@
       <file name="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsMainScreen.h" timestamp="1778148749298">
         <mark key="'" line="143" column="12" />
       </file>
+      <file name="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/Transactions/clsTotalBalancesScreen.h" timestamp="1778265222772">
+        <mark key="'" line="0" column="0" />
+        <mark key="[" line="11" column="9" />
+        <mark key="]" line="10" column="19" />
+        <mark key="^" line="10" column="19" />
+        <mark key="." line="10" column="18" />
+      </file>
       <file name="$USER_HOME$/Documents/Project1 - Utility library/include/clsUtil.h" timestamp="1778093417640">
         <mark key="'" line="97" column="29" />
         <mark key="[" line="21" column="0" />
@@ -813,7 +841,7 @@
         <mark key="^" line="224" column="4" />
         <mark key="." line="21" column="0" />
       </file>
-      <file name="$USER_HOME$/Documents/Project1 - Utility library/CMakeLists.txt" timestamp="1778151555038">
+      <file name="$USER_HOME$/Documents/Project1 - Utility library/CMakeLists.txt" timestamp="1778264886631">
         <mark key="&quot;" line="7" column="0" />
         <mark key="'" line="25" column="0" />
         <mark key="]" line="25" column="0" />
@@ -839,8 +867,8 @@
         <mark key="'" line="76" column="11" />
         <mark key="[" line="33" column="0" />
       </file>
-      <file name="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/Transactions/clsWithdrawScreen.h" timestamp="1778152751446">
-        <mark key="'" line="79" column="43" />
+      <file name="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/Transactions/clsWithdrawScreen.h" timestamp="1778264932007">
+        <mark key="'" line="0" column="0" />
         <mark key="[" line="78" column="30" />
         <mark key="]" line="79" column="44" />
         <mark key="^" line="79" column="44" />
@@ -851,13 +879,13 @@
   <component name="VimRegisterSettings">
     <registers>
       <register name="&quot;" type="LINE_WISE">
-        <text encoding="base64">ICAgICAgICAK</text>
+        <text encoding="base64">Ly8KLy8gQ3JlYXRlZCBieSBpbWFkIG9uIDUvOC8yNi4KLy8KCiNpZm5kZWYgUFJPSkVDVDFMNEJBTktFWFRFTlNJT04yX0NMU1RPVEFMQkFMQU5DRVNTQ1JFRU5fSAojZGVmaW5lIFBST0pFQ1QxTDRCQU5LRVhURU5TSU9OMl9DTFNUT1RBTEJBTEFOQ0VTU0NSRUVOX0gKCgoKI3ByYWdtYSBvbmNlCiNpbmNsdWRlIDxpb3N0cmVhbT4KI2luY2x1ZGUgIi4uL2Nsc1NjcmVlbi5oIgojaW5jbHVkZSAiY2xzQmFua0NsaWVudC5oIgojaW5jbHVkZSA8aW9tYW5pcD4KI2luY2x1ZGUgImNsc1V0aWwuaCIKCmNsYXNzIGNsc1RvdGFsQmFsYW5jZXNTY3JlZW4gOiBwcm90ZWN0ZWQgY2xzU2NyZWVuCnsKCnByaXZhdGU6CgogICAgc3RhdGljIHZvaWQgUHJpbnRDbGllbnRSZWNvcmRCYWxhbmNlTGluZShjbHNCYW5rQ2xpZW50IENsaWVudCkKICAgIHsKICAgICAgICBjb3V0IDw8IHNldHcoMjUpIDw8IGxlZnQgPDwgIiIgPDwgInwgIiA8PCBzZXR3KDE1KSA8PCBsZWZ0IDw8IENsaWVudC5BY2NvdW50TnVtYmVyKCk7CiAgICAgICAgY291dCA8PCAifCAiIDw8IHNldHcoNDApIDw8IGxlZnQgPDwgQ2xpZW50LkZ1bGxOYW1lKCk7CiAgICAgICAgY291dCA8PCAifCAiIDw8IHNldHcoMTIpIDw8IGxlZnQgPDwgQ2xpZW50LkdldEFjY291bnRCYWxhbmNlKCk7CiAgICB9CgpwdWJsaWM6CgogICAgc3RhdGljIHZvaWQgU2hvd1RvdGFsQmFsYW5jZXMoKQogICAgewoKICAgICAgICB2ZWN0b3IgPGNsc0JhbmtDbGllbnQ+IHZDbGllbnRzID0gY2xzQmFua0NsaWVudDo6R2V0Q2xpZW50c0xpc3QoKTsKCiAgICAgICAgc3RyaW5nIFRpdGxlID0gIlx0ICBCYWxhbmNlcyBMaXN0IFNjcmVlbiI7CiAgICAgICAgc3RyaW5nIFN1YlRpdGxlID0gIlx0ICAgICgiICsgdG9fc3RyaW5nKHZDbGllbnRzLnNpemUoKSkgKyAiKSBDbGllbnQocykuIjsKCiAgICAgICAgX0RyYXdTY3JlZW5IZWFkZXIoVGl0bGUsIFN1YlRpdGxlKTsKCiAgICAgICAgY291dCA8PCBzZXR3KDI1KSA8PCBsZWZ0IDw8ICIiIDw8ICJcblx0XHRfX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fIjsKICAgICAgICBjb3V0IDw8ICJfX19fX19fX19fX19fX19fX19fX19fX19fX1xuIiA8PCBlbmRsOwoKICAgICAgICBjb3V0IDw8IHNldHcoMjUpIDw8IGxlZnQgPDwgIiIgPDwgInwgIiA8PCBsZWZ0IDw8IHNldHcoMTUpIDw8ICJBY2NvdXQgTnVtYmVyIjsKICAgICAgICBjb3V0IDw8ICJ8ICIgPDwgbGVmdCA8PCBzZXR3KDQwKSA8PCAiQ2xpZW50IE5hbWUiOwogICAgICAgIGNvdXQgPDwgInwgIiA8PCBsZWZ0IDw8IHNldHcoMTIpIDw8ICJCYWxhbmNlIjsKICAgICAgICBjb3V0IDw8IHNldHcoMjUpIDw8IGxlZnQgPDwgIiIgPDwgIlx0XHRfX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fIjsKICAgICAgICBjb3V0IDw8ICJfX19fX19fX19fX19fX19fX19fX19fX19fX1xuIiA8PCBlbmRsOwoKICAgICAgICBkb3VibGUgVG90YWxCYWxhbmNlcyA9IGNsc0JhbmtDbGllbnQ6OkdldFRvdGFsQmFsYW5jZXMoKTsKCiAgICAgICAgaWYgKHZDbGllbnRzLnNpemUoKSA9PSAwKQogICAgICAgICAgICBjb3V0IDw8ICJcdFx0XHRcdE5vIENsaWVudHMgQXZhaWxhYmxlIEluIHRoZSBTeXN0ZW0hIjsKICAgICAgICBlbHNlCgogICAgICAgICAgICBmb3IgKGNsc0JhbmtDbGllbnQgQ2xpZW50IDogdkNsaWVudHMpCiAgICAgICAgICAgIHsKICAgICAgICAgICAgICAgIFByaW50Q2xpZW50UmVjb3JkQmFsYW5jZUxpbmUoQ2xpZW50KTsKICAgICAgICAgICAgICAgIGNvdXQgPDwgZW5kbDsKICAgICAgICAgICAgfQoKICAgICAgICBjb3V0IDw8IHNldHcoMjUpIDw8IGxlZnQgPDwgIiIgPDwgIlxuXHRcdF9fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX18iOwogICAgICAgIGNvdXQgPDwgIl9fX19fX19fX19fX19fX19fX19fX19fX19fXG4iIDw8IGVuZGw7CgogICAgICAgIGNvdXQgPDwgc2V0dyg4KSA8PCBsZWZ0IDw8ICIiIDw8ICJcdFx0XHRcdFx0XHRcdCAgICAgVG90YWwgQmFsYW5jZXMgPSAiIDw8IFRvdGFsQmFsYW5jZXMgPDwgZW5kbDsKICAgICAgICBjb3V0IDw8IHNldHcoOCkgPDwgbGVmdCA8PCAiIiA8PCAiXHRcdFx0XHQgICggIiA8PCBjbHNVdGlsOjpOdW1iZXJUb1RleHQoVG90YWxCYWxhbmNlcykgPDwgIikiOwogICAgfQoKfTsKCgoKCiNlbmRpZiAvL1BST0pFQ1QxTDRCQU5LRVhURU5TSU9OMl9DTFNUT1RBTEJBTEFOQ0VTU0NSRUVOX0gK</text>
       </register>
       <register name="+" type="LINE_WISE">
-        <text encoding="base64">ICAgICAgICAK</text>
+        <text encoding="base64">Ly8KLy8gQ3JlYXRlZCBieSBpbWFkIG9uIDUvOC8yNi4KLy8KCiNpZm5kZWYgUFJPSkVDVDFMNEJBTktFWFRFTlNJT04yX0NMU1RPVEFMQkFMQU5DRVNTQ1JFRU5fSAojZGVmaW5lIFBST0pFQ1QxTDRCQU5LRVhURU5TSU9OMl9DTFNUT1RBTEJBTEFOQ0VTU0NSRUVOX0gKCgoKI3ByYWdtYSBvbmNlCiNpbmNsdWRlIDxpb3N0cmVhbT4KI2luY2x1ZGUgIi4uL2Nsc1NjcmVlbi5oIgojaW5jbHVkZSAiY2xzQmFua0NsaWVudC5oIgojaW5jbHVkZSA8aW9tYW5pcD4KI2luY2x1ZGUgImNsc1V0aWwuaCIKCmNsYXNzIGNsc1RvdGFsQmFsYW5jZXNTY3JlZW4gOiBwcm90ZWN0ZWQgY2xzU2NyZWVuCnsKCnByaXZhdGU6CgogICAgc3RhdGljIHZvaWQgUHJpbnRDbGllbnRSZWNvcmRCYWxhbmNlTGluZShjbHNCYW5rQ2xpZW50IENsaWVudCkKICAgIHsKICAgICAgICBjb3V0IDw8IHNldHcoMjUpIDw8IGxlZnQgPDwgIiIgPDwgInwgIiA8PCBzZXR3KDE1KSA8PCBsZWZ0IDw8IENsaWVudC5BY2NvdW50TnVtYmVyKCk7CiAgICAgICAgY291dCA8PCAifCAiIDw8IHNldHcoNDApIDw8IGxlZnQgPDwgQ2xpZW50LkZ1bGxOYW1lKCk7CiAgICAgICAgY291dCA8PCAifCAiIDw8IHNldHcoMTIpIDw8IGxlZnQgPDwgQ2xpZW50LkdldEFjY291bnRCYWxhbmNlKCk7CiAgICB9CgpwdWJsaWM6CgogICAgc3RhdGljIHZvaWQgU2hvd1RvdGFsQmFsYW5jZXMoKQogICAgewoKICAgICAgICB2ZWN0b3IgPGNsc0JhbmtDbGllbnQ+IHZDbGllbnRzID0gY2xzQmFua0NsaWVudDo6R2V0Q2xpZW50c0xpc3QoKTsKCiAgICAgICAgc3RyaW5nIFRpdGxlID0gIlx0ICBCYWxhbmNlcyBMaXN0IFNjcmVlbiI7CiAgICAgICAgc3RyaW5nIFN1YlRpdGxlID0gIlx0ICAgICgiICsgdG9fc3RyaW5nKHZDbGllbnRzLnNpemUoKSkgKyAiKSBDbGllbnQocykuIjsKCiAgICAgICAgX0RyYXdTY3JlZW5IZWFkZXIoVGl0bGUsIFN1YlRpdGxlKTsKCiAgICAgICAgY291dCA8PCBzZXR3KDI1KSA8PCBsZWZ0IDw8ICIiIDw8ICJcblx0XHRfX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fIjsKICAgICAgICBjb3V0IDw8ICJfX19fX19fX19fX19fX19fX19fX19fX19fX1xuIiA8PCBlbmRsOwoKICAgICAgICBjb3V0IDw8IHNldHcoMjUpIDw8IGxlZnQgPDwgIiIgPDwgInwgIiA8PCBsZWZ0IDw8IHNldHcoMTUpIDw8ICJBY2NvdXQgTnVtYmVyIjsKICAgICAgICBjb3V0IDw8ICJ8ICIgPDwgbGVmdCA8PCBzZXR3KDQwKSA8PCAiQ2xpZW50IE5hbWUiOwogICAgICAgIGNvdXQgPDwgInwgIiA8PCBsZWZ0IDw8IHNldHcoMTIpIDw8ICJCYWxhbmNlIjsKICAgICAgICBjb3V0IDw8IHNldHcoMjUpIDw8IGxlZnQgPDwgIiIgPDwgIlx0XHRfX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fIjsKICAgICAgICBjb3V0IDw8ICJfX19fX19fX19fX19fX19fX19fX19fX19fX1xuIiA8PCBlbmRsOwoKICAgICAgICBkb3VibGUgVG90YWxCYWxhbmNlcyA9IGNsc0JhbmtDbGllbnQ6OkdldFRvdGFsQmFsYW5jZXMoKTsKCiAgICAgICAgaWYgKHZDbGllbnRzLnNpemUoKSA9PSAwKQogICAgICAgICAgICBjb3V0IDw8ICJcdFx0XHRcdE5vIENsaWVudHMgQXZhaWxhYmxlIEluIHRoZSBTeXN0ZW0hIjsKICAgICAgICBlbHNlCgogICAgICAgICAgICBmb3IgKGNsc0JhbmtDbGllbnQgQ2xpZW50IDogdkNsaWVudHMpCiAgICAgICAgICAgIHsKICAgICAgICAgICAgICAgIFByaW50Q2xpZW50UmVjb3JkQmFsYW5jZUxpbmUoQ2xpZW50KTsKICAgICAgICAgICAgICAgIGNvdXQgPDwgZW5kbDsKICAgICAgICAgICAgfQoKICAgICAgICBjb3V0IDw8IHNldHcoMjUpIDw8IGxlZnQgPDwgIiIgPDwgIlxuXHRcdF9fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX18iOwogICAgICAgIGNvdXQgPDwgIl9fX19fX19fX19fX19fX19fX19fX19fX19fXG4iIDw8IGVuZGw7CgogICAgICAgIGNvdXQgPDwgc2V0dyg4KSA8PCBsZWZ0IDw8ICIiIDw8ICJcdFx0XHRcdFx0XHRcdCAgICAgVG90YWwgQmFsYW5jZXMgPSAiIDw8IFRvdGFsQmFsYW5jZXMgPDwgZW5kbDsKICAgICAgICBjb3V0IDw8IHNldHcoOCkgPDwgbGVmdCA8PCAiIiA8PCAiXHRcdFx0XHQgICggIiA8PCBjbHNVdGlsOjpOdW1iZXJUb1RleHQoVG90YWxCYWxhbmNlcykgPDwgIikiOwogICAgfQoKfTsKCgoKCiNlbmRpZiAvL1BST0pFQ1QxTDRCQU5LRVhURU5TSU9OMl9DTFNUT1RBTEJBTEFOQ0VTU0NSRUVOX0gK</text>
       </register>
       <register name="-" type="CHARACTER_WISE">
-        <text encoding="base64">MQ==</text>
+        <text encoding="base64">QWNjb3VudEJhbGFuY2U=</text>
       </register>
       <register name="." type="CHARACTER_WISE">
         <text encoding="base64" />
@@ -865,8 +893,8 @@
       <register name="/" type="CHARACTER_WISE">
         <text encoding="base64">bWFpbg==</text>
       </register>
-      <register name="0" type="CHARACTER_WISE">
-        <text encoding="base64">R2V0QWNjb3VudEJhbGFuY2UoKQ==</text>
+      <register name="0" type="LINE_WISE">
+        <text encoding="base64">Ly8KLy8gQ3JlYXRlZCBieSBpbWFkIG9uIDUvOC8yNi4KLy8KCiNpZm5kZWYgUFJPSkVDVDFMNEJBTktFWFRFTlNJT04yX0NMU1RPVEFMQkFMQU5DRVNTQ1JFRU5fSAojZGVmaW5lIFBST0pFQ1QxTDRCQU5LRVhURU5TSU9OMl9DTFNUT1RBTEJBTEFOQ0VTU0NSRUVOX0gKCgoKI3ByYWdtYSBvbmNlCiNpbmNsdWRlIDxpb3N0cmVhbT4KI2luY2x1ZGUgIi4uL2Nsc1NjcmVlbi5oIgojaW5jbHVkZSAiY2xzQmFua0NsaWVudC5oIgojaW5jbHVkZSA8aW9tYW5pcD4KI2luY2x1ZGUgImNsc1V0aWwuaCIKCmNsYXNzIGNsc1RvdGFsQmFsYW5jZXNTY3JlZW4gOiBwcm90ZWN0ZWQgY2xzU2NyZWVuCnsKCnByaXZhdGU6CgogICAgc3RhdGljIHZvaWQgUHJpbnRDbGllbnRSZWNvcmRCYWxhbmNlTGluZShjbHNCYW5rQ2xpZW50IENsaWVudCkKICAgIHsKICAgICAgICBjb3V0IDw8IHNldHcoMjUpIDw8IGxlZnQgPDwgIiIgPDwgInwgIiA8PCBzZXR3KDE1KSA8PCBsZWZ0IDw8IENsaWVudC5BY2NvdW50TnVtYmVyKCk7CiAgICAgICAgY291dCA8PCAifCAiIDw8IHNldHcoNDApIDw8IGxlZnQgPDwgQ2xpZW50LkZ1bGxOYW1lKCk7CiAgICAgICAgY291dCA8PCAifCAiIDw8IHNldHcoMTIpIDw8IGxlZnQgPDwgQ2xpZW50LkdldEFjY291bnRCYWxhbmNlKCk7CiAgICB9CgpwdWJsaWM6CgogICAgc3RhdGljIHZvaWQgU2hvd1RvdGFsQmFsYW5jZXMoKQogICAgewoKICAgICAgICB2ZWN0b3IgPGNsc0JhbmtDbGllbnQ+IHZDbGllbnRzID0gY2xzQmFua0NsaWVudDo6R2V0Q2xpZW50c0xpc3QoKTsKCiAgICAgICAgc3RyaW5nIFRpdGxlID0gIlx0ICBCYWxhbmNlcyBMaXN0IFNjcmVlbiI7CiAgICAgICAgc3RyaW5nIFN1YlRpdGxlID0gIlx0ICAgICgiICsgdG9fc3RyaW5nKHZDbGllbnRzLnNpemUoKSkgKyAiKSBDbGllbnQocykuIjsKCiAgICAgICAgX0RyYXdTY3JlZW5IZWFkZXIoVGl0bGUsIFN1YlRpdGxlKTsKCiAgICAgICAgY291dCA8PCBzZXR3KDI1KSA8PCBsZWZ0IDw8ICIiIDw8ICJcblx0XHRfX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fIjsKICAgICAgICBjb3V0IDw8ICJfX19fX19fX19fX19fX19fX19fX19fX19fX1xuIiA8PCBlbmRsOwoKICAgICAgICBjb3V0IDw8IHNldHcoMjUpIDw8IGxlZnQgPDwgIiIgPDwgInwgIiA8PCBsZWZ0IDw8IHNldHcoMTUpIDw8ICJBY2NvdXQgTnVtYmVyIjsKICAgICAgICBjb3V0IDw8ICJ8ICIgPDwgbGVmdCA8PCBzZXR3KDQwKSA8PCAiQ2xpZW50IE5hbWUiOwogICAgICAgIGNvdXQgPDwgInwgIiA8PCBsZWZ0IDw8IHNldHcoMTIpIDw8ICJCYWxhbmNlIjsKICAgICAgICBjb3V0IDw8IHNldHcoMjUpIDw8IGxlZnQgPDwgIiIgPDwgIlx0XHRfX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fIjsKICAgICAgICBjb3V0IDw8ICJfX19fX19fX19fX19fX19fX19fX19fX19fX1xuIiA8PCBlbmRsOwoKICAgICAgICBkb3VibGUgVG90YWxCYWxhbmNlcyA9IGNsc0JhbmtDbGllbnQ6OkdldFRvdGFsQmFsYW5jZXMoKTsKCiAgICAgICAgaWYgKHZDbGllbnRzLnNpemUoKSA9PSAwKQogICAgICAgICAgICBjb3V0IDw8ICJcdFx0XHRcdE5vIENsaWVudHMgQXZhaWxhYmxlIEluIHRoZSBTeXN0ZW0hIjsKICAgICAgICBlbHNlCgogICAgICAgICAgICBmb3IgKGNsc0JhbmtDbGllbnQgQ2xpZW50IDogdkNsaWVudHMpCiAgICAgICAgICAgIHsKICAgICAgICAgICAgICAgIFByaW50Q2xpZW50UmVjb3JkQmFsYW5jZUxpbmUoQ2xpZW50KTsKICAgICAgICAgICAgICAgIGNvdXQgPDwgZW5kbDsKICAgICAgICAgICAgfQoKICAgICAgICBjb3V0IDw8IHNldHcoMjUpIDw8IGxlZnQgPDwgIiIgPDwgIlxuXHRcdF9fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX18iOwogICAgICAgIGNvdXQgPDwgIl9fX19fX19fX19fX19fX19fX19fX19fX19fXG4iIDw8IGVuZGw7CgogICAgICAgIGNvdXQgPDwgc2V0dyg4KSA8PCBsZWZ0IDw8ICIiIDw8ICJcdFx0XHRcdFx0XHRcdCAgICAgVG90YWwgQmFsYW5jZXMgPSAiIDw8IFRvdGFsQmFsYW5jZXMgPDwgZW5kbDsKICAgICAgICBjb3V0IDw8IHNldHcoOCkgPDwgbGVmdCA8PCAiIiA8PCAiXHRcdFx0XHQgICggIiA8PCBjbHNVdGlsOjpOdW1iZXJUb1RleHQoVG90YWxCYWxhbmNlcykgPDwgIikiOwogICAgfQoKfTsKCgoKCiNlbmRpZiAvL1BST0pFQ1QxTDRCQU5LRVhURU5TSU9OMl9DTFNUT1RBTEJBTEFOQ0VTU0NSRUVOX0gK</text>
       </register>
       <register name="q" type="CHARACTER_WISE">
         <text encoding="base64" />

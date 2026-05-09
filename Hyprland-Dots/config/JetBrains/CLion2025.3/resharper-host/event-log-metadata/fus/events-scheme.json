@@ -6887,6 +6887,18 @@
       }
     }
   }, {
+    "id" : "jupyter.py.memory.usage",
+    "builds" : [ ],
+    "versions" : [ {
+      "from" : "1"
+    } ],
+    "rules" : {
+      "event_id" : [ "{enum:panel_toggled|variables_size_toggled}" ],
+      "event_data" : {
+        "enabled" : [ "{enum#boolean}" ]
+      }
+    }
+  }, {
     "id" : "jupyter.py.variables",
     "builds" : [ ],
     "versions" : [ {
@@ -12121,6 +12133,36 @@
       }
     }
   }, {
+    "id" : "python.type.engine",
+    "builds" : [ ],
+    "versions" : [ {
+      "from" : "1"
+    } ],
+    "rules" : {
+      "event_id" : [ "{enum:engine.changed|settings.opened|statusbar.widget.clicked}" ],
+      "event_data" : {
+        "type_engine" : [ "{enum:PYCHARM|PYREFLY|TY}" ]
+      }
+    }
+  }, {
+    "id" : "python.type.evaluation.aggregates",
+    "builds" : [ ],
+    "versions" : [ {
+      "from" : "1"
+    } ],
+    "rules" : {
+      "event_id" : [ "{enum:type.engine.evaluation}" ],
+      "event_data" : {
+        "duration_90ile_ms" : [ "{regexp#integer}" ],
+        "duration_95ile_ms" : [ "{regexp#integer}" ],
+        "duration_99ile_ms" : [ "{regexp#integer}" ],
+        "duration_max_ms" : [ "{regexp#integer}" ],
+        "duration_mean_ms" : [ "{regexp#float}" ],
+        "evaluations_total" : [ "{regexp#integer}" ],
+        "type_engine" : [ "{enum:pycharm|pyrefly|ty}" ]
+      }
+    }
+  }, {
     "id" : "qodana.coverage",
     "builds" : [ ],
     "versions" : [ {
@@ -16556,5 +16598,5 @@
       "version" : "Unknown|unknown.format|unknown|UNKNOWN|((\\d+\\.?)*\\d+)"
     }
   },
-  "version" : "7164"
+  "version" : "7168"
 }

@@ -5282,7 +5282,7 @@
       <file current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/include/Screens/ManageUsers/clsUser.h" file-id="45840" managing-fs="1770122711113">
           <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="284">
+            <state relative-caret-position="356">
               <caret line="276" column="27" selection-start-line="276" selection-start-column="27" selection-end-line="276" selection-end-column="27" />
             </state>
           </provider>
@@ -6203,7 +6203,7 @@
     </option>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="503516000" />
+    <option name="totallyTimeSpent" value="505258000" />
   </component>
   <component name="TodoView">
     <todo-panel id="all">
@@ -6598,7 +6598,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/include/Screens/ManageUsers/clsUser.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
+        <state relative-caret-position="356">
           <caret line="276" column="27" selection-start-line="276" selection-start-column="27" selection-end-line="276" selection-end-column="27" />
         </state>
       </provider>

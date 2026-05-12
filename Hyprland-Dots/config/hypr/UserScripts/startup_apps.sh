@@ -60,19 +60,33 @@ hyprctl dispatch splitratio 0.15
 echo "Visiting Workspace 4..."
 hyprctl dispatch workspace 4
 sleep 1
-echo "Launching RMPC..."
+
+echo "Launching RMPC (Top Left)..."
 uwsm app -- kitty --class "rmpc" --title "RMPC" -e rmpc &
 sleep 2
 
-echo "Launching Pomofocus..."
+echo "Launching Pomofocus (Top Right)..."
 uwsm app -- kitty --class "pomofocus" --title "Pomofocus" python3 /home/imad/.config/hypr/UserScripts/pomo.py &
 sleep 4 # Wait for Pomo to spawn
 
-# Resize Workspace 4
-echo "Resizing Workspace 4..."
+# Focus RMPC to split it vertically with Cava (Bottom Left)
+echo "Launching Cava (Bottom Left)..."
+hyprctl dispatch focuswindow "class:^(rmpc)$"
+uwsm app -- kitty --class "cava" --title "Cava" -e cava &
+sleep 2
+
+# Focus Pomofocus to split it vertically with Clock (Bottom Right)
+echo "Launching Clock (Bottom Right)..."
 hyprctl dispatch focuswindow "class:^(pomofocus)$"
-# hyprctl dispatch movewindow l
-# hyprctl dispatch splitratio -0.5
+uwsm app -- kitty --class "clock-rs" --title "Clock" -e clock-rs &
+sleep 2
+
+# Resize Workspace 4: Make bottom row shorter (approx 70/30 split)
+echo "Resizing Workspace 4..."
+hyprctl dispatch focuswindow "class:^(rmpc)$"
+hyprctl dispatch splitratio 0.2
+hyprctl dispatch focuswindow "class:^(pomofocus)$"
+hyprctl dispatch splitratio 0.2
 
 # --- Final Cleanup ---
 sleep 1

@@ -2986,6 +2986,52 @@
           </values>
         </DateState>
       </entry>
+      <entry key="2026-5-12-12">
+        <DateState>
+          <values>
+            <entry key="file_language">
+              <MetricValue>
+                <option name="count" value="34" />
+                <distribution>
+                  <entry key="Language: C++" value="10" />
+                  <entry key="Language: ChatInput" value="24" />
+                </distribution>
+              </MetricValue>
+            </entry>
+            <entry key="finish_type">
+              <MetricValue>
+                <option name="count" value="34" />
+                <distribution>
+                  <entry key="BACKSPACE_PRESSED" value="2" />
+                  <entry key="CARET_CHANGED" value="1" />
+                  <entry key="EDITOR_REMOVED" value="1" />
+                  <entry key="EMPTY" value="14" />
+                  <entry key="INVALIDATED" value="16" />
+                </distribution>
+              </MetricValue>
+            </entry>
+            <entry key="total_inserted_length">
+              <MetricValue>
+                <option name="count" value="7" />
+              </MetricValue>
+            </entry>
+            <entry key="total_inserted_lines">
+              <MetricValue>
+                <option name="count" value="7" />
+              </MetricValue>
+            </entry>
+            <entry key="was_shown">
+              <MetricValue>
+                <option name="count" value="34" />
+                <distribution>
+                  <entry key="false" value="27" />
+                  <entry key="true" value="7" />
+                </distribution>
+              </MetricValue>
+            </entry>
+          </values>
+        </DateState>
+      </entry>
       <entry key="2026-5-4-13">
         <DateState>
           <values>

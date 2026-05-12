@@ -43,7 +43,7 @@
       <i c="12" l="1777187938898" />
     </e>
     <e n="AIAssistant.ToolWindow.NewChatActionAlt">
-      <i c="30" l="1778333788995" />
+      <i c="31" l="1778585169184" />
     </e>
     <e n="AIAssistant.ToolWindow.Snippet.Apply.Smart">
       <i c="50" l="1778149417984" />
@@ -142,10 +142,10 @@
       <i c="7" d="7" l="1772372056632" k="1772372056632" />
     </e>
     <e n="EditorBackSpace">
-      <i c="1228" l="1778333945868" />
+      <i c="1235" l="1778585201230" />
     </e>
     <e n="EditorChooseLookupItem">
-      <i c="103" l="1778333701190" />
+      <i c="111" l="1778585132072" />
     </e>
     <e n="EditorChooseLookupItemReplace">
       <i c="30" l="1774477969411" />
@@ -160,10 +160,10 @@
       <i c="2" l="1770152534642" />
     </e>
     <e n="EditorDown">
-      <i c="463" l="1778333921557" />
+      <i c="489" l="1778585130943" />
     </e>
     <e n="EditorEnter">
-      <i c="1031" l="1778334509533" />
+      <i c="1032" l="1778585203370" />
     </e>
     <e n="EditorEscape">
       <i c="72" l="1774063809594" />
@@ -184,16 +184,16 @@
       <i c="174" l="1776205169654" />
     </e>
     <e n="EditorLineEnd">
-      <i c="21" l="1778091691176" />
+      <i c="23" l="1778585473115" />
     </e>
     <e n="EditorLineStart">
-      <i c="5" l="1778091690219" />
+      <i c="7" l="1778585471551" />
     </e>
     <e n="EditorPageDown">
-      <i c="1" l="1777187944244" />
+      <i c="3" l="1778585460268" />
     </e>
     <e n="EditorPageUp">
-      <i c="7" l="1771510923823" />
+      <i c="12" l="1778585463471" />
     </e>
     <e n="EditorPaste">
       <i c="95" l="1778333361332" />
@@ -226,7 +226,7 @@
       <i c="1" l="1776205445030" />
     </e>
     <e n="EditorUp">
-      <i c="220" l="1778333952101" />
+      <i c="226" l="1778585059649" />
     </e>
     <e n="ExpandAll">
       <i c="1" l="1776164145875" />
@@ -520,7 +520,7 @@
       <i c="2" l="1770125255409" />
     </e>
     <e n="com.intellij.openapi.actionSystem.AnActionWrapper">
-      <i c="5001" l="1778333952098" />
+      <i c="5057" l="1778585078610" />
     </e>
     <e n="com.intellij.openapi.actionSystem.DefaultActionGroup">
       <i c="6" l="1775909636742" />

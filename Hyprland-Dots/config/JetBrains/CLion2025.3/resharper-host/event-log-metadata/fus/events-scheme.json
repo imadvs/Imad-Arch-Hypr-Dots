@@ -3779,17 +3779,19 @@
         "isFirst" : [ "{enum#boolean}" ],
         "isInstantStart" : [ "{enum#boolean}" ],
         "isOnPrimaryThread" : [ "{enum#boolean}" ],
+        "isRoslynRestart" : [ "{enum#boolean}" ],
         "isSolutionLoadedBeforeShellInitialized" : [ "{enum#boolean}" ],
         "isWarmStart" : [ "{enum#boolean}" ],
         "kind" : [ "{enum:LoadSolutionFromCache|SolutionContainerCompose|SolutionContainerComposed|InitialSynchronizeSolution|SolutionStructureReady|FireProjectItemsAdded|FireAssembliesAdded|PreparePsiModules|BeforeKickOff|KickOff|StartPsi|WaitFinalSynchronizeSolution|FinalSynchronizeSolution_UpdateProjects|FinalSynchronizeSolution|RefreshBuildSettings|Done|AfterDone|AsLateAsPossible}", "{enum:AfterProjectItemsAdded}" ],
         "offsetTime_ms" : [ "{regexp#integer}" ],
-        "phase_type" : [ "{enum:StartPsi|PrimaryPsiCachesReady|PrimaryDaemonReady|FullPsiCachesReady|FullDaemonReady}" ],
+        "percents" : [ "{regexp#integer}" ],
+        "phase_type" : [ "{enum:StartPsi|PrimaryPsiCachesReady|PrimaryDaemonReady|FullPsiCachesReady|FullDaemonReady}", "{enum:RoslynInitialized|RoslynReady|FullRoslynReady}" ],
         "source_type" : [ "{util#class_name}" ],
         "totalTime_ms" : [ "{regexp#integer}" ],
         "type" : [ "{enum:Environment|Shell|SolutionInstance|Solution}", "{enum:EnvironmentContainer|ShellContainer|SolutionContainer|SolutionOpen|FirstShellContainerFromStartup|FirstSolutionOpenFromStartup}", "{enum:SolutionOpenWithSyncPoints|FirstSolutionOpenWithSyncPointsFromStartup}", "{enum:DaemonReady|FirstPsiReadyFromStartup|FirstDaemonReadyFromStartup|PsiReady}" ]
       },
       "enums" : {
-        "__event_id" : [ "containerComposed", "componentConstructed", "solutionOpened", "solutionClosed", "solutionKickOff", "periodFinished", "solutionLoadTaskExecuted", "phaseFinished" ]
+        "__event_id" : [ "containerComposed", "componentConstructed", "solutionOpened", "solutionClosed", "solutionKickOff", "periodFinished", "solutionLoadTaskExecuted", "phaseFinished", "projectsWithChangesRatio", "roslynPhaseFinished" ]
       }
     }
   }, {
@@ -9152,9 +9154,11 @@
         "agent_locs_changed" : [ "{regexp#integer}" ],
         "agent_locs_removed" : [ "{regexp#integer}" ],
         "agent_name" : [ "{util#chat_agent_name}" ],
+        "brave_mode" : [ "{enum#boolean}" ],
         "cache_input_tokens" : [ "{regexp#integer}" ],
         "cache_output_tokens" : [ "{regexp#integer}" ],
         "chain_id" : [ "{regexp#short_hash}" ],
+        "context_size" : [ "{regexp:[0-9]+[km]|unknown}" ],
         "duration_ms" : [ "{regexp#integer}" ],
         "event_status" : [ "{enum:COMPLETED|IN_PROGRESS|REJECTED|CANCELED|FAILED}" ],
         "exit_status" : [ "{enum:SUBMIT|CANCELLED|NO_RESULT|FAILED}" ],
@@ -9163,11 +9167,14 @@
         "input_tokens" : [ "{regexp#integer}" ],
         "is_user_response_missing" : [ "{enum#boolean}" ],
         "issue_id" : [ "{regexp#short_hash}" ],
+        "mode" : [ "{enum:accept-edits|acceptEdits|agent|agent-full-access|ask|auto|auto-approve|autoEdit|autopilot|build|bypass|bypassPermissions|chat|code|debug|default|dontAsk|orchestrator|plan|read-only|yolo|unknown}" ],
+        "model" : [ "{regexp:(?x)\n(\n  [:./-]?\n  (\n     ai21|amazon|anthropic|arcee-ai|auto|big-pickle|claude|clip|code|codex|composer|corethink|default|devstral|fast\n     |flash|free|gemini|gemma|glm|google|gpt|grok|haiku|kilo|kimi|large|lite|local|lyria|max|mimo|mini\n     |minimax|nano|nemotron|nvidia|omni|openai|opencode|openrouter|optimized|opus|plus|preview|pro|qwen|small\n     |sonnet|step|stepfun|super|trinity|x-ai|xiaomi|unknown\n     |[a-z]?[0-9.-]+b?\n   )\n)+}" ],
         "output_tokens" : [ "{regexp#integer}" ],
         "plugin" : [ "{util#plugin}" ],
         "plugin_type" : [ "{util#plugin_type}" ],
         "plugin_version" : [ "{util#plugin_version}" ],
         "quota" : [ "{regexp#float}" ],
+        "reasoning" : [ "{enum:minimal|low|medium|high|xhigh|max|unknown}" ],
         "rejected_prompts" : [ "{regexp#integer}" ],
         "response_options" : [ "{enum:ALLOW|ALWAYS_ALLOW|REJECT|TEXT|LET_AGENT_DECIDE|OTHER}" ],
         "result_cancelled" : [ "{enum#boolean}" ],
@@ -9180,49 +9187,19 @@
         "terminal_command" : [ "{enum:ls|mkdir|cp|mv|rm|rmdir|touch|cat|head|tail|grep|awk|sed|which|where|whereis|type|command|tar|zip|unzip|gzip|7z|curl|wget|ping|ssh|scp|ps|top|kill|uname|whoami|echo|printf|env|export|source|git|svn|hg|gh|glab|make|cmake|gradle|mvn|npm|python|python3|java|node|gcc|eslint|prettier|pylint|black|ktlint|jest|vitest|pytest|rspec|ctest|docker|kubectl|terraform|aws|gcloud|psql|mysql|sqlite3|mongosh|redis-cli|man|jq|openssl|base64|sudo}" ],
         "terminal_exit_code" : [ "{regexp#integer}" ],
         "test_run_result" : [ "{enum:SUCCESS|FAILURE}" ],
-        "tool_type" : [ "{enum:Build|Test|Mcp|Read|Edit|Run|Search|Download|Plan}" ],
+        "tool_type" : [ "{enum:Build|Test|Mcp|Read|Edit|Run|Search|Download|Plan}", "{enum:TermsOfService|Authentication}" ],
         "user_response" : [ "{enum:ALLOW|ALWAYS_ALLOW|REJECT|TEXT|LET_AGENT_DECIDE|OTHER}" ],
         "view_files_count" : [ "{regexp#integer}" ]
       },
       "enums" : {
-        "__event_id" : [ "agent_generation.rejected", "agent_generation.finished", "agent_generation.started", "task.rollback.file.change.clicked", "agent.installed", "markdown.event.received", "file_changes.approval.request.received", "mcp.approval.request.received", "mcp.event.received", "file_changes.event.received", "ask_request.event.received", "choice_request.event.received", "result.event.received", "test_run.approval.request.received", "tool.approval.request.received", "tool.event.received", "view_files.approval.request.received", "terminal.event.received", "terminal.approval.request.received", "view_files.event.received", "agent_thought.event.received", "test_run.event.received", "agent_generation.start.quota.reported", "agent_generation.end.quota.reported" ]
+        "__event_id" : [ "agent_generation.rejected", "agent_generation.finished", "agent_generation.started", "task.rollback.file.change.clicked", "agent.installed", "markdown.event.received", "file_changes.approval.request.received", "mcp.approval.request.received", "mcp.event.received", "file_changes.event.received", "ask_request.event.received", "choice_request.event.received", "result.event.received", "test_run.approval.request.received", "tool.approval.request.received", "tool.event.received", "view_files.approval.request.received", "terminal.event.received", "terminal.approval.request.received", "view_files.event.received", "agent_thought.event.received", "test_run.event.received", "agent_generation.start.quota.reported", "agent_generation.end.quota.reported", "config_options.applied", "config_options.requested", "chat_reference.link.clicked" ]
       }
     },
     "anonymized_fields" : [ {
-      "event" : "markdown.event.received",
-      "fields" : [ "issue_id", "chain_id" ]
-    }, {
-      "event" : "mcp.approval.request.received",
-      "fields" : [ "issue_id", "chain_id" ]
-    }, {
-      "event" : "choice_request.event.received",
-      "fields" : [ "issue_id", "chain_id" ]
-    }, {
-      "event" : "task.rollback.file.change.clicked",
-      "fields" : [ "chain_id" ]
-    }, {
       "event" : "file_changes.event.received",
       "fields" : [ "issue_id", "chain_id" ]
     }, {
-      "event" : "agent_generation.finished",
-      "fields" : [ "chain_id", "issue_id" ]
-    }, {
-      "event" : "agent_generation.started",
-      "fields" : [ "issue_id", "chain_id" ]
-    }, {
-      "event" : "terminal.approval.request.received",
-      "fields" : [ "issue_id", "chain_id" ]
-    }, {
       "event" : "file_changes.approval.request.received",
-      "fields" : [ "issue_id", "chain_id" ]
-    }, {
-      "event" : "test_run.event.received",
-      "fields" : [ "issue_id", "chain_id" ]
-    }, {
-      "event" : "mcp.event.received",
-      "fields" : [ "issue_id", "chain_id" ]
-    }, {
-      "event" : "agent_generation.end.quota.reported",
       "fields" : [ "issue_id", "chain_id" ]
     }, {
       "event" : "agent_generation.rejected",
@@ -9231,10 +9208,7 @@
       "event" : "agent_thought.event.received",
       "fields" : [ "issue_id", "chain_id" ]
     }, {
-      "event" : "agent_generation.start.quota.reported",
-      "fields" : [ "issue_id", "chain_id" ]
-    }, {
-      "event" : "tool.approval.request.received",
+      "event" : "chat_reference.link.clicked",
       "fields" : [ "issue_id", "chain_id" ]
     }, {
       "event" : "test_run.approval.request.received",
@@ -9249,13 +9223,55 @@
       "event" : "view_files.event.received",
       "fields" : [ "issue_id", "chain_id" ]
     }, {
+      "event" : "config_options.applied",
+      "fields" : [ "chain_id" ]
+    }, {
+      "event" : "tool.event.received",
+      "fields" : [ "issue_id", "chain_id" ]
+    }, {
+      "event" : "markdown.event.received",
+      "fields" : [ "issue_id", "chain_id" ]
+    }, {
+      "event" : "mcp.approval.request.received",
+      "fields" : [ "issue_id", "chain_id" ]
+    }, {
+      "event" : "choice_request.event.received",
+      "fields" : [ "issue_id", "chain_id" ]
+    }, {
+      "event" : "task.rollback.file.change.clicked",
+      "fields" : [ "chain_id" ]
+    }, {
+      "event" : "agent_generation.finished",
+      "fields" : [ "chain_id", "issue_id" ]
+    }, {
+      "event" : "agent_generation.started",
+      "fields" : [ "issue_id", "chain_id" ]
+    }, {
+      "event" : "terminal.approval.request.received",
+      "fields" : [ "issue_id", "chain_id" ]
+    }, {
+      "event" : "test_run.event.received",
+      "fields" : [ "issue_id", "chain_id" ]
+    }, {
+      "event" : "mcp.event.received",
+      "fields" : [ "issue_id", "chain_id" ]
+    }, {
+      "event" : "agent_generation.end.quota.reported",
+      "fields" : [ "issue_id", "chain_id" ]
+    }, {
+      "event" : "agent_generation.start.quota.reported",
+      "fields" : [ "issue_id", "chain_id" ]
+    }, {
+      "event" : "tool.approval.request.received",
+      "fields" : [ "issue_id", "chain_id" ]
+    }, {
+      "event" : "config_options.requested",
+      "fields" : [ "chain_id" ]
+    }, {
       "event" : "view_files.approval.request.received",
       "fields" : [ "issue_id", "chain_id" ]
     }, {
       "event" : "result.event.received",
-      "fields" : [ "issue_id", "chain_id" ]
-    }, {
-      "event" : "tool.event.received",
       "fields" : [ "issue_id", "chain_id" ]
     } ]
   }, {
@@ -16608,5 +16624,5 @@
       "version" : "Unknown|unknown.format|unknown|UNKNOWN|((\\d+\\.?)*\\d+)"
     }
   },
-  "version" : "7184"
+  "version" : "7188"
 }

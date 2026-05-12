@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=WhatsApp
+GenericName=WhatsApp Web
+Comment=WhatsApp Web App
+Exec=google-chrome-stable --app=https://web.whatsapp.com
+Icon=/home/imad/.local/share/icons/whatsapp.png
+Terminal=false
+Type=Application
+Categories=Network;InstantMessaging;
+StartupWMClass=web.whatsapp.com

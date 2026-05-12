@@ -142,10 +142,10 @@
       <i c="7" d="7" l="1772372056632" k="1772372056632" />
     </e>
     <e n="EditorBackSpace">
-      <i c="1235" l="1778585201230" />
+      <i c="1237" l="1778587766982" />
     </e>
     <e n="EditorChooseLookupItem">
-      <i c="111" l="1778585132072" />
+      <i c="115" l="1778587775249" />
     </e>
     <e n="EditorChooseLookupItemReplace">
       <i c="30" l="1774477969411" />
@@ -160,7 +160,7 @@
       <i c="2" l="1770152534642" />
     </e>
     <e n="EditorDown">
-      <i c="489" l="1778585130943" />
+      <i c="501" l="1778587773220" />
     </e>
     <e n="EditorEnter">
       <i c="1032" l="1778585203370" />
@@ -208,7 +208,7 @@
       <i c="1" d="1" l="1770157140275" k="1770157140275" />
     </e>
     <e n="EditorRight">
-      <i c="130" l="1778093270470" />
+      <i c="131" l="1778587767588" />
     </e>
     <e n="EditorSetContentBasedBidiTextDirection">
       <i c="2" l="1774377787202" />
@@ -226,7 +226,7 @@
       <i c="1" l="1776205445030" />
     </e>
     <e n="EditorUp">
-      <i c="226" l="1778585059649" />
+      <i c="231" l="1778587768499" />
     </e>
     <e n="ExpandAll">
       <i c="1" l="1776164145875" />
@@ -520,7 +520,7 @@
       <i c="2" l="1770125255409" />
     </e>
     <e n="com.intellij.openapi.actionSystem.AnActionWrapper">
-      <i c="5057" l="1778585078610" />
+      <i c="5070" l="1778587769972" />
     </e>
     <e n="com.intellij.openapi.actionSystem.DefaultActionGroup">
       <i c="6" l="1775909636742" />

@@ -2,20 +2,24 @@
 
 This repository is a self-contained, portable, and self-maintaining installer for my personalized Hyprland environment. It is widely compatible with Arch-based distributions (Arch, EndeavourOS, Manjaro, etc.).
 
-## 🚀 Installation
+## 🚀 Fast Installation (Restore Setup)
 
-To install this setup on a new machine:
+The absolute fastest way to bring back your entire configuration on a new machine is to run this single command. It will automatically download the setup and run the installer:
 
-1.  **Run the One-Line Installer:**
-    ```bash
-    git clone https://github.com/imadvs/Imad-Arch-Hypr-Dots.git && cd Imad-Arch-Hypr-Dots && chmod +x install.sh && ./install.sh
-    ```
+```bash
+bash <(curl -s https://raw.githubusercontent.com/imadvs/Imad-Arch-Hypr-Dots/main/auto-install.sh)
+```
 
-### Alternative: Lazy Install (`auto-install.sh`)
-If you don't even want to type `git clone`, you can download just the bootstrap script:
-1.  Download `auto-install.sh`.
-2.  Run `chmod +x auto-install.sh && ./auto-install.sh`.
-*Result: It automatically clones the repo and starts the installer.*
+*(This command fetches `auto-install.sh`, clones the repository, and immediately launches `install.sh`).*
+
+### 🛠️ Manual Installation (Alternative)
+If you prefer to clone it manually:
+```bash
+git clone https://github.com/imadvs/Imad-Arch-Hypr-Dots.git
+cd Imad-Arch-Hypr-Dots
+chmod +x install.sh
+./install.sh
+```
 
 ---
 

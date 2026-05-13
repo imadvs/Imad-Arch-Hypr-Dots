@@ -1,0 +1,10 @@
+{
+    "name": "yomitan_api",
+    "description": "Yomitan API",
+    "type": "stdio",
+    "path": "YOMITAN_API_PATH_PLACEHOLDER",
+    "allowed_origins": [
+        "chrome-extension://likgccmbimhjbgkjambclfkhldnlhbnn/",
+        "chrome-extension://hkjbmjjhhdhncajmcbhbnebiidohihon/"
+    ]
+}

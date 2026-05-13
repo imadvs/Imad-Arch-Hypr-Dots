@@ -87,14 +87,15 @@ dots "Updated keybinds"
 ```
 *Result: Local changes -> Repo -> GitHub.*
 
-**Scenario B: You are on a NEW machine**
-Run:
+**Scenario B: You are on a brand NEW machine (Fresh Linux Install)**
+If you just installed fresh Arch/CachyOS and want all your stuff back:
+1. Open your terminal.
+2. Run your fast-install command:
 ```bash
-cd Imad-Arch-Hypr-Dots
-git pull
-./install.sh
+bash <(curl -s https://raw.githubusercontent.com/imadvs/Imad-Arch-Hypr-Dots/main/auto-install.sh)
 ```
-*Result: GitHub -> Repo -> Local Machine.*
+3. Follow the on-screen prompts in the installer.
+4. Reboot! Your entire setup will be exactly as you left it.
 
 ## ↩️ How to Undo / Rollback
 

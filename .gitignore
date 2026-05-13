@@ -1,0 +1,6 @@
+Hyprland-Dots/config/Code/
+Hyprland-Dots/config/BraveSoftware/
+Hyprland-Dots/config/google-chrome/
+**/Cache*
+**/*.db
+Hyprland-Dots/config/Code/CachedExtensionVSIXs/

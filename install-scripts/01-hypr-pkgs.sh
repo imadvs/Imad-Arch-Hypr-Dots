@@ -11,6 +11,13 @@ Extra=(
   obsidian
   brave-bin
   visual-studio-code-bin
+  anki-bin
+  rmpc
+  yazi
+  mpd
+  zapzap
+  easyeffects
+  clock-rs
 )
 
 hypr_package=( 

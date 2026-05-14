@@ -18,6 +18,14 @@ Extra=(
   zapzap
   easyeffects
   clock-rs
+  neovim
+  gpu-screen-recorder
+  wl-screenrec
+  wf-recorder
+  lazydocker
+  guvcview
+  lutris
+  google-chrome-stable
 )
 
 hypr_package=( 
@@ -59,6 +67,9 @@ hypr_package=(
   xdg-user-dirs
   xdg-utils 
   yad
+  uwsm
+  hyprsunset
+  git-lfs
 )
 
 # the following packages can be deleted. however, dotfiles may not work properly

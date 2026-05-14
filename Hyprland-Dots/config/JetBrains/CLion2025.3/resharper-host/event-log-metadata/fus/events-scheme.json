@@ -8736,6 +8736,7 @@
         "function_call_trimmed" : [ "{enum#boolean}" ],
         "function_name" : [ "{util#class_name}" ],
         "generated_lines_count" : [ "{regexp#integer}" ],
+        "group" : [ "{enum:CONTROL|AGENT_1|AGENT_2}" ],
         "has_selection_in_editor" : [ "{enum#boolean}" ],
         "idea_mcp_enabled" : [ "{enum#boolean}" ],
         "isAccessibleFromModule" : [ "{enum#boolean}" ],
@@ -8810,6 +8811,7 @@
         "message_edit_mode" : [ "{enum#boolean}" ],
         "message_id" : [ "{regexp#short_hash}" ],
         "mode" : [ "{enum:AUTO|CODE|ASK}" ],
+        "model" : [ "{enum:gemini 3.1 flash lite|GPT-5.4-Mini}" ],
         "models" : [ "{util#llm_profile_id}" ],
         "modified_files_count" : [ "{regexp#integer}" ],
         "natural_language" : [ "{enum:other|english|mandarin|mandarin chinese|chinese|yue chinese|wu chinese|hindi|spanish|french|arabic|bengali|russian|portuguese|urdu|indonesian|german|japanese|swahili|marathi|telugu|turkish|tamil|korean|vietnamese|italian|thai|gujarati|persian|iranian|polish|ukrainian|malay|javanese|punjabi|romanian|yoruba|hausa|burmese|sundanese|amharic|filipino|serbian|croatian|dutch|igbo|uzbek|maithili|odia|khmer|nepali|sinhalese|xhosa|sotho|zulu|lao|finnish|bosnian|slovak|czech|georgian|armenian|bulgarian|danish|norwegian|swedish|azerbaijani|hebrew|tigrinya|malagasy|somali|chewa|rwanda|pashto|sindhi|madurese|tajik|kazakh|kirundi|tatar|bashkir|mongolian|belarusian|latin|welsh|scots gaelic|catalan|galician|breton|occitan|basque|luxembourgish|malayalam|burushaski|komi|kyrgyz|chuvash|tuvinian|adyghe|kabardian|sakha|kalmyk|sardinian|manx|esperanto|tok pisin|navajo|greenlandic|inuktitut|twi|fijian|marshallese|palauan|maori|samoan}" ],
@@ -8837,6 +8839,8 @@
         "quota_spent_by_context_classifier" : [ "{enum:float}" ],
         "rating" : [ "{enum:None|Like|Dislike}", "{enum:VeryPoor|Poor|Okay|Good|Excellent}" ],
         "ratio_of_file_words_mentioned_in_query" : [ "{regexp#float}" ],
+        "reason" : [ "{regexp:^(?:CONTROL_GROUP|SELECTED_MODE_IS_NOT_CHAT|RECENT_AGENT_HISTORY|WSL_PROJECT|UNSUPPORTED_LICENSE|MODE_OR_MODEL_UNAVAILABLE)(?:,(?:CONTROL_GROUP|SELECTED_MODE_IS_NOT_CHAT|RECENT_AGENT_HISTORY|WSL_PROJECT|UNSUPPORTED_LICENSE|MODE_OR_MODEL_UNAVAILABLE))*$}" ],
+        "reasoning" : [ "{enum:low|medium|high|xhigh|extra high|max|Low|Medium|High|Xhigh|Extra high|Extra High|Max|LOW|MEDIUM|HIGH|XHIGH|EXTRA HIGH|MAX}" ],
         "recentFilesIndex" : [ "{regexp#integer}" ],
         "recent_files_index" : [ "{regexp#integer}" ],
         "reference_start_char" : [ "{enum:#|@}" ],
@@ -8874,6 +8878,7 @@
         "tree_action" : [ "{enum:EXPAND|COLLAPSE}" ],
         "uiContextPickerContentKind" : [ "{enum:Editor|Structure|Local change list|Changes|AI Assistant|AI Assistant|VCS|Problems|Security Analysis|Vulnerable Dependencies|Project View|Navigation Bar|Database Toolbar|Console Output|Build Output|Terminal}" ],
         "unknown_labels" : [ "{regexp#integer}" ],
+        "update_action" : [ "{enum:update|auto_update|skip|skip_version}" ],
         "user_intent" : [ "{util#ai_chat_prompt_labels}" ],
         "user_message_id" : [ "{regexp#short_hash}" ],
         "wasModifiedInLastDay" : [ "{enum#boolean}" ],
@@ -8890,7 +8895,7 @@
       },
       "enums" : {
         "__error" : [ "GrazieAuthorizationException", "RequestTimeout", "AIAssistantForbiddenException", "TokenLimitExceededException", "ClassNotFoundException" ],
-        "__event_id" : [ "editUsageMessageFinished", "codeSnippetPresentationChanged", "editUserMessageStarted", "editUserMessageCancelled", "newChatCreated", "messageSent", "codeCopied", "allChatsClicked", "messageReceived", "messageReacted", "messageReceivingCancelled", "assistantChatSummarySent", "all.chats.clicked", "code.snippet.presentation.changed", "edit.usage.message.finished", "message.reacted", "assistant.chat.summary.sent", "edit.user.message.cancelled", "chat.from.history.opened", "code.copied", "edit.user.message.cancelled.with.mouse", "message.received", "edit.user.message.started", "code.inserted", "message.sent", "new.chat.created", "message.receiving.cancelled", "code.snippet.inserted.at.caret", "send.feedback.clicked", "log.in.to.jetbrains.ai", "log.out.from.jetbrains.ai", "ai.response.error", "function.called", "code.snippet.file.created", "text.copied", "alias.sent", "command.sent", "reference.attached", "chat.labels", "message.regenerate", "hashtag.clicked", "natural.language.promo.banner.shown.and.interacted", "natural.language.autodetected.banner.shown.and.interacted", "chosen.natural.language", "natural.language.setting.turned.off", "natural.language.setting.turned.on", "natural.language.setting.turned.off.after.automatic.detection", "natural.language.promo.banner.settings.clicked", "natural.language.setting.turned.on.automatically", "natural.language.autodetected.banner.settings.clicked", "text.inserted", "attachment.added.to.the.message", "attachment.deleted.from.the.context.panel.manually", "attachment.added.to.the.context.panel", "attachment.deleted.from.the.context.panel", "function.name.leaked", "reference.start.char.used", "ai.generated.action.button.clicked", "user.message.enriched", "user.intent", "attachment.plus.button.clicked", "send.with.rag.button.clicked", "chat.model.selected", "chat.model.provider.promotion.selected", "chat.model.selector.opened", "send.with.rag.timeout.exceeded", "send.with.rag.canceled", "ui.context.picker.finished", "ui.context.picker.canceled", "ui.context.picker.started", "send.with.rag.psi.search.result", "send.with.rag.cloud.ranker.result", "send.with.rag.pipeline.duration", "send.with.rag.recent.files.result", "chat.mode.chosen.with.shortcut", "chat.mode.selector.opened", "chat.mode.selected", "chat.copy", "send.button.clicked", "edit.mode.suggestion.generated", "edit.mode.suggestion.accepted.patch", "edit.mode.suggestion.accepted.all", "edit.mode.suggestion.discarded.all", "edit.mode.suggestion.discarded.patch", "chat.web.search.called", "chat.web.search.command.added.with.button", "codebase.toggle.value.changed", "edit.mode.suggestion.open.diff", "edit.mode.suggestion.accepted.changes", "edit.mode.suggestion.discarded.changes", "edit.mode.suggestion.open.file", "edit.mode.changes.navigation.clicked", "edit.mode.changes.tree.label.clicked", "chat.search.next.occurrence.clicked", "chat.search.previous.occurrence.clicked", "chat.search.closed", "chat.search.opened", "ai.rule.type.switched", "ai.rules.retrieving.timeout", "ai.rule.created", "ai.rule.deleted", "ai.rule.applied", "chat.model.selector.more.section.toggled", "chat.model.selector.tooltip.shown", "chat.model.auto.selected", "chat.model.auto.applied", "chat.model.selector.closed", "models.loading.started", "models.loading.success", "models.loading.failed", "reference.start.char.typed", "context.selected.by.retrievers", "chat.context.limit.80.notification.shown", "chat.context.limit.80.notification.new.chat.created", "chat.context.limit.100.notification.closed", "chat.context.limit.100.notification.new.chat.created", "chat.context.limit.80.notification.closed", "chat.context.limit.100.notification.shown", "claude.code.agent.terms.of.use.interaction", "claude.code.agent.edit.status", "claude.code.agent.mcp.tool.called", "claude.code.agent.download.error", "claude.code.agent.session.error", "claude.code.agent.installation.completed", "chat.agent.selected", "claude.code.agent.permission.mode.usage", "claude.code.agent.generation.results", "context.selected.or.deleted.by.user", "chat.junie.promo.try.it", "chat.junie.promo.skip", "acp.agent.failed", "acp.agent.started", "chat.junie.installation.finished", "chat.junie.installation.started", "chat.agent.session.event", "chat.junie.think.mode.change", "chat.agent.start.task", "chat.junie.plugin.outdated.dialog.shown", "chat.junie.agreement.canceled", "chat.junie.mode.change", "chat.junie.agreement.shown", "chat.agent.popup.shown", "chat.junie.installation.failed", "chat.junie.mode.popup.shown", "chat.selected", "chat.agent.brave.mode.change", "chat.agent.new.chat.notification.shown", "chat.junie.agreement.accepted", "chat.junie.plugin.enable.dialog.result", "chat.byok.incompatible.notification.shown", "chat.agent.promo.try.it", "user.switched.from.agent", "user.switched.chat.mode.after.codex.promo", "codex.promo.ended.notification.shown", "claude.code.agent.model.selected", "codex.promo.ended.notification.closed", "chat.agent.promo.skip", "chat.mode.switched.to.codex.with.promo", "chat.junie.installation.was.not.finished", "acp.agent.uninstalled", "acp.agent.installed", "acp.custom.mcp.setting.changed", "acp.agent.updated", "acp.idea.mcp.setting.changed", "context.ranker.inference", "chat.agent.session.feedback.widget.shown", "chat.agent.session.feedback.widget.rating.selected", "chat.agent.session.feedback.widget.dismissed" ],
+        "__event_id" : [ "editUsageMessageFinished", "codeSnippetPresentationChanged", "editUserMessageStarted", "editUserMessageCancelled", "newChatCreated", "messageSent", "codeCopied", "allChatsClicked", "messageReceived", "messageReacted", "messageReceivingCancelled", "assistantChatSummarySent", "all.chats.clicked", "code.snippet.presentation.changed", "edit.usage.message.finished", "message.reacted", "assistant.chat.summary.sent", "edit.user.message.cancelled", "chat.from.history.opened", "code.copied", "edit.user.message.cancelled.with.mouse", "message.received", "edit.user.message.started", "code.inserted", "message.sent", "new.chat.created", "message.receiving.cancelled", "code.snippet.inserted.at.caret", "send.feedback.clicked", "log.in.to.jetbrains.ai", "log.out.from.jetbrains.ai", "ai.response.error", "function.called", "code.snippet.file.created", "text.copied", "alias.sent", "command.sent", "reference.attached", "chat.labels", "message.regenerate", "hashtag.clicked", "natural.language.promo.banner.shown.and.interacted", "natural.language.autodetected.banner.shown.and.interacted", "chosen.natural.language", "natural.language.setting.turned.off", "natural.language.setting.turned.on", "natural.language.setting.turned.off.after.automatic.detection", "natural.language.promo.banner.settings.clicked", "natural.language.setting.turned.on.automatically", "natural.language.autodetected.banner.settings.clicked", "text.inserted", "attachment.added.to.the.message", "attachment.deleted.from.the.context.panel.manually", "attachment.added.to.the.context.panel", "attachment.deleted.from.the.context.panel", "function.name.leaked", "reference.start.char.used", "ai.generated.action.button.clicked", "user.message.enriched", "user.intent", "attachment.plus.button.clicked", "send.with.rag.button.clicked", "chat.model.selected", "chat.model.provider.promotion.selected", "chat.model.selector.opened", "send.with.rag.timeout.exceeded", "send.with.rag.canceled", "ui.context.picker.finished", "ui.context.picker.canceled", "ui.context.picker.started", "send.with.rag.psi.search.result", "send.with.rag.cloud.ranker.result", "send.with.rag.pipeline.duration", "send.with.rag.recent.files.result", "chat.mode.chosen.with.shortcut", "chat.mode.selector.opened", "chat.mode.selected", "chat.copy", "send.button.clicked", "edit.mode.suggestion.generated", "edit.mode.suggestion.accepted.patch", "edit.mode.suggestion.accepted.all", "edit.mode.suggestion.discarded.all", "edit.mode.suggestion.discarded.patch", "chat.web.search.called", "chat.web.search.command.added.with.button", "codebase.toggle.value.changed", "edit.mode.suggestion.open.diff", "edit.mode.suggestion.accepted.changes", "edit.mode.suggestion.discarded.changes", "edit.mode.suggestion.open.file", "edit.mode.changes.navigation.clicked", "edit.mode.changes.tree.label.clicked", "chat.search.next.occurrence.clicked", "chat.search.previous.occurrence.clicked", "chat.search.closed", "chat.search.opened", "ai.rule.type.switched", "ai.rules.retrieving.timeout", "ai.rule.created", "ai.rule.deleted", "ai.rule.applied", "chat.model.selector.more.section.toggled", "chat.model.selector.tooltip.shown", "chat.model.auto.selected", "chat.model.auto.applied", "chat.model.selector.closed", "models.loading.started", "models.loading.success", "models.loading.failed", "reference.start.char.typed", "context.selected.by.retrievers", "chat.context.limit.80.notification.shown", "chat.context.limit.80.notification.new.chat.created", "chat.context.limit.100.notification.closed", "chat.context.limit.100.notification.new.chat.created", "chat.context.limit.80.notification.closed", "chat.context.limit.100.notification.shown", "claude.code.agent.terms.of.use.interaction", "claude.code.agent.edit.status", "claude.code.agent.mcp.tool.called", "claude.code.agent.download.error", "claude.code.agent.session.error", "claude.code.agent.installation.completed", "chat.agent.selected", "claude.code.agent.permission.mode.usage", "claude.code.agent.generation.results", "context.selected.or.deleted.by.user", "chat.junie.promo.try.it", "chat.junie.promo.skip", "acp.agent.failed", "acp.agent.started", "chat.junie.installation.finished", "chat.junie.installation.started", "chat.agent.session.event", "chat.junie.think.mode.change", "chat.agent.start.task", "chat.junie.plugin.outdated.dialog.shown", "chat.junie.agreement.canceled", "chat.junie.mode.change", "chat.junie.agreement.shown", "chat.agent.popup.shown", "chat.junie.installation.failed", "chat.junie.mode.popup.shown", "chat.selected", "chat.agent.brave.mode.change", "chat.agent.new.chat.notification.shown", "chat.junie.agreement.accepted", "chat.junie.plugin.enable.dialog.result", "chat.byok.incompatible.notification.shown", "chat.agent.promo.try.it", "user.switched.from.agent", "user.switched.chat.mode.after.codex.promo", "codex.promo.ended.notification.shown", "claude.code.agent.model.selected", "codex.promo.ended.notification.closed", "chat.agent.promo.skip", "chat.mode.switched.to.codex.with.promo", "chat.junie.installation.was.not.finished", "acp.agent.uninstalled", "acp.agent.installed", "acp.custom.mcp.setting.changed", "acp.agent.updated", "acp.idea.mcp.setting.changed", "context.ranker.inference", "chat.agent.session.feedback.widget.shown", "chat.agent.session.feedback.widget.rating.selected", "chat.agent.session.feedback.widget.dismissed", "chat.mode.switched.to.gemini.with.promo", "gemini.promo.ended.notification.closed", "gemini.promo.ended.notification.shown", "user.switched.chat.mode.after.gemini.promo", "acp.agent.update.prompt.shown", "acp.agent.update.prompt.response", "default.agent.rollout.dismissed", "context.ranking.rollout.applied", "online.eval.default.agent.skipped", "online.eval.default.agent.applied" ],
         "__level" : [ "OSRegistry", "JvmFlag", "JBA", "Allowed", "UserSetting" ]
       }
     },
@@ -8961,6 +8966,9 @@
       "event" : "chat.mode.switched.to.codex.with.promo",
       "fields" : [ "chat_session_id" ]
     }, {
+      "event" : "context.ranking.rollout.applied",
+      "fields" : [ "chat_session_id" ]
+    }, {
       "event" : "new.chat.created",
       "fields" : [ "chat_session_id" ]
     }, {
@@ -8977,6 +8985,9 @@
       "fields" : [ "chat_session_id" ]
     }, {
       "event" : "user.message.enriched",
+      "fields" : [ "chat_session_id" ]
+    }, {
+      "event" : "online.eval.default.agent.applied",
       "fields" : [ "chat_session_id" ]
     }, {
       "event" : "codebase.toggle.value.changed",
@@ -9075,6 +9086,9 @@
       "event" : "edit.mode.suggestion.accepted.all",
       "fields" : [ "chat_session_id" ]
     }, {
+      "event" : "gemini.promo.ended.notification.shown",
+      "fields" : [ "chat_session_id" ]
+    }, {
       "event" : "ai.generated.action.button.clicked",
       "fields" : [ "chat_session_id" ]
     }, {
@@ -9093,11 +9107,17 @@
       "event" : "claude.code.agent.generation.results",
       "fields" : [ "message_id", "chat_session_id" ]
     }, {
+      "event" : "online.eval.default.agent.skipped",
+      "fields" : [ "chat_session_id" ]
+    }, {
       "event" : "edit.mode.suggestion.discarded.all",
       "fields" : [ "chat_session_id" ]
     }, {
       "event" : "code.copied",
       "fields" : [ "message_id", "chat_session_id" ]
+    }, {
+      "event" : "gemini.promo.ended.notification.closed",
+      "fields" : [ "chat_session_id" ]
     }, {
       "event" : "chat.copy",
       "fields" : [ "chat_session_id" ]
@@ -16636,5 +16656,5 @@
       "version" : "Unknown|unknown.format|unknown|UNKNOWN|((\\d+\\.?)*\\d+)"
     }
   },
-  "version" : "7195"
+  "version" : "7199"
 }

@@ -54,14 +54,14 @@ alias update='sudo pacman -Syu && paru -Sua'
 alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'
 alias mirrors='sudo cachyos-rate-mirrors'
 
-# SiteBlocker Aliases
-alias sudo='sudo '
-alias siteblock='/home/imad/.config/hypr/UserScripts/siteblock'
-alias sbp='sudo siteblock pause'
-alias sbr='sudo siteblock resume'
-alias sbs='siteblock status'
-alias fixconfig='cd ~/.config && aider --model groq/llama-3.3-70b-versatile'
-source ~/.my_secrets
+# # SiteBlocker Aliases
+# alias sudo='sudo '
+# alias siteblock='/home/imad/.config/hypr/UserScripts/siteblock'
+# alias sbp='sudo siteblock pause'
+# alias sbr='sudo siteblock resume'
+# alias sbs='siteblock status'
+# alias fixconfig='cd ~/.config && aider --model groq/llama-3.3-70b-versatile'
+# source ~/.my_secrets
 
 
 

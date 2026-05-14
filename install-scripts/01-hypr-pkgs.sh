@@ -26,6 +26,10 @@ Extra=(
   guvcview
   lutris
   google-chrome-stable
+  mpc
+  clion
+  docker
+  ghostty
 )
 
 hypr_package=( 
@@ -70,6 +74,9 @@ hypr_package=(
   uwsm
   hyprsunset
   git-lfs
+  libnotify
+  socat
+  python
 )
 
 # the following packages can be deleted. however, dotfiles may not work properly

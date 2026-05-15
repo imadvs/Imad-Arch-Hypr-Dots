@@ -3062,6 +3062,51 @@
           </values>
         </DateState>
       </entry>
+      <entry key="2026-5-14-14">
+        <DateState>
+          <values>
+            <entry key="file_language">
+              <MetricValue>
+                <option name="count" value="27" />
+                <distribution>
+                  <entry key="Language: ChatInput" value="27" />
+                </distribution>
+              </MetricValue>
+            </entry>
+            <entry key="finish_type">
+              <MetricValue>
+                <option name="count" value="27" />
+                <distribution>
+                  <entry key="EMPTY" value="6" />
+                  <entry key="INVALIDATED" value="20" />
+                  <entry key="SELECTED" value="1" />
+                </distribution>
+              </MetricValue>
+            </entry>
+            <entry key="total_inserted_length">
+              <MetricValue>
+                <option name="count" value="8" />
+                <option name="sum" value="25.0" />
+              </MetricValue>
+            </entry>
+            <entry key="total_inserted_lines">
+              <MetricValue>
+                <option name="count" value="8" />
+                <option name="sum" value="1.0" />
+              </MetricValue>
+            </entry>
+            <entry key="was_shown">
+              <MetricValue>
+                <option name="count" value="27" />
+                <distribution>
+                  <entry key="false" value="19" />
+                  <entry key="true" value="8" />
+                </distribution>
+              </MetricValue>
+            </entry>
+          </values>
+        </DateState>
+      </entry>
       <entry key="2026-5-4-13">
         <DateState>
           <values>

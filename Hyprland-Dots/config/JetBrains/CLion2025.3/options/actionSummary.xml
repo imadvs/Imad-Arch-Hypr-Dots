@@ -28,7 +28,7 @@
       <i c="10" l="1777187939755" />
     </e>
     <e n="AIAssistant.ToolWindow.HistoryAction">
-      <i c="46" l="1778610636191" />
+      <i c="47" l="1778769763774" />
     </e>
     <e n="AIAssistant.ToolWindow.Message.Copy">
       <i c="7" l="1774134218216" />
@@ -142,7 +142,7 @@
       <i c="7" d="7" l="1772372056632" k="1772372056632" />
     </e>
     <e n="EditorBackSpace">
-      <i c="1237" l="1778587766982" />
+      <i c="1239" l="1778766471958" />
     </e>
     <e n="EditorChooseLookupItem">
       <i c="115" l="1778587775249" />
@@ -163,7 +163,7 @@
       <i c="501" l="1778587773220" />
     </e>
     <e n="EditorEnter">
-      <i c="1032" l="1778585203370" />
+      <i c="1034" l="1778766493920" />
     </e>
     <e n="EditorEscape">
       <i c="72" l="1774063809594" />
@@ -256,7 +256,7 @@
       <i c="5" l="1776204463588" />
     </e>
     <e n="GotoDeclaration">
-      <i c="478" l="1778589896282" />
+      <i c="482" l="1778766875630" />
     </e>
     <e n="GotoLine">
       <i c="1" l="1777185919692" />
@@ -271,7 +271,7 @@
       <i c="5" l="1774113555786" />
     </e>
     <e n="InsertInlineCompletionAction">
-      <i c="207" l="1778333502217" />
+      <i c="208" l="1778766493265" />
     </e>
     <e n="List-selectNextRow">
       <i c="1" l="1771005821639" />
@@ -520,7 +520,7 @@
       <i c="2" l="1770125255409" />
     </e>
     <e n="com.intellij.openapi.actionSystem.AnActionWrapper">
-      <i c="5070" l="1778587769972" />
+      <i c="5073" l="1778766885397" />
     </e>
     <e n="com.intellij.openapi.actionSystem.DefaultActionGroup">
       <i c="6" l="1775909636742" />

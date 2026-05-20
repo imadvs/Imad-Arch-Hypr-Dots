@@ -55,14 +55,17 @@ alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'
 alias mirrors='sudo cachyos-rate-mirrors'
 
 # # SiteBlocker Aliases
-# alias sudo='sudo '
-# alias siteblock='/home/imad/.config/hypr/UserScripts/siteblock'
-# alias sbp='sudo siteblock pause'
-# alias sbr='sudo siteblock resume'
-# alias sbs='siteblock status'
-# alias fixconfig='cd ~/.config && aider --model groq/llama-3.3-70b-versatile'
-# source ~/.my_secrets
+alias sudo='sudo '
+alias siteblock='/home/imad/.config/hypr/UserScripts/siteblock'
+alias sbp='sudo siteblock pause'
+alias sbr='sudo siteblock resume'
+alias sbs='siteblock status'
+alias fixconfig='cd ~/.config && aider --model groq/llama-3.3-70b-versatile'
+source ~/.my_secrets
 
 
 
 alias ytdl='/home/imad/.config/hypr/UserScripts/ytdl-music.sh'
+
+# opencode
+export PATH=/home/imad/.opencode/bin:$PATH

@@ -3720,6 +3720,18 @@
       }
     }
   }, {
+    "id" : "dotnet.feedback.upload",
+    "builds" : [ ],
+    "versions" : [ {
+      "from" : "1"
+    } ],
+    "rules" : {
+      "event_id" : [ "{enum:upload.failed|upload.succeeded|upload.started}" ],
+      "event_data" : {
+        "reason" : [ "{enum:NoProviders|NoAttachmentsMaterialized|ZipCreationFailed|UploadTimeout|HttpError|OtherError|CanceledByUser}" ]
+      }
+    }
+  }, {
     "id" : "dotnet.indexing.statistics",
     "builds" : [ ],
     "versions" : [ {
@@ -3737,6 +3749,30 @@
         "total_walltime_ms" : [ "{regexp#integer}" ],
         "update_job_ms" : [ "{regexp#integer}" ],
         "update_request_source" : [ "{enum:OnLoad|UpdateBackground|UpdateOnChange}" ]
+      }
+    }
+  }, {
+    "id" : "dotnet.junie.grazie.proxy",
+    "builds" : [ ],
+    "versions" : [ {
+      "from" : "1"
+    } ],
+    "rules" : {
+      "event_id" : [ "{enum:httpErrorReceived}" ],
+      "event_data" : {
+        "status_code" : [ "{regexp#integer}" ]
+      }
+    }
+  }, {
+    "id" : "dotnet.llm.agents.promo",
+    "builds" : [ ],
+    "versions" : [ {
+      "from" : "1"
+    } ],
+    "rules" : {
+      "event_id" : [ "{enum:dismissed|learn_more_clicked|open_ai_assistant_clicked|send_feedback_clicked}" ],
+      "event_data" : {
+        "source" : [ "{enum:JetPopupMenuBanner|FeatureSuggester|FeedbackSurvey|ChatPromoBanner|ChatFeedbackLink|WhatsNewPage}" ]
       }
     }
   }, {
@@ -3824,6 +3860,21 @@
       }
     }
   }, {
+    "id" : "dotnet.profiler.remote_configuration",
+    "builds" : [ ],
+    "versions" : [ {
+      "from" : "1"
+    } ],
+    "rules" : {
+      "event_id" : [ "{enum:setting_requested|experiment_assignment_empty|setting_for_experiment_requested|experiment_assigned}" ],
+      "event_data" : {
+        "bucket_id" : [ "{regexp#integer}" ],
+        "configuration_type" : [ "{util#class_name}" ],
+        "experiment_id" : [ "{util#ab_group}" ],
+        "had_overridden_data" : [ "{enum#boolean}" ]
+      }
+    }
+  }, {
     "id" : "dotnet.radler.clangd.counter",
     "builds" : [ ],
     "versions" : [ {
@@ -3885,8 +3936,8 @@
         "projectFiles" : [ "{enum:csproj|vbproj|fsproj|hiveproj|usqlproj|sfproj|shproj|jsproj|ccproj|njsproj|wapproj|sqlproj|asaproj|deployproj|dcproj|vdproj|wixproj|proj|vcxproj|pyproj}" ],
         "targetFrameworkId" : [ "{regexp:(portable-)?((android|aspnet|aspnetcore|dnx|dnxcore|dotnet|ios|macos|maccatalyst|monoandroid|monotouch|monomac|xamarinios|xamarinmac|xamarinpsthree|xamarinpsfour|xamarinpsvita|xamarinwatchos|xamarintvos|xamarinxboxthreesixty|xamarinxboxone|native|net|netcore|netcoreapp|netmf|netstandard|netstandardapp|portable|sl|tizen|tvos|uap|win|winrt|windows|wp|wpa)(\\d\\.?)*)((\\+|-)((android|aspnet|aspnetcore|dnx|dnxcore|dotnet|ios|macos|maccatalyst|monoandroid|monotouch|monomac|xamarinios|xamarinmac|xamarinpsthree|xamarinpsfour|xamarinpsvita|xamarinwatchos|xamarintvos|xamarinxboxthreesixty|xamarinxboxone|native|net|netcore|netcoreapp|netmf|netstandard|netstandardapp|portable|sl|tizen|tvos|uap|win|winrt|windows|wp|wpa)(\\d\\.?)*))*}" ],
         "targetFrameworkIds" : [ "{regexp:(portable-)?((android|aspnet|aspnetcore|dnx|dnxcore|dotnet|ios|macos|maccatalyst|monoandroid|monotouch|monomac|xamarinios|xamarinmac|xamarinpsthree|xamarinpsfour|xamarinpsvita|xamarinwatchos|xamarintvos|xamarinxboxthreesixty|xamarinxboxone|native|net|netcore|netcoreapp|netmf|netstandard|netstandardapp|portable|sl|tizen|tvos|uap|win|winrt|windows|wp|wpa)(\\d\\.?)*)((\\+|-)((android|aspnet|aspnetcore|dnx|dnxcore|dotnet|ios|macos|maccatalyst|monoandroid|monotouch|monomac|xamarinios|xamarinmac|xamarinpsthree|xamarinpsfour|xamarinpsvita|xamarinwatchos|xamarintvos|xamarinxboxthreesixty|xamarinxboxone|native|net|netcore|netcoreapp|netmf|netstandard|netstandardapp|portable|sl|tizen|tvos|uap|win|winrt|windows|wp|wpa)(\\d\\.?)*))*}" ],
-        "technologies" : [ "{enum#__technologies}", "{enum:CMake}" ],
-        "technology" : [ "{enum#__technology}", "{enum:CMake}" ],
+        "technologies" : [ "{enum#__technologies}", "{enum:CMake}", "{enum:GDExtension|Godot C++}" ],
+        "technology" : [ "{enum#__technology}", "{enum:CMake}", "{enum:GDExtension|Godot C++}" ],
         "type" : [ "{util#dotnet_file_extension}" ]
       },
       "enums" : {
@@ -8621,7 +8672,7 @@
         "status" : [ "{regexp#integer}" ]
       },
       "enums" : {
-        "__event_id" : [ "activate.subscription.clicked", "start.free.trial.clicked", "error.on.log.in", "go.to.activation.clicked", "how.to.disable.ai.clicked", "log.in.to.jb.account.clicked", "manage.subscriptions.clicked", "start.ai.assistant.clicked", "unlimited.ai.clicked", "check.license.status", "log.in.manual.token", "verify.access.to.ai.license", "activate.license", "refresh.license.list", "trial.is.not.available", "show.how.to.enable.ai", "show.how.to.enable.ai.clicked", "activate.license.clicked", "license.relogin.clicked", "verify.access.to.ai.license.clicked", "log.in.manual.token.clicked", "refresh.license.list.clicked", "link.payment.method.clicked", "tos.accepted", "auto.activation.finished", "auto.activation.started", "payment.method.linked.clicked", "back.button.clicked", "acceptable.use.policy.link.clicked", "terms.of.service.link.clicked", "terms.of.service.screen.opened", "agree.button.clicked", "set.region.clicked", "continue.with.free.plan.clicked" ]
+        "__event_id" : [ "activate.subscription.clicked", "start.free.trial.clicked", "error.on.log.in", "go.to.activation.clicked", "how.to.disable.ai.clicked", "log.in.to.jb.account.clicked", "manage.subscriptions.clicked", "start.ai.assistant.clicked", "unlimited.ai.clicked", "check.license.status", "log.in.manual.token", "verify.access.to.ai.license", "activate.license", "refresh.license.list", "trial.is.not.available", "show.how.to.enable.ai", "show.how.to.enable.ai.clicked", "activate.license.clicked", "license.relogin.clicked", "verify.access.to.ai.license.clicked", "log.in.manual.token.clicked", "refresh.license.list.clicked", "link.payment.method.clicked", "tos.accepted", "auto.activation.finished", "auto.activation.started", "payment.method.linked.clicked", "back.button.clicked", "acceptable.use.policy.link.clicked", "terms.of.service.link.clicked", "terms.of.service.screen.opened", "agree.button.clicked", "set.region.clicked", "continue.with.free.plan.clicked", "jbai.user.registered" ]
       }
     }
   }, {
@@ -9171,6 +9222,52 @@
       "fields" : [ "chat_session_id" ]
     }, {
       "event" : "chat.agent.new.chat.notification.shown",
+      "fields" : [ "chat_session_id" ]
+    } ]
+  }, {
+    "id" : "llm.chat.agent.skills",
+    "builds" : [ ],
+    "versions" : [ {
+      "from" : "4"
+    } ],
+    "rules" : {
+      "event_id" : [ "{enum#__event_id}" ],
+      "event_data" : {
+        "additional_directory_count" : [ "{regexp#integer}" ],
+        "agent_id" : [ "{util#chat_agent_name}" ],
+        "agent_name" : [ "{util#chat_agent_name}" ],
+        "chat_session_id" : [ "{regexp#date_short_hash}" ],
+        "claude_skill_count" : [ "{regexp#integer}" ],
+        "codex_skill_count" : [ "{regexp#integer}" ],
+        "delete_outcome" : [ "{enum:SUCCESS|CANCELLED|FAILED|MISSING_DIRECTORY}" ],
+        "enabled_additional_directory_count" : [ "{regexp#integer}" ],
+        "enabled_registry_count" : [ "{regexp#integer}" ],
+        "enabled_skill_count" : [ "{regexp#integer}" ],
+        "ide_enabled" : [ "{enum#boolean}" ],
+        "install_failure_reason" : [ "{enum:UNSUPPORTED_SOURCE|TARGET_ROOT_EMPTY|TARGET_ROOT_INVALID|SOURCE_DIRECTORY_MISSING|SOURCE_DIRECTORY_NAME_MISSING|INSTALL_FAILED}" ],
+        "install_outcome" : [ "{enum:SUCCESS|ALREADY_INSTALLED|FAILURE}" ],
+        "is_bundled" : [ "{enum#boolean}" ],
+        "is_installed_in_ide" : [ "{enum#boolean}" ],
+        "open_target_kind" : [ "{enum:LOCAL|REMOTE}" ],
+        "project_enabled" : [ "{enum#boolean}" ],
+        "skill_count" : [ "{regexp#integer}" ],
+        "skill_name" : [ "{util#bundled_skill_name}" ],
+        "skill_reference_prefix" : [ "{enum:$|/}" ],
+        "source_kind" : [ "{enum:LOCAL|REMOTE}" ],
+        "target_enabled" : [ "{enum#boolean}" ],
+        "target_kind" : [ "{enum:IDE|PROJECT|CUSTOM}" ],
+        "toggle_outcome" : [ "{enum:SUCCESS|FAILURE}" ],
+        "total_registry_count" : [ "{regexp#integer}" ]
+      },
+      "enums" : {
+        "__event_id" : [ "context.popup.agent.skill.selector.opened", "install.finished", "context.popup.agent.skill.selected", "enabled.changed", "banner.dismiss.clicked", "opened", "try.in.chat", "external.registries.updated", "delete.finished", "directories.updated", "banner.import.clicked", "agent.skill.loaded" ]
+      }
+    },
+    "anonymized_fields" : [ {
+      "event" : "context.popup.agent.skill.selected",
+      "fields" : [ "chat_session_id" ]
+    }, {
+      "event" : "context.popup.agent.skill.selector.opened",
       "fields" : [ "chat_session_id" ]
     } ]
   }, {
@@ -10369,8 +10466,13 @@
       "from" : "1"
     } ],
     "rules" : {
-      "event_id" : [ "{enum:mcp.tool.call}" ],
+      "event_id" : [ "{enum:mcp.tool.call|mcp.execute_tool.dispatch}" ],
       "event_data" : {
+        "arg_count" : [ "{regexp#integer}" ],
+        "dispatched_tool_found" : [ "{enum#boolean}" ],
+        "dispatched_tool_name" : [ "{util#tool_name_validator_id}" ],
+        "duration_ms" : [ "{regexp#integer}" ],
+        "success" : [ "{enum#boolean}" ],
         "tool_name" : [ "{util#tool_name_validator_id}" ]
       }
     }
@@ -16105,6 +16207,19 @@
       }
     }
   }, {
+    "id" : "vsc.remdev",
+    "builds" : [ ],
+    "versions" : [ {
+      "from" : "1"
+    } ],
+    "rules" : {
+      "event_id" : [ "{enum:remoteHost}" ],
+      "event_data" : {
+        "isRemote" : [ "{enum#boolean}" ],
+        "name" : [ "{enum:ssh-remote|dev-container|attached-container|wsl|tunnel|codespaces|amlext}" ]
+      }
+    }
+  }, {
     "id" : "vulnerability.package.checker",
     "builds" : [ ],
     "versions" : [ {
@@ -16658,5 +16773,5 @@
       "version" : "Unknown|unknown.format|unknown|UNKNOWN|((\\d+\\.?)*\\d+)"
     }
   },
-  "version" : "7201"
+  "version" : "7216"
 }

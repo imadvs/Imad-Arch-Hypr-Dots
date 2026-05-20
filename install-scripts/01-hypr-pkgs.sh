@@ -30,6 +30,7 @@ Extra=(
   clion
   docker
   ghostty
+  opencode
 )
 
 hypr_package=( 

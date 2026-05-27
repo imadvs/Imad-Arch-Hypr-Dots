@@ -1,2 +1,3 @@
-2026/04/28-12:04:24.602 7ee Creating DB /home/imad/.config/obsidian/Partitions/vault-b57925a8b46a412c/Session Storage since it was missing.
-2026/04/28-12:04:24.610 7ee Reusing MANIFEST /home/imad/.config/obsidian/Partitions/vault-b57925a8b46a412c/Session Storage/MANIFEST-000001
+2026/05/21-01:22:15.390 27558 Reusing MANIFEST /home/imad/.config/obsidian/Partitions/vault-b57925a8b46a412c/Session Storage/MANIFEST-000001
+2026/05/21-01:22:15.391 27558 Recovering log #3
+2026/05/21-01:22:15.391 27558 Reusing old log /home/imad/.config/obsidian/Partitions/vault-b57925a8b46a412c/Session Storage/000003.log 

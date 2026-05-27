@@ -69,3 +69,7 @@ alias ytdl='/home/imad/.config/hypr/UserScripts/ytdl-music.sh'
 
 # opencode
 export PATH=/home/imad/.opencode/bin:$PATH
+
+
+# Added by Antigravity CLI installer
+export PATH="/home/imad/.local/bin:$PATH"

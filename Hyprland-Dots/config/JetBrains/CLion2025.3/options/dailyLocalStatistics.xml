@@ -3107,6 +3107,221 @@
           </values>
         </DateState>
       </entry>
+      <entry key="2026-5-20-17">
+        <DateState>
+          <values>
+            <entry key="file_language">
+              <MetricValue>
+                <option name="count" value="12" />
+                <distribution>
+                  <entry key="Language: C++" value="12" />
+                </distribution>
+              </MetricValue>
+            </entry>
+            <entry key="finish_type">
+              <MetricValue>
+                <option name="count" value="12" />
+                <distribution>
+                  <entry key="EMPTY" value="11" />
+                  <entry key="SELECTED" value="1" />
+                </distribution>
+              </MetricValue>
+            </entry>
+            <entry key="total_inserted_length">
+              <MetricValue>
+                <option name="count" value="1" />
+                <option name="sum" value="31.0" />
+              </MetricValue>
+            </entry>
+            <entry key="total_inserted_lines">
+              <MetricValue>
+                <option name="count" value="1" />
+                <option name="sum" value="1.0" />
+              </MetricValue>
+            </entry>
+            <entry key="was_shown">
+              <MetricValue>
+                <option name="count" value="12" />
+                <distribution>
+                  <entry key="false" value="11" />
+                  <entry key="true" value="1" />
+                </distribution>
+              </MetricValue>
+            </entry>
+          </values>
+        </DateState>
+      </entry>
+      <entry key="2026-5-20-18">
+        <DateState>
+          <values>
+            <entry key="file_language">
+              <MetricValue>
+                <option name="count" value="28" />
+                <distribution>
+                  <entry key="Language: C++" value="28" />
+                </distribution>
+              </MetricValue>
+            </entry>
+            <entry key="finish_type">
+              <MetricValue>
+                <option name="count" value="28" />
+                <distribution>
+                  <entry key="CARET_CHANGED" value="1" />
+                  <entry key="EMPTY" value="24" />
+                  <entry key="INVALIDATED" value="1" />
+                  <entry key="SELECTED" value="2" />
+                </distribution>
+              </MetricValue>
+            </entry>
+            <entry key="total_inserted_length">
+              <MetricValue>
+                <option name="count" value="3" />
+                <option name="sum" value="60.0" />
+              </MetricValue>
+            </entry>
+            <entry key="total_inserted_lines">
+              <MetricValue>
+                <option name="count" value="3" />
+                <option name="sum" value="2.0" />
+              </MetricValue>
+            </entry>
+            <entry key="was_shown">
+              <MetricValue>
+                <option name="count" value="28" />
+                <distribution>
+                  <entry key="false" value="25" />
+                  <entry key="true" value="3" />
+                </distribution>
+              </MetricValue>
+            </entry>
+          </values>
+        </DateState>
+      </entry>
+      <entry key="2026-5-21-20">
+        <DateState>
+          <values>
+            <entry key="file_language">
+              <MetricValue>
+                <option name="count" value="49" />
+                <distribution>
+                  <entry key="Language: C++" value="48" />
+                  <entry key="Language: ChatInput" value="1" />
+                </distribution>
+              </MetricValue>
+            </entry>
+            <entry key="finish_type">
+              <MetricValue>
+                <option name="count" value="49" />
+                <distribution>
+                  <entry key="CARET_CHANGED" value="2" />
+                  <entry key="EMPTY" value="44" />
+                  <entry key="INVALIDATED" value="2" />
+                  <entry key="SELECTED" value="1" />
+                </distribution>
+              </MetricValue>
+            </entry>
+            <entry key="total_inserted_length">
+              <MetricValue>
+                <option name="count" value="2" />
+                <option name="sum" value="40.0" />
+              </MetricValue>
+            </entry>
+            <entry key="total_inserted_lines">
+              <MetricValue>
+                <option name="count" value="2" />
+                <option name="sum" value="1.0" />
+              </MetricValue>
+            </entry>
+            <entry key="was_shown">
+              <MetricValue>
+                <option name="count" value="49" />
+                <distribution>
+                  <entry key="false" value="47" />
+                  <entry key="true" value="2" />
+                </distribution>
+              </MetricValue>
+            </entry>
+          </values>
+        </DateState>
+      </entry>
+      <entry key="2026-5-25-12">
+        <DateState>
+          <values>
+            <entry key="file_language">
+              <MetricValue>
+                <option name="count" value="28" />
+                <distribution>
+                  <entry key="Language: C++" value="28" />
+                </distribution>
+              </MetricValue>
+            </entry>
+            <entry key="finish_type">
+              <MetricValue>
+                <option name="count" value="28" />
+                <distribution>
+                  <entry key="BACKSPACE_PRESSED" value="1" />
+                  <entry key="CARET_CHANGED" value="2" />
+                  <entry key="EMPTY" value="17" />
+                  <entry key="INVALIDATED" value="6" />
+                  <entry key="SELECTED" value="2" />
+                </distribution>
+              </MetricValue>
+            </entry>
+            <entry key="total_inserted_length">
+              <MetricValue>
+                <option name="count" value="5" />
+                <option name="sum" value="49.0" />
+              </MetricValue>
+            </entry>
+            <entry key="total_inserted_lines">
+              <MetricValue>
+                <option name="count" value="5" />
+                <option name="sum" value="2.0" />
+              </MetricValue>
+            </entry>
+            <entry key="was_shown">
+              <MetricValue>
+                <option name="count" value="28" />
+                <distribution>
+                  <entry key="false" value="23" />
+                  <entry key="true" value="5" />
+                </distribution>
+              </MetricValue>
+            </entry>
+          </values>
+        </DateState>
+      </entry>
+      <entry key="2026-5-26-13">
+        <DateState>
+          <values>
+            <entry key="file_language">
+              <MetricValue>
+                <option name="count" value="13" />
+                <distribution>
+                  <entry key="Language: C++" value="13" />
+                </distribution>
+              </MetricValue>
+            </entry>
+            <entry key="finish_type">
+              <MetricValue>
+                <option name="count" value="13" />
+                <distribution>
+                  <entry key="EMPTY" value="9" />
+                  <entry key="INVALIDATED" value="4" />
+                </distribution>
+              </MetricValue>
+            </entry>
+            <entry key="was_shown">
+              <MetricValue>
+                <option name="count" value="13" />
+                <distribution>
+                  <entry key="false" value="13" />
+                </distribution>
+              </MetricValue>
+            </entry>
+          </values>
+        </DateState>
+      </entry>
       <entry key="2026-5-4-13">
         <DateState>
           <values>

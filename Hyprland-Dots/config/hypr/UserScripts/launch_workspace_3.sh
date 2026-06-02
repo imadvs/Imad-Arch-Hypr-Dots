@@ -38,16 +38,16 @@ for i in $(seq 1 $MAX_ATTEMPTS); do
         # If Pomofocus X > Music X, it's on the Right. We want it Left.
         if [ "$POMO_AT" -gt "$MUSIC_AT" ]; then
             # Focus Pomofocus
-            hyprctl dispatch focuswindow "class:.*pomofocus.*"
+            hyprctl dispatch 'hl.dsp.focus({ window = "class:.*pomofocus.*" })'
             # Swap with the window to the left (Music)
-            hyprctl dispatch swapwindow l
+            hyprctl dispatch 'hl.dsp.window.swap({ direction = "l" })'
             sleep 0.5
         fi
         
         # Final resizing
-        hyprctl dispatch focuswindow "class:.*pomofocus.*"
+        hyprctl dispatch 'hl.dsp.focus({ window = "class:.*pomofocus.*" })'
         sleep 0.2
-        hyprctl dispatch splitratio -0.3
+        hyprctl dispatch 'hl.dsp.layout("splitratio -0.3")'
         
         break
     fi

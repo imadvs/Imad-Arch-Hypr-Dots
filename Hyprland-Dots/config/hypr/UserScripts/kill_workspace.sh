@@ -6,5 +6,5 @@ ACTIVE_WS=$(hyprctl activeworkspace -j | jq '.id')
 # 2. Get the 'address' of every window on that workspace
 # 3. Tell Hyprland to close each of those addresses specifically
 hyprctl clients -j | jq -r ".[] | select(.workspace.id == $ACTIVE_WS) | .address" | while read -r addr; do
-    hyprctl dispatch closewindow address:"$addr"
+    hyprctl dispatch 'hl.dsp.window.close({ window = "address:'"$addr"'" })'
 done

@@ -144,7 +144,7 @@ spawn_terminal() {
   # Launch terminal directly in special workspace to avoid visible spawn
   # Added '--class dropterm' to the command is handled in Keybinds.conf or argument, 
   # but here we rely on the passed command.
-  hyprctl dispatch exec "[float; size $width $height; workspace special:scratchpad silent] $TERMINAL_CMD"
+  hyprctl dispatch 'hl.dsp.exec_cmd("'"$TERMINAL_CMD"'", { float = true, size = { '"$width"', '"$height"' }, workspace = "special:scratchpad", silent = true })'
 
   sleep 0.1
 
@@ -155,13 +155,13 @@ spawn_terminal() {
     echo "$new_addr $monitor_name" >"$ADDR_FILE"
     
     # Show it
-    hyprctl dispatch movetoworkspacesilent "$CURRENT_WS,address:$new_addr"
-    hyprctl dispatch pin "address:$new_addr"
+    hyprctl dispatch 'hl.dsp.window.move({ workspace = '"$CURRENT_WS"', follow = false, window = "address:'"$new_addr"'" })'
+    hyprctl dispatch 'hl.dsp.window.pin({ window = "address:'"$new_addr"'" })'
     
     local target_x=$(echo $pos_info | cut -d' ' -f1)
     local target_y=$(echo $pos_info | cut -d' ' -f2)
-    hyprctl dispatch movewindowpixel "exact $target_x $target_y,address:$new_addr"
-    hyprctl dispatch focuswindow "address:$new_addr"
+    hyprctl dispatch 'hl.dsp.window.move({ x = '"$target_x"', y = '"$target_y"', relative = false, window = "address:'"$new_addr"'" })'
+    hyprctl dispatch 'hl.dsp.focus({ window = "address:'"$new_addr"'" })'
     return 0
   fi
   return 1
@@ -184,16 +184,16 @@ if terminal_exists; then
     height=$(echo $pos_info | cut -d' ' -f4)
     monitor_name=$(echo $pos_info | cut -d' ' -f5)
     
-    hyprctl dispatch movewindowpixel "exact $target_x $target_y,address:$TERMINAL_ADDR"
-    hyprctl dispatch resizewindowpixel "exact $width $height,address:$TERMINAL_ADDR"
+    hyprctl dispatch 'hl.dsp.window.move({ x = '"$target_x"', y = '"$target_y"', relative = false, window = "address:'"$TERMINAL_ADDR"'" })'
+    hyprctl dispatch 'hl.dsp.window.resize({ x = '"$width"', y = '"$height"', relative = false, window = "address:'"$TERMINAL_ADDR"'" })'
     echo "$TERMINAL_ADDR $monitor_name" >"$ADDR_FILE"
   fi
 
   if terminal_in_special; then
     # SHOW
     debug_echo "Showing terminal"
-    hyprctl dispatch movetoworkspacesilent "$CURRENT_WS,address:$TERMINAL_ADDR"
-    hyprctl dispatch pin "address:$TERMINAL_ADDR"
+    hyprctl dispatch 'hl.dsp.window.move({ workspace = '"$CURRENT_WS"', follow = false, window = "address:'"$TERMINAL_ADDR"'" })'
+    hyprctl dispatch 'hl.dsp.window.pin({ window = "address:'"$TERMINAL_ADDR"'" })'
     
     # Re-calculate pos in case of resize
     pos_info=$(calculate_dropdown_position)
@@ -202,14 +202,14 @@ if terminal_exists; then
     width=$(echo $pos_info | cut -d' ' -f3)
     height=$(echo $pos_info | cut -d' ' -f4)
     
-    hyprctl dispatch resizewindowpixel "exact $width $height,address:$TERMINAL_ADDR"
-    hyprctl dispatch movewindowpixel "exact $target_x $target_y,address:$TERMINAL_ADDR"
-    hyprctl dispatch focuswindow "address:$TERMINAL_ADDR"
+    hyprctl dispatch 'hl.dsp.window.resize({ x = '"$width"', y = '"$height"', relative = false, window = "address:'"$TERMINAL_ADDR"'" })'
+    hyprctl dispatch 'hl.dsp.window.move({ x = '"$target_x"', y = '"$target_y"', relative = false, window = "address:'"$TERMINAL_ADDR"'" })'
+    hyprctl dispatch 'hl.dsp.focus({ window = "address:'"$TERMINAL_ADDR"'" })'
   else
     # HIDE
     debug_echo "Hiding terminal"
-    hyprctl dispatch pin "address:$TERMINAL_ADDR" # Unpin
-    hyprctl dispatch movetoworkspacesilent "$SPECIAL_WS,address:$TERMINAL_ADDR"
+    hyprctl dispatch 'hl.dsp.window.pin({ window = "address:'"$TERMINAL_ADDR"'" })' # Unpin
+    hyprctl dispatch 'hl.dsp.window.move({ workspace = "'"$SPECIAL_WS"'", follow = false, window = "address:'"$TERMINAL_ADDR"'" })'
   fi
 else
   spawn_terminal

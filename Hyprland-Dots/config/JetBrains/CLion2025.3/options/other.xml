@@ -89,11 +89,12 @@
   },
   "keyToStringList": {
     "AIHubNotificationManager.gotItNotifications": [
-      "FREE_ENABLED",
-      "LicenseExpiredFreeEnabled(ACP)"
+      "FREE_ENABLED"
     ],
     "AIHubNotificationManager.lastAllNotifications": [],
-    "AIHubNotificationManager.notifications": [],
+    "AIHubNotificationManager.notifications": [
+      "LicenseExpiredFreeEnabled(ACP)"
+    ],
     "AIHubNotificationManager.seenNotifications": [],
     "file.chooser.recent.files": [
       "/home/imad/Documents/Project1 - Utility library",

@@ -1,3 +1,3 @@
-2026/06/02-03:01:24.706 f2a Reusing MANIFEST /home/imad/.config/obsidian/IndexedDB/app_obsidian.md_0.indexeddb.leveldb/MANIFEST-000001
-2026/06/02-03:01:24.708 f2a Recovering log #31
-2026/06/02-03:01:24.715 f2a Reusing old log /home/imad/.config/obsidian/IndexedDB/app_obsidian.md_0.indexeddb.leveldb/000031.log 
+2026/06/02-15:47:36.909 680 Reusing MANIFEST /home/imad/.config/obsidian/IndexedDB/app_obsidian.md_0.indexeddb.leveldb/MANIFEST-000001
+2026/06/02-15:47:36.911 680 Recovering log #31
+2026/06/02-15:47:36.920 680 Reusing old log /home/imad/.config/obsidian/IndexedDB/app_obsidian.md_0.indexeddb.leveldb/000031.log 

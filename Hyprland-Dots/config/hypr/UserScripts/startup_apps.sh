@@ -13,7 +13,7 @@ echo "Starting Sequential Launch..."
 
 # --- Workspace 1 ---
 echo "Visiting Workspace 1..."
-hyprctl dispatch workspace 1
+hyprctl dispatch 'hl.dsp.focus({ workspace = 1 })'
 sleep 1
 echo "Launching CLion..."
 uwsm app -- /home/imad/.local/share/JetBrains/Toolbox/scripts/clion &
@@ -21,7 +21,7 @@ sleep 8
 
 # --- Workspace 2 ---
 echo "Visiting Workspace 2..."
-hyprctl dispatch workspace 2
+hyprctl dispatch 'hl.dsp.focus({ workspace = 2 })'
 sleep 1
 echo "Launching Obsidian..."
 uwsm app -- obsidian &
@@ -33,14 +33,14 @@ sleep 7 # Wait for P.Advices to spawn
 
 # Resize Workspace 2
 echo "Resizing Workspace 2..."
-hyprctl dispatch focuswindow "title:^(.*ProgrammingAdvices.*|.*Dashboard.*|.*programmingadvices.*)$"
-hyprctl dispatch splitratio 0.15
+hyprctl dispatch 'hl.dsp.focus({ window = "title:^(.*ProgrammingAdvices.*|.*Dashboard.*|.*programmingadvices.*)$" })'
+hyprctl dispatch 'hl.dsp.layout("splitratio 0.15")'
 echo "Waiting for WS2 icons to settle..."
 sleep 8 # Extensive wait to ensure Waybar registers icons before switching
 
 # --- Workspace 3 ---
 echo "Visiting Workspace 3..."
-hyprctl dispatch workspace 3
+hyprctl dispatch 'hl.dsp.focus({ workspace = 3 })'
 sleep 1
 echo "Launching Busuu..."
 uwsm app -- google-chrome-stable --class="chrome-busuu" --password-store=basic --new-window --app="https://www.busuu.com" &
@@ -53,12 +53,12 @@ sleep 3
 # With Chrome, titles might differ. Using broad matching.
 # Swapping focus to Busuu first (Main Left), then ManagementDose (Right Split)
 echo "Resizing Workspace 3..."
-hyprctl dispatch focuswindow "class:^(chrome-managementdose.*)$"
-hyprctl dispatch splitratio 0.15
+hyprctl dispatch 'hl.dsp.focus({ window = "class:^(chrome-managementdose.*)$" })'
+hyprctl dispatch 'hl.dsp.layout("splitratio 0.15")'
 
 # --- Workspace 4 ---
 echo "Visiting Workspace 4..."
-hyprctl dispatch workspace 4
+hyprctl dispatch 'hl.dsp.focus({ workspace = 4 })'
 sleep 1
 
 echo "Launching RMPC (Top Left)..."
@@ -71,27 +71,27 @@ sleep 4 # Wait for Pomo to spawn
 
 # Focus RMPC to split it vertically with Cava (Bottom Left)
 echo "Launching Cava (Bottom Left)..."
-hyprctl dispatch focuswindow "class:^(rmpc)$"
+hyprctl dispatch 'hl.dsp.focus({ window = "class:^(rmpc)$" })'
 uwsm app -- kitty --class "cava" --title "Cava" -e cava &
 sleep 2
 
 # Focus Pomofocus to split it vertically with Clock (Bottom Right)
 echo "Launching Clock (Bottom Right)..."
-hyprctl dispatch focuswindow "class:^(pomofocus)$"
+hyprctl dispatch 'hl.dsp.focus({ window = "class:^(pomofocus)$" })'
 uwsm app -- kitty --class "clock-rs" --title "Clock" -e clock-rs &
 sleep 2
 
 # Resize Workspace 4: Make bottom row shorter (approx 70/30 split)
 echo "Resizing Workspace 4..."
-hyprctl dispatch focuswindow "class:^(rmpc)$"
-hyprctl dispatch splitratio 0.2
-hyprctl dispatch focuswindow "class:^(pomofocus)$"
-hyprctl dispatch splitratio 0.2
+hyprctl dispatch 'hl.dsp.focus({ window = "class:^(rmpc)$" })'
+hyprctl dispatch 'hl.dsp.layout("splitratio 0.2")'
+hyprctl dispatch 'hl.dsp.focus({ window = "class:^(pomofocus)$" })'
+hyprctl dispatch 'hl.dsp.layout("splitratio 0.2")'
 
 # --- Final Cleanup ---
 sleep 1
 echo "Returning to Workspace 1..."
-hyprctl dispatch workspace 1
+hyprctl dispatch 'hl.dsp.focus({ workspace = 1 })'
 sleep 1
 # Reduced sleep for reload
 hyprctl reload

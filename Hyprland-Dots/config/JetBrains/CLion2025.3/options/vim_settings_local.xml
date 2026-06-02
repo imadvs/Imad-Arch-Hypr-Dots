@@ -1008,17 +1008,17 @@
       <jump line="132" column="46" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/ManageUsers/clsAddNewUserScreen.h" protocol="file" />
       <jump line="51" column="23" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/ManageUsers/clsAddNewUserScreen.h" protocol="file" />
     </project>
+    <project id="olsbo9pho2vdse3d6ihn">
+      <jump line="53" column="0" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/ManageUsers/clsAddNewUserScreen.h" protocol="file" />
+      <jump line="40" column="4" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/ManageUsers/clsAddNewUserScreen.h" protocol="file" />
+      <jump line="21" column="0" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/ManageUsers/clsDeleteUserScreen.h" protocol="file" />
+      <jump line="13" column="0" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/ManageUsers/clsDeleteUserScreen.h" protocol="file" />
+      <jump line="133" column="10" filename="$USER_HOME$/Documents/Project1 - Utility library/include/clsDate.h" protocol="file" />
+    </project>
   </component>
   <component name="VimMarksSettings">
     <globalmarks />
     <localmarks>
-      <file name="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/Transactions/clsTransactionsScreen.h" timestamp="1778316061597">
-        <mark key="'" line="45" column="4" />
-        <mark key="[" line="49" column="0" />
-        <mark key="]" line="48" column="5" />
-        <mark key="." line="48" column="4" />
-        <mark key="^" line="48" column="5" />
-      </file>
       <file name="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsAddNewClientScreen.h" timestamp="1778587951787">
         <mark key="'" line="0" column="0" />
         <mark key="[" line="93" column="0" />
@@ -1030,6 +1030,9 @@
         <mark key="[" line="38" column="0" />
         <mark key="]" line="38" column="0" />
         <mark key="." line="38" column="0" />
+      </file>
+      <file name="$USER_HOME$/Documents/Project1 - Utility library/include/clsDate.h" timestamp="1780149164532">
+        <mark key="'" line="133" column="10" />
       </file>
       <file name="$USER_HOME$/Documents/Project1 - Utility library/include/Global.h" timestamp="1779707407946">
         <mark key="'" line="8" column="19" />
@@ -1072,8 +1075,8 @@
         <mark key="^" line="9" column="13" />
         <mark key="." line="8" column="0" />
       </file>
-      <file name="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/ManageUsers/clsAddNewUserScreen.h" timestamp="1779835364091">
-        <mark key="'" line="51" column="23" />
+      <file name="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/ManageUsers/clsAddNewUserScreen.h" timestamp="1780149160410">
+        <mark key="'" line="40" column="4" />
         <mark key="[" line="136" column="0" />
         <mark key="]" line="136" column="0" />
         <mark key="." line="136" column="0" />
@@ -1135,8 +1138,8 @@
         <mark key="^" line="9" column="13" />
         <mark key="." line="59" column="0" />
       </file>
-      <file name="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/ManageUsers/clsDeleteUserScreen.h" timestamp="1779297062412">
-        <mark key="'" line="21" column="0" />
+      <file name="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/ManageUsers/clsDeleteUserScreen.h" timestamp="1780149163814">
+        <mark key="'" line="13" column="0" />
         <mark key="[" line="28" column="44" />
         <mark key="]" line="28" column="43" />
         <mark key="^" line="9" column="13" />

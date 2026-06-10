@@ -1015,130 +1015,273 @@
       <jump line="13" column="0" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/ManageUsers/clsDeleteUserScreen.h" protocol="file" />
       <jump line="133" column="10" filename="$USER_HOME$/Documents/Project1 - Utility library/include/clsDate.h" protocol="file" />
     </project>
+    <project id="o8j0ndcgrn5seb3auhos">
+      <jump line="13" column="0" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/ManageUsers/clsDeleteUserScreen.h" protocol="file" />
+      <jump line="54" column="15" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/ManageUsers/clsAddNewUserScreen.h" protocol="file" />
+      <jump line="176" column="4" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/ManageUsers/clsUser.h" protocol="file" />
+      <jump line="19" column="15" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/Login/clsLoginScreen.h" protocol="file" />
+      <jump line="15" column="6" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsScreen.h" protocol="file" />
+      <jump line="27" column="16" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsScreen.h" protocol="file" />
+      <jump line="41" column="4" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsScreen.h" protocol="file" />
+      <jump line="52" column="0" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsScreen.h" protocol="file" />
+      <jump line="0" column="1" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsScreen.h" protocol="file" />
+      <jump line="13" column="19" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsScreen.h" protocol="file" />
+      <jump line="10" column="24" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Global.h" protocol="file" />
+      <jump line="286" column="19" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/ManageUsers/clsUser.h" protocol="file" />
+      <jump line="289" column="4" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/ManageUsers/clsUser.h" protocol="file" />
+      <jump line="296" column="40" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/ManageUsers/clsUser.h" protocol="file" />
+      <jump line="141" column="9" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/ManageUsers/clsUser.h" protocol="file" />
+      <jump line="308" column="0" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/ManageUsers/clsUser.h" protocol="file" />
+      <jump line="301" column="33" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/ManageUsers/clsUser.h" protocol="file" />
+      <jump line="299" column="13" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/ManageUsers/clsUser.h" protocol="file" />
+      <jump line="298" column="17" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/ManageUsers/clsUser.h" protocol="file" />
+      <jump line="5" column="60" filename="$USER_HOME$/Documents/Project1 - Utility library/Data/User" protocol="file" />
+      <jump line="27" column="16" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/ManageUsers/clsListUsersScreen.h" protocol="file" />
+      <jump line="21" column="13" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/ManageUsers/clsListUsersScreen.h" protocol="file" />
+      <jump line="18" column="0" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsClientListScreen.h" protocol="file" />
+      <jump line="7" column="0" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsClientListScreen.h" protocol="file" />
+      <jump line="6" column="0" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsClientListScreen.h" protocol="file" />
+      <jump line="25" column="0" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsClientListScreen.h" protocol="file" />
+      <jump line="27" column="0" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsClientListScreen.h" protocol="file" />
+      <jump line="29" column="0" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsClientListScreen.h" protocol="file" />
+      <jump line="33" column="0" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsClientListScreen.h" protocol="file" />
+      <jump line="51" column="12" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsClientListScreen.h" protocol="file" />
+      <jump line="52" column="16" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsClientListScreen.h" protocol="file" />
+      <jump line="58" column="4" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsClientListScreen.h" protocol="file" />
+      <jump line="61" column="0" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsClientListScreen.h" protocol="file" />
+      <jump line="60" column="0" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsClientListScreen.h" protocol="file" />
+      <jump line="49" column="12" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsClientListScreen.h" protocol="file" />
+      <jump line="22" column="63" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsClientListScreen.h" protocol="file" />
+      <jump line="24" column="4" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsClientListScreen.h" protocol="file" />
+      <jump line="19" column="33" filename="$USER_HOME$/Documents/Project1 - Utility library/include/clsDate.h" protocol="file" />
+      <jump line="65" column="0" filename="$USER_HOME$/Documents/Project1 - Utility library/include/clsDate.h" protocol="file" />
+      <jump line="90" column="4" filename="$USER_HOME$/Documents/Project1 - Utility library/include/clsDate.h" protocol="file" />
+      <jump line="96" column="4" filename="$USER_HOME$/Documents/Project1 - Utility library/include/clsDate.h" protocol="file" />
+      <jump line="31" column="7" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsClientListScreen.h" protocol="file" />
+      <jump line="22" column="14" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsAddNewClientScreen.h" protocol="file" />
+      <jump line="64" column="0" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsAddNewClientScreen.h" protocol="file" />
+      <jump line="56" column="0" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsAddNewClientScreen.h" protocol="file" />
+      <jump line="51" column="8" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsAddNewClientScreen.h" protocol="file" />
+      <jump line="55" column="0" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsAddNewClientScreen.h" protocol="file" />
+      <jump line="22" column="0" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsDeleteClientScreen.h" protocol="file" />
+      <jump line="37" column="4" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsDeleteClientScreen.h" protocol="file" />
+      <jump line="30" column="22" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsClientListScreen.h" protocol="file" />
+      <jump line="39" column="0" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsDeleteClientScreen.h" protocol="file" />
+      <jump line="42" column="7" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsDeleteClientScreen.h" protocol="file" />
+      <jump line="54" column="29" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsFindClientScreen.h" protocol="file" />
+      <jump line="43" column="8" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsFindClientScreen.h" protocol="file" />
+      <jump line="19" column="49" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsUpdateClientScreen.h" protocol="file" />
+      <jump line="64" column="8" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsUpdateClientScreen.h" protocol="file" />
+      <jump line="58" column="5" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsUpdateClientScreen.h" protocol="file" />
+      <jump line="39" column="0" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsFindClientScreen.h" protocol="file" />
+      <jump line="44" column="12" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsScreen.h" protocol="file" />
+      <jump line="40" column="0" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsScreen.h" protocol="file" />
+      <jump line="57" column="0" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsAddNewClientScreen.h" protocol="file" />
+      <jump line="28" column="0" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsClientListScreen.h" protocol="file" />
+      <jump line="38" column="68" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsDeleteClientScreen.h" protocol="file" />
+      <jump line="38" column="66" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsFindClientScreen.h" protocol="file" />
+      <jump line="59" column="68" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsUpdateClientScreen.h" protocol="file" />
+      <jump line="106" column="4" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsMainScreen.h" protocol="file" />
+      <jump line="99" column="33" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsMainScreen.h" protocol="file" />
+      <jump line="125" column="16" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/ManageUsers/clsManageUsersScreen.h" protocol="file" />
+      <jump line="128" column="0" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/ManageUsers/clsManageUsersScreen.h" protocol="file" />
+      <jump line="127" column="8" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/ManageUsers/clsManageUsersScreen.h" protocol="file" />
+      <jump line="131" column="7" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/ManageUsers/clsManageUsersScreen.h" protocol="file" />
+      <jump line="112" column="23" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/ManageUsers/clsManageUsersScreen.h" protocol="file" />
+      <jump line="111" column="13" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/ManageUsers/clsManageUsersScreen.h" protocol="file" />
+      <jump line="45" column="4" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/Transactions/clsTransactionsScreen.h" protocol="file" />
+      <jump line="91" column="4" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsMainScreen.h" protocol="file" />
+      <jump line="66" column="41" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsMainScreen.h" protocol="file" />
+      <jump line="93" column="39" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsMainScreen.h" protocol="file" />
+      <jump line="94" column="16" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/Transactions/clsTransactionsScreen.h" protocol="file" />
+      <jump line="102" column="0" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/Transactions/clsTransactionsScreen.h" protocol="file" />
+      <jump line="96" column="8" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/Transactions/clsTransactionsScreen.h" protocol="file" />
+      <jump line="87" column="36" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsMainScreen.h" protocol="file" />
+      <jump line="36" column="16" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsFindClientScreen.h" protocol="file" />
+      <jump line="35" column="4" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsFindClientScreen.h" protocol="file" />
+      <jump line="17" column="0" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsFindClientScreen.h" protocol="file" />
+      <jump line="81" column="43" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsMainScreen.h" protocol="file" />
+      <jump line="57" column="16" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsUpdateClientScreen.h" protocol="file" />
+      <jump line="75" column="36" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsMainScreen.h" protocol="file" />
+      <jump line="36" column="16" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsDeleteClientScreen.h" protocol="file" />
+      <jump line="69" column="39" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsMainScreen.h" protocol="file" />
+      <jump line="49" column="16" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsAddNewClientScreen.h" protocol="file" />
+      <jump line="30" column="11" filename="$USER_HOME$/Documents/Project1 - Utility library/include/clsPerson.h" protocol="file" />
+      <jump line="172" column="28" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsMainScreen.h" protocol="file" />
+      <jump line="108" column="16" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsMainScreen.h" protocol="file" />
+      <jump line="114" column="28" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsMainScreen.h" protocol="file" />
+      <jump line="60" column="16" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsMainScreen.h" protocol="file" />
+      <jump line="26" column="15" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsClientListScreen.h" protocol="file" />
+      <jump line="32" column="0" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsClientListScreen.h" protocol="file" />
+      <jump line="63" column="22" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsMainScreen.h" protocol="file" />
+      <jump line="293" column="39" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/ManageUsers/clsUser.h" protocol="file" />
+      <jump line="55" column="0" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsScreen.h" protocol="file" />
+    </project>
+    <project id="f2rdjamri53pfnaqi2gs">
+      <jump line="284" column="4" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/ManageUsers/clsUser.h" protocol="file" />
+      <jump line="13" column="0" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/ManageUsers/clsDeleteUserScreen.h" protocol="file" />
+      <jump line="19" column="33" filename="$USER_HOME$/Documents/Project1 - Utility library/include/clsDate.h" protocol="file" />
+      <jump line="73" column="8" filename="$USER_HOME$/Documents/Project1 - Utility library/include/clsDate.h" protocol="file" />
+      <jump line="16" column="22" filename="$USER_HOME$/Documents/Project1 - Utility library/include/clsDate.h" protocol="file" />
+      <jump line="55" column="0" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsScreen.h" protocol="file" />
+      <jump line="63" column="22" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsMainScreen.h" protocol="file" />
+      <jump line="157" column="19" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsMainScreen.h" protocol="file" />
+      <jump line="27" column="4" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsScreen.h" protocol="file" />
+      <jump line="52" column="8" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsScreen.h" protocol="file" />
+      <jump line="48" column="12" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsScreen.h" protocol="file" />
+      <jump line="53" column="0" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsScreen.h" protocol="file" />
+      <jump line="16" column="6" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/ManageUsers/clsUser.h" protocol="file" />
+      <jump line="54" column="15" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/ManageUsers/clsAddNewUserScreen.h" protocol="file" />
+      <jump line="49" column="16" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsAddNewClientScreen.h" protocol="file" />
+      <jump line="53" column="19" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsAddNewClientScreen.h" protocol="file" />
+      <jump line="92" column="9" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/ManageUsers/clsUser.h" protocol="file" />
+      <jump line="40" column="0" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsScreen.h" protocol="file" />
+      <jump line="38" column="12" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsScreen.h" protocol="file" />
+      <jump line="37" column="1" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsScreen.h" protocol="file" />
+      <jump line="36" column="4" filename="$USER_HOME$/Documents/Project1 - Utility library/include/clsDate.h" protocol="file" />
+      <jump line="10" column="8" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Global.h" protocol="file" />
+      <jump line="13" column="15" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsScreen.h" protocol="file" />
+      <jump line="12" column="0" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsScreen.h" protocol="file" />
+      <jump line="14" column="15" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsScreen.h" protocol="file" />
+      <jump line="11" column="0" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsScreen.h" protocol="file" />
+      <jump line="17" column="0" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsScreen.h" protocol="file" />
+      <jump line="41" column="35" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsScreen.h" protocol="file" />
+      <jump line="44" column="0" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsScreen.h" protocol="file" />
+      <jump line="49" column="14" filename="$USER_HOME$/Documents/Project1 - Utility library/include/clsDate.h" protocol="file" />
+      <jump line="42" column="45" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsScreen.h" protocol="file" />
+      <jump line="43" column="5" filename="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsScreen.h" protocol="file" />
+    </project>
   </component>
   <component name="VimMarksSettings">
     <globalmarks />
     <localmarks>
-      <file name="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsAddNewClientScreen.h" timestamp="1778587951787">
-        <mark key="'" line="0" column="0" />
-        <mark key="[" line="93" column="0" />
-        <mark key="]" line="93" column="0" />
-        <mark key="." line="93" column="0" />
+      <file name="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/Transactions/clsTransactionsScreen.h" timestamp="1780788534598">
+        <mark key="'" line="96" column="8" />
+        <mark key="[" line="96" column="0" />
+        <mark key="]" line="96" column="0" />
+        <mark key="." line="96" column="0" />
       </file>
-      <file name="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsScreen.h" timestamp="1779295317653">
-        <mark key="'" line="37" column="0" />
-        <mark key="[" line="38" column="0" />
-        <mark key="]" line="38" column="0" />
-        <mark key="." line="38" column="0" />
+      <file name="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsAddNewClientScreen.h" timestamp="1780928496127">
+        <mark key="'" line="53" column="19" />
+        <mark key="[" line="54" column="9" />
+        <mark key="]" line="55" column="8" />
+        <mark key="." line="55" column="7" />
+        <mark key="^" line="55" column="8" />
       </file>
-      <file name="$USER_HOME$/Documents/Project1 - Utility library/include/clsDate.h" timestamp="1780149164532">
-        <mark key="'" line="133" column="10" />
+      <file name="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsScreen.h" timestamp="1780965941930">
+        <mark key="'" line="43" column="5" />
+        <mark key="[" line="42" column="38" />
+        <mark key="]" line="42" column="45" />
+        <mark key="." line="42" column="44" />
+        <mark key="^" line="42" column="45" />
       </file>
-      <file name="$USER_HOME$/Documents/Project1 - Utility library/include/Global.h" timestamp="1779707407946">
-        <mark key="'" line="8" column="19" />
+      <file name="$USER_HOME$/Documents/Project1 - Utility library/include/clsBankClient.h" timestamp="1780577575439">
+        <mark key="'" line="303" column="0" />
+      </file>
+      <file name="$USER_HOME$/Documents/Project1 - Utility library/include/clsDate.h" timestamp="1780930210575">
+        <mark key="&quot;" line="73" column="8" />
+        <mark key="'" line="49" column="14" />
+        <mark key="[" line="96" column="0" />
+        <mark key="]" line="96" column="0" />
+        <mark key="." line="96" column="0" />
+      </file>
+      <file name="$USER_HOME$/Documents/Project1 - Utility library/include/Global.h" timestamp="1780929544943">
+        <mark key="'" line="10" column="8" />
         <mark key="[" line="9" column="10" />
         <mark key="]" line="9" column="10" />
         <mark key="." line="9" column="9" />
         <mark key="^" line="9" column="10" />
       </file>
-      <file name="$USER_HOME$/Documents/Project1 - Utility library/src/main.cpp" timestamp="1779799845263">
-        <mark key="'" line="0" column="0" />
+      <file name="$USER_HOME$/Documents/Project1 - Utility library/src/main.cpp" timestamp="1780576182085">
+        <mark key="'" line="7" column="34" />
         <mark key="[" line="8" column="0" />
         <mark key="]" line="8" column="0" />
         <mark key="." line="8" column="0" />
       </file>
-      <file name="$USER_HOME$/Documents/Project1 - Utility library/Data/Clients.text" timestamp="1778330524783">
+      <file name="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsFindClientScreen.h" timestamp="1780788566682">
+        <mark key="'" line="17" column="0" />
+        <mark key="[" line="17" column="0" />
+        <mark key="]" line="17" column="0" />
+        <mark key="." line="17" column="0" />
+      </file>
+      <file name="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsClientListScreen.h" timestamp="1780788991831">
+        <mark key="'" line="32" column="0" />
+        <mark key="[" line="28" column="7" />
+        <mark key="]" line="28" column="8" />
+        <mark key="." line="28" column="7" />
+        <mark key="^" line="28" column="7" />
+      </file>
+      <file name="$USER_HOME$/Documents/Project1 - Utility library/Data/User" timestamp="1780579245682">
         <mark key="&quot;" line="0" column="0" />
         <mark key="'" line="0" column="0" />
         <mark key="[" line="0" column="0" />
-        <mark key="]" line="12" column="0" />
+        <mark key="]" line="5" column="60" />
         <mark key="." line="0" column="0" />
       </file>
-      <file name="$USER_HOME$/Documents/Project1 - Utility library/Data/User" timestamp="1778330524268">
-        <mark key="&quot;" line="7" column="0" />
-        <mark key="'" line="7" column="0" />
-        <mark key="[" line="0" column="0" />
-        <mark key="]" line="6" column="0" />
-        <mark key="." line="0" column="0" />
-      </file>
-      <file name="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/Transactions/clsDepositScreen.h" timestamp="1778331563173">
-        <mark key="&quot;" line="82" column="52" />
-        <mark key="'" line="11" column="0" />
-        <mark key="[" line="20" column="0" />
-        <mark key="]" line="20" column="0" />
-        <mark key="." line="20" column="0" />
-      </file>
-      <file name="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/ManageUsers/clsListUsersScreen.h" timestamp="1778334915704">
-        <mark key="'" line="27" column="16" />
+      <file name="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/ManageUsers/clsListUsersScreen.h" timestamp="1780579632797">
+        <mark key="'" line="21" column="13" />
         <mark key="[" line="8" column="0" />
         <mark key="]" line="8" column="0" />
         <mark key="^" line="9" column="13" />
         <mark key="." line="8" column="0" />
       </file>
-      <file name="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/ManageUsers/clsAddNewUserScreen.h" timestamp="1780149160410">
-        <mark key="'" line="40" column="4" />
+      <file name="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/ManageUsers/clsAddNewUserScreen.h" timestamp="1780928377151">
+        <mark key="'" line="54" column="15" />
         <mark key="[" line="136" column="0" />
         <mark key="]" line="136" column="0" />
         <mark key="." line="136" column="0" />
       </file>
-      <file name="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsMainScreen.h" timestamp="1779799637048">
-        <mark key="'" line="106" column="4" />
+      <file name="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsUpdateClientScreen.h" timestamp="1780788575979">
+        <mark key="'" line="57" column="16" />
+        <mark key="[" line="59" column="0" />
+        <mark key="]" line="59" column="69" />
+        <mark key="." line="59" column="68" />
+        <mark key="^" line="59" column="69" />
+      </file>
+      <file name="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsMainScreen.h" timestamp="1780927856992">
+        <mark key="&quot;" line="66" column="41" />
+        <mark key="'" line="157" column="19" />
         <mark key="[" line="155" column="0" />
         <mark key="]" line="155" column="0" />
         <mark key="." line="155" column="0" />
         <mark key="^" line="22" column="19" />
       </file>
-      <file name="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/ManageUsers/clsUser.h" timestamp="1779295605274">
-        <mark key="'" line="262" column="16" />
-        <mark key="[" line="282" column="0" />
-        <mark key="]" line="282" column="0" />
-        <mark key="." line="282" column="0" />
+      <file name="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/ManageUsers/clsUser.h" timestamp="1780928657060">
+        <mark key="&quot;" line="16" column="6" />
+        <mark key="'" line="92" column="9" />
+        <mark key="[" line="305" column="0" />
+        <mark key="]" line="305" column="0" />
+        <mark key="." line="305" column="0" />
+        <mark key="^" line="298" column="18" />
       </file>
-      <file name="$USER_HOME$/Documents/Project1 - Utility library/CMakeLists.txt" timestamp="1779390424572">
-        <mark key="&quot;" line="7" column="0" />
-        <mark key="'" line="25" column="0" />
-        <mark key="]" line="25" column="0" />
-        <mark key="." line="25" column="0" />
-        <mark key="^" line="25" column="0" />
+      <file name="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/clsDeleteClientScreen.h" timestamp="1780788584784">
+        <mark key="'" line="36" column="16" />
+        <mark key="[" line="38" column="55" />
+        <mark key="]" line="38" column="55" />
+        <mark key="." line="38" column="55" />
+        <mark key="^" line="42" column="8" />
       </file>
-      <file name="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/ManageUsers/clsManageUsersScreen.h" timestamp="1779707928534">
-        <mark key="'" line="72" column="4" />
-        <mark key="[" line="72" column="0" />
-        <mark key="]" line="72" column="0" />
-        <mark key="." line="72" column="0" />
+      <file name="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/ManageUsers/clsManageUsersScreen.h" timestamp="1780788398093">
+        <mark key="'" line="111" column="13" />
+        <mark key="[" line="111" column="0" />
+        <mark key="]" line="111" column="0" />
+        <mark key="." line="111" column="0" />
+        <mark key="^" line="130" column="8" />
       </file>
-      <file name="$USER_HOME$/Documents/Project1 - Utility library/include/clsPerson.h" timestamp="1779297235809">
+      <file name="$USER_HOME$/Documents/Project1 - Utility library/include/clsPerson.h" timestamp="1780788895753">
         <mark key="'" line="30" column="11" />
         <mark key="[" line="94" column="0" />
         <mark key="]" line="94" column="0" />
         <mark key="." line="94" column="0" />
       </file>
-      <file name="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/ManageUsers/clsUpdateUserScreen.h" timestamp="1779835260338">
-        <mark key="&quot;" line="157" column="14" />
-        <mark key="'" line="42" column="0" />
-        <mark key="[" line="20" column="26" />
-        <mark key="]" line="20" column="26" />
-        <mark key="^" line="9" column="13" />
-        <mark key="." line="20" column="26" />
-      </file>
-      <file name="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/Login/clsLoginScreen.h" timestamp="1779799941602">
+      <file name="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/Login/clsLoginScreen.h" timestamp="1780578171233">
         <mark key="&quot;" line="11" column="17" />
-        <mark key="'" line="22" column="0" />
+        <mark key="'" line="19" column="15" />
         <mark key="[" line="45" column="0" />
         <mark key="]" line="45" column="0" />
         <mark key="." line="45" column="0" />
       </file>
-      <file name="$USER_HOME$/Documents/Project1 - Utility library/include/clsInputValidate.h" timestamp="1779389124788">
-        <mark key="'" line="145" column="18" />
-      </file>
-      <file name="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/ManageUsers/clsFindUserScreen.h" timestamp="1779391143902">
-        <mark key="'" line="39" column="42" />
-        <mark key="[" line="59" column="0" />
-        <mark key="]" line="59" column="0" />
-        <mark key="^" line="9" column="13" />
-        <mark key="." line="59" column="0" />
-      </file>
-      <file name="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/ManageUsers/clsDeleteUserScreen.h" timestamp="1780149163814">
+      <file name="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/ManageUsers/clsDeleteUserScreen.h" timestamp="1780927498435">
         <mark key="'" line="13" column="0" />
         <mark key="[" line="28" column="44" />
         <mark key="]" line="28" column="43" />
@@ -1150,37 +1293,37 @@
   <component name="VimRegisterSettings">
     <registers>
       <register name="&quot;" type="LINE_WISE">
-        <text encoding="base64">I2luY2x1ZGUgPGlvc3RyZWFtPgojaW5jbHVkZSAiU2NyZWVucy9Mb2dpbi9jbHNMb2dpblNjcmVlbi5oIgoKaW50IG1haW4oKQp7CiAgICB3aGlsZSAodHJ1ZSkKICAgIHsKICAgICAgICBjbHNMb2dpblNjcmVlbjo6U2hvd0xvZ2luU2NyZWVuKCk7CiAgICB9CiAgICByZXR1cm4gMDsKfQo=</text>
+        <text encoding="base64">I2luY2x1ZGUgPG9zdHJlYW0+Cg==</text>
       </register>
       <register name="+" type="LINE_WISE">
-        <text encoding="base64">I2luY2x1ZGUgPGlvc3RyZWFtPgojaW5jbHVkZSAiU2NyZWVucy9Mb2dpbi9jbHNMb2dpblNjcmVlbi5oIgoKaW50IG1haW4oKQp7CiAgICB3aGlsZSAodHJ1ZSkKICAgIHsKICAgICAgICBjbHNMb2dpblNjcmVlbjo6U2hvd0xvZ2luU2NyZWVuKCk7CiAgICB9CiAgICByZXR1cm4gMDsKfQo=</text>
+        <text encoding="base64">I2luY2x1ZGUgPG9zdHJlYW0+Cg==</text>
       </register>
       <register name="-" type="CHARACTER_WISE">
-        <text encoding="base64">KSA9IA==</text>
+        <text encoding="base64">Y3RpbWU=</text>
       </register>
       <register name="." type="CHARACTER_WISE">
-        <text encoding="base64" />
+        <text encoding="base64">IA==</text>
       </register>
       <register name="/" type="CHARACTER_WISE">
         <text encoding="base64">bWFpbg==</text>
       </register>
-      <register name="0" type="LINE_WISE">
-        <text encoding="base64">I2luY2x1ZGUgPGlvc3RyZWFtPgojaW5jbHVkZSAiU2NyZWVucy9Mb2dpbi9jbHNMb2dpblNjcmVlbi5oIgoKaW50IG1haW4oKQp7CiAgICB3aGlsZSAodHJ1ZSkKICAgIHsKICAgICAgICBjbHNMb2dpblNjcmVlbjo6U2hvd0xvZ2luU2NyZWVuKCk7CiAgICB9CiAgICByZXR1cm4gMDsKfQo=</text>
+      <register name="0" type="CHARACTER_WISE">
+        <text encoding="base64">Q3VycmVudFVzZXI=</text>
       </register>
       <register name="q" type="CHARACTER_WISE">
         <text encoding="base64" />
       </register>
       <register name="1" type="LINE_WISE">
-        <text encoding="base64">ICAgIGNsc0xvZ2luU2NyZWVuOjpTaG93TG9naW5TY3JlZW4oKTsK</text>
+        <text encoding="base64">I2luY2x1ZGUgPG9zdHJlYW0+Cg==</text>
       </register>
-      <register name="2" type="LINE_WISE">
-        <text encoding="base64">ICAgICAgICAK</text>
+      <register name="2" type="CHARACTER_WISE">
+        <text encoding="base64">CiNpbmNsdWRlIDxpb21hbmlwPgojaW5jbHVkZSA8dmVjdG9yPgojaW5jbHVkZSA8ZnN0cmVhbT4KI2luY2x1ZGUgPGNzdGRsaWI+CiNpbmNsdWRlIDxhbGdvcml0aG0+Cgo=</text>
       </register>
       <register name="3" type="LINE_WISE">
-        <text encoding="base64">ICAgICAgICAK</text>
+        <text encoding="base64">Cg==</text>
       </register>
       <register name="4" type="LINE_WISE">
-        <text encoding="base64">ICAgIGNsc0xvZ2luU2NyZWVuOjpTaG93TG9naW5TY3JlZW4oKTsK</text>
+        <text encoding="base64">Cg==</text>
       </register>
       <register name="5" type="LINE_WISE">
         <text encoding="base64">Cg==</text>
@@ -1189,13 +1332,13 @@
         <text encoding="base64">Cg==</text>
       </register>
       <register name="7" type="LINE_WISE">
-        <text encoding="base64">ICAgIHN5c3RlbSgicGF1c2U+MCIpOwo=</text>
+        <text encoding="base64">Cg==</text>
       </register>
       <register name="8" type="LINE_WISE">
         <text encoding="base64">Cg==</text>
       </register>
       <register name="9" type="LINE_WISE">
-        <text encoding="base64">ICAgICAgICAgICAgXwo=</text>
+        <text encoding="base64">Cg==</text>
       </register>
       <register name=":" type="CHARACTER_WISE">
         <text encoding="base64">aGVscA==</text>

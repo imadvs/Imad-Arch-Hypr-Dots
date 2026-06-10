@@ -43,7 +43,11 @@ inc_volume() {
     if [ "$(pamixer --get-mute)" == "true" ]; then
         toggle_mute
     else
-        pamixer -i 5 && notify_user
+        local current=$(pamixer --get-volume)
+        local new=$(( (current + 4) / 5 * 5 ))
+        [ "$new" -eq "$current" ] && new=$((current + 5))
+        [ "$new" -gt 100 ] && new=100
+        pamixer --set-volume "$new" && notify_user
     fi
 }
 
@@ -52,7 +56,11 @@ dec_volume() {
     if [ "$(pamixer --get-mute)" == "true" ]; then
         toggle_mute
     else
-        pamixer -d 5 && notify_user
+        local current=$(pamixer --get-volume)
+        local new=$(( current / 5 * 5 ))
+        [ "$new" -eq "$current" ] && new=$((current - 5))
+        [ "$new" -lt 0 ] && new=0
+        pamixer --set-volume "$new" && notify_user
     fi
 }
 
@@ -105,16 +113,24 @@ inc_mic_volume() {
     if [ "$(pamixer --default-source --get-mute)" == "true" ]; then
         toggle_mic
     else
-        pamixer --default-source -i 5 && notify_mic_user
+        local current=$(pamixer --default-source --get-volume)
+        local new=$(( (current + 4) / 5 * 5 ))
+        [ "$new" -eq "$current" ] && new=$((current + 5))
+        [ "$new" -gt 100 ] && new=100
+        pamixer --default-source --set-volume "$new" && notify_mic_user
     fi
 }
 
 # Decrease MIC Volume
 dec_mic_volume() {
     if [ "$(pamixer --default-source --get-mute)" == "true" ]; then
-        toggle-mic
+        toggle_mic
     else
-        pamixer --default-source -d 5 && notify_mic_user
+        local current=$(pamixer --default-source --get-volume)
+        local new=$(( current / 5 * 5 ))
+        [ "$new" -eq "$current" ] && new=$((current - 5))
+        [ "$new" -lt 0 ] && new=0
+        pamixer --default-source --set-volume "$new" && notify_mic_user
     fi
 }
 

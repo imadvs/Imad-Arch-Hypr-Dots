@@ -44,9 +44,12 @@ done
 # Launch Waybar using the startup script to ensure consistent persistence and stability
 ${UserScripts}/WaybarStartup.sh &
 
+# Reload Hyprland config so new wallust colors (borders, decorations) apply immediately
+hyprctl reload
+
 # relaunch swaync
 sleep 0.3
-swaync >/dev/null 2>&1 &
+swaync > /dev/null 2>&1 &
 # reload swaync
 swaync-client --reload-config
 

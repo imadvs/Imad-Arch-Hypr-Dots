@@ -43,7 +43,7 @@ else
     # The first non-filter line is the original wallpaper path
     # wallpaper_path="$(grep -v 'Lanczos3' "$cache_file" | head -n 1)"
     # awww query: path starts at col 9; use NF-based join to handle spaces in filenames
-    _q=$(swww query 2>/dev/null | grep "$current_monitor")
+    _q=$(awww query 2>/dev/null | grep "$current_monitor")
     wallpaper_path=$(echo "$_q" | awk '{for(i=9;i<=NF;i++) printf "%s%s",$i,(i<NF?" ":""); print ""}')
   fi
 fi

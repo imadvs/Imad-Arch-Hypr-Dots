@@ -26,29 +26,15 @@
     <state x="2072" y="220" width="395" height="424" key="FileChooserDialogImpl" timestamp="1777117116591">
       <screen x="1600" y="0" width="1024" height="768" />
     </state>
-    <state x="738" y="258" width="425" height="496" key="FileChooserDialogImpl/0.0.1600.900" timestamp="1770124539903" />
     <state x="2072" y="220" width="395" height="424" key="FileChooserDialogImpl/1600.0.1024.768/0.0.1600.900" timestamp="1777117116591" />
-    <state width="590" height="332" key="ShowUsagesActions.dimensionServiceKey" timestamp="1777649268441">
+    <state width="590" height="236" key="ShowUsagesActions.dimensionServiceKey" timestamp="1780928682641">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="590" height="332" key="ShowUsagesActions.dimensionServiceKey/0.0.1600.900" timestamp="1777649268441" />
+    <state width="590" height="236" key="ShowUsagesActions.dimensionServiceKey/0.0.1600.900" timestamp="1780928682641" />
     <state width="378" height="164" key="ShowUsagesActions.dimensionServiceKey/1600.0.1024.768/0.0.1600.900" timestamp="1776263182848" />
     <state x="2209" y="377" width="800" height="846" key="WELCOME_SCREEN" timestamp="1777117117018">
       <screen x="1600" y="0" width="1024" height="768" />
     </state>
-    <state x="322" y="493" width="944" height="1061" key="WELCOME_SCREEN/0.0.1600.900" timestamp="1770761113382" />
-    <state x="1919" y="1130" width="3801" height="2020" key="WELCOME_SCREEN/0.100.3840.2059" timestamp="1770123435436" />
-    <state x="959" y="565" width="1900" height="1010" key="WELCOME_SCREEN/0.50.1920.1029" timestamp="1770156659272" />
     <state x="2209" y="377" width="800" height="846" key="WELCOME_SCREEN/1600.0.1024.768/0.0.1600.900" timestamp="1777117117018" />
-    <state x="506" y="414" width="1502" height="266" key="ide.config.custom.settings" timestamp="1770130168598">
-      <screen x="0" y="0" width="1600" height="900" />
-    </state>
-    <state x="506" y="414" width="1502" height="266" key="ide.config.custom.settings/0.0.1600.900" timestamp="1770130168598" />
-    <state x="1214" y="1047" key="ide.config.custom.settings/0.100.3840.2059" timestamp="1770122859459" />
-    <state x="0" y="0" width="670" height="184" key="search.everywhere.popup" timestamp="1770130163837">
-      <screen x="0" y="0" width="1600" height="900" />
-    </state>
-    <state x="0" y="0" width="670" height="184" key="search.everywhere.popup/0.0.1600.900" timestamp="1770130163837" />
-    <state x="1582" y="582" width="672" height="698" key="search.everywhere.popup/0.100.3840.2059" timestamp="1770122809823" />
   </component>
 </application>

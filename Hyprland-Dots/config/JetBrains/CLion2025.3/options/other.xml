@@ -29,7 +29,7 @@
   </component>
   <component name="PropertyService"><![CDATA[{
   "keyToString": {
-    "AIHubNotificationManager.lastTariffQuotaAvailable": "238482.685",
+    "AIHubNotificationManager.lastTariffQuotaAvailable": "293333.235",
     "AIHubNotificationManager.lastUsedLicenseType": "FREE",
     "ExpandBeforeRunStepsPanel": "true",
     "LAST_CALCULATED_COLOR_INDEX_KEY": "8",
@@ -56,6 +56,7 @@
     "WelcomeFeature.SHORT_WELCOME_GUIDE_SHOWN": "true",
     "ask.about.ctrl.y.shortcut.v2": "true",
     "clion.initialConfigPerformed": "true",
+    "evaluation.feedback.enabled": "false",
     "evlsprt.253": "19c20959580",
     "evlsprt3.253": "6",
     "experimental.ui.on.first.startup": "true",
@@ -89,12 +90,11 @@
   },
   "keyToStringList": {
     "AIHubNotificationManager.gotItNotifications": [
-      "FREE_ENABLED"
-    ],
-    "AIHubNotificationManager.lastAllNotifications": [],
-    "AIHubNotificationManager.notifications": [
+      "FREE_ENABLED",
       "LicenseExpiredFreeEnabled(ACP)"
     ],
+    "AIHubNotificationManager.lastAllNotifications": [],
+    "AIHubNotificationManager.notifications": [],
     "AIHubNotificationManager.seenNotifications": [],
     "file.chooser.recent.files": [
       "/home/imad/Documents/Project1 - Utility library",

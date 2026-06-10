@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+Name=LocalSend
+Exec=waydroid app launch org.localsend.localsend_app
+Icon=/home/imad/.local/share/waydroid/data/icons/org.localsend.localsend_app.png
+Categories=X-WayDroid-App;
+X-Purism-FormFactor=Workstation;Mobile;
+Actions=app-settings;
+
+[Desktop Action app-settings]
+Name=App Settings
+Exec=waydroid app intent android.settings.APPLICATION_DETAILS_SETTINGS package:org.localsend.localsend_app
+Icon=/home/imad/.local/share/waydroid/data/icons/com.android.settings.png

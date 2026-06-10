@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+Name=NeuroNation
+Exec=waydroid app launch air.nn.mobile.app.main
+Icon=/home/imad/.local/share/waydroid/data/icons/air.nn.mobile.app.main.png
+Categories=X-WayDroid-App;
+X-Purism-FormFactor=Workstation;Mobile;
+Actions=app-settings;
+
+[Desktop Action app-settings]
+Name=App Settings
+Exec=waydroid app intent android.settings.APPLICATION_DETAILS_SETTINGS package:air.nn.mobile.app.main
+Icon=/home/imad/.local/share/waydroid/data/icons/com.android.settings.png

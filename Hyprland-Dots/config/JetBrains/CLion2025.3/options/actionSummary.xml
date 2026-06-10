@@ -19,7 +19,7 @@
       <i c="31" l="1776378036700" />
     </e>
     <e n="AIAssistant.ToolWindow.Chat.Cancel.Selection">
-      <i c="1" l="1777898898428" />
+      <i c="2" l="1780965913396" />
     </e>
     <e n="AIAssistant.ToolWindow.Chat.Copy.Chameleon">
       <i c="49" l="1779390884667" />
@@ -28,7 +28,7 @@
       <i c="11" l="1779390863122" />
     </e>
     <e n="AIAssistant.ToolWindow.HistoryAction">
-      <i c="51" l="1780149150867" />
+      <i c="54" l="1781114046776" />
     </e>
     <e n="AIAssistant.ToolWindow.Message.Copy">
       <i c="7" l="1774134218216" />
@@ -43,10 +43,10 @@
       <i c="14" l="1779390881913" />
     </e>
     <e n="AIAssistant.ToolWindow.NewChatActionAlt">
-      <i c="32" l="1779390886226" />
+      <i c="33" l="1780929885663" />
     </e>
     <e n="AIAssistant.ToolWindow.Snippet.Apply.Smart">
-      <i c="50" l="1778149417984" />
+      <i c="51" l="1780928045867" />
     </e>
     <e n="AIAssistant.ToolWindow.Snippet.CopyToClipboard">
       <i c="15" l="1777898796277" />
@@ -142,13 +142,13 @@
       <i c="7" d="7" l="1772372056632" k="1772372056632" />
     </e>
     <e n="EditorBackSpace">
-      <i c="1279" l="1779708123150" />
+      <i c="1320" l="1780965934998" />
     </e>
     <e n="EditorChooseLookupItem">
-      <i c="135" l="1779708195052" />
+      <i c="141" l="1780929836386" />
     </e>
     <e n="EditorChooseLookupItemReplace">
-      <i c="31" l="1779708178225" />
+      <i c="32" l="1780929257822" />
     </e>
     <e n="EditorCopy">
       <i c="8" l="1776641156825" />
@@ -160,10 +160,10 @@
       <i c="2" l="1770152534642" />
     </e>
     <e n="EditorDown">
-      <i c="578" l="1779799372785" />
+      <i c="592" l="1780929835285" />
     </e>
     <e n="EditorEnter">
-      <i c="1053" l="1779799385456" />
+      <i c="1086" l="1780929926289" />
     </e>
     <e n="EditorEscape">
       <i c="72" l="1774063809594" />
@@ -175,7 +175,7 @@
       <i c="3" d="2" l="1770152529230" k="1770124155945" />
     </e>
     <e n="EditorIndentSelection">
-      <i c="11" l="1778091526139" />
+      <i c="13" l="1780928194849" />
     </e>
     <e n="EditorJoinLines">
       <i c="22" l="1776367660455" />
@@ -196,7 +196,7 @@
       <i c="12" l="1778585463471" />
     </e>
     <e n="EditorPaste">
-      <i c="102" l="1779390888111" />
+      <i c="103" l="1780929923747" />
     </e>
     <e n="EditorPasteFromX11">
       <i c="1" l="1776549616044" />
@@ -208,7 +208,7 @@
       <i c="1" d="1" l="1770157140275" k="1770157140275" />
     </e>
     <e n="EditorRight">
-      <i c="132" l="1779799367198" />
+      <i c="133" l="1780927998564" />
     </e>
     <e n="EditorSetContentBasedBidiTextDirection">
       <i c="2" l="1774377787202" />
@@ -220,13 +220,13 @@
       <i c="1" l="1774377779500" />
     </e>
     <e n="EditorTab">
-      <i c="15" l="1777468762529" />
+      <i c="18" l="1780965925422" />
     </e>
     <e n="EditorTabsEntryPoint">
       <i c="1" l="1776205445030" />
     </e>
     <e n="EditorUp">
-      <i c="260" l="1779391000899" />
+      <i c="278" l="1780929754773" />
     </e>
     <e n="ExpandAll">
       <i c="1" l="1776164145875" />
@@ -256,7 +256,7 @@
       <i c="5" l="1776204463588" />
     </e>
     <e n="GotoDeclaration">
-      <i c="506" l="1779799558366" />
+      <i c="546" l="1780928660584" />
     </e>
     <e n="GotoLine">
       <i c="1" l="1777185919692" />
@@ -271,7 +271,7 @@
       <i c="5" l="1774113555786" />
     </e>
     <e n="InsertInlineCompletionAction">
-      <i c="214" l="1779708085342" />
+      <i c="224" l="1780929917198" />
     </e>
     <e n="List-selectNextRow">
       <i c="1" l="1771005821639" />
@@ -307,7 +307,7 @@
       <i c="77" l="1776368587262" />
     </e>
     <e n="ProblemsView.CopyProblemDescription">
-      <i c="24" l="1779390821666" />
+      <i c="25" l="1780929864610" />
     </e>
     <e n="ProjectFromVersionControl">
       <i c="1" l="1770152344586" />
@@ -487,7 +487,7 @@
       <i c="1" l="1774156797916" />
     </e>
     <e n="com.intellij.ml.llm.codeGeneration.popup.AcceptAction">
-      <i c="30" l="1778094691225" />
+      <i c="31" l="1780928076928" />
     </e>
     <e n="com.intellij.ml.llm.codeGeneration.popup.DiscardAction">
       <i c="4" l="1778094634855" />
@@ -520,7 +520,7 @@
       <i c="2" l="1770125255409" />
     </e>
     <e n="com.intellij.openapi.actionSystem.AnActionWrapper">
-      <i c="5359" l="1779799397839" />
+      <i c="5491" l="1780965941918" />
     </e>
     <e n="com.intellij.openapi.actionSystem.DefaultActionGroup">
       <i c="6" l="1775909636742" />
@@ -532,19 +532,19 @@
       <i c="2" l="1774156790623" />
     </e>
     <e n="com.intellij.openapi.editor.impl.EditorMarkupModelImpl$TrafficLightAction">
-      <i c="48" l="1779390815714" />
+      <i c="50" l="1780929853913" />
     </e>
     <e n="com.intellij.openapi.editor.impl.EditorMarkupModelImpl$createAction$result$1">
       <i c="7" l="1779390814427" />
     </e>
     <e n="com.intellij.openapi.fileEditor.impl.tabActions.CloseTab">
-      <i c="25" l="1776638526714" />
+      <i c="27" l="1780927824492" />
     </e>
     <e n="com.intellij.openapi.fileEditor.impl.zoomIndicator.ZoomIndicatorView$settingsAction$1">
       <i c="5" l="1770157383579" />
     </e>
     <e n="com.intellij.openapi.project.DumbAwareAction$SimpleDumbAwareAction">
-      <i c="92" l="1779390836739" />
+      <i c="93" l="1780929918947" />
     </e>
     <e n="com.intellij.openapi.ui.DialogWrapper$5">
       <i c="9" l="1777117095518" />
@@ -556,7 +556,7 @@
       <i c="1" l="1770152139645" />
     </e>
     <e n="com.intellij.openapi.wm.impl.SquareAnActionButton">
-      <i c="374" l="1778315376721" />
+      <i c="380" l="1780929865717" />
     </e>
     <e n="com.intellij.openapi.wm.impl.customFrameDecorations.header.toolbar.MainMenuButton$ShowMenuAction">
       <i c="15" l="1776549661173" />
@@ -571,7 +571,7 @@
       <i c="6" l="1776549711597" />
     </e>
     <e n="com.intellij.toolWindow.ToolWindowHeader$HideAction">
-      <i c="115" l="1779799420893" />
+      <i c="117" l="1780929870857" />
     </e>
     <e n="com.intellij.toolWindow.ToolWindowHeader$ShowOptionsAction">
       <i c="24" l="1777981777945" />

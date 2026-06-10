@@ -8,47 +8,47 @@ dofile(os.getenv("HOME") .. "/.config/hypr/wallust/wallust-hyprland.lua")
 -- ------------------------
 -- PATHS & VARIABLES
 -- ------------------------
-local HOME      = os.getenv("HOME")
-local scripts   = HOME .. "/.config/hypr/scripts"
-local uscripts  = HOME .. "/.config/hypr/UserScripts"
-local uconfigs  = HOME .. "/.config/hypr/UserConfigs"
-local terminal  = "kitty"
-local term      = "kitty"
-local files     = "kitty -e yazi"
-local browser   = "google-chrome-stable"
-local mainMod   = "SUPER"
-local edit      = os.getenv("EDITOR") or "nano"
-local webapp    = uscripts .. "/launch_chrome_webapp.sh"
-local touchpad  = "asue1209:00-04f3:319f-touchpad"
-local wallDIR   = HOME .. "/Pictures/wallpapers"
+local HOME = os.getenv("HOME")
+local scripts = HOME .. "/.config/hypr/scripts"
+local uscripts = HOME .. "/.config/hypr/UserScripts"
+local uconfigs = HOME .. "/.config/hypr/UserConfigs"
+local terminal = "kitty"
+local term = "kitty"
+local files = "kitty -e yazi"
+local browser = "google-chrome-stable"
+local mainMod = "SUPER"
+local edit = os.getenv("EDITOR") or "nano"
+local webapp = uscripts .. "/launch_chrome_webapp.sh"
+local touchpad = "asue1209:00-04f3:319f-touchpad"
+local wallDIR = HOME .. "/Pictures/wallpapers"
 
 -- ------------------------
 -- ENVIRONMENT VARIABLES
 -- ------------------------
-hl.env("DOTS_VERSION",  "2.3.19")
-hl.env("GDK_BACKEND",  "wayland,x11,*")
-hl.env("QT_QPA_PLATFORM",  "wayland;xcb")
-hl.env("CLUTTER_BACKEND",  "wayland")
-hl.env("XDG_CURRENT_DESKTOP",  "Hyprland")
-hl.env("XDG_SESSION_DESKTOP",  "Hyprland")
-hl.env("XDG_SESSION_TYPE",  "wayland")
-hl.env("QT_AUTO_SCREEN_SCALE_FACTOR",  "1")
-hl.env("QT_WAYLAND_DISABLE_WINDOWDECORATION",  "1")
-hl.env("QT_QPA_PLATFORMTHEME",  "qt5ct")
-hl.env("QT_QPA_PLATFORMTHEME",  "qt6ct")
-hl.env("QT_QUICK_CONTROLS_STYLE",  "org.hyprland.style")
-hl.env("GDK_SCALE",  "1")
-hl.env("QT_SCALE_FACTOR",  "1")
-hl.env("HYPRCURSOR_THEME",  "Bibata-Modern-Ice")
-hl.env("HYPRCURSOR_SIZE",  "14")
-hl.env("MOZ_ENABLE_WAYLAND",  "1")
-hl.env("ELECTRON_OZONE_PLATFORM_HINT",  "auto")
-hl.env("LIBVA_DRIVER_NAME",  "nvidia")
-hl.env("__GLX_VENDOR_LIBRARY_NAME",  "nvidia")
-hl.env("NVD_BACKEND",  "direct")
-hl.env("GSK_RENDERER",  "ngl")
-hl.env("EDITOR",  "nvim")
-hl.env("XCURSOR_SIZE",  "14")
+hl.env("DOTS_VERSION", "2.3.19")
+hl.env("GDK_BACKEND", "wayland,x11,*")
+hl.env("QT_QPA_PLATFORM", "wayland;xcb")
+hl.env("CLUTTER_BACKEND", "wayland")
+hl.env("XDG_CURRENT_DESKTOP", "Hyprland")
+hl.env("XDG_SESSION_DESKTOP", "Hyprland")
+hl.env("XDG_SESSION_TYPE", "wayland")
+hl.env("QT_AUTO_SCREEN_SCALE_FACTOR", "1")
+hl.env("QT_WAYLAND_DISABLE_WINDOWDECORATION", "1")
+hl.env("QT_QPA_PLATFORMTHEME", "qt5ct")
+hl.env("QT_QPA_PLATFORMTHEME", "qt6ct")
+hl.env("QT_QUICK_CONTROLS_STYLE", "org.hyprland.style")
+hl.env("GDK_SCALE", "1")
+hl.env("QT_SCALE_FACTOR", "1")
+hl.env("HYPRCURSOR_THEME", "Bibata-Modern-Ice")
+hl.env("HYPRCURSOR_SIZE", "14")
+hl.env("MOZ_ENABLE_WAYLAND", "1")
+hl.env("ELECTRON_OZONE_PLATFORM_HINT", "auto")
+hl.env("LIBVA_DRIVER_NAME", "nvidia")
+hl.env("__GLX_VENDOR_LIBRARY_NAME", "nvidia")
+hl.env("NVD_BACKEND", "direct")
+hl.env("GSK_RENDERER", "ngl")
+hl.env("EDITOR", "nvim")
+hl.env("XCURSOR_SIZE", "14")
 
 -- ------------------------
 -- MONITOR CONFIG
@@ -76,174 +76,174 @@ hl.workspace_rule({ workspace = "10", monitor = "HDMI-A-1" })
 -- CORE SETTINGS
 -- ------------------------
 hl.config({
-    dwindle = {
-        preserve_split = true,
-        special_scale_factor = 0.8,
-    },
-    master = {
-        new_status = "master",
-        new_on_top = 1,
-        mfact = 0.5,
-    },
-    general = {
-        resize_on_border = true,
-        layout = "dwindle",
-        border_size = 2,
-        gaps_in = 4,
-        gaps_out = 6,
-        col = {
-            active_border = { colors = { color15, color14 }, angle = 45 },
-            inactive_border = "rgba(595959aa)",
-        },
-        allow_tearing = false,
-    },
-    decoration = {
-        rounding = 10,
-        rounding_power = 2,
-        active_opacity = 0.8,
-        inactive_opacity = 0.7,
-        fullscreen_opacity = 1.0,
-        dim_inactive = true,
-        dim_strength = 0.1,
-        dim_special = 0.8,
-        shadow = {
-            enabled = true,
-            range = 3,
-            render_power = 1,
-            color = "rgba(1a1a1aee)",
-            color_inactive = "rgba(1a1a1aee)",
-        },
-        blur = {
-            enabled = true,
-            size = 6,
-            passes = 2,
-            ignore_opacity = true,
-            new_optimizations = true,
-            special = true,
-            popups = true,
-            vibrancy = 0.1696,
-        },
-    },
-    group = {
-        col = {
-            border_active = color15,
-        },
-        groupbar = {
-            col = {
-                active = color0,
-            },
-        },
-    },
-    input = {
-        kb_layout = "us,fr,es",
-        kb_options = "altwin:menu_win",
-        kb_variant = "",
-        kb_model = "",
-        kb_rules = "",
-        repeat_rate = 50,
-        repeat_delay = 300,
-        sensitivity = 0.35,
-        numlock_by_default = false,
-        left_handed = false,
-        follow_mouse = 1,
-        float_switch_override_focus = false,
-        touchpad = {
-            disable_while_typing = true,
-            natural_scroll = true,
-            clickfinger_behavior = true,
-            scroll_factor = 0.2,
-            middle_button_emulation = false,
-            tap_to_click = true,
-            drag_lock = false,
-        },
-        touchdevice = {
-            enabled = true,
-        },
-        tablet = {
-            transform = 0,
-            left_handed = 0,
-        },
-    },
-    gestures = {
-        workspace_swipe_distance = 500,
-        workspace_swipe_invert = true,
-        workspace_swipe_min_speed_to_force = 30,
-        workspace_swipe_cancel_ratio = 0.5,
-        workspace_swipe_create_new = true,
-        workspace_swipe_forever = true,
-    },
-    misc = {
-        disable_hyprland_logo = true,
-        disable_splash_rendering = true,
-        vrr = 2,
-        mouse_move_enables_dpms = false,
-        key_press_enables_dpms = true,
-        enable_swallow = false,
-        swallow_regex = "^(kitty)$",
-        focus_on_activate = false,
-        initial_workspace_tracking = 0,
-        middle_click_paste = false,
-        enable_anr_dialog = true,
-        anr_missed_pings = 15,
-        allow_session_lock_restore = true,
-    },
-    binds = {
-        workspace_back_and_forth = true,
-        allow_workspace_cycles = true,
-        pass_mouse_when_bound = false,
-    },
-    xwayland = {
-        enabled = true,
-        force_zero_scaling = true,
-    },
-    render = {
-        direct_scanout = 0,
-    },
-    cursor = {
-        sync_gsettings_theme = true,
-        no_hardware_cursors = 1,
-        enable_hyprcursor = true,
-        warp_on_change_workspace = 2,
-        no_warps = false,
-    },
-    debug = {
-        vfr = true,
-    },
-    animations = {
-        enabled = true,
-    },
+	dwindle = {
+		preserve_split = true,
+		special_scale_factor = 0.8,
+	},
+	master = {
+		new_status = "master",
+		new_on_top = 1,
+		mfact = 0.5,
+	},
+	general = {
+		resize_on_border = true,
+		layout = "dwindle",
+		border_size = 2,
+		gaps_in = 4,
+		gaps_out = 6,
+		col = {
+			active_border = { colors = { color15, color14 }, angle = 45 },
+			inactive_border = "rgba(595959aa)",
+		},
+		allow_tearing = false,
+	},
+	decoration = {
+		rounding = 10,
+		rounding_power = 2,
+		active_opacity = 0.8,
+		inactive_opacity = 0.7,
+		fullscreen_opacity = 1.0,
+		dim_inactive = true,
+		dim_strength = 0.1,
+		dim_special = 0.8,
+		shadow = {
+			enabled = true,
+			range = 3,
+			render_power = 1,
+			color = "rgba(1a1a1aee)",
+			color_inactive = "rgba(1a1a1aee)",
+		},
+		blur = {
+			enabled = true,
+			size = 6,
+			passes = 2,
+			ignore_opacity = true,
+			new_optimizations = true,
+			special = true,
+			popups = true,
+			vibrancy = 0.1696,
+		},
+	},
+	group = {
+		col = {
+			border_active = color15,
+		},
+		groupbar = {
+			col = {
+				active = color0,
+			},
+		},
+	},
+	input = {
+		kb_layout = "us,fr,es",
+		kb_options = "altwin:menu_win",
+		kb_variant = "",
+		kb_model = "",
+		kb_rules = "",
+		repeat_rate = 50,
+		repeat_delay = 300,
+		sensitivity = 0.35,
+		numlock_by_default = false,
+		left_handed = false,
+		follow_mouse = 1,
+		float_switch_override_focus = false,
+		touchpad = {
+			disable_while_typing = true,
+			natural_scroll = true,
+			clickfinger_behavior = true,
+			scroll_factor = 0.2,
+			middle_button_emulation = false,
+			tap_to_click = true,
+			drag_lock = false,
+		},
+		touchdevice = {
+			enabled = true,
+		},
+		tablet = {
+			transform = 0,
+			left_handed = 0,
+		},
+	},
+	gestures = {
+		workspace_swipe_distance = 500,
+		workspace_swipe_invert = true,
+		workspace_swipe_min_speed_to_force = 30,
+		workspace_swipe_cancel_ratio = 0.5,
+		workspace_swipe_create_new = true,
+		workspace_swipe_forever = true,
+	},
+	misc = {
+		disable_hyprland_logo = true,
+		disable_splash_rendering = true,
+		vrr = 2,
+		mouse_move_enables_dpms = false,
+		key_press_enables_dpms = true,
+		enable_swallow = false,
+		swallow_regex = "^(kitty)$",
+		focus_on_activate = false,
+		initial_workspace_tracking = 0,
+		middle_click_paste = false,
+		enable_anr_dialog = true,
+		anr_missed_pings = 15,
+		allow_session_lock_restore = true,
+	},
+	binds = {
+		workspace_back_and_forth = true,
+		allow_workspace_cycles = true,
+		pass_mouse_when_bound = false,
+	},
+	xwayland = {
+		enabled = true,
+		force_zero_scaling = true,
+	},
+	render = {
+		direct_scanout = 0,
+	},
+	cursor = {
+		sync_gsettings_theme = true,
+		no_hardware_cursors = 1,
+		enable_hyprcursor = true,
+		warp_on_change_workspace = 2,
+		no_warps = false,
+	},
+	debug = {
+		vfr = true,
+	},
+	animations = {
+		enabled = true,
+	},
 })
 
 -- ------------------------
 -- DEVICE CONFIGS
 -- ------------------------
 hl.device({
-    name = touchpad,
-    enabled = true,
+	name = touchpad,
+	enabled = true,
 })
 
 hl.device({
-    name = "logitech-wireless-mouse-mx-master-1",
-    scroll_factor = 0.8,
+	name = "logitech-wireless-mouse-mx-master-1",
+	scroll_factor = 0.8,
 })
 
 -- ------------------------
 -- ANIMATION CURVES
 -- ------------------------
-hl.curve("linear", { type = "bezier", points = { {0, 0},      {1, 1}        } })
-hl.curve("md3_standard", { type = "bezier", points = { {0.2, 0},    {0, 1}         } })
-hl.curve("md3_decel", { type = "bezier", points = { {0.05, 0.7}, {0.1, 1}       } })
-hl.curve("md3_accel", { type = "bezier", points = { {0.3, 0},    {0.8, 0.15}    } })
-hl.curve("overshot", { type = "bezier", points = { {0.05, 0.9}, {0.1, 1.1}     } })
-hl.curve("crazyshot", { type = "bezier", points = { {0.1, 1.5},  {0.76, 0.92}   } })
-hl.curve("hyprnostretch", { type = "bezier", points = { {0.05, 0.9}, {0.1, 1.0}     } })
-hl.curve("menu_decel", { type = "bezier", points = { {0.1, 1},    {0, 1}         } })
-hl.curve("menu_accel", { type = "bezier", points = { {0.38, 0.04},{1, 0.07}      } })
-hl.curve("easeInOutCirc", { type = "bezier", points = { {0.85, 0},   {0.15, 1}      } })
-hl.curve("easeOutCirc", { type = "bezier", points = { {0, 0.55},   {0.45, 1}      } })
-hl.curve("easeOutExpo", { type = "bezier", points = { {0.16, 1},   {0.3, 1}       } })
-hl.curve("softAcDecel", { type = "bezier", points = { {0.26, 0.26},{0.15, 1}      } })
-hl.curve("md2", { type = "bezier", points = { {0.4, 0},    {0.2, 1}       } })
+hl.curve("linear", { type = "bezier", points = { { 0, 0 }, { 1, 1 } } })
+hl.curve("md3_standard", { type = "bezier", points = { { 0.2, 0 }, { 0, 1 } } })
+hl.curve("md3_decel", { type = "bezier", points = { { 0.05, 0.7 }, { 0.1, 1 } } })
+hl.curve("md3_accel", { type = "bezier", points = { { 0.3, 0 }, { 0.8, 0.15 } } })
+hl.curve("overshot", { type = "bezier", points = { { 0.05, 0.9 }, { 0.1, 1.1 } } })
+hl.curve("crazyshot", { type = "bezier", points = { { 0.1, 1.5 }, { 0.76, 0.92 } } })
+hl.curve("hyprnostretch", { type = "bezier", points = { { 0.05, 0.9 }, { 0.1, 1.0 } } })
+hl.curve("menu_decel", { type = "bezier", points = { { 0.1, 1 }, { 0, 1 } } })
+hl.curve("menu_accel", { type = "bezier", points = { { 0.38, 0.04 }, { 1, 0.07 } } })
+hl.curve("easeInOutCirc", { type = "bezier", points = { { 0.85, 0 }, { 0.15, 1 } } })
+hl.curve("easeOutCirc", { type = "bezier", points = { { 0, 0.55 }, { 0.45, 1 } } })
+hl.curve("easeOutExpo", { type = "bezier", points = { { 0.16, 1 }, { 0.3, 1 } } })
+hl.curve("softAcDecel", { type = "bezier", points = { { 0.26, 0.26 }, { 0.15, 1 } } })
+hl.curve("md2", { type = "bezier", points = { { 0.4, 0 }, { 0.2, 1 } } })
 
 -- ------------------------
 -- ANIMATIONS
@@ -265,32 +265,38 @@ hl.animation({ leaf = "specialWorkspace", enabled = true, speed = 3, bezier = "m
 -- AUTOSTART (exec-once)
 -- ------------------------
 hl.on("hyprland.start", function()
-    hl.exec_cmd(HOME .. "/.config/hypr/initial-boot.sh")
-    hl.exec_cmd("swww-daemon --format argb")
-    hl.exec_cmd("dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP")
-    hl.exec_cmd("systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP")
-    hl.exec_cmd(scripts .. "/KeybindsLayoutInit.sh")
-    hl.exec_cmd(scripts .. "/Dropterminal.sh kitty &")
-    hl.exec_cmd(scripts .. "/Polkit.sh")
-    hl.exec_cmd("swaync")
-    hl.exec_cmd(uscripts .. "/WaybarStartup.sh")
-    hl.exec_cmd("qs -c overview")
-    hl.exec_cmd("wl-paste --type text --watch cliphist store")
-    hl.exec_cmd("wl-paste --type image --watch cliphist store")
-    hl.exec_cmd("hypridle")
-    hl.exec_cmd(scripts .. "/Hyprsunset.sh init")
-    hl.exec_cmd(uscripts .. "/startup_apps.sh")
-    hl.exec_cmd("uwsm app -- hyprsunset")
-    hl.exec_cmd("uwsm app -- playerctld daemon")
-    hl.exec_cmd("pactl set-sink-volume @DEFAULT_SINK@ 45% 50%")
+	hl.exec_cmd(HOME .. "/.config/hypr/initial-boot.sh")
+	hl.exec_cmd("swww-daemon --format argb")
+	hl.exec_cmd("dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP")
+	hl.exec_cmd("systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP")
+	hl.exec_cmd(scripts .. "/KeybindsLayoutInit.sh")
+	hl.exec_cmd(scripts .. "/Dropterminal.sh kitty &")
+	hl.exec_cmd(scripts .. "/Polkit.sh")
+	hl.exec_cmd("swaync")
+	hl.exec_cmd(uscripts .. "/WaybarStartup.sh")
+	hl.exec_cmd("qs -c overview")
+	hl.exec_cmd("wl-paste --type text --watch cliphist store")
+	hl.exec_cmd("wl-paste --type image --watch cliphist store")
+	hl.exec_cmd("hypridle")
+	hl.exec_cmd(scripts .. "/Hyprsunset.sh init")
+	hl.exec_cmd(uscripts .. "/startup_apps.sh")
+	hl.exec_cmd("uwsm app -- hyprsunset")
+	hl.exec_cmd("uwsm app -- playerctld daemon")
+	hl.exec_cmd("pactl set-sink-volume @DEFAULT_SINK@ 45% 50%")
 end)
 
 -- ------------------------
 -- KEYBINDS
 -- ------------------------
-hl.bind(mainMod .. " + SPACE", hl.dsp.exec_cmd("pkill rofi || true && rofi -show drun -modi drun,filebrowser,run,window"))
+hl.bind(
+	mainMod .. " + SPACE",
+	hl.dsp.exec_cmd("pkill rofi || true && rofi -show drun -modi drun,filebrowser,run,window")
+)
 hl.bind(mainMod .. " + SHIFT + B", hl.dsp.exec_cmd("uwsm-app -- " .. browser .. " --new-window --password-store=basic"))
-hl.bind(mainMod .. " + SHIFT + CTRL + B", hl.dsp.exec_cmd("uwsm-app -- " .. browser .. " --incognito --password-store=basic"))
+hl.bind(
+	mainMod .. " + SHIFT + CTRL + B",
+	hl.dsp.exec_cmd("uwsm-app -- " .. browser .. " --incognito --password-store=basic")
+)
 hl.bind(mainMod .. " + ALT + A", hl.dsp.exec_cmd(scripts .. "/OverviewToggle.sh"))
 hl.bind(mainMod .. " + Return", hl.dsp.exec_cmd(terminal))
 hl.bind(mainMod .. " + SHIFT + F", hl.dsp.exec_cmd(files))
@@ -304,16 +310,32 @@ hl.bind(mainMod .. " + CTRL + H", hl.dsp.exec_cmd(scripts .. "/GameMode.sh"))
 hl.bind(mainMod .. " + ALT + L", hl.dsp.exec_cmd(scripts .. "/ChangeLayout.sh"))
 hl.bind(mainMod .. " + CTRL + V", hl.dsp.exec_cmd(scripts .. "/ClipManager.sh"))
 hl.bind(mainMod .. " + CTRL + R", hl.dsp.exec_cmd(scripts .. "/RofiThemeSelector.sh"))
-hl.bind(mainMod .. " + CTRL + SHIFT + R", hl.dsp.exec_cmd("pkill rofi || true && " .. scripts .. "/RofiThemeSelector-modified.sh"))
+hl.bind(
+	mainMod .. " + CTRL + SHIFT + R",
+	hl.dsp.exec_cmd("pkill rofi || true && " .. scripts .. "/RofiThemeSelector-modified.sh")
+)
 hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen())
-hl.bind(mainMod .. " + CTRL + F", hl.dsp.window.fullscreen())
+hl.bind(mainMod .. " + CTRL + F", hl.dsp.window.fullscreen(1))
 -- hl.bind(mainMod .. " + ALT + SPACE", ...)  -- workspaceopt allfloat: no Lua equivalent yet
-hl.bind(mainMod .. " + SHIFT + Return", hl.dsp.exec_cmd(scripts .. "/Dropterminal.sh '" .. terminal .. " --class dropterm'"))
+hl.bind(
+	mainMod .. " + SHIFT + Return",
+	hl.dsp.exec_cmd(scripts .. "/Dropterminal.sh '" .. terminal .. " --class dropterm'")
+)
 hl.bind(mainMod .. " + W", hl.dsp.window.close())
 hl.bind(mainMod .. " + ALT + W", hl.dsp.exec_cmd(scripts .. "/KillActiveProcess.sh"))
 hl.bind(mainMod .. " + mouse:274", hl.dsp.window.close())
-hl.bind(mainMod .. " + ALT + mouse_down", hl.dsp.exec_cmd("hyprctl keyword cursor:zoom_factor \"$(hyprctl getoption cursor:zoom_factor | awk 'NR==1, {factor = $2; if (factor < 1) {factor = 1}; print factor * 2.0}')\""))
-hl.bind(mainMod .. " + ALT + mouse_up", hl.dsp.exec_cmd("hyprctl keyword cursor:zoom_factor \"$(hyprctl getoption cursor:zoom_factor | awk 'NR==1, {factor = $2; if (factor < 1) {factor = 1}; print factor / 2.0}')\""))
+hl.bind(
+	mainMod .. " + ALT + mouse_down",
+	hl.dsp.exec_cmd(
+		"hyprctl keyword cursor:zoom_factor \"$(hyprctl getoption cursor:zoom_factor | awk 'NR==1, {factor = $2; if (factor < 1) {factor = 1}; print factor * 2.0}')\""
+	)
+)
+hl.bind(
+	mainMod .. " + ALT + mouse_up",
+	hl.dsp.exec_cmd(
+		"hyprctl keyword cursor:zoom_factor \"$(hyprctl getoption cursor:zoom_factor | awk 'NR==1, {factor = $2; if (factor < 1) {factor = 1}; print factor / 2.0}')\""
+	)
+)
 hl.bind(mainMod .. " + CTRL + ALT + B", hl.dsp.exec_cmd(uscripts .. "/ToggleWaybar.sh"))
 hl.bind(mainMod .. " + CTRL + B", hl.dsp.exec_cmd(scripts .. "/WaybarStyles.sh"))
 hl.bind(mainMod .. " + ALT + B", hl.dsp.exec_cmd(scripts .. "/WaybarLayout.sh"))
@@ -365,12 +387,24 @@ hl.bind(mainMod .. " + CTRL + Print", hl.dsp.exec_cmd(scripts .. "/ScreenShot.sh
 hl.bind(mainMod .. " + CTRL + SHIFT + Print", hl.dsp.exec_cmd(scripts .. "/ScreenShot.sh --in10"))
 hl.bind("ALT + Print", hl.dsp.exec_cmd(scripts .. "/ScreenShot.sh --active"))
 hl.bind(mainMod .. " + SHIFT + S", hl.dsp.exec_cmd(scripts .. "/ScreenShot.sh --swappy"))
-hl.bind("XF86KbdBrightnessDown", hl.dsp.exec_cmd(scripts .. "/BrightnessKbd.sh --dec"), { locked = true, repeating = true })
-hl.bind("XF86KbdBrightnessUp", hl.dsp.exec_cmd(scripts .. "/BrightnessKbd.sh --inc"), { locked = true, repeating = true })
+hl.bind(
+	"XF86KbdBrightnessDown",
+	hl.dsp.exec_cmd(scripts .. "/BrightnessKbd.sh --dec"),
+	{ locked = true, repeating = true }
+)
+hl.bind(
+	"XF86KbdBrightnessUp",
+	hl.dsp.exec_cmd(scripts .. "/BrightnessKbd.sh --inc"),
+	{ locked = true, repeating = true }
+)
 hl.bind("XF86Launch1", hl.dsp.exec_cmd("rog-control-center"), { locked = true })
 hl.bind("XF86Launch3", hl.dsp.exec_cmd("asusctl led-mode -n"), { locked = true })
 hl.bind("XF86Launch4", hl.dsp.exec_cmd("asusctl profile -n"), { locked = true })
-hl.bind("XF86MonBrightnessDown", hl.dsp.exec_cmd(scripts .. "/Brightness.sh --dec"), { locked = true, repeating = true })
+hl.bind(
+	"XF86MonBrightnessDown",
+	hl.dsp.exec_cmd(scripts .. "/Brightness.sh --dec"),
+	{ locked = true, repeating = true }
+)
 hl.bind("XF86MonBrightnessUp", hl.dsp.exec_cmd(scripts .. "/Brightness.sh --inc"), { locked = true, repeating = true })
 hl.bind("XF86TouchpadToggle", hl.dsp.exec_cmd(scripts .. "/TouchPad.sh"), { locked = true })
 hl.bind(mainMod .. " + CTRL + left", hl.dsp.window.resize({ x = -50, y = 0, relative = true }), { repeating = true })
@@ -412,18 +446,18 @@ hl.bind(mainMod .. " + PERIOD", hl.dsp.focus({ workspace = "e+1" }))
 hl.bind(mainMod .. " + COMMA", hl.dsp.focus({ workspace = "e-1" }))
 
 for i = 1, 10 do
-    local key = i % 10
-    hl.bind(mainMod .. " + " .. key, hl.dsp.focus({ workspace = i }))
+	local key = i % 10
+	hl.bind(mainMod .. " + " .. key, hl.dsp.focus({ workspace = i }))
 end
 
 for i = 1, 10 do
-    local key = i % 10
-    hl.bind(mainMod .. " + SHIFT + " .. key, hl.dsp.window.move({ workspace = i }))
+	local key = i % 10
+	hl.bind(mainMod .. " + SHIFT + " .. key, hl.dsp.window.move({ workspace = i }))
 end
 
 for i = 1, 10 do
-    local key = i % 10
-    hl.bind(mainMod .. " + CTRL + " .. key, hl.dsp.window.move({ workspace = i, follow = false }))
+	local key = i % 10
+	hl.bind(mainMod .. " + CTRL + " .. key, hl.dsp.window.move({ workspace = i, follow = false }))
 end
 
 hl.bind(mainMod .. " + SHIFT + bracketleft", hl.dsp.window.move({ workspace = -1 }))
@@ -440,9 +474,9 @@ hl.bind(mainMod .. " + C", hl.dsp.exec_cmd("kitty --class cava -e cava"))
 hl.bind(mainMod .. " + SHIFT + M", hl.dsp.exec_cmd("kitty --class rmpc -e rmpc"))
 hl.bind(mainMod .. " + SHIFT + ALT + M", hl.dsp.exec_cmd(uscripts .. "/switch_to_relax.sh"))
 hl.bind(mainMod .. " + M", hl.dsp.exec_cmd("kitty --class cliplayer -e " .. uscripts .. "/ytdl-music.sh"))
-hl.bind(mainMod .. " + ALT + M", hl.dsp.exec_cmd("kitty --class \"ytdl_playlist\" -e " .. uscripts .. "/yt-playlist.sh"))
-hl.bind(mainMod .. " + H", hl.dsp.exec_cmd("env LUTRIS_SKIP_INIT=1, lutris lutris:rungameid/2"))
-hl.bind(mainMod .. " + CTRL + F", hl.dsp.exec_cmd("env LUTRIS_SKIP_INIT=1, lutris lutris:rungameid/1"))
+hl.bind(mainMod .. " + ALT + M", hl.dsp.exec_cmd('kitty --class "ytdl_playlist" -e ' .. uscripts .. "/yt-playlist.sh"))
+hl.bind(mainMod .. " + H", hl.dsp.exec_cmd("env LUTRIS_SKIP_INIT=1 lutris lutris:rungameid/2"))
+hl.bind(mainMod .. " + ALT + F", hl.dsp.exec_cmd("env LUTRIS_SKIP_INIT=1 lutris lutris:rungameid/1"))
 hl.bind(mainMod .. " + ALT + G", hl.dsp.exec_cmd("guvcview"))
 hl.bind(mainMod .. " + ALT + K", hl.dsp.exec_cmd(HOME .. "/.config/hypr/scripts/kill_workspace.sh"))
 hl.bind(mainMod .. " + Z", hl.dsp.exec_cmd(scripts .. "/Brightness.sh --dec"), { repeating = true })
@@ -453,29 +487,37 @@ hl.bind(mainMod .. " + mouse_left", hl.dsp.focus({ workspace = "e-1" }))
 hl.bind(mainMod .. " + mouse_right", hl.dsp.focus({ workspace = "e+1" }))
 hl.bind(mainMod .. " + mouse:272", hl.dsp.window.drag(), { mouse = true })
 hl.bind(mainMod .. " + mouse:273", hl.dsp.exec_cmd("uwsm-app -- " .. term .. " -e btop"), { mouse = true })
-hl.bind("ALT_L + SHIFT_L", hl.dsp.exec_cmd(scripts .. "/SwitchKeyboardLayout.sh"), { locked = true, non_consuming = true })
-hl.bind("SHIFT_L + ALT_L", hl.dsp.exec_cmd(scripts .. "/Tak0-Per-Window-Switch.sh"), { locked = true, non_consuming = true })
+hl.bind(
+	"ALT_L + SHIFT_L",
+	hl.dsp.exec_cmd(scripts .. "/SwitchKeyboardLayout.sh"),
+	{ locked = true, non_consuming = true }
+)
+hl.bind(
+	"SHIFT_L + ALT_L",
+	hl.dsp.exec_cmd(scripts .. "/Tak0-Per-Window-Switch.sh"),
+	{ locked = true, non_consuming = true }
+)
 hl.bind(mainMod .. " + CTRL + ALT + Tab", hl.dsp.exec_cmd(scripts .. "/OverviewToggle.sh"))
 hl.bind("CTRL + ALT + Tab", hl.dsp.exec_cmd(term))
 hl.bind(mainMod .. " + CTRL + X", hl.dsp.exec_cmd("close-all-windows"))
 hl.bind(mainMod .. " + mouse:275", hl.dsp.focus({ window = "obsidian" }))
 hl.bind(mainMod .. " + mouse:276", hl.dsp.focus({ window = "jetbrains-clion" }))
-hl.bind(mainMod .. " + SHIFT + CTRL + C", hl.dsp.exec_cmd(webapp .. " \"https://calendar.google.com\""))
-hl.bind(mainMod .. " + SHIFT + C", hl.dsp.exec_cmd(webapp .. " \"https://programmingadvices.com/l/dashboard\""))
-hl.bind(mainMod .. " + SHIFT + E", hl.dsp.exec_cmd(webapp .. " \"https://mail.google.com\""))
-hl.bind(mainMod .. " + SHIFT + W", hl.dsp.exec_cmd(webapp .. " \"https://web.whatsapp.com/\""))
-hl.bind(mainMod .. " + SHIFT + P", hl.dsp.exec_cmd("kitty -e python3, " .. HOME .. "/.config/hypr/UserScripts/pomo.py"))
-hl.bind(mainMod .. " + SHIFT + CTRL + P", hl.dsp.exec_cmd(webapp .. " \"https://photos.google.com/\""))
-hl.bind(mainMod .. " + SHIFT + G", hl.dsp.exec_cmd(webapp .. " \"https://github.com\""))
-hl.bind(mainMod .. " + SHIFT + A", hl.dsp.exec_cmd(webapp .. " \"https://claude.ai/new\""))
-hl.bind(mainMod .. " + SHIFT + Z", hl.dsp.exec_cmd(webapp .. " \"https://chat.z.ai/\""))
-hl.bind(mainMod .. " + SHIFT + K", hl.dsp.exec_cmd(webapp .. " \"https://www.kimi.com/\""))
-hl.bind(mainMod .. " + SHIFT + CTRL + A", hl.dsp.exec_cmd(webapp .. " \"https://aistudio.google.com\""))
-hl.bind(mainMod .. " + SHIFT + Y", hl.dsp.exec_cmd(webapp .. " \"https://youtube.com/\""))
-hl.bind(mainMod .. " + SHIFT + X", hl.dsp.exec_cmd(webapp .. " \"https://x.com/\""))
-hl.bind(mainMod .. " + SHIFT + CTRL + X", hl.dsp.exec_cmd(webapp .. " \"https://x.com/compose/post\""))
-hl.bind(mainMod .. " + SHIFT + CTRL + M", hl.dsp.exec_cmd(webapp .. " \"https://managementdose.com/l/dashboard\""))
-hl.bind(mainMod .. " + SHIFT + CTRL + B", hl.dsp.exec_cmd(webapp .. " \"https://www.busuu.com\""))
+hl.bind(mainMod .. " + SHIFT + CTRL + C", hl.dsp.exec_cmd(webapp .. ' "https://calendar.google.com"'))
+hl.bind(mainMod .. " + SHIFT + C", hl.dsp.exec_cmd(webapp .. ' "https://programmingadvices.com/l/dashboard"'))
+hl.bind(mainMod .. " + SHIFT + E", hl.dsp.exec_cmd(webapp .. ' "https://mail.google.com"'))
+hl.bind(mainMod .. " + SHIFT + W", hl.dsp.exec_cmd(webapp .. ' "https://web.whatsapp.com/"'))
+hl.bind(mainMod .. " + SHIFT + P", hl.dsp.exec_cmd("kitty -e python3 " .. HOME .. "/.config/hypr/UserScripts/pomo.py"))
+hl.bind(mainMod .. " + SHIFT + CTRL + P", hl.dsp.exec_cmd(webapp .. ' "https://photos.google.com/"'))
+hl.bind(mainMod .. " + SHIFT + G", hl.dsp.exec_cmd(webapp .. ' "https://github.com"'))
+hl.bind(mainMod .. " + SHIFT + A", hl.dsp.exec_cmd(webapp .. ' "https://claude.ai/new"'))
+hl.bind(mainMod .. " + SHIFT + Z", hl.dsp.exec_cmd(webapp .. ' "https://chat.z.ai/"'))
+hl.bind(mainMod .. " + SHIFT + K", hl.dsp.exec_cmd(webapp .. ' "https://www.kimi.com/"'))
+hl.bind(mainMod .. " + SHIFT + CTRL + A", hl.dsp.exec_cmd(webapp .. ' "https://aistudio.google.com"'))
+hl.bind(mainMod .. " + SHIFT + Y", hl.dsp.exec_cmd("kitty --class yt-x -e yt-x"))
+hl.bind(mainMod .. " + SHIFT + X", hl.dsp.exec_cmd(webapp .. ' "https://x.com/"'))
+hl.bind(mainMod .. " + SHIFT + CTRL + X", hl.dsp.exec_cmd(webapp .. ' "https://x.com/compose/post"'))
+hl.bind(mainMod .. " + SHIFT + CTRL + M", hl.dsp.exec_cmd(webapp .. ' "https://managementdose.com/l/dashboard"'))
+hl.bind(mainMod .. " + SHIFT + CTRL + B", hl.dsp.exec_cmd(webapp .. ' "https://www.busuu.com"'))
 hl.bind(mainMod .. " + SHIFT + CTRL + 1", hl.dsp.window.move({ workspace = 1, follow = false }))
 hl.bind(mainMod .. " + SHIFT + CTRL + 2", hl.dsp.window.move({ workspace = 2, follow = false }))
 hl.bind(mainMod .. " + SHIFT + CTRL + 3", hl.dsp.window.move({ workspace = 3, follow = false }))
@@ -495,259 +537,259 @@ hl.bind("ALT + F6", hl.dsp.exec_cmd(scripts .. "/ScreenShot.sh --active"))
 -- WINDOW RULES
 -- ------------------------
 hl.window_rule({
-    name = "tag-browser-firefox",
-    match = { class = "^([Ff]irefox|org.mozilla.firefox|[Ff]irefox-esr|[Ff]irefox-bin)$" },
-    tag = "+browser",
+	name = "tag-browser-firefox",
+	match = { class = "^([Ff]irefox|org.mozilla.firefox|[Ff]irefox-esr|[Ff]irefox-bin)$" },
+	tag = "+browser",
 })
 hl.window_rule({
-    name = "tag-browser-chrome",
-    match = { class = "^([Gg]oogle-chrome(-beta|-dev|-unstable)?)$" },
-    tag = "+browser",
+	name = "tag-browser-chrome",
+	match = { class = "^([Gg]oogle-chrome(-beta|-dev|-unstable)?)$" },
+	tag = "+browser",
 })
 hl.window_rule({
-    name = "tag-browser-chrome-default",
-    match = { class = "^(chrome-.+-Default)$" },
-    tag = "+browser",
+	name = "tag-browser-chrome-default",
+	match = { class = "^(chrome-.+-Default)$" },
+	tag = "+browser",
 })
 hl.window_rule({
-    name = "tag-browser-chromium",
-    match = { class = "^([Cc]hromium)$" },
-    tag = "+browser",
+	name = "tag-browser-chromium",
+	match = { class = "^([Cc]hromium)$" },
+	tag = "+browser",
 })
 hl.window_rule({
-    name = "tag-browser-edge",
-    match = { class = "^([Mm]icrosoft-edge(-stable|-beta|-dev|-unstable))$" },
-    tag = "+browser",
+	name = "tag-browser-edge",
+	match = { class = "^([Mm]icrosoft-edge(-stable|-beta|-dev|-unstable))$" },
+	tag = "+browser",
 })
 hl.window_rule({
-    name = "tag-browser-brave",
-    match = { class = "^(Brave-browser(-beta|-dev|-unstable)?)$" },
-    tag = "+browser",
+	name = "tag-browser-brave",
+	match = { class = "^(Brave-browser(-beta|-dev|-unstable)?)$" },
+	tag = "+browser",
 })
 hl.window_rule({
-    name = "tag-browser-thorium-cachy",
-    match = { class = "^([Tt]horium-browser|[Cc]achy-browser)$" },
-    tag = "+browser",
+	name = "tag-browser-thorium-cachy",
+	match = { class = "^([Tt]horium-browser|[Cc]achy-browser)$" },
+	tag = "+browser",
 })
 hl.window_rule({
-    name = "tag-browser-zen",
-    match = { class = "^(zen-alpha|zen)$" },
-    tag = "+browser",
+	name = "tag-browser-zen",
+	match = { class = "^(zen-alpha|zen)$" },
+	tag = "+browser",
 })
 hl.window_rule({
-    name = "tag-notif",
-    match = { class = "^(swaync-control-center|swaync-notification-window|swaync-client|class)$" },
-    tag = "+notif",
+	name = "tag-notif",
+	match = { class = "^(swaync-control-center|swaync-notification-window|swaync-client|class)$" },
+	tag = "+notif",
 })
 hl.window_rule({
-    name = "tag-kool-cheat",
-    match = { title = "^(KooL Quick Cheat Sheet)$" },
-    tag = "+KooL_Cheat",
+	name = "tag-kool-cheat",
+	match = { title = "^(KooL Quick Cheat Sheet)$" },
+	tag = "+KooL_Cheat",
 })
 hl.window_rule({
-    name = "tag-kool-settings",
-    match = { title = "^(KooL Hyprland Settings)$" },
-    tag = "+KooL_Settings",
+	name = "tag-kool-settings",
+	match = { title = "^(KooL Hyprland Settings)$" },
+	tag = "+KooL_Settings",
 })
 hl.window_rule({
-    name = "tag-kool-nwg",
-    match = { class = "^(nwg-displays|nwg-look)$" },
-    tag = "+KooL-Settings",
+	name = "tag-kool-nwg",
+	match = { class = "^(nwg-displays|nwg-look)$" },
+	tag = "+KooL-Settings",
 })
 hl.window_rule({
-    name = "tag-terminal",
-    match = { class = "^(Alacritty|kitty|kitty-dropterm)$" },
-    tag = "+terminal",
+	name = "tag-terminal",
+	match = { class = "^(Alacritty|kitty|kitty-dropterm)$" },
+	tag = "+terminal",
 })
 hl.window_rule({
-    name = "tag-email",
-    match = { class = "^([Tt]hunderbird|org.gnome.Evolution)$" },
-    tag = "+email",
+	name = "tag-email",
+	match = { class = "^([Tt]hunderbird|org.gnome.Evolution)$" },
+	tag = "+email",
 })
 hl.window_rule({
-    name = "tag-email-betterbird",
-    match = { class = "^(eu.betterbird.Betterbird)$" },
-    tag = "+email",
+	name = "tag-email-betterbird",
+	match = { class = "^(eu.betterbird.Betterbird)$" },
+	tag = "+email",
 })
 hl.window_rule({
-    name = "tag-projects-codium",
-    match = { class = "^(codium|codium-url-handler|VSCodium)$" },
-    tag = "+projects",
+	name = "tag-projects-codium",
+	match = { class = "^(codium|codium-url-handler|VSCodium)$" },
+	tag = "+projects",
 })
 hl.window_rule({
-    name = "tag-projects-vscode",
-    match = { class = "^(VSCode|code|code-url-handler)$" },
-    tag = "+projects",
+	name = "tag-projects-vscode",
+	match = { class = "^(VSCode|code|code-url-handler)$" },
+	tag = "+projects",
 })
 hl.window_rule({
-    name = "tag-projects-jetbrains",
-    match = { class = "^(jetbrains-.+)$" },
-    tag = "+projects",
+	name = "tag-projects-jetbrains",
+	match = { class = "^(jetbrains-.+)$" },
+	tag = "+projects",
 })
 hl.window_rule({
-    name = "tag-screenshare",
-    match = { class = "^(com.obsproject.Studio)$" },
-    tag = "+screenshare",
+	name = "tag-screenshare",
+	match = { class = "^(com.obsproject.Studio)$" },
+	tag = "+screenshare",
 })
 hl.window_rule({
-    name = "tag-im-discord",
-    match = { class = "^([Dd]iscord|[Ww]ebCord|[Vv]esktop)$" },
-    tag = "+im",
+	name = "tag-im-discord",
+	match = { class = "^([Dd]iscord|[Ww]ebCord|[Vv]esktop)$" },
+	tag = "+im",
 })
 hl.window_rule({
-    name = "tag-im-ferdium",
-    match = { class = "^([Ff]erdium)$" },
-    tag = "+im",
+	name = "tag-im-ferdium",
+	match = { class = "^([Ff]erdium)$" },
+	tag = "+im",
 })
 hl.window_rule({
-    name = "tag-im-whatsapp",
-    match = { class = "^([Ww]hatsapp-for-linux)$" },
-    tag = "+im",
+	name = "tag-im-whatsapp",
+	match = { class = "^([Ww]hatsapp-for-linux)$" },
+	tag = "+im",
 })
 hl.window_rule({
-    name = "tag-im-zapzap",
-    match = { class = "^(ZapZap|com.rtosta.zapzap)$" },
-    tag = "+im",
+	name = "tag-im-zapzap",
+	match = { class = "^(ZapZap|com.rtosta.zapzap)$" },
+	tag = "+im",
 })
 hl.window_rule({
-    name = "tag-im-telegram",
-    match = { class = "^(org.telegram.desktop|io.github.tdesktop_x64.TDesktop)$" },
-    tag = "+im",
+	name = "tag-im-telegram",
+	match = { class = "^(org.telegram.desktop|io.github.tdesktop_x64.TDesktop)$" },
+	tag = "+im",
 })
 hl.window_rule({
-    name = "tag-im-teams",
-    match = { class = "^(teams-for-linux)$" },
-    tag = "+im",
+	name = "tag-im-teams",
+	match = { class = "^(teams-for-linux)$" },
+	tag = "+im",
 })
 hl.window_rule({
-    name = "tag-im-element",
-    match = { class = "^(im.riot.Riot|Element)$" },
-    tag = "+im",
+	name = "tag-im-element",
+	match = { class = "^(im.riot.Riot|Element)$" },
+	tag = "+im",
 })
 hl.window_rule({
-    name = "tag-games-gamescope",
-    match = { class = "^(gamescope)$" },
-    tag = "+games",
+	name = "tag-games-gamescope",
+	match = { class = "^(gamescope)$" },
+	tag = "+games",
 })
 hl.window_rule({
-    name = "tag-games-steamapp",
-    match = { class = "^(steam_app_\\d+)$" },
-    tag = "+games",
+	name = "tag-games-steamapp",
+	match = { class = "^(steam_app_\\d+)$" },
+	tag = "+games",
 })
 hl.window_rule({
-    name = "tag-gamestore-steam",
-    match = { class = "^([Ss]team)$" },
-    tag = "+gamestore",
+	name = "tag-gamestore-steam",
+	match = { class = "^([Ss]team)$" },
+	tag = "+gamestore",
 })
 hl.window_rule({
-    name = "tag-gamestore-lutris",
-    match = { title = "^([Ll]utris)$" },
-    tag = "+gamestore",
+	name = "tag-gamestore-lutris",
+	match = { title = "^([Ll]utris)$" },
+	tag = "+gamestore",
 })
 hl.window_rule({
-    name = "tag-gamestore-heroic",
-    match = { class = "^(com.heroicgameslauncher.hgl)$" },
-    tag = "+gamestore",
+	name = "tag-gamestore-heroic",
+	match = { class = "^(com.heroicgameslauncher.hgl)$" },
+	tag = "+gamestore",
 })
 hl.window_rule({
-    name = "tag-fm-thunar-nautilus",
-    match = { class = "^([Tt]hunar|org.gnome.Nautilus|[Pp]cmanfm-qt)$" },
-    tag = "+file-manager",
+	name = "tag-fm-thunar-nautilus",
+	match = { class = "^([Tt]hunar|org.gnome.Nautilus|[Pp]cmanfm-qt)$" },
+	tag = "+file-manager",
 })
 hl.window_rule({
-    name = "tag-fm-warp",
-    match = { class = "^(app.drey.Warp)$" },
-    tag = "+file-manager",
+	name = "tag-fm-warp",
+	match = { class = "^(app.drey.Warp)$" },
+	tag = "+file-manager",
 })
 hl.window_rule({
-    name = "tag-wallpaper",
-    match = { class = "^([Ww]aytrogen)$" },
-    tag = "+wallpaper",
+	name = "tag-wallpaper",
+	match = { class = "^([Ww]aytrogen)$" },
+	tag = "+wallpaper",
 })
 hl.window_rule({
-    name = "tag-multimedia-audio",
-    match = { class = "^([Aa]udacious)$" },
-    tag = "+multimedia",
+	name = "tag-multimedia-audio",
+	match = { class = "^([Aa]udacious)$" },
+	tag = "+multimedia",
 })
 hl.window_rule({
-    name = "tag-multimedia-video",
-    match = { class = "^([Mm]pv|vlc)$" },
-    tag = "+multimedia_video",
+	name = "tag-multimedia-video",
+	match = { class = "^([Mm]pv|vlc)$" },
+	tag = "+multimedia_video",
 })
 hl.window_rule({
-    name = "tag-settings-rog",
-    match = { title = "^(ROG Control)$" },
-    tag = "+settings",
+	name = "tag-settings-rog",
+	match = { title = "^(ROG Control)$" },
+	tag = "+settings",
 })
 hl.window_rule({
-    name = "tag-settings-wihotspot",
-    match = { class = "^(wihotspot(-gui)?)$" },
-    tag = "+settings",
+	name = "tag-settings-wihotspot",
+	match = { class = "^(wihotspot(-gui)?)$" },
+	tag = "+settings",
 })
 hl.window_rule({
-    name = "tag-settings-baobab",
-    match = { class = "^([Bb]aobab|org.gnome.[Bb]aobab)$" },
-    tag = "+settings",
+	name = "tag-settings-baobab",
+	match = { class = "^([Bb]aobab|org.gnome.[Bb]aobab)$" },
+	tag = "+settings",
 })
 hl.window_rule({
-    name = "tag-settings-disks",
-    match = { class = "^(gnome-disks|wihotspot(-gui)?)$" },
-    tag = "+settings",
+	name = "tag-settings-disks",
+	match = { class = "^(gnome-disks|wihotspot(-gui)?)$" },
+	tag = "+settings",
 })
 hl.window_rule({
-    name = "tag-settings-kvantum",
-    match = { title = "(Kvantum Manager)" },
-    tag = "+settings",
+	name = "tag-settings-kvantum",
+	match = { title = "(Kvantum Manager)" },
+	tag = "+settings",
 })
 hl.window_rule({
-    name = "tag-settings-fileroller",
-    match = { class = "^(file-roller|org.gnome.FileRoller)$" },
-    tag = "+settings",
+	name = "tag-settings-fileroller",
+	match = { class = "^(file-roller|org.gnome.FileRoller)$" },
+	tag = "+settings",
 })
 hl.window_rule({
-    name = "tag-settings-network",
-    match = { class = "^(nm-applet|nm-connection-editor|blueman-manager)$" },
-    tag = "+settings",
+	name = "tag-settings-network",
+	match = { class = "^(nm-applet|nm-connection-editor|blueman-manager)$" },
+	tag = "+settings",
 })
 hl.window_rule({
-    name = "tag-settings-pavucontrol",
-    match = { class = "^(pavucontrol|org.pulseaudio.pavucontrol|com.saivert.pwvucontrol)$" },
-    tag = "+settings",
+	name = "tag-settings-pavucontrol",
+	match = { class = "^(pavucontrol|org.pulseaudio.pavucontrol|com.saivert.pwvucontrol)$" },
+	tag = "+settings",
 })
 hl.window_rule({
-    name = "tag-settings-qtct",
-    match = { class = "^(qt5ct|qt6ct|[Yy]ad)$" },
-    tag = "+settings",
+	name = "tag-settings-qtct",
+	match = { class = "^(qt5ct|qt6ct|[Yy]ad)$" },
+	tag = "+settings",
 })
 hl.window_rule({
-    name = "tag-settings-xdg-portal",
-    match = { class = "(xdg-desktop-portal-gtk)" },
-    tag = "+settings",
+	name = "tag-settings-xdg-portal",
+	match = { class = "(xdg-desktop-portal-gtk)" },
+	tag = "+settings",
 })
 hl.window_rule({
-    name = "tag-settings-polkit",
-    match = { class = "^(org.kde.polkit-kde-authentication-agent-1)$" },
-    tag = "+settings",
+	name = "tag-settings-polkit",
+	match = { class = "^(org.kde.polkit-kde-authentication-agent-1)$" },
+	tag = "+settings",
 })
 hl.window_rule({
-    name = "tag-settings-rofi",
-    match = { class = "^([Rr]ofi)$" },
-    tag = "+settings",
+	name = "tag-settings-rofi",
+	match = { class = "^([Rr]ofi)$" },
+	tag = "+settings",
 })
 hl.window_rule({
-    name = "tag-viewer-system-monitor",
-    match = { class = "^(gnome-system-monitor|org.gnome.SystemMonitor|io.missioncenter.MissionCenter)$" },
-    tag = "+viewer",
+	name = "tag-viewer-system-monitor",
+	match = { class = "^(gnome-system-monitor|org.gnome.SystemMonitor|io.missioncenter.MissionCenter)$" },
+	tag = "+viewer",
 })
 hl.window_rule({
-    name = "tag-viewer-evince",
-    match = { class = "^(evince)$" },
-    tag = "+viewer",
+	name = "tag-viewer-evince",
+	match = { class = "^(evince)$" },
+	tag = "+viewer",
 })
 hl.window_rule({
-    name = "tag-viewer-image",
-    match = { class = "^(eog|org.gnome.Loupe)$" },
-    tag = "+viewer",
+	name = "tag-viewer-image",
+	match = { class = "^(eog|org.gnome.Loupe)$" },
+	tag = "+viewer",
 })
 
 hl.window_rule({ name = "opacity-browser", match = { tag = "browser" }, opacity = "0.99 0.8" })
@@ -762,7 +804,11 @@ hl.window_rule({ name = "opacity-wallpaper", match = { tag = "wallpaper" }, opac
 hl.window_rule({ name = "opacity-pip", match = { title = "^(Picture-in-Picture)$" }, opacity = "0.95 0.75" })
 hl.window_rule({ name = "opacity-obsidian", match = { class = "^(obsidian)$" }, opacity = "0.85 0.75" })
 hl.window_rule({ name = "opacity-jetbrains", match = { class = "^(jetbrains-.*)$" }, opacity = "0.85 0.75" })
-hl.window_rule({ name = "opacity-gedit", match = { class = "^(gedit|org.gnome.TextEditor|mousepad)$" }, opacity = "0.8 0.7" })
+hl.window_rule({
+	name = "opacity-gedit",
+	match = { class = "^(gedit|org.gnome.TextEditor|mousepad)$" },
+	opacity = "0.8 0.7",
+})
 hl.window_rule({ name = "opacity-deluge", match = { class = "^(deluge)$" }, opacity = "0.9 0.8" })
 hl.window_rule({ name = "opacity-seahorse", match = { class = "^(seahorse)$" }, opacity = "0.9 0.8" })
 
@@ -772,43 +818,117 @@ hl.window_rule({ name = "float-settings", match = { tag = "settings" }, float = 
 hl.window_rule({ name = "float-viewer", match = { tag = "viewer" }, float = true })
 hl.window_rule({ name = "float-kool-settings", match = { tag = "KooL-Settings" }, float = true })
 hl.window_rule({ name = "float-zoom", match = { class = "([Zz]oom|onedriver|onedriver-launcher)" }, float = true })
-hl.window_rule({ name = "float-calculator", match = { class = "(org.gnome.Calculator)", title = "(Calculator)" }, float = true })
+hl.window_rule({
+	name = "float-calculator",
+	match = { class = "(org.gnome.Calculator)", title = "(Calculator)" },
+	float = true,
+})
 hl.window_rule({ name = "float-mpv-clapper", match = { class = "^(mpv|com.github.rafostar.Clapper)$" }, float = true })
 hl.window_rule({ name = "float-qalculate", match = { class = "^([Qq]alculate-gtk)$" }, float = true })
 hl.window_rule({ name = "float-ferdium", match = { class = "^([Ff]erdium)$" }, float = true })
 hl.window_rule({ name = "float-pip", match = { title = "^(Picture-in-Picture)$" }, float = true })
 hl.window_rule({ name = "float-auth-dialog", match = { title = "^(Authentication Required)$" }, float = true })
-hl.window_rule({ name = "float-codium-dialog", match = { class = "(codium|codium-url-handler|VSCodium)", title = "negative:(.*codium.*|.*VSCodium.*)" }, float = true })
-hl.window_rule({ name = "float-heroic-dialog", match = { class = "^(com.heroicgameslauncher.hgl)$", title = "negative:(Heroic Games Launcher)" }, float = true })
-hl.window_rule({ name = "float-steam-dialog", match = { class = "^([Ss]team)$", title = "negative:^([Ss]team)$" }, float = true })
-hl.window_rule({ name = "float-thunar-dialog", match = { class = "([Tt]hunar)", title = "negative:(.*[Tt]hunar.*)" }, float = true })
+hl.window_rule({
+	name = "float-codium-dialog",
+	match = { class = "(codium|codium-url-handler|VSCodium)", title = "negative:(.*codium.*|.*VSCodium.*)" },
+	float = true,
+})
+hl.window_rule({
+	name = "float-heroic-dialog",
+	match = { class = "^(com.heroicgameslauncher.hgl)$", title = "negative:(Heroic Games Launcher)" },
+	float = true,
+})
+hl.window_rule({
+	name = "float-steam-dialog",
+	match = { class = "^([Ss]team)$", title = "negative:^([Ss]team)$" },
+	float = true,
+})
+hl.window_rule({
+	name = "float-thunar-dialog",
+	match = { class = "([Tt]hunar)", title = "negative:(.*[Tt]hunar.*)" },
+	float = true,
+})
 hl.window_rule({ name = "float-add-folder", match = { title = "^(Add Folder to Workspace)$" }, float = true })
 hl.window_rule({ name = "float-save-as", match = { title = "^(Save As)$" }, float = true })
 hl.window_rule({ name = "float-open-files", match = { initial_title = "(Open Files)" }, float = true })
 hl.window_rule({ name = "float-sddm-bg", match = { title = "^(SDDM Background)$" }, float = true })
 hl.window_rule({ name = "float-yad-dialog", match = { class = "^(yad)$", title = "^(YAD)$" }, float = true })
 
-hl.window_rule({ name = "size-kool-cheat", match = { tag = "KooL_Cheat" }, size = { "monitor_w*0.65",  "monitor_h*0.9" } })
-hl.window_rule({ name = "size-wallpaper", match = { tag = "wallpaper" }, size = { "monitor_w*0.7",  "monitor_h*0.7" } })
-hl.window_rule({ name = "size-settings", match = { tag = "settings" }, size = { "monitor_w*0.7",  "monitor_h*0.7" } })
-hl.window_rule({ name = "size-whatsapp", match = { class = "^([Ww]hatsapp-for-linux|ZapZap|com.rtosta.zapzap)$" }, size = { "monitor_w*0.6",  "monitor_h*0.7" } })
-hl.window_rule({ name = "size-ferdium", match = { class = "^([Ff]erdium)$" }, size = { "monitor_w*0.6",  "monitor_h*0.7" } })
-hl.window_rule({ name = "size-add-folder", match = { title = "^(Add Folder to Workspace)$" }, size = { "monitor_w*0.7",  "monitor_h*0.6" } })
-hl.window_rule({ name = "size-save-as", match = { title = "^(Save As)$" }, size = { "monitor_w*0.7",  "monitor_h*0.6" } })
-hl.window_rule({ name = "size-open-files", match = { initial_title = "(Open Files)" }, size = { "monitor_w*0.7",  "monitor_h*0.6" } })
-hl.window_rule({ name = "size-sddm-bg", match = { title = "^(SDDM Background)$" }, size = { "monitor_w*0.16",  "monitor_h*0.12" } })
-hl.window_rule({ name = "size-yad-dialog", match = { class = "^(yad)$", title = "^(YAD)$" }, size = { "monitor_w*0.2",  "monitor_h*0.2" } })
+hl.window_rule({
+	name = "size-kool-cheat",
+	match = { tag = "KooL_Cheat" },
+	size = { "monitor_w*0.65", "monitor_h*0.9" },
+})
+hl.window_rule({ name = "size-wallpaper", match = { tag = "wallpaper" }, size = { "monitor_w*0.7", "monitor_h*0.7" } })
+hl.window_rule({ name = "size-settings", match = { tag = "settings" }, size = { "monitor_w*0.7", "monitor_h*0.7" } })
+hl.window_rule({
+	name = "size-whatsapp",
+	match = { class = "^([Ww]hatsapp-for-linux|ZapZap|com.rtosta.zapzap)$" },
+	size = { "monitor_w*0.6", "monitor_h*0.7" },
+})
+hl.window_rule({
+	name = "size-ferdium",
+	match = { class = "^([Ff]erdium)$" },
+	size = { "monitor_w*0.6", "monitor_h*0.7" },
+})
+hl.window_rule({
+	name = "size-add-folder",
+	match = { title = "^(Add Folder to Workspace)$" },
+	size = { "monitor_w*0.7", "monitor_h*0.6" },
+})
+hl.window_rule({
+	name = "size-save-as",
+	match = { title = "^(Save As)$" },
+	size = { "monitor_w*0.7", "monitor_h*0.6" },
+})
+hl.window_rule({
+	name = "size-open-files",
+	match = { initial_title = "(Open Files)" },
+	size = { "monitor_w*0.7", "monitor_h*0.6" },
+})
+hl.window_rule({
+	name = "size-sddm-bg",
+	match = { title = "^(SDDM Background)$" },
+	size = { "monitor_w*0.16", "monitor_h*0.12" },
+})
+hl.window_rule({
+	name = "size-yad-dialog",
+	match = { class = "^(yad)$", title = "^(YAD)$" },
+	size = { "monitor_w*0.2", "monitor_h*0.2" },
+})
 
 hl.window_rule({ name = "center-kool-cheat", match = { tag = "KooL_Cheat" }, center = true })
-hl.window_rule({ name = "center-thunar", match = { class = "([Tt]hunar)", title = "negative:(.*[Tt]hunar.*)" }, center = true })
+hl.window_rule({
+	name = "center-thunar",
+	match = { class = "([Tt]hunar)", title = "negative:(.*[Tt]hunar.*)" },
+	center = true,
+})
 hl.window_rule({ name = "center-rog", match = { title = "^(ROG Control)$" }, center = true })
 hl.window_rule({ name = "center-kool-settings", match = { tag = "KooL-Settings" }, center = true })
 hl.window_rule({ name = "center-keybinds", match = { title = "^(Keybindings)$" }, center = true })
-hl.window_rule({ name = "center-pavucontrol", match = { class = "^(pavucontrol|org.pulseaudio.pavucontrol|com.saivert.pwvucontrol)$" }, center = true })
-hl.window_rule({ name = "center-whatsapp", match = { class = "^([Ww]hatsapp-for-linux|ZapZap|com.rtosta.zapzap)$" }, center = true })
+hl.window_rule({
+	name = "center-pavucontrol",
+	match = { class = "^(pavucontrol|org.pulseaudio.pavucontrol|com.saivert.pwvucontrol)$" },
+	center = true,
+})
+hl.window_rule({
+	name = "center-whatsapp",
+	match = { class = "^([Ww]hatsapp-for-linux|ZapZap|com.rtosta.zapzap)$" },
+	center = true,
+})
 hl.window_rule({ name = "center-ferdium", match = { class = "^([Ff]erdium)$" }, center = true })
-hl.window_rule({ name = "center-auth-dialog", match = { title = "^(Authentication Required)$" }, center = true, float = true })
-hl.window_rule({ name = "center-add-folder", match = { title = "^(Add Folder to Workspace)$" }, center = true, float = true })
+hl.window_rule({
+	name = "center-auth-dialog",
+	match = { title = "^(Authentication Required)$" },
+	center = true,
+	float = true,
+})
+hl.window_rule({
+	name = "center-add-folder",
+	match = { title = "^(Add Folder to Workspace)$" },
+	center = true,
+	float = true,
+})
 hl.window_rule({ name = "center-save-as", match = { title = "^(Save As)$" }, center = true, float = true })
 hl.window_rule({ name = "center-sddm-bg", match = { title = "^(SDDM Background)$" }, center = true, float = true })
 hl.window_rule({ name = "center-yad", match = { class = "^(yad)$", title = "^(YAD)$" }, center = true, float = true })
@@ -817,10 +937,26 @@ hl.window_rule({ name = "pip-move", match = { title = "^(Picture-in-Picture)$" }
 hl.window_rule({ name = "pip-pin", match = { title = "^(Picture-in-Picture)$" }, pin = true, keep_aspect_ratio = true })
 
 hl.window_rule({ name = "jetbrains-workspace", match = { class = "^(jetbrains-clion)$" }, workspace = "1 silent" })
-hl.window_rule({ name = "jetbrains-no-focus-1", match = { class = "^(jetbrains-.*)$", title = "^$" }, no_initial_focus = true })
-hl.window_rule({ name = "jetbrains-no-focus-2", match = { class = "^(jetbrains-.*)$", title = "^(win.*)$" }, no_initial_focus = true })
-hl.window_rule({ name = "jetbrains-center-splash", match = { class = "^(jetbrains-.*)$", title = "^(Welcome to.*)$" }, center = true })
-hl.window_rule({ name = "jetbrains-center-splash-2", match = { class = "^(jetbrains-.*)$", title = "^(splash)$" }, center = true })
+hl.window_rule({
+	name = "jetbrains-no-focus-1",
+	match = { class = "^(jetbrains-.*)$", title = "^$" },
+	no_initial_focus = true,
+})
+hl.window_rule({
+	name = "jetbrains-no-focus-2",
+	match = { class = "^(jetbrains-.*)$", title = "^(win.*)$" },
+	no_initial_focus = true,
+})
+hl.window_rule({
+	name = "jetbrains-center-splash",
+	match = { class = "^(jetbrains-.*)$", title = "^(Welcome to.*)$" },
+	center = true,
+})
+hl.window_rule({
+	name = "jetbrains-center-splash-2",
+	match = { class = "^(jetbrains-.*)$", title = "^(splash)$" },
+	center = true,
+})
 
 hl.window_rule({ name = "games-noblur", match = { tag = "games" }, no_blur = true })
 hl.window_rule({ name = "games-full", match = { tag = "games" }, fullscreen = 0 })
@@ -832,9 +968,20 @@ hl.window_rule({ name = "no-focus-wind", match = { title = "^(wind.*)$" }, no_in
 
 hl.window_rule({ name = "edu-code", match = { class = "^(Code|code)$" }, workspace = "1 silent" })
 hl.window_rule({ name = "edu-obsidian", match = { class = "^(obsidian)$" }, workspace = "2 silent" })
-hl.window_rule({ name = "edu-brave-pa", match = { class = "^(brave-programmingadvices.*)$", title = ".*(ProgrammingAdvices|Dashboard|programmingadvices).*" }, workspace = "2 silent" })
+hl.window_rule({
+	name = "edu-brave-pa",
+	match = {
+		class = "^(brave-programmingadvices.*)$",
+		title = ".*(ProgrammingAdvices|Dashboard|programmingadvices).*",
+	},
+	workspace = "2 silent",
+})
 hl.window_rule({ name = "edu-ytmusic", match = { class = ".*youtubemusic.*" }, workspace = "4 silent" })
-hl.window_rule({ name = "edu-pomo", match = { title = "^(.*Pomofocus.*|.*Time to focus.*|.*Pomodoro.*)$" }, workspace = "4 silent" })
+hl.window_rule({
+	name = "edu-pomo",
+	match = { title = "^(.*Pomofocus.*|.*Time to focus.*|.*Pomodoro.*)$" },
+	workspace = "4 silent",
+})
 hl.window_rule({ name = "edu-busuu", match = { class = ".*busuu.*" }, workspace = "3 silent" })
 hl.window_rule({ name = "edu-mdose", match = { class = ".*managementdose.*" }, workspace = "3 silent" })
 hl.window_rule({ name = "edu-busuu-title", match = { title = ".*Busuu.*" }, workspace = "3 silent" })

@@ -19,11 +19,11 @@ BEZIER=".43,1.19,1,.4"
 SWWW_PARAMS="--transition-fps $FPS --transition-type $TYPE --transition-duration $DURATION --transition-bezier $BEZIER"
 
 
-if ! pgrep -x "swww-daemon" > /dev/null; then
-  swww-daemon --format argb &
+if ! pgrep -x "awww-daemon" > /dev/null; then
+  awww-daemon --format argb &
   sleep 1
 fi
-swww img "${RANDOMPICS}" $SWWW_PARAMS
+awww img "${RANDOMPICS}" $SWWW_PARAMS
 
 wait $!
 "$SCRIPTSDIR/WallustSwww.sh" &&

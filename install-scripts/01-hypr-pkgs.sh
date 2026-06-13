@@ -11,16 +11,16 @@ Extra=(
   obsidian
   brave-bin
   visual-studio-code-bin
-  anki-bin
+  anki
   rmpc
   yazi
   mpd
   zapzap
   easyeffects
-  clock-rs
+  clock-rs-git
   neovim
   gpu-screen-recorder
-  wl-screenrec
+  wl-screenrec-git
   wf-recorder
   lazydocker
   guvcview
@@ -28,9 +28,11 @@ Extra=(
   google-chrome-stable
   mpc
   clion
+  clion-jre
   docker
   ghostty
   opencode
+  github-cli
 )
 
 hypr_package=( 
@@ -62,10 +64,10 @@ hypr_package=(
   slurp 
   swappy 
   swaync 
-  swww
+  awww
   unzip # needed later
   wallust 
-  waybar
+  waybar-git
   wget
   wl-clipboard
   wlogout

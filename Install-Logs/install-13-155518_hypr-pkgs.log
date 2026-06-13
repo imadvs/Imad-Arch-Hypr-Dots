@@ -1,0 +1,333 @@
+[34m[INFO](B[m Package aylurs-gtk-shell not installed, skipping.
+[34m[INFO](B[m Package dunst not installed, skipping.
+[34m[INFO](B[m Package cachyos-hyprland-settings not installed, skipping.
+[34m[INFO](B[m Package mako not installed, skipping.
+[33m[NOTE](B[m removing rofi ...
+checking dependencies...
+:: uwsm optionally requires rofi-wayland: optional picker for uuctl support
+
+Package (1)  Old Version  Net Change
+
+rofi         2.0.0-1.1     -1.15 MiB
+
+Total Removed Size:  1.15 MiB
+
+:: Do you want to remove these packages? [Y/n] 
+:: Running pre-transaction hooks...
+(1/2) Performing snapper pre snapshots for the following configurations...
+==> root: 193
+(2/2) Waiting for limine-snapper-sync to finish...
+:: Processing package changes...
+removing rofi...
+:: Running post-transaction hooks...
+(1/4) Arming ConditionNeedsUpdate...
+(2/4) Updating icon theme caches...
+(3/4) Updating the desktop file MIME type cache...
+(4/4) Performing snapper post snapshots for the following configurations...
+==> root: 194
+checking dependencies...
+:: uwsm optionally requires rofi-wayland: optional picker for uuctl support
+
+Package (1)  Old Version  Net Change
+
+rofi         2.0.0-1.1     -1.15 MiB
+
+Total Removed Size:  1.15 MiB
+
+:: Do you want to remove these packages? [Y/n] 
+:: Running pre-transaction hooks...
+(1/2) Performing snapper pre snapshots for the following configurations...
+==> root: 193
+(2/2) Waiting for limine-snapper-sync to finish...
+:: Processing package changes...
+removing rofi...
+:: Running post-transaction hooks...
+(1/4) Arming ConditionNeedsUpdate...
+(2/4) Updating icon theme caches...
+(3/4) Updating the desktop file MIME type cache...
+(4/4) Performing snapper post snapshots for the following configurations...
+==> root: 194
+[1A[K[32m[OK](B[m rofi removed.
+[34m[INFO](B[m Package wallust-git not installed, skipping.
+[34m[INFO](B[m Package rofi-lbonn-wayland not installed, skipping.
+[34m[INFO](B[m Package rofi-lbonn-wayland-git not installed, skipping.
+Sync Explicit (1): rofi-2.0.0-1.1
+resolving dependencies...
+looking for conflicting packages...
+
+Package (1)            New Version  Net Change
+
+cachyos-extra-v3/rofi  2.0.0-1.1      1.15 MiB
+
+Total Installed Size:  1.15 MiB
+
+:: Proceed with installation? [Y/n] 
+checking keyring...
+checking package integrity...
+loading package files...
+checking for file conflicts...
+checking available disk space...
+:: Running pre-transaction hooks...
+(1/2) Performing snapper pre snapshots for the following configurations...
+==> root: 195
+(2/2) Waiting for limine-snapper-sync to finish...
+:: Processing package changes...
+installing rofi...
+:: Running post-transaction hooks...
+(1/4) Arming ConditionNeedsUpdate...
+(2/4) Updating icon theme caches...
+(3/4) Updating the desktop file MIME type cache...
+(4/4) Performing snapper post snapshots for the following configurations...
+==> root: 196
+ -> No AUR package found for anki-bin
+ -> no package found for targets
+ -> No AUR package found for clock-rs
+ -> no package found for targets
+AUR Explicit (1): wl-screenrec-0.2.0-2
+:: [1m(1/1) Downloaded PKGBUILD: wl-screenrec[0m
+  1 wl-screenrec                             (Build Files Exist)
+==> Packages to cleanBuild?
+==> [N]one [A]ll [Ab]ort [I]nstalled [No]tInstalled or (1 2 3, 1-3, ^4)
+==> 
+  1 wl-screenrec                             (Build Files Exist)
+==> Diffs to show?
+==> [N]one [A]ll [Ab]ort [I]nstalled [No]tInstalled or (1 2 3, 1-3, ^4)
+==> 
+==> Making package: wl-screenrec 0.2.0-2 (Sat 13 Jun 2026 15:55:42)
+==> Retrieving sources...
+  -> Downloading v0.2.0.tar.gz...
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0  0      0   0      0   0      0      0      0                              0  0      0   0      0   0      0      0      0                              0
+  0      0   0      0   0      0      0      0           00:05              0100  50341   0  50341   0      0   8254      0           00:06              0100  50341   0  50341   0      0   8253      0           00:06              0100  50341   0  50341   0      0   8253      0           00:06              0
+==> WARNING: Skipping verification of source file PGP signatures.
+==> Validating source files with sha256sums...
+    v0.2.0.tar.gz ... Passed
+:: [1m(1/1) Parsing SRCINFO: wl-screenrec[0m
+==> Making package: wl-screenrec 0.2.0-2 (Sat 13 Jun 2026 15:55:53)
+==> Checking runtime dependencies...
+==> Checking buildtime dependencies...
+==> Retrieving sources...
+  -> Found v0.2.0.tar.gz
+==> Validating source files with sha256sums...
+    v0.2.0.tar.gz ... Passed
+==> Removing existing $srcdir/ directory...
+==> Extracting sources...
+  -> Extracting v0.2.0.tar.gz with bsdtar
+==> Starting prepare()...
+==> Sources are ready.
+==> Making package: wl-screenrec 0.2.0-2 (Sat 13 Jun 2026 15:56:01)
+==> Checking runtime dependencies...
+==> Checking buildtime dependencies...
+==> WARNING: Using existing $srcdir/ tree
+==> Starting build()...
+   Compiling proc-macro2 v1.0.101
+   Compiling unicode-ident v1.0.18
+   Compiling libc v0.2.175
+   Compiling shlex v1.3.0
+   Compiling memchr v2.7.5
+   Compiling find-msvc-tools v0.1.1
+   Compiling pkg-config v0.3.32
+   Compiling glob v0.3.3
+   Compiling minimal-lexical v0.2.1
+   Compiling regex-syntax v0.8.6
+   Compiling cfg-if v1.0.3
+   Compiling bitflags v2.9.4
+   Compiling libloading v0.8.8
+   Compiling log v0.4.28
+   Compiling cc v1.2.36
+   Compiling bindgen v0.72.1
+   Compiling either v1.15.0
+   Compiling rustc-hash v2.1.1
+   Compiling rustix v1.0.8
+   Compiling itertools v0.13.0
+   Compiling linux-raw-sys v0.9.4
+   Compiling nom v7.1.3
+   Compiling utf8parse v0.2.2
+   Compiling anstyle-parse v0.2.7
+   Compiling quote v1.0.40
+   Compiling syn v2.0.106
+   Compiling clang-sys v1.8.1
+   Compiling regex-automata v0.4.10
+   Compiling num_cpus v1.17.0
+   Compiling quick-xml v0.37.5
+   Compiling anstyle-query v1.1.4
+   Compiling wayland-client v0.31.11
+   Compiling rustix v0.38.44
+   Compiling wayland-sys v0.31.7
+   Compiling anstyle v1.0.11
+   Compiling ash v0.38.0+1.3.281
+   Compiling cexpr v0.6.0
+   Compiling colorchoice v1.0.4
+   Compiling drm-sys v0.8.0
+   Compiling downcast-rs v1.2.1
+   Compiling is_terminal_polyfill v1.70.1
+   Compiling smallvec v1.15.1
+   Compiling anstream v0.6.20
+   Compiling time-core v0.1.6
+   Compiling clap_lex v0.7.5
+   Compiling signal-hook v0.3.18
+   Compiling regex v1.11.2
+   Compiling linux-raw-sys v0.4.15
+   Compiling strsim v0.11.1
+   Compiling drm-fourcc v2.2.0
+   Compiling heck v0.5.0
+   Compiling linux-raw-sys v0.6.5
+   Compiling wayland-scanner v0.31.7
+   Compiling powerfmt v0.2.0
+   Compiling num-conv v0.1.0
+   Compiling time-macros v0.2.24
+   Compiling deranged v0.5.3
+   Compiling clap_builder v4.5.47
+   Compiling signal-hook-registry v1.4.6
+   Compiling anyhow v1.0.99
+   Compiling num_threads v0.1.7
+   Compiling ffmpeg-next v8.0.0
+   Compiling thiserror v2.0.16
+   Compiling wayland-backend v0.3.11
+   Compiling drm-ffi v0.9.0
+   Compiling mio v1.0.4
+   Compiling termcolor v1.4.1
+   Compiling wl-screenrec v0.2.0 (/home/imad/.cache/yay/wl-screenrec/src/wl-screenrec-0.2.0)
+   Compiling signal-hook-mio v0.2.4
+   Compiling log-once v0.4.1
+   Compiling time v0.3.43
+   Compiling human-size v0.4.3
+   Compiling simplelog v0.12.2
+   Compiling wayland-protocols v0.32.9
+   Compiling clap_derive v4.5.47
+   Compiling bytemuck_derive v1.10.1
+   Compiling thiserror-impl v2.0.16
+   Compiling wayland-protocols-wlr v0.3.9
+   Compiling ffmpeg-sys-next v8.0.1 (https://github.com/russelltg/rust-ffmpeg-sys?branch=vulkan#ff4b564d)
+   Compiling clap v4.5.47
+   Compiling clap_complete v4.5.57
+   Compiling bytemuck v1.23.2
+   Compiling drm v0.14.1
+error[E0004]: non-exhaustive patterns: `sys::AVColorPrimaries::AVCOL_PRI_EXT_BASE` and `sys::AVColorPrimaries::AVCOL_PRI_EXT_NB` not covered
+    --> /home/imad/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ffmpeg-next-8.0.0/src/util/color/primaries.rs:48:15
+     |
+  48 |         match value {
+     |               ^^^^^ patterns `sys::AVColorPrimaries::AVCOL_PRI_EXT_BASE` and `sys::AVColorPrimaries::AVCOL_PRI_EXT_NB` not covered
+     |
+note: `sys::AVColorPrimaries` defined here
+    --> /home/imad/.cache/yay/wl-screenrec/src/wl-screenrec-0.2.0/target/release/build/ffmpeg-sys-next-e1c415a1c3af5a74/out/bindings.rs:4743:1
+     |
+4743 | pub enum AVColorPrimaries {
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+...
+4759 |     AVCOL_PRI_EXT_BASE = 256,
+     |     ------------------ not covered
+4760 |     AVCOL_PRI_EXT_NB = 257,
+     |     ---------------- not covered
+     = note: the matched value is of type `sys::AVColorPrimaries`
+help: ensure that all possible cases are being handled by adding a match arm with a wildcard pattern, a match arm with multiple or-patterns as shown, or multiple match arms
+     |
+  68 ~             AVCOL_PRI_EBU3213 => Primaries::EBU3213,
+  69 ~             sys::AVColorPrimaries::AVCOL_PRI_EXT_BASE | sys::AVColorPrimaries::AVCOL_PRI_EXT_NB => todo!(),
+     |
+
+error[E0004]: non-exhaustive patterns: `sys::AVColorTransferCharacteristic::AVCOL_TRC_EXT_BASE` and `sys::AVColorTransferCharacteristic::AVCOL_TRC_EXT_NB` not covered
+    --> /home/imad/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ffmpeg-next-8.0.0/src/util/color/transfer_characteristic.rs:45:15
+     |
+  45 |         match value {
+     |               ^^^^^ patterns `sys::AVColorTransferCharacteristic::AVCOL_TRC_EXT_BASE` and `sys::AVColorTransferCharacteristic::AVCOL_TRC_EXT_NB` not covered
+     |
+note: `sys::AVColorTransferCharacteristic` defined here
+    --> /home/imad/.cache/yay/wl-screenrec/src/wl-screenrec-0.2.0/target/release/build/ffmpeg-sys-next-e1c415a1c3af5a74/out/bindings.rs:4776:1
+     |
+4776 | pub enum AVColorTransferCharacteristic {
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+...
+4797 |     AVCOL_TRC_EXT_BASE = 256,
+     |     ------------------ not covered
+4798 |     AVCOL_TRC_EXT_NB = 257,
+     |     ---------------- not covered
+     = note: the matched value is of type `sys::AVColorTransferCharacteristic`
+help: ensure that all possible cases are being handled by adding a match arm with a wildcard pattern, a match arm with multiple or-patterns as shown, or multiple match arms
+     |
+  65 ~             AVCOL_TRC_ARIB_STD_B67 => TransferCharacteristic::ARIB_STD_B67,
+  66 ~             sys::AVColorTransferCharacteristic::AVCOL_TRC_EXT_BASE | sys::AVColorTransferCharacteristic::AVCOL_TRC_EXT_NB => todo!(),
+     |
+
+error[E0004]: non-exhaustive patterns: `sys::AVFrameSideDataType::AV_FRAME_DATA_EXIF` not covered
+    --> /home/imad/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ffmpeg-next-8.0.0/src/util/frame/side_data.rs:89:15
+     |
+  89 |         match value {
+     |               ^^^^^ pattern `sys::AVFrameSideDataType::AV_FRAME_DATA_EXIF` not covered
+     |
+note: `sys::AVFrameSideDataType` defined here
+    --> /home/imad/.cache/yay/wl-screenrec/src/wl-screenrec-0.2.0/target/release/build/ffmpeg-sys-next-e1c415a1c3af5a74/out/bindings.rs:5277:1
+     |
+5277 | pub enum AVFrameSideDataType {
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+...
+5309 |     AV_FRAME_DATA_EXIF = 31,
+     |     ------------------ not covered
+     = note: the matched value is of type `sys::AVFrameSideDataType`
+help: ensure that all possible cases are being handled by adding a match arm with a wildcard pattern or an explicit pattern as shown
+     |
+ 150 ~             AV_FRAME_DATA_3D_REFERENCE_DISPLAYS => Type::THREE_D_REFERENCE_DISPLAYS,
+ 151 ~             sys::AVFrameSideDataType::AV_FRAME_DATA_EXIF => todo!(),
+     |
+
+error[E0004]: non-exhaustive patterns: `sys::AVCodecID::AV_CODEC_ID_JPEGXS`, `sys::AVCodecID::AV_CODEC_ID_ADPCM_IMA_HVQM4`, `sys::AVCodecID::AV_CODEC_ID_ADPCM_IMA_PDA` and 7 more not covered
+    --> /home/imad/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ffmpeg-next-8.0.0/src/codec/id.rs:711:15
+     |
+ 711 |         match value {
+     |               ^^^^^ patterns `sys::AVCodecID::AV_CODEC_ID_JPEGXS`, `sys::AVCodecID::AV_CODEC_ID_ADPCM_IMA_HVQM4`, `sys::AVCodecID::AV_CODEC_ID_ADPCM_IMA_PDA` and 7 more not covered
+     |
+note: `sys::AVCodecID` defined here
+    --> /home/imad/.cache/yay/wl-screenrec/src/wl-screenrec-0.2.0/target/release/build/ffmpeg-sys-next-e1c415a1c3af5a74/out/bindings.rs:5876:1
+     |
+5876 | pub enum AVCodecID {
+     | ^^^^^^^^^^^^^^^^^^
+...
+6152 |     AV_CODEC_ID_JPEGXS = 275,
+     |     ------------------ not covered
+...
+6244 |     AV_CODEC_ID_ADPCM_IMA_HVQM4 = 69686,
+     |     --------------------------- not covered
+6245 |     AV_CODEC_ID_ADPCM_IMA_PDA = 69687,
+     |     ------------------------- not covered
+6246 |     AV_CODEC_ID_ADPCM_N64 = 69688,
+     |     --------------------- not covered
+6247 |     AV_CODEC_ID_ADPCM_IMA_HVQM2 = 69689,
+     |     --------------------------- not covered
+     = note: the matched value is of type `sys::AVCodecID`
+help: ensure that all possible cases are being handled by adding a match arm with a wildcard pattern as shown, or multiple match arms
+     |
+1391 ~             AV_CODEC_ID_IVTV_VBI => Id::IVTV_VBI,
+1392 ~             _ => todo!(),
+     |
+
+error[E0004]: non-exhaustive patterns: `sys::AVPacketSideDataType::AV_PKT_DATA_EXIF` not covered
+    --> /home/imad/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ffmpeg-next-8.0.0/src/codec/packet/side_data.rs:80:15
+     |
+  80 |         match value {
+     |               ^^^^^ pattern `sys::AVPacketSideDataType::AV_PKT_DATA_EXIF` not covered
+     |
+note: `sys::AVPacketSideDataType` defined here
+    --> /home/imad/.cache/yay/wl-screenrec/src/wl-screenrec-0.2.0/target/release/build/ffmpeg-sys-next-e1c415a1c3af5a74/out/bindings.rs:6749:1
+     |
+6749 | pub enum AVPacketSideDataType {
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+...
+6831 |     AV_PKT_DATA_EXIF = 40,
+     |     ---------------- not covered
+     = note: the matched value is of type `sys::AVPacketSideDataType`
+help: ensure that all possible cases are being handled by adding a match arm with a wildcard pattern or an explicit pattern as shown
+     |
+ 146 ~             AV_PKT_DATA_RTCP_SR => Type::RTCP_SR,
+ 147 ~             sys::AVPacketSideDataType::AV_PKT_DATA_EXIF => todo!(),
+     |
+
+For more information about this error, try `rustc --explain E0004`.
+error: could not compile `ffmpeg-next` (lib) due to 5 previous errors
+==> ERROR: A failure occurred in build().
+    Aborting...
+ -> error making: wl-screenrec-exit status 4
+ -> Failed to install the following packages. Manual intervention is required:
+wl-screenrec - exit status 4
+ -> No AUR package found for google-chrome-stable
+ -> no package found for targets

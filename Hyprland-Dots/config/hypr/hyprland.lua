@@ -201,7 +201,7 @@ hl.config({
 	},
 	cursor = {
 		sync_gsettings_theme = true,
-		no_hardware_cursors = 1,
+		no_hardware_cursors = false,
 		enable_hyprcursor = true,
 		warp_on_change_workspace = 2,
 		no_warps = false,
@@ -266,7 +266,8 @@ hl.animation({ leaf = "specialWorkspace", enabled = true, speed = 3, bezier = "m
 -- ------------------------
 hl.on("hyprland.start", function()
 	hl.exec_cmd(HOME .. "/.config/hypr/initial-boot.sh")
-	hl.exec_cmd("swww-daemon --format argb")
+	hl.exec_cmd("awww-daemon --format argb")
+	hl.exec_cmd("bash -c 'sleep 0.5 && " .. scripts .. "/WallpaperRestore.sh'")
 	hl.exec_cmd("dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP")
 	hl.exec_cmd("systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP")
 	hl.exec_cmd(scripts .. "/KeybindsLayoutInit.sh")

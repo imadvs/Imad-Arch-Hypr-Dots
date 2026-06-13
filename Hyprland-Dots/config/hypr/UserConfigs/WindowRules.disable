@@ -1,0 +1,7 @@
+windowrule = match:class ^(anki)$, opacity 0.6 0.6
+windowrule = match:class ^(antigravity)$, opacity 0.8 0.7
+windowrule = match:class ^([Bb]rave-browser(-beta|-dev|-unstable)?)$, opacity 0.9 0.8
+windowrule = match:class ^(brave)$, opacity 0.9 0.8
+windowrule = match:class ^(chrome-.*)$, opacity 0.8 0.7
+windowrule = match:class ^(google-chrome(-stable)?)$, opacity 0.8 0.7
+windowrule = match:class ^(kitty)$, opacity 0.8 0.7

@@ -1,0 +1,20 @@
+<application>
+  <component name="Trusted.Paths">
+    <option name="TRUSTED_PROJECT_PATHS">
+      <map>
+        <entry key="$USER_HOME$/.cache/JetBrains/CLion2025.3/demo/LearnCppProject" value="true" />
+        <entry key="$USER_HOME$/Documents/Coding" value="true" />
+        <entry key="$USER_HOME$/Documents/Project 1 L4 - Bank Extension 2" value="true" />
+        <entry key="$USER_HOME$/Documents/Project 2 L4 - ATM System" value="true" />
+        <entry key="$USER_HOME$/Documents/Project1 - Utility library" value="true" />
+      </map>
+    </option>
+  </component>
+  <component name="Trusted.Paths.Settings">
+    <option name="TRUSTED_PATHS">
+      <list>
+        <option value="$USER_HOME$/Documents" />
+      </list>
+    </option>
+  </component>
+</application>

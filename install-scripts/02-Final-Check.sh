@@ -9,7 +9,7 @@ packages=(
   rofi-wayland
   imagemagick
   swaync
-  swww
+  awww
   wallust
   waybar
   wl-clipboard
@@ -46,7 +46,7 @@ local_missing=()
 
 # Function to check if a packages are installed using pacman
 is_installed_pacman() {
-    pacman -Qi "$1" &>/dev/null
+    pacman -Qi "$1" &>/dev/null || pacman -Qi "$1-git" &>/dev/null
 }
 
 # Loop through each package

@@ -7,7 +7,7 @@ export ZSH="$HOME/.oh-my-zsh"
 
 # Starship
 export PATH="$HOME/.local/bin:$PATH"
-eval "$(starship init zsh)"
+# eval "$(starship init zsh)"  # install with: sudo pacman -S starship
 
 plugins=(
     git
@@ -61,7 +61,7 @@ alias sbp='sudo siteblock pause'
 alias sbr='sudo siteblock resume'
 alias sbs='siteblock status'
 alias fixconfig='cd ~/.config && aider --model groq/llama-3.3-70b-versatile'
-source ~/.my_secrets
+[[ -f ~/.my_secrets ]] && source ~/.my_secrets
 
 
 

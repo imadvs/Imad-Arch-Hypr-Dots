@@ -11,4 +11,4 @@ fi
 
 # Launch Chrome in app mode (no address bar)
 # Using uwsm app wrapper as preferred by user config
-uwsm app -- google-chrome-stable --password-store=basic --new-window --app="$URL"
+uwsm app -- google-chrome-stable --disable-gpu --ozone-platform-hint=auto --password-store=basic --new-window --app="$URL"

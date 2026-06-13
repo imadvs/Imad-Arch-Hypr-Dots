@@ -1,0 +1,35 @@
+Extracting files from 'theme' directory to '/home/imad/.themes'...
+Extracting theme/Flat-Remix-GTK-Blue-Dark.tar.gz to /home/imad/.themes...
+[32m[OK](B[m Extracted theme/Flat-Remix-GTK-Blue-Dark.tar.gz to /home/imad/.themes
+Extracting theme/Flat-Remix-GTK-Blue-Light.tar.gz to /home/imad/.themes...
+[32m[OK](B[m Extracted theme/Flat-Remix-GTK-Blue-Light.tar.gz to /home/imad/.themes
+[32m[OK](B[m Extraction from 'theme' directory completed
+Extracting files from 'icon' directory to '/home/imad/.icons'...
+Extracting icon/Bibata-Modern-Ice.zip to /home/imad/.icons...
+[icon/Bibata-Modern-Ice.zip]
+  End-of-central-directory signature not found.  Either this file is not
+  a zipfile, or it constitutes one disk of a multi-part archive.  In the
+  latter case the central directory and zipfile comment will be found on
+  the last disk(s) of this archive.
+unzip:  cannot find zipfile directory in one of icon/Bibata-Modern-Ice.zip or
+        icon/Bibata-Modern-Ice.zip.zip, and cannot find icon/Bibata-Modern-Ice.zip.ZIP, period.
+[31m[ERROR](B[m Extraction of icon/Bibata-Modern-Ice.zip failed
+Extracting icon/Flat-Remix-Blue-Dark.zip to /home/imad/.icons...
+[icon/Flat-Remix-Blue-Dark.zip]
+  End-of-central-directory signature not found.  Either this file is not
+  a zipfile, or it constitutes one disk of a multi-part archive.  In the
+  latter case the central directory and zipfile comment will be found on
+  the last disk(s) of this archive.
+unzip:  cannot find zipfile directory in one of icon/Flat-Remix-Blue-Dark.zip or
+        icon/Flat-Remix-Blue-Dark.zip.zip, and cannot find icon/Flat-Remix-Blue-Dark.zip.ZIP, period.
+[31m[ERROR](B[m Extraction of icon/Flat-Remix-Blue-Dark.zip failed
+Extracting icon/Flat-Remix-Blue-Light.zip to /home/imad/.icons...
+[icon/Flat-Remix-Blue-Light.zip]
+  End-of-central-directory signature not found.  Either this file is not
+  a zipfile, or it constitutes one disk of a multi-part archive.  In the
+  latter case the central directory and zipfile comment will be found on
+  the last disk(s) of this archive.
+unzip:  cannot find zipfile directory in one of icon/Flat-Remix-Blue-Light.zip or
+        icon/Flat-Remix-Blue-Light.zip.zip, and cannot find icon/Flat-Remix-Blue-Light.zip.ZIP, period.
+[31m[ERROR](B[m Extraction of icon/Flat-Remix-Blue-Light.zip failed
+[32m[OK](B[m Extraction from 'icon' directory completed

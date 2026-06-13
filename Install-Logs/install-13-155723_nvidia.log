@@ -1,0 +1,110 @@
+Sync Explicit (1): nvidia-open-dkms-610.43.02-2
+resolving dependencies...
+looking for conflicting packages...
+:: nvidia-open-dkms-610.43.02-2 and nvidia-580xx-dkms-580.159.04-2 are in conflict (NVIDIA-MODULE). Remove nvidia-580xx-dkms? [y/N] error: unresolvable package conflicts detected
+error: failed to prepare transaction (conflicting dependencies)
+
+:: nvidia-open-dkms-610.43.02-2 and nvidia-580xx-dkms-580.159.04-2 are in conflict
+ -> error installing repo packages
+Sync Explicit (1): nvidia-open-dkms-610.43.02-2
+resolving dependencies...
+looking for conflicting packages...
+:: nvidia-open-dkms-610.43.02-2 and nvidia-580xx-dkms-580.159.04-2 are in conflict (NVIDIA-MODULE). Remove nvidia-580xx-dkms? [y/N] error: unresolvable package conflicts detected
+error: failed to prepare transaction (conflicting dependencies)
+
+:: nvidia-open-dkms-610.43.02-2 and nvidia-580xx-dkms-580.159.04-2 are in conflict
+ -> error installing repo packages
+Nvidia modules already included in /etc/mkinitcpio.conf
+[34m[INFO](B[m Rebuilding [33mInitramfs(B[m...
+==> Building image from preset: /etc/mkinitcpio.d/linux-cachyos-lts.preset: 'default'
+==> Using default configuration file: '/etc/mkinitcpio.conf'
+  -> -k /boot/vmlinuz-linux-cachyos-lts -g /boot/initramfs-linux-cachyos-lts.img
+==> Using drop-in configuration file: '10-chwd.conf'
+==> Using drop-in configuration file: '10-chwd-kms.conf'
+==> Using drop-in configuration file: '10-limine-snapper-sync.conf'
+==> Starting build: '6.18.35-1-cachyos-lts'
+  -> Running build hook: [base]
+  -> Running build hook: [systemd]
+  -> Running build hook: [autodetect]
+  -> Running build hook: [microcode]
+  -> Running build hook: [modconf]
+  -> Running build hook: [block]
+  -> Running build hook: [keyboard]
+  -> Running build hook: [sd-vconsole]
+  -> Running build hook: [plymouth]
+  -> Running build hook: [filesystems]
+  -> Running build hook: [sd-btrfs-overlayfs]
+==> Generating module dependencies
+==> Creating zstd-compressed initcpio image: '/boot/initramfs-linux-cachyos-lts.img'
+  -> Early uncompressed CPIO image generation successful
+==> Initcpio image generation successful
+==> Building image from preset: /etc/mkinitcpio.d/linux-cachyos.preset: 'default'
+==> Using default configuration file: '/etc/mkinitcpio.conf'
+  -> -k /boot/vmlinuz-linux-cachyos -g /boot/initramfs-linux-cachyos.img
+==> Using drop-in configuration file: '10-chwd.conf'
+==> Using drop-in configuration file: '10-chwd-kms.conf'
+==> Using drop-in configuration file: '10-limine-snapper-sync.conf'
+==> Starting build: '7.0.12-1-cachyos'
+  -> Running build hook: [base]
+  -> Running build hook: [systemd]
+  -> Running build hook: [autodetect]
+  -> Running build hook: [microcode]
+  -> Running build hook: [modconf]
+  -> Running build hook: [block]
+  -> Running build hook: [keyboard]
+  -> Running build hook: [sd-vconsole]
+  -> Running build hook: [plymouth]
+  -> Running build hook: [filesystems]
+  -> Running build hook: [sd-btrfs-overlayfs]
+==> Generating module dependencies
+==> Creating zstd-compressed initcpio image: '/boot/initramfs-linux-cachyos.img'
+  -> Early uncompressed CPIO image generation successful
+==> Initcpio image generation successful
+[1;33m==> WARNING: This does not update Limine boot entries.[0m
+[1;33m    Use 'limine-mkinitcpio' or 'limine-update' instead.[0m
+==> Would you like to run 'limine-mkinitcpio' now? [Y/n]: Building initramfs for linux-cachyos-lts (6.18.35-1-cachyos-lts)
+==> Using drop-in configuration file: '10-chwd.conf'
+==> Using drop-in configuration file: '10-chwd-kms.conf'
+==> Using drop-in configuration file: '10-limine-snapper-sync.conf'
+==> Starting build: '6.18.35-1-cachyos-lts'
+  -> Running build hook: [base]
+  -> Running build hook: [systemd]
+  -> Running build hook: [autodetect]
+  -> Running build hook: [microcode]
+  -> Running build hook: [modconf]
+  -> Running build hook: [block]
+  -> Running build hook: [keyboard]
+  -> Running build hook: [sd-vconsole]
+  -> Running build hook: [plymouth]
+  -> Running build hook: [filesystems]
+  -> Running build hook: [sd-btrfs-overlayfs]
+==> Generating module dependencies
+==> Creating zstd-compressed initcpio image: '/tmp/staging_initramfs.img'
+  -> Early uncompressed CPIO image generation successful
+==> Initcpio image generation successful
+Kernel stored in /boot/5e97f4a76f2e4699a0b2b08850d47439/linux-cachyos-lts/vmlinuz-linux-cachyos-lts
+Initramfs stored in /boot/5e97f4a76f2e4699a0b2b08850d47439/linux-cachyos-lts/initramfs-linux-cachyos-lts
+[1;32mUpdated:[0m /boot/limine.conf
+Building initramfs for linux-cachyos (7.0.12-1-cachyos)
+==> Using drop-in configuration file: '10-chwd.conf'
+==> Using drop-in configuration file: '10-chwd-kms.conf'
+==> Using drop-in configuration file: '10-limine-snapper-sync.conf'
+==> Starting build: '7.0.12-1-cachyos'
+  -> Running build hook: [base]
+  -> Running build hook: [systemd]
+  -> Running build hook: [autodetect]
+  -> Running build hook: [microcode]
+  -> Running build hook: [modconf]
+  -> Running build hook: [block]
+  -> Running build hook: [keyboard]
+  -> Running build hook: [sd-vconsole]
+  -> Running build hook: [plymouth]
+  -> Running build hook: [filesystems]
+  -> Running build hook: [sd-btrfs-overlayfs]
+==> Generating module dependencies
+==> Creating zstd-compressed initcpio image: '/tmp/staging_initramfs.img'
+  -> Early uncompressed CPIO image generation successful
+==> Initcpio image generation successful
+Kernel stored in /boot/5e97f4a76f2e4699a0b2b08850d47439/linux-cachyos/vmlinuz-linux-cachyos
+Initramfs stored in /boot/5e97f4a76f2e4699a0b2b08850d47439/linux-cachyos/initramfs-linux-cachyos
+[1;32mUpdated:[0m /boot/limine.conf

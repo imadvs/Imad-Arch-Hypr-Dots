@@ -16,7 +16,7 @@ echo "Visiting Workspace 1..."
 hyprctl dispatch 'hl.dsp.focus({ workspace = 1 })'
 sleep 1
 echo "Launching CLion..."
-uwsm app -- /home/imad/.local/share/JetBrains/Toolbox/scripts/clion &
+uwsm app -- /usr/bin/clion &
 sleep 8
 
 # --- Workspace 2 ---
@@ -28,7 +28,7 @@ uwsm app -- obsidian &
 sleep 2
 
 echo "Launching ProgrammingAdvices..."
-uwsm app -- google-chrome-stable --class="chrome-programmingadvices" --password-store=basic --new-window --app="https://programmingadvices.com/l/dashboard" &
+uwsm app -- google-chrome-stable --disable-gpu --ozone-platform-hint=auto --class="chrome-programmingadvices" --password-store=basic --new-window --app="https://programmingadvices.com/l/dashboard" &
 sleep 7 # Wait for P.Advices to spawn
 
 # Resize Workspace 2
@@ -43,10 +43,10 @@ echo "Visiting Workspace 3..."
 hyprctl dispatch 'hl.dsp.focus({ workspace = 3 })'
 sleep 1
 echo "Launching Busuu..."
-uwsm app -- google-chrome-stable --class="chrome-busuu" --password-store=basic --new-window --app="https://www.busuu.com" &
+uwsm app -- google-chrome-stable --disable-gpu --ozone-platform-hint=auto --class="chrome-busuu" --password-store=basic --new-window --app="https://www.busuu.com" &
 sleep 1
 echo "Launching Managementdose..."
-uwsm app -- google-chrome-stable --class="chrome-managementdose" --password-store=basic --new-window --app="https://managementdose.com" &
+uwsm app -- google-chrome-stable --disable-gpu --ozone-platform-hint=auto --class="chrome-managementdose" --password-store=basic --new-window --app="https://managementdose.com" &
 sleep 3
 
 # Resize Workspace 3

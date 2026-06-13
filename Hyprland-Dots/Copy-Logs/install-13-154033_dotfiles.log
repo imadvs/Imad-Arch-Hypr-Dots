@@ -1,0 +1,51 @@
+[34m[INFO](B[m Nvidia GPU detected. Setting up proper env's and configs
+[33m[NOTE](B[m kb_layout [35mus(B[m configured in settings.
+[34m[INFO](B[m Quickshell detected - enabling in startup and refresh scripts
+[32m[OK](B[m Default editor set to [35mnvim(B[m.
+[32m[OK](B[m You have chosen ≥ 1440p resolution.
+[32m[OK](B[m 12H format set on waybar clocks succesfully.
+[32m[OK](B[m Rainbow borders are now disabled.
+[32m[OK](B[m - Copy completed for [33mfastfetch(B[m
+[32m[OK](B[m - Copy completed for [33mkitty(B[m
+[32m[OK](B[m - Copy completed for [33mrofi(B[m
+[32m[OK](B[m - Copy completed for [33mswaync(B[m
+[32m[OK](B[m - Copy completed for [33mwaybar(B[m
+[33m[NOTE](B[m - Found old Quickshell startup command, updating to new overview config...
+[32m[OK](B[m - Updated Quickshell startup command to use overview config
+[32m[OK](B[m Some [35mwallpapers(B[m copied successfully!
+[32m[OK](B[m Custom Desktop Files copied.
+[33m[NOTE](B[m - Syncing JetBrains configurations...
+Copying config for CLion2025.3...
+[32m[OK](B[m - CLion2025.3 config synchronized.
+Copying config for Rider2025.3...
+[32m[OK](B[m - Rider2025.3 config synchronized.
+Copying config for Rider2026.1...
+[32m[OK](B[m - Rider2026.1 config synchronized.
+[[1m[34mI[39m[0m] [1m[35mimage[39m[0m: .wallpaper_current
+[[1m[34mI[39m[0m] [1m[35mimage parser[39m[0m: Using [94m[1mKmeans[0m[39m backend parser
+[[1m[34mI[39m[0m] [1m[35mthreshold[39m[0m: Using a threshold of 11 in between colors.
+[[1m[34mI[39m[0m] [1m[35mcolorspace[39m[0m: Using [32m[1mLabMixed[0m[39m colorspace variation
+[[1m[34mI[39m[0m] [1m[35mscheme palette[39m[0m: Using [94m[1mDark16[0m[39m palette
+▐⠂       ▌     0.000 s	Generating color scheme..▐⠈       ▌     0.080 s	Generating color scheme..▐ ⠂      ▌     0.160 s	Generating color scheme..▐ ⠠      ▌     0.241 s	Generating color scheme..▐  ⡀     ▌     0.321 s	Generating color scheme..▐  ⠠     ▌     0.401 s	Generating color scheme..▐   ⠂    ▌     0.481 s	Generating color scheme..▐   ⠈    ▌     0.561 s	Generating color scheme..▐    ⠂   ▌     0.641 s	Generating color scheme..▐    ⠠   ▌     0.721 s	Generating color scheme..▐     ⡀  ▌     0.801 s	Generating color scheme..▐     ⠠  ▌     0.882 s	Generating color scheme..▐      ⠂ ▌     0.962 s	Generating color scheme..▐      ⠈ ▌     1.042 s	Generating color scheme..▐       ⠂▌     1.122 s	Generating color scheme..▐       ⠠▌     1.202 s	Generating color scheme..▐       ⡀▌     1.282 s	Generating color scheme..▐      ⠠ ▌     1.362 s	Generating color scheme..▐      ⠂ ▌     1.443 s	Generating color scheme..▐     ⠈  ▌     1.523 s	Generating color scheme..▐     ⠂  ▌     1.603 s	Generating color scheme..▐    ⠠   ▌     1.683 s	Generating color scheme..▐    ⡀   ▌     1.763 s	Generating color scheme..▐   ⠠    ▌     1.843 s	Generating color scheme..▐   ⠂    ▌     1.923 s	Generating color scheme..▐  ⠈     ▌     2.003 s	Generating color scheme..▐  ⠂     ▌     2.084 s	Generating color scheme..▐ ⠠      ▌     2.164 s	Generating color scheme..▐ ⡀      ▌     2.244 s	Generating color scheme..▐⠠       ▌     2.324 s	Generating color scheme..▐⠂       ▌     2.404 s	Generating color scheme..▐⠈       ▌     2.484 s	Generating color scheme..▐ ⠂      ▌     2.564 s	Generating color scheme..[    🗸    ]     2.576 s	Generating color scheme..
+[[1m[34mI[39m[0m] Color scheme palette generated!
+[48;2;78;73;75m    [49m[48;2;38;23;29m    [49m[48;2;149;56;28m    [49m[48;2;140;104;76m    [49m[48;2;106;117;114m    [49m[48;2;187;127;58m    [49m[48;2;175;158;134m    [49m[48;2;236;225;208m    [49m
+[48;2;165;157;146m    [49m[48;2;51;31;39m    [49m[48;2;199;74;38m    [49m[48;2;187;139;101m    [49m[48;2;142;156;152m    [49m[48;2;250;169;78m    [49m[48;2;233;211;178m    [49m[48;2;236;225;208m    [49m
+
+[[1m[34mI[39m[0m] [1m[35mtemplates[39m[0m: Writing templates..
+ [1m[34m*[39m[0m Templated [1myt-x[0m to '[3m/home/imad/.config/yt-x/extensions/themes/default.theme[0m'
+ [1m[34m*[39m[0m Templated [1mhypr[0m to '[3m/home/imad/.config/hypr/wallust/wallust-hyprland.conf[0m'
+ [1m[34m*[39m[0m Templated [1mkitty[0m to '[3m/home/imad/.config/kitty/kitty-themes/01-Wallust.conf[0m'
+ [1m[34m*[39m[0m Templated [1mrofi[0m to '[3m/home/imad/.config/rofi/wallust/colors-rofi.rasi[0m'
+ [1m[34m*[39m[0m Templated [1msequences[0m to '[3m/home/imad/.cache/wallust/sequences[0m'
+ [1m[34m*[39m[0m Templated [1mwaybar[0m to '[3m/home/imad/.config/waybar/wallust/colors-waybar.css[0m'
+ [1m[34m*[39m[0m Templated [1mclock-rs[0m to '[3m/home/imad/.config/clock-rs/conf.toml[0m'
+ [1m[34m*[39m[0m Templated [1mpywal[0m to '[3m/home/imad/.cache/wal/colors-wal.vim[0m'
+ [1m[34m*[39m[0m Templated [1mquickshell[0m to '[3m/home/imad/.config/quickshell/qml_color.json[0m'
+ [1m[34m*[39m[0m Templated [1mhypr_lua[0m to '[3m/home/imad/.config/hypr/wallust/wallust-hyprland.lua[0m'
+ [1m[34m*[39m[0m Templated [1mrmpc[0m to '[3m/home/imad/.config/rmpc/themes/wallust.ron[0m'
+ [1m[34m*[39m[0m Templated [1mbtop[0m to '[3m/home/imad/.config/btop/themes/wallust.theme[0m'
+ [1m[34m*[39m[0m Templated [1mcava[0m to '[3m/home/imad/.config/cava/config[0m'
+ [1m[34m*[39m[0m Templated [1mchrome[0m to '[3m/home/imad/.config/google-chrome-theme/manifest.json[0m'
+[[1m[34mI[39m[0m] [1m[35mcache[39m[0m: Saving scheme to cache.
+
+[5m[1m[38;2;236;225;208mE [39m[0m[0m[5m[1m[38;2;233;211;178mN [39m[0m[0m[5m[1m[38;2;250;169;78mJ [39m[0m[0m[5m[1m[38;2;142;156;152mO [39m[0m[0m[5m[1m[38;2;187;139;101mY [39m[0m[0m[9m  [0m[5m[1m[38;2;199;74;38mT [39m[0m[0m[5m[1m[38;2;51;31;39mH [39m[0m[0m[5m[1m[38;2;165;157;146mE [39m[0m[0m[9m  [0m[5m[1m[38;2;236;225;208mP [39m[0m[0m[5m[1m[38;2;175;158;134mA [39m[0m[0m[5m[1m[38;2;187;127;58mL [39m[0m[0m[5m[1m[38;2;106;117;114mE [39m[0m[0m[5m[1m[38;2;140;104;76mT [39m[0m[0m[5m[1m[38;2;149;56;28mT [39m[0m[0m[5m[1m[38;2;38;23;29mE [39m[0m[0m[5m[1m[38;2;247;240;228m! [39m[0m[0m

@@ -583,24 +583,36 @@ if [ -d "$DIRPATHw" ]; then
       cp -r "$DIRPATHw" "$DIRPATHw-backup-$BACKUP_DIR" 2>&1 | tee -a "$LOG"
       echo -e "${NOTE} - Backed up $DIRW to $DIRPATHw-backup-$BACKUP_DIR." 2>&1 | tee -a "$LOG"
 
+      # Save old symlink targets before removal
+      OLD_WAYBAR_CONFIG=""
+      OLD_WAYBAR_STYLE=""
+      if [ -L "$DIRPATHw/config" ]; then
+        OLD_WAYBAR_CONFIG=$(readlink "$DIRPATHw/config")
+        echo "${NOTE} - Saved waybar config symlink: $OLD_WAYBAR_CONFIG" 2>&1 | tee -a "$LOG"
+      fi
+      if [ -L "$DIRPATHw/style.css" ]; then
+        OLD_WAYBAR_STYLE=$(readlink "$DIRPATHw/style.css")
+        echo "${NOTE} - Saved waybar style symlink: $OLD_WAYBAR_STYLE" 2>&1 | tee -a "$LOG"
+      fi
+
       # Remove the old $DIRPATHw and copy the new one
       rm -rf "$DIRPATHw" && cp -r "config/$DIRW" "$DIRPATHw" 2>&1 | tee -a "$LOG"
 
-      # Step 1: Handle waybar symlinks
-      for file in "config" "style.css"; do
-        symlink="$DIRPATHw-backup-$BACKUP_DIR/$file"
-        target_file="$DIRPATHw/$file"
-
-        if [ -L "$symlink" ]; then
-          symlink_target=$(readlink "$symlink")
-          if [ -f "$symlink_target" ]; then
-            rm -f "$target_file" && cp -f "$symlink_target" "$target_file"
-            echo -e "${NOTE} - Copied $file as a regular file."
-          else
-            echo -e "${WARN} - Symlink target for $file does not exist."
-          fi
-        fi
-      done
+      # Step 1: Restore waybar symlinks from old config if targets exist
+      if [ -n "$OLD_WAYBAR_CONFIG" ] && [ -f "$DIRPATHw/$OLD_WAYBAR_CONFIG" ]; then
+        rm -f "$DIRPATHw/config"
+        ln -sf "$OLD_WAYBAR_CONFIG" "$DIRPATHw/config"
+        echo -e "${OK} - Restored waybar config symlink: $OLD_WAYBAR_CONFIG"
+      elif [ -n "$OLD_WAYBAR_CONFIG" ]; then
+        echo -e "${WARN} - Previous config $OLD_WAYBAR_CONFIG not found in new waybar. Keeping default."
+      fi
+      if [ -n "$OLD_WAYBAR_STYLE" ] && [ -f "$DIRPATHw/$OLD_WAYBAR_STYLE" ]; then
+        rm -f "$DIRPATHw/style.css"
+        ln -sf "$OLD_WAYBAR_STYLE" "$DIRPATHw/style.css"
+        echo -e "${OK} - Restored waybar style symlink: $OLD_WAYBAR_STYLE"
+      elif [ -n "$OLD_WAYBAR_STYLE" ]; then
+        echo -e "${WARN} - Previous style $OLD_WAYBAR_STYLE not found in new waybar. Keeping default."
+      fi
 
       # Step 2: Copy non-existing directories and files under waybar/configs
       for dir in "$DIRPATHw-backup-$BACKUP_DIR/configs"/*; do
@@ -1115,8 +1127,8 @@ else
   config_remove=""
 fi
 
-# Check if ~/.config/waybar/config does not exist or is a symlink
-if [ ! -e "$HOME/.config/waybar/config" ] || [ -L "$HOME/.config/waybar/config" ]; then
+# Check if ~/.config/waybar/config does not exist (if restored from backup symlink, skip)
+if [ ! -e "$HOME/.config/waybar/config" ]; then
   ln -sf "$config_file" "$HOME/.config/waybar/config" 2>&1 | tee -a "$LOG"
 fi
 
@@ -1245,8 +1257,8 @@ fi
 
 
 
-# Check if ~/.config/waybar/style.css does not exist or is a symlink
-if [ ! -e "$HOME/.config/waybar/style.css" ] || [ -L "$HOME/.config/waybar/style.css" ]; then
+# Check if ~/.config/waybar/style.css does not exist (if restored from backup symlink, skip)
+if [ ! -e "$HOME/.config/waybar/style.css" ]; then
   ln -sf "$waybar_style" "$HOME/.config/waybar/style.css" 2>&1 | tee -a "$LOG"
 fi
 

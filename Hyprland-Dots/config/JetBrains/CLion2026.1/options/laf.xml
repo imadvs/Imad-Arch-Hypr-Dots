@@ -1,7 +1,5 @@
 <application>
   <component name="LafManager">
-    <lafs-to-previous-schemes>
-      <laf-to-scheme laf="Islands Dark" scheme="_@user_VSCode Dark" />
-    </lafs-to-previous-schemes>
+    <laf themeId="dinbtechit-2179230b863b9b1d9f1eeb27ca4a3a70" />
   </component>
 </application>

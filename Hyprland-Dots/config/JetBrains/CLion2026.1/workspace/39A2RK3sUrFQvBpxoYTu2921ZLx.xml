@@ -136,6 +136,7 @@
         <entry key="c0e0ae23-084e-4ef1-854b-3d977fc21dee" value="false" />
         <entry key="c26de8f4-f656-4bc5-99be-1080e71a9ca3" value="false" />
         <entry key="c28c420e-aa62-4a6a-b272-0ccf1c2a0661" value="false" />
+        <entry key="c4b472ab-2f9e-41c3-8c7d-13f8348f99b6" value="false" />
         <entry key="c53797f1-e72e-4342-a9ff-0df37449c44e" value="false" />
         <entry key="c5f04ea8-cf4b-4025-94a4-d484f5979521" value="false" />
         <entry key="c855eda5-708b-40a3-a201-5047c48b83ea" value="false" />
@@ -5517,96 +5518,90 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf ideFingerprint="210x74ym167ot" SIDE_TABS_SIZE_LIMIT_KEY="-1">
-      <file>
+    <leaf ideFingerprint="bjp9j3f2vahk" SIDE_TABS_SIZE_LIMIT_KEY="-1">
+      <file current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main.cpp" file-id="175" managing-fs="1781366053963">
           <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="162">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            <state relative-caret-position="96">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
-        <tab><![CDATA[{"tabTitle":"main.cpp","foregroundColor":-9192071,"textAttributes":{"name":"a","children":[{"name":"option","attributes":{"name":"FOREGROUND","value":"73bd79"}}]},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,114,10,23,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,99,112,112,46,115,118,103,18,29,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,99,112,112,46,115,118,103,26,18,99,111,109,46,105,110,116,101,108,108,105,106,46,99,108,105,111,110,34,23,105,110,116,101,108,108,105,106,46,99,105,100,114,46,108,97,110,103,46,98,97,115,101,40,-21,-119,-10,-57,-3,-1,-1,-1,-1,1,48,0]}]]></tab>
-      </file>
-      <file current-in-tab="true">
-        <entry file="file://$USER_HOME$/.ideavimrc" file-id="65" managing-fs="1781366053963">
-          <provider editor-type-id="text-editor" selected="true" />
-        </entry>
-        <tab><![CDATA[{"tabTitle":".ideavimrc","foregroundColor":-3025959,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,73,10,18,102,105,108,101,84,121,112,101,115,47,116,101,120,116,46,115,118,103,18,24,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,116,101,120,116,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-122,-48,-19,-85,-2,-1,-1,-1,-1,1,48,0]}]]></tab>
+        <tab><![CDATA[{"tabTitle":"main.cpp","foregroundColor":-10315947,"textAttributes":{"name":"a","children":[{"name":"option","attributes":{"name":"FOREGROUND","value":"629755"}}]},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,114,10,23,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,99,112,112,46,115,118,103,18,29,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,99,112,112,46,115,118,103,26,18,99,111,109,46,105,110,116,101,108,108,105,106,46,99,108,105,111,110,34,23,105,110,116,101,108,108,105,106,46,99,105,100,114,46,108,97,110,103,46,98,97,115,101,40,-21,-119,-10,-57,-3,-1,-1,-1,-1,1,48,0]}]]></tab>
       </file>
       <file>
         <entry file="file://$PROJECT_DIR$/include/clsPerson.h" file-id="168" managing-fs="1781366053963">
           <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="810">
+            <state relative-caret-position="720">
               <caret line="30" column="11" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
             </state>
           </provider>
         </entry>
-        <tab><![CDATA[{"tabTitle":"clsPerson.h","foregroundColor":-1536119,"textAttributes":{"name":"a","children":[{"name":"option","attributes":{"name":"FOREGROUND","value":"e88f89"}}]},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,110,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,26,18,99,111,109,46,105,110,116,101,108,108,105,106,46,99,108,105,111,110,34,23,105,110,116,101,108,108,105,106,46,99,105,100,114,46,108,97,110,103,46,98,97,115,101,40,-48,-45,-18,-83,-7,-1,-1,-1,-1,1,48,0]}]]></tab>
+        <tab><![CDATA[{"tabTitle":"clsPerson.h","foregroundColor":-3053734,"textAttributes":{"name":"a","children":[{"name":"option","attributes":{"name":"FOREGROUND","value":"d1675a"}}]},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,110,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,26,18,99,111,109,46,105,110,116,101,108,108,105,106,46,99,108,105,111,110,34,23,105,110,116,101,108,108,105,106,46,99,105,100,114,46,108,97,110,103,46,98,97,115,101,40,-48,-45,-18,-83,-7,-1,-1,-1,-1,1,48,0]}]]></tab>
       </file>
       <file>
         <entry file="file://$PROJECT_DIR$/include/clsPeriod.h" file-id="169" managing-fs="1781366053963">
           <provider editor-type-id="text-editor" selected="true" />
         </entry>
-        <tab><![CDATA[{"tabTitle":"clsPeriod.h","foregroundColor":-1536119,"textAttributes":{"name":"a","children":[{"name":"option","attributes":{"name":"FOREGROUND","value":"e88f89"}}]},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,110,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,26,18,99,111,109,46,105,110,116,101,108,108,105,106,46,99,108,105,111,110,34,23,105,110,116,101,108,108,105,106,46,99,105,100,114,46,108,97,110,103,46,98,97,115,101,40,-48,-45,-18,-83,-7,-1,-1,-1,-1,1,48,0]}]]></tab>
+        <tab><![CDATA[{"tabTitle":"clsPeriod.h","foregroundColor":-3053734,"textAttributes":{"name":"a","children":[{"name":"option","attributes":{"name":"FOREGROUND","value":"d1675a"}}]},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,110,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,26,18,99,111,109,46,105,110,116,101,108,108,105,106,46,99,108,105,111,110,34,23,105,110,116,101,108,108,105,106,46,99,105,100,114,46,108,97,110,103,46,98,97,115,101,40,-48,-45,-18,-83,-7,-1,-1,-1,-1,1,48,0]}]]></tab>
       </file>
       <file>
         <entry file="file://$PROJECT_DIR$/include/clsBankClient.h" file-id="173" managing-fs="1781366053963">
           <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="8181">
+            <state relative-caret-position="7272">
               <caret line="303" selection-start-line="303" selection-end-line="303" />
             </state>
           </provider>
         </entry>
-        <tab><![CDATA[{"tabTitle":"clsBankClient.h","foregroundColor":-1536119,"textAttributes":{"name":"a","children":[{"name":"option","attributes":{"name":"FOREGROUND","value":"e88f89"}}]},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,110,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,26,18,99,111,109,46,105,110,116,101,108,108,105,106,46,99,108,105,111,110,34,23,105,110,116,101,108,108,105,106,46,99,105,100,114,46,108,97,110,103,46,98,97,115,101,40,-48,-45,-18,-83,-7,-1,-1,-1,-1,1,48,0]}]]></tab>
+        <tab><![CDATA[{"tabTitle":"clsBankClient.h","foregroundColor":-3053734,"textAttributes":{"name":"a","children":[{"name":"option","attributes":{"name":"FOREGROUND","value":"d1675a"}}]},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,110,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,26,18,99,111,109,46,105,110,116,101,108,108,105,106,46,99,108,105,111,110,34,23,105,110,116,101,108,108,105,106,46,99,105,100,114,46,108,97,110,103,46,98,97,115,101,40,-48,-45,-18,-83,-7,-1,-1,-1,-1,1,48,0]}]]></tab>
       </file>
       <file>
         <entry file="file://$PROJECT_DIR$/include/clsInputValidate.h" file-id="167" managing-fs="1781366053963">
           <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="3915">
+            <state relative-caret-position="3480">
               <caret line="145" column="18" selection-start-line="145" selection-start-column="18" selection-end-line="145" selection-end-column="18" />
             </state>
           </provider>
         </entry>
-        <tab><![CDATA[{"tabTitle":"clsInputValidate.h","foregroundColor":-1536119,"textAttributes":{"name":"a","children":[{"name":"option","attributes":{"name":"FOREGROUND","value":"e88f89"}}]},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,110,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,26,18,99,111,109,46,105,110,116,101,108,108,105,106,46,99,108,105,111,110,34,23,105,110,116,101,108,108,105,106,46,99,105,100,114,46,108,97,110,103,46,98,97,115,101,40,-48,-45,-18,-83,-7,-1,-1,-1,-1,1,48,0]}]]></tab>
+        <tab><![CDATA[{"tabTitle":"clsInputValidate.h","foregroundColor":-3053734,"textAttributes":{"name":"a","children":[{"name":"option","attributes":{"name":"FOREGROUND","value":"d1675a"}}]},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,110,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,26,18,99,111,109,46,105,110,116,101,108,108,105,106,46,99,108,105,111,110,34,23,105,110,116,101,108,108,105,106,46,99,105,100,114,46,108,97,110,103,46,98,97,115,101,40,-48,-45,-18,-83,-7,-1,-1,-1,-1,1,48,0]}]]></tab>
       </file>
       <file>
         <entry file="file://$PROJECT_DIR$/include/clsUtil.h" file-id="166" managing-fs="1781366053963">
           <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="6075">
+            <state relative-caret-position="5400">
               <caret line="225" selection-start-line="225" selection-end-line="225" />
             </state>
           </provider>
         </entry>
-        <tab><![CDATA[{"tabTitle":"clsUtil.h","foregroundColor":-1536119,"textAttributes":{"name":"a","children":[{"name":"option","attributes":{"name":"FOREGROUND","value":"e88f89"}}]},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,110,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,26,18,99,111,109,46,105,110,116,101,108,108,105,106,46,99,108,105,111,110,34,23,105,110,116,101,108,108,105,106,46,99,105,100,114,46,108,97,110,103,46,98,97,115,101,40,-48,-45,-18,-83,-7,-1,-1,-1,-1,1,48,0]}]]></tab>
+        <tab><![CDATA[{"tabTitle":"clsUtil.h","foregroundColor":-3053734,"textAttributes":{"name":"a","children":[{"name":"option","attributes":{"name":"FOREGROUND","value":"d1675a"}}]},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,110,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,26,18,99,111,109,46,105,110,116,101,108,108,105,106,46,99,108,105,111,110,34,23,105,110,116,101,108,108,105,106,46,99,105,100,114,46,108,97,110,103,46,98,97,115,101,40,-48,-45,-18,-83,-7,-1,-1,-1,-1,1,48,0]}]]></tab>
       </file>
       <file>
         <entry file="file://$PROJECT_DIR$/include/clsString.h" file-id="170" managing-fs="1781366053963">
           <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="8505">
+            <state relative-caret-position="7560">
               <caret line="315" column="9" selection-start-line="315" selection-start-column="9" selection-end-line="315" selection-end-column="9" />
             </state>
           </provider>
         </entry>
-        <tab><![CDATA[{"tabTitle":"clsString.h","foregroundColor":-1536119,"textAttributes":{"name":"a","children":[{"name":"option","attributes":{"name":"FOREGROUND","value":"e88f89"}}]},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,110,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,26,18,99,111,109,46,105,110,116,101,108,108,105,106,46,99,108,105,111,110,34,23,105,110,116,101,108,108,105,106,46,99,105,100,114,46,108,97,110,103,46,98,97,115,101,40,-48,-45,-18,-83,-7,-1,-1,-1,-1,1,48,0]}]]></tab>
+        <tab><![CDATA[{"tabTitle":"clsString.h","foregroundColor":-3053734,"textAttributes":{"name":"a","children":[{"name":"option","attributes":{"name":"FOREGROUND","value":"d1675a"}}]},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,110,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,26,18,99,111,109,46,105,110,116,101,108,108,105,106,46,99,108,105,111,110,34,23,105,110,116,101,108,108,105,106,46,99,105,100,114,46,108,97,110,103,46,98,97,115,101,40,-48,-45,-18,-83,-7,-1,-1,-1,-1,1,48,0]}]]></tab>
       </file>
       <file>
         <entry file="file://$PROJECT_DIR$/include/clsDate.h" file-id="171" managing-fs="1781366053963">
           <provider editor-type-id="text-editor" selected="true">
-            <state relative-caret-position="1242">
+            <state relative-caret-position="1104">
               <caret line="50" column="9" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
             </state>
           </provider>
         </entry>
-        <tab><![CDATA[{"tabTitle":"clsDate.h","foregroundColor":-9192071,"textAttributes":{"name":"a","children":[{"name":"option","attributes":{"name":"FOREGROUND","value":"73bd79"}}]},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,110,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,26,18,99,111,109,46,105,110,116,101,108,108,105,106,46,99,108,105,111,110,34,23,105,110,116,101,108,108,105,106,46,99,105,100,114,46,108,97,110,103,46,98,97,115,101,40,-48,-45,-18,-83,-7,-1,-1,-1,-1,1,48,0]}]]></tab>
+        <tab><![CDATA[{"tabTitle":"clsDate.h","foregroundColor":-10315947,"textAttributes":{"name":"a","children":[{"name":"option","attributes":{"name":"FOREGROUND","value":"629755"}}]},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,110,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,26,18,99,111,109,46,105,110,116,101,108,108,105,106,46,99,108,105,111,110,34,23,105,110,116,101,108,108,105,106,46,99,105,100,114,46,108,97,110,103,46,98,97,115,101,40,-48,-45,-18,-83,-7,-1,-1,-1,-1,1,48,0]}]]></tab>
       </file>
     </leaf>
   </component>
   <component name="FileTypeUsageLocalSummary"><![CDATA[{
   "data": {
     "C/C++": {
-      "usageCount": 189,
-      "lastUsed": 1781405560217
+      "usageCount": 191,
+      "lastUsed": 1781443479770
     },
     "CMakeLists.txt": {
       "usageCount": 27,
@@ -5617,8 +5612,8 @@
       "lastUsed": 1781104392050
     },
     "textmate": {
-      "usageCount": 68,
-      "lastUsed": 1781405561108
+      "usageCount": 69,
+      "lastUsed": 1781443330830
     },
     "DIFF": {
       "usageCount": 17,
@@ -5629,8 +5624,8 @@
       "lastUsed": 1778324113848
     },
     "C/C++ Header": {
-      "usageCount": 883,
-      "lastUsed": 1781405560521
+      "usageCount": 897,
+      "lastUsed": 1781443480094
     },
     "WebPreview": {
       "usageCount": 1,
@@ -5856,6 +5851,7 @@
         <entry key="c0e0ae23-084e-4ef1-854b-3d977fc21dee" value="false" />
         <entry key="c26de8f4-f656-4bc5-99be-1080e71a9ca3" value="false" />
         <entry key="c28c420e-aa62-4a6a-b272-0ccf1c2a0661" value="false" />
+        <entry key="c4b472ab-2f9e-41c3-8c7d-13f8348f99b6" value="false" />
         <entry key="c53797f1-e72e-4342-a9ff-0df37449c44e" value="false" />
         <entry key="c5f04ea8-cf4b-4025-94a4-d484f5979521" value="false" />
         <entry key="c855eda5-708b-40a3-a201-5047c48b83ea" value="false" />
@@ -5915,7 +5911,7 @@
   </component>
   <component name="LanguageUsageStatistics">
     <language id="C++">
-      <summary usageCount="1072" lastUsage="1781405560521" />
+      <summary usageCount="1088" lastUsage="1781443480094" />
     </language>
     <language id="CMake">
       <summary usageCount="27" lastUsage="1777924401432" />
@@ -5924,7 +5920,7 @@
       <summary usageCount="32" lastUsage="1781104392050" />
     </language>
     <language id="textmate">
-      <summary usageCount="68" lastUsage="1781405561108" />
+      <summary usageCount="69" lastUsage="1781443330830" />
     </language>
   </component>
   <component name="ProjectRoots">
@@ -6184,7 +6180,7 @@
     </option>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="591593000" />
+    <option name="totallyTimeSpent" value="591729000" />
   </component>
   <component name="TodoView">
     <todo-panel id="all">
@@ -6193,9 +6189,9 @@
   </component>
   <component name="ToolWindowManager">
     <layoutV2>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5764781" visible="true" weight="0.2957702" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5772201" visible="true" weight="0.14614898" />
       <window_info id="Commit" order="1" weight="0.1554445" />
-      <window_info active="true" id="Structure" order="2" sideWeight="0.42352188" side_tool="true" visible="true" weight="0.2957702" />
+      <window_info active="true" id="Structure" order="2" sideWeight="0.42277992" side_tool="true" visible="true" weight="0.14614898" />
       <window_info id="Pull Requests" order="3" weight="0.1554445" />
       <window_info anchor="bottom" id="Version Control" order="0" weight="0.32987142" />
       <window_info anchor="bottom" id="Problems" order="1" />
@@ -6210,7 +6206,7 @@
       <window_info anchor="bottom" id="PythonProcessOutput" order="10" weight="0.37726244" />
       <window_info anchor="bottom" id="TODO" order="11" weight="0.37726244" />
       <window_info anchor="right" id="Notifications" order="0" weight="0.2728125" />
-      <window_info active="true" anchor="right" id="AIAssistant" order="1" sideWeight="0.5006158" visible="true" weight="0.52619946" />
+      <window_info active="true" anchor="right" id="AIAssistant" order="1" sideWeight="0.5006158" visible="true" weight="0.22127524" />
       <window_info anchor="right" id="Database" order="2" weight="0.27304292" />
       <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
       <window_info anchor="right" id="Maven" order="4" weight="0.25" />
@@ -6219,7 +6215,7 @@
       <window_info anchor="right" id="Recap" order="7" weight="0.25644398" />
       <window_info anchor="right" id="Python Console" order="8" weight="0.27304292" />
       <window_info anchor="right" id="documentation.v2" order="9" sideWeight="0.49938422" side_tool="true" weight="0.24526516" />
-      <unified_weights bottom="0.40166667" left="0.2957702" right="0.52619946" />
+      <unified_weights bottom="0.40166667" left="0.14614898" right="0.22127524" />
     </layoutV2>
     <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1556187" />
@@ -6316,10 +6312,10 @@
     <state width="780" height="767" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1779883174663" />
     <state width="780" height="767" key="GridCell.Tab.0.right/1600.0.1024.768/0.0.1600.900@0.0.1600.900" timestamp="1777898633805" />
     <state width="780" height="805" key="GridCell.Tab.0.right/1600.0.768.1024/0.0.1600.900@0.0.1600.900" timestamp="1776686357919" />
-    <state x="459" y="137" width="1336" height="700" key="SettingsEditor" timestamp="1781405405699">
+    <state x="459" y="137" width="1336" height="700" key="SettingsEditor" timestamp="1781443467713">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state x="459" y="137" width="1336" height="700" key="SettingsEditor/0.0.1600.900@0.0.1600.900" timestamp="1781405405699" />
+    <state x="459" y="137" width="1336" height="700" key="SettingsEditor/0.0.1600.900@0.0.1600.900" timestamp="1781443467713" />
     <state x="459" y="137" key="SettingsEditor/1600.0.1024.768/0.0.1600.900@0.0.1600.900" timestamp="1777898973737" />
     <state x="651" y="247" width="524" height="390" key="com.jetbrains.cidr.cpp.cmake.actions.CMakeAddFileToProjectDialog" timestamp="1774112551215">
       <screen x="0" y="0" width="1600" height="900" />
@@ -6392,60 +6388,60 @@
     <entry file="file://$PROJECT_DIR$/include/Global.h" />
     <entry file="file://$PROJECT_DIR$/include/Screens/clsMainScreen.h" />
     <entry file="file://$PROJECT_DIR$/include/Screens/ManageUsers/clsUser.h" />
-    <entry file="file://$PROJECT_DIR$/include/clsPeriod.h">
+    <entry file="file://$USER_HOME$/.ideavimrc">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        <state relative-caret-position="96">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/include/clsPerson.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
+        <state relative-caret-position="720">
           <caret line="30" column="11" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/clsInputValidate.h">
+    <entry file="file://$PROJECT_DIR$/include/clsPeriod.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/clsUtil.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3915">
-          <caret line="145" column="18" selection-start-line="145" selection-start-column="18" selection-end-line="145" selection-end-column="18" />
+        <state relative-caret-position="5400">
+          <caret line="225" selection-start-line="225" selection-end-line="225" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/include/clsBankClient.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8181">
+        <state relative-caret-position="7272">
           <caret line="303" selection-start-line="303" selection-end-line="303" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/clsUtil.h">
+    <entry file="file://$PROJECT_DIR$/include/clsInputValidate.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6075">
-          <caret line="225" selection-start-line="225" selection-end-line="225" />
+        <state relative-caret-position="3480">
+          <caret line="145" column="18" selection-start-line="145" selection-start-column="18" selection-end-line="145" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/include/clsString.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8505">
+        <state relative-caret-position="7560">
           <caret line="315" column="9" selection-start-line="315" selection-start-column="9" selection-end-line="315" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/include/clsDate.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1242">
+        <state relative-caret-position="1104">
           <caret line="50" column="9" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.ideavimrc">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">

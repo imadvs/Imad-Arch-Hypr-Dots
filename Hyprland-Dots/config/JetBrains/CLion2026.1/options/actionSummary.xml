@@ -358,7 +358,7 @@
       <i c="4" l="1770237956245" />
     </e>
     <e n="SettingsEntryPoint">
-      <i c="5" l="1781405112075" />
+      <i c="6" l="1781443393307" />
     </e>
     <e n="ShowIntentionActions">
       <i c="5" l="1775566418746" />
@@ -421,7 +421,7 @@
       <i c="1" l="1770761112731" />
     </e>
     <e n="WelcomeScreen.Plugins">
-      <i c="1" l="1781405114378" />
+      <i c="2" l="1781443395714" />
     </e>
     <e n="WelcomeScreen.Settings">
       <i c="11" d="11" l="1773963785684" k="1773963785684" />
@@ -544,7 +544,7 @@
       <i c="7" l="1779390814427" />
     </e>
     <e n="com.intellij.openapi.fileEditor.impl.tabActions.CloseTab">
-      <i c="27" l="1780927824492" />
+      <i c="28" l="1781443384744" />
     </e>
     <e n="com.intellij.openapi.fileEditor.impl.zoomIndicator.ZoomIndicatorView$settingsAction$1">
       <i c="5" l="1770157383579" />

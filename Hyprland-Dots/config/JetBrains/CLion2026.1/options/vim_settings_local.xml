@@ -1154,6 +1154,11 @@
     <project id="74ti21bgepkqk9jnedq9">
       <jump line="7" column="13" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/src/main.cpp" protocol="file" />
     </project>
+    <project id="otdr4ncjus7h01tfadkj">
+      <jump line="0" column="0" filename="$USER_HOME$/.ideavimrc" protocol="file" />
+      <jump line="7" column="13" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/src/main.cpp" protocol="file" />
+      <jump line="8" column="0" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/src/main.cpp" protocol="file" />
+    </project>
   </component>
   <component name="VimMarksSettings">
     <globalmarks />
@@ -1177,9 +1182,6 @@
         <mark key="]" line="42" column="45" />
         <mark key="." line="42" column="44" />
         <mark key="^" line="42" column="45" />
-      </file>
-      <file name="$USER_HOME$/Documents/Project1 - Utility library/include/clsBankClient.h" timestamp="1780577575439">
-        <mark key="'" line="303" column="0" />
       </file>
       <file name="$USER_HOME$/Documents/Project1 - Utility library/include/clsDate.h" timestamp="1780930210575">
         <mark key="&quot;" line="73" column="8" />
@@ -1215,8 +1217,8 @@
         <mark key="]" line="5" column="60" />
         <mark key="." line="0" column="0" />
       </file>
-      <file name="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/src/main.cpp" timestamp="1781405413610">
-        <mark key="'" line="7" column="13" />
+      <file name="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/src/main.cpp" timestamp="1781443388266">
+        <mark key="'" line="8" column="0" />
       </file>
       <file name="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/ManageUsers/clsListUsersScreen.h" timestamp="1780579632797">
         <mark key="'" line="21" column="13" />
@@ -1273,6 +1275,10 @@
         <mark key="[" line="94" column="0" />
         <mark key="]" line="94" column="0" />
         <mark key="." line="94" column="0" />
+      </file>
+      <file name="$USER_HOME$/.ideavimrc" timestamp="1781443384815">
+        <mark key="&quot;" line="0" column="0" />
+        <mark key="'" line="0" column="0" />
       </file>
       <file name="$USER_HOME$/Documents/Project1 - Utility library/include/Screens/Login/clsLoginScreen.h" timestamp="1780578171233">
         <mark key="&quot;" line="11" column="17" />

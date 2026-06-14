@@ -25,42 +25,42 @@
   </component>
   <component name="NextEditCaretFeaturesState">
     <decayedBetweenFilesMoves>
-      <entry key="MS100" value="3.8796183895122195E-29" />
-      <entry key="MS500" value="2.0785372013346265E-6" />
-      <entry key="S2" value="0.03796989974703175" />
-      <entry key="S5" value="0.27025627107209155" />
-      <entry key="S10" value="0.5198617807380069" />
-      <entry key="S30" value="0.8040738964621473" />
-      <entry key="S60" value="0.8967016764019945" />
-      <entry key="M2" value="0.9469433332581177" />
-      <entry key="M5" value="0.9784296306163583" />
-      <entry key="M10" value="0.9891560193500107" />
-      <entry key="M15" value="0.9927575504258711" />
-      <entry key="M30" value="0.9963721947273877" />
-      <entry key="H1" value="0.9981844492514335" />
-      <entry key="H2" value="0.9990918122231978" />
-      <entry key="H4" value="0.9995458029641251" />
-      <entry key="D1" value="0.9999242861640052" />
-      <entry key="W1" value="0.9999891833867239" />
+      <entry key="MS100" value="1.1966920046820218E-41" />
+      <entry key="MS500" value="6.540282052826277E-9" />
+      <entry key="S2" value="0.008992886651619347" />
+      <entry key="S5" value="0.15191375609967023" />
+      <entry key="S10" value="0.39336383086283294" />
+      <entry key="S30" value="0.8839925714776139" />
+      <entry key="S60" value="1.2465055302495887" />
+      <entry key="M2" value="1.550452239852918" />
+      <entry key="M5" value="1.7982072779499831" />
+      <entry key="M10" value="1.8949829015066637" />
+      <entry key="M15" value="1.9290354058308625" />
+      <entry key="M30" value="1.9640313682263881" />
+      <entry key="H1" value="1.9818922390218956" />
+      <entry key="H2" value="1.990915022381981" />
+      <entry key="H4" value="1.9954497072257253" />
+      <entry key="D1" value="1.9992405314580977" />
+      <entry key="W1" value="1.9998914778549461" />
     </decayedBetweenFilesMoves>
     <decayedWithinFileMoves>
-      <entry key="MS100" value="1.0406669329825604" />
-      <entry key="MS500" value="1.5270616434850939" />
-      <entry key="S2" value="2.1238389347664044" />
-      <entry key="S5" value="3.846686609099557" />
-      <entry key="S10" value="5.623748261791257" />
-      <entry key="S30" value="7.628825876962522" />
-      <entry key="S60" value="8.428419635003552" />
-      <entry key="M2" value="9.798545101449006" />
-      <entry key="M5" value="12.82846252934483" />
-      <entry key="M10" value="14.908652607654538" />
-      <entry key="M15" value="15.805796395815692" />
-      <entry key="M30" value="16.830074690205784" />
-      <entry key="H1" value="17.395573404517798" />
-      <entry key="H2" value="17.692753941672326" />
-      <entry key="H4" value="17.84509730814119" />
-      <entry key="D1" value="17.97400330138498" />
-      <entry key="W1" value="17.996281763595167" />
+      <entry key="MS100" value="1.0058392548774802" />
+      <entry key="MS500" value="1.3575168185630997" />
+      <entry key="S2" value="2.1334210663014286" />
+      <entry key="S5" value="4.676206789677892" />
+      <entry key="S10" value="7.590563216341739" />
+      <entry key="S30" value="14.05809731776765" />
+      <entry key="S60" value="19.583175448387365" />
+      <entry key="M2" value="24.932434848643503" />
+      <entry key="M5" value="31.30835629880782" />
+      <entry key="M10" value="34.91616183823601" />
+      <entry key="M15" value="36.41231861154992" />
+      <entry key="M30" value="38.09648186053439" />
+      <entry key="H1" value="39.018657621115636" />
+      <entry key="H2" value="39.501642926221955" />
+      <entry key="H4" value="39.74886243600071" />
+      <entry key="D1" value="39.95786840228629" />
+      <entry key="W1" value="39.99397441457332" />
     </decayedWithinFileMoves>
   </component>
   <component name="NextEditTypingFeaturesState">
@@ -115,7 +115,7 @@
     "InstalledPluginsSearchHistory": "v\nvi\nvim\nid\nide",
     "LAST_CALCULATED_COLOR_INDEX_KEY": "8",
     "LAST_EXTRACTOR_SCRIPTS_CLEANUP_VERSION/data/aggregators": "CL-253.30387.78",
-    "MarketplacePluginsSearchHistory": "/tag:Keymap\n/tag:Theme",
+    "MarketplacePluginsSearchHistory": "c++ theme\nc++\nc\n/tag:Keymap\n/tag:Theme",
     "Migrate.Cfg.Render.Doc": "true",
     "Rad.Init.Cfg.1": "true",
     "RunOnceActivity.AIPromoWindowAdvisorPreheat": "true",
@@ -147,9 +147,9 @@
     "experimental.ui.on.first.startup": "true",
     "experimental.ui.used.version": "261.25134.137",
     "fileTypeChangedCounter": "2",
-    "fontSizeToResetConsole": "16.0",
-    "fontSizeToResetEditor": "16.0",
-    "git.working.trees.number.of.projects.with.git": "3",
+    "fontSizeToResetConsole": "14.0",
+    "fontSizeToResetEditor": "14.0",
+    "git.working.trees.number.of.projects.with.git": "5",
     "got.it.tooltip.Plugins Auto-Update": "1",
     "got.it.tooltip.database.cloud.explorer.promo": "1",
     "got.it.tooltip.grouped.diff.onboarding.1": "1",
@@ -165,7 +165,7 @@
     "last_opened_file_path": "/home/imad/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library",
     "llm.installer.last.toolwindow.state": "AI_ASSISTANT",
     "migrated.non.roamable.values.from.general.settings": "true",
-    "previousColorScheme": "_@user_Islands Dark",
+    "previousColorScheme": "_@user_Monocai",
     "registry.to.advanced.settings.migration.build": "CL-261.25134.137",
     "search.everywhere.splitter": "0.41153082",
     "selected.color.option.type": "OC.NUMBER",

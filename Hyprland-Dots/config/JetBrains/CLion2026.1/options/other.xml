@@ -23,6 +23,86 @@
       <entry key="ObjectiveC" value="$USER_HOME$/.cache/JetBrains/CLion2025.3/demo/LearnCppProject" />
     </languageToProjectMap>
   </component>
+  <component name="NextEditCaretFeaturesState">
+    <decayedBetweenFilesMoves>
+      <entry key="MS100" value="3.8796183895122195E-29" />
+      <entry key="MS500" value="2.0785372013346265E-6" />
+      <entry key="S2" value="0.03796989974703175" />
+      <entry key="S5" value="0.27025627107209155" />
+      <entry key="S10" value="0.5198617807380069" />
+      <entry key="S30" value="0.8040738964621473" />
+      <entry key="S60" value="0.8967016764019945" />
+      <entry key="M2" value="0.9469433332581177" />
+      <entry key="M5" value="0.9784296306163583" />
+      <entry key="M10" value="0.9891560193500107" />
+      <entry key="M15" value="0.9927575504258711" />
+      <entry key="M30" value="0.9963721947273877" />
+      <entry key="H1" value="0.9981844492514335" />
+      <entry key="H2" value="0.9990918122231978" />
+      <entry key="H4" value="0.9995458029641251" />
+      <entry key="D1" value="0.9999242861640052" />
+      <entry key="W1" value="0.9999891833867239" />
+    </decayedBetweenFilesMoves>
+    <decayedWithinFileMoves>
+      <entry key="MS100" value="1.0406669329825604" />
+      <entry key="MS500" value="1.5270616434850939" />
+      <entry key="S2" value="2.1238389347664044" />
+      <entry key="S5" value="3.846686609099557" />
+      <entry key="S10" value="5.623748261791257" />
+      <entry key="S30" value="7.628825876962522" />
+      <entry key="S60" value="8.428419635003552" />
+      <entry key="M2" value="9.798545101449006" />
+      <entry key="M5" value="12.82846252934483" />
+      <entry key="M10" value="14.908652607654538" />
+      <entry key="M15" value="15.805796395815692" />
+      <entry key="M30" value="16.830074690205784" />
+      <entry key="H1" value="17.395573404517798" />
+      <entry key="H2" value="17.692753941672326" />
+      <entry key="H4" value="17.84509730814119" />
+      <entry key="D1" value="17.97400330138498" />
+      <entry key="W1" value="17.996281763595167" />
+    </decayedWithinFileMoves>
+  </component>
+  <component name="NextEditTypingFeaturesState">
+    <decayedRemovalEvents>
+      <entry key="MS100" value="1.2178454630010311" />
+      <entry key="MS500" value="2.369114742522444" />
+      <entry key="S2" value="3.5762289941969616" />
+      <entry key="S5" value="4.2377885223448" />
+      <entry key="S10" value="4.77334003518903" />
+      <entry key="S30" value="6.340236159293657" />
+      <entry key="S60" value="7.367612996610043" />
+      <entry key="M2" value="8.088702593996532" />
+      <entry key="M5" value="8.609576926559942" />
+      <entry key="M10" value="8.800185307477838" />
+      <entry key="M15" value="8.865744971500519" />
+      <entry key="M30" value="8.932344176891913" />
+      <entry key="H1" value="8.966038933019416" />
+      <entry key="H2" value="8.982986041910676" />
+      <entry key="H4" value="8.99148464777704" />
+      <entry key="D1" value="8.99857961023992" />
+      <entry key="W1" value="8.999797058642566" />
+    </decayedRemovalEvents>
+    <decayedTypingEvents>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="0.0" />
+      <entry key="S60" value="0.0" />
+      <entry key="M2" value="0.0" />
+      <entry key="M5" value="0.0" />
+      <entry key="M10" value="0.0" />
+      <entry key="M15" value="0.0" />
+      <entry key="M30" value="0.0" />
+      <entry key="H1" value="0.0" />
+      <entry key="H2" value="0.0" />
+      <entry key="H4" value="0.0" />
+      <entry key="D1" value="0.0" />
+      <entry key="W1" value="0.0" />
+    </decayedTypingEvents>
+  </component>
   <component name="NotRoamableUiSettings">
     <option name="fontSize" value="19.0" />
     <option name="presentationModeIdeScale" value="1.75" />
@@ -32,11 +112,11 @@
     "AIHubNotificationManager.lastTariffQuotaAvailable": "293333.235",
     "AIHubNotificationManager.lastUsedLicenseType": "FREE",
     "ExpandBeforeRunStepsPanel": "true",
+    "InstalledPluginsSearchHistory": "v\nvi\nvim\nid\nide",
     "LAST_CALCULATED_COLOR_INDEX_KEY": "8",
     "LAST_EXTRACTOR_SCRIPTS_CLEANUP_VERSION/data/aggregators": "CL-253.30387.78",
     "MarketplacePluginsSearchHistory": "/tag:Keymap\n/tag:Theme",
     "Migrate.Cfg.Render.Doc": "true",
-    "PluginConfigurable.selectionTab": "1",
     "Rad.Init.Cfg.1": "true",
     "RunOnceActivity.AIPromoWindowAdvisorPreheat": "true",
     "RunOnceActivity.MCP settings loaded": "true",
@@ -55,8 +135,9 @@
     "RunOnceActivity.reset.auto.reparse.settings.to.default": "true",
     "RunOnceActivity.rust.first.ide.run": "true",
     "RunOnceActivity.trace.non.commercial.popup.id": "true",
-    "SettingsSearchHistory": "Toolchains\nrun\nnova\nReopen\nChange font size",
+    "SettingsSearchHistory": "idev\nToolchains\nrun\nnova\nReopen",
     "WelcomeFeature.SHORT_WELCOME_GUIDE_SHOWN": "true",
+    "ai.assistant.toolwindow.was.shown": "true",
     "ask.about.ctrl.y.shortcut.v2": "true",
     "clion.initialConfigPerformed": "true",
     "evaluation.feedback.enabled": "false",
@@ -68,6 +149,7 @@
     "fileTypeChangedCounter": "2",
     "fontSizeToResetConsole": "16.0",
     "fontSizeToResetEditor": "16.0",
+    "git.working.trees.number.of.projects.with.git": "3",
     "got.it.tooltip.Plugins Auto-Update": "1",
     "got.it.tooltip.database.cloud.explorer.promo": "1",
     "got.it.tooltip.grouped.diff.onboarding.1": "1",
@@ -80,7 +162,7 @@
     "ift.hide.welcome.screen.promo": "true",
     "ift.learning.panel.opened.in": "253.30387.78",
     "input.method.disabler.muted": "true",
-    "last_opened_file_path": "/home/imad/Documents/Project1 - Utility library",
+    "last_opened_file_path": "/home/imad/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library",
     "llm.installer.last.toolwindow.state": "AI_ASSISTANT",
     "migrated.non.roamable.values.from.general.settings": "true",
     "previousColorScheme": "_@user_Islands Dark",
@@ -92,7 +174,7 @@
     "terminal.gen.one.option.visible": "false",
     "trial.state.last.availability.check": "0",
     "ts.lib.d.ts.version": "5.9.3",
-    "whats.new.last.shown.version": "2025-3.2-30387-37c31239850e0a0f32552fee2d8f78231a77ceef"
+    "whats.new.last.shown.version": "2026-1.3-25134-805e6dd2d9f176c2239e27134aa7a47870f743f5"
   },
   "keyToStringList": {
     "AIHubNotificationManager.gotItNotifications": [
@@ -103,6 +185,7 @@
     "AIHubNotificationManager.notifications": [],
     "AIHubNotificationManager.seenNotifications": [],
     "file.chooser.recent.files": [
+      "/home/imad/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library",
       "/home/imad/Documents/Project1 - Utility library",
       "/home/imad/Documents/Project 2 L4 - ATM System",
       "/home/imad/Documents/Project 1 L4 - Bank Extension 2",
@@ -126,5 +209,5 @@
     &quot;type&quot;: &quot;org.jetbrains.plugins.terminal.TerminalFirstIdeSessionMoment.BeforeTrackingStarted&quot;
   }
 }</component>
-  <component name="TerminalAgentsState"><![CDATA[{}]]></component>
+  <component name="TerminalAgentsState">{}</component>
 </application>

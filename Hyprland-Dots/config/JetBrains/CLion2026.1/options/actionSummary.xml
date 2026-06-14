@@ -18,6 +18,9 @@
     <e n="$Undo">
       <i c="31" l="1776378036700" />
     </e>
+    <e n="AIAssistant.LLMSettings">
+      <i c="1" l="1781405371398" />
+    </e>
     <e n="AIAssistant.ToolWindow.Chat.Cancel.Selection">
       <i c="2" l="1780965913396" />
     </e>
@@ -142,7 +145,7 @@
       <i c="7" d="7" l="1772372056632" k="1772372056632" />
     </e>
     <e n="EditorBackSpace">
-      <i c="1320" l="1780965934998" />
+      <i c="1355" l="1781405170416" />
     </e>
     <e n="EditorChooseLookupItem">
       <i c="141" l="1780929836386" />
@@ -277,7 +280,7 @@
       <i c="1" l="1771005821639" />
     </e>
     <e n="MoreRunToolbarActions">
-      <i c="3" l="1774163396378" />
+      <i c="4" l="1781405362846" />
     </e>
     <e n="NewDir">
       <i c="4" l="1779390407334" />
@@ -355,7 +358,7 @@
       <i c="4" l="1770237956245" />
     </e>
     <e n="SettingsEntryPoint">
-      <i c="4" l="1776549674839" />
+      <i c="5" l="1781405112075" />
     </e>
     <e n="ShowIntentionActions">
       <i c="5" l="1775566418746" />
@@ -364,7 +367,7 @@
       <i c="1" l="1770508930691" />
     </e>
     <e n="ShowSettings">
-      <i c="12" l="1771683644023" />
+      <i c="13" l="1781405151506" />
     </e>
     <e n="SmartTypeCompletion">
       <i c="1" l="1775051876666" />
@@ -412,10 +415,13 @@
       <i c="2" l="1770152222866" />
     </e>
     <e n="WelcomeScreen.OpenDirectoryProject">
-      <i c="2" l="1777117102943" />
+      <i c="3" l="1781404875224" />
     </e>
     <e n="WelcomeScreen.OpenSelected">
       <i c="1" l="1770761112731" />
+    </e>
+    <e n="WelcomeScreen.Plugins">
+      <i c="1" l="1781405114378" />
     </e>
     <e n="WelcomeScreen.Settings">
       <i c="11" d="11" l="1773963785684" k="1773963785684" />
@@ -556,10 +562,10 @@
       <i c="1" l="1770152139645" />
     </e>
     <e n="com.intellij.openapi.wm.impl.SquareAnActionButton">
-      <i c="380" l="1780929865717" />
+      <i c="384" l="1781405028692" />
     </e>
     <e n="com.intellij.openapi.wm.impl.customFrameDecorations.header.toolbar.MainMenuButton$ShowMenuAction">
-      <i c="15" l="1776549661173" />
+      <i c="16" l="1781405146224" />
     </e>
     <e n="com.intellij.openapi.wm.impl.welcomeScreen.WelcomeScreenComponentFactory$4">
       <i c="1" l="1770761089059" />
@@ -574,7 +580,7 @@
       <i c="117" l="1780929870857" />
     </e>
     <e n="com.intellij.toolWindow.ToolWindowHeader$ShowOptionsAction">
-      <i c="24" l="1777981777945" />
+      <i c="25" l="1781405368291" />
     </e>
     <e n="com.intellij.ui.AutoScrollFromSourceHandler$AutoScrollFromSourceAction">
       <i c="1" l="1774135919177" />
@@ -607,7 +613,7 @@
       <i c="6" l="1778315932536" />
     </e>
     <e n="com.maddyhome.idea.vim.group.NotificationService$OpenIdeaVimRcAction">
-      <i c="4" l="1776207976254" />
+      <i c="5" l="1781405413566" />
     </e>
     <e n="com.maddyhome.idea.vim.group.NotificationService$notifyAboutShortcutConflict$2">
       <i c="2" l="1770505234423" />

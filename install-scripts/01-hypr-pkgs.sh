@@ -33,6 +33,7 @@ Extra=(
   ghostty
   opencode
   github-cli
+  yt-x
 )
 
 hypr_package=( 

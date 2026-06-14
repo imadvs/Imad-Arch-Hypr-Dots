@@ -269,6 +269,7 @@ options_command+=(
     "pokemon" "Add Pokemon color scripts to your terminal?" "OFF"
     "rog" "Are you installing on Asus ROG laptops?" "OFF"
     "dots" "Download and install pre-configured KooL Hyprland dotfiles?" "OFF"
+    "pkm" "Setup PKM Obsidian vault with GitHub sync?" "OFF"
 )
 
 # Capture the selected options before the while loop starts
@@ -441,6 +442,10 @@ for option in "${options[@]}"; do
         dots)
             echo "${INFO} Installing pre-configured ${SKY_BLUE}KooL Hyprland dotfiles...${RESET}" | tee -a "$LOG"
             execute_script "dotfiles-main.sh"
+            ;;
+        pkm)
+            echo "${INFO} Setting up ${SKY_BLUE}PKM Obsidian vault with GitHub sync...${RESET}" | tee -a "$LOG"
+            execute_script "pkm.sh"
             ;;
         *)
             echo "Unknown option: $option" | tee -a "$LOG"

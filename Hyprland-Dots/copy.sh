@@ -682,7 +682,7 @@ if [ ! -d "config" ]; then
   exit 1
 fi
 
-DIR="btop cava hypr Kvantum qt5ct qt6ct swappy wallust wlogout ideavim"
+DIR="btop cava hypr Kvantum qt5ct qt6ct swappy wallust wlogout ideavim nvim yazi yt-x"
 
 for DIR_NAME in $DIR; do
   DIRPATH="$HOME/.config/$DIR_NAME"
@@ -715,6 +715,12 @@ for DIR_NAME in $DIR; do
     echo "${ERROR} - Directory config/$DIR_NAME does not exist to copy."
   fi
 done
+
+# Create .ideavimrc symlink for IdeaVim (CLion etc.)
+if [ -f "$HOME/.config/ideavim/ideavimrc" ] && [ ! -f "$HOME/.ideavimrc" ]; then
+  ln -sf "$HOME/.config/ideavim/ideavimrc" "$HOME/.ideavimrc"
+  echo -e "${OK} - Created .ideavimrc symlink."
+fi
 
 printf "\n%.0s" {1..1}
 

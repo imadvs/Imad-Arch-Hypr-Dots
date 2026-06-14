@@ -242,6 +242,7 @@
         <option value="abseil-string-find-str-contains" />
         <option value="abseil-time-comparison" />
         <option value="abseil-time-subtraction" />
+        <option value="abseil-unchecked-statusor-access" />
         <option value="abseil-upgrade-duration-conversions" />
         <option value="altera-id-dependent-backward-branch" />
         <option value="altera-kernel-name-restriction" />
@@ -275,15 +276,20 @@
         <option value="bugprone-capturing-this-in-member-variable" />
         <option value="bugprone-casting-through-void" />
         <option value="bugprone-chained-comparison" />
+        <option value="bugprone-command-processor" />
         <option value="bugprone-compare-pointer-to-member-virtual-function" />
         <option value="bugprone-copy-constructor-init" />
+        <option value="bugprone-copy-constructor-mutates-argument" />
         <option value="bugprone-crtp-constructor-accessibility" />
         <option value="bugprone-dangling-handle" />
+        <option value="bugprone-default-operator-new-on-overaligned-type" />
         <option value="bugprone-derived-method-shadowing-base-method" />
         <option value="bugprone-dynamic-static-initializers" />
         <option value="bugprone-easily-swappable-parameters" />
         <option value="bugprone-empty-catch" />
+        <option value="bugprone-exception-copy-constructor-throws" />
         <option value="bugprone-exception-escape" />
+        <option value="bugprone-float-loop-counter" />
         <option value="bugprone-fold-init-type" />
         <option value="bugprone-forward-declaration-namespace" />
         <option value="bugprone-forwarding-reference-overload" />
@@ -316,6 +322,8 @@
         <option value="bugprone-parent-virtual-call" />
         <option value="bugprone-pointer-arithmetic-on-polymorphic-object" />
         <option value="bugprone-posix-return" />
+        <option value="bugprone-random-generator-seed" />
+        <option value="bugprone-raw-memory-call-on-non-trivial-type" />
         <option value="bugprone-redundant-branch-condition" />
         <option value="bugprone-reserved-identifier" />
         <option value="bugprone-return-const-ref-from-parameter" />
@@ -326,6 +334,7 @@
         <option value="bugprone-sizeof-expression" />
         <option value="bugprone-spuriously-wake-up-functions" />
         <option value="bugprone-standalone-empty" />
+        <option value="bugprone-std-namespace-modification" />
         <option value="bugprone-string-constructor" />
         <option value="bugprone-string-integer-assignment" />
         <option value="bugprone-string-literal-with-embedded-nul" />
@@ -415,6 +424,7 @@
         <option value="clang-analyzer-core.NonNullParamChecker" />
         <option value="clang-analyzer-core.NonnilStringConstants" />
         <option value="clang-analyzer-core.NullDereference" />
+        <option value="clang-analyzer-core.NullPointerArithm" />
         <option value="clang-analyzer-core.StackAddressEscape" />
         <option value="clang-analyzer-core.UndefinedBinaryOperatorResult" />
         <option value="clang-analyzer-core.VLASize" />
@@ -580,6 +590,7 @@
         <option value="fuchsia-multiple-inheritance" />
         <option value="fuchsia-overloaded-operator" />
         <option value="fuchsia-statically-constructed-objects" />
+        <option value="fuchsia-temporary-objects" />
         <option value="fuchsia-trailing-return" />
         <option value="fuchsia-virtual-inheritance" />
         <option value="google-build-explicit-make-pair" />
@@ -649,6 +660,7 @@
         <option value="llvmlibc-implementation-in-namespace" />
         <option value="llvmlibc-inline-function-decl" />
         <option value="llvmlibc-restrict-system-libc-headers" />
+        <option value="misc-anonymous-namespace-in-header" />
         <option value="misc-confusable-identifiers" />
         <option value="misc-const-correctness" />
         <option value="misc-coroutine-hostile-raii" />
@@ -658,11 +670,13 @@
         <option value="misc-misleading-bidirectional" />
         <option value="misc-misleading-identifier" />
         <option value="misc-misplaced-const" />
+        <option value="misc-multiple-inheritance" />
         <option value="misc-new-delete-overloads" />
         <option value="misc-no-recursion" />
         <option value="misc-non-copyable-objects" />
         <option value="misc-non-private-member-variables-in-classes" />
         <option value="misc-override-with-different-visibility" />
+        <option value="misc-predictable-rand" />
         <option value="misc-redundant-expression" />
         <option value="misc-static-assert" />
         <option value="misc-throw-by-value-catch-by-reference" />
@@ -675,6 +689,7 @@
         <option value="misc-use-internal-linkage" />
         <option value="modernize-avoid-bind" />
         <option value="modernize-avoid-c-arrays" />
+        <option value="modernize-avoid-c-style-cast" />
         <option value="modernize-avoid-setjmp-longjmp" />
         <option value="modernize-avoid-variadic-functions" />
         <option value="modernize-concat-nested-namespaces" />
@@ -776,6 +791,7 @@
         <option value="readability-identifier-naming" />
         <option value="readability-implicit-bool-conversion" />
         <option value="readability-inconsistent-declaration-parameter-name" />
+        <option value="readability-inconsistent-ifelse-braces" />
         <option value="readability-isolate-declaration" />
         <option value="readability-magic-numbers" />
         <option value="readability-make-member-function-const" />
@@ -793,10 +809,12 @@
         <option value="readability-redundant-function-ptr-dereference" />
         <option value="readability-redundant-inline-specifier" />
         <option value="readability-redundant-member-init" />
+        <option value="readability-redundant-parentheses" />
         <option value="readability-redundant-preprocessor" />
         <option value="readability-redundant-smartptr-get" />
         <option value="readability-redundant-string-cstr" />
         <option value="readability-redundant-string-init" />
+        <option value="readability-redundant-typename" />
         <option value="readability-reference-to-constructed-temporary" />
         <option value="readability-simplify-boolean-expr" />
         <option value="readability-simplify-subscript-expr" />
@@ -812,6 +830,6 @@
         <option value="zircon-temporary-objects" />
       </set>
     </option>
-    <option name="previousClangTidyVersion" value="22.0.0" />
+    <option name="previousClangTidyVersion" value="23.0.0" />
   </component>
 </application>

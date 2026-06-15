@@ -26,41 +26,41 @@
   <component name="NextEditCaretFeaturesState">
     <decayedBetweenFilesMoves>
       <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="3.168003125302362E-145" />
-      <entry key="S2" value="7.502335767344622E-37" />
-      <entry key="S5" value="3.556525958954356E-15" />
-      <entry key="S10" value="6.238124946617023E-8" />
-      <entry key="S30" value="0.005607952087240328" />
-      <entry key="S60" value="0.11719629577352231" />
-      <entry key="M2" value="0.5747863198987722" />
-      <entry key="M5" value="1.5366190146112604" />
-      <entry key="M10" value="2.1440843396224025" />
-      <entry key="M15" value="2.3973616725971647" />
-      <entry key="M30" value="2.68138879679778" />
-      <entry key="H1" value="2.836113308700424" />
-      <entry key="H2" value="2.9168773975038644" />
-      <entry key="H4" value="2.958139523681578" />
-      <entry key="D1" value="2.9929813263488354" />
-      <entry key="W1" value="2.998996300604092" />
+      <entry key="MS500" value="3.0871297580256445E-191" />
+      <entry key="S2" value="2.357158670840996E-48" />
+      <entry key="S5" value="8.910517166402893E-20" />
+      <entry key="S10" value="3.122428723126342E-10" />
+      <entry key="S30" value="9.592911750032857E-4" />
+      <entry key="S60" value="0.04847155612650584" />
+      <entry key="M2" value="0.3696519162682985" />
+      <entry key="M5" value="1.2878960714761098" />
+      <entry key="M10" value="1.9629045082965717" />
+      <entry key="M15" value="2.2603295513546384" />
+      <entry key="M30" value="2.603627758340908" />
+      <entry key="H1" value="2.79468670652424" />
+      <entry key="H2" value="2.8954958768430106" />
+      <entry key="H4" value="2.9472775900754242" />
+      <entry key="D1" value="2.991146872964681" />
+      <entry key="W1" value="2.9987336401616176" />
     </decayedBetweenFilesMoves>
     <decayedWithinFileMoves>
-      <entry key="MS100" value="1.0306068842995915" />
-      <entry key="MS500" value="1.4979520506032555" />
-      <entry key="S2" value="2.2132295457715125" />
-      <entry key="S5" value="4.809540363682361" />
-      <entry key="S10" value="9.278175463315023" />
-      <entry key="S30" value="24.705345471248073" />
-      <entry key="S60" value="39.04201748666405" />
-      <entry key="M2" value="54.94149600540647" />
-      <entry key="M5" value="75.96396558912083" />
-      <entry key="M10" value="88.48104994574676" />
-      <entry key="M15" value="93.81618991031523" />
-      <entry key="M30" value="99.9337566647682" />
-      <entry key="H1" value="103.3363730942817" />
-      <entry key="H2" value="105.13391741411625" />
-      <entry key="H4" value="106.0581756183832" />
-      <entry key="D1" value="106.84179056974773" />
-      <entry key="W1" value="106.97736806830093" />
+      <entry key="MS100" value="1.0052626311596315" />
+      <entry key="MS500" value="1.3501391122187456" />
+      <entry key="S2" value="1.8373127599163233" />
+      <entry key="S5" value="3.343541963260345" />
+      <entry key="S10" value="7.128887470071502" />
+      <entry key="S30" value="23.870941810660177" />
+      <entry key="S60" value="44.90338222004297" />
+      <entry key="M2" value="70.9956611227123" />
+      <entry key="M5" value="104.58458230306718" />
+      <entry key="M10" value="123.898801096601" />
+      <entry key="M15" value="132.0355110926509" />
+      <entry key="M30" value="141.31914905320818" />
+      <entry key="H1" value="146.46683346798224" />
+      <entry key="H2" value="149.18272367438607" />
+      <entry key="H4" value="150.57835810526427" />
+      <entry key="D1" value="151.76122472965486" />
+      <entry key="W1" value="151.96584392708493" />
     </decayedWithinFileMoves>
   </component>
   <component name="NextEditTypingFeaturesState">

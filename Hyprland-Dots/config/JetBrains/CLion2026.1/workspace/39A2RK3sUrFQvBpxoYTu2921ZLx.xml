@@ -46,6 +46,7 @@
         <entry key="44639c70-973f-43c6-9156-d98f210c47aa" value="false" />
         <entry key="44df65c6-53c8-4d40-94eb-54e3b92882e7" value="false" />
         <entry key="48095878-7ac8-45f8-be64-e265254725cc" value="false" />
+        <entry key="4b0bb1b4-11fa-45a3-bf3f-c3ad50259aeb" value="false" />
         <entry key="4bc8d75e-a38b-40a5-9187-c51a91b57b8e" value="false" />
         <entry key="4ecf5b18-856d-4559-af90-94952883632c" value="false" />
         <entry key="51c7d57c-a72f-46d9-90c8-a079e7aa24be" value="false" />
@@ -163,6 +164,7 @@
         <entry key="d6a8b9ee-7386-46e2-bf6c-fa9f57cf8ad4" value="false" />
         <entry key="d8e0efed-9758-426f-bb8b-9704e50e9092" value="false" />
         <entry key="d9ded76b-21f3-4fa5-8517-bd1904c8dd3b" value="false" />
+        <entry key="da62e2ba-6571-442d-b830-c0e3acb4035f" value="false" />
         <entry key="da9fb45f-e0ff-4489-8e56-d2d0eb1963ff" value="false" />
         <entry key="db10343f-3e80-4d40-9545-d4f318d11732" value="false" />
         <entry key="db3e1ecf-41b3-4ee3-959d-381be146884e" value="false" />
@@ -5603,8 +5605,8 @@
   <component name="FileTypeUsageLocalSummary"><![CDATA[{
   "data": {
     "C/C++": {
-      "usageCount": 197,
-      "lastUsed": 1781471933485
+      "usageCount": 202,
+      "lastUsed": 1781490791365
     },
     "CMakeLists.txt": {
       "usageCount": 27,
@@ -5627,8 +5629,8 @@
       "lastUsed": 1778324113848
     },
     "C/C++ Header": {
-      "usageCount": 939,
-      "lastUsed": 1781471933611
+      "usageCount": 974,
+      "lastUsed": 1781490791639
     },
     "WebPreview": {
       "usageCount": 1,
@@ -5764,6 +5766,7 @@
         <entry key="44639c70-973f-43c6-9156-d98f210c47aa" value="false" />
         <entry key="44df65c6-53c8-4d40-94eb-54e3b92882e7" value="false" />
         <entry key="48095878-7ac8-45f8-be64-e265254725cc" value="false" />
+        <entry key="4b0bb1b4-11fa-45a3-bf3f-c3ad50259aeb" value="false" />
         <entry key="4bc8d75e-a38b-40a5-9187-c51a91b57b8e" value="false" />
         <entry key="4ecf5b18-856d-4559-af90-94952883632c" value="false" />
         <entry key="51c7d57c-a72f-46d9-90c8-a079e7aa24be" value="false" />
@@ -5881,6 +5884,7 @@
         <entry key="d6a8b9ee-7386-46e2-bf6c-fa9f57cf8ad4" value="false" />
         <entry key="d8e0efed-9758-426f-bb8b-9704e50e9092" value="false" />
         <entry key="d9ded76b-21f3-4fa5-8517-bd1904c8dd3b" value="false" />
+        <entry key="da62e2ba-6571-442d-b830-c0e3acb4035f" value="false" />
         <entry key="da9fb45f-e0ff-4489-8e56-d2d0eb1963ff" value="false" />
         <entry key="db10343f-3e80-4d40-9545-d4f318d11732" value="false" />
         <entry key="db3e1ecf-41b3-4ee3-959d-381be146884e" value="false" />
@@ -5917,7 +5921,7 @@
   </component>
   <component name="LanguageUsageStatistics">
     <language id="C++">
-      <summary usageCount="1136" lastUsage="1781471933611" />
+      <summary usageCount="1176" lastUsage="1781490791639" />
     </language>
     <language id="CMake">
       <summary usageCount="27" lastUsage="1777924401432" />
@@ -6186,7 +6190,7 @@
     </option>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="591923000" />
+    <option name="totallyTimeSpent" value="592708000" />
   </component>
   <component name="TodoView">
     <todo-panel id="all">
@@ -6407,10 +6411,10 @@
     <entry file="file://$PROJECT_DIR$/include/clsPeriod.h">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/clsBankClient.h">
+    <entry file="file://$PROJECT_DIR$/include/clsPerson.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7272">
-          <caret line="303" selection-start-line="303" selection-end-line="303" />
+        <state relative-caret-position="720">
+          <caret line="30" column="11" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -6421,17 +6425,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/clsPerson.h">
+    <entry file="file://$PROJECT_DIR$/include/clsBankClient.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="30" column="11" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/clsString.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7560">
-          <caret line="315" column="9" selection-start-line="315" selection-start-column="9" selection-end-line="315" selection-end-column="9" />
+        <state relative-caret-position="7272">
+          <caret line="303" selection-start-line="303" selection-end-line="303" />
         </state>
       </provider>
     </entry>
@@ -6439,6 +6436,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5400">
           <caret line="225" selection-start-line="225" selection-end-line="225" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/clsString.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7560">
+          <caret line="315" column="9" selection-start-line="315" selection-start-column="9" selection-end-line="315" selection-end-column="9" />
         </state>
       </provider>
     </entry>

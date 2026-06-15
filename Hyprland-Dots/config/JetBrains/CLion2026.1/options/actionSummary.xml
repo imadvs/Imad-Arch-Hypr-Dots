@@ -103,7 +103,7 @@
       <i c="1" l="1770761150874" />
     </e>
     <e n="ChangeLaf">
-      <i c="1" d="1" l="1770154676370" k="1770154676370" />
+      <i c="5" d="1" l="1781443617625" k="1770154676370" />
     </e>
     <e n="ChangesView.AddUnversioned">
       <i c="1" l="1776204472771" />
@@ -358,7 +358,7 @@
       <i c="4" l="1770237956245" />
     </e>
     <e n="SettingsEntryPoint">
-      <i c="6" l="1781443393307" />
+      <i c="10" l="1781443616381" />
     </e>
     <e n="ShowIntentionActions">
       <i c="5" l="1775566418746" />
@@ -471,6 +471,9 @@
     <e n="com.intellij.ide.actions.QuickChangeLookAndFeel$1">
       <i c="1" l="1770154702259" />
     </e>
+    <e n="com.intellij.ide.actions.QuickChangeLookAndFeel$LafChangeAction">
+      <i c="1" l="1781443632408" />
+    </e>
     <e n="com.intellij.ide.actions.ToolWindowViewModeAction">
       <i c="3" l="1773963109586" />
     </e>
@@ -580,7 +583,7 @@
       <i c="117" l="1780929870857" />
     </e>
     <e n="com.intellij.toolWindow.ToolWindowHeader$ShowOptionsAction">
-      <i c="25" l="1781405368291" />
+      <i c="26" l="1781443522695" />
     </e>
     <e n="com.intellij.ui.AutoScrollFromSourceHandler$AutoScrollFromSourceAction">
       <i c="1" l="1774135919177" />

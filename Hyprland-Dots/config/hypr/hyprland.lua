@@ -25,7 +25,7 @@ local wallDIR = HOME .. "/Pictures/wallpapers"
 -- ------------------------
 -- ENVIRONMENT VARIABLES
 -- ------------------------
-hl.env("DOTS_VERSION", "2.3.19")
+hl.env("DOTS_VERSION", "2.3.24")
 hl.env("GDK_BACKEND", "wayland,x11,*")
 hl.env("QT_QPA_PLATFORM", "wayland;xcb")
 hl.env("CLUTTER_BACKEND", "wayland")
@@ -36,6 +36,7 @@ hl.env("QT_AUTO_SCREEN_SCALE_FACTOR", "1")
 hl.env("QT_WAYLAND_DISABLE_WINDOWDECORATION", "1")
 hl.env("QT_QPA_PLATFORMTHEME", "qt5ct")
 hl.env("QT_QPA_PLATFORMTHEME", "qt6ct")
+hl.env("QT_STYLE_OVERRIDE", "kvantum")
 hl.env("QT_QUICK_CONTROLS_STYLE", "org.hyprland.style")
 hl.env("GDK_SCALE", "1")
 hl.env("QT_SCALE_FACTOR", "1")
@@ -175,8 +176,8 @@ hl.config({
 	misc = {
 		disable_hyprland_logo = true,
 		disable_splash_rendering = true,
-		vrr = 2,
-		mouse_move_enables_dpms = false,
+		vrr = 0, -- 0=off (fixes MPV/VLC fullscreen issues)
+		mouse_move_enables_dpms = true,
 		key_press_enables_dpms = true,
 		enable_swallow = false,
 		swallow_regex = "^(kitty)$",
@@ -201,7 +202,7 @@ hl.config({
 	},
 	cursor = {
 		sync_gsettings_theme = true,
-		no_hardware_cursors = false,
+		no_hardware_cursors = 2,
 		enable_hyprcursor = true,
 		warp_on_change_workspace = 2,
 		no_warps = false,
@@ -266,19 +267,20 @@ hl.animation({ leaf = "specialWorkspace", enabled = true, speed = 3, bezier = "m
 -- ------------------------
 hl.on("hyprland.start", function()
 	hl.exec_cmd(HOME .. "/.config/hypr/initial-boot.sh")
-	hl.exec_cmd("awww-daemon --format argb")
-	hl.exec_cmd("bash -c 'sleep 0.5 && " .. scripts .. "/WallpaperRestore.sh'")
+	hl.exec_cmd("sh -c 'sleep 2; " .. scripts .. "/WallpaperDaemon.sh'")
 	hl.exec_cmd("dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP")
 	hl.exec_cmd("systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP")
 	hl.exec_cmd(scripts .. "/KeybindsLayoutInit.sh")
 	hl.exec_cmd(scripts .. "/Dropterminal.sh kitty &")
 	hl.exec_cmd(scripts .. "/Polkit.sh")
+	hl.exec_cmd(scripts .. "/PortalHyprland.sh")
 	hl.exec_cmd("swaync")
 	hl.exec_cmd(uscripts .. "/WaybarStartup.sh")
 	hl.exec_cmd("qs -c overview")
 	hl.exec_cmd("wl-paste --type text --watch cliphist store")
 	hl.exec_cmd("wl-paste --type image --watch cliphist store")
 	hl.exec_cmd("hypridle")
+	hl.exec_cmd(scripts .. "/LuaAutoReload.sh")
 	hl.exec_cmd(scripts .. "/Hyprsunset.sh init")
 	hl.exec_cmd(uscripts .. "/startup_apps.sh")
 	hl.exec_cmd("uwsm app -- hyprsunset")

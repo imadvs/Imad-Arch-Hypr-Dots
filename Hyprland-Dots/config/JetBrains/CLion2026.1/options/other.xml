@@ -25,184 +25,186 @@
   </component>
   <component name="NextEditCaretFeaturesState">
     <decayedBetweenFilesMoves>
-      <entry key="MS100" value="1.1966920046820218E-41" />
-      <entry key="MS500" value="6.540282052826277E-9" />
-      <entry key="S2" value="0.008992886651619347" />
-      <entry key="S5" value="0.15191375609967023" />
-      <entry key="S10" value="0.39336383086283294" />
-      <entry key="S30" value="0.8839925714776139" />
-      <entry key="S60" value="1.2465055302495887" />
-      <entry key="M2" value="1.550452239852918" />
-      <entry key="M5" value="1.7982072779499831" />
-      <entry key="M10" value="1.8949829015066637" />
-      <entry key="M15" value="1.9290354058308625" />
-      <entry key="M30" value="1.9640313682263881" />
-      <entry key="H1" value="1.9818922390218956" />
-      <entry key="H2" value="1.990915022381981" />
-      <entry key="H4" value="1.9954497072257253" />
-      <entry key="D1" value="1.9992405314580977" />
-      <entry key="W1" value="1.9998914778549461" />
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="3.168003125302362E-145" />
+      <entry key="S2" value="7.502335767344622E-37" />
+      <entry key="S5" value="3.556525958954356E-15" />
+      <entry key="S10" value="6.238124946617023E-8" />
+      <entry key="S30" value="0.005607952087240328" />
+      <entry key="S60" value="0.11719629577352231" />
+      <entry key="M2" value="0.5747863198987722" />
+      <entry key="M5" value="1.5366190146112604" />
+      <entry key="M10" value="2.1440843396224025" />
+      <entry key="M15" value="2.3973616725971647" />
+      <entry key="M30" value="2.68138879679778" />
+      <entry key="H1" value="2.836113308700424" />
+      <entry key="H2" value="2.9168773975038644" />
+      <entry key="H4" value="2.958139523681578" />
+      <entry key="D1" value="2.9929813263488354" />
+      <entry key="W1" value="2.998996300604092" />
     </decayedBetweenFilesMoves>
     <decayedWithinFileMoves>
-      <entry key="MS100" value="1.0058392548774802" />
-      <entry key="MS500" value="1.3575168185630997" />
-      <entry key="S2" value="2.1334210663014286" />
-      <entry key="S5" value="4.676206789677892" />
-      <entry key="S10" value="7.590563216341739" />
-      <entry key="S30" value="14.05809731776765" />
-      <entry key="S60" value="19.583175448387365" />
-      <entry key="M2" value="24.932434848643503" />
-      <entry key="M5" value="31.30835629880782" />
-      <entry key="M10" value="34.91616183823601" />
-      <entry key="M15" value="36.41231861154992" />
-      <entry key="M30" value="38.09648186053439" />
-      <entry key="H1" value="39.018657621115636" />
-      <entry key="H2" value="39.501642926221955" />
-      <entry key="H4" value="39.74886243600071" />
-      <entry key="D1" value="39.95786840228629" />
-      <entry key="W1" value="39.99397441457332" />
+      <entry key="MS100" value="1.0306068842995915" />
+      <entry key="MS500" value="1.4979520506032555" />
+      <entry key="S2" value="2.2132295457715125" />
+      <entry key="S5" value="4.809540363682361" />
+      <entry key="S10" value="9.278175463315023" />
+      <entry key="S30" value="24.705345471248073" />
+      <entry key="S60" value="39.04201748666405" />
+      <entry key="M2" value="54.94149600540647" />
+      <entry key="M5" value="75.96396558912083" />
+      <entry key="M10" value="88.48104994574676" />
+      <entry key="M15" value="93.81618991031523" />
+      <entry key="M30" value="99.9337566647682" />
+      <entry key="H1" value="103.3363730942817" />
+      <entry key="H2" value="105.13391741411625" />
+      <entry key="H4" value="106.0581756183832" />
+      <entry key="D1" value="106.84179056974773" />
+      <entry key="W1" value="106.97736806830093" />
     </decayedWithinFileMoves>
   </component>
   <component name="NextEditTypingFeaturesState">
     <decayedRemovalEvents>
-      <entry key="MS100" value="1.2178454630010311" />
-      <entry key="MS500" value="2.369114742522444" />
-      <entry key="S2" value="3.5762289941969616" />
-      <entry key="S5" value="4.2377885223448" />
-      <entry key="S10" value="4.77334003518903" />
-      <entry key="S30" value="6.340236159293657" />
-      <entry key="S60" value="7.367612996610043" />
-      <entry key="M2" value="8.088702593996532" />
-      <entry key="M5" value="8.609576926559942" />
-      <entry key="M10" value="8.800185307477838" />
-      <entry key="M15" value="8.865744971500519" />
-      <entry key="M30" value="8.932344176891913" />
-      <entry key="H1" value="8.966038933019416" />
-      <entry key="H2" value="8.982986041910676" />
-      <entry key="H4" value="8.99148464777704" />
-      <entry key="D1" value="8.99857961023992" />
-      <entry key="W1" value="8.999797058642566" />
+      <entry key="MS100" value="1.9636168248433434E-67" />
+      <entry key="MS500" value="1.0377171821424793E-13" />
+      <entry key="S2" value="0.0016360574431592456" />
+      <entry key="S5" value="0.19556384691356718" />
+      <entry key="S10" value="1.0254087490470627" />
+      <entry key="S30" value="3.7972015533881627" />
+      <entry key="S60" value="5.701720351252344" />
+      <entry key="M2" value="7.1157129687652185" />
+      <entry key="M5" value="8.179328152608846" />
+      <entry key="M10" value="8.577480275570906" />
+      <entry key="M15" value="8.715530791649822" />
+      <entry key="M30" value="8.856349611658887" />
+      <entry key="H1" value="8.927816846255736" />
+      <entry key="H2" value="8.963818426265473" />
+      <entry key="H4" value="8.981886650213132" />
+      <entry key="D1" value="8.996977969207498" />
+      <entry key="W1" value="8.999568204367122" />
     </decayedRemovalEvents>
     <decayedTypingEvents>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="0.0" />
-      <entry key="S2" value="0.0" />
-      <entry key="S5" value="0.0" />
-      <entry key="S10" value="0.0" />
-      <entry key="S30" value="0.0" />
-      <entry key="S60" value="0.0" />
-      <entry key="M2" value="0.0" />
-      <entry key="M5" value="0.0" />
-      <entry key="M10" value="0.0" />
-      <entry key="M15" value="0.0" />
-      <entry key="M30" value="0.0" />
-      <entry key="H1" value="0.0" />
-      <entry key="H2" value="0.0" />
-      <entry key="H4" value="0.0" />
-      <entry key="D1" value="0.0" />
-      <entry key="W1" value="0.0" />
+      <entry key="MS100" value="1.2960303933662773" />
+      <entry key="MS500" value="2.821781169693492" />
+      <entry key="S2" value="5.330796050700964" />
+      <entry key="S5" value="7.247648944794714" />
+      <entry key="S10" value="9.40075654057078" />
+      <entry key="S30" value="12.871189073115328" />
+      <entry key="S60" value="14.272235388047694" />
+      <entry key="M2" value="15.09052925861469" />
+      <entry key="M5" value="15.62459756524709" />
+      <entry key="M10" value="15.8103040581865" />
+      <entry key="M15" value="15.873088283575262" />
+      <entry key="M30" value="15.936319132573908" />
+      <entry key="H1" value="15.96810310078375" />
+      <entry key="H2" value="15.984037407276144" />
+      <entry key="H4" value="15.99201516451101" />
+      <entry key="D1" value="15.998668702255301" />
+      <entry key="W1" value="15.999809802559376" />
     </decayedTypingEvents>
   </component>
   <component name="NotRoamableUiSettings">
     <option name="fontSize" value="19.0" />
     <option name="presentationModeIdeScale" value="1.75" />
   </component>
-  <component name="PropertyService"><![CDATA[{
-  "keyToString": {
-    "AIHubNotificationManager.lastTariffQuotaAvailable": "293333.235",
-    "AIHubNotificationManager.lastUsedLicenseType": "FREE",
-    "ExpandBeforeRunStepsPanel": "true",
-    "InstalledPluginsSearchHistory": "v\nvi\nvim\nid\nide",
-    "LAST_CALCULATED_COLOR_INDEX_KEY": "8",
-    "LAST_EXTRACTOR_SCRIPTS_CLEANUP_VERSION/data/aggregators": "CL-253.30387.78",
-    "MarketplacePluginsSearchHistory": "c++ theme\nc++\nc\n/tag:Keymap\n/tag:Theme",
-    "Migrate.Cfg.Render.Doc": "true",
-    "Rad.Init.Cfg.1": "true",
-    "RunOnceActivity.AIPromoWindowAdvisorPreheat": "true",
-    "RunOnceActivity.MCP settings loaded": "true",
-    "RunOnceActivity.RadMigrateCodeStyle": "true",
-    "RunOnceActivity.RadMigrateLiveTemplates": "true",
-    "RunOnceActivity.TerminalFontSettingsService.fixStoredNonMonospacedFonts": "true",
-    "RunOnceActivity.TerminalOptionsProvider.TerminalEngineMigration.2026.1": "true",
-    "RunOnceActivity.TerminalOptionsProvider.appTitleMigration.2026.1.1": "true",
-    "RunOnceActivity.TerminalOptionsProvider.migration.2025.1.1": "true",
-    "RunOnceActivity.VFSInitializationConditionsToFusReporter": "true",
-    "RunOnceActivity.cache.folding.model.on.disk.true": "true",
-    "RunOnceActivity.cidr.test.framework.showIndexingAsTask": "true",
-    "RunOnceActivity.cidr.test.roots.only": "true",
-    "RunOnceActivity.git.modal.commit.toggle": "true",
-    "RunOnceActivity.llm.claude.code.byok.migration": "true",
-    "RunOnceActivity.reset.auto.reparse.settings.to.default": "true",
-    "RunOnceActivity.rust.first.ide.run": "true",
-    "RunOnceActivity.trace.non.commercial.popup.id": "true",
-    "SettingsSearchHistory": "idev\nToolchains\nrun\nnova\nReopen",
-    "WelcomeFeature.SHORT_WELCOME_GUIDE_SHOWN": "true",
-    "ai.assistant.toolwindow.was.shown": "true",
-    "ask.about.ctrl.y.shortcut.v2": "true",
-    "clion.initialConfigPerformed": "true",
-    "evaluation.feedback.enabled": "false",
-    "evlsprt.253": "19c20959580",
-    "evlsprt3.253": "6",
-    "evlsprt3.261": "7",
-    "experimental.ui.on.first.startup": "true",
-    "experimental.ui.used.version": "261.25134.137",
-    "fileTypeChangedCounter": "2",
-    "fontSizeToResetConsole": "14.0",
-    "fontSizeToResetEditor": "14.0",
-    "git.working.trees.number.of.projects.with.git": "5",
-    "got.it.tooltip.Plugins Auto-Update": "1",
-    "got.it.tooltip.database.cloud.explorer.promo": "1",
-    "got.it.tooltip.grouped.diff.onboarding.1": "1",
-    "got.it.tooltip.recap.onboarding.v1": "1",
-    "got.it.tooltip.reset.lesson.got.it": "1",
-    "got.it.tooltip.settings.sync.in.settings": "1",
-    "ide.islands.ab3": "true",
-    "ide.islands.new.darcula": "true",
-    "ift.clion.onboarding.feedback.proposed": "true",
-    "ift.hide.welcome.screen.promo": "true",
-    "ift.learning.panel.opened.in": "253.30387.78",
-    "input.method.disabler.muted": "true",
-    "last_opened_file_path": "/home/imad/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library",
-    "llm.installer.last.toolwindow.state": "AI_ASSISTANT",
-    "migrated.non.roamable.values.from.general.settings": "true",
-    "previousColorScheme": "_@user_Monocai",
-    "registry.to.advanced.settings.migration.build": "CL-261.25134.137",
-    "search.everywhere.splitter": "0.41153082",
-    "selected.color.option.type": "OC.NUMBER",
-    "settings.code.style.selected.tab.C++": "Tabs and Indents",
-    "tab_selection_count": "5",
-    "terminal.gen.one.option.visible": "false",
-    "trial.state.last.availability.check": "0",
-    "ts.lib.d.ts.version": "5.9.3",
-    "whats.new.last.shown.version": "2026-1.3-25134-805e6dd2d9f176c2239e27134aa7a47870f743f5"
+  <component name="PropertyService">{
+  &quot;keyToString&quot;: {
+    &quot;AIHubNotificationManager.lastTariffQuotaAvailable&quot;: &quot;293333.235&quot;,
+    &quot;AIHubNotificationManager.lastUsedLicenseType&quot;: &quot;FREE&quot;,
+    &quot;ExpandBeforeRunStepsPanel&quot;: &quot;true&quot;,
+    &quot;InstalledPluginsSearchHistory&quot;: &quot;v\nvi\nvim\nid\nide&quot;,
+    &quot;LAST_CALCULATED_COLOR_INDEX_KEY&quot;: &quot;8&quot;,
+    &quot;LAST_EXTRACTOR_SCRIPTS_CLEANUP_VERSION/data/aggregators&quot;: &quot;CL-253.30387.78&quot;,
+    &quot;MarketplacePluginsSearchHistory&quot;: &quot;c++ theme\nc++\nc\n/tag:Keymap\n/tag:Theme&quot;,
+    &quot;Migrate.Cfg.Render.Doc&quot;: &quot;true&quot;,
+    &quot;Rad.Init.Cfg.1&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.AIPromoWindowAdvisorPreheat&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.RadMigrateCodeStyle&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.RadMigrateLiveTemplates&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalFontSettingsService.fixStoredNonMonospacedFonts&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalOptionsProvider.TerminalEngineMigration.2026.1&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalOptionsProvider.appTitleMigration.2026.1.1&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalOptionsProvider.migration.2025.1.1&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.VFSInitializationConditionsToFusReporter&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cache.folding.model.on.disk.true&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.test.framework.showIndexingAsTask&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.test.roots.only&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.modal.commit.toggle&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.llm.claude.code.byok.migration&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.reset.auto.reparse.settings.to.default&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.rust.first.ide.run&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.trace.non.commercial.popup.id&quot;: &quot;true&quot;,
+    &quot;SettingsSearchHistory&quot;: &quot;idev\nToolchains\nrun\nnova\nReopen&quot;,
+    &quot;WelcomeFeature.SHORT_WELCOME_GUIDE_SHOWN&quot;: &quot;true&quot;,
+    &quot;ai.assistant.toolwindow.was.shown&quot;: &quot;true&quot;,
+    &quot;ask.about.ctrl.y.shortcut.v2&quot;: &quot;true&quot;,
+    &quot;clion.initialConfigPerformed&quot;: &quot;true&quot;,
+    &quot;evaluation.feedback.enabled&quot;: &quot;false&quot;,
+    &quot;evlsprt.253&quot;: &quot;19c20959580&quot;,
+    &quot;evlsprt3.253&quot;: &quot;6&quot;,
+    &quot;evlsprt3.261&quot;: &quot;7&quot;,
+    &quot;experimental.ui.on.first.startup&quot;: &quot;true&quot;,
+    &quot;experimental.ui.used.version&quot;: &quot;261.25134.137&quot;,
+    &quot;fileTypeChangedCounter&quot;: &quot;2&quot;,
+    &quot;fontSizeToResetConsole&quot;: &quot;14.0&quot;,
+    &quot;fontSizeToResetEditor&quot;: &quot;14.0&quot;,
+    &quot;git.working.trees.stop.showing.new.badge&quot;: &quot;true&quot;,
+    &quot;got.it.tooltip.Plugins Auto-Update&quot;: &quot;1&quot;,
+    &quot;got.it.tooltip.database.cloud.explorer.promo&quot;: &quot;1&quot;,
+    &quot;got.it.tooltip.grouped.diff.onboarding.1&quot;: &quot;1&quot;,
+    &quot;got.it.tooltip.recap.onboarding.v1&quot;: &quot;1&quot;,
+    &quot;got.it.tooltip.reset.lesson.got.it&quot;: &quot;1&quot;,
+    &quot;got.it.tooltip.settings.sync.in.settings&quot;: &quot;1&quot;,
+    &quot;ide.islands.ab3&quot;: &quot;true&quot;,
+    &quot;ide.islands.new.darcula&quot;: &quot;true&quot;,
+    &quot;ift.clion.onboarding.feedback.proposed&quot;: &quot;true&quot;,
+    &quot;ift.hide.welcome.screen.promo&quot;: &quot;true&quot;,
+    &quot;ift.learning.panel.opened.in&quot;: &quot;253.30387.78&quot;,
+    &quot;input.method.disabler.muted&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/imad/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library&quot;,
+    &quot;llm.installer.last.toolwindow.state&quot;: &quot;AI_ASSISTANT&quot;,
+    &quot;migrated.non.roamable.values.from.general.settings&quot;: &quot;true&quot;,
+    &quot;performance.plugin.promo.freeze.count&quot;: &quot;4&quot;,
+    &quot;previousColorScheme&quot;: &quot;_@user_VSCode Dark Brighter&quot;,
+    &quot;promo.notification.automatic.error.report.shown&quot;: &quot;true&quot;,
+    &quot;registry.to.advanced.settings.migration.build&quot;: &quot;CL-261.25134.137&quot;,
+    &quot;search.everywhere.splitter&quot;: &quot;0.41153082&quot;,
+    &quot;selected.color.option.type&quot;: &quot;OC.NUMBER&quot;,
+    &quot;settings.code.style.selected.tab.C++&quot;: &quot;Tabs and Indents&quot;,
+    &quot;tab_selection_count&quot;: &quot;5&quot;,
+    &quot;terminal.gen.one.option.visible&quot;: &quot;false&quot;,
+    &quot;trial.state.last.availability.check&quot;: &quot;0&quot;,
+    &quot;ts.lib.d.ts.version&quot;: &quot;5.9.3&quot;,
+    &quot;whats.new.last.shown.version&quot;: &quot;2026-1.3-25134-805e6dd2d9f176c2239e27134aa7a47870f743f5&quot;
   },
-  "keyToStringList": {
-    "AIHubNotificationManager.gotItNotifications": [
-      "FREE_ENABLED",
-      "LicenseExpiredFreeEnabled(ACP)"
+  &quot;keyToStringList&quot;: {
+    &quot;AIHubNotificationManager.gotItNotifications&quot;: [
+      &quot;FREE_ENABLED&quot;,
+      &quot;LicenseExpiredFreeEnabled(ACP)&quot;
     ],
-    "AIHubNotificationManager.lastAllNotifications": [],
-    "AIHubNotificationManager.notifications": [],
-    "AIHubNotificationManager.seenNotifications": [],
-    "file.chooser.recent.files": [
-      "/home/imad/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library",
-      "/home/imad/Documents/Project1 - Utility library",
-      "/home/imad/Documents/Project 2 L4 - ATM System",
-      "/home/imad/Documents/Project 1 L4 - Bank Extension 2",
-      "/home/imad/Documents/Coding"
+    &quot;AIHubNotificationManager.lastAllNotifications&quot;: [],
+    &quot;AIHubNotificationManager.notifications&quot;: [],
+    &quot;AIHubNotificationManager.seenNotifications&quot;: [],
+    &quot;file.chooser.recent.files&quot;: [
+      &quot;/home/imad/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library&quot;,
+      &quot;/home/imad/Documents/Project1 - Utility library&quot;,
+      &quot;/home/imad/Documents/Project 2 L4 - ATM System&quot;,
+      &quot;/home/imad/Documents/Project 1 L4 - Bank Extension 2&quot;,
+      &quot;/home/imad/Documents/Coding&quot;
     ],
-    "fileTypeDetectors": [
-      "com.intellij.ide.scratch.ScratchFileServiceImpl$Detector",
-      "com.intellij.database.vfs.DbStorageFileType$Detector",
-      "com.jetbrains.rider.cpp.fileType.CppHeaderFileTypeDetector",
-      "com.intellij.javascript.debugger.sourcemap.SourceMapFileType$MyFileTypeDetector",
-      "com.jetbrains.nodejs.util.NodeFileTypeDetector$JavaScriptFileTypeDetector",
-      "com.jetbrains.nodejs.util.NodeFileTypeDetector$TypeScriptFileTypeDetector",
-      "com.intellij.docker.dockerFile.DockerFileTypeDetector",
-      "org.jetbrains.plugins.textmate.TextMateFileType$TextMateFileDetector"
+    &quot;fileTypeDetectors&quot;: [
+      &quot;com.intellij.ide.scratch.ScratchFileServiceImpl$Detector&quot;,
+      &quot;com.intellij.database.vfs.DbStorageFileType$Detector&quot;,
+      &quot;com.jetbrains.rider.cpp.fileType.CppHeaderFileTypeDetector&quot;,
+      &quot;com.intellij.javascript.debugger.sourcemap.SourceMapFileType$MyFileTypeDetector&quot;,
+      &quot;com.jetbrains.nodejs.util.NodeFileTypeDetector$JavaScriptFileTypeDetector&quot;,
+      &quot;com.jetbrains.nodejs.util.NodeFileTypeDetector$TypeScriptFileTypeDetector&quot;,
+      &quot;com.intellij.docker.dockerFile.DockerFileTypeDetector&quot;,
+      &quot;org.jetbrains.plugins.textmate.TextMateFileType$TextMateFileDetector&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="ReworkedTerminalUsage">{
   &quot;enterKeyPressedTimes&quot;: 1,
   &quot;firstIdeSessionMoment&quot;: {

@@ -27,8 +27,6 @@
 	"custom/separator#blank",
 	"custom/cava_mviz",
 	"custom/separator#blank",
-	"custom/playerctl",
-	"custom/separator#blank_2",
 	"hyprland/window",
 	],
 
@@ -48,7 +46,8 @@
 
 "modules-right": [
 	"tray",
-	"network#speed",
+	"network",
+	"bluetooth",
 	"custom/separator#dot-line",
 	"group/mobo_drawer",
 	"custom/separator#line",  

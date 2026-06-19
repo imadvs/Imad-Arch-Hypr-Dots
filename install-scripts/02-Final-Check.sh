@@ -16,7 +16,6 @@ packages=(
   wlogout
   kitty
   hypridle
-  hyprlock
   hyprland
 )
 

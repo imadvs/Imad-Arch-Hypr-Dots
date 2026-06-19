@@ -7035,7 +7035,7 @@
     </option>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="616281000" />
+    <option name="totallyTimeSpent" value="616996000" />
   </component>
   <component name="TodoView">
     <todo-panel id="all">
@@ -7044,9 +7044,9 @@
   </component>
   <component name="ToolWindowManager">
     <layoutV2>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5365059" visible="true" weight="0.14425504" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5362225" visible="true" weight="0.14425504" />
       <window_info id="Commit" order="1" weight="0.14425504" />
-      <window_info active="true" id="Structure" order="2" sideWeight="0.46349412" side_tool="true" visible="true" weight="0.14425504" />
+      <window_info active="true" id="Structure" order="2" sideWeight="0.46377748" side_tool="true" visible="true" weight="0.14425504" />
       <window_info id="Pull Requests" order="3" sideWeight="0.50060385" weight="0.16343749" />
       <window_info anchor="bottom" id="Version Control" order="0" weight="0.40177515" />
       <window_info anchor="bottom" id="Problems" order="1" />

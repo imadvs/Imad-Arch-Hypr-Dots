@@ -4,7 +4,6 @@
 
 hypr_eco=(
   hypridle
-  hyprlock
 )
 
 hypr=(

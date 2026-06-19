@@ -4,8 +4,8 @@
 clear
 wallpaper=$HOME/.config/hypr/wallpaper_effects/.wallpaper_current
 waybar_style="$HOME/.config/waybar/style/[Extra] Neon Circuit.css"
-waybar_config="$HOME/.config/waybar/configs/[TOP] Default"
-waybar_config_laptop="$HOME/.config/waybar/configs/[TOP] Default Laptop"
+waybar_config="$HOME/.config/waybar/configs/TOP-Default"
+waybar_config_laptop="$HOME/.config/waybar/configs/TOP-Default-Laptop"
 
 # Set some colors for output messages
 OK="$(tput setaf 2)[OK]$(tput sgr0)"
@@ -359,14 +359,6 @@ if [ "$resolution" == "< 1440p" ]; then
   # kitty font size
   sed -i 's/font_size 16.0/font_size 14.0/' config/kitty/kitty.conf
 
-  # hyprlock matters
-  if [ -f config/hypr/hyprlock.conf ]; then
-    mv config/hypr/hyprlock.conf config/hypr/hyprlock-2k.conf
-  fi
-  if [ -f config/hypr/hyprlock-1080p.conf ]; then
-    mv config/hypr/hyprlock-1080p.conf config/hypr/hyprlock.conf
-  fi
-
   # rofi fonts reduction
   rofi_config_file="config/rofi/0-shared-fonts.rasi"
   if [ -f "$rofi_config_file" ]; then
@@ -407,21 +399,6 @@ while true; do
     # Clock 5
     sed -i 's#^\(\s*\)//\("format": "{:%A, %I:%M %P}",\) #\1\2#g' config/waybar/Modules 2>&1 | tee -a "$LOG"
     sed -i 's#^\(\s*\)\("format": "{:%a %d | %H:%M}",\) #\1//\2#g' config/waybar/Modules 2>&1 | tee -a "$LOG"
-
-    # for hyprlock
-    HYPRLOCK_FILE="config/hypr/hyprlock.conf"
-    if [ ! -f "$HYPRLOCK_FILE" ] && [ -f "config/hypr/hyprlock-1080p.conf" ]; then
-      HYPRLOCK_FILE="config/hypr/hyprlock-1080p.conf"
-    fi
-    if [ -f "$HYPRLOCK_FILE" ]; then
-      sed -i 's/^\s*text = cmd\[update:1000\] echo "\$(date +"%H")"/# &/' "$HYPRLOCK_FILE" 2>&1 | tee -a "$LOG"
-      sed -i 's/^\(\s*\)# *text = cmd\[update:1000\] echo "\$(date +"%I")" #AM\/PM/\1    text = cmd\[update:1000\] echo "\$(date +"%I")" #AM\/PM/' "$HYPRLOCK_FILE" 2>&1 | tee -a "$LOG"
-
-      sed -i 's/^\s*text = cmd\[update:1000\] echo "\$(date +"%S")"/# &/' "$HYPRLOCK_FILE" 2>&1 | tee -a "$LOG"
-      sed -i 's/^\(\s*\)# *text = cmd\[update:1000\] echo "\$(date +"%S %p")" #AM\/PM/\1    text = cmd\[update:1000\] echo "\$(date +"%S %p")" #AM\/PM/' "$HYPRLOCK_FILE" 2>&1 | tee -a "$LOG"
-    else
-      echo "${WARN} hyprlock template not found; skipping 12H lock format edits" 2>&1 | tee -a "$LOG"
-    fi
 
     echo "${OK} 12H format set on waybar clocks succesfully." 2>&1 | tee -a "$LOG"
 
@@ -1049,7 +1026,6 @@ printf "\n%.0s" {1..1}
 # restoring some files in ~/.config/hypr
 DIR_H="hypr"
 FILES_2_RESTORE=(
-  "hyprlock.conf"
   "hypridle.conf"
 )
 
@@ -1138,7 +1114,11 @@ rm -rf "$HOME/.config/waybar/configs/[TOP] Default$config_remove" \
   "$HOME/.config/waybar/configs/[TOP] Default$config_remove (old v1)" \
   "$HOME/.config/waybar/configs/[TOP] Default$config_remove (old v2)" \
   "$HOME/.config/waybar/configs/[TOP] Default$config_remove (old v3)" \
-  "$HOME/.config/waybar/configs/[TOP] Default$config_remove (old v4)" 2>&1 | tee -a "$LOG" || true
+  "$HOME/.config/waybar/configs/[TOP] Default$config_remove (old v4)" \
+  "$HOME/.config/waybar/configs/TOP-Default$config_remove (old v1)" \
+  "$HOME/.config/waybar/configs/TOP-Default$config_remove (old v2)" \
+  "$HOME/.config/waybar/configs/TOP-Default$config_remove (old v3)" \
+  "$HOME/.config/waybar/configs/TOP-Default$config_remove (old v4)" 2>&1 | tee -a "$LOG" || true
 
 printf "\n%.0s" {1..1}
 

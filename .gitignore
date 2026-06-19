@@ -4,3 +4,6 @@ Hyprland-Dots/config/google-chrome/
 **/Cache*
 **/*.db
 Hyprland-Dots/config/Code/CachedExtensionVSIXs/
+Hyprland-Dots/config/obsidian/
+Hyprland-Dots/Copy-Logs/
+*.bak

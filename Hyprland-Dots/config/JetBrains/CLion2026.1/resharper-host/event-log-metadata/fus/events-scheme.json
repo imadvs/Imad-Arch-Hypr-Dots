@@ -4912,6 +4912,35 @@
       }
     }
   }, {
+    "id" : "full.line.gpu.info",
+    "builds" : [ ],
+    "versions" : [ {
+      "from" : "2"
+    } ],
+    "rules" : {
+      "event_id" : [ "{enum:gpu}" ],
+      "event_data" : {
+        "gpu_device_id" : [ "{regexp:0x[0-9a-fA-F]{1,8}|unknown}" ],
+        "gpu_index" : [ "{regexp#integer}" ],
+        "vendor" : [ "{enum:nvidia|amd|intel|apple|other}" ],
+        "vram_mb" : [ "{regexp#integer}" ]
+      }
+    }
+  }, {
+    "id" : "full.line.ram.info",
+    "builds" : [ ],
+    "versions" : [ {
+      "from" : "2"
+    } ],
+    "rules" : {
+      "event_id" : [ "{enum:ram}" ],
+      "event_data" : {
+        "speed_mts" : [ "{regexp#integer}" ],
+        "total_mb" : [ "{regexp#integer}" ],
+        "type" : [ "{enum:ddr3|ddr4|ddr5|lpddr3|lpddr4|lpddr4x|lpddr5|lpddr5x|mixed|unknown}" ]
+      }
+    }
+  }, {
     "id" : "fus.event.log",
     "builds" : [ ],
     "versions" : [ {
@@ -17064,5 +17093,5 @@
       "version" : "Unknown|unknown.format|unknown|UNKNOWN|((\\d+\\.?)*\\d+)"
     }
   },
-  "version" : "7360"
+  "version" : "7366"
 }

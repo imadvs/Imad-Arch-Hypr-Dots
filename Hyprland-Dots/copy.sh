@@ -4,8 +4,8 @@
 clear
 wallpaper=$HOME/.config/hypr/wallpaper_effects/.wallpaper_current
 waybar_style="$HOME/.config/waybar/style/[Extra] Neon Circuit.css"
-waybar_config="$HOME/.config/waybar/configs/TOP-Default"
-waybar_config_laptop="$HOME/.config/waybar/configs/TOP-Default-Laptop"
+waybar_config="$HOME/.config/waybar/configs/TOP-Default-IMAD"
+waybar_config_laptop="$HOME/.config/waybar/configs/TOP-Default-Laptop-IMAD"
 
 # Set some colors for output messages
 OK="$(tput setaf 2)[OK]$(tput sgr0)"
@@ -1118,7 +1118,11 @@ rm -rf "$HOME/.config/waybar/configs/[TOP] Default$config_remove" \
   "$HOME/.config/waybar/configs/TOP-Default$config_remove (old v1)" \
   "$HOME/.config/waybar/configs/TOP-Default$config_remove (old v2)" \
   "$HOME/.config/waybar/configs/TOP-Default$config_remove (old v3)" \
-  "$HOME/.config/waybar/configs/TOP-Default$config_remove (old v4)" 2>&1 | tee -a "$LOG" || true
+  "$HOME/.config/waybar/configs/TOP-Default$config_remove (old v4)" \
+  "$HOME/.config/waybar/configs/TOP-Default-IMAD$config_remove (old v1)" \
+  "$HOME/.config/waybar/configs/TOP-Default-IMAD$config_remove (old v2)" \
+  "$HOME/.config/waybar/configs/TOP-Default-IMAD$config_remove (old v3)" \
+  "$HOME/.config/waybar/configs/TOP-Default-IMAD$config_remove (old v4)" 2>&1 | tee -a "$LOG" || true
 
 printf "\n%.0s" {1..1}
 

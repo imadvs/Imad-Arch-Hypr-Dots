@@ -28,7 +28,7 @@ uwsm app -- obsidian &
 sleep 2
 
 echo "Launching ProgrammingAdvices..."
-uwsm app -- google-chrome-stable --disable-gpu --ozone-platform-hint=auto --class="chrome-programmingadvices" --password-store=basic --new-window --app="https://programmingadvices.com/l/dashboard" &
+uwsm app -- env NVD_BACKEND=direct LIBVA_DRIVER_NAME=nvidia google-chrome-stable --ozone-platform-hint=auto --enable-features=VaapiVideoDecoder,VaapiVideoEncoder,VaapiIgnoreDriverChecks --class="chrome-programmingadvices" --password-store=basic --new-window --app="https://programmingadvices.com/l/dashboard" &
 sleep 7 # Wait for P.Advices to spawn
 
 # Resize Workspace 2
@@ -43,10 +43,10 @@ echo "Visiting Workspace 3..."
 hyprctl dispatch 'hl.dsp.focus({ workspace = 3 })'
 sleep 1
 echo "Launching Busuu..."
-uwsm app -- google-chrome-stable --disable-gpu --ozone-platform-hint=auto --class="chrome-busuu" --password-store=basic --new-window --app="https://www.busuu.com" &
+uwsm app -- env NVD_BACKEND=direct LIBVA_DRIVER_NAME=nvidia google-chrome-stable --ozone-platform-hint=auto --enable-features=VaapiVideoDecoder,VaapiVideoEncoder,VaapiIgnoreDriverChecks --class="chrome-busuu" --password-store=basic --new-window --app="https://www.busuu.com" &
 sleep 1
 echo "Launching Managementdose..."
-uwsm app -- google-chrome-stable --disable-gpu --ozone-platform-hint=auto --class="chrome-managementdose" --password-store=basic --new-window --app="https://managementdose.com" &
+uwsm app -- env NVD_BACKEND=direct LIBVA_DRIVER_NAME=nvidia google-chrome-stable --ozone-platform-hint=auto --enable-features=VaapiVideoDecoder,VaapiVideoEncoder,VaapiIgnoreDriverChecks --class="chrome-managementdose" --password-store=basic --new-window --app="https://managementdose.com" &
 sleep 3
 
 # Resize Workspace 3
@@ -61,32 +61,9 @@ echo "Visiting Workspace 4..."
 hyprctl dispatch 'hl.dsp.focus({ workspace = 4 })'
 sleep 1
 
-echo "Launching RMPC (Top Left)..."
-uwsm app -- kitty --class "rmpc" --title "RMPC" -e rmpc &
-sleep 2
-
-echo "Launching Pomofocus (Top Right)..."
+echo "Launching Pomofocus..."
 uwsm app -- kitty --class "pomofocus" --title "Pomofocus" python3 /home/imad/.config/hypr/UserScripts/pomo.py &
-sleep 4 # Wait for Pomo to spawn
-
-# Focus RMPC to split it vertically with Cava (Bottom Left)
-echo "Launching Cava (Bottom Left)..."
-hyprctl dispatch 'hl.dsp.focus({ window = "class:^(rmpc)$" })'
-uwsm app -- kitty --class "cava" --title "Cava" -e cava &
 sleep 2
-
-# Focus Pomofocus to split it vertically with Clock (Bottom Right)
-echo "Launching Clock (Bottom Right)..."
-hyprctl dispatch 'hl.dsp.focus({ window = "class:^(pomofocus)$" })'
-uwsm app -- kitty --class "clock-rs" --title "Clock" -e clock-rs &
-sleep 2
-
-# Resize Workspace 4: Make bottom row shorter (approx 70/30 split)
-echo "Resizing Workspace 4..."
-hyprctl dispatch 'hl.dsp.focus({ window = "class:^(rmpc)$" })'
-hyprctl dispatch 'hl.dsp.layout("splitratio 0.2")'
-hyprctl dispatch 'hl.dsp.focus({ window = "class:^(pomofocus)$" })'
-hyprctl dispatch 'hl.dsp.layout("splitratio 0.2")'
 
 # --- Final Cleanup ---
 sleep 1

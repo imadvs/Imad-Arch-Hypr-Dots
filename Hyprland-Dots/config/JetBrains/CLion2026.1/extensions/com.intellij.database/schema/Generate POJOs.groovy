@@ -66,7 +66,7 @@ def calcFields(table) {
 }
 
 def javaName(str, capitalize) {
-  def s = com.intellij.psi.codeStyle.NameUtil.splitNameIntoWords(str)
+  def s = com.intellij.psi.codeStyle.NameUtil.splitNameIntoWordList(str)
     .collect { Case.LOWER.apply(it).capitalize() }
     .join("")
     .replaceAll(/[^\p{javaJavaIdentifierPart}[_]]/, "_")

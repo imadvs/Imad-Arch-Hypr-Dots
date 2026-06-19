@@ -41,7 +41,7 @@ hl.env("QT_QUICK_CONTROLS_STYLE", "org.hyprland.style")
 hl.env("GDK_SCALE", "1")
 hl.env("QT_SCALE_FACTOR", "1")
 hl.env("HYPRCURSOR_THEME", "Bibata-Modern-Ice")
-hl.env("HYPRCURSOR_SIZE", "14")
+hl.env("HYPRCURSOR_SIZE", "24")
 hl.env("MOZ_ENABLE_WAYLAND", "1")
 hl.env("ELECTRON_OZONE_PLATFORM_HINT", "auto")
 hl.env("LIBVA_DRIVER_NAME", "nvidia")
@@ -49,7 +49,7 @@ hl.env("__GLX_VENDOR_LIBRARY_NAME", "nvidia")
 hl.env("NVD_BACKEND", "direct")
 hl.env("GSK_RENDERER", "ngl")
 hl.env("EDITOR", "nvim")
-hl.env("XCURSOR_SIZE", "14")
+hl.env("XCURSOR_SIZE", "24")
 
 -- ------------------------
 -- MONITOR CONFIG
@@ -807,6 +807,7 @@ hl.window_rule({ name = "opacity-wallpaper", match = { tag = "wallpaper" }, opac
 hl.window_rule({ name = "opacity-pip", match = { title = "^(Picture-in-Picture)$" }, opacity = "0.95 0.75" })
 hl.window_rule({ name = "opacity-obsidian", match = { class = "^(obsidian)$" }, opacity = "0.85 0.75" })
 hl.window_rule({ name = "opacity-jetbrains", match = { class = "^(jetbrains-.*)$" }, opacity = "0.85 0.75" })
+hl.window_rule({ name = "opacity-clion", match = { class = "^(jetbrains-clion)$" }, opacity = "0.95 0.85" })
 hl.window_rule({
 	name = "opacity-gedit",
 	match = { class = "^(gedit|org.gnome.TextEditor|mousepad)$" },

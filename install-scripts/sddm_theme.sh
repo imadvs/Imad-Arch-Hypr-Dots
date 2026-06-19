@@ -1,9 +1,9 @@
 #!/bin/bash
 # Custom SDDM Theme Installer for Imad-Arch-Hypr-Dots
-# Installs the preserved sddm-astronaut-theme with pixel_sakura and HiDPI fixes
+# Installs the preserved The Last of Us theme
 
 LOG="Install-Logs/install-$(date +%d-%H%M%S)_sddm_theme.log"
-THEME_NAME="sddm-astronaut-theme"
+THEME_NAME="last-of-us"
 THEME_DIR="/usr/share/sddm/themes"
 
 echo "Installing Custom SDDM Theme..."
@@ -24,28 +24,19 @@ EnableHiDPI=true" | sudo tee /etc/sddm.conf.d/hidpi.conf > /dev/null
 
 # 3. Configure SDDM to use the theme
 echo "Configuring SDDM to use $THEME_NAME..."
-# Create/Update /etc/sddm.conf
-if [ ! -f /etc/sddm.conf ]; then
-    sudo touch /etc/sddm.conf
-fi
-
-# Ensure [Theme] section exists and set Current theme
-if grep -q "^\[Theme\]" /etc/sddm.conf; then
-    sudo sed -i "s/^Current=.*/Current=$THEME_NAME/" /etc/sddm.conf
+CONFIG_SRC="config/etc/sddm.conf"
+if [ -f "$CONFIG_SRC" ]; then
+    echo "Copying SDDM config from repo..."
+    sudo cp "$CONFIG_SRC" /etc/sddm.conf
 else
-    echo -e "\n[Theme]\nCurrent=$THEME_NAME" | sudo tee -a /etc/sddm.conf
-fi
+    echo "No repo config found, creating inline..."
+    sudo tee /etc/sddm.conf > /dev/null <<'EOF'
+[Theme]
+Current=last-of-us
 
-# Ensure [General] section exists and input method is set
-if grep -q "^\[General\]" /etc/sddm.conf; then
-     # Check if InputMethod exists, if so replace it, else append it
-    if grep -q "InputMethod=" /etc/sddm.conf; then
-        sudo sed -i "s/^InputMethod=.*/InputMethod=qtvirtualkeyboard/" /etc/sddm.conf
-    else
-         sudo sed -i "/^\[General\]/a InputMethod=qtvirtualkeyboard" /etc/sddm.conf
-    fi
-else
-    echo -e "\n[General]\nInputMethod=qtvirtualkeyboard" | sudo tee -a /etc/sddm.conf
+[General]
+InputMethod=qtvirtualkeyboard
+EOF
 fi
 
 echo "SDDM Theme installation complete."

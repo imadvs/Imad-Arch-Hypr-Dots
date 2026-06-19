@@ -18,6 +18,7 @@ login=(
   gdm
   lxdm
   lxdm-gtk3
+  plasmalogin
 )
 
 ## WARNING: DO NOT EDIT BEYOND THIS LINE IF YOU DON'T KNOW WHAT YOU ARE DOING! ##

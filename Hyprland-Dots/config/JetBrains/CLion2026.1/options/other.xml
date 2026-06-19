@@ -23,84 +23,202 @@
       <entry key="ObjectiveC" value="$USER_HOME$/.cache/JetBrains/CLion2025.3/demo/LearnCppProject" />
     </languageToProjectMap>
   </component>
+  <component name="NextEditActionFeaturesState">
+    <decayedPasteEvents>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="0.0" />
+      <entry key="S60" value="0.0" />
+      <entry key="M2" value="0.0" />
+      <entry key="M5" value="0.0" />
+      <entry key="M10" value="0.0" />
+      <entry key="M15" value="0.0" />
+      <entry key="M30" value="0.0" />
+      <entry key="H1" value="0.0" />
+      <entry key="H2" value="0.0" />
+      <entry key="H4" value="0.0" />
+      <entry key="D1" value="0.0" />
+      <entry key="W1" value="0.0" />
+    </decayedPasteEvents>
+    <decayedRedoEvents>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="0.0" />
+      <entry key="S60" value="0.0" />
+      <entry key="M2" value="0.0" />
+      <entry key="M5" value="0.0" />
+      <entry key="M10" value="0.0" />
+      <entry key="M15" value="0.0" />
+      <entry key="M30" value="0.0" />
+      <entry key="H1" value="0.0" />
+      <entry key="H2" value="0.0" />
+      <entry key="H4" value="0.0" />
+      <entry key="D1" value="0.0" />
+      <entry key="W1" value="0.0" />
+    </decayedRedoEvents>
+    <decayedUndoEvents>
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0" />
+      <entry key="S10" value="1.0" />
+      <entry key="S30" value="1.0" />
+      <entry key="S60" value="1.0" />
+      <entry key="M2" value="1.0" />
+      <entry key="M5" value="1.0" />
+      <entry key="M10" value="1.0" />
+      <entry key="M15" value="1.0" />
+      <entry key="M30" value="1.0" />
+      <entry key="H1" value="1.0" />
+      <entry key="H2" value="1.0" />
+      <entry key="H4" value="1.0" />
+      <entry key="D1" value="1.0" />
+      <entry key="W1" value="1.0" />
+    </decayedUndoEvents>
+  </component>
   <component name="NextEditCaretFeaturesState">
     <decayedBetweenFilesMoves>
       <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="3.0871297580256445E-191" />
-      <entry key="S2" value="2.357158670840996E-48" />
-      <entry key="S5" value="8.910517166402893E-20" />
-      <entry key="S10" value="3.122428723126342E-10" />
-      <entry key="S30" value="9.592911750032857E-4" />
-      <entry key="S60" value="0.04847155612650584" />
-      <entry key="M2" value="0.3696519162682985" />
-      <entry key="M5" value="1.2878960714761098" />
-      <entry key="M10" value="1.9629045082965717" />
-      <entry key="M15" value="2.2603295513546384" />
-      <entry key="M30" value="2.603627758340908" />
-      <entry key="H1" value="2.79468670652424" />
-      <entry key="H2" value="2.8954958768430106" />
-      <entry key="H4" value="2.9472775900754242" />
-      <entry key="D1" value="2.991146872964681" />
-      <entry key="W1" value="2.9987336401616176" />
+      <entry key="MS500" value="6.048270862868687E-104" />
+      <entry key="S2" value="1.6120806949556417E-26" />
+      <entry key="S5" value="5.98204136134361E-11" />
+      <entry key="S10" value="1.1909518664900292E-5" />
+      <entry key="S30" value="0.06307453701816669" />
+      <entry key="S60" value="0.6002095736144011" />
+      <entry key="M2" value="1.893719561221011" />
+      <entry key="M5" value="4.358109650185541" />
+      <entry key="M10" value="8.617970116989028" />
+      <entry key="M15" value="14.398699422453708" />
+      <entry key="M30" value="34.5418163265379" />
+      <entry key="H1" value="64.98958515442264" />
+      <entry key="H2" value="94.49677169052467" />
+      <entry key="H4" value="116.1727180526768" />
+      <entry key="D1" value="140.8338835523871" />
+      <entry key="W1" value="146.08394533490306" />
     </decayedBetweenFilesMoves>
     <decayedWithinFileMoves>
-      <entry key="MS100" value="1.0052626311596315" />
-      <entry key="MS500" value="1.3501391122187456" />
-      <entry key="S2" value="1.8373127599163233" />
-      <entry key="S5" value="3.343541963260345" />
-      <entry key="S10" value="7.128887470071502" />
-      <entry key="S30" value="23.870941810660177" />
-      <entry key="S60" value="44.90338222004297" />
-      <entry key="M2" value="70.9956611227123" />
-      <entry key="M5" value="104.58458230306718" />
-      <entry key="M10" value="123.898801096601" />
-      <entry key="M15" value="132.0355110926509" />
-      <entry key="M30" value="141.31914905320818" />
-      <entry key="H1" value="146.46683346798224" />
-      <entry key="H2" value="149.18272367438607" />
-      <entry key="H4" value="150.57835810526427" />
-      <entry key="D1" value="151.76122472965486" />
-      <entry key="W1" value="151.96584392708493" />
+      <entry key="MS100" value="1.000002414239109" />
+      <entry key="MS500" value="1.0752586359880243" />
+      <entry key="S2" value="1.669853579397889" />
+      <entry key="S5" value="5.121565753189117" />
+      <entry key="S10" value="14.022498834564306" />
+      <entry key="S30" value="51.46214500920746" />
+      <entry key="S60" value="99.00592670893076" />
+      <entry key="M2" value="179.7264128155003" />
+      <entry key="M5" value="366.1425932001585" />
+      <entry key="M10" value="553.6501040795799" />
+      <entry key="M15" value="690.3333461667623" />
+      <entry key="M30" value="1051.6467907753815" />
+      <entry key="H1" value="1603.4066766560354" />
+      <entry key="H2" value="2196.9287775869784" />
+      <entry key="H4" value="2682.111778056859" />
+      <entry key="D1" value="3312.3867750731533" />
+      <entry key="W1" value="3460.58752019848" />
     </decayedWithinFileMoves>
+  </component>
+  <component name="NextEditInlineCompletionFeaturesState">
+    <decayedAccepted>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="0.0" />
+      <entry key="S60" value="0.0" />
+      <entry key="M2" value="0.0" />
+      <entry key="M5" value="0.0" />
+      <entry key="M10" value="0.0" />
+      <entry key="M15" value="0.0" />
+      <entry key="M30" value="0.0" />
+      <entry key="H1" value="0.0" />
+      <entry key="H2" value="0.0" />
+      <entry key="H4" value="0.0" />
+      <entry key="D1" value="0.0" />
+      <entry key="W1" value="0.0" />
+    </decayedAccepted>
+    <decayedRejected>
+      <entry key="MS100" value="1.2212201960112703" />
+      <entry key="MS500" value="2.4156127817822544" />
+      <entry key="S2" value="3.444576568679922" />
+      <entry key="S5" value="3.816576329773765" />
+      <entry key="S10" value="5.161737015934869" />
+      <entry key="S30" value="17.05399011044267" />
+      <entry key="S60" value="33.055894057805624" />
+      <entry key="M2" value="51.27825678558374" />
+      <entry key="M5" value="75.33597410305472" />
+      <entry key="M10" value="106.05839606920755" />
+      <entry key="M15" value="137.65444746419445" />
+      <entry key="M30" value="215.86959194456279" />
+      <entry key="H1" value="299.9232687256922" />
+      <entry key="H2" value="364.3967198836173" />
+      <entry key="H4" value="404.79335072863745" />
+      <entry key="D1" value="443.60765100142237" />
+      <entry key="W1" value="450.78751005702753" />
+    </decayedRejected>
+    <decayedShown>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="1.7146783677677784E-129" />
+      <entry key="S10" value="1.8837355247710975E-64" />
+      <entry key="S30" value="4.47010358552242E-21" />
+      <entry key="S60" value="3.1339366805464703E-10" />
+      <entry key="M2" value="8.436054031377583E-5" />
+      <entry key="M5" value="0.19394897770064376" />
+      <entry key="M10" value="3.6391064566071107" />
+      <entry key="M15" value="10.750304282036485" />
+      <entry key="M30" value="33.896632669765616" />
+      <entry key="H1" value="61.68197044420438" />
+      <entry key="H2" value="83.6976281567232" />
+      <entry key="H4" value="97.63554232158823" />
+      <entry key="D1" value="111.08645148454214" />
+      <entry key="W1" value="113.57897067117752" />
+    </decayedShown>
   </component>
   <component name="NextEditTypingFeaturesState">
     <decayedRemovalEvents>
-      <entry key="MS100" value="1.9636168248433434E-67" />
-      <entry key="MS500" value="1.0377171821424793E-13" />
-      <entry key="S2" value="0.0016360574431592456" />
-      <entry key="S5" value="0.19556384691356718" />
-      <entry key="S10" value="1.0254087490470627" />
-      <entry key="S30" value="3.7972015533881627" />
-      <entry key="S60" value="5.701720351252344" />
-      <entry key="M2" value="7.1157129687652185" />
-      <entry key="M5" value="8.179328152608846" />
-      <entry key="M10" value="8.577480275570906" />
-      <entry key="M15" value="8.715530791649822" />
-      <entry key="M30" value="8.856349611658887" />
-      <entry key="H1" value="8.927816846255736" />
-      <entry key="H2" value="8.963818426265473" />
-      <entry key="H4" value="8.981886650213132" />
-      <entry key="D1" value="8.996977969207498" />
-      <entry key="W1" value="8.999568204367122" />
+      <entry key="MS100" value="2.3381346957337006E-148" />
+      <entry key="MS500" value="2.976966210485759E-30" />
+      <entry key="S2" value="4.153779860442996E-8" />
+      <entry key="S5" value="0.0011153632167899233" />
+      <entry key="S10" value="0.034324757376424084" />
+      <entry key="S30" value="0.7926725226157076" />
+      <entry key="S60" value="2.835936010847476" />
+      <entry key="M2" value="5.752782251925977" />
+      <entry key="M5" value="9.085102167376014" />
+      <entry key="M10" value="11.671333685305578" />
+      <entry key="M15" value="15.127137049628983" />
+      <entry key="M30" value="31.361307761715693" />
+      <entry key="H1" value="62.30845458701907" />
+      <entry key="H2" value="95.61130281342898" />
+      <entry key="H4" value="120.66808681930843" />
+      <entry key="D1" value="147.75680159520385" />
+      <entry key="W1" value="153.08954959271549" />
     </decayedRemovalEvents>
     <decayedTypingEvents>
-      <entry key="MS100" value="1.2960303933662773" />
-      <entry key="MS500" value="2.821781169693492" />
-      <entry key="S2" value="5.330796050700964" />
-      <entry key="S5" value="7.247648944794714" />
-      <entry key="S10" value="9.40075654057078" />
-      <entry key="S30" value="12.871189073115328" />
-      <entry key="S60" value="14.272235388047694" />
-      <entry key="M2" value="15.09052925861469" />
-      <entry key="M5" value="15.62459756524709" />
-      <entry key="M10" value="15.8103040581865" />
-      <entry key="M15" value="15.873088283575262" />
-      <entry key="M30" value="15.936319132573908" />
-      <entry key="H1" value="15.96810310078375" />
-      <entry key="H2" value="15.984037407276144" />
-      <entry key="H4" value="15.99201516451101" />
-      <entry key="D1" value="15.998668702255301" />
-      <entry key="W1" value="15.999809802559376" />
+      <entry key="MS100" value="1.1947896022245852" />
+      <entry key="MS500" value="2.423840138598056" />
+      <entry key="S2" value="4.267030588651062" />
+      <entry key="S5" value="5.724857904123856" />
+      <entry key="S10" value="8.011531442246477" />
+      <entry key="S30" value="21.114672868721566" />
+      <entry key="S60" value="37.944620499878745" />
+      <entry key="M2" value="57.51437748141117" />
+      <entry key="M5" value="85.95180395068604" />
+      <entry key="M10" value="128.9076293271163" />
+      <entry key="M15" value="180.56468581593387" />
+      <entry key="M30" value="340.7344716172701" />
+      <entry key="H1" value="560.9266865456667" />
+      <entry key="H2" value="761.5165096963653" />
+      <entry key="H4" value="900.6478019642333" />
+      <entry key="D1" value="1043.833734808514" />
+      <entry key="W1" value="1071.3264309737094" />
     </decayedTypingEvents>
   </component>
   <component name="NotRoamableUiSettings">
@@ -109,13 +227,13 @@
   </component>
   <component name="PropertyService">{
   &quot;keyToString&quot;: {
-    &quot;AIHubNotificationManager.lastTariffQuotaAvailable&quot;: &quot;293333.235&quot;,
+    &quot;AIHubNotificationManager.lastTariffQuotaAvailable&quot;: &quot;255565.92&quot;,
     &quot;AIHubNotificationManager.lastUsedLicenseType&quot;: &quot;FREE&quot;,
     &quot;ExpandBeforeRunStepsPanel&quot;: &quot;true&quot;,
     &quot;InstalledPluginsSearchHistory&quot;: &quot;v\nvi\nvim\nid\nide&quot;,
     &quot;LAST_CALCULATED_COLOR_INDEX_KEY&quot;: &quot;8&quot;,
     &quot;LAST_EXTRACTOR_SCRIPTS_CLEANUP_VERSION/data/aggregators&quot;: &quot;CL-253.30387.78&quot;,
-    &quot;MarketplacePluginsSearchHistory&quot;: &quot;c++ theme\nc++\nc\n/tag:Keymap\n/tag:Theme&quot;,
+    &quot;MarketplacePluginsSearchHistory&quot;: &quot;c++ theme\nc++ the\nc++\nc\n/tag:Keymap&quot;,
     &quot;Migrate.Cfg.Render.Doc&quot;: &quot;true&quot;,
     &quot;Rad.Init.Cfg.1&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.AIPromoWindowAdvisorPreheat&quot;: &quot;true&quot;,
@@ -136,6 +254,7 @@
     &quot;RunOnceActivity.rust.first.ide.run&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.trace.non.commercial.popup.id&quot;: &quot;true&quot;,
     &quot;SettingsSearchHistory&quot;: &quot;idev\nToolchains\nrun\nnova\nReopen&quot;,
+    &quot;WAYLAND_NOTIFICATION_ALREADY_SHOWN&quot;: &quot;true&quot;,
     &quot;WelcomeFeature.SHORT_WELCOME_GUIDE_SHOWN&quot;: &quot;true&quot;,
     &quot;ai.assistant.toolwindow.was.shown&quot;: &quot;true&quot;,
     &quot;ask.about.ctrl.y.shortcut.v2&quot;: &quot;true&quot;,
@@ -206,7 +325,7 @@
   }
 }</component>
   <component name="ReworkedTerminalUsage">{
-  &quot;enterKeyPressedTimes&quot;: 1,
+  &quot;enterKeyPressedTimes&quot;: 11,
   &quot;firstIdeSessionMoment&quot;: {
     &quot;type&quot;: &quot;org.jetbrains.plugins.terminal.TerminalFirstIdeSessionMoment.BeforeTrackingStarted&quot;
   }

@@ -2268,6 +2268,161 @@
           </values>
         </DateState>
       </entry>
+      <entry key="2026-6-16-15">
+        <DateState>
+          <values>
+            <entry key="file_language">
+              <MetricValue>
+                <option name="count" value="54" />
+                <distribution>
+                  <entry key="Language: C++" value="2" />
+                  <entry key="Language: ChatInput" value="52" />
+                </distribution>
+              </MetricValue>
+            </entry>
+            <entry key="finish_type">
+              <MetricValue>
+                <option name="count" value="54" />
+                <distribution>
+                  <entry key="EMPTY" value="39" />
+                  <entry key="INVALIDATED" value="15" />
+                </distribution>
+              </MetricValue>
+            </entry>
+            <entry key="was_shown">
+              <MetricValue>
+                <option name="count" value="54" />
+                <distribution>
+                  <entry key="false" value="54" />
+                </distribution>
+              </MetricValue>
+            </entry>
+          </values>
+        </DateState>
+      </entry>
+      <entry key="2026-6-16-16">
+        <DateState>
+          <values>
+            <entry key="file_language">
+              <MetricValue>
+                <option name="count" value="84" />
+                <distribution>
+                  <entry key="Language: C++" value="6" />
+                  <entry key="Language: ChatInput" value="67" />
+                  <entry key="Language: TEXT" value="11" />
+                </distribution>
+              </MetricValue>
+            </entry>
+            <entry key="finish_type">
+              <MetricValue>
+                <option name="count" value="84" />
+                <distribution>
+                  <entry key="EMPTY" value="45" />
+                  <entry key="INVALIDATED" value="39" />
+                </distribution>
+              </MetricValue>
+            </entry>
+            <entry key="total_inserted_length">
+              <MetricValue>
+                <option name="count" value="1" />
+              </MetricValue>
+            </entry>
+            <entry key="total_inserted_lines">
+              <MetricValue>
+                <option name="count" value="1" />
+              </MetricValue>
+            </entry>
+            <entry key="was_shown">
+              <MetricValue>
+                <option name="count" value="84" />
+                <distribution>
+                  <entry key="false" value="83" />
+                  <entry key="true" value="1" />
+                </distribution>
+              </MetricValue>
+            </entry>
+          </values>
+        </DateState>
+      </entry>
+      <entry key="2026-6-16-2">
+        <DateState>
+          <values>
+            <entry key="file_language">
+              <MetricValue>
+                <option name="count" value="191" />
+                <distribution>
+                  <entry key="Language: ChatInput" value="127" />
+                  <entry key="Language: TEXT" value="64" />
+                </distribution>
+              </MetricValue>
+            </entry>
+            <entry key="finish_type">
+              <MetricValue>
+                <option name="count" value="191" />
+                <distribution>
+                  <entry key="BACKSPACE_PRESSED" value="7" />
+                  <entry key="CARET_CHANGED" value="1" />
+                  <entry key="EDITOR_REMOVED" value="1" />
+                  <entry key="EMPTY" value="96" />
+                  <entry key="INVALIDATED" value="86" />
+                </distribution>
+              </MetricValue>
+            </entry>
+            <entry key="total_inserted_length">
+              <MetricValue>
+                <option name="count" value="10" />
+              </MetricValue>
+            </entry>
+            <entry key="total_inserted_lines">
+              <MetricValue>
+                <option name="count" value="10" />
+              </MetricValue>
+            </entry>
+            <entry key="was_shown">
+              <MetricValue>
+                <option name="count" value="191" />
+                <distribution>
+                  <entry key="false" value="181" />
+                  <entry key="true" value="10" />
+                </distribution>
+              </MetricValue>
+            </entry>
+          </values>
+        </DateState>
+      </entry>
+      <entry key="2026-6-18-8">
+        <DateState>
+          <values>
+            <entry key="file_language">
+              <MetricValue>
+                <option name="count" value="116" />
+                <distribution>
+                  <entry key="Language: C++" value="7" />
+                  <entry key="Language: ChatInput" value="109" />
+                </distribution>
+              </MetricValue>
+            </entry>
+            <entry key="finish_type">
+              <MetricValue>
+                <option name="count" value="116" />
+                <distribution>
+                  <entry key="CARET_CHANGED" value="1" />
+                  <entry key="EMPTY" value="69" />
+                  <entry key="INVALIDATED" value="46" />
+                </distribution>
+              </MetricValue>
+            </entry>
+            <entry key="was_shown">
+              <MetricValue>
+                <option name="count" value="116" />
+                <distribution>
+                  <entry key="false" value="116" />
+                </distribution>
+              </MetricValue>
+            </entry>
+          </values>
+        </DateState>
+      </entry>
       <entry key="2026-6-4-14">
         <DateState>
           <values>

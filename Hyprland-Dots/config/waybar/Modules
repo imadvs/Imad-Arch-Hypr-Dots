@@ -1,4 +1,4 @@
-//* ---- 💫 https://github.com/JaKooLit 💫 ---- *//
+//* ---- 💫 https://github.com/LinuxBeginnings 💫 ---- *//
 /* Waybar Modules */
 
 /* NOTE: hyprland-workspaces, Custom Modules, Custom Vertical & Groups on a separate files */
@@ -6,16 +6,19 @@
 {
 
 "temperature": {
-	"interval": 1,
+	"interval": 10,
 	"tooltip": true,
-	"thermal-zone": 13,
-	"critical-threshold": 80,
-	"states": {
-		"warning": 60,
-		"critical": 80
-	},
-	"format-critical": "{temperatureC}°C",
-	"format": "{temperatureC}°C",
+	"hwmon-path": [
+		"/sys/class/hwmon/hwmon1/temp1_input",
+		"/sys/class/thermal/thermal_zone0/temp"
+	],
+	//"thermal-zone": 0,
+	"critical-threshold": 82,
+	"format-critical": "{temperatureC}°C {icon}",
+	"format": "{temperatureC}°C {icon}",
+	"format-icons": [
+		"󰈸"
+	],
 	"on-click-right": "$HOME/.config/hypr/scripts/WaybarScripts.sh --nvtop"
 },
 
@@ -278,7 +281,6 @@
 	"format-icons": [
 		"󰤯", "󰤟", "󰤢", "󰤥", "󰤨"
 	],
-	"on-click": "nm-connection-editor",
 	"on-click-right": "$HOME/.config/hypr/scripts/WaybarScripts.sh --nmtui"
 },
 

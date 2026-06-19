@@ -42,9 +42,14 @@ change_brightness() {
     local current new icon
 
     current=$(get_brightness)
-    new=$((current + delta))
 
-    # Clamp between 0 and 100
+    if (( delta > 0 )); then
+        new=$(( ((current + step) / step) * step ))
+    else
+        new=$(( (current / step) * step ))
+        (( new == current && new > 0 )) && new=$((new - step))
+    fi
+
     (( new < 0 )) && new=0
     (( new > 100 )) && new=100
 

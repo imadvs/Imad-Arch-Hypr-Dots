@@ -1,5 +1,11 @@
 #!/bin/bash
-# 💫 https://github.com/JaKooLit 💫 #
+# ==================================================
+#  KoolDots (2026)
+#  Project URL: https://github.com/LinuxBeginnings
+#  License: GNU GPLv3
+#  SPDX-License-Identifier: GPL-3.0-or-later
+# ==================================================
+# 💫 https://github.com/LinuxBeginnings 💫 #
 # Nvidia Stuffs #
 
 nvidia_pkg=(
@@ -71,16 +77,6 @@ else
   printf "${YELLOW} Adding options to $NVEA..."
   sudo echo -e "options nvidia_drm modeset=1 fbdev=1" | sudo tee -a /etc/modprobe.d/nvidia.conf 2>&1 | tee -a "$LOG"
   printf "\n"
-fi
-
-# NVIDIA Power Management (Preserve Video Memory)
-NVEP="/etc/modprobe.d/nvidia-power.conf"
-if [ -f "$NVEP" ]; then
-  printf "${INFO} Seems like ${YELLOW}NVreg_PreserveVideoMemoryAllocations=1${RESET} is already added..moving on.\n"
-else
-  printf "${YELLOW} Adding options to $NVEP...\n"
-  echo "options nvidia NVreg_PreserveVideoMemoryAllocations=1" | sudo tee "$NVEP" 2>&1 | tee -a "$LOG"
-  printf "${OK} Added nvidia-power.conf\n"
 fi
 
 # Additional for GRUB users

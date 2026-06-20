@@ -1,6 +1,13 @@
 #!/bin/bash
-# 💫 Custom Hyprland Dots Installer 💫 #
-# Modified to use LOCAL files instead of cloning from GitHub #
+# ==================================================
+#  KoolDots (2026)
+#  Project URL: https://github.com/LinuxBeginnings
+#  License: GNU GPLv3
+#  SPDX-License-Identifier: GPL-3.0-or-later
+# ==================================================
+# 💫 https://github.com/LinuxBeginnings 💫 #
+# Hyprland-Dots to download from main #
+
 
 ## WARNING: DO NOT EDIT BEYOND THIS LINE IF YOU DON'T KNOW WHAT YOU ARE DOING! ##
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
@@ -15,17 +22,22 @@ if ! source "$(dirname "$(readlink -f "$0")")/Global_functions.sh"; then
   exit 1
 fi
 
-# Check if Hyprland-Dots exists locally
-printf "${NOTE} Installing ${SKY_BLUE}My Hyprland Dots${RESET} using local files....\n"
+# Check if Hyprland-Dots exists
+printf "${NOTE} Cloning and Installing ${SKY_BLUE}KooL's Hyprland Dots${RESET}....\n"
 
 if [ -d Hyprland-Dots ]; then
   cd Hyprland-Dots
+  git stash && git pull
   chmod +x copy.sh
   ./copy.sh 
 else
-  echo -e "$ERROR Could not find 'Hyprland-Dots' directory in $(pwd)!"
-  echo -e "$ERROR Please ensure you are running this script from the root of the repository."
-  exit 1
+  if git clone --depth=1 https://github.com/LinuxBeginnings/Hyprland-Dots; then
+    cd Hyprland-Dots || exit 1
+    chmod +x copy.sh
+    ./copy.sh 
+  else
+    echo -e "$ERROR Can't download ${YELLOW}KooL's Hyprland-Dots${RESET} . Check your internet connection"
+  fi
 fi
 
 printf "\n%.0s" {1..2}

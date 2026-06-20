@@ -1,4 +1,92 @@
-## CHANGELOGS
+## CHANGELOG
+
+## Jun 2026
+
+- Fixed:
+  - `wallust.sh`
+    - `pacman -Qi` can return NULL value
+      - Script checking more robust now
+      - Also it won't exit installation, it will be noted as failure
+
+## May 2026
+
+- Fixed:
+  - `wallust.sh` errors were causing installation to fail
+  - Set whiptail to dark colors
+    - On some terminals/systems the light colored text was unreadable
+  - Hightlight button `OK/Cancel` changed colors for readablity
+  - `auto-install.sh`
+    - The script would got a git pull if Distro-Hyprland directory exsited
+    - If user started with JakooLit installer it would not get updated code
+    - Changed to remove `Distro-Hyprland` and do fresh git clone
+
+  - Added:
+
+- CLI file manager `yazi`
+- `install-scripts/wallust.sh`
+  - This will verify the version of wallust v3.5.x
+    - If v4.0.x it will uninstall it and install v3.5.2
+  - It will also pin wallust in `/etc/pacman.conf`
+- `install-scripts/update-deps.sh`
+  - This will make sure all dependencies are up to date
+  - As new features are added to the dotfiles, this will keep deps in sync
+- `install-scripts/wallust.sh`
+  - Some Arch distros are shipping `wallust v4.0.0-alpha`
+  - That is not backwardly compatible to `v3.5.x`
+  - All the theme code will have to be updated
+  - It removes `wallust` from the install script
+  - The `wallust.sh` will check for v4.x and remove it
+    - Then install `wallust v3.5.2` from bundled source
+    - It will add `wallust` to the `IgnorePkg` list in `/etc/pocman.conf`
+  - If still at `wallust v3.5.2` it will just add to `IgnorePkg`
+- `socat` to fix `Tak0` scripts
+  - Some scripts not executable
+  - Set dark theme for whiptail fixes colors washed out on some terminals
+    - Removed some duplicate colors
+    - Fixed hight on OK/Cancel button
+  - Hyprland-Dots download error due to bad link
+- Added:
+  - `update-deps.sh` Install new dependencies since last install
+    - You don't have to re-install everything, verifies you have all new deps
+    - If not it will install them
+  - `ddcutil` to support external monitor brightness
+  - `socat` to fix `Tak0` scripts
+  - `stylua` COPR for LUA support
+
+## April 2026
+
+- Fixed `install.sh` overwriting fastfetch config
+- Updated install to use `awww` instead of `swww`
+  - `swww` is no longer maintained
+  - Thank you ` @tonicatOWO` for submitting fix
+- Fixed: Polkit issue
+  - Added missing QT kvantum pkgs
+  - Which prevented programs like `timeshift` and `easyeffects` from starting
+  ```bash
+  sudo pacman -S qt5-declarative qt5-quickcontrols2 qt6-declarative qt6-quickcontrols2
+  ```
+- Improved: Error handling in the `install.sh` script
+  - Thank you `@moukhtar22` for finding this and filing an issue
+- Removed incorrect `qt` packages
+  - Thank you `@moukhtar22` for finding this and filing an issue
+- Added `rsync` and `hyprsunset`
+
+## Mar 2026
+
+- Fixed issue with policy kit not properly escalating access
+- Added check for `rofi` it was begin removed
+  - Script was trying to install `rofi-wayland`
+  - Package no longer exists
+  - Now checks for rofi installed and correct version
+- Added check for `paplay`
+  - Removes remove delay in playing notification sounds
+  - Also needed for `Toggle-Active-Window-Audio.sh`
+- Migrated Jakoolit references to LinuxBeginnings
+- Updated discord link
+- Added `uwsm` in case someone selects that by default
+  - Prevents black screen or exiting back to login manager
+- Added Spanish translations for CoC, Commit msg,and contributing docs
+- Added missing SDDM package for CachyOS distro
 
 ## Dec 2025
 
@@ -161,7 +249,7 @@ Added:
 
 ## 08 Aug 2024
 
-- Increased to 1 sec delay for installing base-devel [commit](https://github.com/JaKooLit/Arch-Hyprland/commit/7ebfa06c3b186f9bec0bcf268fae401ba67dfc2a)
+- Increased to 1 sec delay for installing base-devel [commit](https://github.com/LinuxBeginnings/Arch-Hyprland/commit/7ebfa06c3b186f9bec0bcf268fae401ba67dfc2a)
 
 ## 07 Jul 2024
 

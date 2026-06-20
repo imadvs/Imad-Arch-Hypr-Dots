@@ -1,0 +1,12 @@
+[Unit]
+Description=Hyprland resume DPMS fix
+After=sleep.target suspend.target hibernate.target hybrid-sleep.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/hyprctl dispatch dpms on
+ExecStartPost=/bin/sleep 1
+ExecStartPost=/usr/bin/hyprctl dispatch dpms on
+
+[Install]
+WantedBy=sleep.target suspend.target hibernate.target hybrid-sleep.target

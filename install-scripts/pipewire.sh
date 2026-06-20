@@ -1,5 +1,11 @@
 #!/bin/bash
-# 💫 https://github.com/JaKooLit 💫 #
+# ==================================================
+#  KoolDots (2026)
+#  Project URL: https://github.com/LinuxBeginnings
+#  License: GNU GPLv3
+#  SPDX-License-Identifier: GPL-3.0-or-later
+# ==================================================
+# 💫 https://github.com/LinuxBeginnings 💫 #
 # Pipewire and Pipewire Audio Stuff #
 
 pipewire=(
@@ -8,6 +14,7 @@ pipewire=(
     pipewire-audio
     pipewire-alsa
     pipewire-pulse
+    libpulse
     sof-firmware
 )
 

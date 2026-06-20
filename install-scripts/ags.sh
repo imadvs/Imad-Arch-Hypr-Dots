@@ -1,6 +1,13 @@
 #!/bin/bash
-# 💫 Custom AGS Installer 💫 #
-# Modified to skip external cloning if assets are missing #
+# ==================================================
+#  KoolDots (2026)
+#  Project URL: https://github.com/LinuxBeginnings
+#  License: GNU GPLv3
+#  SPDX-License-Identifier: GPL-3.0-or-later
+# ==================================================
+# 💫 https://github.com/LinuxBeginnings 💫 #
+# Aylur's GTK Shell v 1.9.0 #
+# for desktop overview
 
 if [[ $USE_PRESET = [Yy] ]]; then
   source ./preset.sh
@@ -44,6 +51,9 @@ set -eo pipefail
 LOG="Install-Logs/install-$(date +%d-%H%M%S)_ags.log"
 MLOG="install-$(date +%d-%H%M%S)_ags2.log"
 
+# NOTE: We intentionally do NOT run `ags -v` here, because a broken AGS
+# installation (missing GUtils, etc.) would crash gjs and spam errors
+# during install. We always (re)install v1.9.0 when this script is run.
 # Installation of main components
 printf "\n%s - Installing ${SKY_BLUE}Aylur's GTK shell $ags_tag${RESET} Dependencies \n" "${NOTE}"
 
@@ -57,12 +67,20 @@ printf "\n%.0s" {1..1}
 # ags v1
 printf "${NOTE} Install and Compiling ${SKY_BLUE}Aylur's GTK shell $ags_tag${RESET}..\n"
 
-# Check if directory exists locally
+# Check if directory exists and remove it
 if [ -d "ags_v1.9.0" ]; then
-    printf "${NOTE} Local ags_v1.9.0 found. Compiling...\n"
+    printf "${NOTE} Removing existing ags directory...\n"
+    rm -rf "ags_v1.9.0"
+fi
+
+printf "\n%.0s" {1..1}
+printf "${INFO} Kindly Standby...cloning and compiling ${SKY_BLUE}Aylur's GTK shell $ags_tag${RESET}...\n"
+printf "\n%.0s" {1..1}
+# Clone repository with the specified tag and compile AGS
+if git clone --depth=1 https://github.com/LinuxBeginnings/ags_v1.9.0.git; then
     cd ags_v1.9.0 || exit 1
 
-     # Patch tsconfig to avoid TS5107 failure (moduleResolution=node10 deprecation)
+    # Patch tsconfig to avoid TS5107 failure (moduleResolution=node10 deprecation)
     if [ -f tsconfig.json ]; then
         # 1) Ensure ignoreDeprecations is present
         if ! grep -q '"ignoreDeprecations"[[:space:]]*:' tsconfig.json; then
@@ -84,6 +102,9 @@ if [ -d "ags_v1.9.0" ]; then
     fi
 
     # Replace pam.ts with a stub that does NOT depend on GUtils at all.
+    # The desktop overview does not use PAM, and GUtils typelib support is
+    # inconsistent across distros, so we disable these helpers instead of
+    # crashing at startup when the typelib is missing.
     if [ -f src/utils/pam.ts ]; then
         printf "%s Replacing src/utils/pam.ts with PAM stub (no GUtils dependency)...\\n" "${NOTE}" | tee -a "$MLOG"
         cat > src/utils/pam.ts <<'PAM_STUB'
@@ -107,6 +128,8 @@ PAM_STUB
         printf "\n${OK} ${YELLOW}Aylur's GTK shell $ags_tag${RESET} installed successfully.\n" 2>&1 | tee -a "$MLOG"
     else
         echo -e "\n${ERROR} ${YELLOW}Aylur's GTK shell $ags_tag${RESET} Installation failed\n " 2>&1 | tee -a "$MLOG"
+        # Abort here on build/install failure so we do NOT install a broken launcher
+        # or report success when AGS binaries are missing.
         mv "$MLOG" ../Install-Logs/ || true
         cd ..
         exit 1
@@ -116,6 +139,9 @@ PAM_STUB
     LAUNCHER_PATH="$LAUNCHER_DIR/com.github.Aylur.ags"
     sudo mkdir -p "$LAUNCHER_DIR"
 
+    # Install the known-good launcher we captured from a working system.
+    # This JS entry script uses GLib to set GI_TYPELIB_PATH and does not
+    # depend on GIRepository, which avoids missing-typelib crashes.
     LAUNCHER_SRC="$SCRIPT_DIR/ags.launcher.com.github.Aylur.ags"
     if [ -f "$LAUNCHER_SRC" ]; then
         sudo install -m 755 "$LAUNCHER_SRC" "$LAUNCHER_PATH"
@@ -123,15 +149,17 @@ PAM_STUB
         printf "${WARN} Saved launcher not found at %s; leaving Meson-installed launcher untouched.\\n" "$LAUNCHER_SRC" | tee -a "$MLOG"
     fi
 
+    # Ensure /usr/local/bin/ags points to the JS entry script.
     sudo mkdir -p /usr/local/bin
     sudo ln -srf "$LAUNCHER_PATH" /usr/local/bin/ags
     printf "${OK} AGS launcher installed.\\n"
+    # Move logs to Install-Logs directory
     mv "$MLOG" ../Install-Logs/ || true
     cd ..
-
 else
-    echo -e "\n${NOTE} Local 'ags_v1.9.0' not found. Skipping AGS compilation." 2>&1 | tee -a "$LOG"
-    echo -e "${NOTE} You can manually clone it into the repo if needed." 2>&1 | tee -a "$LOG"
+    echo -e "\n${ERROR} Failed to download ${YELLOW}Aylur's GTK shell $ags_tag${RESET} Please check your connection\n" 2>&1 | tee -a "$LOG"
+    mv "$MLOG" ../Install-Logs/ || true
+    exit 1
 fi
 
 printf "\n%.0s" {1..2}

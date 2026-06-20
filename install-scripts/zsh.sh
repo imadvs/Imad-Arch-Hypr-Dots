@@ -1,5 +1,11 @@
 #!/bin/bash
-# 💫 https://github.com/JaKooLit 💫 #
+# ==================================================
+#  KoolDots (2026)
+#  Project URL: https://github.com/LinuxBeginnings
+#  License: GNU GPLv3
+#  SPDX-License-Identifier: GPL-3.0-or-later
+# ==================================================
+# 💫 https://github.com/LinuxBeginnings 💫 #
 # zsh and oh my zsh#
 
 zsh_pkg=(
@@ -78,19 +84,6 @@ if command -v zsh >/dev/null; then
   # Copying the preconfigured zsh themes and profile
   cp -r 'assets/.zshrc' ~/
   cp -r 'assets/.zprofile' ~/
-
-  # Inject 'dots' alias for maintenance
-  DOTS_PATH="$HOME/Imad-Arch-Hypr-Dots"
-  if ! grep -q "function dots()" "$HOME/.zshrc"; then
-      cat << EOF >> "$HOME/.zshrc"
-
-# Custom Dotfiles Management
-function dots() {
-    $DOTS_PATH/maintain.sh "\$@"
-}
-EOF
-      echo "${OK} Injected 'dots' alias into .zshrc" 2>&1 | tee -a "$LOG"
-  fi
 
   # Check if the current shell is zsh
   current_shell=$(basename "$SHELL")

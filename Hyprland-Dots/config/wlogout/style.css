@@ -1,88 +1,99 @@
-/* ----------- 💫 https://github.com/LinuxBeginnings 💫 -------- */
-/* wallust-wlogout */
+/* ----------- 💫 https://github.com/JaKooLit 💫 -------- */
+/* dynamic-wlogout — Premium Aesthetic (Glass Bar) */
 
 /* Importing wallust colors */
 @import '../../.config/waybar/wallust/colors-waybar.css';
 
+* {
+    font-family: "JetBrainsMono Nerd Font";
+    box-shadow: none;
+    border: none;
+}
+
 window {
-    font-size: 24pt;
-    color: @foreground; /* text */
-    background-color: rgba(30, 30, 46, 0.8);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
+/* Base button styling */
 button {
+    background-color: @color1;
+    color: @foreground;
+    font-size: 16px;
+    /* Slightly smaller text for premium look */
+
+    /* Proportions: connected horizontally, but slimmed vertically */
+    margin: 40px 0px;
+    padding: 20px;
+    opacity: 0.8;
+    /* Glass look */
+
+    /* Default square for middle buttons */
+    border-radius: 0px;
+    border: none;
+
+    /* Using background-image for the icon */
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center 30%;
     background-size: 20%;
-    background-color: rgba(200, 220, 255, 0);
-    animation: gradient_f 10s ease-in infinite;
-    transition: all 0.3s cubic-bezier(.55, 0.0, .28, 1.682), box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
-    border-radius: 80px;
-	border:0px;
-	outline-style: none;
+    /* Same as reference */
+
+    /* Position the text label lower for balance */
+    padding-top: 80px;
+
+    transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-button:focus {
-    background-size: 50%;
-	border: 0px;
-	outline-style: none;
-
+button:focus,
+button:active {
+    background-color: @color2;
+    color: @color13;
 }
 
 button:hover {
-    background-color: transparent; 
+    background-color: @color3;
     color: @color13;
-    background-size: 50%;
-    margin: 30px;
-    border-radius: 80px;
-    outline-style: none;
-	
+    background-size: 30%;
+    opacity: 1.0;
 }
 
-/* Adjust the size of the icon or content inside the button */
-button span {
-    font-size: 1.2em; /* Increase the font size */
-}
-
-
+/* --- ICONS --- */
 #lock {
-    background-image: image(url("./icons/lock.png"));
-}
-#lock:hover {
-    background-image: image(url("./icons/lock-hover.png"));
-}
-
-#logout {
-    background-image: image(url("./icons/logout.png"));
-}
-#logout:hover {
-    background-image: image(url("./icons/logout-hover.png"));
-}
-
-#suspend {
-    background-image: image(url("./icons/sleep.png"));
-}
-#suspend:hover {
-    background-image: image(url("./icons/sleep-hover.png"));
+    background-image: image(url("icons/lock.png"));
 }
 
 #shutdown {
-    background-image: image(url("./icons/power.png"));
-}
-#shutdown:hover {
-    background-image: image(url("./icons/power-hover.png"));
+    background-image: image(url("icons/shutdown.png"));
 }
 
 #reboot {
-    background-image: image(url("./icons/restart.png"));
+    background-image: image(url("icons/reboot.png"));
 }
-#reboot:hover {
-    background-image: image(url("./icons/restart-hover.png"));
+
+#suspend {
+    background-image: image(url("icons/suspend.png"));
+}
+
+#logout {
+    background-image: image(url("icons/logout.png"));
 }
 
 #hibernate {
-    background-image: image(url("./icons/hibernate.png"));
+    background-image: image(url("icons/hibernate.png"));
 }
+
+/* --- PILL SHAPE ENFORCEMENT --- */
+#lock {
+    border-radius: 60px 0px 0px 60px;
+}
+
+#lock:hover {
+    border-radius: 60px 0px 0px 60px;
+}
+
+#hibernate {
+    border-radius: 0px 60px 60px 0px;
+}
+
 #hibernate:hover {
-    background-image: image(url("./icons/hibernate-hover.png"));
+    border-radius: 0px 60px 60px 0px;
 }

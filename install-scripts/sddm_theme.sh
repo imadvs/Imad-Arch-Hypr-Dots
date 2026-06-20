@@ -1,42 +1,120 @@
 #!/bin/bash
-# Custom SDDM Theme Installer for Imad-Arch-Hypr-Dots
-# Installs the preserved The Last of Us theme
+# ==================================================
+#  KoolDots (2026)
+#  Project URL: https://github.com/LinuxBeginnings
+#  License: GNU GPLv3
+#  SPDX-License-Identifier: GPL-3.0-or-later
+# ==================================================
+# 💫 https://github.com/LinuxBeginnings 💫 #
+# SDDM themes #
 
+source_theme="https://github.com/LinuxBeginnings/simple-sddm-2.git"
+theme_name="simple_sddm_2"
+
+## WARNING: DO NOT EDIT BEYOND THIS LINE IF YOU DON'T KNOW WHAT YOU ARE DOING! ##
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+# Change the working directory to the parent directory of the script
+PARENT_DIR="$SCRIPT_DIR/.."
+cd "$PARENT_DIR" || { echo "${ERROR} Failed to change directory to $PARENT_DIR"; exit 1; }
+
+# Source the global functions script
+if ! source "$(dirname "$(readlink -f "$0")")/Global_functions.sh"; then
+  echo "Failed to source Global_functions.sh"
+  exit 1
+fi
+
+
+# Set the name of the log file to include the current date and time
 LOG="Install-Logs/install-$(date +%d-%H%M%S)_sddm_theme.log"
-THEME_NAME="last-of-us"
-THEME_DIR="/usr/share/sddm/themes"
+    
+# SDDM-themes
+printf "${INFO} Installing ${SKY_BLUE}Additional SDDM Theme${RESET}\n"
 
-echo "Installing Custom SDDM Theme..."
-
-# 1. Copy Theme
-if [ -d "assets/$THEME_NAME" ]; then
-    echo "Copying $THEME_NAME to $THEME_DIR..."
-    sudo cp -r "assets/$THEME_NAME" "$THEME_DIR/" 2>&1 | tee -a "$LOG"
-else
-    echo "Error: Theme assets not found!" | tee -a "$LOG"
-    exit 1
+# Check if /usr/share/sddm/themes/$theme_name exists and remove if it does
+if [ -d "/usr/share/sddm/themes/$theme_name" ]; then
+  sudo rm -rf "/usr/share/sddm/themes/$theme_name"
+  echo -e "\e[1A\e[K${OK} - Removed existing $theme_name directory." 2>&1 | tee -a "$LOG"
 fi
 
-# 2. Enable HiDPI
-echo "Enabling HiDPI support..."
-echo "[General]
-EnableHiDPI=true" | sudo tee /etc/sddm.conf.d/hidpi.conf > /dev/null
-
-# 3. Configure SDDM to use the theme
-echo "Configuring SDDM to use $THEME_NAME..."
-CONFIG_SRC="config/etc/sddm.conf"
-if [ -f "$CONFIG_SRC" ]; then
-    echo "Copying SDDM config from repo..."
-    sudo cp "$CONFIG_SRC" /etc/sddm.conf
-else
-    echo "No repo config found, creating inline..."
-    sudo tee /etc/sddm.conf > /dev/null <<'EOF'
-[Theme]
-Current=last-of-us
-
-[General]
-InputMethod=qtvirtualkeyboard
-EOF
+# Check if $theme_name directory exists in the current directory and remove if it does
+if [ -d "$theme_name" ]; then
+  rm -rf "$theme_name"
+  echo -e "\e[1A\e[K${OK} - Removed existing $theme_name directory from the current location." 2>&1 | tee -a "$LOG"
 fi
 
-echo "SDDM Theme installation complete."
+# Clone the repository
+if git clone --depth=1 "$source_theme" "$theme_name"; then
+  if [ ! -d "$theme_name" ]; then
+    echo "${ERROR} Failed to clone the repository." | tee -a "$LOG"
+  fi
+
+  # Create themes directory if it doesn't exist
+  if [ ! -d "/usr/share/sddm/themes" ]; then
+    sudo mkdir -p /usr/share/sddm/themes
+    echo "${OK} - Directory '/usr/share/sddm/themes' created." | tee -a "$LOG"
+  fi
+
+  # Move cloned theme to the themes directory
+  sudo mv "$theme_name" "/usr/share/sddm/themes/$theme_name" 2>&1 | tee -a "$LOG"
+
+  # setting up SDDM theme
+  sddm_conf="/etc/sddm.conf"
+  BACKUP_SUFFIX=".bak"
+
+  echo -e "${NOTE} Setting up the login screen." | tee -a "$LOG"
+
+  # Backup the sddm.conf file if it exists
+  if [ -f "$sddm_conf" ]; then
+    echo "Backing up $sddm_conf" | tee -a "$LOG"
+    sudo cp "$sddm_conf" "$sddm_conf$BACKUP_SUFFIX" 2>&1 | tee -a "$LOG"
+  else
+    echo "$sddm_conf does not exist, creating a new one." | tee -a "$LOG"
+    sudo touch "$sddm_conf" 2>&1 | tee -a "$LOG"
+  fi
+
+  # Check if the [Theme] section exists
+  if grep -q '^\[Theme\]' "$sddm_conf"; then
+    # Update the Current= line under [Theme]
+    sudo sed -i "/^\[Theme\]/,/^\[/{s/^\s*Current=.*/Current=$theme_name/}" "$sddm_conf" 2>&1 | tee -a "$LOG"
+    
+    # If no Current= line was found and replaced, append it after the [Theme] section
+    if ! grep -q '^\s*Current=' "$sddm_conf"; then
+      sudo sed -i "/^\[Theme\]/a Current=$theme_name" "$sddm_conf" 2>&1 | tee -a "$LOG"
+      echo "Appended Current=$theme_name under [Theme] in $sddm_conf" | tee -a "$LOG"
+    else
+      echo "Updated Current=$theme_name in $sddm_conf" | tee -a "$LOG"
+    fi
+  else
+    # Append the [Theme] section at the end if it doesn't exist
+    echo -e "\n[Theme]\nCurrent=$theme_name" | sudo tee -a "$sddm_conf" > /dev/null
+    echo "Added [Theme] section with Current=$theme_name in $sddm_conf" | tee -a "$LOG"
+  fi
+
+  # Add [General] section with InputMethod=qtvirtualkeyboard if it doesn't exist
+  if ! grep -q '^\[General\]' "$sddm_conf"; then
+    echo -e "\n[General]\nInputMethod=qtvirtualkeyboard" | sudo tee -a "$sddm_conf" > /dev/null
+    echo "Added [General] section with InputMethod=qtvirtualkeyboard in $sddm_conf" | tee -a "$LOG"
+  else
+    # Update InputMethod line if section exists
+    if grep -q '^\s*InputMethod=' "$sddm_conf"; then
+      sudo sed -i '/^\[General\]/,/^\[/{s/^\s*InputMethod=.*/InputMethod=qtvirtualkeyboard/}' "$sddm_conf" 2>&1 | tee -a "$LOG"
+      echo "Updated InputMethod to qtvirtualkeyboard in $sddm_conf" | tee -a "$LOG"
+    else
+      sudo sed -i '/^\[General\]/a InputMethod=qtvirtualkeyboard' "$sddm_conf" 2>&1 | tee -a "$LOG"
+      echo "Appended InputMethod=qtvirtualkeyboard under [General] in $sddm_conf" | tee -a "$LOG"
+    fi
+  fi
+
+  # Replace current background from assets
+  sudo cp -r assets/sddm.png "/usr/share/sddm/themes/$theme_name/Backgrounds/default" 2>&1 | tee -a "$LOG"
+  sudo sed -i 's|^wallpaper=".*"|wallpaper="Backgrounds/default"|' "/usr/share/sddm/themes/$theme_name/theme.conf" 2>&1 | tee -a "$LOG"
+
+  echo "${OK} - ${MAGENTA}Additional ${YELLOW}$theme_name SDDM Theme${RESET} successfully installed." | tee -a "$LOG"
+
+else
+
+  echo "${ERROR} - Failed to clone the sddm theme repository. Please check your internet connection." | tee -a "$LOG" >&2
+fi
+
+printf "\n%.0s" {1..2}

@@ -1,6 +1,12 @@
 #!/bin/bash
-# 💫 Custom GTK Themes Installer 💫 #
-# Modified to skip external cloning/installation if assets are missing #
+# ==================================================
+#  KoolDots (2026)
+#  Project URL: https://github.com/LinuxBeginnings
+#  License: GNU GPLv3
+#  SPDX-License-Identifier: GPL-3.0-or-later
+# ==================================================
+# 💫 https://github.com/LinuxBeginnings 💫 #
+# GTK Themes & ICONS and  Sourcing from a different Repo #
 
 engine=(
     unzip
@@ -20,29 +26,31 @@ if ! source "$(dirname "$(readlink -f "$0")")/Global_functions.sh"; then
   exit 1
 fi
 
+
 # Set the name of the log file to include the current date and time
 LOG="Install-Logs/install-$(date +%d-%H%M%S)_themes.log"
+
 
 # installing engine needed for gtk themes
 for PKG1 in "${engine[@]}"; do
     install_package "$PKG1" "$LOG"
 done
 
-# Check if the directory exists locally (bundled)
+# Check if the directory exists and delete it if present
 if [ -d "GTK-themes-icons" ]; then
-    echo "$NOTE Local GTK themes and Icons directory found..." 2>&1 | tee -a "$LOG"
+    echo "$NOTE GTK themes and Icons directory exist..deleting..." 2>&1 | tee -a "$LOG"
+    rm -rf "GTK-themes-icons" 2>&1 | tee -a "$LOG"
+fi
+
+echo "$NOTE Cloning ${SKY_BLUE}GTK themes and Icons${RESET} repository..." 2>&1 | tee -a "$LOG"
+if git clone --depth=1 https://github.com/LinuxBeginnings/GTK-themes-icons.git ; then
     cd GTK-themes-icons
-    if [ -f "auto-extract.sh" ]; then
-        chmod +x auto-extract.sh
-        ./auto-extract.sh
-        cd ..
-        echo "$OK Extracted GTK Themes & Icons to ~/.icons & ~/.themes directories" 2>&1 | tee -a "$LOG"
-    else
-         echo "$ERROR auto-extract.sh not found in GTK-themes-icons" 2>&1 | tee -a "$LOG"
-    fi
+    chmod +x auto-extract.sh
+    ./auto-extract.sh
+    cd ..
+    echo "$OK Extracted GTK Themes & Icons to ~/.icons & ~/.themes directories" 2>&1 | tee -a "$LOG"
 else
-    echo "$NOTE No local 'GTK-themes-icons' found. Skipping theme installation." 2>&1 | tee -a "$LOG"
-    echo "$NOTE If you want to install themes, please clone them manually or bundle them in the repo." 2>&1 | tee -a "$LOG"
+    echo "$ERROR Download failed for GTK themes and Icons.." 2>&1 | tee -a "$LOG"
 fi
 
 printf "\n%.0s" {1..2}

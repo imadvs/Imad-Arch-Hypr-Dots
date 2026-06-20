@@ -1,0 +1,56 @@
+# Semicolon RGB values for true color escape sequences
+primary_rgb="{{color12 | rgb}}"
+primary_rgb="${primary_rgb//,/;}"
+
+secondary_rgb="{{color8 | rgb}}"
+secondary_rgb="${secondary_rgb//,/;}"
+
+accent_rgb="{{color13 | rgb}}"
+accent_rgb="${accent_rgb//,/;}"
+
+error_rgb="{{color1 | rgb}}"
+error_rgb="${error_rgb//,/;}"
+
+fg_rgb="{{foreground | rgb}}"
+fg_rgb="${fg_rgb//,/;}"
+
+green_rgb="{{color2 | rgb}}"
+green_rgb="${green_rgb//,/;}"
+
+# Set the yt-x interface colors
+THEME_FZF_ICON_COLOR_PRIMARY="$(printf "\033[38;2;${primary_rgb}m")"
+THEME_FZF_ICON_COLOR_SECONDARY="$(printf "\033[38;2;${secondary_rgb}m")"
+THEME_FZF_ICON_COLOR_ACCENT="$(printf "\033[38;2;${accent_rgb}m")"
+THEME_FZF_ICON_COLOR_ERROR="$(printf "\033[38;2;${error_rgb}m")"
+THEME_FZF_PREVIEW_TITLE="$(printf "\033[38;2;${fg_rgb}m")"
+THEME_FZF_PREVIEW_KEY="$(printf "\033[38;2;${primary_rgb}m")"
+THEME_FZF_PREVIEW_VALUE="$(printf "\033[38;2;${fg_rgb}m")"
+THEME_FZF_PREVIEW_DIVIDER="$(printf "\033[38;2;${secondary_rgb}m")"
+THEME_PLAYER_START="$(printf "\033[38;2;${green_rgb}m")"
+
+# Override FZF options by appending color overrides
+CONFIG_FZF_OPTS="$CONFIG_FZF_OPTS \
+  --color=bg+:{{color0}} \
+  --color=bg:{{background}} \
+  --color=border:{{color12}} \
+  --color=fg:{{foreground}} \
+  --color=gutter:{{background}} \
+  --color=header:{{color12}} \
+  --color=hl+:{{color12}} \
+  --color=hl:{{color12}} \
+  --color=info:{{color8}} \
+  --color=marker:{{color13}} \
+  --color=pointer:{{color13}} \
+  --color=prompt:{{color12}} \
+  --color=query:{{foreground}}:regular \
+  --color=scrollbar:{{color12}} \
+  --color=separator:{{color13}} \
+  --color=spinner:{{color13}}"
+
+# Override Gum options
+CONFIG_GUM_FILTER_OPTS="--prompt.foreground {{color12}} --indicator.foreground {{color12}} --selected-indicator.foreground {{color12}} --unselected-prefix.foreground {{color8}} --header.foreground {{color12}} --text.foreground {{foreground}} --cursor-text.foreground {{foreground}} --match.foreground {{color12}} --placeholder.foreground {{color8}} --prompt > --indicator ◆ --selected-prefix ◉ --unselected-prefix ○ --placeholder こんにちは..."
+CONFIG_GUM_OPTS="$CONFIG_GUM_FILTER_OPTS"
+CONFIG_GUM_INPUT_OPTS="--prompt.foreground {{color12}} --cursor.foreground {{foreground}} --placeholder こんにちは... --cursor.mode blink"
+CONFIG_GUM_PAGER_OPTS="--foreground {{foreground}} --line-number.foreground {{color8}} --match.foreground {{color12}} --match-highlight.foreground {{background}} --match-highlight.background {{color12}} --help.foreground {{color8}} --show-line-numbers --soft-wrap --border-foreground {{color12}}"
+CONFIG_GUM_SPIN_OPTS="--spinner dot --spinner.foreground {{color12}} --title.foreground {{color8}} --align left"
+CONFIG_GUM_CONFIRM_OPTS="--prompt.foreground {{color12}} --selected.foreground {{background}} --selected.background {{color12}} --unselected.foreground {{color8}}"

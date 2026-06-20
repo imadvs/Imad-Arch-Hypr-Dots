@@ -89,37 +89,37 @@
       <entry key="S2" value="0.0" />
       <entry key="S5" value="0.0" />
       <entry key="S10" value="0.0" />
-      <entry key="S30" value="2.0567632325759167E-234" />
-      <entry key="S60" value="3.427425572196705E-117" />
-      <entry key="M2" value="1.4310282999534374E-58" />
-      <entry key="M5" value="2.4582790260583732E-23" />
-      <entry key="M10" value="2.0467815582181745E-11" />
-      <entry key="M15" value="2.5631121346136863E-7" />
-      <entry key="M30" value="0.004608582230768561" />
-      <entry key="H1" value="0.750680008079967" />
-      <entry key="H2" value="10.155995844560048" />
-      <entry key="H4" value="38.08525974102681" />
-      <entry key="D1" value="116.94525822618827" />
-      <entry key="W1" value="142.25594094181974" />
+      <entry key="S30" value="1.6374025630547424E-234" />
+      <entry key="S60" value="3.0581136100744296E-117" />
+      <entry key="M2" value="1.3517333033842437E-58" />
+      <entry key="M5" value="2.4028590290516115E-23" />
+      <entry key="M10" value="2.0235784862960406E-11" />
+      <entry key="M15" value="2.543704425596037E-7" />
+      <entry key="M30" value="0.004591101142449824" />
+      <entry key="H1" value="0.7492549308384754" />
+      <entry key="H2" value="10.146351286444984" />
+      <entry key="H4" value="38.06717176853787" />
+      <entry key="D1" value="116.93599952021901" />
+      <entry key="W1" value="142.25433194648804" />
     </decayedBetweenFilesMoves>
     <decayedWithinFileMoves>
-      <entry key="MS100" value="1.0000043216090595" />
-      <entry key="MS500" value="1.0845530486428876" />
-      <entry key="S2" value="1.6425702432193137" />
-      <entry key="S5" value="4.318795733354257" />
-      <entry key="S10" value="9.339366220667543" />
-      <entry key="S30" value="17.29093949915478" />
-      <entry key="S60" value="20.344023209077054" />
-      <entry key="M2" value="22.089656104465277" />
-      <entry key="M5" value="23.21512671592783" />
-      <entry key="M10" value="23.604023183226563" />
-      <entry key="M15" value="23.735234675035425" />
-      <entry key="M30" value="24.007524169960245" />
-      <entry key="H1" value="42.4540947854695" />
-      <entry key="H2" value="260.0806096684342" />
-      <entry key="H4" value="903.2683177118107" />
-      <entry key="D1" value="2774.5279712133774" />
-      <entry key="W1" value="3393.905398318871" />
+      <entry key="MS100" value="1.0000034619108402" />
+      <entry key="MS500" value="1.0809302962747112" />
+      <entry key="S2" value="2.341004466355627" />
+      <entry key="S5" value="8.257413652255451" />
+      <entry key="S10" value="16.96453717496643" />
+      <entry key="S30" value="31.791042814203923" />
+      <entry key="S60" value="38.05680998810664" />
+      <entry key="M2" value="41.78961394281885" />
+      <entry key="M5" value="44.25431298556433" />
+      <entry key="M10" value="45.11652612597375" />
+      <entry key="M15" value="45.408638667730344" />
+      <entry key="M30" value="45.84288940928543" />
+      <entry key="H1" value="64.33668215926177" />
+      <entry key="H2" value="281.81520863252126" />
+      <entry key="H4" value="924.8301142704322" />
+      <entry key="D1" value="2796.3067728386045" />
+      <entry key="W1" value="3415.866791969334" />
     </decayedWithinFileMoves>
   </component>
   <component name="NextEditInlineCompletionFeaturesState">
@@ -233,7 +233,7 @@
     &quot;InstalledPluginsSearchHistory&quot;: &quot;v\nvi\nvim\nid\nide&quot;,
     &quot;LAST_CALCULATED_COLOR_INDEX_KEY&quot;: &quot;8&quot;,
     &quot;LAST_EXTRACTOR_SCRIPTS_CLEANUP_VERSION/data/aggregators&quot;: &quot;CL-253.30387.78&quot;,
-    &quot;MarketplacePluginsSearchHistory&quot;: &quot;c++ theme\nc++ the\nc++\nc\n/tag:Keymap&quot;,
+    &quot;MarketplacePluginsSearchHistory&quot;: &quot;continue ai\ncontinue a\ncontinue\ncontinu\ncontin&quot;,
     &quot;Migrate.Cfg.Render.Doc&quot;: &quot;true&quot;,
     &quot;Rad.Init.Cfg.1&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.AIPromoWindowAdvisorPreheat&quot;: &quot;true&quot;,

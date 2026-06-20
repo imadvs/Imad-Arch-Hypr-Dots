@@ -166,7 +166,7 @@
       <i c="32" l="1780929257822" />
     </e>
     <e n="EditorCopy">
-      <i c="12" l="1781570482324" />
+      <i c="13" l="1781956228400" />
     </e>
     <e n="EditorDecreaseFontSize">
       <i c="5" d="5" l="1770157378326" k="1770157378326" />
@@ -400,7 +400,10 @@
       <i c="4" l="1770237956245" />
     </e>
     <e n="SettingsEntryPoint">
-      <i c="13" l="1781573504289" />
+      <i c="15" l="1781956162533" />
+    </e>
+    <e n="SettingsSyncStatusAction">
+      <i c="1" l="1781956158383" />
     </e>
     <e n="ShowIntentionActions">
       <i c="5" l="1775566418746" />
@@ -472,7 +475,7 @@
       <i c="1" l="1770761112731" />
     </e>
     <e n="WelcomeScreen.Plugins">
-      <i c="3" l="1781573506599" />
+      <i c="4" l="1781956165866" />
     </e>
     <e n="WelcomeScreen.Settings">
       <i c="11" d="11" l="1773963785684" k="1773963785684" />
@@ -539,6 +542,9 @@
     </e>
     <e n="com.intellij.ide.plugins.PluginManagerMain$3">
       <i c="2" l="1770158820086" />
+    </e>
+    <e n="com.intellij.ide.plugins.newui.PluginsTab$3$1">
+      <i c="1" l="1781961894892" />
     </e>
     <e n="com.intellij.ide.startup.importSettings.chooser.productChooser.JbChooserAction">
       <i c="1" l="1770122723061" />

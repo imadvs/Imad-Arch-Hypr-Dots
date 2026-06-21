@@ -1505,156 +1505,290 @@
       <jump line="67" column="26" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Transactions Screen/clsWithdrawScreen.h" protocol="file" />
       <jump line="328" column="6" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/clsBankClient.h" protocol="file" />
     </project>
+    <project id="qv51h207dco3q4ivhe1j">
+      <jump line="40" column="4" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Transactions Screen/clsTransactionsScreen.h" protocol="file" />
+      <jump line="35" column="0" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Transactions Screen/clsTransactionsScreen.h" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Transactions Screen/clsTotalBalancesScreen.h" protocol="file" />
+      <jump line="7" column="0" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Transactions Screen/clsTotalBalancesScreen.h" protocol="file" />
+      <jump line="18" column="4" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Transactions Screen/clsTotalBalancesScreen.h" protocol="file" />
+      <jump line="16" column="0" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Transactions Screen/clsTotalBalancesScreen.h" protocol="file" />
+      <jump line="25" column="4" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Transactions Screen/clsTotalBalancesScreen.h" protocol="file" />
+      <jump line="27" column="8" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Transactions Screen/clsTotalBalancesScreen.h" protocol="file" />
+      <jump line="61" column="0" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Transactions Screen/clsTotalBalancesScreen.h" protocol="file" />
+      <jump line="62" column="0" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Transactions Screen/clsTotalBalancesScreen.h" protocol="file" />
+      <jump line="57" column="8" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Transactions Screen/clsTotalBalancesScreen.h" protocol="file" />
+      <jump line="54" column="8" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Transactions Screen/clsTotalBalancesScreen.h" protocol="file" />
+      <jump line="48" column="12" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Transactions Screen/clsTotalBalancesScreen.h" protocol="file" />
+      <jump line="21" column="70" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Transactions Screen/clsTotalBalancesScreen.h" protocol="file" />
+      <jump line="81" column="8" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/clsMainScreen.h" protocol="file" />
+      <jump line="1" column="0" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/clsMainScreen.h" protocol="file" />
+      <jump line="10" column="53" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/clsMainScreen.h" protocol="file" />
+      <jump line="12" column="18" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/clsMainScreen.h" protocol="file" />
+      <jump line="97" column="16" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/clsMainScreen.h" protocol="file" />
+      <jump line="30" column="32" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Transactions Screen/clsTotalBalancesScreen.h" protocol="file" />
+      <jump line="54" column="0" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsManageUsersScreen.h" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsListUsersScreen.h" protocol="file" />
+      <jump line="11" column="10" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/clsMainScreen.h" protocol="file" />
+      <jump line="170" column="23" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/clsMainScreen.h" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/clsMainScreen.h" protocol="file" />
+      <jump line="46" column="8" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsManageUsersScreen.h" protocol="file" />
+      <jump line="151" column="0" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsManageUsersScreen.h" protocol="file" />
+      <jump line="134" column="8" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsManageUsersScreen.h" protocol="file" />
+      <jump line="131" column="4" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsManageUsersScreen.h" protocol="file" />
+      <jump line="127" column="4" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsManageUsersScreen.h" protocol="file" />
+      <jump line="22" column="0" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsManageUsersScreen.h" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Clients screens.h" protocol="file" />
+      <jump line="52" column="4" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Clients screens/clsAddNewClientScreen.h" protocol="file" />
+      <jump line="22" column="30" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Clients screens/clsClientListScreen.h" protocol="file" />
+      <jump line="20" column="0" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Clients screens/clsDeleteClientScreen.h" protocol="file" />
+      <jump line="58" column="0" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Clients screens/clsFindClientScreen.h" protocol="file" />
+      <jump line="20" column="0" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Clients screens/clsUpdateClientScreen.h" protocol="file" />
+      <jump line="20" column="0" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsManageUsersScreen.h" protocol="file" />
+      <jump line="6" column="0" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsListUsersScreen.h" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsUser.h" protocol="file" />
+      <jump line="7" column="0" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsUser.h" protocol="file" />
+      <jump line="189" column="20" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsUser.h" protocol="file" />
+      <jump line="203" column="70" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsUser.h" protocol="file" />
+      <jump line="163" column="4" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsUser.h" protocol="file" />
+      <jump line="164" column="31" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsUser.h" protocol="file" />
+      <jump line="195" column="0" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsUser.h" protocol="file" />
+      <jump line="13" column="6" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/clsPerson.h" protocol="file" />
+      <jump line="17" column="27" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsUser.h" protocol="file" />
+      <jump line="8" column="0" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsListUsersScreen.h" protocol="file" />
+    </project>
+    <project id="js83tll5pl58tbf60be1">
+      <jump line="45" column="56" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsAddNewUserScreen.h" protocol="file" />
+      <jump line="44" column="57" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsAddNewUserScreen.h" protocol="file" />
+      <jump line="22" column="27" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsAddNewUserScreen.h" protocol="file" />
+      <jump line="25" column="56" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsAddNewUserScreen.h" protocol="file" />
+      <jump line="28" column="22" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsAddNewUserScreen.h" protocol="file" />
+      <jump line="31" column="22" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsAddNewUserScreen.h" protocol="file" />
+      <jump line="34" column="25" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsAddNewUserScreen.h" protocol="file" />
+      <jump line="37" column="37" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsAddNewUserScreen.h" protocol="file" />
+      <jump line="56" column="15" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsAddNewUserScreen.h" protocol="file" />
+      <jump line="26" column="8" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsUser.h" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsUser.h" protocol="file" />
+      <jump line="20" column="28" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsListUsersScreen.h" protocol="file" />
+      <jump line="23" column="24" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsUser.h" protocol="file" />
+      <jump line="37" column="37" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsUser.h" protocol="file" />
+      <jump line="36" column="40" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsUser.h" protocol="file" />
+      <jump line="35" column="41" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsUser.h" protocol="file" />
+      <jump line="113" column="36" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsUser.h" protocol="file" />
+      <jump line="115" column="16" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsUser.h" protocol="file" />
+      <jump line="187" column="20" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsUser.h" protocol="file" />
+      <jump line="190" column="0" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsUser.h" protocol="file" />
+      <jump line="200" column="0" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsUser.h" protocol="file" />
+      <jump line="210" column="0" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsUser.h" protocol="file" />
+      <jump line="222" column="41" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsUser.h" protocol="file" />
+      <jump line="4099" column="4" filename="/usr/include/c++/16.1.1/bits/basic_string.h" protocol="file" />
+      <jump line="244" column="0" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsUser.h" protocol="file" />
+      <jump line="248" column="72" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsUser.h" protocol="file" />
+      <jump line="33" column="0" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsUser.h" protocol="file" />
+      <jump line="39" column="45" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsUser.h" protocol="file" />
+      <jump line="38" column="50" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsUser.h" protocol="file" />
+      <jump line="40" column="53" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsUser.h" protocol="file" />
+      <jump line="41" column="52" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsUser.h" protocol="file" />
+      <jump line="92" column="8" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/clsMainScreen.h" protocol="file" />
+      <jump line="52" column="8" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsManageUsersScreen.h" protocol="file" />
+      <jump line="78" column="30" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsAddNewUserScreen.h" protocol="file" />
+      <jump line="59" column="8" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsManageUsersScreen.h" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsDeleteUserScreen.h" protocol="file" />
+      <jump line="43" column="20" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsAddNewUserScreen.h" protocol="file" />
+      <jump line="7" column="0" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsDeleteUserScreen.h" protocol="file" />
+      <jump line="20" column="8" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsDeleteUserScreen.h" protocol="file" />
+      <jump line="31" column="4" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsDeleteUserScreen.h" protocol="file" />
+      <jump line="16" column="0" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsDeleteUserScreen.h" protocol="file" />
+      <jump line="35" column="8" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsDeleteUserScreen.h" protocol="file" />
+      <jump line="69" column="0" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsDeleteUserScreen.h" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsUpdateUserScreen.h" protocol="file" />
+      <jump line="70" column="0" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsDeleteUserScreen.h" protocol="file" />
+      <jump line="42" column="0" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsAddNewUserScreen.h" protocol="file" />
+      <jump line="7" column="0" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsUpdateUserScreen.h" protocol="file" />
+      <jump line="20" column="4" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsUpdateUserScreen.h" protocol="file" />
+      <jump line="18" column="4" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsUpdateUserScreen.h" protocol="file" />
+      <jump line="19" column="0" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsAddNewUserScreen.h" protocol="file" />
+      <jump line="40" column="0" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsAddNewUserScreen.h" protocol="file" />
+      <jump line="15" column="0" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsUpdateUserScreen.h" protocol="file" />
+      <jump line="72" column="8" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsManageUsersScreen.h" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsFindUserScreen.h" protocol="file" />
+      <jump line="51" column="4" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsUpdateUserScreen.h" protocol="file" />
+      <jump line="38" column="0" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsUpdateUserScreen.h" protocol="file" />
+      <jump line="7" column="0" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsFindUserScreen.h" protocol="file" />
+      <jump line="18" column="4" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsFindUserScreen.h" protocol="file" />
+      <jump line="33" column="0" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsFindUserScreen.h" protocol="file" />
+      <jump line="34" column="4" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsFindUserScreen.h" protocol="file" />
+      <jump line="36" column="8" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsFindUserScreen.h" protocol="file" />
+      <jump line="57" column="8" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsFindUserScreen.h" protocol="file" />
+      <jump line="58" column="4" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsFindUserScreen.h" protocol="file" />
+      <jump line="60" column="0" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsFindUserScreen.h" protocol="file" />
+      <jump line="16" column="0" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsFindUserScreen.h" protocol="file" />
+      <jump line="28" column="23" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsFindUserScreen.h" protocol="file" />
+      <jump line="26" column="20" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsFindUserScreen.h" protocol="file" />
+      <jump line="8" column="0" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsManageUsersScreen.h" protocol="file" />
+      <jump line="12" column="13" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/clsMainScreen.h" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Global.h" protocol="file" />
+      <jump line="7" column="0" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Global.h" protocol="file" />
+      <jump line="13" column="0" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Global.h" protocol="file" />
+      <jump line="10" column="40" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Global.h" protocol="file" />
+      <jump line="9" column="0" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Global.h" protocol="file" />
+      <jump line="11" column="0" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Global.h" protocol="file" />
+      <jump line="12" column="0" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Global.h" protocol="file" />
+      <jump line="11" column="10" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/clsMainScreen.h" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/clsLoginScreen.h" protocol="file" />
+      <jump line="6" column="0" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/clsLoginScreen.h" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/src/main.cpp" protocol="file" />
+      <jump line="5" column="0" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/clsLoginScreen.h" protocol="file" />
+      <jump line="12" column="39" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/clsLoginScreen.h" protocol="file" />
+      <jump line="7" column="12" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/src/main.cpp" protocol="file" />
+      <jump line="8" column="0" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/src/main.cpp" protocol="file" />
+      <jump line="4" column="0" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/src/main.cpp" protocol="file" />
+      <jump line="6" column="4" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/src/main.cpp" protocol="file" />
+      <jump line="11" column="0" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/clsLoginScreen.h" protocol="file" />
+      <jump line="18" column="0" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/clsLoginScreen.h" protocol="file" />
+      <jump line="19" column="2" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/clsLoginScreen.h" protocol="file" />
+      <jump line="26" column="8" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/clsLoginScreen.h" protocol="file" />
+      <jump line="48" column="4" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/clsLoginScreen.h" protocol="file" />
+      <jump line="47" column="4" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/clsLoginScreen.h" protocol="file" />
+      <jump line="52" column="4" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/clsLoginScreen.h" protocol="file" />
+      <jump line="53" column="0" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/clsLoginScreen.h" protocol="file" />
+      <jump line="54" column="0" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/clsLoginScreen.h" protocol="file" />
+      <jump line="19" column="0" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/clsMainScreen.h" protocol="file" />
+      <jump line="44" column="0" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/clsLoginScreen.h" protocol="file" />
+      <jump line="39" column="41" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/clsLoginScreen.h" protocol="file" />
+      <jump line="10" column="22" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/clsMainScreen.h" protocol="file" />
+      <jump line="45" column="0" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/clsLoginScreen.h" protocol="file" />
+    </project>
   </component>
   <component name="VimMarksSettings">
     <globalmarks />
     <localmarks>
-      <file name="/Dummy.txt" timestamp="1781622836297">
-        <mark key="&quot;" line="0" column="19" />
-        <mark key="'" line="0" column="0" />
-        <mark key="[" line="0" column="0" />
-        <mark key="]" line="0" column="0" />
-        <mark key="m" line="0" column="0" />
-        <mark key="^" line="0" column="0" />
-        <mark key="." line="0" column="0" />
+      <file name="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsDeleteUserScreen.h" timestamp="1782053282443">
+        <mark key="'" line="70" column="0" />
+        <mark key="[" line="70" column="0" />
+        <mark key="]" line="70" column="0" />
+        <mark key="^" line="6" column="0" />
+        <mark key="." line="70" column="0" />
       </file>
-      <file name="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/clsAddNewClientScreen.h" timestamp="1781622738379">
-        <mark key="'" line="52" column="4" />
-        <mark key="[" line="52" column="0" />
-        <mark key="]" line="52" column="0" />
-        <mark key="." line="52" column="0" />
+      <file name="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsAddNewUserScreen.h" timestamp="1782053337671">
+        <mark key="'" line="40" column="0" />
+        <mark key="[" line="25" column="25" />
+        <mark key="]" line="37" column="28" />
+        <mark key="." line="37" column="27" />
+        <mark key="^" line="37" column="28" />
       </file>
-      <file name="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/Data/Clients.text" timestamp="1781619973791">
-        <mark key="'" line="11" column="24" />
-        <mark key="[" line="0" column="0" />
-        <mark key="]" line="11" column="64" />
-        <mark key="." line="0" column="0" />
+      <file name="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/src/main.cpp" timestamp="1782054030898">
+        <mark key="'" line="6" column="4" />
+        <mark key="[" line="6" column="0" />
+        <mark key="]" line="6" column="0" />
+        <mark key="." line="6" column="0" />
       </file>
-      <file name="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/clsBankClient.h" timestamp="1781767689940">
+      <file name="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/CMakeLists.txt" timestamp="1782053919925">
+        <mark key="&quot;" line="7" column="0" />
+      </file>
+      <file name="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/clsMainScreen.h" timestamp="1782054132965">
+        <mark key="'" line="10" column="22" />
+      </file>
+      <file name="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Clients screens/clsUpdateClientScreen.h" timestamp="1781973911751">
+        <mark key="'" line="20" column="0" />
+      </file>
+      <file name="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsFindUserScreen.h" timestamp="1782053522398">
+        <mark key="&quot;" line="0" column="0" />
+        <mark key="'" line="26" column="20" />
+        <mark key="[" line="16" column="0" />
+        <mark key="]" line="16" column="0" />
+        <mark key="." line="16" column="0" />
+      </file>
+      <file name="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsListUsersScreen.h" timestamp="1782052491223">
+        <mark key="&quot;" line="0" column="0" />
+        <mark key="'" line="20" column="28" />
+        <mark key="[" line="16" column="0" />
+        <mark key="]" line="16" column="0" />
+        <mark key="." line="16" column="0" />
+      </file>
+      <file name="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Clients screens/clsDeleteClientScreen.h" timestamp="1781973896770">
+        <mark key="'" line="20" column="0" />
+      </file>
+      <file name="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Clients screens/clsClientListScreen.h" timestamp="1781973893574">
+        <mark key="'" line="22" column="30" />
+      </file>
+      <file name="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/clsBankClient.h" timestamp="1782051054592">
         <mark key="&quot;" line="322" column="9" />
-        <mark key="'" line="322" column="9" />
+        <mark key="'" line="328" column="6" />
         <mark key="[" line="328" column="4" />
         <mark key="]" line="328" column="7" />
         <mark key="." line="328" column="6" />
         <mark key="^" line="328" column="7" />
       </file>
-      <file name="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/clsInputValidate.h" timestamp="1781622369263">
-        <mark key="'" line="153" column="0" />
-        <mark key="[" line="153" column="0" />
-        <mark key="]" line="153" column="0" />
-        <mark key="." line="153" column="0" />
+      <file name="/usr/include/c++/16.1.1/bits/basic_string.h" timestamp="1782052758233">
+        <mark key="&quot;" line="4099" column="4" />
       </file>
-      <file name="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/clsDate.h" timestamp="1781622724700">
-        <mark key="'" line="307" column="0" />
-        <mark key="[" line="307" column="0" />
-        <mark key="]" line="307" column="0" />
-        <mark key="." line="307" column="0" />
+      <file name="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsManageUsersScreen.h" timestamp="1782053528938">
+        <mark key="&quot;" line="8" column="0" />
+        <mark key="'" line="8" column="0" />
+        <mark key="[" line="19" column="47" />
+        <mark key="]" line="20" column="0" />
+        <mark key="." line="20" column="0" />
+        <mark key="^" line="20" column="0" />
       </file>
-      <file name="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Transactions Screen/clsTransactionsScreen.h" timestamp="1781920500015">
-        <mark key="&quot;" line="27" column="8" />
-        <mark key="'" line="33" column="8" />
-        <mark key="[" line="13" column="0" />
-        <mark key="]" line="13" column="0" />
-        <mark key="." line="13" column="0" />
-      </file>
-      <file name="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/clsString.h" timestamp="1781622650277">
-        <mark key="'" line="396" column="8" />
-        <mark key="[" line="396" column="0" />
-        <mark key="]" line="396" column="0" />
-        <mark key="." line="396" column="0" />
-      </file>
-      <file name="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/src/main.cpp" timestamp="1781623706139">
-        <mark key="'" line="7" column="12" />
-      </file>
-      <file name="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Transactions Screen/clsWithdrawScreen.h" timestamp="1781767679883">
+      <file name="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Global.h" timestamp="1782053907404">
         <mark key="&quot;" line="0" column="0" />
-        <mark key="'" line="67" column="26" />
-        <mark key="[" line="65" column="4" />
-        <mark key="]" line="65" column="12" />
-        <mark key="." line="65" column="4" />
+        <mark key="'" line="12" column="0" />
+        <mark key="[" line="12" column="42" />
+        <mark key="]" line="12" column="42" />
+        <mark key="." line="12" column="42" />
       </file>
-      <file name="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsManageUsersScreen.h" timestamp="1781766665019">
-        <mark key="&quot;" line="7" column="0" />
-        <mark key="'" line="54" column="0" />
-        <mark key="[" line="7" column="0" />
-        <mark key="]" line="153" column="0" />
-        <mark key="." line="7" column="0" />
+      <file name="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsUser.h" timestamp="1782052782336">
+        <mark key="'" line="41" column="52" />
+        <mark key="[" line="41" column="53" />
+        <mark key="]" line="41" column="53" />
+        <mark key="." line="41" column="53" />
+        <mark key="^" line="222" column="42" />
       </file>
-      <file name="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/clsUpdateClientScreen.h" timestamp="1781623915147">
-        <mark key="&quot;" line="20" column="0" />
-        <mark key="'" line="20" column="0" />
-        <mark key="[" line="47" column="0" />
-        <mark key="]" line="47" column="0" />
-        <mark key="^" line="7" column="0" />
-        <mark key="." line="47" column="0" />
-      </file>
-      <file name="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/clsUtil.h" timestamp="1781622499378">
-        <mark key="'" line="21" column="0" />
-        <mark key="[" line="21" column="0" />
-        <mark key="]" line="21" column="0" />
-        <mark key="." line="21" column="0" />
-      </file>
-      <file name="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/CMakeLists.txt" timestamp="1781625472169">
-        <mark key="&quot;" line="7" column="0" />
-      </file>
-      <file name="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/Data/Users" timestamp="1781625598997">
-        <mark key="'" line="5" column="60" />
+      <file name="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/Data/Users" timestamp="1782051050644">
+        <mark key="&quot;" line="5" column="42" />
+        <mark key="'" line="5" column="42" />
         <mark key="[" line="0" column="0" />
         <mark key="]" line="5" column="60" />
         <mark key="." line="0" column="0" />
       </file>
-      <file name="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/clsFindClientScreen.h" timestamp="1781622775618">
+      <file name="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Clients screens/clsFindClientScreen.h" timestamp="1781973899465">
         <mark key="'" line="58" column="0" />
-        <mark key="[" line="58" column="55" />
-        <mark key="]" line="58" column="55" />
-        <mark key="." line="58" column="55" />
       </file>
-      <file name="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/clsMainScreen.h" timestamp="1781766667921">
-        <mark key="&quot;" line="81" column="8" />
-        <mark key="'" line="81" column="8" />
-        <mark key="[" line="172" column="0" />
-        <mark key="]" line="69" column="8" />
-        <mark key="." line="69" column="7" />
-        <mark key="^" line="69" column="8" />
+      <file name="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/clsLoginScreen.h" timestamp="1782054352714">
+        <mark key="&quot;" line="0" column="0" />
+        <mark key="'" line="45" column="0" />
+        <mark key="[" line="54" column="50" />
+        <mark key="]" line="45" column="0" />
+        <mark key="^" line="45" column="0" />
+        <mark key="." line="45" column="0" />
       </file>
-      <file name="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/clsDeleteClientScreen.h" timestamp="1781622758713">
-        <mark key="'" line="20" column="0" />
-        <mark key="^" line="7" column="0" />
-      </file>
-      <file name="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Transactions Screen/clsDepositScreen.h" timestamp="1781766723294">
-        <mark key="'" line="19" column="0" />
-        <mark key="[" line="67" column="52" />
-        <mark key="]" line="67" column="70" />
-        <mark key="." line="67" column="69" />
-        <mark key="^" line="67" column="70" />
-      </file>
-      <file name="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/clsClientListScreen.h" timestamp="1781625391885">
-        <mark key="'" line="22" column="30" />
-        <mark key="[" line="6" column="0" />
-        <mark key="]" line="6" column="0" />
-        <mark key="." line="6" column="0" />
+      <file name="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsUpdateUserScreen.h" timestamp="1782053439279">
+        <mark key="'" line="38" column="0" />
+        <mark key="[" line="51" column="0" />
+        <mark key="]" line="51" column="0" />
+        <mark key="." line="51" column="0" />
       </file>
     </localmarks>
   </component>
   <component name="VimRegisterSettings">
     <registers>
-      <register name="&quot;" type="CHARACTER_WISE">
-        <text encoding="base64">dm9pZA==</text>
+      <register name="&quot;" type="LINE_WISE">
+        <text encoding="base64">Cg==</text>
       </register>
-      <register name="+" type="CHARACTER_WISE">
-        <text encoding="base64">dm9pZA==</text>
+      <register name="+" type="LINE_WISE">
+        <text encoding="base64">Cg==</text>
       </register>
       <register name="-" type="CHARACTER_WISE">
         <text encoding="base64">dm9pZA==</text>
       </register>
       <register name="." type="CHARACTER_WISE">
-        <text encoding="base64">Ym9vbA==</text>
+        <text encoding="base64">aRtwQmFuayBTeXN0ZW0gLSBVSSAtIE1hbmFnZSBVc2VycyBNZW51ClB1cyA=</text>
       </register>
       <register name="/" type="CHARACTER_WISE">
         <text encoding="base64">bWFpbg==</text>
       </register>
       <register name="0" type="CHARACTER_WISE">
-        <text encoding="base64">R2V0QWNjb3VudEJhbGFuY2UoKQ==</text>
+        <text encoding="base64">Y2xzTG9naW5TY3JlZW4=</text>
       </register>
       <register name="q" type="CHARACTER_WISE">
         <text encoding="base64" />
@@ -1669,7 +1803,7 @@
         <text encoding="base64">Cg==</text>
       </register>
       <register name="4" type="LINE_WISE">
-        <text encoding="base64">ICAgICAgICAgICAgICAgCg==</text>
+        <text encoding="base64">Cg==</text>
       </register>
       <register name="5" type="LINE_WISE">
         <text encoding="base64">Cg==</text>
@@ -1678,13 +1812,13 @@
         <text encoding="base64">Cg==</text>
       </register>
       <register name="7" type="LINE_WISE">
-        <text encoding="base64">ICAgIAo=</text>
-      </register>
-      <register name="8" type="LINE_WISE">
         <text encoding="base64">Cg==</text>
       </register>
+      <register name="8" type="LINE_WISE">
+        <text encoding="base64">ICAgICAK</text>
+      </register>
       <register name="9" type="LINE_WISE">
-        <text encoding="base64">ICAgIF9fZGVjbHNwZWMocHJvcGVydHkoZ2V0ID0gR2V0QWNjb3VudEJhbGFuY2UsIHB1dCA9IFNldEFjY291bnRCYWxhbmNlKSkgZmxvYXQgQWNjb3VudEJhbGFuY2U7Cg==</text>
+        <text encoding="base64">Cg==</text>
       </register>
       <register name=":" type="CHARACTER_WISE">
         <text encoding="base64">aGVscA==</text>

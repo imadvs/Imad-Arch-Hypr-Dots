@@ -7,7 +7,7 @@
       <i c="2" l="1781573307754" />
     </e>
     <e n="$Delete">
-      <i c="14" l="1781573409905" />
+      <i c="15" l="1781973768425" />
     </e>
     <e n="$Paste">
       <i c="26" l="1776257990598" />
@@ -16,7 +16,7 @@
       <i c="10" l="1779298719670" />
     </e>
     <e n="$Undo">
-      <i c="32" l="1781625581142" />
+      <i c="34" l="1781972896391" />
     </e>
     <e n="AIAssistant.LLMSettings">
       <i c="1" l="1781405371398" />
@@ -31,7 +31,7 @@
       <i c="11" l="1779390863122" />
     </e>
     <e n="AIAssistant.ToolWindow.HistoryAction">
-      <i c="60" l="1781920485831" />
+      <i c="61" l="1781961945364" />
     </e>
     <e n="AIAssistant.ToolWindow.Message.Copy">
       <i c="7" l="1774134218216" />
@@ -46,10 +46,10 @@
       <i c="14" l="1779390881913" />
     </e>
     <e n="AIAssistant.ToolWindow.NewChatActionAlt">
-      <i c="34" l="1781572496223" />
+      <i c="35" l="1781974137078" />
     </e>
     <e n="AIAssistant.ToolWindow.Snippet.Apply.Smart">
-      <i c="54" l="1781767470829" />
+      <i c="55" l="1781974301427" />
     </e>
     <e n="AIAssistant.ToolWindow.Snippet.CopyToClipboard">
       <i c="27" l="1781767444040" />
@@ -97,7 +97,7 @@
       <i c="2" l="1776201232749" />
     </e>
     <e n="CPP.NewHeaderFile">
-      <i c="31" l="1781625469344" />
+      <i c="41" l="1782053916750" />
     </e>
     <e n="CWMHostShowPopupAction">
       <i c="1" l="1770761150874" />
@@ -157,16 +157,16 @@
       <i c="7" d="7" l="1772372056632" k="1772372056632" />
     </e>
     <e n="EditorBackSpace">
-      <i c="1500" l="1781767639185" />
+      <i c="1716" l="1782054164429" />
     </e>
     <e n="EditorChooseLookupItem">
-      <i c="144" l="1781766775355" />
+      <i c="182" l="1782054012083" />
     </e>
     <e n="EditorChooseLookupItemReplace">
       <i c="32" l="1780929257822" />
     </e>
     <e n="EditorCopy">
-      <i c="13" l="1781956228400" />
+      <i c="14" l="1781973749689" />
     </e>
     <e n="EditorDecreaseFontSize">
       <i c="5" d="5" l="1770157378326" k="1770157378326" />
@@ -175,10 +175,10 @@
       <i c="2" l="1770152534642" />
     </e>
     <e n="EditorDown">
-      <i c="592" l="1780929835285" />
+      <i c="738" l="1782053815670" />
     </e>
     <e n="EditorEnter">
-      <i c="1100" l="1781767649434" />
+      <i c="1180" l="1782054157716" />
     </e>
     <e n="EditorEscape">
       <i c="72" l="1774063809594" />
@@ -211,7 +211,7 @@
       <i c="12" l="1778585463471" />
     </e>
     <e n="EditorPaste">
-      <i c="119" l="1781625578463" />
+      <i c="128" l="1782053918771" />
     </e>
     <e n="EditorPasteFromX11">
       <i c="1" l="1776549616044" />
@@ -241,10 +241,10 @@
       <i c="18" l="1780965925422" />
     </e>
     <e n="EditorTabsEntryPoint">
-      <i c="6" l="1781623954827" />
+      <i c="7" l="1782052812901" />
     </e>
     <e n="EditorUp">
-      <i c="278" l="1780929754773" />
+      <i c="288" l="1782052736788" />
     </e>
     <e n="ExpandAll">
       <i c="1" l="1776164145875" />
@@ -256,7 +256,7 @@
       <i c="24" l="1771690112347" />
     </e>
     <e n="ExternalSystem.ProjectRefreshAction">
-      <i c="4" l="1781573562203" />
+      <i c="5" l="1781973881123" />
     </e>
     <e n="FileChooser.GotoDesktop">
       <i c="1" l="1774162610096" />
@@ -274,13 +274,13 @@
       <i c="4" l="1781573158673" />
     </e>
     <e n="Git.Commit.And.Push.Executor">
-      <i c="6" l="1781622853719" />
+      <i c="9" l="1782054179541" />
     </e>
     <e n="Git.Configure.Remotes">
       <i c="1" l="1781570469447" />
     </e>
     <e n="Git.Log.Branches.Change.Branch.Filter">
-      <i c="13" l="1781572486614" />
+      <i c="21" l="1781973020710" />
     </e>
     <e n="Git.Rename.Local.Branch">
       <i c="1" l="1781572065372" />
@@ -298,13 +298,16 @@
       <i c="5" l="1776204463588" />
     </e>
     <e n="GotoDeclaration">
-      <i c="558" l="1781767679970" />
+      <i c="566" l="1782052651080" />
     </e>
     <e n="GotoLine">
       <i c="1" l="1777185919692" />
     </e>
     <e n="GotoNextElementUnderCaretUsage">
       <i c="1" l="1771689813260" />
+    </e>
+    <e n="GotoNextError">
+      <i c="2" l="1781973739189" />
     </e>
     <e n="HideActiveWindow">
       <i c="119" l="1777467983257" />
@@ -313,7 +316,7 @@
       <i c="5" l="1774113555786" />
     </e>
     <e n="InsertInlineCompletionAction">
-      <i c="224" l="1780929917198" />
+      <i c="225" l="1781973157555" />
     </e>
     <e n="List-selectNextRow">
       <i c="1" l="1771005821639" />
@@ -322,7 +325,7 @@
       <i c="5" l="1781545234715" />
     </e>
     <e n="NewDir">
-      <i c="5" l="1781622978261" />
+      <i c="6" l="1781973780257" />
     </e>
     <e n="NewElement">
       <i c="2" l="1776201951653" />
@@ -343,7 +346,7 @@
       <i c="8" d="8" l="1772372239129" k="1772372239129" />
     </e>
     <e n="PasteMultiple">
-      <i c="5" l="1770729164825" />
+      <i c="7" l="1782054155678" />
     </e>
     <e n="PreviousTab">
       <i c="77" l="1776368587262" />
@@ -376,7 +379,7 @@
       <i c="49" l="1778324166627" />
     </e>
     <e n="RenameFile">
-      <i c="1" l="1774162870982" />
+      <i c="2" l="1781973747355" />
     </e>
     <e n="Run">
       <i c="144" l="1779799402917" />
@@ -423,6 +426,9 @@
     <e n="Stop">
       <i c="67" d="16" l="1779799412340" k="1771689618094" />
     </e>
+    <e n="Switcher">
+      <i c="13" l="1782054030640" />
+    </e>
     <e n="Terminal.CopySelectedText">
       <i c="3" l="1781572669858" />
     </e>
@@ -457,7 +463,7 @@
       <i c="2" l="1776367910564" />
     </e>
     <e n="Vcs.Push">
-      <i c="3" l="1781622806454" />
+      <i c="4" l="1781972954334" />
     </e>
     <e n="Vcs.ShowMessageHistory">
       <i c="1" l="1781573222644" />
@@ -559,13 +565,13 @@
       <i c="1" l="1774156797916" />
     </e>
     <e n="com.intellij.ml.llm.codeGeneration.popup.AcceptAction">
-      <i c="34" l="1781767526584" />
+      <i c="35" l="1781974539502" />
     </e>
     <e n="com.intellij.ml.llm.codeGeneration.popup.DiscardAction">
       <i c="4" l="1778094634855" />
     </e>
     <e n="com.intellij.ml.llm.codeGeneration.popup.NextChange">
-      <i c="10" l="1781625224894" />
+      <i c="13" l="1781974486003" />
     </e>
     <e n="com.intellij.ml.llm.codeGeneration.popup.PreviousChange">
       <i c="6" l="1781625220208" />
@@ -592,31 +598,34 @@
       <i c="2" l="1770125255409" />
     </e>
     <e n="com.intellij.openapi.actionSystem.AnActionWrapper">
-      <i c="5672" l="1781767734038" />
+      <i c="6114" l="1782054167802" />
     </e>
     <e n="com.intellij.openapi.actionSystem.DefaultActionGroup">
       <i c="7" l="1781573653806" />
     </e>
     <e n="com.intellij.openapi.actionSystem.EmptyAction">
-      <i c="3" l="1770124092863" />
+      <i c="11" l="1782054030891" />
     </e>
     <e n="com.intellij.openapi.actionSystem.impl.MoreActionGroup">
       <i c="2" l="1774156790623" />
     </e>
     <e n="com.intellij.openapi.editor.impl.EditorMarkupModelImpl$TrafficLightAction">
-      <i c="50" l="1780929853913" />
+      <i c="51" l="1781974122031" />
     </e>
     <e n="com.intellij.openapi.editor.impl.EditorMarkupModelImpl$createAction$result$1">
       <i c="7" l="1779390814427" />
     </e>
     <e n="com.intellij.openapi.fileEditor.impl.tabActions.CloseTab">
-      <i c="30" l="1781625752665" />
+      <i c="34" l="1782053528921" />
     </e>
     <e n="com.intellij.openapi.fileEditor.impl.zoomIndicator.ZoomIndicatorView$settingsAction$1">
       <i c="5" l="1770157383579" />
     </e>
     <e n="com.intellij.openapi.project.DumbAwareAction$SimpleDumbAwareAction">
       <i c="93" l="1780929918947" />
+    </e>
+    <e n="com.intellij.openapi.project.LightEditActionFactory$SimpleLightEditCompatibleAction">
+      <i c="1" l="1782053444023" />
     </e>
     <e n="com.intellij.openapi.ui.DialogWrapper$5">
       <i c="9" l="1777117095518" />
@@ -628,7 +637,7 @@
       <i c="1" l="1770152139645" />
     </e>
     <e n="com.intellij.openapi.wm.impl.SquareAnActionButton">
-      <i c="437" l="1781766831555" />
+      <i c="449" l="1782054240892" />
     </e>
     <e n="com.intellij.openapi.wm.impl.customFrameDecorations.header.toolbar.MainMenuButton$ShowMenuAction">
       <i c="17" l="1781569741812" />
@@ -643,7 +652,7 @@
       <i c="7" l="1781571678137" />
     </e>
     <e n="com.intellij.toolWindow.ToolWindowHeader$HideAction">
-      <i c="118" l="1781572584991" />
+      <i c="120" l="1781974127801" />
     </e>
     <e n="com.intellij.toolWindow.ToolWindowHeader$ShowOptionsAction">
       <i c="34" l="1781872746340" />

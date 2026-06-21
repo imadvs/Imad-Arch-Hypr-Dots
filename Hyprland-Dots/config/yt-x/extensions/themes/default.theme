@@ -1,20 +1,20 @@
 # Semicolon RGB values for true color escape sequences
-primary_rgb="57,103,114"
+primary_rgb="204,228,229"
 primary_rgb="${primary_rgb//,/;}"
 
-secondary_rgb="124,152,149"
+secondary_rgb="156,165,167"
 secondary_rgb="${secondary_rgb//,/;}"
 
-accent_rgb="76,134,145"
+accent_rgb="209,232,233"
 accent_rgb="${accent_rgb//,/;}"
 
-error_rgb="12,27,35"
+error_rgb="150,143,109"
 error_rgb="${error_rgb//,/;}"
 
-fg_rgb="206,235,232"
+fg_rgb="238,247,249"
 fg_rgb="${fg_rgb//,/;}"
 
-green_rgb="12,27,35"
+green_rgb="185,152,104"
 green_rgb="${green_rgb//,/;}"
 
 # Set the yt-x interface colors
@@ -30,27 +30,27 @@ THEME_PLAYER_START="$(printf "\033[38;2;${green_rgb}m")"
 
 # Override FZF options by appending color overrides
 CONFIG_FZF_OPTS="$CONFIG_FZF_OPTS \
-  --color=bg+:#45484A \
-  --color=bg:#1F2224 \
-  --color=border:#396772 \
-  --color=fg:#CEEBE8 \
-  --color=gutter:#1F2224 \
-  --color=header:#396772 \
-  --color=hl+:#396772 \
-  --color=hl:#396772 \
-  --color=info:#7C9895 \
-  --color=marker:#4C8691 \
-  --color=pointer:#4C8691 \
-  --color=prompt:#396772 \
-  --color=query:#CEEBE8:regular \
-  --color=scrollbar:#396772 \
-  --color=separator:#4C8691 \
-  --color=spinner:#4C8691"
+  --color=bg+:#3B3D41 \
+  --color=bg:#14151A \
+  --color=border:#CCE4E5 \
+  --color=fg:#EEF7F9 \
+  --color=gutter:#14151A \
+  --color=header:#CCE4E5 \
+  --color=hl+:#CCE4E5 \
+  --color=hl:#CCE4E5 \
+  --color=info:#9CA5A7 \
+  --color=marker:#D1E8E9 \
+  --color=pointer:#D1E8E9 \
+  --color=prompt:#CCE4E5 \
+  --color=query:#EEF7F9:regular \
+  --color=scrollbar:#CCE4E5 \
+  --color=separator:#D1E8E9 \
+  --color=spinner:#D1E8E9"
 
 # Override Gum options
-CONFIG_GUM_FILTER_OPTS="--prompt.foreground #396772 --indicator.foreground #396772 --selected-indicator.foreground #396772 --unselected-prefix.foreground #7C9895 --header.foreground #396772 --text.foreground #CEEBE8 --cursor-text.foreground #CEEBE8 --match.foreground #396772 --placeholder.foreground #7C9895 --prompt > --indicator ◆ --selected-prefix ◉ --unselected-prefix ○ --placeholder こんにちは..."
+CONFIG_GUM_FILTER_OPTS="--prompt.foreground #CCE4E5 --indicator.foreground #CCE4E5 --selected-indicator.foreground #CCE4E5 --unselected-prefix.foreground #9CA5A7 --header.foreground #CCE4E5 --text.foreground #EEF7F9 --cursor-text.foreground #EEF7F9 --match.foreground #CCE4E5 --placeholder.foreground #9CA5A7 --prompt > --indicator ◆ --selected-prefix ◉ --unselected-prefix ○ --placeholder こんにちは..."
 CONFIG_GUM_OPTS="$CONFIG_GUM_FILTER_OPTS"
-CONFIG_GUM_INPUT_OPTS="--prompt.foreground #396772 --cursor.foreground #CEEBE8 --placeholder こんにちは... --cursor.mode blink"
-CONFIG_GUM_PAGER_OPTS="--foreground #CEEBE8 --line-number.foreground #7C9895 --match.foreground #396772 --match-highlight.foreground #1F2224 --match-highlight.background #396772 --help.foreground #7C9895 --show-line-numbers --soft-wrap --border-foreground #396772"
-CONFIG_GUM_SPIN_OPTS="--spinner dot --spinner.foreground #396772 --title.foreground #7C9895 --align left"
-CONFIG_GUM_CONFIRM_OPTS="--prompt.foreground #396772 --selected.foreground #1F2224 --selected.background #396772 --unselected.foreground #7C9895"
+CONFIG_GUM_INPUT_OPTS="--prompt.foreground #CCE4E5 --cursor.foreground #EEF7F9 --placeholder こんにちは... --cursor.mode blink"
+CONFIG_GUM_PAGER_OPTS="--foreground #EEF7F9 --line-number.foreground #9CA5A7 --match.foreground #CCE4E5 --match-highlight.foreground #14151A --match-highlight.background #CCE4E5 --help.foreground #9CA5A7 --show-line-numbers --soft-wrap --border-foreground #CCE4E5"
+CONFIG_GUM_SPIN_OPTS="--spinner dot --spinner.foreground #CCE4E5 --title.foreground #9CA5A7 --align left"
+CONFIG_GUM_CONFIRM_OPTS="--prompt.foreground #CCE4E5 --selected.foreground #14151A --selected.background #CCE4E5 --unselected.foreground #9CA5A7"

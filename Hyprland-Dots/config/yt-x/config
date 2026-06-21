@@ -107,7 +107,7 @@ CONFIG_FZF_HEADER="\
 "
 CONFIG_FZF_OPTS="
   --ansi
-  --border
+  --border=none
   --scheme=history
   --style=full
   --color=bg+:#283457
@@ -126,7 +126,6 @@ CONFIG_FZF_OPTS="
   --color=scrollbar:#27a1b9
   --color=separator:#ff9e64
   --color=spinner:#ff007c
-  --border=rounded
   --border-label=''
   --prompt=' >'
   --marker=' >'
@@ -141,7 +140,7 @@ CONFIG_FZF_OPTS="
   -i
   --exact
   --tabstop=1
-  --preview-window=border-rounded,left,35%,wrap
+  --preview-window=border-none,left,35%,wrap
   --wrap"
 
 # Rofi config all are required to run rofi as a launcher

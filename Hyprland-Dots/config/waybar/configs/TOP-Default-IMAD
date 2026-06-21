@@ -1,6 +1,6 @@
 /* ---- 💫 https://github.com/LinuxBeginnings 💫 ---- */
 
-// ### DEFAULT - Top ### //
+// ### DEFAULT Laptop  - Top ### //
 {
 "include": [
   "$HOME/.config/waybar/Modules",
@@ -27,19 +27,18 @@
 	"custom/separator#blank",
 	"custom/cava_mviz",
 	"custom/separator#blank",
+	"custom/playerctl",
+	"custom/separator#blank",
 	"hyprland/window",
 	],
 
 "modules-center": [
-	"group/app_drawer",
 	"custom/separator#blank",
+  "group/app_drawer",
 	"group/notify",
-	"custom/separator#dot-line",
 	"hyprland/workspaces#rw",
 	"clock",
-	"custom/separator#dot-line",
 	"custom/weather2",
-	"custom/separator#dot-line",
 	"idle_inhibitor",	
 	"custom/hint",	
 	],
@@ -49,12 +48,13 @@
 	"network",
 	"bluetooth",
 	"custom/separator#dot-line",
+	"group/laptop",
 	"group/mobo_drawer",
-	"custom/separator#line",  
+	"custom/separator#line",
 	"group/audio",
-	"custom/separator#dot-line", 
+	"custom/separator#dot-line",
 	"custom/nightlight",
-	"custom/separator#dot-line", 
+	"custom/separator#dot-line",
 	"group/status",
 	],
 }

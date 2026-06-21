@@ -45,11 +45,16 @@
 
 "modules-right": [
 	"tray",
-	"network#speed",
+	"network",
+	"bluetooth",
+	"custom/separator#dot-line",
 	"group/laptop",
 	"group/mobo_drawer",
+	"custom/separator#line",
 	"group/audio",
+	"custom/separator#dot-line",
 	"custom/nightlight",
+	"custom/separator#dot-line",
 	"group/status",
 	],
 }

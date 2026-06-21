@@ -157,10 +157,10 @@
       <i c="7" d="7" l="1772372056632" k="1772372056632" />
     </e>
     <e n="EditorBackSpace">
-      <i c="1716" l="1782054164429" />
+      <i c="1722" l="1782057358817" />
     </e>
     <e n="EditorChooseLookupItem">
-      <i c="182" l="1782054012083" />
+      <i c="199" l="1782057337649" />
     </e>
     <e n="EditorChooseLookupItemReplace">
       <i c="32" l="1780929257822" />
@@ -175,10 +175,10 @@
       <i c="2" l="1770152534642" />
     </e>
     <e n="EditorDown">
-      <i c="738" l="1782053815670" />
+      <i c="767" l="1782057337101" />
     </e>
     <e n="EditorEnter">
-      <i c="1180" l="1782054157716" />
+      <i c="1181" l="1782056848406" />
     </e>
     <e n="EditorEscape">
       <i c="72" l="1774063809594" />
@@ -196,7 +196,7 @@
       <i c="22" l="1776367660455" />
     </e>
     <e n="EditorLeft">
-      <i c="174" l="1776205169654" />
+      <i c="175" l="1782057230482" />
     </e>
     <e n="EditorLineEnd">
       <i c="23" l="1778585473115" />
@@ -244,7 +244,7 @@
       <i c="7" l="1782052812901" />
     </e>
     <e n="EditorUp">
-      <i c="288" l="1782052736788" />
+      <i c="289" l="1782057327473" />
     </e>
     <e n="ExpandAll">
       <i c="1" l="1776164145875" />
@@ -298,7 +298,7 @@
       <i c="5" l="1776204463588" />
     </e>
     <e n="GotoDeclaration">
-      <i c="566" l="1782052651080" />
+      <i c="570" l="1782056923431" />
     </e>
     <e n="GotoLine">
       <i c="1" l="1777185919692" />
@@ -427,7 +427,7 @@
       <i c="67" d="16" l="1779799412340" k="1771689618094" />
     </e>
     <e n="Switcher">
-      <i c="13" l="1782054030640" />
+      <i c="14" l="1782055881504" />
     </e>
     <e n="Terminal.CopySelectedText">
       <i c="3" l="1781572669858" />
@@ -598,13 +598,13 @@
       <i c="2" l="1770125255409" />
     </e>
     <e n="com.intellij.openapi.actionSystem.AnActionWrapper">
-      <i c="6114" l="1782054167802" />
+      <i c="6131" l="1782057360544" />
     </e>
     <e n="com.intellij.openapi.actionSystem.DefaultActionGroup">
       <i c="7" l="1781573653806" />
     </e>
     <e n="com.intellij.openapi.actionSystem.EmptyAction">
-      <i c="11" l="1782054030891" />
+      <i c="12" l="1782055881727" />
     </e>
     <e n="com.intellij.openapi.actionSystem.impl.MoreActionGroup">
       <i c="2" l="1774156790623" />
@@ -616,7 +616,7 @@
       <i c="7" l="1779390814427" />
     </e>
     <e n="com.intellij.openapi.fileEditor.impl.tabActions.CloseTab">
-      <i c="34" l="1782053528921" />
+      <i c="35" l="1782056744420" />
     </e>
     <e n="com.intellij.openapi.fileEditor.impl.zoomIndicator.ZoomIndicatorView$settingsAction$1">
       <i c="5" l="1770157383579" />

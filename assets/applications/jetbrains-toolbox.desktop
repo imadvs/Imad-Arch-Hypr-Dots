@@ -1,14 +1,16 @@
 [Desktop Entry]
-Icon=/opt/jetbrains-toolbox/toolbox.svg
-Exec=/opt/jetbrains-toolbox/jetbrains-toolbox %u
+Icon=jetbrains-toolbox
+Exec=/tmp/jetbrains-toolbox-3.5.0.84344/bin/jetbrains-toolbox %u
 Version=1.0
 Type=Application
 Categories=Development
 Name=JetBrains Toolbox
 StartupWMClass=jetbrains-toolbox
 Terminal=false
-MimeType=x-scheme-handler/jetbrains;
+MimeType=
 X-GNOME-Autostart-enabled=true
+X-Icon-Path=/home/imad/.local/share/icons/hicolor/scalable/apps/jetbrains-toolbox.svg
+X-Installed-Icon-Cache-Path=/home/imad/.local/share/icons/hicolor
 StartupNotify=false
 X-GNOME-Autostart-Delay=10
 X-MATE-Autostart-Delay=10

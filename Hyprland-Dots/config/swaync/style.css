@@ -12,7 +12,7 @@
 * {
     font-family: "JetBrains Mono Nerd Font";
     font-weight: bold;
-    font-size: 0.45rem;
+    font-size: 1rem;
 }
 
 .control-center .notification-row:focus,
@@ -130,7 +130,7 @@
 }
 
 .summary {
-    font-size: 0.55rem;
+    font-size: 1rem;
     font-weight: bold;
     background: transparent;
     color: @text-color;
@@ -138,7 +138,7 @@
 }
 
 .time {
-    font-size: 0.55rem;
+    font-size: 1rem;
     font-weight: bold;
     background: transparent;
     color: @text-color;
@@ -147,7 +147,7 @@
 }
 
 .body {
-    font-size: 0.55rem;
+    font-size: 1rem;
     font-weight: bold;
     background: transparent;
     color: @text-color;
@@ -182,7 +182,7 @@
     background: @noti-bg-alt;
     padding: 3px 6px;
     margin: 5px;
-    font-size: 0.55rem;
+    font-size: 1rem;
     border-radius: 10px;
 }
 
@@ -235,7 +235,7 @@
 }
 
 .widget-label>label {
-    font-size: 0.55rem;
+    font-size: 1rem;
     color: @text-color;
 }
 
@@ -258,11 +258,11 @@
 
 .widget-mpris-title {
     font-weight: 100;
-    font-size: 0.55rem
+    font-size: 1rem
 }
 
 .widget-mpris-subtitle {
-    font-size: 0.55rem
+    font-size: 0.75rem
 }
 
 .widget-buttons-grid {

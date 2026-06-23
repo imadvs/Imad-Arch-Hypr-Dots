@@ -1,23 +1,19 @@
 -Xmx8192m
--Dide.managed.by.toolbox=/opt/jetbrains-toolbox/jetbrains-toolbox
+-Dide.managed.by.toolbox=/tmp/jetbrains-toolbox-3.5.0.84344/bin/jetbrains-toolbox
 -Dtoolbox.notification.token=6e612554-fdea-4c61-88eb-99a4ac8847a5
 -Dtoolbox.notification.portFile=/home/imad/.cache/JetBrains/Toolbox/ports/d8072507-5596-4070-93f7-d76860fbcf16.port
 -Didea.suppressed.plugins.set.selector=radler
-
 # Display - 4K 15" @ ~293 DPI
 -Dsun.java2d.uiScale.enabled=true
 -Dsun.java2d.uiScale=3
-
 # Wayland & Hyprland
 -Dawt.toolkit.name=WLToolkit
 -Dwayland.enabled=true
 -Dlinux.native.menu=false
-
 # Rendering - Quadro P2000 (Vulkan capable)
 -Dsun.java2d.opengl=false
 -Dsun.java2d.vulkan=true
 -Dsun.java2d.vulkan.fbobject=true
-
 # Performance
 -Dawt.useSystemAAFontSettings=lcd
 -Dsun.java2d.pmoffscreen=false

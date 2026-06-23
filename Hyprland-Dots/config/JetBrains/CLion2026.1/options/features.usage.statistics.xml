@@ -6,8 +6,8 @@
     <feature id="navigation.goto.file.line" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="refactoring.changeSignature" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="navigation.popup.symbol" count="0" last-shown="0" last-used="0" shown-count="0" />
-    <feature id="switcher" count="24" last-shown="0" last-used="1782055881505" shown-count="0" />
-    <feature id="editing.completion.replace" count="32" last-shown="1782057357113" last-used="1780929257854" shown-count="2614" />
+    <feature id="switcher" count="61" last-shown="0" last-used="1782143701576" shown-count="0" />
+    <feature id="editing.completion.replace" count="32" last-shown="1782186844177" last-used="1780929257854" shown-count="2932" />
     <feature id="codeassists.complete.statement" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="refactoring.inlineTypedef" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="refactoring.introduceConstant" count="0" last-shown="0" last-used="0" shown-count="0" />
@@ -27,21 +27,21 @@
     <feature id="refactoring.inlineLocalVar" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="db.copy.table" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="refactoring.appCodeIntroduceVariable" count="0" last-shown="0" last-used="0" shown-count="0" />
-    <feature id="ui.hide.tool.window" count="239" last-shown="0" last-used="1781974127822" shown-count="0" />
+    <feature id="ui.hide.tool.window" count="262" last-shown="0" last-used="1782154127095" shown-count="0" />
     <feature id="navigation.find.replace.in.files.toggle" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="intentions.check.regexp" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="profiler.open.snapshot" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="codeassists.comment.line" count="15" last-shown="0" last-used="1777186734328" shown-count="0" />
     <feature id="refactoring.introduceTypedef" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="refactoring.pushDown" count="0" last-shown="0" last-used="0" shown-count="0" />
-    <feature id="SearchEverywhere" count="51" last-shown="0" last-used="1778331562014" shown-count="0" />
+    <feature id="SearchEverywhere" count="55" last-shown="0" last-used="1782159808968" shown-count="0" />
     <feature id="editor.delete.line" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="navigation.inheritance.hierarchy" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="editing.duplicate" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="editing.copy.reference" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="navigation.find" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="codeassists.quickdefinition" count="0" last-shown="0" last-used="0" shown-count="0" />
-    <feature id="editing.completion.basic" count="199" last-shown="0" last-used="1782057337666" shown-count="0" />
+    <feature id="editing.completion.basic" count="209" last-shown="0" last-used="1782186764025" shown-count="0" />
     <feature id="editing.completion.postfix" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="generate.definitions" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="dir.diff" count="0" last-shown="0" last-used="0" shown-count="0" />
@@ -66,7 +66,7 @@
     <feature id="navigation.find.usages" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="editing.clipboard.history" count="7" last-shown="0" last-used="1782054163059" shown-count="0" />
     <feature id="editing.compare.editor.with.clipboard" count="0" last-shown="0" last-used="0" shown-count="0" />
-    <feature id="refactoring.rename" count="55" last-shown="0" last-used="1778324182316" shown-count="0" />
+    <feature id="refactoring.rename" count="60" last-shown="0" last-used="1782141254709" shown-count="0" />
     <feature id="navigation.popup.action" count="5" last-shown="0" last-used="1776204463845" shown-count="0" />
     <feature id="refactoring.show.quick.list" count="10" last-shown="0" last-used="1777982059378" shown-count="0" />
     <feature id="db.forget.cached.schemas" count="0" last-shown="0" last-used="0" shown-count="0" />
@@ -87,7 +87,7 @@
     <feature id="refactoring.introduceDefine" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="codeassists.surroundwith.expression" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="codeassists.generate.code" count="0" last-shown="0" last-used="0" shown-count="0" />
-    <feature id="navigation.goto.declaration" count="570" last-shown="0" last-used="1782056923434" shown-count="0" />
+    <feature id="navigation.goto.declaration" count="594" last-shown="0" last-used="1782152047664" shown-count="0" />
     <feature id="editing.completion.finishByDotEtc" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="refactoring.inlineMethod" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="ui.open.project.tool.window" count="14" last-shown="0" last-used="1770729747553" shown-count="0" />

@@ -3350,6 +3350,26 @@
       }
     }
   }, {
+    "id" : "debugger.jvm.console.navigation",
+    "builds" : [ ],
+    "versions" : [ {
+      "from" : "1"
+    } ],
+    "rules" : {
+      "event_id" : [ "{enum#__event_id}" ],
+      "event_data" : {
+        "count" : [ "{regexp#integer}" ],
+        "matched_from_agent_ratio" : [ "{regexp#float}" ],
+        "matched_from_process_ratio" : [ "{regexp#float}" ],
+        "output_kind" : [ "{enum:STDOUT|STDERR|LOGGING_BREAKPOINT|OTHER}" ],
+        "total_reported_from_agent" : [ "{regexp#integer}" ],
+        "total_reported_from_process" : [ "{regexp#integer}" ]
+      },
+      "enums" : {
+        "__event_id" : [ "navigable.line.clicked", "highlighted.lines.total", "stack.trace.entry.clicked", "stack.trace.closed.without.navigation", "matching.stats" ]
+      }
+    }
+  }, {
     "id" : "debugger.logpoints.usage",
     "builds" : [ ],
     "versions" : [ {
@@ -7057,6 +7077,18 @@
       }
     }
   }, {
+    "id" : "jupyter.help.usage",
+    "builds" : [ ],
+    "versions" : [ {
+      "from" : "1"
+    } ],
+    "rules" : {
+      "event_id" : [ "{enum:opened}" ],
+      "event_data" : {
+        "help_id" : [ "{enum:jupyter.settings.page|reference.settings.jupyter|tool_window.jupyter_server_log|reference.jupyter.vcs|how.to.work.with.tables|use.expression.input|adjust.table.formatting|jupyter.data.issues|reference.settings.tables|preferences.database.dataViews}" ]
+      }
+    }
+  }, {
     "id" : "jupyter.minimap",
     "builds" : [ ],
     "versions" : [ {
@@ -7145,7 +7177,7 @@
     "rules" : {
       "event_id" : [ "{enum:debug.image.view.show.as.image.triggered|debug.image.view.opened}" ],
       "event_data" : {
-        "action_call_place" : [ "{enum:JupyterDebugButton|JupyterDebugPopup|JupyterVarsButton|JupyterVarsPopup|PydevConsoleButton|PydevConsolePopup|JupyterOutputButton}" ],
+        "action_call_place" : [ "{enum:JupyterDebugButton|JupyterDebugPopup|JupyterVarsButton|JupyterVarsPopup|PydevConsoleButton|PydevConsolePopup|JupyterOutputButton}", "{enum:JupyterPyDapButton|JupyterPyDapPopup|JupyterRuntimePopup|JupyterRuntimeButton}" ],
         "height_power" : [ "{regexp#integer}" ],
         "image_type" : [ "{enum:TYPE_CUSTOM|TYPE_INT_RGB|TYPE_INT_ARGB|TYPE_INT_ARGB_PRE|TYPE_INT_BGR|TYPE_3BYTE_BGR|TYPE_4BYTE_ABGR|TYPE_4BYTE_ABGR_PRE|TYPE_USHORT_565_RGB|TYPE_USHORT_555_RGB|TYPE_BYTE_GRAY|TYPE_USHORT_GRAY|TYPE_BYTE_BINARY|TYPE_BYTE_INDEXED|UNKNOWN_TYPE}" ],
         "object_type" : [ "{enum:NDArray|EagerTensor|SparseTensor|VariableTensor|TorchTensor|Figure|Image|Other}" ],
@@ -7279,8 +7311,9 @@
       "from" : "1"
     } ],
     "rules" : {
-      "event_id" : [ "{enum:import.succeeded|import.started|import.failed}" ],
+      "event_id" : [ "{enum:import.succeeded|import.started|import.failed|apple_package_manager.used}" ],
       "event_data" : {
+        "cocoapodsDependenciesCount" : [ "{regexp#integer}" ],
         "exceptionClass" : [ "{util#class_name}" ],
         "exceptionClasses" : [ "{util#class_name}" ],
         "gradleVersion" : [ "{regexp#version}" ],
@@ -7288,6 +7321,7 @@
         "plugin" : [ "{util#plugin}" ],
         "plugin_type" : [ "{util#plugin_type}" ],
         "plugin_version" : [ "{util#plugin_version}" ],
+        "swiftPMDependenciesCount" : [ "{regexp#integer}" ],
         "target" : [ "{enum:Jvm|Desktop|WasmJs|Wasm|JS|Native|AndroidX64|AndroidX86|AndroidArm32|AndroidArm64|IosArm64|IosX64|IosSimulatorArm64|WatchosArm32|WatchosArm64|WatchosX64|WatchosSimulatorArm64|WatchosDeviceArm64|TvosArm64|TvosX64|TvosSimulatorArm64|LinuxX64|MingwX64|MacosX64|MacosArm64|LinuxArm64|Unknown}" ]
       }
     }
@@ -8902,6 +8936,7 @@
         "claude_code_agent_mode" : [ "{enum:PLAN|BRAVE|DEFAULT}" ],
         "codebase_toggle_enabled" : [ "{enum#boolean}" ],
         "command_type" : [ "{util#llm_parameters}" ],
+        "config_version" : [ "{regexp#integer}" ],
         "containing_file_of_element_contains_named_element_mentioned_in_query" : [ "{enum#boolean}" ],
         "containing_file_of_element_has_uncommitted_changes" : [ "{enum#boolean}" ],
         "containing_file_of_element_mentioned_in_query" : [ "{enum#boolean}" ],
@@ -8928,7 +8963,7 @@
         "directory_depth" : [ "{regexp#integer}" ],
         "duration_ms" : [ "{regexp#integer}" ],
         "edit_mode_action_invocation_place" : [ "{enum:EDITOR_TOOLBAR|CHAT_TREE_VIEW|UNKNOWN}" ],
-        "error" : [ "{enum:BadRequest|Unauthorized|Forbidden|NotFound|Conflict|LengthRequired|PreconditionFailed|ContentTooLarge|UnprocessableContent|TooManyRequests|UnavailableForLegalReasons|ClosedRequest|InternalServerError|HTTPStatusException|ContentLengthExceeded|UnresolvedAddressException|HttpConnectTimeoutException|AccessProhibited|GraziePolicyForbiddenException|UnknownError}", "{enum#__error}" ],
+        "error" : [ "{enum:BadRequest|Unauthorized|Forbidden|NotFound|Conflict|LengthRequired|PreconditionFailed|ContentTooLarge|UnprocessableContent|TooManyRequests|UnavailableForLegalReasons|ClosedRequest|InternalServerError|HTTPStatusException|ContentLengthExceeded|UnresolvedAddressException|HttpConnectTimeoutException|AccessProhibited|GraziePolicyForbiddenException|UnknownError}", "{enum#__error}", "{enum:CLIENT_MISSES_SUPPORTED_BACKEND|CLIENT_MISSES_OPTION|CDN_OPTIONS_MISSING|OPTION_VALUE_UNSUPPORTED|OPTION_SET_FAILED}" ],
         "error_class" : [ "{util#class_name}" ],
         "fileGroup" : [ "{enum:MAIN|BUILD|CHANGELOG|CONFIG|README}" ],
         "fileStatus" : [ "{enum:NOT_CHANGED|NOT_CHANGED_IMMEDIATE|NOT_CHANGED_RECURSIVE|DELETED|MODIFIED|ADDED|MERGED|UNKNOWN|IDEA_FILESTATUS_IGNORED|HIJACKED|IDEA_FILESTATUS_MERGED_WITH_CONFLICTS|IDEA_FILESTATUS_MERGED_WITH_BOTH_CONFLICTS|IDEA_FILESTATUS_MERGED_WITH_PROPERTY_CONFLICTS|IDEA_FILESTATUS_DELETED_FROM_FILE_SYSTEM|SWITCHED|OBSOLETE|SUPPRESSED}" ],
@@ -9031,12 +9066,12 @@
         "manually_selected" : [ "{enum#boolean}" ],
         "max_similarity_with_messages" : [ "{regexp#float}" ],
         "max_similarity_with_previous_message_attachments" : [ "{regexp#float}" ],
-        "mcp_tool_name" : [ "{enum:Task|Bash|Glob|Grep|LS|Read|Edit|MultiEdit|Write|NotebookRead|NotebookEdit|WebFetch|TodoRead|TodoWrite|WebSearch|ExitPlanMode|BashOutput|KillShell|SlashCommand|mcp__jetbrains__get_file_text_by_path|mcp__jetbrains__replace_text_in_file|mcp__jetbrains__search_in_files_by_text|mcp__jetbrains__search_in_files_by_regex|mcp__jetbrains__rename_refactoring|mcp__jetbrains__reformat_file|mcp__jetbrains__create_new_file|mcp__jetbrains__find_files_by_glob|mcp__jetbrains__find_files_by_name_keyword|mcp__jetbrains__get_all_open_file_paths|mcp__jetbrains__list_directory_tree|mcp__jetbrains__open_file_in_editor|mcp__jetbrains__get_run_configurations|mcp__jetbrains__execute_run_configuration|mcp__jetbrains__get_symbol_info|mcp__jetbrains__get_file_problems|mcp__jetbrains__get_project_modules|mcp__jetbrains__get_project_dependencies|mcp__jetbrains__build_project|mcp__jetbrains__get_repositories|mcp__jetbrains__execute_terminal_command}", "{enum:Task|Bash|Glob|Grep|LS|Read|Edit|MultiEdit|Write|NotebookRead|NotebookEdit|WebFetch|TodoRead|TodoWrite|WebSearch|ExitPlanMode|BashOutput|KillShell|SlashCommand|mcp__jetbrains__read_file|mcp__jetbrains__replace_text_in_file|mcp__jetbrains__search_text|mcp__jetbrains__search_regex|mcp__jetbrains__search_file|mcp__jetbrains__search_symbol|mcp__jetbrains__rename_refactoring|mcp__jetbrains__reformat_file|mcp__jetbrains__create_new_file|mcp__jetbrains__get_all_open_file_paths|mcp__jetbrains__list_directory_tree|mcp__jetbrains__open_file_in_editor|mcp__jetbrains__get_run_configurations|mcp__jetbrains__execute_run_configuration|mcp__jetbrains__get_symbol_info|mcp__jetbrains__lint_files|mcp__jetbrains__get_file_problems|mcp__jetbrains__get_project_modules|mcp__jetbrains__get_project_dependencies|mcp__jetbrains__build_project|mcp__jetbrains__get_repositories|mcp__jetbrains__execute_terminal_command}" ],
+        "mcp_tool_name" : [ "{enum:Task|Bash|Glob|Grep|LS|Read|Edit|MultiEdit|Write|NotebookRead|NotebookEdit|WebFetch|TodoRead|TodoWrite|WebSearch|ExitPlanMode|BashOutput|KillShell|SlashCommand|mcp__jetbrains__get_file_text_by_path|mcp__jetbrains__replace_text_in_file|mcp__jetbrains__search_in_files_by_text|mcp__jetbrains__search_in_files_by_regex|mcp__jetbrains__rename_refactoring|mcp__jetbrains__reformat_file|mcp__jetbrains__create_new_file|mcp__jetbrains__find_files_by_glob|mcp__jetbrains__find_files_by_name_keyword|mcp__jetbrains__get_all_open_file_paths|mcp__jetbrains__list_directory_tree|mcp__jetbrains__open_file_in_editor|mcp__jetbrains__get_run_configurations|mcp__jetbrains__execute_run_configuration|mcp__jetbrains__get_symbol_info|mcp__jetbrains__get_file_problems|mcp__jetbrains__get_project_modules|mcp__jetbrains__get_project_dependencies|mcp__jetbrains__build_project|mcp__jetbrains__get_repositories|mcp__jetbrains__execute_terminal_command}", "{enum:Task|Bash|Glob|Grep|LS|Read|Edit|MultiEdit|Write|NotebookRead|NotebookEdit|WebFetch|TodoRead|TodoWrite|WebSearch|ExitPlanMode|BashOutput|KillShell|SlashCommand|mcp__jetbrains__read_file|mcp__jetbrains__replace_text_in_file|mcp__jetbrains__search_text|mcp__jetbrains__search_regex|mcp__jetbrains__search_file|mcp__jetbrains__search_symbol|mcp__jetbrains__rename_refactoring|mcp__jetbrains__reformat_file|mcp__jetbrains__create_new_file|mcp__jetbrains__get_all_open_file_paths|mcp__jetbrains__list_directory_tree|mcp__jetbrains__open_file_in_editor|mcp__jetbrains__get_run_configurations|mcp__jetbrains__execute_run_configuration|mcp__jetbrains__get_symbol_info|mcp__jetbrains__lint_files|mcp__jetbrains__get_file_problems|mcp__jetbrains__get_project_modules|mcp__jetbrains__get_project_dependencies|mcp__jetbrains__build_project|mcp__jetbrains__get_repositories|mcp__jetbrains__execute_terminal_command}", "{enum:mcp__jetbrains__apply_patch}" ],
         "message_author" : [ "{enum:Assistant|User}" ],
         "message_edit_mode" : [ "{enum#boolean}" ],
         "message_id" : [ "{regexp#short_hash}" ],
-        "mode" : [ "{enum:AUTO|CODE|ASK}" ],
-        "model" : [ "{enum:gemini 3.1 flash lite|GPT-5.4-Mini}" ],
+        "mode" : [ "{enum:AUTO|CODE|ASK}", "{enum:CONFIG_OPTIONS|LEGACY_MODEL}" ],
+        "model" : [ "{enum:gemini 3.1 flash lite|GPT-5.4-Mini}", "{regexp:(?xi)((?:[:./-]|\\x20)?(ai21|amazon|anthropic|arcee-ai|auto|big-pickle|claude|clip|code|codex|composer|corethink|default|devstral|fast|flash|free|gemini|gemma|glm|google|gpt|grok|haiku|kilo|kimi|large|lite|local|lyria|max|mimo|mini|minimax|nano|nemotron|nvidia|omni|openai|opencode|openrouter|optimized|opus|plus|preview|pro|qwen|small|sonnet|step|stepfun|super|trinity|x-ai|xiaomi|unknown|[a-z]?[0-9.-]+b?))+}" ],
         "models" : [ "{util#llm_profile_id}" ],
         "modified_files_count" : [ "{regexp#integer}" ],
         "natural_language" : [ "{enum:other|english|mandarin|mandarin chinese|chinese|yue chinese|wu chinese|hindi|spanish|french|arabic|bengali|russian|portuguese|urdu|indonesian|german|japanese|swahili|marathi|telugu|turkish|tamil|korean|vietnamese|italian|thai|gujarati|persian|iranian|polish|ukrainian|malay|javanese|punjabi|romanian|yoruba|hausa|burmese|sundanese|amharic|filipino|serbian|croatian|dutch|igbo|uzbek|maithili|odia|khmer|nepali|sinhalese|xhosa|sotho|zulu|lao|finnish|bosnian|slovak|czech|georgian|armenian|bulgarian|danish|norwegian|swedish|azerbaijani|hebrew|tigrinya|malagasy|somali|chewa|rwanda|pashto|sindhi|madurese|tajik|kazakh|kirundi|tatar|bashkir|mongolian|belarusian|latin|welsh|scots gaelic|catalan|galician|breton|occitan|basque|luxembourgish|malayalam|burushaski|komi|kyrgyz|chuvash|tuvinian|adyghe|kabardian|sakha|kalmyk|sardinian|manx|esperanto|tok pisin|navajo|greenlandic|inuktitut|twi|fijian|marshallese|palauan|maori|samoan}" ],
@@ -9050,6 +9085,7 @@
         "number_of_messages" : [ "{regexp#integer}" ],
         "open_diff_action_invocation_place" : [ "{enum:PATCH_FILE_NAME|PATCH_DIFF_SUMMARY|SHOW_DIFF_ACTION|UNKNOWN}" ],
         "opened_files_count" : [ "{regexp#integer}" ],
+        "option" : [ "{enum:MODEL|MODE|REASONING|UNKNOWN}" ],
         "parent_file_has_uncommitted_changes" : [ "{enum#boolean}" ],
         "patches_count" : [ "{regexp#integer}" ],
         "plugin" : [ "{util#plugin}" ],
@@ -9064,8 +9100,8 @@
         "quota_spent_by_context_classifier" : [ "{enum:float}" ],
         "rating" : [ "{enum:None|Like|Dislike}", "{enum:VeryPoor|Poor|Okay|Good|Excellent}" ],
         "ratio_of_file_words_mentioned_in_query" : [ "{regexp#float}" ],
-        "reason" : [ "{regexp:^(?:CONTROL_GROUP|SELECTED_MODE_IS_NOT_CHAT|RECENT_AGENT_HISTORY|WSL_PROJECT|UNSUPPORTED_LICENSE|MODE_OR_MODEL_UNAVAILABLE)(?:,(?:CONTROL_GROUP|SELECTED_MODE_IS_NOT_CHAT|RECENT_AGENT_HISTORY|WSL_PROJECT|UNSUPPORTED_LICENSE|MODE_OR_MODEL_UNAVAILABLE))*$}" ],
-        "reasoning" : [ "{enum:low|medium|high|xhigh|extra high|max|Low|Medium|High|Xhigh|Extra high|Extra High|Max|LOW|MEDIUM|HIGH|XHIGH|EXTRA HIGH|MAX}" ],
+        "reason" : [ "{enum:USER_OVERRIDE_MODE|USER_OVERRIDE_MODEL|USER_OVERRIDE_REASONING}", "{regexp:^(?:CONTROL_GROUP|SELECTED_MODE_IS_NOT_CHAT|RECENT_AGENT_HISTORY|WSL_PROJECT|UNSUPPORTED_LICENSE|MODE_OR_MODEL_UNAVAILABLE)(?:,(?:CONTROL_GROUP|SELECTED_MODE_IS_NOT_CHAT|RECENT_AGENT_HISTORY|WSL_PROJECT|UNSUPPORTED_LICENSE|MODE_OR_MODEL_UNAVAILABLE))*$}", "{enum:SELECTED_MODE_IS_NOT_CHAT|CONTROL_GROUP|RECENT_AGENT_HISTORY|WSL_PROJECT|MODE_OR_MODEL_UNAVAILABLE|UNSUPPORTED_LICENSE}", "{enum:CONFIG_UNAVAILABLE|CDN_DISABLED|ENTERPRISE_OR_IDES|SELECTED_MODE_IS_NOT_CHAT|ASSIGNMENT_UNAVAILABLE|AGENT_MODE_UNAVAILABLE}" ],
+        "reasoning" : [ "{enum:low|medium|high|xhigh|extra high|max|Low|Medium|High|Xhigh|Extra high|Extra High|Max|LOW|MEDIUM|HIGH|XHIGH|EXTRA HIGH|MAX}", "{enum:minimal|low|medium|high|xhigh|max|unknown}" ],
         "recentFilesIndex" : [ "{regexp#integer}" ],
         "recent_files_index" : [ "{regexp#integer}" ],
         "reference_start_char" : [ "{enum:#|@}" ],
@@ -9085,8 +9121,8 @@
         "session-event-type" : [ "{enum:SendUserResponse|Rollback|Cancel|Finish|WaitForUserReply}" ],
         "similarity_with_code_in_message" : [ "{regexp#float}" ],
         "similarity_with_current_message" : [ "{regexp#float}" ],
-        "source" : [ "{enum:CHAT_LOGIN_BUTTON|CHAT_RETRY_BUTTON|CHAT_WAIT_LIST|SETTINGS_PAGE|SETTINGS_PAGE_WAIT_LIST|NOTIFICATION|FULL_LINE}", "{enum:STATUS_BAR_LOGIN_BUTTON}" ],
-        "source_action" : [ "{enum:RIDER_GENERATE_UNIT_TESTS}", "{enum:PYTHON_EXPLAIN_DATA_FRAME}", "{enum:GENERATE_API_REQUEST_EXAMPLE}", "{enum:BUILD_ERROR_EXPLANATION}", "{enum:NEW_POPUP_CHAT}", "{enum:WRITE_DOCUMENTATION|EXPLAIN_REGEXP}", "{enum:PYTHON_GENERATE_VISUALIZATIONS}", "{enum:FIX_CODE_INTENTION}", "{enum:NEW_CHAT_FROM_EDITOR}", "{enum:EXTRACT_COMPONENT|KOTLIN_GENERATE_VISUALIZATIONS|KOTLIN_EXPLAIN_DATA_FRAME}", "{enum:GRAPH_BUILDER_GENERATE_VISUALIZATIONS}", "{enum:NAME_SUGGESTION}", "{enum:PYTHON_ADD_TYPE_ANNOTATIONS}", "{enum:GENERATE_JUPYTER_FILE_CONTENT}", "{enum:PYTHON_CONVERT_LOOP_TO_COMPREHENSION}", "{enum:GENERATE_CODE_INLINE_PROMPT}", "{enum:NEW_CHAT_ON_START|GOTO_CHAT}", "{enum:MINI_CHAT}", "{enum:GENERATE_CODE_FROM_CHAT}", "{enum:DATASPELL_CHAT_WITH_DATA_WRANGLER}", "{enum:DATASPELL_DATA_WRANGLER_AGENT}", "{enum:RUST_FIX_WITH_AI}", "{enum:FLOATING_TOOLBAR_ADD_TO_CHAT}", "{enum:SQL_FIX_INPLACE|SQL_EXPLAIN_CODE_INTENTION|SQL_EXPLAIN_PLAN}", "{enum:UNKNOWN|NEW_CHAT|EXPLAIN_CODE_INTENTION|FIND_PROBLEMS_INTENTION|REFACTOR_THIS|UNKNOWN_CHAT_INTENTION|LOAD_STATE|RUNTIME_ERROR_EXPLANATION|EXPLAIN_COMMIT|UNITY_CREATE_NEW_FILE|UNITY_GENERATE_CODE|GENERATE_CODE_INPLACE|GENERATE_UNIT_TESTS|CUSTOM_CHAT|PROMPT_LIBRARY|ERROR_MESSAGE|PYTHON_DJANGO_ADMIN_FOR_MODEL_INTENTION|PYTHON_DJANGO_VIEW_FOR_MODEL_INTENTION|PYTHON_DJANGO_SERIALIZER_FOR_MODEL_INTENTION|PYTHON_DJANGO_CUSTOM_INTENTION|PYTHON_DJANGO_CUSTOM_SMART_CHAT_INTENTION|PYTHON_FILE_SIGNATURES_CUSTOM_INTENTION}" ],
+        "source" : [ "{enum:CHAT_LOGIN_BUTTON|CHAT_RETRY_BUTTON|CHAT_WAIT_LIST|SETTINGS_PAGE|SETTINGS_PAGE_WAIT_LIST|NOTIFICATION|FULL_LINE}", "{enum:STATUS_BAR_LOGIN_BUTTON}", "{enum:SWITCH_FROM_CHAT|SOFT_REFRESH|HARD_REFRESH|MANUAL}" ],
+        "source_action" : [ "{enum:RIDER_GENERATE_UNIT_TESTS}", "{enum:PYTHON_EXPLAIN_DATA_FRAME}", "{enum:GENERATE_API_REQUEST_EXAMPLE}", "{enum:BUILD_ERROR_EXPLANATION}", "{enum:NEW_POPUP_CHAT}", "{enum:WRITE_DOCUMENTATION|EXPLAIN_REGEXP}", "{enum:PYTHON_GENERATE_VISUALIZATIONS}", "{enum:FIX_CODE_INTENTION}", "{enum:NEW_CHAT_FROM_EDITOR}", "{enum:EXTRACT_COMPONENT|KOTLIN_GENERATE_VISUALIZATIONS|KOTLIN_EXPLAIN_DATA_FRAME}", "{enum:GRAPH_BUILDER_GENERATE_VISUALIZATIONS}", "{enum:NAME_SUGGESTION}", "{enum:PYTHON_ADD_TYPE_ANNOTATIONS}", "{enum:GENERATE_JUPYTER_FILE_CONTENT}", "{enum:PYTHON_CONVERT_LOOP_TO_COMPREHENSION}", "{enum:GENERATE_CODE_INLINE_PROMPT}", "{enum:NEW_CHAT_ON_START|GOTO_CHAT}", "{enum:MINI_CHAT}", "{enum:GENERATE_CODE_FROM_CHAT}", "{enum:DATASPELL_CHAT_WITH_DATA_WRANGLER}", "{enum:DATASPELL_DATA_WRANGLER_AGENT}", "{enum:RUST_FIX_WITH_AI}", "{enum:FLOATING_TOOLBAR_ADD_TO_CHAT}", "{enum:SQL_FIX_INPLACE|SQL_EXPLAIN_CODE_INTENTION|SQL_EXPLAIN_PLAN}", "{enum:FIGMA_MOCKUP_FRAME}", "{enum:UNKNOWN|NEW_CHAT|EXPLAIN_CODE_INTENTION|FIND_PROBLEMS_INTENTION|REFACTOR_THIS|UNKNOWN_CHAT_INTENTION|LOAD_STATE|RUNTIME_ERROR_EXPLANATION|EXPLAIN_COMMIT|UNITY_CREATE_NEW_FILE|UNITY_GENERATE_CODE|GENERATE_CODE_INPLACE|GENERATE_UNIT_TESTS|CUSTOM_CHAT|PROMPT_LIBRARY|ERROR_MESSAGE|PYTHON_DJANGO_ADMIN_FOR_MODEL_INTENTION|PYTHON_DJANGO_VIEW_FOR_MODEL_INTENTION|PYTHON_DJANGO_SERIALIZER_FOR_MODEL_INTENTION|PYTHON_DJANGO_CUSTOM_INTENTION|PYTHON_DJANGO_CUSTOM_SMART_CHAT_INTENTION|PYTHON_FILE_SIGNATURES_CUSTOM_INTENTION}" ],
         "start_time" : [ "{regexp#integer}" ],
         "status" : [ "{regexp#integer}" ],
         "tab_selected_count" : [ "{regexp#integer}" ],
@@ -9120,7 +9156,7 @@
       },
       "enums" : {
         "__error" : [ "GrazieAuthorizationException", "RequestTimeout", "AIAssistantForbiddenException", "TokenLimitExceededException", "ClassNotFoundException" ],
-        "__event_id" : [ "editUsageMessageFinished", "codeSnippetPresentationChanged", "editUserMessageStarted", "editUserMessageCancelled", "newChatCreated", "messageSent", "codeCopied", "allChatsClicked", "messageReceived", "messageReacted", "messageReceivingCancelled", "assistantChatSummarySent", "all.chats.clicked", "code.snippet.presentation.changed", "edit.usage.message.finished", "message.reacted", "assistant.chat.summary.sent", "edit.user.message.cancelled", "chat.from.history.opened", "code.copied", "edit.user.message.cancelled.with.mouse", "message.received", "edit.user.message.started", "code.inserted", "message.sent", "new.chat.created", "message.receiving.cancelled", "code.snippet.inserted.at.caret", "send.feedback.clicked", "log.in.to.jetbrains.ai", "log.out.from.jetbrains.ai", "ai.response.error", "function.called", "code.snippet.file.created", "text.copied", "alias.sent", "command.sent", "reference.attached", "chat.labels", "message.regenerate", "hashtag.clicked", "natural.language.promo.banner.shown.and.interacted", "natural.language.autodetected.banner.shown.and.interacted", "chosen.natural.language", "natural.language.setting.turned.off", "natural.language.setting.turned.on", "natural.language.setting.turned.off.after.automatic.detection", "natural.language.promo.banner.settings.clicked", "natural.language.setting.turned.on.automatically", "natural.language.autodetected.banner.settings.clicked", "text.inserted", "attachment.added.to.the.message", "attachment.deleted.from.the.context.panel.manually", "attachment.added.to.the.context.panel", "attachment.deleted.from.the.context.panel", "function.name.leaked", "reference.start.char.used", "ai.generated.action.button.clicked", "user.message.enriched", "user.intent", "attachment.plus.button.clicked", "send.with.rag.button.clicked", "chat.model.selected", "chat.model.provider.promotion.selected", "chat.model.selector.opened", "send.with.rag.timeout.exceeded", "send.with.rag.canceled", "ui.context.picker.finished", "ui.context.picker.canceled", "ui.context.picker.started", "send.with.rag.psi.search.result", "send.with.rag.cloud.ranker.result", "send.with.rag.pipeline.duration", "send.with.rag.recent.files.result", "chat.mode.chosen.with.shortcut", "chat.mode.selector.opened", "chat.mode.selected", "chat.copy", "send.button.clicked", "edit.mode.suggestion.generated", "edit.mode.suggestion.accepted.patch", "edit.mode.suggestion.accepted.all", "edit.mode.suggestion.discarded.all", "edit.mode.suggestion.discarded.patch", "chat.web.search.called", "chat.web.search.command.added.with.button", "codebase.toggle.value.changed", "edit.mode.suggestion.open.diff", "edit.mode.suggestion.accepted.changes", "edit.mode.suggestion.discarded.changes", "edit.mode.suggestion.open.file", "edit.mode.changes.navigation.clicked", "edit.mode.changes.tree.label.clicked", "chat.search.next.occurrence.clicked", "chat.search.previous.occurrence.clicked", "chat.search.closed", "chat.search.opened", "ai.rule.type.switched", "ai.rules.retrieving.timeout", "ai.rule.created", "ai.rule.deleted", "ai.rule.applied", "chat.model.selector.more.section.toggled", "chat.model.selector.tooltip.shown", "chat.model.auto.selected", "chat.model.auto.applied", "chat.model.selector.closed", "models.loading.started", "models.loading.success", "models.loading.failed", "reference.start.char.typed", "context.selected.by.retrievers", "chat.context.limit.80.notification.shown", "chat.context.limit.80.notification.new.chat.created", "chat.context.limit.100.notification.closed", "chat.context.limit.100.notification.new.chat.created", "chat.context.limit.80.notification.closed", "chat.context.limit.100.notification.shown", "claude.code.agent.terms.of.use.interaction", "claude.code.agent.edit.status", "claude.code.agent.mcp.tool.called", "claude.code.agent.download.error", "claude.code.agent.session.error", "claude.code.agent.installation.completed", "chat.agent.selected", "claude.code.agent.permission.mode.usage", "claude.code.agent.generation.results", "context.selected.or.deleted.by.user", "chat.junie.promo.try.it", "chat.junie.promo.skip", "acp.agent.failed", "acp.agent.started", "chat.junie.installation.finished", "chat.junie.installation.started", "chat.agent.session.event", "chat.junie.think.mode.change", "chat.agent.start.task", "chat.junie.plugin.outdated.dialog.shown", "chat.junie.agreement.canceled", "chat.junie.mode.change", "chat.junie.agreement.shown", "chat.agent.popup.shown", "chat.junie.installation.failed", "chat.junie.mode.popup.shown", "chat.selected", "chat.agent.brave.mode.change", "chat.agent.new.chat.notification.shown", "chat.junie.agreement.accepted", "chat.junie.plugin.enable.dialog.result", "chat.byok.incompatible.notification.shown", "chat.agent.promo.try.it", "user.switched.from.agent", "user.switched.chat.mode.after.codex.promo", "codex.promo.ended.notification.shown", "claude.code.agent.model.selected", "codex.promo.ended.notification.closed", "chat.agent.promo.skip", "chat.mode.switched.to.codex.with.promo", "chat.junie.installation.was.not.finished", "acp.agent.uninstalled", "acp.agent.installed", "acp.custom.mcp.setting.changed", "acp.agent.updated", "acp.idea.mcp.setting.changed", "context.ranker.inference", "chat.agent.session.feedback.widget.shown", "chat.agent.session.feedback.widget.rating.selected", "chat.agent.session.feedback.widget.dismissed", "chat.mode.switched.to.gemini.with.promo", "gemini.promo.ended.notification.closed", "gemini.promo.ended.notification.shown", "user.switched.chat.mode.after.gemini.promo", "acp.agent.update.prompt.shown", "acp.agent.update.prompt.response", "default.agent.rollout.dismissed", "context.ranking.rollout.applied", "online.eval.default.agent.skipped", "online.eval.default.agent.applied" ],
+        "__event_id" : [ "editUsageMessageFinished", "codeSnippetPresentationChanged", "editUserMessageStarted", "editUserMessageCancelled", "newChatCreated", "messageSent", "codeCopied", "allChatsClicked", "messageReceived", "messageReacted", "messageReceivingCancelled", "assistantChatSummarySent", "all.chats.clicked", "code.snippet.presentation.changed", "edit.usage.message.finished", "message.reacted", "assistant.chat.summary.sent", "edit.user.message.cancelled", "chat.from.history.opened", "code.copied", "edit.user.message.cancelled.with.mouse", "message.received", "edit.user.message.started", "code.inserted", "message.sent", "new.chat.created", "message.receiving.cancelled", "code.snippet.inserted.at.caret", "send.feedback.clicked", "log.in.to.jetbrains.ai", "log.out.from.jetbrains.ai", "ai.response.error", "function.called", "code.snippet.file.created", "text.copied", "alias.sent", "command.sent", "reference.attached", "chat.labels", "message.regenerate", "hashtag.clicked", "natural.language.promo.banner.shown.and.interacted", "natural.language.autodetected.banner.shown.and.interacted", "chosen.natural.language", "natural.language.setting.turned.off", "natural.language.setting.turned.on", "natural.language.setting.turned.off.after.automatic.detection", "natural.language.promo.banner.settings.clicked", "natural.language.setting.turned.on.automatically", "natural.language.autodetected.banner.settings.clicked", "text.inserted", "attachment.added.to.the.message", "attachment.deleted.from.the.context.panel.manually", "attachment.added.to.the.context.panel", "attachment.deleted.from.the.context.panel", "function.name.leaked", "reference.start.char.used", "ai.generated.action.button.clicked", "user.message.enriched", "user.intent", "attachment.plus.button.clicked", "send.with.rag.button.clicked", "chat.model.selected", "chat.model.provider.promotion.selected", "chat.model.selector.opened", "send.with.rag.timeout.exceeded", "send.with.rag.canceled", "ui.context.picker.finished", "ui.context.picker.canceled", "ui.context.picker.started", "send.with.rag.psi.search.result", "send.with.rag.cloud.ranker.result", "send.with.rag.pipeline.duration", "send.with.rag.recent.files.result", "chat.mode.chosen.with.shortcut", "chat.mode.selector.opened", "chat.mode.selected", "chat.copy", "send.button.clicked", "edit.mode.suggestion.generated", "edit.mode.suggestion.accepted.patch", "edit.mode.suggestion.accepted.all", "edit.mode.suggestion.discarded.all", "edit.mode.suggestion.discarded.patch", "chat.web.search.called", "chat.web.search.command.added.with.button", "codebase.toggle.value.changed", "edit.mode.suggestion.open.diff", "edit.mode.suggestion.accepted.changes", "edit.mode.suggestion.discarded.changes", "edit.mode.suggestion.open.file", "edit.mode.changes.navigation.clicked", "edit.mode.changes.tree.label.clicked", "chat.search.next.occurrence.clicked", "chat.search.previous.occurrence.clicked", "chat.search.closed", "chat.search.opened", "ai.rule.type.switched", "ai.rules.retrieving.timeout", "ai.rule.created", "ai.rule.deleted", "ai.rule.applied", "chat.model.selector.more.section.toggled", "chat.model.selector.tooltip.shown", "chat.model.auto.selected", "chat.model.auto.applied", "chat.model.selector.closed", "models.loading.started", "models.loading.success", "models.loading.failed", "reference.start.char.typed", "context.selected.by.retrievers", "chat.context.limit.80.notification.shown", "chat.context.limit.80.notification.new.chat.created", "chat.context.limit.100.notification.closed", "chat.context.limit.100.notification.new.chat.created", "chat.context.limit.80.notification.closed", "chat.context.limit.100.notification.shown", "claude.code.agent.terms.of.use.interaction", "claude.code.agent.edit.status", "claude.code.agent.mcp.tool.called", "claude.code.agent.download.error", "claude.code.agent.session.error", "claude.code.agent.installation.completed", "chat.agent.selected", "claude.code.agent.permission.mode.usage", "claude.code.agent.generation.results", "context.selected.or.deleted.by.user", "chat.junie.promo.try.it", "chat.junie.promo.skip", "acp.agent.failed", "acp.agent.started", "chat.junie.installation.finished", "chat.junie.installation.started", "chat.agent.session.event", "chat.junie.think.mode.change", "chat.agent.start.task", "chat.junie.plugin.outdated.dialog.shown", "chat.junie.agreement.canceled", "chat.junie.mode.change", "chat.junie.agreement.shown", "chat.agent.popup.shown", "chat.junie.installation.failed", "chat.junie.mode.popup.shown", "chat.selected", "chat.agent.brave.mode.change", "chat.agent.new.chat.notification.shown", "chat.junie.agreement.accepted", "chat.junie.plugin.enable.dialog.result", "chat.byok.incompatible.notification.shown", "chat.agent.promo.try.it", "user.switched.from.agent", "user.switched.chat.mode.after.codex.promo", "codex.promo.ended.notification.shown", "claude.code.agent.model.selected", "codex.promo.ended.notification.closed", "chat.agent.promo.skip", "chat.mode.switched.to.codex.with.promo", "chat.junie.installation.was.not.finished", "acp.agent.uninstalled", "acp.agent.installed", "acp.custom.mcp.setting.changed", "acp.agent.updated", "acp.idea.mcp.setting.changed", "context.ranker.inference", "chat.agent.session.feedback.widget.shown", "chat.agent.session.feedback.widget.rating.selected", "chat.agent.session.feedback.widget.dismissed", "chat.mode.switched.to.gemini.with.promo", "gemini.promo.ended.notification.closed", "gemini.promo.ended.notification.shown", "user.switched.chat.mode.after.gemini.promo", "acp.agent.update.prompt.shown", "acp.agent.update.prompt.response", "default.agent.rollout.dismissed", "context.ranking.rollout.applied", "online.eval.default.agent.skipped", "online.eval.default.agent.applied", "default.agent.rollout.skipped", "default.agent.config.error", "default.agent.mode.applied", "default.agent.config.applied" ],
         "__level" : [ "OSRegistry", "JvmFlag", "JBA", "Allowed", "UserSetting" ]
       }
     },
@@ -14000,16 +14036,18 @@
       "from" : "1"
     } ],
     "rules" : {
-      "event_id" : [ "{enum:compiler|rustup|type|criticalup}" ],
+      "event_id" : [ "{enum#__event_id}" ],
       "event_data" : {
         "available" : [ "{enum#boolean}" ],
         "channel" : [ "{enum#channel}" ],
         "host_target" : [ "{enum#host_target}" ],
+        "missing" : [ "{enum#boolean}" ],
         "type" : [ "{enum#type}" ],
         "used" : [ "{enum#boolean}" ],
         "version" : [ "{regexp#version}" ]
       },
       "enums" : {
+        "__event_id" : [ "compiler", "rustup", "type", "criticalup", "criticalup.has.src" ],
         "channel" : [ "stable", "beta", "nightly", "dev", "[default]" ],
         "host_target" : [ "i686-pc-windows-gnu", "i686-pc-windows-msvc", "i686-unknown-linux-gnu", "x86_64-apple-darwin", "x86_64-pc-windows-gnu", "x86_64-pc-windows-msvc", "x86_64-unknown-linux-gnu", "aarch64-unknown-linux-gnu", "aarch64-apple-darwin", "aarch64-pc-windows-msvc" ],
         "type" : [ "local", "wsl", "none", "other" ]
@@ -14694,7 +14732,7 @@
     "rules" : {
       "event_id" : [ "{enum:connection.failed|connection.succeeded|data.source.added|data.source.saved}" ],
       "event_data" : {
-        "dbms" : [ "{enum:UNKNOWN|HANA|FIREBIRD|ATHENA|PRESTO|TRINO|INFORMIX|IMPALA|NETEZZA|PHOENIX|INGRES|TERADATA|OPENEDGE|TIBERO|FILEMAKER|CLOUD_SPANNER|ZEN|FRONTBASE|IGNITE|MONET|DENODO|IRIS|DRILL|CRATE|GBASE|SQLANYWHERE|ELASTICSEARCH|SALESFORCE|KDB|TIMESTREAM|MSACCESS|BIGQUERY|CASSANDRA|CLICKHOUSE|COUCHBASE|DB2_IS|DB2_LUW|DB2_ZOS|DB2|DERBY|EXASOL|H2|HIVE|HSQLDB|MARIADB|MONGO|AZURE|MSSQL_LOCALDB|SYNAPSE|MYSQL_AURORA|MYSQL|GITBASE|TIDB|OCEANBASE|VITESS|MEMSQL|ORACLE|NETSUITE|POSTGRES|YUGABYTE|COCKROACH|GREENPLUM|REDSHIFT|SNOWFLAKE|SPARK|SYBASE|MSSQL|VERTICA|REDIS|SQLITE|DYNAMO}", "{util#dbms}", "{enum:DATABRICKS|INFLUXDB}", "{enum:DUCKDB}", "{enum:IOTDB}" ],
+        "dbms" : [ "{enum:UNKNOWN|HANA|FIREBIRD|ATHENA|PRESTO|TRINO|INFORMIX|IMPALA|NETEZZA|PHOENIX|INGRES|TERADATA|OPENEDGE|TIBERO|FILEMAKER|CLOUD_SPANNER|ZEN|FRONTBASE|IGNITE|MONET|DENODO|IRIS|DRILL|CRATE|GBASE|SQLANYWHERE|ELASTICSEARCH|SALESFORCE|KDB|TIMESTREAM|MSACCESS|BIGQUERY|CASSANDRA|CLICKHOUSE|COUCHBASE|DB2_IS|DB2_LUW|DB2_ZOS|DB2|DERBY|EXASOL|H2|HIVE|HSQLDB|MARIADB|MONGO|AZURE|MSSQL_LOCALDB|SYNAPSE|MYSQL_AURORA|MYSQL|GITBASE|TIDB|OCEANBASE|VITESS|MEMSQL|ORACLE|NETSUITE|POSTGRES|YUGABYTE|COCKROACH|GREENPLUM|REDSHIFT|SNOWFLAKE|SPARK|SYBASE|MSSQL|VERTICA|REDIS|SQLITE|DYNAMO}", "{util#dbms}", "{enum:DATABRICKS|INFLUXDB}", "{enum:DUCKDB}", "{enum:IOTDB}", "{enum:DUCK}" ],
         "error_code" : [ "{regexp#integer}" ],
         "sql_state" : [ "{regexp:[0-9A-Z ]{5}}" ]
       }
@@ -17093,5 +17131,5 @@
       "version" : "Unknown|unknown.format|unknown|UNKNOWN|((\\d+\\.?)*\\d+)"
     }
   },
-  "version" : "7366"
+  "version" : "7377"
 }

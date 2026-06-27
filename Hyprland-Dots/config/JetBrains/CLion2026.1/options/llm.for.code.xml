@@ -1,12 +1,12 @@
 <application>
   <component name="LLMSettings">
-    <option name="agent_id" value="codex" />
+    <option name="agent_id" value="acp.registry.codex-acp" />
     <option name="chat_forced_llm_per_mode">
       <map>
         <entry key="chat" value="6" />
       </map>
     </option>
-    <option name="chat_mode" value="CHAT" />
+    <option name="chat_mode" value="AGENT" />
     <option name="chat_preferred_llm" value="auto_9f9c7f49" />
     <option name="chat_preferred_llm_per_mode">
       <map>

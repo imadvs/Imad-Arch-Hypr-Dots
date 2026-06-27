@@ -1,7 +1,7 @@
 <application>
   <component name="DefaultAgentRollout">
     <option name="agent_id" value="acp.registry.codex-acp" />
-    <option name="decision" value="YES" />
+    <option name="decision" value="NO" />
     <option name="options" value="[{&quot;model&quot;:&quot;gpt-5.4-mini&quot;,&quot;reasoning_effort&quot;:&quot;medium&quot;},{&quot;model&quot;:&quot;gpt-5.4-mini[medium]&quot;}]" />
     <option name="version" value="1" />
   </component>

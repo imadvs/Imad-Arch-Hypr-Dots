@@ -29,12 +29,14 @@
         <entry key="28c95731-4613-4e26-a9db-9dfac9f1b906" value="false" />
         <entry key="2ac73887-5144-4720-b273-e625611b2d40" value="false" />
         <entry key="2afc9266-bbd1-4203-b3d2-cb9ca34b28aa" value="false" />
+        <entry key="2c4177bf-8f47-4e6c-a272-5133adadf25c" value="false" />
         <entry key="2d0b35c5-c5a4-4802-b950-ee82ff28b968" value="false" />
         <entry key="2d49f450-ca6b-442e-9fce-8698b13f5432" value="false" />
         <entry key="2dc01007-1a96-4a48-bd7f-1a3377ad5deb" value="false" />
         <entry key="3284eef2-7c6a-44e7-975e-5e90355866ef" value="false" />
         <entry key="32b950dd-6088-44e3-b9f4-c6519bd2b30f" value="false" />
         <entry key="32c63f8a-101e-4407-86d9-378e505c29ca" value="false" />
+        <entry key="357d48d1-01da-42f6-9537-bb7beaed94c4" value="false" />
         <entry key="3698dc6c-497e-4a01-8893-a2210d1b6688" value="false" />
         <entry key="38a4567f-f59b-4508-a7ac-b3c49c0198b6" value="false" />
         <entry key="3c1f935d-0ef5-4bcd-8a18-1b0cff304157" value="false" />
@@ -67,6 +69,7 @@
         <entry key="59dc3418-01be-4e36-805b-110942728094" value="false" />
         <entry key="5ced5f69-93f9-40bf-8316-1ea792038522" value="false" />
         <entry key="5e148371-ff3b-4765-97ef-bb9090e1d990" value="false" />
+        <entry key="5eb69b73-a0e6-43e9-94e7-370eafb8381c" value="false" />
         <entry key="606dd572-687e-430b-9588-01244d87ccf0" value="false" />
         <entry key="6619e99d-c079-4ad5-9b0a-15ea2c079ca8" value="false" />
         <entry key="66324db4-5547-463f-af01-7e50e1943ac7" value="false" />
@@ -88,6 +91,7 @@
         <entry key="7d907384-4ea3-4a46-87b9-5fa02fb4330e" value="false" />
         <entry key="7dce939c-2c94-463e-a15d-fe4505d57e78" value="false" />
         <entry key="7ecf62f6-6257-4801-9a3c-2ed41f41ee4f" value="false" />
+        <entry key="808ea83a-a8bb-4274-ade0-f90d6482305f" value="false" />
         <entry key="83f1052d-84e6-4c50-b7d8-0337795d82e1" value="false" />
         <entry key="841788f3-30dd-4478-99cb-8aadac42fbc4" value="false" />
         <entry key="84bc3f4c-dfd1-4e44-b3ff-d6ec2ab66ba2" value="false" />
@@ -100,6 +104,8 @@
         <entry key="8bd84471-5091-4fe8-a56e-c4df1a0b9f66" value="false" />
         <entry key="8dd22f5a-296e-499d-97d9-ec60d8250c61" value="false" />
         <entry key="8e638257-a9a0-4774-86a1-6c261f8fcdc4" value="false" />
+        <entry key="8e661880-b729-4a09-8f84-65e5d5aa9d67" value="false" />
+        <entry key="919209b7-6ae8-4c15-bafd-90229ec6676d" value="false" />
         <entry key="9274ecda-ac3e-48b5-bfca-7adda715fae7" value="false" />
         <entry key="92d9976e-d705-4fa4-a8e4-a839dc4c27f1" value="false" />
         <entry key="94f41d1f-2af0-4200-9499-e93f3a379882" value="false" />
@@ -143,6 +149,7 @@
         <entry key="b6ea2863-b1ba-4972-b605-9c8d48ba589e" value="false" />
         <entry key="ba0d13e0-0ba3-40e4-a5b7-b3afb174768e" value="false" />
         <entry key="ba37f411-3404-41d1-97ed-f522da73d98d" value="false" />
+        <entry key="bb473c0d-ea0e-4be3-8f4c-17d0b772962d" value="false" />
         <entry key="bcf280eb-1629-45a5-bc55-7a2c21c4cf4c" value="false" />
         <entry key="bd45d779-db0b-4cd4-9bb6-55f9c40ecc8d" value="false" />
         <entry key="be4a3326-00fb-4964-986e-662c1a0c7885" value="false" />
@@ -6258,6 +6265,49 @@
           </option>
           <option name="uid" value="96d01472-704c-42c1-aca6-dd11cb3cbdb2" />
         </SerializedChat>
+        <SerializedChat>
+          <option name="chatContext">
+            <SerializedChatContext />
+          </option>
+          <option name="chatModelId" value="agent_acp.registry.codex-acp" />
+          <option name="messages">
+            <list>
+              <SerializedChatMessage>
+                <option name="attachments">
+                  <list>
+                    <SerializedChatAttachment>
+                      <option name="url" value="file://$PROJECT_DIR$/src/main.cpp" />
+                      <option name="name" value="main.cpp" />
+                      <option name="text" value="```c/c++&#10;#include &lt;iostream&gt;&#10;#include &quot;clsLoginScreen.h&quot;&#10;&#10;int main()&#10;{&#10;    while (true)&#10;    {&#10;        if (!clsLoginScreen::ShowLoginScreen())&#10;        {&#10;            break;&#10;        }&#10;    }&#10;    return 0;&#10;}&#10;&#10;&#10;```" />
+                    </SerializedChatAttachment>
+                  </list>
+                </option>
+                <option name="markupLanguageID" value="ChatInput" />
+                <option name="uid" value="UUID(uuid=7f9c8eae-3922-41c5-ad31-3ddf95b3ccf1)" />
+                <option name="displayContent" value="Fix this:&#10;Cannot apply operator! to void:8" />
+                <option name="internalContent" value="Fix this:&#10;Cannot apply operator! to void:8" />
+              </SerializedChatMessage>
+              <SerializedChatMessage>
+                <option name="author" value="Assistant" />
+                <option name="uid" value="4ff901ab-42c1-49e1-a3f9-8e42f647b5a8" />
+              </SerializedChatMessage>
+            </list>
+          </option>
+          <option name="modifiedAt" value="1782316071132" />
+          <option name="statisticInformation">
+            <ChatStatisticInformation>
+              <option name="sourceActionType" value="NEW_CHAT_ON_START" />
+              <option name="timestamp" value="1782316071132" />
+            </ChatStatisticInformation>
+          </option>
+          <option name="title">
+            <SerializedChatTitle>
+              <option name="custom" value="true" />
+              <option name="text" value="&quot;Fix this:&#10;Cannot ap…&quot; with Codex" />
+            </SerializedChatTitle>
+          </option>
+          <option name="uid" value="2c4177bf-8f47-4e6c-a272-5133adadf25c" />
+        </SerializedChat>
       </list>
     </option>
   </component>
@@ -6266,16 +6316,16 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.52276295">
+    <splitter split-orientation="horizontal" split-proportion="0.5546154">
       <split-first>
-        <leaf ideFingerprint="29j3ify5pxens" SIDE_TABS_SIZE_LIMIT_KEY="-1">
+        <leaf ideFingerprint="qhdb1f4bssr8" SIDE_TABS_SIZE_LIMIT_KEY="-1">
           <file>
             <entry file="file://$PROJECT_DIR$/src/main.cpp" file-id="18" managing-fs="1781622042365">
               <provider editor-type-id="text-editor" selected="true">
-                <state relative-caret-position="96">
-                  <caret line="4" selection-start-line="4" selection-end-line="4" />
+                <state relative-caret-position="168">
+                  <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
                   <folding>
-                    <marker date="1782055883815" expanded="true" signature="0:47" ph="##include ..." />
+                    <element signature="e#0#195#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -6285,8 +6335,8 @@
           <file>
             <entry file="file://$PROJECT_DIR$/include/clsPerson.h" file-id="14" managing-fs="1781622042365">
               <provider editor-type-id="text-editor" selected="true">
-                <state relative-caret-position="312">
-                  <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+                <state relative-caret-position="864">
+                  <caret line="36" column="11" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="11" />
                 </state>
               </provider>
             </entry>
@@ -6325,8 +6375,8 @@
           <file>
             <entry file="file://$PROJECT_DIR$/include/Clients screens/clsClientListScreen.h" file-id="16" managing-fs="1781622042365">
               <provider editor-type-id="text-editor" selected="true">
-                <state relative-caret-position="816">
-                  <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
+                <state relative-caret-position="840">
+                  <caret line="35" column="61" selection-start-line="35" selection-start-column="61" selection-end-line="35" selection-end-column="61" />
                 </state>
               </provider>
             </entry>
@@ -6365,8 +6415,8 @@
           <file>
             <entry file="file://$PROJECT_DIR$/include/Manage_Users_Screen/clsUpdateUserScreen.h" file-id="40939" managing-fs="1781622042365">
               <provider editor-type-id="text-editor" selected="true">
-                <state relative-caret-position="960">
-                  <caret line="40" column="18" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
+                <state relative-caret-position="384">
+                  <caret line="16" selection-start-line="16" selection-end-line="16" />
                 </state>
               </provider>
             </entry>
@@ -6375,8 +6425,8 @@
           <file>
             <entry file="file://$PROJECT_DIR$/include/Manage_Users_Screen/clsFindUserScreen.h" file-id="40940" managing-fs="1781622042365">
               <provider editor-type-id="text-editor" selected="true">
-                <state relative-caret-position="696">
-                  <caret line="29" column="14" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
+                <state relative-caret-position="792">
+                  <caret line="33" column="16" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
                 </state>
               </provider>
             </entry>
@@ -6385,11 +6435,11 @@
           <file>
             <entry file="file://$PROJECT_DIR$/include/clsLoginScreen.h" file-id="40944" managing-fs="1781622042365">
               <provider editor-type-id="text-editor" selected="true">
-                <state relative-caret-position="1128">
-                  <caret line="47" column="16" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="16" />
+                <state relative-caret-position="1368">
+                  <caret line="57" selection-start-line="57" selection-end-line="57" />
                   <folding>
-                    <marker date="1782142461643" expanded="true" signature="0:39" ph="//..." />
-                    <marker date="1782142461643" expanded="true" signature="156:305" ph="##include ..." />
+                    <marker date="1782353641760" expanded="true" signature="0:39" ph="//..." />
+                    <marker date="1782353641760" expanded="true" signature="156:305" ph="##include ..." />
                   </folding>
                 </state>
               </provider>
@@ -6416,21 +6466,27 @@
             </entry>
             <tab><![CDATA[{"tabTitle":"clsDeleteUserScreen.h","foregroundColor":-2105376,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,110,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,26,18,99,111,109,46,105,110,116,101,108,108,105,106,46,99,108,105,111,110,34,23,105,110,116,101,108,108,105,106,46,99,105,100,114,46,108,97,110,103,46,98,97,115,101,40,-48,-45,-18,-83,-7,-1,-1,-1,-1,1,48,0]}]]></tab>
           </file>
-          <file>
+          <file current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/include/Manage_Users_Screen/clsUser.h" file-id="40836" managing-fs="1781622042365">
               <provider editor-type-id="text-editor" selected="true">
-                <state relative-caret-position="6864">
-                  <caret line="291" selection-start-line="291" selection-end-line="291" />
+                <state relative-caret-position="683">
+                  <caret line="314" selection-start-line="314" selection-end-line="314" />
+                  <folding>
+                    <marker date="1782488507827" expanded="true" signature="13:154" ph="##include ..." />
+                  </folding>
                 </state>
               </provider>
             </entry>
-            <tab><![CDATA[{"tabTitle":"clsUser.h","foregroundColor":-2105376,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,110,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,26,18,99,111,109,46,105,110,116,101,108,108,105,106,46,99,108,105,111,110,34,23,105,110,116,101,108,108,105,106,46,99,105,100,114,46,108,97,110,103,46,98,97,115,101,40,-48,-45,-18,-83,-7,-1,-1,-1,-1,1,48,0]}]]></tab>
+            <tab><![CDATA[{"tabTitle":"clsUser.h","foregroundColor":-9922629,"textAttributes":{"name":"a","children":[{"name":"option","attributes":{"name":"FOREGROUND","value":"6897bb"}}]},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,110,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,26,18,99,111,109,46,105,110,116,101,108,108,105,106,46,99,108,105,111,110,34,23,105,110,116,101,108,108,105,106,46,99,105,100,114,46,108,97,110,103,46,98,97,115,101,40,-48,-45,-18,-83,-7,-1,-1,-1,-1,1,48,0]}]]></tab>
           </file>
           <file>
             <entry file="file://$PROJECT_DIR$/include/Transactions Screen/clsWithdrawScreen.h" file-id="40643" managing-fs="1781622042365">
               <provider editor-type-id="text-editor" selected="true">
-                <state relative-caret-position="1560">
+                <state relative-caret-position="685">
                   <caret line="67" column="26" selection-start-line="67" selection-start-column="26" selection-end-line="67" selection-end-column="26" />
+                  <folding>
+                    <marker date="1782490185870" expanded="true" signature="162:261" ph="##include ..." />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -6439,10 +6495,10 @@
           <file>
             <entry file="file://$PROJECT_DIR$/include/clsBankClient.h" file-id="22" managing-fs="1781622042365">
               <provider editor-type-id="text-editor" selected="true">
-                <state relative-caret-position="552">
-                  <caret line="23" selection-start-line="23" selection-end-line="23" />
+                <state relative-caret-position="2304">
+                  <caret line="96" column="36" selection-start-line="96" selection-start-column="36" selection-end-line="96" selection-end-column="36" />
                   <folding>
-                    <marker date="1782151686505" expanded="true" signature="13:133" ph="##include ..." />
+                    <marker date="1782355134253" expanded="true" signature="13:133" ph="##include ..." />
                   </folding>
                 </state>
               </provider>
@@ -6476,12 +6532,8 @@
           <file>
             <entry file="file://$PROJECT_DIR$/include/Manage_Users_Screen/clsManageUsersScreen.h" file-id="40637" managing-fs="1781622042365">
               <provider editor-type-id="text-editor" selected="true">
-                <state relative-caret-position="3048">
-                  <caret line="127" column="16" selection-start-line="127" selection-start-column="16" selection-end-line="127" selection-end-column="16" />
-                  <folding>
-                    <marker date="1782152061234" expanded="true" signature="0:39" ph="//..." />
-                    <marker date="1782152061234" expanded="true" signature="165:418" ph="##include ..." />
-                  </folding>
+                <state relative-caret-position="1728">
+                  <caret line="72" column="31" selection-start-line="72" selection-start-column="31" selection-end-line="72" selection-end-column="31" />
                 </state>
               </provider>
             </entry>
@@ -6560,20 +6612,23 @@
           <file>
             <entry file="file://$PROJECT_DIR$/include/clsString.h" file-id="15" managing-fs="1781622042365">
               <provider editor-type-id="text-editor" selected="true">
-                <state relative-caret-position="9504">
-                  <caret line="396" column="8" selection-start-line="396" selection-start-column="8" selection-end-line="396" selection-end-column="8" />
+                <state>
+                  <folding>
+                    <marker date="1781622814112" expanded="true" signature="0:36" ph="//..." />
+                  </folding>
                 </state>
               </provider>
             </entry>
             <tab><![CDATA[{"tabTitle":"clsString.h","foregroundColor":-2105376,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,110,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,26,18,99,111,109,46,105,110,116,101,108,108,105,106,46,99,108,105,111,110,34,23,105,110,116,101,108,108,105,106,46,99,105,100,114,46,108,97,110,103,46,98,97,115,101,40,-48,-45,-18,-83,-7,-1,-1,-1,-1,1,48,0]}]]></tab>
           </file>
-          <file current-in-tab="true">
+          <file>
             <entry file="file://$PROJECT_DIR$/include/clsDate.h" file-id="13" managing-fs="1781622042365">
               <provider editor-type-id="text-editor" selected="true">
-                <state relative-caret-position="408">
-                  <caret line="17" selection-start-line="17" selection-end-line="17" />
+                <state relative-caret-position="1824">
+                  <caret line="76" column="4" selection-start-line="76" selection-start-column="4" selection-end-line="76" selection-end-column="4" />
                   <folding>
-                    <marker date="1781622814084" expanded="true" signature="100:191" ph="##include ..." />
+                    <marker date="1782409789177" expanded="true" signature="0:47" ph="//ProgrammingAdivces.com..." />
+                    <marker date="1782409789177" expanded="true" signature="131:189" ph="##include ..." />
                   </folding>
                 </state>
               </provider>
@@ -6583,32 +6638,56 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf ideFingerprint="29j3ify5pxens" SIDE_TABS_SIZE_LIMIT_KEY="-1">
+        <leaf ideFingerprint="qhdb1f4bssr8" SIDE_TABS_SIZE_LIMIT_KEY="-1">
           <file>
             <entry file="file://$PROJECT_DIR$/include/clsMainScreen.h" file-id="20" managing-fs="1781622042365">
               <provider editor-type-id="text-editor" selected="true">
-                <state relative-caret-position="1944">
-                  <caret line="81" column="36" selection-start-line="81" selection-start-column="36" selection-end-line="81" selection-end-column="36" />
+                <state relative-caret-position="24">
+                  <caret line="1" selection-start-line="1" selection-end-line="1" />
                   <folding>
-                    <marker date="1782143768578" expanded="true" signature="13:493" ph="##include ..." />
+                    <marker date="1782355248723" expanded="true" signature="13:493" ph="##include ..." />
                   </folding>
                 </state>
               </provider>
             </entry>
             <tab><![CDATA[{"tabTitle":"clsMainScreen.h","foregroundColor":-2105376,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,110,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,26,18,99,111,109,46,105,110,116,101,108,108,105,106,46,99,108,105,111,110,34,23,105,110,116,101,108,108,105,106,46,99,105,100,114,46,108,97,110,103,46,98,97,115,101,40,-48,-45,-18,-83,-7,-1,-1,-1,-1,1,48,0]}]]></tab>
           </file>
-          <file current-in-tab="true">
+          <file>
             <entry file="file://$PROJECT_DIR$/include/clsScreen.h" file-id="21" managing-fs="1781622042365">
               <provider editor-type-id="text-editor" selected="true">
-                <state relative-caret-position="24">
-                  <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
-                  <folding>
-                    <marker date="1782186784156" expanded="true" signature="13:151" ph="##include ..." />
-                  </folding>
+                <state relative-caret-position="144">
+                  <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
                 </state>
               </provider>
             </entry>
             <tab><![CDATA[{"tabTitle":"clsScreen.h","foregroundColor":-2105376,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,110,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,26,18,99,111,109,46,105,110,116,101,108,108,105,106,46,99,108,105,111,110,34,23,105,110,116,101,108,108,105,106,46,99,105,100,114,46,108,97,110,103,46,98,97,115,101,40,-48,-45,-18,-83,-7,-1,-1,-1,-1,1,48,0]}]]></tab>
+          </file>
+          <file>
+            <entry file="file://$PROJECT_DIR$/include/clsDate.h" file-id="13" managing-fs="1781622042365">
+              <provider editor-type-id="text-editor" selected="true">
+                <state relative-caret-position="816">
+                  <caret line="34" column="15" selection-start-line="34" selection-start-column="15" selection-end-line="34" selection-end-column="15" />
+                  <folding>
+                    <marker date="1782409789177" expanded="true" signature="0:47" ph="//ProgrammingAdivces.com..." />
+                    <marker date="1782409789177" expanded="true" signature="131:189" ph="##include ..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+            <tab><![CDATA[{"tabTitle":"clsDate.h","foregroundColor":-2105376,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,110,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,26,18,99,111,109,46,105,110,116,101,108,108,105,106,46,99,108,105,111,110,34,23,105,110,116,101,108,108,105,106,46,99,105,100,114,46,108,97,110,103,46,98,97,115,101,40,-48,-45,-18,-83,-7,-1,-1,-1,-1,1,48,0]}]]></tab>
+          </file>
+          <file current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/include/Manage_Users_Screen/clsUser.h" file-id="40836" managing-fs="1781622042365">
+              <provider editor-type-id="text-editor" selected="true">
+                <state relative-caret-position="357">
+                  <caret line="331" column="38" selection-start-line="331" selection-start-column="20" selection-end-line="331" selection-end-column="39" />
+                  <folding>
+                    <marker date="1782488507827" expanded="true" signature="13:154" ph="##include ..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+            <tab><![CDATA[{"tabTitle":"clsUser.h","foregroundColor":-9922629,"textAttributes":{"name":"a","children":[{"name":"option","attributes":{"name":"FOREGROUND","value":"6897bb"}}]},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,110,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,26,18,99,111,109,46,105,110,116,101,108,108,105,106,46,99,108,105,111,110,34,23,105,110,116,101,108,108,105,106,46,99,105,100,114,46,108,97,110,103,46,98,97,115,101,40,-48,-45,-18,-83,-7,-1,-1,-1,-1,1,48,0]}]]></tab>
           </file>
         </leaf>
       </split-second>
@@ -6617,36 +6696,36 @@
   <component name="FileTypeUsageLocalSummary"><![CDATA[{
   "data": {
     "C/C++": {
-      "usageCount": 239,
-      "lastUsed": 1782231687072
+      "usageCount": 248,
+      "lastUsed": 1782571806742
     },
     "CMakeLists.txt": {
-      "usageCount": 35,
-      "lastUsed": 1782231687360
+      "usageCount": 44,
+      "lastUsed": 1782571807494
     },
     "PLAIN_TEXT": {
-      "usageCount": 90,
-      "lastUsed": 1782231687602
+      "usageCount": 108,
+      "lastUsed": 1782571807215
     },
     "textmate": {
-      "usageCount": 69,
-      "lastUsed": 1781443330830
+      "usageCount": 72,
+      "lastUsed": 1782489927017
     },
     "DIFF": {
-      "usageCount": 17,
-      "lastUsed": 1776258091880
+      "usageCount": 18,
+      "lastUsed": 1782316230876
     },
     "AUTO_DETECTED": {
       "usageCount": 7,
       "lastUsed": 1782141335255
     },
     "C/C++ Header": {
-      "usageCount": 1650,
-      "lastUsed": 1782231689600
+      "usageCount": 1905,
+      "lastUsed": 1782571812519
     },
     "WebPreview": {
-      "usageCount": 1,
-      "lastUsed": 1781404938283
+      "usageCount": 2,
+      "lastUsed": 1782488857987
     }
   }
 }]]></component>
@@ -6671,7 +6750,6 @@
   <component name="GitSEFilterConfiguration">{}</component>
   <component name="IdeDocumentHistory">{
   &quot;changedPaths&quot;: [
-    &quot;/home/imad/Documents/Project1 - Utility library/include/Screens/ManageUsers/clsUpdateUserScreen.h&quot;,
     &quot;/home/imad/Documents/Project1 - Utility library/include/Screens/ManageUsers/clsFindUserScreen.h&quot;,
     &quot;/home/imad/Documents/Project1 - Utility library/include/Global.h&quot;,
     &quot;/home/imad/Documents/Project1 - Utility library/include/Screens/Login/clsLoginScreen.h&quot;,
@@ -6706,22 +6784,23 @@
     &quot;/home/imad/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsUpdateUserScreen.h&quot;,
     &quot;/home/imad/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsFindUserScreen.h&quot;,
     &quot;/home/imad/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Global.h&quot;,
-    &quot;/home/imad/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/src/main.cpp&quot;,
     &quot;/home/imad/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/Data/Users&quot;,
-    &quot;/home/imad/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Clients screens/clsClientListScreen.h&quot;,
     &quot;/home/imad/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Clients screens/clsAddNewClientScreen.h&quot;,
     &quot;/home/imad/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Clients screens/clsDeleteClientScreen.h&quot;,
     &quot;/home/imad/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Clients screens/clsFindClientScreen.h&quot;,
     &quot;/home/imad/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/CMakeLists.txt&quot;,
-    &quot;/home/imad/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/clsLoginScreen.h&quot;,
     &quot;/home/imad/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/clsMainScreen.h&quot;,
     &quot;/home/imad/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Transactions Screen/clsTransactionsScreen.h&quot;,
-    &quot;/home/imad/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsUser.h&quot;,
-    &quot;/home/imad/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/clsBankClient.h&quot;,
     &quot;/home/imad/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsManageUsersScreen.h&quot;,
     &quot;/home/imad/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Clients screens/clsUpdateClientScreen.h&quot;,
+    &quot;/home/imad/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/clsScreen.h&quot;,
+    &quot;/home/imad/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/src/main.cpp&quot;,
+    &quot;/home/imad/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/clsLoginScreen.h&quot;,
+    &quot;/home/imad/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Clients screens/clsClientListScreen.h&quot;,
+    &quot;/home/imad/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/clsBankClient.h&quot;,
     &quot;/home/imad/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/clsDate.h&quot;,
-    &quot;/home/imad/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/clsScreen.h&quot;
+    &quot;/home/imad/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsUser.h&quot;,
+    &quot;/home/imad/.ideavimrc&quot;
   ]
 }</component>
   <component name="IgnoredFileRootStore">
@@ -6761,12 +6840,14 @@
         <entry key="28c95731-4613-4e26-a9db-9dfac9f1b906" value="false" />
         <entry key="2ac73887-5144-4720-b273-e625611b2d40" value="false" />
         <entry key="2afc9266-bbd1-4203-b3d2-cb9ca34b28aa" value="false" />
+        <entry key="2c4177bf-8f47-4e6c-a272-5133adadf25c" value="false" />
         <entry key="2d0b35c5-c5a4-4802-b950-ee82ff28b968" value="false" />
         <entry key="2d49f450-ca6b-442e-9fce-8698b13f5432" value="false" />
         <entry key="2dc01007-1a96-4a48-bd7f-1a3377ad5deb" value="false" />
         <entry key="3284eef2-7c6a-44e7-975e-5e90355866ef" value="false" />
         <entry key="32b950dd-6088-44e3-b9f4-c6519bd2b30f" value="false" />
         <entry key="32c63f8a-101e-4407-86d9-378e505c29ca" value="false" />
+        <entry key="357d48d1-01da-42f6-9537-bb7beaed94c4" value="false" />
         <entry key="3698dc6c-497e-4a01-8893-a2210d1b6688" value="false" />
         <entry key="38a4567f-f59b-4508-a7ac-b3c49c0198b6" value="false" />
         <entry key="3c1f935d-0ef5-4bcd-8a18-1b0cff304157" value="false" />
@@ -6799,6 +6880,7 @@
         <entry key="59dc3418-01be-4e36-805b-110942728094" value="false" />
         <entry key="5ced5f69-93f9-40bf-8316-1ea792038522" value="false" />
         <entry key="5e148371-ff3b-4765-97ef-bb9090e1d990" value="false" />
+        <entry key="5eb69b73-a0e6-43e9-94e7-370eafb8381c" value="false" />
         <entry key="606dd572-687e-430b-9588-01244d87ccf0" value="false" />
         <entry key="6619e99d-c079-4ad5-9b0a-15ea2c079ca8" value="false" />
         <entry key="66324db4-5547-463f-af01-7e50e1943ac7" value="false" />
@@ -6820,6 +6902,7 @@
         <entry key="7d907384-4ea3-4a46-87b9-5fa02fb4330e" value="false" />
         <entry key="7dce939c-2c94-463e-a15d-fe4505d57e78" value="false" />
         <entry key="7ecf62f6-6257-4801-9a3c-2ed41f41ee4f" value="false" />
+        <entry key="808ea83a-a8bb-4274-ade0-f90d6482305f" value="false" />
         <entry key="83f1052d-84e6-4c50-b7d8-0337795d82e1" value="false" />
         <entry key="841788f3-30dd-4478-99cb-8aadac42fbc4" value="false" />
         <entry key="84bc3f4c-dfd1-4e44-b3ff-d6ec2ab66ba2" value="false" />
@@ -6832,6 +6915,8 @@
         <entry key="8bd84471-5091-4fe8-a56e-c4df1a0b9f66" value="false" />
         <entry key="8dd22f5a-296e-499d-97d9-ec60d8250c61" value="false" />
         <entry key="8e638257-a9a0-4774-86a1-6c261f8fcdc4" value="false" />
+        <entry key="8e661880-b729-4a09-8f84-65e5d5aa9d67" value="false" />
+        <entry key="919209b7-6ae8-4c15-bafd-90229ec6676d" value="false" />
         <entry key="9274ecda-ac3e-48b5-bfca-7adda715fae7" value="false" />
         <entry key="92d9976e-d705-4fa4-a8e4-a839dc4c27f1" value="false" />
         <entry key="94f41d1f-2af0-4200-9499-e93f3a379882" value="false" />
@@ -6875,6 +6960,7 @@
         <entry key="b6ea2863-b1ba-4972-b605-9c8d48ba589e" value="false" />
         <entry key="ba0d13e0-0ba3-40e4-a5b7-b3afb174768e" value="false" />
         <entry key="ba37f411-3404-41d1-97ed-f522da73d98d" value="false" />
+        <entry key="bb473c0d-ea0e-4be3-8f4c-17d0b772962d" value="false" />
         <entry key="bcf280eb-1629-45a5-bc55-7a2c21c4cf4c" value="false" />
         <entry key="bd45d779-db0b-4cd4-9bb6-55f9c40ecc8d" value="false" />
         <entry key="be4a3326-00fb-4964-986e-662c1a0c7885" value="false" />
@@ -6953,16 +7039,16 @@
   </component>
   <component name="LanguageUsageStatistics">
     <language id="C++">
-      <summary usageCount="1889" lastUsage="1782231689600" />
+      <summary usageCount="2153" lastUsage="1782571812519" />
     </language>
     <language id="CMake">
-      <summary usageCount="35" lastUsage="1782231687360" />
+      <summary usageCount="44" lastUsage="1782571807494" />
     </language>
     <language id="TEXT">
-      <summary usageCount="90" lastUsage="1782231687602" />
+      <summary usageCount="108" lastUsage="1782571807215" />
     </language>
     <language id="textmate">
-      <summary usageCount="69" lastUsage="1781443330830" />
+      <summary usageCount="72" lastUsage="1782489927017" />
     </language>
   </component>
   <component name="ProjectRoots">
@@ -6989,6 +7075,18 @@
               <item name="dir{file:///home/imad/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library}" type="462c0819:PsiDirectoryNode" />
               <item name="dir{file:///home/imad/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include}" type="462c0819:PsiDirectoryNode" />
               <item name="dir{file:///home/imad/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Clients screens}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Project1L4BankExtension2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/imad/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/imad/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/imad/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Project1L4BankExtension2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/imad/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/imad/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/imad/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Transactions Screen}" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Project1L4BankExtension2" type="b2602c69:ProjectViewProjectNode" />
@@ -7106,6 +7204,69 @@
                   </attributes>
                   <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="Manage_Users_Screen" />
                   <item name="dir{file:///home/imad/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen}" type="462c0819:PsiDirectoryNode" />
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/include/Manage_Users_Screen/clsAddNewUserScreen.h" />
+                      </map>
+                    </attributes>
+                    <data iconModule="intellij.cidr.lang.base" iconPath="icons/expui/fileTypes/h.svg" iconPlugin="com.intellij.clion" isLeaf="true" text="clsAddNewUserScreen.h" />
+                    <item name="clsAddNewUserScreen.h" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/include/Manage_Users_Screen/clsDeleteUserScreen.h" />
+                      </map>
+                    </attributes>
+                    <data iconModule="intellij.cidr.lang.base" iconPath="icons/expui/fileTypes/h.svg" iconPlugin="com.intellij.clion" isLeaf="true" text="clsDeleteUserScreen.h" />
+                    <item name="clsDeleteUserScreen.h" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/include/Manage_Users_Screen/clsFindUserScreen.h" />
+                      </map>
+                    </attributes>
+                    <data iconModule="intellij.cidr.lang.base" iconPath="icons/expui/fileTypes/h.svg" iconPlugin="com.intellij.clion" isLeaf="true" text="clsFindUserScreen.h" />
+                    <item name="clsFindUserScreen.h" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/include/Manage_Users_Screen/clsListUsersScreen.h" />
+                      </map>
+                    </attributes>
+                    <data iconModule="intellij.cidr.lang.base" iconPath="icons/expui/fileTypes/h.svg" iconPlugin="com.intellij.clion" isLeaf="true" text="clsListUsersScreen.h" />
+                    <item name="clsListUsersScreen.h" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/include/Manage_Users_Screen/clsManageUsersScreen.h" />
+                      </map>
+                    </attributes>
+                    <data iconModule="intellij.cidr.lang.base" iconPath="icons/expui/fileTypes/h.svg" iconPlugin="com.intellij.clion" isLeaf="true" text="clsManageUsersScreen.h" />
+                    <item name="clsManageUsersScreen.h" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/include/Manage_Users_Screen/clsUpdateUserScreen.h" />
+                      </map>
+                    </attributes>
+                    <data iconModule="intellij.cidr.lang.base" iconPath="icons/expui/fileTypes/h.svg" iconPlugin="com.intellij.clion" isLeaf="true" text="clsUpdateUserScreen.h" />
+                    <item name="clsUpdateUserScreen.h" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/include/Manage_Users_Screen/clsUser.h" />
+                      </map>
+                    </attributes>
+                    <data iconModule="intellij.cidr.lang.base" iconPath="icons/expui/fileTypes/h.svg" iconPlugin="com.intellij.clion" isLeaf="true" text="clsUser.h" />
+                    <item name="clsUser.h" type="ab9368bb:PsiFileNode" />
+                  </presentation>
                 </presentation>
                 <presentation>
                   <attributes>
@@ -7115,6 +7276,42 @@
                   </attributes>
                   <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="Transactions Screen" />
                   <item name="dir{file:///home/imad/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Transactions Screen}" type="462c0819:PsiDirectoryNode" />
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/include/Transactions Screen/clsDepositScreen.h" />
+                      </map>
+                    </attributes>
+                    <data iconModule="intellij.cidr.lang.base" iconPath="icons/expui/fileTypes/h.svg" iconPlugin="com.intellij.clion" isLeaf="true" text="clsDepositScreen.h" />
+                    <item name="clsDepositScreen.h" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/include/Transactions Screen/clsTotalBalancesScreen.h" />
+                      </map>
+                    </attributes>
+                    <data iconModule="intellij.cidr.lang.base" iconPath="icons/expui/fileTypes/h.svg" iconPlugin="com.intellij.clion" isLeaf="true" text="clsTotalBalancesScreen.h" />
+                    <item name="clsTotalBalancesScreen.h" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/include/Transactions Screen/clsTransactionsScreen.h" />
+                      </map>
+                    </attributes>
+                    <data iconModule="intellij.cidr.lang.base" iconPath="icons/expui/fileTypes/h.svg" iconPlugin="com.intellij.clion" isLeaf="true" text="clsTransactionsScreen.h" />
+                    <item name="clsTransactionsScreen.h" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/include/Transactions Screen/clsWithdrawScreen.h" />
+                      </map>
+                    </attributes>
+                    <data iconModule="intellij.cidr.lang.base" iconPath="icons/expui/fileTypes/h.svg" iconPlugin="com.intellij.clion" isLeaf="true" text="clsWithdrawScreen.h" />
+                    <item name="clsWithdrawScreen.h" type="ab9368bb:PsiFileNode" />
+                  </presentation>
                 </presentation>
                 <presentation>
                   <attributes>
@@ -7427,7 +7624,7 @@
     </option>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="654150000" />
+    <option name="totallyTimeSpent" value="681470000" />
   </component>
   <component name="TodoView">
     <todo-panel id="all">
@@ -7436,18 +7633,18 @@
   </component>
   <component name="ToolWindowManager">
     <layoutV2>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5362225" visible="true" weight="0.13794193" />
-      <window_info id="Commit" order="1" weight="0.13794193" />
-      <window_info active="true" id="Structure" order="2" sideWeight="0.46377748" side_tool="true" visible="true" weight="0.13794193" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5362225" visible="true" weight="0.120896466" />
+      <window_info id="Commit" order="1" sideWeight="0.50060385" weight="0.1365625" />
+      <window_info active="true" id="Structure" order="2" sideWeight="0.46377748" side_tool="true" visible="true" weight="0.120896466" />
       <window_info id="Pull Requests" order="3" weight="0.14425504" />
       <window_info anchor="bottom" id="Version Control" order="0" weight="0.40177515" />
       <window_info anchor="bottom" id="Problems" order="1" />
-      <window_info anchor="bottom" id="Problems View" order="2" weight="0.40177515" />
+      <window_info anchor="bottom" id="Problems View" order="2" weight="0.48224854" />
       <window_info active="true" anchor="bottom" x="399" y="0" width="786" height="845" id="Terminal" maximized="true" order="3" type="WINDOWED" weight="0.42544377" />
       <window_info anchor="bottom" id="Services" order="4" weight="0.37726244" />
       <window_info anchor="bottom" id="CMake" order="5" weight="0.40166667" />
-      <window_info anchor="bottom" id="Messages" order="6" weight="0.42544377" />
-      <window_info anchor="bottom" x="0" y="0" width="786" height="845" id="Run" maximized="true" order="7" show_stripe_button="false" type="WINDOWED" weight="0.42544377" />
+      <window_info anchor="bottom" id="Messages" order="6" weight="0.48224854" />
+      <window_info active="true" anchor="bottom" x="0" y="0" width="786" height="845" id="Run" maximized="true" order="7" type="WINDOWED" weight="0.48224854" />
       <window_info anchor="bottom" id="Debug" order="8" show_stripe_button="false" weight="0.42544377" />
       <window_info anchor="bottom" id="Python Packages" order="9" weight="0.37726244" />
       <window_info anchor="bottom" id="PythonProcessOutput" order="10" weight="0.37726244" />
@@ -7463,7 +7660,7 @@
       <window_info anchor="right" id="Recap" order="7" weight="0.25644398" />
       <window_info anchor="right" id="Python Console" order="8" weight="0.27304292" />
       <window_info anchor="right" id="documentation.v2" order="9" sideWeight="0.49938422" side_tool="true" weight="0.24526516" />
-      <unified_weights bottom="0.42544377" left="0.13794193" right="0.19539142" />
+      <unified_weights bottom="0.48224854" left="0.120896466" right="0.19539142" />
     </layoutV2>
     <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1556187" />
@@ -7493,16 +7690,16 @@
       <unified_weights bottom="0.33427602" left="0.1556187" right="0.29766417" />
     </layout-to-restore>
     <recentWindows>
-      <value>Project</value>
-      <value>Commit</value>
-      <value>AIAssistant</value>
-      <value>Debug</value>
-      <value>Messages</value>
-      <value>Terminal</value>
-      <value>Run</value>
-      <value>Find</value>
       <value>Structure</value>
+      <value>Project</value>
       <value>Problems View</value>
+      <value>AIAssistant</value>
+      <value>Messages</value>
+      <value>Run</value>
+      <value>Commit</value>
+      <value>Debug</value>
+      <value>Terminal</value>
+      <value>Find</value>
       <value>Version Control</value>
       <value>Pull Requests</value>
       <value>CMake</value>
@@ -7541,32 +7738,32 @@
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="626" y="378" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.0.1600.900@0.0.1600.900" timestamp="1781571860293" />
-    <state width="1502" height="317" key="GridCell.Tab.0.bottom" timestamp="1782159896466">
+    <state width="786" height="803" key="GridCell.Tab.0.bottom" timestamp="1782486271052">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state width="780" height="357" key="GridCell.Tab.0.bottom/0.0.1600.900/1600.0.1024.768@0.0.1600.900" timestamp="1774812771132" />
-    <state width="1502" height="317" key="GridCell.Tab.0.bottom/0.0.1600.900@0.0.1600.900" timestamp="1782159896466" />
+    <state width="786" height="803" key="GridCell.Tab.0.bottom/0.0.1600.900@0.0.1600.900" timestamp="1782486271052" />
     <state width="780" height="767" key="GridCell.Tab.0.bottom/1600.0.1024.768/0.0.1600.900@0.0.1600.900" timestamp="1777898633805" />
     <state width="780" height="805" key="GridCell.Tab.0.bottom/1600.0.768.1024/0.0.1600.900@0.0.1600.900" timestamp="1776686357919" />
-    <state width="1502" height="317" key="GridCell.Tab.0.center" timestamp="1782159896466">
+    <state width="786" height="803" key="GridCell.Tab.0.center" timestamp="1782486271051">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state width="780" height="357" key="GridCell.Tab.0.center/0.0.1600.900/1600.0.1024.768@0.0.1600.900" timestamp="1774812771132" />
-    <state width="1502" height="317" key="GridCell.Tab.0.center/0.0.1600.900@0.0.1600.900" timestamp="1782159896466" />
+    <state width="786" height="803" key="GridCell.Tab.0.center/0.0.1600.900@0.0.1600.900" timestamp="1782486271051" />
     <state width="780" height="767" key="GridCell.Tab.0.center/1600.0.1024.768/0.0.1600.900@0.0.1600.900" timestamp="1777898633804" />
     <state width="780" height="805" key="GridCell.Tab.0.center/1600.0.768.1024/0.0.1600.900@0.0.1600.900" timestamp="1776686357919" />
-    <state width="1502" height="317" key="GridCell.Tab.0.left" timestamp="1782159896466">
+    <state width="786" height="803" key="GridCell.Tab.0.left" timestamp="1782486271050">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state width="780" height="357" key="GridCell.Tab.0.left/0.0.1600.900/1600.0.1024.768@0.0.1600.900" timestamp="1774812771132" />
-    <state width="1502" height="317" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1782159896466" />
+    <state width="786" height="803" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1782486271050" />
     <state width="780" height="767" key="GridCell.Tab.0.left/1600.0.1024.768/0.0.1600.900@0.0.1600.900" timestamp="1777898633803" />
     <state width="780" height="805" key="GridCell.Tab.0.left/1600.0.768.1024/0.0.1600.900@0.0.1600.900" timestamp="1776686357919" />
-    <state width="1502" height="317" key="GridCell.Tab.0.right" timestamp="1782159896466">
+    <state width="786" height="803" key="GridCell.Tab.0.right" timestamp="1782486271052">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state width="780" height="357" key="GridCell.Tab.0.right/0.0.1600.900/1600.0.1024.768@0.0.1600.900" timestamp="1774812771132" />
-    <state width="1502" height="317" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1782159896466" />
+    <state width="786" height="803" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1782486271052" />
     <state width="780" height="767" key="GridCell.Tab.0.right/1600.0.1024.768/0.0.1600.900@0.0.1600.900" timestamp="1777898633805" />
     <state width="780" height="805" key="GridCell.Tab.0.right/1600.0.768.1024/0.0.1600.900@0.0.1600.900" timestamp="1776686357919" />
     <state width="1502" height="317" key="GridCell.Tab.1.bottom" timestamp="1782159896466">
@@ -7633,15 +7830,15 @@
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state width="1502" height="317" key="GridCell.Tab.4.right/0.0.1600.900@0.0.1600.900" timestamp="1782159896466" />
-    <state x="459" y="137" width="1600" height="900" key="SettingsEditor" timestamp="1782159940378">
+    <state x="459" y="137" width="1600" height="900" key="SettingsEditor" timestamp="1782488984678">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state x="459" y="137" width="1600" height="900" key="SettingsEditor/0.0.1600.900@0.0.1600.900" timestamp="1782159940378" />
+    <state x="459" y="137" width="1600" height="900" key="SettingsEditor/0.0.1600.900@0.0.1600.900" timestamp="1782488984678" />
     <state x="459" y="137" key="SettingsEditor/1600.0.1024.768/0.0.1600.900@0.0.1600.900" timestamp="1777898973737" />
-    <state x="400" y="201" key="Vcs.Push.Dialog.v2" timestamp="1782144381441">
+    <state x="400" y="201" key="Vcs.Push.Dialog.v2" timestamp="1782409834670">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state x="400" y="201" key="Vcs.Push.Dialog.v2/0.0.1600.900@0.0.1600.900" timestamp="1782144381441" />
+    <state x="400" y="201" key="Vcs.Push.Dialog.v2/0.0.1600.900@0.0.1600.900" timestamp="1782409834670" />
     <state x="10" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1782054163037">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
@@ -7678,129 +7875,123 @@
     <entry file="file://$PROJECT_DIR$/include/Screens/clsScreen.h" />
     <entry file="file://$PROJECT_DIR$/include/Screens/clsMainScreen.h" />
     <entry file="file://$PROJECT_DIR$/include/Screens/ManageUsers/clsUser.h" />
-    <entry file="file://$USER_HOME$/.ideavimrc">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/imad.cpp" />
     <entry file="file://$PROJECT_DIR$/src/imad.h" />
     <entry file="file://$PROJECT_DIR$/include/Manage_Users_Screen.h" />
     <entry file="file://$PROJECT_DIR$/include/Clients screens.h" />
+    <entry file="file://$PROJECT_DIR$/data/fff" />
     <entry file="file:///usr/include/c++/16.1.1/bits/basic_string.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="4099" column="4" selection-start-line="4099" selection-start-column="4" selection-end-line="4099" selection-end-column="4" />
+        <state relative-caret-position="-1474">
+          <caret line="4584" column="2" selection-start-line="4584" selection-start-column="2" selection-end-line="4584" selection-end-column="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/fff" />
-    <entry file="file://$PROJECT_DIR$/data/Clients.txt">
+    <entry file="file://$USER_HOME$/.ideavimrc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/clsPerson.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/Manage_Users_Screen/clsAddNewUserScreen.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/Manage_Users_Screen/clsUpdateUserScreen.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="40" column="18" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
+        <state relative-caret-position="-1464">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="168">
+          <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
           <folding>
-            <marker date="1782055883815" expanded="true" signature="0:47" ph="##include ..." />
+            <element signature="e#0#195#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/Transactions Screen/clsTotalBalancesScreen.h">
+    <entry file="file://$PROJECT_DIR$/include/clsLoginScreen.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="30" column="32" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/clsPeriod.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/Manage_Users_Screen/clsDeleteUserScreen.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/clsBankClient.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        <state relative-caret-position="1368">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
           <folding>
-            <marker date="1782151686505" expanded="true" signature="13:133" ph="##include ..." />
+            <marker date="1782353641760" expanded="true" signature="0:39" ph="//..." />
+            <marker date="1782353641760" expanded="true" signature="156:305" ph="##include ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/Global.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/clsPerson.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="864">
+          <caret line="36" column="11" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/Transactions Screen/clsDepositScreen.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/Clients screens/clsUpdateClientScreen.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <marker date="1782152971082" expanded="true" signature="0:39" ph="//..." />
+            <marker date="1782152971082" expanded="true" signature="169:303" ph="##include ..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/include/Manage_Users_Screen/clsFindUserScreen.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="696">
-          <caret line="29" column="14" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
+        <state relative-caret-position="792">
+          <caret line="33" column="16" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/Manage_Users_Screen/clsManageUsersScreen.h">
+    <entry file="file://$PROJECT_DIR$/include/Clients screens/clsDeleteClientScreen.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3048">
-          <caret line="127" column="16" selection-start-line="127" selection-start-column="16" selection-end-line="127" selection-end-column="16" />
+        <state relative-caret-position="864">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Users.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/Transactions Screen/clsWithdrawScreen.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="685">
+          <caret line="67" column="26" selection-start-line="67" selection-start-column="26" selection-end-line="67" selection-end-column="26" />
           <folding>
-            <marker date="1782152061234" expanded="true" signature="0:39" ph="//..." />
-            <marker date="1782152061234" expanded="true" signature="165:418" ph="##include ..." />
+            <marker date="1782490185870" expanded="true" signature="162:261" ph="##include ..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/Clients screens/clsFindClientScreen.h">
+    <entry file="file://$PROJECT_DIR$/include/clsUtil.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="35" column="66" selection-start-line="35" selection-start-column="66" selection-end-line="35" selection-end-column="66" />
+        <state relative-caret-position="504">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/clsDate.h">
+    <entry file="file://$PROJECT_DIR$/include/clsString.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        <state>
+          <caret lean-forward="true" />
           <folding>
-            <marker date="1781622814084" expanded="true" signature="100:191" ph="##include ..." />
+            <marker date="1781622814112" expanded="true" signature="0:36" ph="//..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="984">
-          <caret line="41" column="58" selection-start-line="41" selection-start-column="58" selection-end-line="41" selection-end-column="58" />
         </state>
       </provider>
     </entry>
@@ -7811,10 +8002,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/Clients screens/clsDeleteClientScreen.h">
+    <entry file="file://$PROJECT_DIR$/data/Clients.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="864">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        <state relative-caret-position="264">
+          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/Manage_Users_Screen/clsManageUsersScreen.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1728">
+          <caret line="72" column="31" selection-start-line="72" selection-start-column="31" selection-end-line="72" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/Manage_Users_Screen/clsAddNewUserScreen.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="960">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/clsBankClient.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2304">
+          <caret line="96" column="36" selection-start-line="96" selection-start-column="36" selection-end-line="96" selection-end-column="36" />
+          <folding>
+            <marker date="1782355134253" expanded="true" signature="13:133" ph="##include ..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -7832,52 +8047,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/Transactions Screen/clsDepositScreen.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/clsString.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9504">
-          <caret line="396" column="8" selection-start-line="396" selection-start-column="8" selection-end-line="396" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/clsUtil.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/Transactions Screen/clsWithdrawScreen.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1560">
-          <caret line="67" column="26" selection-start-line="67" selection-start-column="26" selection-end-line="67" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/Clients screens/clsUpdateClientScreen.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <marker date="1782152971082" expanded="true" signature="0:39" ph="//..." />
-            <marker date="1782152971082" expanded="true" signature="169:303" ph="##include ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/Global.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/include/Transactions Screen/clsTransactionsScreen.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1008">
@@ -7885,54 +8054,89 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/Users.txt">
+    <entry file="file://$PROJECT_DIR$/include/Clients screens/clsFindClientScreen.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="840">
+          <caret line="35" column="66" selection-start-line="35" selection-start-column="66" selection-end-line="35" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/Transactions Screen/clsTotalBalancesScreen.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="30" column="32" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/include/Clients screens/clsClientListScreen.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
+        <state relative-caret-position="840">
+          <caret line="35" column="61" selection-start-line="35" selection-start-column="61" selection-end-line="35" selection-end-column="61" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/clsLoginScreen.h">
+    <entry file="file://$PROJECT_DIR$/include/clsPeriod.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1128">
-          <caret line="47" column="16" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="16" />
+        <state relative-caret-position="384">
+          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="984">
+          <caret line="41" column="58" selection-start-line="41" selection-start-column="58" selection-end-line="41" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/Manage_Users_Screen/clsDeleteUserScreen.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/Manage_Users_Screen/clsUpdateUserScreen.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/clsMainScreen.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
           <folding>
-            <marker date="1782142461643" expanded="true" signature="0:39" ph="//..." />
-            <marker date="1782142461643" expanded="true" signature="156:305" ph="##include ..." />
+            <marker date="1782355248723" expanded="true" signature="13:493" ph="##include ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/clsScreen.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/clsDate.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="34" column="15" selection-start-line="34" selection-start-column="15" selection-end-line="34" selection-end-column="15" />
+          <folding>
+            <marker date="1782409789177" expanded="true" signature="0:47" ph="//ProgrammingAdivces.com..." />
+            <marker date="1782409789177" expanded="true" signature="131:189" ph="##include ..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/include/Manage_Users_Screen/clsUser.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6864">
-          <caret line="291" selection-start-line="291" selection-end-line="291" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/clsScreen.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+        <state relative-caret-position="357">
+          <caret line="331" column="38" selection-start-line="331" selection-start-column="20" selection-end-line="331" selection-end-column="39" />
           <folding>
-            <marker date="1782186784156" expanded="true" signature="13:151" ph="##include ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/clsMainScreen.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1944">
-          <caret line="81" column="36" selection-start-line="81" selection-start-column="36" selection-end-line="81" selection-end-column="36" />
-          <folding>
-            <marker date="1782143768578" expanded="true" signature="13:493" ph="##include ..." />
+            <marker date="1782488507827" expanded="true" signature="13:154" ph="##include ..." />
           </folding>
         </state>
       </provider>

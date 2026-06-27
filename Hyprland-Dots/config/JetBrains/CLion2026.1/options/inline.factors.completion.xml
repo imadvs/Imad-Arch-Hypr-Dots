@@ -1,39 +1,21 @@
 <application>
   <component name="AcceptanceRateFactors">
-    <option name="lastSelectionTime" value="1781973157564" />
-    <option name="lastShowUpTime" value="1782152753936" />
+    <option name="lastSelectionTime" value="1782487109084" />
+    <option name="lastShowUpTime" value="1782487109084" />
+    <option name="prevSelected" value="true" />
     <selectionCounts>
-      <entry key="1" value="1.0" />
-      <entry key="24" value="1.002095640309999" />
-      <entry key="168" value="4.729173584198369" />
+      <entry key="1" value="1.0000000000094857" />
+      <entry key="24" value="1.9189175823438291" />
+      <entry key="168" value="6.149113883169133" />
     </selectionCounts>
     <showUpCounts>
-      <entry key="1" value="1.874306514767253" />
-      <entry key="24" value="6.939943729854018" />
-      <entry key="168" value="24.25519994157444" />
+      <entry key="1" value="1.0000000000282814" />
+      <entry key="24" value="3.881116571089874" />
+      <entry key="168" value="24.266239830025793" />
     </showUpCounts>
   </component>
   <component name="CompletionFinishedType">
     <dailyDataMap>
-      <entry key="2026-05-12">
-        <DailyData>
-          <option name="invalidated" value="6" />
-          <option name="other" value="1" />
-        </DailyData>
-      </entry>
-      <entry key="2026-05-14">
-        <DailyData>
-          <option name="invalidated" value="7" />
-          <option name="selected" value="1" />
-        </DailyData>
-      </entry>
-      <entry key="2026-05-20">
-        <DailyData>
-          <option name="explicitCancel" value="1" />
-          <option name="invalidated" value="1" />
-          <option name="selected" value="3" />
-        </DailyData>
-      </entry>
       <entry key="2026-05-21">
         <DailyData>
           <option name="explicitCancel" value="1" />
@@ -84,37 +66,29 @@
           <option name="other" value="3" />
         </DailyData>
       </entry>
+      <entry key="2026-06-24">
+        <DailyData>
+          <option name="explicitCancel" value="2" />
+          <option name="other" value="1" />
+          <option name="selected" value="2" />
+        </DailyData>
+      </entry>
+      <entry key="2026-06-25">
+        <DailyData>
+          <option name="invalidated" value="1" />
+          <option name="other" value="1" />
+          <option name="selected" value="1" />
+        </DailyData>
+      </entry>
+      <entry key="2026-06-26">
+        <DailyData>
+          <option name="selected" value="1" />
+        </DailyData>
+      </entry>
     </dailyDataMap>
   </component>
   <component name="PrefixLength">
     <dailyDataMap>
-      <entry key="2026-05-07">
-        <DailyData>
-          <prefixLengths>
-            <entry key="1" value="4" />
-            <entry key="2" value="1" />
-            <entry key="3" value="2" />
-            <entry key="6" value="1" />
-            <entry key="8" value="1" />
-            <entry key="20" value="1" />
-            <entry key="47" value="1" />
-          </prefixLengths>
-        </DailyData>
-      </entry>
-      <entry key="2026-05-08">
-        <DailyData>
-          <prefixLengths>
-            <entry key="1" value="1" />
-          </prefixLengths>
-        </DailyData>
-      </entry>
-      <entry key="2026-05-09">
-        <DailyData>
-          <prefixLengths>
-            <entry key="1" value="4" />
-          </prefixLengths>
-        </DailyData>
-      </entry>
       <entry key="2026-05-14">
         <DailyData>
           <prefixLengths>
@@ -170,34 +144,31 @@
           </prefixLengths>
         </DailyData>
       </entry>
+      <entry key="2026-06-24">
+        <DailyData>
+          <prefixLengths>
+            <entry key="1" value="2" />
+          </prefixLengths>
+        </DailyData>
+      </entry>
+      <entry key="2026-06-25">
+        <DailyData>
+          <prefixLengths>
+            <entry key="15" value="1" />
+          </prefixLengths>
+        </DailyData>
+      </entry>
+      <entry key="2026-06-26">
+        <DailyData>
+          <prefixLengths>
+            <entry key="9" value="1" />
+          </prefixLengths>
+        </DailyData>
+      </entry>
     </dailyDataMap>
   </component>
   <component name="TimeBetweenTyping">
     <dailyDataMap>
-      <entry key="2026-06-07">
-        <DailyData>
-          <option name="count" value="75" />
-          <option name="totalTime" value="198010" />
-        </DailyData>
-      </entry>
-      <entry key="2026-06-08">
-        <DailyData>
-          <option name="count" value="142" />
-          <option name="totalTime" value="301414" />
-        </DailyData>
-      </entry>
-      <entry key="2026-06-14">
-        <DailyData>
-          <option name="count" value="14" />
-          <option name="totalTime" value="8682" />
-        </DailyData>
-      </entry>
-      <entry key="2026-06-16">
-        <DailyData>
-          <option name="count" value="841" />
-          <option name="totalTime" value="975824" />
-        </DailyData>
-      </entry>
       <entry key="2026-06-18">
         <DailyData>
           <option name="count" value="145" />
@@ -232,6 +203,30 @@
         <DailyData>
           <option name="count" value="45" />
           <option name="totalTime" value="106506" />
+        </DailyData>
+      </entry>
+      <entry key="2026-06-24">
+        <DailyData>
+          <option name="count" value="77" />
+          <option name="totalTime" value="125359" />
+        </DailyData>
+      </entry>
+      <entry key="2026-06-25">
+        <DailyData>
+          <option name="count" value="407" />
+          <option name="totalTime" value="799637" />
+        </DailyData>
+      </entry>
+      <entry key="2026-06-26">
+        <DailyData>
+          <option name="count" value="61" />
+          <option name="totalTime" value="126338" />
+        </DailyData>
+      </entry>
+      <entry key="2026-06-27">
+        <DailyData>
+          <option name="count" value="1" />
+          <option name="totalTime" value="394" />
         </DailyData>
       </entry>
     </dailyDataMap>

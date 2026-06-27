@@ -6,7 +6,7 @@
       "from" : "1"
     } ],
     "rules" : {
-      "event_id" : [ "{enum:screen.reader.detected|screen.reader.support.enabled|screen.reader.support.enabled.in.vmoptions}" ]
+      "event_id" : [ "{enum:screen.reader.detected|screen.reader.support.enabled|screen.reader.support.enabled.in.vmoptions|linux.accessibility.support.enabled}" ]
     }
   }, {
     "id" : "accessibility.tools.state",
@@ -152,6 +152,42 @@
       },
       "enums" : {
         "__event_id" : [ "dedicated_frame.focus_requested", "project.focus_requested", "prompt.submit_blocked", "thread.archive_requested", "thread.create_requested", "prompt.launch_resolved", "thread.open_requested" ]
+      }
+    }
+  }, {
+    "id" : "agent.workbench.ai.review",
+    "builds" : [ ],
+    "versions" : [ {
+      "from" : "1"
+    } ],
+    "rules" : {
+      "event_id" : [ "{enum:review.started|review.finished|feedback}" ],
+      "event_data" : {
+        "agent" : [ "{enum:codex|claude|junie|opencode}" ],
+        "changes_count" : [ "{regexp#integer}" ],
+        "chars_added" : [ "{regexp#integer}" ],
+        "chars_removed" : [ "{regexp#integer}" ],
+        "deleted_files" : [ "{regexp#integer}" ],
+        "duration_ms" : [ "{regexp#integer}" ],
+        "files_count" : [ "{regexp#integer}" ],
+        "ide_activity_id" : [ "{regexp#integer}" ],
+        "lang_percentage1" : [ "{regexp#integer}" ],
+        "lang_percentage2" : [ "{regexp#integer}" ],
+        "lang_percentage3" : [ "{regexp#integer}" ],
+        "language1" : [ "{util#lang}" ],
+        "language2" : [ "{util#lang}" ],
+        "language3" : [ "{util#lang}" ],
+        "languages_count" : [ "{regexp#integer}" ],
+        "lines_added" : [ "{regexp#integer}" ],
+        "lines_removed" : [ "{regexp#integer}" ],
+        "modified_files" : [ "{regexp#integer}" ],
+        "moved_files" : [ "{regexp#integer}" ],
+        "new_files" : [ "{regexp#integer}" ],
+        "rating" : [ "{enum:None|Like|Dislike}" ],
+        "renamed_files" : [ "{regexp#integer}" ],
+        "request_id" : [ "{regexp#integer}" ],
+        "success" : [ "{enum#boolean}" ],
+        "yolo" : [ "{enum#boolean}" ]
       }
     }
   }, {
@@ -2848,8 +2884,9 @@
     "rules" : {
       "event_id" : [ "{enum#__event_id}" ],
       "event_data" : {
+        "cloud_connection_id" : [ "{regexp#hash}" ],
         "data_source_id" : [ "{regexp#hash}" ],
-        "dbms" : [ "{util#dbms}", "{enum#__dbms}" ],
+        "dbms" : [ "{util#dbms}", "{enum:DUCK|DYNAMO|SNOWFLAKE|MONGO|REDIS|SQLITE|HSQLDB|HIVE|SPARK|DATABRICKS|H2|COUCHBASE|CASSANDRA|BIGQUERY|VERTICA|REDSHIFT|EXASOL|DERBY|DB2_ZOS|DB2_LUW|DB2_IS|DB2|CLICKHOUSE|UNKNOWN|HANA|FIREBIRD|ATHENA|PRESTO|TRINO|INFORMIX|IMPALA|INFLUXDB|NETEZZA|PHOENIX|INGRES|TERADATA|OPENEDGE|TIBERO|FILEMAKER|CLOUD_SPANNER|ZEN|FRONTBASE|IGNITE|MONET|DENODO|IRIS|DRILL|CRATE|GBASE|SQLANYWHERE|ELASTICSEARCH|SALESFORCE|KDB|TIMESTREAM|MSACCESS|IOTDB|ORACLE|NETSUITE|AZURE|MSSQL_LOCALDB|SYNAPSE|SYBASE|MSSQL|MARIADB|MYSQL_AURORA|MYSQL|GITBASE|TIDB|OCEANBASE|VITESS|MEMSQL|POSTGRES|YUGABYTE|GREENPLUM|COCKROACH}" ],
         "error_code" : [ "{regexp#integer}" ],
         "failed" : [ "{enum#boolean}" ],
         "sql_state" : [ "{regexp:[0-9A-Z ]{5}}" ],
@@ -2857,18 +2894,17 @@
         "version" : [ "{regexp#version}" ]
       },
       "enums" : {
-        "__dbms" : [ "INGRES", "CLICKHOUSE", "ZEN", "DATABRICKS", "MARIADB", "SYNAPSE", "KDB", "SPARK", "MEMSQL", "PRESTO", "ORACLE", "ATHENA", "SYBASE", "MSACCESS", "TIDB", "IGNITE", "INFORMIX", "DB2_IS", "DB2_LUW", "TERADATA", "OPENEDGE", "COUCHBASE", "GBASE", "PHOENIX", "VITESS", "GITBASE", "INFLUXDB", "MSSQL", "MSSQL_LOCALDB", "GREENPLUM", "IRIS", "BIGQUERY", "POSTGRES", "MONGO", "SQLITE", "NETEZZA", "CASSANDRA", "IMPALA", "DYNAMO", "TIMESTREAM", "NETSUITE", "DB2_ZOS", "TRINO", "MYSQL_AURORA", "HANA", "TIBERO", "AZURE", "HIVE", "DERBY", "VERTICA", "CLOUD_SPANNER", "OCEANBASE", "DRILL", "FRONTBASE", "MYSQL", "SALESFORCE", "H2", "YUGABYTE", "HSQLDB", "CRATE", "DB2", "FILEMAKER", "DENODO", "EXASOL", "REDIS", "SQLANYWHERE", "MONET", "SNOWFLAKE", "ELASTICSEARCH", "REDSHIFT", "UNKNOWN", "FIREBIRD", "COCKROACH" ],
         "__event_id" : [ "connection.test.started", "connection.test.completed", "connection.failed", "data.source.modified", "connection.succeeded" ]
       }
     },
     "anonymized_fields" : [ {
+      "event" : "data.source.modified",
+      "fields" : [ "data_source_id", "cloud_connection_id" ]
+    }, {
       "event" : "connection.test.started",
       "fields" : [ "data_source_id" ]
     }, {
       "event" : "connection.test.completed",
-      "fields" : [ "data_source_id" ]
-    }, {
-      "event" : "data.source.modified",
       "fields" : [ "data_source_id" ]
     }, {
       "event" : "connection.failed",
@@ -4686,6 +4722,15 @@
     } ],
     "rules" : {
       "event_id" : [ "{enum:settings.file.update.skipped.during.first.initial.sync|settings.file.not.included.in.first.initial.sync}" ]
+    }
+  }, {
+    "id" : "file.daemon",
+    "builds" : [ ],
+    "versions" : [ {
+      "from" : "1"
+    } ],
+    "rules" : {
+      "event_id" : [ "{enum:hasErrors}" ]
     }
   }, {
     "id" : "file.editor",
@@ -7426,7 +7471,8 @@
     "id" : "kotlin-toolchain",
     "builds" : [ ],
     "versions" : [ {
-      "from" : "1"
+      "from" : "1",
+      "to" : "2"
     } ],
     "rules" : {
       "event_id" : [ "{enum:platforms|project}" ],
@@ -8219,7 +8265,8 @@
     "id" : "kotlin.k.two.metrics",
     "builds" : [ ],
     "versions" : [ {
-      "from" : "2"
+      "from" : "2",
+      "to" : "3"
     } ],
     "rules" : {
       "event_id" : [ "{enum:enabled}" ],
@@ -8300,7 +8347,7 @@
         "system" : [ "{enum:JPS|Maven|Gradle|unknown}" ]
       },
       "enums" : {
-        "language_feature" : [ "AbstractClassMemberNotImplementedWithIntermediateAbstractClass", "AdaptedCallableReferenceAgainstReflectiveType", "AdditionalBuiltInsMembers", "AllowAccessToProtectedFieldFromSuperCompanion", "AllowAnyAsAnActualTypeForExpectInterface", "AllowAssigningArrayElementsToVarargsInNamedFormForFunctions", "AllowBreakAndContinueInsideWhen", "AllowCallingJavaOpenSealedClassConstructor", "AllowCheckForErasedTypesInContracts", "AllowContractsForCustomFunctions", "AllowContractsForNonOverridableMembers", "AllowContractsOnPropertyAccessors", "AllowContractsOnSomeOperators", "AllowDnnTypeOverridingFlexibleType", "AllowEagerSupertypeAccessibilityChecks", "AllowEmptyIntersectionsInResultTypeResolver", "AllowExpectDeclarationsInJsExport", "AllowNullOperatorsForResult", "AllowNullOperatorsForResultAndResultReturnTypeByDefault", "AllowReifiedGenericsInContracts", "AllowReifiedTypeInCatchClause", "AllowReturnInExpressionBodyWithExplicitType", "AllowSealedInheritorsInDifferentFilesOfSamePackage", "AllowSuperCallToJavaInterface", "AnnotationAllUseSiteTarget", "AnnotationDefaultTargetMigrationWarning", "AnnotationsInMetadata", "ApproximateAnonymousReturnTypesInPrivateInlineFunctions", "AssigningArraysToVarargsInNamedFormInAnnotations", "AvoidApproximationOfRecursiveCapturedTypesWithNoReason", "AvoidWrongOptimizationOfTypeOperatorsOnValueClasses", "BareArrayClassLiteral", "BoundCallableReferences", "BreakContinueInInlineLambdas", "CallableReferenceOverloadResolutionInLambda", "CallableReferencesToClassMembersWithEmptyLHS", "CapturedInClosureSmartCasts", "CapturedTypeApproximationReworked", "CheckLambdaAgainstTypeVariableContradictionInResolution", "CheckOptInOnPureEnumEntries", "CheckPackageInfoNullnessAnnotations", "ClassTypeParameterAnnotations", "ConditionImpliesReturnsContracts", "ConsiderExtensionReceiverFromConstrainsInLambda", "ConsiderForkPointsWhenCheckingContradictions", "ContextParameters", "ContextReceivers", "ContextSensitiveEnumResolutionInWhen", "ContextSensitiveResolutionUsingExpectedType", "ContractSyntaxV2", "ContractsOnCallsWithImplicitReceiver", "Coroutines", "CorrectSourceMappingSyntax", "CorrectSpecificityCheckForSignedAndUnsigned", "CustomEqualsInValueClasses", "DataClassCopyRespectsConstructorVisibility", "DataClassInheritance", "DataFlowBasedExhaustiveness", "DataObjects", "DefaultImportOfPackageKotlinComparisons", "DefaultMethodsCallFromJava6TargetError", "DefinitelyNonNullableTypes", "DeprecateNameMismatchInShortDestructuringWithParentheses", "DeprecatedFieldForInvisibleCompanionObject", "DestructuringLambdaParameters", "DfaBooleanVariables", "DirectJavaActualization", "DisableCheckingChangedProgressionsResolve", "DisableCompatibilityModeForNewInference", "DisableWarningsForIdentitySensitiveOperationsOnValueClassesAndPrimitives", "DisableWarningsForValueBasedJavaClasses", "DiscriminateSuspendInOverloadResolution", "DivisionByZeroInConstantExpressions", "DoNotGenerateThrowsForDelegatedKotlinMembers", "DoNotRunSuspendConversionForLambdaReturnStatements", "DontCreateSyntheticPropertiesWithoutBaseJavaGetter", "DontIgnoreUpperBoundViolatedOnImplicitArguments", "DontLoseDiagnosticsDuringOverloadResolutionByReturnType", "DontMakeExplicitJavaTypeArgumentsFlexible", "DslMarkerOnFunctionTypeReceiver", "DslMarkersSupport", "EliminateAmbiguitiesOnInheritedSamInterfaces", "EliminateAmbiguitiesWithExternalTypeParameters", "ElvisInferenceImprovementsIn21", "EnableDfaWarningsInK2", "EnableNameBasedDestructuringShortForm", "EnhanceNullabilityOfPrimitiveArrays", "EnumEntries", "ErrorAboutDataClassCopyVisibilityChange", "ExpectActualClasses", "ExpectRefinement", "ExpectedTypeFromCast", "ExperimentalBuilderInference", "ExplicitBackingFields", "ExportKlibToOlderAbiVersion", "ExtendedMainConvention", "FixationEnhancementsIn22", "ForbidAnnotationsWithUseSiteTargetOnExpressions", "ForbidCaptureInlinableLambdasInJsCode", "ForbidCompanionInLocalInnerClass", "ForbidCrossFileIrFieldAccessInKlibs", "ForbidEnumEntryNamedEntries", "ForbidExposingLessVisibleTypesInInline", "ForbidExposingPackagePrivateInInternal", "ForbidExposingTypesInPrimaryConstructorProperties", "ForbidExposureOfPrivateTypesInNonPrivateInlineFunctionsInKlibs", "ForbidExtensionCallsOnInlineFunctionalParameters", "ForbidExtensionFunctionTypeOnNonFunctionTypes", "ForbidFieldAnnotationsOnAnnotationParameters", "ForbidGetSetValueWithTooManyParameters", "ForbidImplementationByDelegationWithDifferentGenericSignature", "ForbidImplicitTypeAnnotationWithMissingDependency", "ForbidInferOfInvisibleTypeAsReifiedOrVararg", "ForbidInferOfInvisibleTypeAsReifiedVarargOrReturnType", "ForbidInferringPostponedTypeVariableIntoDeclaredUpperBound", "ForbidInferringTypeVariablesIntoEmptyIntersection", "ForbidInitializationBeforeDeclarationInAnonymous", "ForbidInlineEnumEntries", "ForbidJvmAnnotationsOnAnnotationParameters", "ForbidJvmSerializableLambdaOnInlinedFunctionLiterals", "ForbidLambdaParameterWithMissingDependencyType", "ForbidObjectDelegationToItself", "ForbidParenthesizedLhsInAssignments", "ForbidProjectionsInAnnotationProperties", "ForbidRecursiveDelegateExpressions", "ForbidReferencingToUnderscoreNamedParameterOfCatchBlock", "ForbidReifiedTypeParametersOnTypeAliases", "ForbidReturnInExpressionBodyWithoutExplicitTypeEdgeCases", "ForbidSuperDelegationToAbstractAnyMethod", "ForbidSuperDelegationToAbstractFakeOverride", "ForbidSyntheticPropertiesWithoutBaseJavaGetter", "ForbidTypeAliasWithMissingDependencyType", "ForbidUpperBoundsViolationOnTypeOperatorAndParameterBounds", "ForbidUsingExpressionTypesWithInaccessibleContent", "ForbidUsingExtensionPropertyTypeParameterInDelegate", "ForbidUsingSupertypesWithInaccessibleContentInTypeArguments", "ForkIsNotSuccessfulWhenNoBranchIsSuccessful", "FunctionReferenceWithDefaultValueAsOtherType", "FunctionTypesWithBigArity", "FunctionalInterfaceConversion", "FunctionalTypeWithExtensionAsSupertype", "GenerateJvmOverloadsAsFinal", "GenericInlineClassParameter", "HoldsInContracts", "IgnoreNullabilityForErasedValueParameters", "ImplicitJvmExposeBoxed", "ImplicitSignedToUnsignedIntegerConversion", "ImproveReportingDiagnosticsOnProtectedMembersOfBaseClass", "ImprovedCapturedTypeApproximationInInference", "ImprovedExhaustivenessChecksIn21", "ImprovedVarianceInCst", "InferMoreImplicationsFromBooleanExpressions", "InferenceCompatibility", "InferenceEnhancementsIn21", "InferenceEnhancementsIn23", "InlineClassImplementationByDelegation", "InlineClasses", "InlineConstVals", "InlineDefaultFunctionalParameters", "InlineLateinit", "InlineProperties", "InnerClassInEnumEntryClass", "InstantiationOfAnnotationClasses", "IntrinsicConstEvaluation", "IrCrossModuleInlinerBeforeKlibSerialization", "IrInlinerBeforeKlibSerialization", "IrIntraModuleInlinerBeforeKlibSerialization", "IrRichCallableReferencesInKlibs", "JavaSamConversionEqualsHashCode", "JavaTypeParameterDefaultRepresentationWithDNN", "JsAllowImplementingFunctionInterface", "JsAllowInvalidCharsIdentifiersEscaping", "JsAllowLongInExportedDeclarations", "JsAllowValueClassesInExternals", "JsEnableExtensionFunctionInExternals", "JsExternalPropertyParameters", "JvmDefaultEnableByDefault", "JvmFieldInInterface", "JvmIndyAllowLambdasWithAnnotations", "JvmInlineValueClasses", "JvmIrEnabledByDefault", "JvmNullOutSpilledCoroutineLocals", "JvmPackageName", "JvmPermittedSubclassesAttributeForSealed", "JvmRecordSupport", "JvmStaticInInterface", "KeepNullabilityWhenApproximatingLocalType", "KotlinFunInterfaceConstructorReference", "LateinitLocalVariables", "LateinitTopLevelProperties", "LightweightLambdas", "LocalDelegatedProperties", "MangleCallsToJavaMethodsWithValueClasses", "MangleClassMembersReturningInlineClasses", "MixedNamedArgumentsInTheirOwnPosition", "ModifierNonBuiltinSuspendFunError", "MultiDollarInterpolation", "MultiPlatformProjects", "MultiplatformRestrictions", "NameBasedDestructuring", "NativeJsProhibitLateinitIsInitializedIntrinsicWithoutPrivateAccess", "NestedClassesInAnnotations", "NestedClassesInEnumEntryShouldBeInner", "NestedTypeAliases", "NewCapturedReceiverFieldNamingConvention", "NewInference", "NoAdditionalErrorsInK1DiagnosticReporter", "NoBuilderInferenceWithoutAnnotationRestriction", "NoConstantValueAttributeForNonConstVals", "NoDelegationToJavaDefaultInterfaceMembers", "NoDeprecationOnDeprecatedEnumEntries", "NoSourceCodeInNotNullAssertionExceptions", "NonParenthesizedAnnotationsOnFunctionalTypes", "NormalizeConstructorCalls", "NullabilityAssertionOnExtensionReceiver", "NullableNothingInReifiedPosition", "ObjCSignatureOverrideAnnotation", "OperatorProvideDelegate", "OperatorRem", "OptInContagiousSignatures", "OptInRelease", "OverloadResolutionByLambdaReturnType", "PCLAEnhancementsIn21", "PackagePrivateFileClassesWithAllPrivateMembers", "ParseLambdaWithSuspendModifier", "PartiallySpecifiedTypeArguments", "PolymorphicSignature", "PreciseSimplificationToFlexibleLowerConstraint", "PreferDependentTypeVariablesWithProperArgumentConstraint", "PreferJavaFieldOverload", "PrioritizedEnumEntries", "PrivateInFileEffectiveVisibility", "ProgressionsChangingResolve", "ProhibitAccessToEnumCompanionMembersInEnumConstructorCall", "ProhibitAccessToInvisibleSetterFromDerivedClass", "ProhibitAllMultipleDefaultsInheritedFromSupertypes", "ProhibitArrayLiteralsInCompanionOfAnnotation", "ProhibitAssigningSingleElementsToVarargsInNamedForm", "ProhibitComparisonOfIncompatibleClasses", "ProhibitComparisonOfIncompatibleEnums", "ProhibitConcurrentHashMapContains", "ProhibitConfusingSyntaxInWhenBranches", "ProhibitConstructorAndSupertypeOnTypealiasWithTypeProjection", "ProhibitConstructorCallOnFunctionalSupertype", "ProhibitCyclesInAnnotations", "ProhibitDataClassesOverridingCopy", "ProhibitDefaultArgumentsInExpectActualizedByFakeOverride", "ProhibitEnumDeclaringClass", "ProhibitErroneousExpressionsInAnnotationsWithUseSiteTargets", "ProhibitGenericArrayClassLiteral", "ProhibitGenericQualifiersOnConstructorCalls", "ProhibitIllegalValueParameterUsageInDefaultArguments", "ProhibitImplementingVarByInheritedVal", "ProhibitInlineModifierOnPrimaryConstructorParameters", "ProhibitInnerClassesOfGenericClassExtendingThrowable", "ProhibitIntersectionReifiedTypeParameter", "ProhibitInvalidCharsInNativeIdentifiers", "ProhibitInvisibleAbstractMethodsInSuperclasses", "ProhibitJavaClassInheritingPrivateKotlinClass", "ProhibitJvmFieldOnOverrideFromInterfaceInPrimaryConstructor", "ProhibitJvmOverloadsOnConstructorsOfAnnotationClasses", "ProhibitLocalAnnotations", "ProhibitMissedMustBeInitializedWhenThereIsNoPrimaryConstructor", "ProhibitNonConstValuesAsVarargsInAnnotations", "ProhibitNonExhaustiveIfInRhsOfElvis", "ProhibitNonExhaustiveWhenOnAlgebraicTypes", "ProhibitNonReifiedArraysAsReifiedTypeArguments", "ProhibitNothingAsCatchParameter", "ProhibitNullableTypeThroughTypealias", "ProhibitOpenValDeferredInitialization", "ProhibitOperatorMod", "ProhibitPrivateOperatorCallInInline", "ProhibitProtectedCallFromInline", "ProhibitProtectedConstructorCallFromPublicInline", "ProhibitQualifiedAccessToUninitializedEnumEntry", "ProhibitRepeatedUseSiteTargetAnnotations", "ProhibitReturningIncorrectNullabilityValuesFromSamConstructorLambdaOfJdkInterfaces", "ProhibitScriptTopLevelInnerClasses", "ProhibitSelfCallsInNestedObjects", "ProhibitSimplificationOfNonTrivialConstBooleanExpressions", "ProhibitSingleNamedFunctionAsExpression", "ProhibitSmartcastsOnLocalDelegatedProperty", "ProhibitSmartcastsOnPropertyFromAlienBaseClass", "ProhibitSmartcastsOnPropertyFromAlienBaseClassInheritedInInvisibleClass", "ProhibitSpreadOnSignaturePolymorphicCall", "ProhibitSuperCallsFromPublicInline", "ProhibitSynchronizationByValueClassesAndPrimitives", "ProhibitTailrecOnVirtualMember", "ProhibitTypeParametersForLocalVariables", "ProhibitTypeParametersInAnonymousObjects", "ProhibitTypeParametersInClassLiteralsInAnnotationArguments", "ProhibitTypealiasAsCallableQualifierInImport", "ProhibitUseSiteGetTargetAnnotations", "ProhibitUseSiteTargetAnnotationsOnSuperTypes", "ProhibitUsingNullableTypeParameterAgainstNotNullAnnotated", "ProhibitVarargAsArrayAfterSamArgument", "ProhibitVisibilityOfNestedClassifiersFromSupertypesOfCompanion", "ProperArrayConventionSetterWithDefaultCalls", "ProperCheckAnnotationsTargetInTypeUsePositions", "ProperComputationOrderOfTailrecDefaultParameters", "ProperEqualityChecksInBuilderInferenceCalls", "ProperExhaustivenessCheckForJavaOpenSealedClass", "ProperFieldAccessGenerationForFieldAccessShadowedByKotlinProperty", "ProperFinally", "ProperForInArrayLoopRangeVariableAssignmentSemantic", "ProperIeee754Comparisons", "ProperInlineFromHigherPlatformDiagnostic", "ProperInternalVisibilityCheckInImportingScope", "ProperTypeInferenceConstraintsProcessing", "ProperUninitializedEnumEntryAccessAnalysis", "ProperVisibilityForCompanionObjectInstanceField", "PropertyParamAnnotationDefaultTargetMode", "QualifiedSupertypeMayBeExtendedByOtherSupertype", "RangeUntilOperator", "ReadDeserializedContracts", "ReferencesToSyntheticJavaProperties", "RefineTypeCheckingOnAssignmentsToJavaFields", "RefinedSamAdaptersPriority", "ReleaseCoroutines", "RepeatableAnnotationContainerConstraints", "RepeatableAnnotations", "ReportErrorsForComparisonOperators", "ReportErrorsOnRecursiveTypeInsidePlusAssignment", "ReportExposedTypeForInternalTypeParameterBounds", "ReportExposedTypeForMoreCasesOfTypeParameterBounds", "ReportMissingUpperBoundsViolatedErrorOnAbbreviationAtSupertypes", "ReportNonVarargSpreadOnGenericCalls", "ReportTypeVarianceConflictOnQualifierArguments", "RequiredPrimaryConstructorDelegationCallInEnums", "ResolveTopLevelLambdasAsSyntheticCallArgument", "RestrictRetentionForExpressionAnnotations", "RestrictReturnStatementTarget", "RestrictionOfValReassignmentViaBackingField", "RestrictionOfWrongAnnotationsWithUseSiteTargetsOnTypes", "SafeCallBoundSmartCasts", "SafeCallsAreAlwaysNullable", "SafeCastCheckBoundSmartCasts", "SamConversionForKotlinFunctions", "SamConversionPerArgument", "SamWrapperClassesAreSynthetic", "SealedInterfaces", "ShortSyntaxForPropertyGetters", "SingleUnderscoreForParameterName", "SkipStandaloneScriptsInSourceRoots", "SoundSmartCastsAfterTry", "SoundSmartcastForEnumEntries", "StopPropagatingDeprecationThroughOverrides", "StrictJavaNullabilityAssertions", "StrictOnlyInputTypesChecks", "StricterConstraintIncorporationRecursionDetector", "SupportEffectivelyFinalInExpectActualVisibilityCheck", "SupportJavaErrorEnhancementOfArgumentsOfWarningLevelEnhanced", "SuspendConversion", "SuspendFunctionAsSupertype", "SuspendFunctionsInFunInterfaces", "SuspendOnlySamConversions", "SynchronizedSuspendError", "TakeIntoAccountEffectivelyFinalInMustBeInitializedCheck", "ThrowNpeOnExplicitEqualsForBoxedNull", "TopLevelSealedInheritance", "TrailingCommas", "TurnTypeCheckWarningsIntoErrors", "TypeAliases", "TypeEnhancementImprovementsInStrictMode", "TypeInferenceOnCallsWithSelfTypes", "TypeInferenceOnGenericsForCallableReferences", "UnderscoresInNumericLiterals", "UnitConversionsOnArbitraryExpressions", "UnnamedLocalVariables", "UnrestrictedBuilderInference", "UnstableSmartcastOnDelegatedProperties", "UseBuilderInferenceOnlyIfNeeded", "UseBuilderInferenceWithoutAnnotation", "UseCallsInPlaceEffect", "UseConsistentRulesForPrivateConstructorsOfSealedClasses", "UseCorrectExecutionOrderForVarargArguments", "UseGetterNameForPropertyAnnotationsMethodOnJvm", "UseReturnsEffect", "ValueClasses", "ValueClassesSecondaryConstructorWithBody", "VariableDeclarationInWhenSubject", "WarnAboutNonExhaustiveWhenOnAlgebraicTypes", "WarningOnMainUnusedParameter", "WhenGuards", "YieldIsNoMoreReserved", "JsAllowExportingSuspendFunctions", "JsStaticInInterface", "ImprovedExhaustivenessChecksIn23", "RevertSimplificationOfFlexibleUpperConstraintWithDnnLowerBound", "ForbidTypeAliasToCompilerRequiredAnnotation", "EqualityConstraintForOperatorsUnderAssignments", "KlibAnnotationsInMetadata", "LocalTypeAliases", "CollectionLiterals", "ForbidClassLiteralWithPotentiallyNullableReifiedLhs", "ForbidArrayLiteralsInNonAnnotationContexts", "DisableMaxTypeDepthFromInitialConstraints", "ProhibitExtendingAnnotationClasses", "ForbidOverriddenDefaultParametersInInline", "RefinedVarargConversionRulesForCallableReferences", "ExplicitContextArguments", "ForbidRootIdePackageInCli", "DisableSimplificationOfFlexibleUpperConstraintWithDnnLowerBound", "ImprovedResolutionInSecondaryConstructors", "ReportUpperBoundViolatedInCallArgumentInteractions", "ProperlyCheckUpperBoundsViolationsWhenCreatingFreshVariables", "LocalVariableTargetedAnnotationOnDestructuring", "ChangedIntersectionWithRecursiveCapturedType", "LexicographicVariableReadinessCalculation", "ApproximateLocalTypesInPublicDeclarations", "ReportOptInUsageOnCompanionObjectAccesses", "SkipHiddenObjectsInResolution", "TreatProvideDelegateAsConventionName", "ForbidPrivateToThisUnboundCallableReferences", "JvmEnhancedBridges", "OverloadResolutionSpecificityForEnhancedJvmPrimitiveWrappers", "ProperSupportOfInnerClassesInCallableReferenceLHS", "CacheLocalVariableScopes", "ForbidExternalEnumEntriesAndPrimaryConstructorProperties", "DiscriminateNothingAsNullabilityConstraintInInference", "JsExportInterfacesInImplementableWay", "ResolveEqualsRhsInDependentContextWithCompletion", "JsExposedNotExportedSuperInterfaceApiByExportedOne", "ImprovedExhaustivenessCheckForSubjectVariable24", "JvmLoadAnnotationsOnAnnotationProperties", "WrapContinuationForTailCallFunctions", "ProhibitFunctionCallsInDefaultParametersOfInline", "JvmInlineMultiFieldValueClasses", "ForbidUselessTypeArgumentsIn25", "AllowNamedCompanionForJsExport", "AllowInterfaceNestedClassesInJsExport", "ReportTypeVarianceConflictsInDnnAndFlexible", "DontMakeExplicitNullableJavaTypeArgumentsFlexible", "CompanionBlocksAndExtensions", "NativeTestProcessorBeforeSerialization", "FixedUninitializedEnumCompanionCheck", "JsAllowExportingValueClasses", "EagerLambdaAnalysis", "NoDeprecationOnImportStatements", "ExportKDocDocumentationToKlib", "InferThrowableTypeParameterToUpperBound", "ReportDeprecationsOfOuterImportedClasses", "JsAllowExportingStarProjection", "JsAllowExportingAnnotationClasses", "ForbidAnnotationsTypeArgumentsAndParenthesesForPackageQualifier", "EnhancementsOfSecondIncorporationKind25", "ForbidArrayOfNothingInLhsOfClassLiteral", "ReportReificationProblemsInDnnAndFlexible", "AllowReturnsResultOfContract", "AllowExpectValueClassesWithNoPrimaryConstructor", "ProhibitCallableReferencesToStaticsWithTypeArgumentsOrNullMarkInLhs", "ForbidOperatorEqualsInEnumEntriesAndAnonymousObjects", "ReportDeprecationsOfClassifiersInImplicitInvokes", "CallCompletionRefinementsFor25", "ForbidValueClassRecursionViaTypeParameters", "CallableReferencesToContextual", "FullValueClasses", "FixesForIntersectionTypesIn25", "CollectionLiteralsBasedAnnotationResolution", "JsExportingSuspendLambdas", "ForbidAliasedRepeatedAnnotationsOnExpressionsInMultiplatform" ]
+        "language_feature" : [ "AbstractClassMemberNotImplementedWithIntermediateAbstractClass", "AdaptedCallableReferenceAgainstReflectiveType", "AdditionalBuiltInsMembers", "AllowAccessToProtectedFieldFromSuperCompanion", "AllowAnyAsAnActualTypeForExpectInterface", "AllowAssigningArrayElementsToVarargsInNamedFormForFunctions", "AllowBreakAndContinueInsideWhen", "AllowCallingJavaOpenSealedClassConstructor", "AllowCheckForErasedTypesInContracts", "AllowContractsForCustomFunctions", "AllowContractsForNonOverridableMembers", "AllowContractsOnPropertyAccessors", "AllowContractsOnSomeOperators", "AllowDnnTypeOverridingFlexibleType", "AllowEagerSupertypeAccessibilityChecks", "AllowEmptyIntersectionsInResultTypeResolver", "AllowExpectDeclarationsInJsExport", "AllowNullOperatorsForResult", "AllowNullOperatorsForResultAndResultReturnTypeByDefault", "AllowReifiedGenericsInContracts", "AllowReifiedTypeInCatchClause", "AllowReturnInExpressionBodyWithExplicitType", "AllowSealedInheritorsInDifferentFilesOfSamePackage", "AllowSuperCallToJavaInterface", "AnnotationAllUseSiteTarget", "AnnotationDefaultTargetMigrationWarning", "AnnotationsInMetadata", "ApproximateAnonymousReturnTypesInPrivateInlineFunctions", "AssigningArraysToVarargsInNamedFormInAnnotations", "AvoidApproximationOfRecursiveCapturedTypesWithNoReason", "AvoidWrongOptimizationOfTypeOperatorsOnValueClasses", "BareArrayClassLiteral", "BoundCallableReferences", "BreakContinueInInlineLambdas", "CallableReferenceOverloadResolutionInLambda", "CallableReferencesToClassMembersWithEmptyLHS", "CapturedInClosureSmartCasts", "CapturedTypeApproximationReworked", "CheckLambdaAgainstTypeVariableContradictionInResolution", "CheckOptInOnPureEnumEntries", "CheckPackageInfoNullnessAnnotations", "ClassTypeParameterAnnotations", "ConditionImpliesReturnsContracts", "ConsiderExtensionReceiverFromConstrainsInLambda", "ConsiderForkPointsWhenCheckingContradictions", "ContextParameters", "ContextReceivers", "ContextSensitiveEnumResolutionInWhen", "ContextSensitiveResolutionUsingExpectedType", "ContractSyntaxV2", "ContractsOnCallsWithImplicitReceiver", "Coroutines", "CorrectSourceMappingSyntax", "CorrectSpecificityCheckForSignedAndUnsigned", "CustomEqualsInValueClasses", "DataClassCopyRespectsConstructorVisibility", "DataClassInheritance", "DataFlowBasedExhaustiveness", "DataObjects", "DefaultImportOfPackageKotlinComparisons", "DefaultMethodsCallFromJava6TargetError", "DefinitelyNonNullableTypes", "DeprecateNameMismatchInShortDestructuringWithParentheses", "DeprecatedFieldForInvisibleCompanionObject", "DestructuringLambdaParameters", "DfaBooleanVariables", "DirectJavaActualization", "DisableCheckingChangedProgressionsResolve", "DisableCompatibilityModeForNewInference", "DisableWarningsForIdentitySensitiveOperationsOnValueClassesAndPrimitives", "DisableWarningsForValueBasedJavaClasses", "DiscriminateSuspendInOverloadResolution", "DivisionByZeroInConstantExpressions", "DoNotGenerateThrowsForDelegatedKotlinMembers", "DoNotRunSuspendConversionForLambdaReturnStatements", "DontCreateSyntheticPropertiesWithoutBaseJavaGetter", "DontIgnoreUpperBoundViolatedOnImplicitArguments", "DontLoseDiagnosticsDuringOverloadResolutionByReturnType", "DontMakeExplicitJavaTypeArgumentsFlexible", "DslMarkerOnFunctionTypeReceiver", "DslMarkersSupport", "EliminateAmbiguitiesOnInheritedSamInterfaces", "EliminateAmbiguitiesWithExternalTypeParameters", "ElvisInferenceImprovementsIn21", "EnableDfaWarningsInK2", "EnableNameBasedDestructuringShortForm", "EnhanceNullabilityOfPrimitiveArrays", "EnumEntries", "ErrorAboutDataClassCopyVisibilityChange", "ExpectActualClasses", "ExpectRefinement", "ExpectedTypeFromCast", "ExperimentalBuilderInference", "ExplicitBackingFields", "ExportKlibToOlderAbiVersion", "ExtendedMainConvention", "FixationEnhancementsIn22", "ForbidAnnotationsWithUseSiteTargetOnExpressions", "ForbidCaptureInlinableLambdasInJsCode", "ForbidCompanionInLocalInnerClass", "ForbidCrossFileIrFieldAccessInKlibs", "ForbidEnumEntryNamedEntries", "ForbidExposingLessVisibleTypesInInline", "ForbidExposingPackagePrivateInInternal", "ForbidExposingTypesInPrimaryConstructorProperties", "ForbidExposureOfPrivateTypesInNonPrivateInlineFunctionsInKlibs", "ForbidExtensionCallsOnInlineFunctionalParameters", "ForbidExtensionFunctionTypeOnNonFunctionTypes", "ForbidFieldAnnotationsOnAnnotationParameters", "ForbidGetSetValueWithTooManyParameters", "ForbidImplementationByDelegationWithDifferentGenericSignature", "ForbidImplicitTypeAnnotationWithMissingDependency", "ForbidInferOfInvisibleTypeAsReifiedOrVararg", "ForbidInferOfInvisibleTypeAsReifiedVarargOrReturnType", "ForbidInferringPostponedTypeVariableIntoDeclaredUpperBound", "ForbidInferringTypeVariablesIntoEmptyIntersection", "ForbidInitializationBeforeDeclarationInAnonymous", "ForbidInlineEnumEntries", "ForbidJvmAnnotationsOnAnnotationParameters", "ForbidJvmSerializableLambdaOnInlinedFunctionLiterals", "ForbidLambdaParameterWithMissingDependencyType", "ForbidObjectDelegationToItself", "ForbidParenthesizedLhsInAssignments", "ForbidProjectionsInAnnotationProperties", "ForbidRecursiveDelegateExpressions", "ForbidReferencingToUnderscoreNamedParameterOfCatchBlock", "ForbidReifiedTypeParametersOnTypeAliases", "ForbidReturnInExpressionBodyWithoutExplicitTypeEdgeCases", "ForbidSuperDelegationToAbstractAnyMethod", "ForbidSuperDelegationToAbstractFakeOverride", "ForbidSyntheticPropertiesWithoutBaseJavaGetter", "ForbidTypeAliasWithMissingDependencyType", "ForbidUpperBoundsViolationOnTypeOperatorAndParameterBounds", "ForbidUsingExpressionTypesWithInaccessibleContent", "ForbidUsingExtensionPropertyTypeParameterInDelegate", "ForbidUsingSupertypesWithInaccessibleContentInTypeArguments", "ForkIsNotSuccessfulWhenNoBranchIsSuccessful", "FunctionReferenceWithDefaultValueAsOtherType", "FunctionTypesWithBigArity", "FunctionalInterfaceConversion", "FunctionalTypeWithExtensionAsSupertype", "GenerateJvmOverloadsAsFinal", "GenericInlineClassParameter", "HoldsInContracts", "IgnoreNullabilityForErasedValueParameters", "ImplicitJvmExposeBoxed", "ImplicitSignedToUnsignedIntegerConversion", "ImproveReportingDiagnosticsOnProtectedMembersOfBaseClass", "ImprovedCapturedTypeApproximationInInference", "ImprovedExhaustivenessChecksIn21", "ImprovedVarianceInCst", "InferMoreImplicationsFromBooleanExpressions", "InferenceCompatibility", "InferenceEnhancementsIn21", "InferenceEnhancementsIn23", "InlineClassImplementationByDelegation", "InlineClasses", "InlineConstVals", "InlineDefaultFunctionalParameters", "InlineLateinit", "InlineProperties", "InnerClassInEnumEntryClass", "InstantiationOfAnnotationClasses", "IntrinsicConstEvaluation", "IrCrossModuleInlinerBeforeKlibSerialization", "IrInlinerBeforeKlibSerialization", "IrIntraModuleInlinerBeforeKlibSerialization", "IrRichCallableReferencesInKlibs", "JavaSamConversionEqualsHashCode", "JavaTypeParameterDefaultRepresentationWithDNN", "JsAllowImplementingFunctionInterface", "JsAllowInvalidCharsIdentifiersEscaping", "JsAllowLongInExportedDeclarations", "JsAllowValueClassesInExternals", "JsEnableExtensionFunctionInExternals", "JsExternalPropertyParameters", "JvmDefaultEnableByDefault", "JvmFieldInInterface", "JvmIndyAllowLambdasWithAnnotations", "JvmInlineValueClasses", "JvmIrEnabledByDefault", "JvmNullOutSpilledCoroutineLocals", "JvmPackageName", "JvmPermittedSubclassesAttributeForSealed", "JvmRecordSupport", "JvmStaticInInterface", "KeepNullabilityWhenApproximatingLocalType", "KotlinFunInterfaceConstructorReference", "LateinitLocalVariables", "LateinitTopLevelProperties", "LightweightLambdas", "LocalDelegatedProperties", "MangleCallsToJavaMethodsWithValueClasses", "MangleClassMembersReturningInlineClasses", "MixedNamedArgumentsInTheirOwnPosition", "ModifierNonBuiltinSuspendFunError", "MultiDollarInterpolation", "MultiPlatformProjects", "MultiplatformRestrictions", "NameBasedDestructuring", "NativeJsProhibitLateinitIsInitializedIntrinsicWithoutPrivateAccess", "NestedClassesInAnnotations", "NestedClassesInEnumEntryShouldBeInner", "NestedTypeAliases", "NewCapturedReceiverFieldNamingConvention", "NewInference", "NoAdditionalErrorsInK1DiagnosticReporter", "NoBuilderInferenceWithoutAnnotationRestriction", "NoConstantValueAttributeForNonConstVals", "NoDelegationToJavaDefaultInterfaceMembers", "NoDeprecationOnDeprecatedEnumEntries", "NoSourceCodeInNotNullAssertionExceptions", "NonParenthesizedAnnotationsOnFunctionalTypes", "NormalizeConstructorCalls", "NullabilityAssertionOnExtensionReceiver", "NullableNothingInReifiedPosition", "ObjCSignatureOverrideAnnotation", "OperatorProvideDelegate", "OperatorRem", "OptInContagiousSignatures", "OptInRelease", "OverloadResolutionByLambdaReturnType", "PCLAEnhancementsIn21", "PackagePrivateFileClassesWithAllPrivateMembers", "ParseLambdaWithSuspendModifier", "PartiallySpecifiedTypeArguments", "PolymorphicSignature", "PreciseSimplificationToFlexibleLowerConstraint", "PreferDependentTypeVariablesWithProperArgumentConstraint", "PreferJavaFieldOverload", "PrioritizedEnumEntries", "PrivateInFileEffectiveVisibility", "ProgressionsChangingResolve", "ProhibitAccessToEnumCompanionMembersInEnumConstructorCall", "ProhibitAccessToInvisibleSetterFromDerivedClass", "ProhibitAllMultipleDefaultsInheritedFromSupertypes", "ProhibitArrayLiteralsInCompanionOfAnnotation", "ProhibitAssigningSingleElementsToVarargsInNamedForm", "ProhibitComparisonOfIncompatibleClasses", "ProhibitComparisonOfIncompatibleEnums", "ProhibitConcurrentHashMapContains", "ProhibitConfusingSyntaxInWhenBranches", "ProhibitConstructorAndSupertypeOnTypealiasWithTypeProjection", "ProhibitConstructorCallOnFunctionalSupertype", "ProhibitCyclesInAnnotations", "ProhibitDataClassesOverridingCopy", "ProhibitDefaultArgumentsInExpectActualizedByFakeOverride", "ProhibitEnumDeclaringClass", "ProhibitErroneousExpressionsInAnnotationsWithUseSiteTargets", "ProhibitGenericArrayClassLiteral", "ProhibitGenericQualifiersOnConstructorCalls", "ProhibitIllegalValueParameterUsageInDefaultArguments", "ProhibitImplementingVarByInheritedVal", "ProhibitInlineModifierOnPrimaryConstructorParameters", "ProhibitInnerClassesOfGenericClassExtendingThrowable", "ProhibitIntersectionReifiedTypeParameter", "ProhibitInvalidCharsInNativeIdentifiers", "ProhibitInvisibleAbstractMethodsInSuperclasses", "ProhibitJavaClassInheritingPrivateKotlinClass", "ProhibitJvmFieldOnOverrideFromInterfaceInPrimaryConstructor", "ProhibitJvmOverloadsOnConstructorsOfAnnotationClasses", "ProhibitLocalAnnotations", "ProhibitMissedMustBeInitializedWhenThereIsNoPrimaryConstructor", "ProhibitNonConstValuesAsVarargsInAnnotations", "ProhibitNonExhaustiveIfInRhsOfElvis", "ProhibitNonExhaustiveWhenOnAlgebraicTypes", "ProhibitNonReifiedArraysAsReifiedTypeArguments", "ProhibitNothingAsCatchParameter", "ProhibitNullableTypeThroughTypealias", "ProhibitOpenValDeferredInitialization", "ProhibitOperatorMod", "ProhibitPrivateOperatorCallInInline", "ProhibitProtectedCallFromInline", "ProhibitProtectedConstructorCallFromPublicInline", "ProhibitQualifiedAccessToUninitializedEnumEntry", "ProhibitRepeatedUseSiteTargetAnnotations", "ProhibitReturningIncorrectNullabilityValuesFromSamConstructorLambdaOfJdkInterfaces", "ProhibitScriptTopLevelInnerClasses", "ProhibitSelfCallsInNestedObjects", "ProhibitSimplificationOfNonTrivialConstBooleanExpressions", "ProhibitSingleNamedFunctionAsExpression", "ProhibitSmartcastsOnLocalDelegatedProperty", "ProhibitSmartcastsOnPropertyFromAlienBaseClass", "ProhibitSmartcastsOnPropertyFromAlienBaseClassInheritedInInvisibleClass", "ProhibitSpreadOnSignaturePolymorphicCall", "ProhibitSuperCallsFromPublicInline", "ProhibitSynchronizationByValueClassesAndPrimitives", "ProhibitTailrecOnVirtualMember", "ProhibitTypeParametersForLocalVariables", "ProhibitTypeParametersInAnonymousObjects", "ProhibitTypeParametersInClassLiteralsInAnnotationArguments", "ProhibitTypealiasAsCallableQualifierInImport", "ProhibitUseSiteGetTargetAnnotations", "ProhibitUseSiteTargetAnnotationsOnSuperTypes", "ProhibitUsingNullableTypeParameterAgainstNotNullAnnotated", "ProhibitVarargAsArrayAfterSamArgument", "ProhibitVisibilityOfNestedClassifiersFromSupertypesOfCompanion", "ProperArrayConventionSetterWithDefaultCalls", "ProperCheckAnnotationsTargetInTypeUsePositions", "ProperComputationOrderOfTailrecDefaultParameters", "ProperEqualityChecksInBuilderInferenceCalls", "ProperExhaustivenessCheckForJavaOpenSealedClass", "ProperFieldAccessGenerationForFieldAccessShadowedByKotlinProperty", "ProperFinally", "ProperForInArrayLoopRangeVariableAssignmentSemantic", "ProperIeee754Comparisons", "ProperInlineFromHigherPlatformDiagnostic", "ProperInternalVisibilityCheckInImportingScope", "ProperTypeInferenceConstraintsProcessing", "ProperUninitializedEnumEntryAccessAnalysis", "ProperVisibilityForCompanionObjectInstanceField", "PropertyParamAnnotationDefaultTargetMode", "QualifiedSupertypeMayBeExtendedByOtherSupertype", "RangeUntilOperator", "ReadDeserializedContracts", "ReferencesToSyntheticJavaProperties", "RefineTypeCheckingOnAssignmentsToJavaFields", "RefinedSamAdaptersPriority", "ReleaseCoroutines", "RepeatableAnnotationContainerConstraints", "RepeatableAnnotations", "ReportErrorsForComparisonOperators", "ReportErrorsOnRecursiveTypeInsidePlusAssignment", "ReportExposedTypeForInternalTypeParameterBounds", "ReportExposedTypeForMoreCasesOfTypeParameterBounds", "ReportMissingUpperBoundsViolatedErrorOnAbbreviationAtSupertypes", "ReportNonVarargSpreadOnGenericCalls", "ReportTypeVarianceConflictOnQualifierArguments", "RequiredPrimaryConstructorDelegationCallInEnums", "ResolveTopLevelLambdasAsSyntheticCallArgument", "RestrictRetentionForExpressionAnnotations", "RestrictReturnStatementTarget", "RestrictionOfValReassignmentViaBackingField", "RestrictionOfWrongAnnotationsWithUseSiteTargetsOnTypes", "SafeCallBoundSmartCasts", "SafeCallsAreAlwaysNullable", "SafeCastCheckBoundSmartCasts", "SamConversionForKotlinFunctions", "SamConversionPerArgument", "SamWrapperClassesAreSynthetic", "SealedInterfaces", "ShortSyntaxForPropertyGetters", "SingleUnderscoreForParameterName", "SkipStandaloneScriptsInSourceRoots", "SoundSmartCastsAfterTry", "SoundSmartcastForEnumEntries", "StopPropagatingDeprecationThroughOverrides", "StrictJavaNullabilityAssertions", "StrictOnlyInputTypesChecks", "StricterConstraintIncorporationRecursionDetector", "SupportEffectivelyFinalInExpectActualVisibilityCheck", "SupportJavaErrorEnhancementOfArgumentsOfWarningLevelEnhanced", "SuspendConversion", "SuspendFunctionAsSupertype", "SuspendFunctionsInFunInterfaces", "SuspendOnlySamConversions", "SynchronizedSuspendError", "TakeIntoAccountEffectivelyFinalInMustBeInitializedCheck", "ThrowNpeOnExplicitEqualsForBoxedNull", "TopLevelSealedInheritance", "TrailingCommas", "TurnTypeCheckWarningsIntoErrors", "TypeAliases", "TypeEnhancementImprovementsInStrictMode", "TypeInferenceOnCallsWithSelfTypes", "TypeInferenceOnGenericsForCallableReferences", "UnderscoresInNumericLiterals", "UnitConversionsOnArbitraryExpressions", "UnnamedLocalVariables", "UnrestrictedBuilderInference", "UnstableSmartcastOnDelegatedProperties", "UseBuilderInferenceOnlyIfNeeded", "UseBuilderInferenceWithoutAnnotation", "UseCallsInPlaceEffect", "UseConsistentRulesForPrivateConstructorsOfSealedClasses", "UseCorrectExecutionOrderForVarargArguments", "UseGetterNameForPropertyAnnotationsMethodOnJvm", "UseReturnsEffect", "ValueClasses", "ValueClassesSecondaryConstructorWithBody", "VariableDeclarationInWhenSubject", "WarnAboutNonExhaustiveWhenOnAlgebraicTypes", "WarningOnMainUnusedParameter", "WhenGuards", "YieldIsNoMoreReserved", "JsAllowExportingSuspendFunctions", "JsStaticInInterface", "ImprovedExhaustivenessChecksIn23", "RevertSimplificationOfFlexibleUpperConstraintWithDnnLowerBound", "ForbidTypeAliasToCompilerRequiredAnnotation", "EqualityConstraintForOperatorsUnderAssignments", "KlibAnnotationsInMetadata", "LocalTypeAliases", "CollectionLiterals", "ForbidClassLiteralWithPotentiallyNullableReifiedLhs", "ForbidArrayLiteralsInNonAnnotationContexts", "DisableMaxTypeDepthFromInitialConstraints", "ProhibitExtendingAnnotationClasses", "ForbidOverriddenDefaultParametersInInline", "RefinedVarargConversionRulesForCallableReferences", "ExplicitContextArguments", "ForbidRootIdePackageInCli", "DisableSimplificationOfFlexibleUpperConstraintWithDnnLowerBound", "ImprovedResolutionInSecondaryConstructors", "ReportUpperBoundViolatedInCallArgumentInteractions", "ProperlyCheckUpperBoundsViolationsWhenCreatingFreshVariables", "LocalVariableTargetedAnnotationOnDestructuring", "ChangedIntersectionWithRecursiveCapturedType", "LexicographicVariableReadinessCalculation", "ApproximateLocalTypesInPublicDeclarations", "ReportOptInUsageOnCompanionObjectAccesses", "SkipHiddenObjectsInResolution", "TreatProvideDelegateAsConventionName", "ForbidPrivateToThisUnboundCallableReferences", "JvmEnhancedBridges", "OverloadResolutionSpecificityForEnhancedJvmPrimitiveWrappers", "ProperSupportOfInnerClassesInCallableReferenceLHS", "CacheLocalVariableScopes", "ForbidExternalEnumEntriesAndPrimaryConstructorProperties", "DiscriminateNothingAsNullabilityConstraintInInference", "JsExportInterfacesInImplementableWay", "ResolveEqualsRhsInDependentContextWithCompletion", "JsExposedNotExportedSuperInterfaceApiByExportedOne", "ImprovedExhaustivenessCheckForSubjectVariable24", "JvmLoadAnnotationsOnAnnotationProperties", "WrapContinuationForTailCallFunctions", "ProhibitFunctionCallsInDefaultParametersOfInline", "JvmInlineMultiFieldValueClasses", "ForbidUselessTypeArgumentsIn25", "AllowNamedCompanionForJsExport", "AllowInterfaceNestedClassesInJsExport", "ReportTypeVarianceConflictsInDnnAndFlexible", "DontMakeExplicitNullableJavaTypeArgumentsFlexible", "CompanionBlocksAndExtensions", "NativeTestProcessorBeforeSerialization", "FixedUninitializedEnumCompanionCheck", "JsAllowExportingValueClasses", "EagerLambdaAnalysis", "NoDeprecationOnImportStatements", "ExportKDocDocumentationToKlib", "InferThrowableTypeParameterToUpperBound", "ReportDeprecationsOfOuterImportedClasses", "JsAllowExportingStarProjection", "JsAllowExportingAnnotationClasses", "ForbidAnnotationsTypeArgumentsAndParenthesesForPackageQualifier", "EnhancementsOfSecondIncorporationKind25", "ForbidArrayOfNothingInLhsOfClassLiteral", "ReportReificationProblemsInDnnAndFlexible", "AllowReturnsResultOfContract", "AllowExpectValueClassesWithNoPrimaryConstructor", "ProhibitCallableReferencesToStaticsWithTypeArgumentsOrNullMarkInLhs", "ForbidOperatorEqualsInEnumEntriesAndAnonymousObjects", "ReportDeprecationsOfClassifiersInImplicitInvokes", "CallCompletionRefinementsFor25", "ForbidValueClassRecursionViaTypeParameters", "CallableReferencesToContextual", "FullValueClasses", "FixesForIntersectionTypesIn25", "CollectionLiteralsBasedAnnotationResolution", "JsExportingSuspendLambdas", "ForbidAliasedRepeatedAnnotationsOnExpressionsInMultiplatform", "StrictEquals" ]
       }
     }
   }, {
@@ -8354,6 +8401,25 @@
         "bucket_601_1000" : [ "{regexp#integer}" ],
         "bucket_71_100" : [ "{regexp#integer}" ],
         "bucket_8_15" : [ "{regexp#integer}" ]
+      }
+    }
+  }, {
+    "id" : "kotlintoolchain",
+    "builds" : [ ],
+    "versions" : [ {
+      "from" : "1"
+    } ],
+    "rules" : {
+      "event_id" : [ "{enum:platforms|project}" ],
+      "event_data" : {
+        "amper_module_files" : [ "{regexp#integer}" ],
+        "amper_project" : [ "{enum#boolean}" ],
+        "amper_template_files" : [ "{regexp#integer}" ],
+        "gradle_files" : [ "{regexp#integer}" ],
+        "gradle_interop" : [ "{enum#boolean}" ],
+        "module.platform_name" : [ "{enum:js|jvm|wasm|android|linuxx64|macosx64|macosarm64|iossimulatorarm64|iosx64|linuxarm64|watchossimulatorarm64|watchosx64|watchosarm32|watchosarm64|tvossimulatorarm64|tvosx64|tvosarm64|iosarm64|androidnativearm32|androidnativearm64|androidnativex86|androidnativex64|mingwx64|watchosdevicearm64}" ],
+        "module.platform_percent" : [ "{regexp#integer}" ],
+        "module.type" : [ "{enum:app|lib}" ]
       }
     }
   }, {
@@ -9494,21 +9560,31 @@
         "agent_locs_changed" : [ "{regexp#integer}" ],
         "agent_locs_removed" : [ "{regexp#integer}" ],
         "agent_name" : [ "{util#chat_agent_name}" ],
+        "auth_method" : [ "{enum:UNKNOWN|JETBRAINS_AI|API_KEY|VERTEX_KEY|VERTEX_ADC|MANAGED_EXTERNALLY|AUTO_SELECTION|EXPLICIT_SELECTION}" ],
         "brave_mode" : [ "{enum#boolean}" ],
+        "cache_bytes" : [ "{regexp#integer}" ],
+        "cache_files" : [ "{regexp#integer}" ],
         "cache_input_tokens" : [ "{regexp#integer}" ],
+        "cache_kind" : [ "{enum:PRE_ITERATION|PRE_EVENT|VFS_EVENT}" ],
+        "cache_limit_reason" : [ "{enum:FILE_COUNT|TOTAL_CACHE_SIZE|FILE_COUNT_AND_TOTAL_CACHE_SIZE|FILE_SIZE|UNKNOWN}" ],
         "cache_output_tokens" : [ "{regexp#integer}" ],
         "chain_id" : [ "{regexp#short_hash}" ],
         "context_size" : [ "{regexp:[0-9]+[km]|unknown}" ],
+        "dispatched_tool_name" : [ "{util#loggable_mcp_tool_name}" ],
         "duration_ms" : [ "{regexp#integer}" ],
         "event_status" : [ "{enum:COMPLETED|IN_PROGRESS|REJECTED|CANCELED|FAILED}" ],
+        "excluded_cached_bytes" : [ "{regexp#integer}" ],
+        "excluded_cached_files" : [ "{regexp#integer}" ],
         "exit_status" : [ "{enum:SUBMIT|CANCELLED|NO_RESULT|FAILED}" ],
+        "file_bytes" : [ "{regexp#integer}" ],
         "file_changes_count" : [ "{regexp#integer}" ],
         "ide_activity_id" : [ "{regexp#integer}" ],
         "input_tokens" : [ "{regexp#integer}" ],
+        "is_excluded" : [ "{enum#boolean}" ],
         "is_user_response_missing" : [ "{enum#boolean}" ],
         "issue_id" : [ "{regexp#short_hash}" ],
         "mode" : [ "{enum:accept-edits|acceptEdits|agent|agent-full-access|ask|auto|auto-approve|autoEdit|autopilot|build|bypass|bypassPermissions|chat|code|debug|default|dontAsk|orchestrator|plan|read-only|yolo|unknown}" ],
-        "model" : [ "{regexp:(?x)\n(\n  [:./-]?\n  (\n     ai21|amazon|anthropic|arcee-ai|auto|big-pickle|claude|clip|code|codex|composer|corethink|default|devstral|fast\n     |flash|free|gemini|gemma|glm|google|gpt|grok|haiku|kilo|kimi|large|lite|local|lyria|max|mimo|mini\n     |minimax|nano|nemotron|nvidia|omni|openai|opencode|openrouter|optimized|opus|plus|preview|pro|qwen|small\n     |sonnet|step|stepfun|super|trinity|x-ai|xiaomi|unknown\n     |[a-z]?[0-9.-]+b?\n   )\n)+}" ],
+        "model" : [ "{regexp:(?x)\n(\n  [:./-]?\n  (\n     ai21|amazon|anthropic|arcee-ai|auto|big-pickle|claude|clip|code|codex|composer|corethink|default|devstral|fast\n     |flash|free|gemini|gemma|glm|google|gpt|grok|haiku|kilo|kimi|large|lite|local|lyria|max|mimo|mini\n     |minimax|nano|nemotron|nvidia|omni|openai|opencode|openrouter|optimized|opus|plus|preview|pro|qwen|small\n     |sonnet|step|stepfun|super|trinity|x-ai|xiaomi|unknown\n     |[a-z]?[0-9.-]+b?\n   )\n)+}", "{regexp:(?xi)((?:[:./-]|\\x20)?(ai21|amazon|anthropic|arcee-ai|auto|big-pickle|claude|clip|code|codex|composer|corethink|default|devstral|fast|flash|free|gemini|gemma|glm|google|gpt|grok|haiku|kilo|kimi|large|lite|local|lyria|max|mimo|mini|minimax|nano|nemotron|nvidia|omni|openai|opencode|openrouter|optimized|opus|plus|preview|pro|qwen|small|sonnet|step|stepfun|super|trinity|x-ai|xiaomi|unknown|[a-z]?[0-9.-]+b?))+}", "{regexp:(?x)([:./-]?(ai21|amazon|anthropic|arcee-ai|auto|big-pickle|claude|clip|code|codex|composer|corethink|default|devstral|fast|flash|free|gemini|gemma|glm|google|gpt|grok|haiku|kilo|kimi|large|lite|local|lyria|max|mimo|mini|minimax|nano|nemotron|nvidia|omni|openai|opencode|openrouter|optimized|opus|plus|preview|pro|qwen|small|sonnet|step|stepfun|super|trinity|x-ai|xiaomi|unknown|[a-z]?[0-9.-]+b?))+}" ],
         "output_tokens" : [ "{regexp#integer}" ],
         "plugin" : [ "{util#plugin}" ],
         "plugin_type" : [ "{util#plugin_type}" ],
@@ -9527,12 +9603,13 @@
         "terminal_command" : [ "{enum:ls|mkdir|cp|mv|rm|rmdir|touch|cat|head|tail|grep|awk|sed|which|where|whereis|type|command|tar|zip|unzip|gzip|7z|curl|wget|ping|ssh|scp|ps|top|kill|uname|whoami|echo|printf|env|export|source|git|svn|hg|gh|glab|make|cmake|gradle|mvn|npm|python|python3|java|node|gcc|eslint|prettier|pylint|black|ktlint|jest|vitest|pytest|rspec|ctest|docker|kubectl|terraform|aws|gcloud|psql|mysql|sqlite3|mongosh|redis-cli|man|jq|openssl|base64|sudo}" ],
         "terminal_exit_code" : [ "{regexp#integer}" ],
         "test_run_result" : [ "{enum:SUCCESS|FAILURE}" ],
+        "tool_name" : [ "{util#loggable_mcp_tool_name}" ],
         "tool_type" : [ "{enum:Build|Test|Mcp|Read|Edit|Run|Search|Download|Plan}", "{enum:TermsOfService|Authentication}" ],
         "user_response" : [ "{enum:ALLOW|ALWAYS_ALLOW|REJECT|TEXT|LET_AGENT_DECIDE|OTHER}" ],
         "view_files_count" : [ "{regexp#integer}" ]
       },
       "enums" : {
-        "__event_id" : [ "agent_generation.rejected", "agent_generation.finished", "agent_generation.started", "task.rollback.file.change.clicked", "agent.installed", "markdown.event.received", "file_changes.approval.request.received", "mcp.approval.request.received", "mcp.event.received", "file_changes.event.received", "ask_request.event.received", "choice_request.event.received", "result.event.received", "test_run.approval.request.received", "tool.approval.request.received", "tool.event.received", "view_files.approval.request.received", "terminal.event.received", "terminal.approval.request.received", "view_files.event.received", "agent_thought.event.received", "test_run.event.received", "agent_generation.start.quota.reported", "agent_generation.end.quota.reported", "config_options.applied", "config_options.requested", "chat_reference.link.clicked" ]
+        "__event_id" : [ "agent_generation.rejected", "agent_generation.finished", "agent_generation.started", "task.rollback.file.change.clicked", "agent.installed", "markdown.event.received", "file_changes.approval.request.received", "mcp.approval.request.received", "mcp.event.received", "file_changes.event.received", "ask_request.event.received", "choice_request.event.received", "result.event.received", "test_run.approval.request.received", "tool.approval.request.received", "tool.event.received", "view_files.approval.request.received", "terminal.event.received", "terminal.approval.request.received", "view_files.event.received", "agent_thought.event.received", "test_run.event.received", "agent_generation.start.quota.reported", "agent_generation.end.quota.reported", "config_options.applied", "config_options.requested", "chat_reference.link.clicked", "file.change.tracking.cache.file.too.large", "file.change.tracking.cache.limit.hit" ]
       }
     },
     "anonymized_fields" : [ {
@@ -9666,7 +9743,7 @@
         "multi_line_enabled" : [ "{enum#boolean}" ],
         "policy" : [ "{enum:Creative|Balanced|Focused}" ],
         "universal_enabled" : [ "{enum#boolean}" ],
-        "ux_mode" : [ "{enum:Independent|LookupItemWhenCollision}" ]
+        "ux_mode" : [ "{enum:Independent|LookupItemWhenCollision}", "{enum:Lookine}" ]
       }
     }
   }, {
@@ -11013,6 +11090,7 @@
         "enabled" : [ "{enum#boolean}" ],
         "enabled_languages" : [ "{util#lang}" ],
         "instant_preview" : [ "{enum:Instant|ConfirmationBased}" ],
+        "provider_kind" : [ "{enum:NONE|ACP|OPENAI_COMPATIBLE|INCEPTION|MISTRAL|JETBRAINS}" ],
         "universal_enabled" : [ "{enum#boolean}" ]
       }
     }
@@ -13228,6 +13306,18 @@
       }
     }
   }, {
+    "id" : "rider.backend.connection",
+    "builds" : [ ],
+    "versions" : [ {
+      "from" : "1"
+    } ],
+    "rules" : {
+      "event_id" : [ "{enum:rider.backend.connection.progress}" ],
+      "event_data" : {
+        "backend_connection_time_ms" : [ "{regexp#integer}" ]
+      }
+    }
+  }, {
     "id" : "rider.completion",
     "builds" : [ ],
     "versions" : [ {
@@ -13239,6 +13329,15 @@
         "autoPopupTimeMs" : [ "{regexp#integer}" ],
         "extensionsWithErrors" : [ "{util#rider_completion_autopopup_language}" ]
       }
+    }
+  }, {
+    "id" : "rider.pushToHint",
+    "builds" : [ ],
+    "versions" : [ {
+      "from" : "1"
+    } ],
+    "rules" : {
+      "event_id" : [ "{enum:activated|deactivated}" ]
     }
   }, {
     "id" : "ruby.debugger.gems",
@@ -13927,7 +14026,7 @@
         "new_macro_expansion_context" : [ "{enum:EXPR|PAT|TYPE|STMT|META_ITEM_VALUE|ITEM}" ]
       },
       "enums" : {
-        "__event_id" : [ "suggested.context.button.clicked", "context.changed", "restore.button.clicked", "case.changed", "dialog.opened", "example.button.clicked" ]
+        "__event_id" : [ "suggested.context.button.clicked", "context.changed", "restore.button.clicked", "case.changed", "dialog.opened", "example.button.clicked", "macro.reexpanding.requested" ]
       }
     }
   }, {
@@ -14060,7 +14159,10 @@
       "from" : "1"
     } ],
     "rules" : {
-      "event_id" : [ "{enum:axum.go.to.route.inlay.action.invoked}" ]
+      "event_id" : [ "{enum:axum.go.to.route.inlay.action.invoked|inlay.was.presented.in.editor|axum.handler.line.marker.was.presented.in.editor}" ],
+      "event_data" : {
+        "inlayType" : [ "{enum:AxumRoute|AxumHandler|Reqwest}" ]
+      }
     }
   }, {
     "id" : "scala.actions",
@@ -17131,5 +17233,5 @@
       "version" : "Unknown|unknown.format|unknown|UNKNOWN|((\\d+\\.?)*\\d+)"
     }
   },
-  "version" : "7377"
+  "version" : "7398"
 }

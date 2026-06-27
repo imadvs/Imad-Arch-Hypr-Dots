@@ -3,6 +3,8 @@
 ""  Uses consistent nmap + <Action>() syntax throughout (no :action <CR>)
 "" =============================================================================
 
+set vimeverywhere
+
 "" --- GENERAL SETTINGS ---
 let mapleader=" "
 let maplocalleader=","

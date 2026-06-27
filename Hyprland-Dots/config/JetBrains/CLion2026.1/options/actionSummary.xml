@@ -64,7 +64,7 @@
       <i c="14" l="1782153880565" />
     </e>
     <e n="AIAssistantHubPopupAction">
-      <i c="8" l="1782154074260" />
+      <i c="12" l="1782488059728" />
     </e>
     <e n="ActivateAIAssistantToolWindow">
       <i c="7" l="1773965841230" />
@@ -100,7 +100,7 @@
       <i c="1" l="1774071043017" />
     </e>
     <e n="CPP.NewCppFile">
-      <i c="2" l="1776201232749" />
+      <i c="3" l="1782488078780" />
     </e>
     <e n="CPP.NewHeaderFile">
       <i c="41" l="1782053916750" />
@@ -109,7 +109,7 @@
       <i c="1" l="1770761150874" />
     </e>
     <e n="ChangeLaf">
-      <i c="7" d="1" l="1781573499385" k="1770154676370" />
+      <i c="10" d="1" l="1782354069815" k="1770154676370" />
     </e>
     <e n="ChangeSplitOrientation">
       <i c="2" l="1781623953403" />
@@ -156,6 +156,9 @@
     <e n="Compare.SameVersion">
       <i c="4" l="1770997884630" />
     </e>
+    <e n="CopyPaths">
+      <i c="2" l="1782488935575" />
+    </e>
     <e n="Debug">
       <i c="9" l="1782154106319" />
     </e>
@@ -163,10 +166,10 @@
       <i c="7" d="7" l="1772372056632" k="1772372056632" />
     </e>
     <e n="EditorBackSpace">
-      <i c="1844" l="1782186805115" />
+      <i c="1878" l="1782489167100" />
     </e>
     <e n="EditorChooseLookupItem">
-      <i c="209" l="1782186763976" />
+      <i c="252" l="1782487162839" />
     </e>
     <e n="EditorChooseLookupItemReplace">
       <i c="32" l="1780929257822" />
@@ -181,10 +184,10 @@
       <i c="2" l="1770152534642" />
     </e>
     <e n="EditorDown">
-      <i c="781" l="1782186763231" />
+      <i c="840" l="1782487136387" />
     </e>
     <e n="EditorEnter">
-      <i c="1225" l="1782186739858" />
+      <i c="1247" l="1782489087029" />
     </e>
     <e n="EditorEscape">
       <i c="72" l="1774063809594" />
@@ -202,7 +205,7 @@
       <i c="22" l="1776367660455" />
     </e>
     <e n="EditorLeft">
-      <i c="222" l="1782142837262" />
+      <i c="225" l="1782408668463" />
     </e>
     <e n="EditorLineEnd">
       <i c="23" l="1778585473115" />
@@ -217,7 +220,7 @@
       <i c="12" l="1778585463471" />
     </e>
     <e n="EditorPaste">
-      <i c="137" l="1782153815665" />
+      <i c="140" l="1782488910662" />
     </e>
     <e n="EditorPasteFromX11">
       <i c="1" l="1776549616044" />
@@ -244,16 +247,16 @@
       <i c="2" l="1781624472015" />
     </e>
     <e n="EditorStartNewLine">
-      <i c="13" l="1782153436898" />
+      <i c="14" l="1782316023249" />
     </e>
     <e n="EditorTab">
       <i c="20" l="1782142339973" />
     </e>
     <e n="EditorTabsEntryPoint">
-      <i c="7" l="1782052812901" />
+      <i c="8" l="1782353236034" />
     </e>
     <e n="EditorUp">
-      <i c="300" l="1782143406657" />
+      <i c="316" l="1782489085102" />
     </e>
     <e n="ExpandAll">
       <i c="1" l="1776164145875" />
@@ -283,7 +286,7 @@
       <i c="4" l="1781573158673" />
     </e>
     <e n="Git.Commit.And.Push.Executor">
-      <i c="12" l="1782186847496" />
+      <i c="14" l="1782409809886" />
     </e>
     <e n="Git.Compare.With.Branch.Popup.Settings">
       <i c="1" d="1" l="1782154252809" k="1782154252809" />
@@ -310,7 +313,7 @@
       <i c="5" l="1776204463588" />
     </e>
     <e n="GotoDeclaration">
-      <i c="594" l="1782152047660" />
+      <i c="646" l="1782572552300" />
     </e>
     <e n="GotoLine">
       <i c="1" l="1777185919692" />
@@ -327,8 +330,11 @@
     <e n="HideAllWindows">
       <i c="5" l="1774113555786" />
     </e>
+    <e n="IdeaVim.ReloadVimRc.reload">
+      <i c="2" l="1782489911481" />
+    </e>
     <e n="InsertInlineCompletionAction">
-      <i c="225" l="1781973157555" />
+      <i c="229" l="1782487109072" />
     </e>
     <e n="List-selectNextRow">
       <i c="1" l="1771005821639" />
@@ -364,7 +370,7 @@
       <i c="77" l="1776368587262" />
     </e>
     <e n="ProblemsView.CopyProblemDescription">
-      <i c="25" l="1780929864610" />
+      <i c="28" l="1782409035240" />
     </e>
     <e n="ProjectFromVersionControl">
       <i c="1" l="1770152344586" />
@@ -394,7 +400,7 @@
       <i c="2" l="1781973747355" />
     </e>
     <e n="Run">
-      <i c="160" l="1782151790598" />
+      <i c="162" l="1782486246150" />
     </e>
     <e n="RunAnything">
       <i c="9" l="1777185001597" />
@@ -415,7 +421,7 @@
       <i c="4" l="1770237956245" />
     </e>
     <e n="SettingsEntryPoint">
-      <i c="15" l="1781956162533" />
+      <i c="20" l="1782488941912" />
     </e>
     <e n="SettingsSyncStatusAction">
       <i c="1" l="1781956158383" />
@@ -427,7 +433,7 @@
       <i c="1" l="1770508930691" />
     </e>
     <e n="ShowSettings">
-      <i c="19" l="1782159926935" />
+      <i c="21" l="1782353295707" />
     </e>
     <e n="SmartTypeCompletion">
       <i c="1" l="1775051876666" />
@@ -436,10 +442,10 @@
       <i c="2" l="1777981780210" />
     </e>
     <e n="Stop">
-      <i c="85" d="16" l="1782154119636" k="1771689618094" />
+      <i c="87" d="16" l="1782486267180" k="1771689618094" />
     </e>
     <e n="Switcher">
-      <i c="45" l="1782143701575" />
+      <i c="48" l="1782315639670" />
     </e>
     <e n="Terminal.CopySelectedText">
       <i c="3" l="1781572669858" />
@@ -455,6 +461,9 @@
     </e>
     <e n="ToggleFullScreen">
       <i c="6" l="1770730919835" />
+    </e>
+    <e n="ToggleHintsAction">
+      <i c="1" l="1782489168622" />
     </e>
     <e n="ToggleLineBreakpoint">
       <i c="46" l="1779707660145" />
@@ -493,16 +502,16 @@
       <i c="1" l="1770761112731" />
     </e>
     <e n="WelcomeScreen.Plugins">
-      <i c="4" l="1781956165866" />
+      <i c="6" l="1782488944796" />
     </e>
     <e n="WelcomeScreen.Settings">
       <i c="11" d="11" l="1773963785684" k="1773963785684" />
     </e>
     <e n="action.AIAssistant.ToolWindow.Chat.Message.AddContext">
-      <i c="22" l="1782142887165" />
+      <i c="23" l="1782316000959" />
     </e>
     <e n="com.intellij.application.options.schemes.AbstractSchemesPanel$ShowSchemesActionsListAction">
-      <i c="1" l="1770157839198" />
+      <i c="2" l="1782353319543" />
     </e>
     <e n="com.intellij.clion.projectStatus.popup.ProjectFixWrappingAction">
       <i c="4" l="1774112547901" />
@@ -547,7 +556,7 @@
       <i c="1" l="1770154702259" />
     </e>
     <e n="com.intellij.ide.actions.QuickChangeLookAndFeel$LafChangeAction">
-      <i c="1" l="1781443632408" />
+      <i c="2" l="1782354073733" />
     </e>
     <e n="com.intellij.ide.actions.ToolWindowViewModeAction">
       <i c="3" l="1773963109586" />
@@ -562,7 +571,7 @@
       <i c="2" l="1770158820086" />
     </e>
     <e n="com.intellij.ide.plugins.newui.PluginsTab$3$1">
-      <i c="1" l="1781961894892" />
+      <i c="2" l="1782488975911" />
     </e>
     <e n="com.intellij.ide.startup.importSettings.chooser.productChooser.JbChooserAction">
       <i c="1" l="1770122723061" />
@@ -597,6 +606,12 @@
     <e n="com.intellij.ml.llm.core.chat.ui.chat.input.chatModeSelector.AIAssistantChatModeSelectorUI$createModeAction$action$1">
       <i c="3" l="1777897912121" />
     </e>
+    <e n="com.intellij.ml.llm.core.chat.ui.chat.prompt.actions.AiChatInputGroupSelectorItemAction">
+      <i c="2" l="1782316056864" />
+    </e>
+    <e n="com.intellij.ml.llm.core.chat.ui.chat.prompt.actions.AiChatInputSelectorAction">
+      <i c="3" l="1782316054891" />
+    </e>
     <e n="com.intellij.ml.llm.intentions.editor.IntentionWrapperAction">
       <i c="9" l="1777649147980" />
     </e>
@@ -610,25 +625,28 @@
       <i c="2" l="1770125255409" />
     </e>
     <e n="com.intellij.openapi.actionSystem.AnActionWrapper">
-      <i c="6275" l="1782186805110" />
+      <i c="6934" l="1782572555599" />
     </e>
     <e n="com.intellij.openapi.actionSystem.DefaultActionGroup">
       <i c="7" l="1781573653806" />
     </e>
     <e n="com.intellij.openapi.actionSystem.EmptyAction">
-      <i c="18" l="1782143702103" />
+      <i c="20" l="1782315642072" />
     </e>
     <e n="com.intellij.openapi.actionSystem.impl.MoreActionGroup">
       <i c="2" l="1774156790623" />
     </e>
     <e n="com.intellij.openapi.editor.impl.EditorMarkupModelImpl$TrafficLightAction">
-      <i c="51" l="1781974122031" />
+      <i c="60" l="1782488355512" />
     </e>
     <e n="com.intellij.openapi.editor.impl.EditorMarkupModelImpl$createAction$result$1">
       <i c="7" l="1779390814427" />
     </e>
+    <e n="com.intellij.openapi.editor.impl.TrafficLightPopup$MenuAction">
+      <i c="1" l="1782409697560" />
+    </e>
     <e n="com.intellij.openapi.fileEditor.impl.tabActions.CloseTab">
-      <i c="39" l="1782141789520" />
+      <i c="45" l="1782489936645" />
     </e>
     <e n="com.intellij.openapi.fileEditor.impl.zoomIndicator.ZoomIndicatorView$settingsAction$1">
       <i c="5" l="1770157383579" />
@@ -649,7 +667,7 @@
       <i c="1" l="1770152139645" />
     </e>
     <e n="com.intellij.openapi.wm.impl.SquareAnActionButton">
-      <i c="466" l="1782186858529" />
+      <i c="477" l="1782488063042" />
     </e>
     <e n="com.intellij.openapi.wm.impl.customFrameDecorations.header.toolbar.MainMenuButton$ShowMenuAction">
       <i c="17" l="1781569741812" />
@@ -667,7 +685,7 @@
       <i c="7" l="1781571678137" />
     </e>
     <e n="com.intellij.toolWindow.ToolWindowHeader$HideAction">
-      <i c="143" l="1782154127085" />
+      <i c="153" l="1782488376522" />
     </e>
     <e n="com.intellij.toolWindow.ToolWindowHeader$ShowOptionsAction">
       <i c="34" l="1781872746340" />
@@ -706,7 +724,10 @@
       <i c="8" l="1782186706263" />
     </e>
     <e n="com.maddyhome.idea.vim.group.NotificationService$OpenIdeaVimRcAction">
-      <i c="5" l="1781405413566" />
+      <i c="7" l="1782489926821" />
+    </e>
+    <e n="com.maddyhome.idea.vim.group.NotificationService$notifyAboutNewVersion$1">
+      <i c="1" l="1782488854661" />
     </e>
     <e n="com.maddyhome.idea.vim.group.NotificationService$notifyAboutShortcutConflict$2">
       <i c="2" l="1770505234423" />

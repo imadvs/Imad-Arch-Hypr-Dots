@@ -1,0 +1,9 @@
+<application>
+  <component name="AcpAgentSettings">
+    <option name="agent_auth">
+      <map>
+        <entry key="acp.registry.codex-acp" value="JETBRAINS_AI" />
+      </map>
+    </option>
+  </component>
+</application>

@@ -3,7 +3,7 @@
 # This is for changing kb_layouts. Set kb_layouts in $settings_file
 
 layout_file="$HOME/.cache/kb_layout"
-settings_file="$HOME/.config/hypr/hyprland.lua"
+settings_file="$HOME/.config/hypr/lua/settings.lua"
 notif_icon="$HOME/.config/swaync/images/ja.png"
 
 # Refined ignore list with patterns or specific device names

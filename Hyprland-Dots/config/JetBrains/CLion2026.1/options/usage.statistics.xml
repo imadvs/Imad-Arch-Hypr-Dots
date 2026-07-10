@@ -1,8 +1,8 @@
 <application>
   <component name="UsagesStatistic">
-    <system-event-id recorder="TRACE" id="10396" />
-    <system-event-id recorder="MP" id="6625" />
-    <system-event-id recorder="FUS" id="713890" />
-    <system-event-id recorder="ML" id="21920" />
+    <system-event-id recorder="TRACE" id="10412" />
+    <system-event-id recorder="MP" id="6641" />
+    <system-event-id recorder="FUS" id="714823" />
+    <system-event-id recorder="ML" id="21936" />
   </component>
 </application>

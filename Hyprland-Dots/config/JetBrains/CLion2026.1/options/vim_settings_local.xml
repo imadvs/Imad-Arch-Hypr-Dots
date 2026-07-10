@@ -2674,111 +2674,96 @@
       <jump line="21" column="11" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Clients screens/clsBankClient.h" protocol="file" />
       <jump line="0" column="0" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/data/Users.txt" protocol="file" />
     </project>
+    <project id="mgrp42n7vkat01ie71i8">
+      <jump line="21" column="11" filename="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Clients screens/clsBankClient.h" protocol="file" />
+    </project>
   </component>
   <component name="VimMarksSettings">
     <globalmarks />
     <localmarks>
-      <file name="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsDeleteUserScreen.h" timestamp="1783444045113">
+      <file name="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsDeleteUserScreen.h" timestamp="1783690675719">
+        <mark key="&quot;" line="23" column="29" />
         <mark key="'" line="23" column="29" />
       </file>
-      <file name="/Dummy.txt" timestamp="1783460224519">
-        <mark key="[" line="0" column="0" />
-        <mark key="]" line="0" column="24" />
-        <mark key="." line="0" column="0" />
-        <mark key="^" line="0" column="0" />
-      </file>
-      <file name="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Clients screens/clsBankClient.h" timestamp="1783465083316">
-        <mark key="'" line="21" column="11" />
-        <mark key="[" line="258" column="13" />
-        <mark key="]" line="129" column="0" />
-        <mark key="^" line="371" column="4" />
-        <mark key="." line="129" column="0" />
-      </file>
-      <file name="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Transactions Screen/clsTransferLogScreen.h" timestamp="1783461781041">
+      <file name="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Transactions Screen/clsTransferLogScreen.h" timestamp="1783690675669">
+        <mark key="&quot;" line="0" column="0" />
         <mark key="'" line="0" column="0" />
       </file>
-      <file name="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/clsInputValidate.h" timestamp="1783462206177">
-        <mark key="'" line="55" column="4" />
+      <file name="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsAddNewUserScreen.h" timestamp="1783690675766">
+        <mark key="&quot;" line="117" column="0" />
       </file>
-      <file name="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Transactions Screen/clsTransactionsScreen.h" timestamp="1783460182687">
+      <file name="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/src/main.cpp" timestamp="1783690675824">
+        <mark key="&quot;" line="7" column="31" />
+      </file>
+      <file name="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/clsPerson.h" timestamp="1783690675806">
+        <mark key="&quot;" line="42" column="9" />
+        <mark key="'" line="42" column="9" />
+        <mark key="]" line="84" column="26" />
+        <mark key="^" line="84" column="26" />
+        <mark key="." line="84" column="25" />
+      </file>
+      <file name="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/data/Clients.txt" timestamp="1783690675818">
+        <mark key="&quot;" line="11" column="24" />
+        <mark key="'" line="11" column="24" />
+      </file>
+      <file name="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/CMakeLists.txt" timestamp="1783690675836">
+        <mark key="&quot;" line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Clients screens/clsUpdateClientScreen.h" timestamp="1783690675711">
+        <mark key="&quot;" line="6" column="0" />
+        <mark key="'" line="6" column="0" />
+      </file>
+      <file name="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsFindUserScreen.h" timestamp="1783690675749">
+        <mark key="&quot;" line="33" column="16" />
+      </file>
+      <file name="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsListUsersScreen.h" timestamp="1783690675774">
+        <mark key="&quot;" line="20" column="28" />
+      </file>
+      <file name="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/data/Users.txt" timestamp="1783690675813">
+        <mark key="&quot;" line="0" column="0" />
+        <mark key="'" line="0" column="0" />
+        <mark key="[" line="0" column="0" />
+        <mark key="]" line="5" column="61" />
+        <mark key="." line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Clients screens/clsClientListScreen.h" timestamp="1783690675790">
+        <mark key="&quot;" line="35" column="61" />
+        <mark key="'" line="35" column="61" />
+      </file>
+      <file name="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Transactions Screen/clsTransactionsScreen.h" timestamp="1783690675684">
+        <mark key="&quot;" line="131" column="60" />
         <mark key="'" line="131" column="60" />
         <mark key="[" line="131" column="49" />
         <mark key="]" line="131" column="60" />
         <mark key="." line="131" column="49" />
         <mark key="^" line="52" column="40" />
       </file>
-      <file name="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Transactions Screen/clsWithdrawScreen.h" timestamp="1783460099072">
-        <mark key="&quot;" line="70" column="11" />
-        <mark key="'" line="22" column="28" />
-        <mark key="[" line="56" column="0" />
-        <mark key="]" line="56" column="0" />
-        <mark key="." line="56" column="0" />
+      <file name="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsManageUsersScreen.h" timestamp="1783690675701">
+        <mark key="&quot;" line="66" column="32" />
       </file>
-      <file name="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Transactions Screen/clsTransferScreen.h" timestamp="1783460102422">
-        <mark key="&quot;" line="9" column="0" />
-        <mark key="'" line="9" column="0" />
-        <mark key="[" line="88" column="0" />
-        <mark key="]" line="88" column="0" />
-        <mark key="^" line="75" column="90" />
-        <mark key="." line="88" column="0" />
+      <file name="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Global.h" timestamp="1783690675731">
+        <mark key="&quot;" line="12" column="0" />
       </file>
-      <file name="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/clsLoginRegisterScreen.h" timestamp="1783443926629">
-        <mark key="&quot;" line="31" column="84" />
-        <mark key="'" line="15" column="0" />
-        <mark key="[" line="60" column="9" />
-        <mark key="]" line="26" column="25" />
-        <mark key="." line="26" column="24" />
-        <mark key="^" line="26" column="25" />
-      </file>
-      <file name="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/clsUtil.h" timestamp="1783462102762">
-        <mark key="'" line="281" column="4" />
-        <mark key="^" line="281" column="4" />
-      </file>
-      <file name="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/clsPerson.h" timestamp="1783463611330">
-        <mark key="'" line="42" column="9" />
-        <mark key="]" line="84" column="26" />
-        <mark key="^" line="84" column="26" />
-        <mark key="." line="84" column="25" />
-      </file>
-      <file name="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsUser.h" timestamp="1783464397513">
-        <mark key="&quot;" line="370" column="0" />
+      <file name="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsUser.h" timestamp="1783690675635">
+        <mark key="&quot;" line="253" column="25" />
         <mark key="'" line="253" column="25" />
         <mark key="[" line="343" column="5" />
         <mark key="]" line="257" column="22" />
         <mark key="^" line="257" column="22" />
         <mark key="." line="257" column="21" />
       </file>
-      <file name="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/data/Clients.txt" timestamp="1783462113625">
-        <mark key="'" line="11" column="24" />
-      </file>
-      <file name="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Transactions Screen/clsTotalBalancesScreen.h" timestamp="1783460110340">
+      <file name="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Transactions Screen/clsTotalBalancesScreen.h" timestamp="1783690675783">
+        <mark key="&quot;" line="8" column="0" />
         <mark key="'" line="8" column="0" />
       </file>
-      <file name="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Clients screens/clsFindClientScreen.h" timestamp="1783460119312">
-        <mark key="&quot;" line="16" column="8" />
-        <mark key="'" line="33" column="16" />
+      <file name="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/clsLoginScreen.h" timestamp="1783690675739">
+        <mark key="&quot;" line="55" column="20" />
       </file>
-      <file name="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Clients screens/clsUpdateClientScreen.h" timestamp="1783460117103">
-        <mark key="'" line="6" column="0" />
+      <file name="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/clsPeriod.h" timestamp="1783690675798">
+        <mark key="&quot;" line="16" column="19" />
       </file>
-      <file name="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/data/Users.txt" timestamp="1783465091658">
-        <mark key="'" line="0" column="0" />
-        <mark key="[" line="0" column="0" />
-        <mark key="]" line="5" column="61" />
-        <mark key="." line="0" column="0" />
-      </file>
-      <file name="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Clients screens/clsClientListScreen.h" timestamp="1783460129720">
-        <mark key="'" line="35" column="61" />
-      </file>
-      <file name="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Transactions Screen/clsDepositScreen.h" timestamp="1783460113218">
-        <mark key="&quot;" line="19" column="0" />
-        <mark key="'" line="55" column="0" />
-      </file>
-      <file name="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Transactions Screen/clsTransferRegisterScreen.h" timestamp="1783457111419">
-        <mark key="'" line="49" column="51" />
-        <mark key="[" line="28" column="0" />
-        <mark key="]" line="28" column="0" />
-        <mark key="." line="28" column="0" />
+      <file name="$USER_HOME$/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsUpdateUserScreen.h" timestamp="1783690675758">
+        <mark key="&quot;" line="119" column="41" />
       </file>
     </localmarks>
   </component>

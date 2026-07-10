@@ -3,6 +3,7 @@ import time
 import sys
 import os
 import json
+import termios
 from datetime import datetime, timedelta
 
 class PomodoroTimer:
@@ -379,10 +380,10 @@ class PomodoroTimer:
         
         # Set up non-blocking input
         if os.name != 'nt':
-            import termios
             import tty
             old_settings = termios.tcgetattr(sys.stdin)
             tty.setcbreak(sys.stdin.fileno())
+            termios.tcflush(sys.stdin, termios.TCIFLUSH)
         
         try:
             while time_left > 0:
@@ -551,6 +552,7 @@ class PomodoroTimer:
                     continue
             
             # Resume from saved state if applicable
+            should_break = False
             if should_resume:
                 result, time_left = self.run_timer(self.saved_current_mode, self.saved_time_left)
                 should_resume = False  # Only resume once
@@ -562,44 +564,49 @@ class PomodoroTimer:
                     self.reset_state()
                     continue
                 elif result == 'skip':
-                    # Determine what comes next based on saved mode
                     if self.saved_current_mode == "pomodoro":
-                        # Skip work, count session and go to break
                         self.pomodoro_count += 1
                         self.save_state()
-                    # If was in break, just continue to next work session
-                    continue
+                        should_break = True
+                    # If was in break, continue to next work session
+                    else:
+                        continue
                 elif result == 'complete':
                     if self.saved_current_mode == "pomodoro":
                         self.show_completion("pomodoro")
                         self.pomodoro_count += 1
                         self.save_state()
-                        # DON'T continue here - fall through to break
+                        should_break = True
                     else:
                         self.show_completion(self.saved_current_mode)
                         self.save_state()
-                        # Continue to next work session
                         continue
             
-            # Pomodoro work session
-            result, time_left = self.run_timer("pomodoro")
-            
-            if result == 'quit':
-                self.save_state(time_left, "pomodoro")
-                break
-            elif result == 'reset':
-                self.reset_state()
-                continue
-            elif result == 'skip':
-                # Skip work, but count it and go to break
-                self.pomodoro_count += 1
-                self.save_state()
-                # DON'T continue - fall through to break
-            elif result == 'complete':
-                self.show_completion("pomodoro")
-                self.pomodoro_count += 1
-                self.save_state()
-                # DON'T continue - fall through to break
+            # Pomodoro work session (skip if resuming into a break)
+            if not should_break:
+                result, time_left = self.run_timer("pomodoro")
+                
+                if result == 'quit':
+                    self.save_state(time_left, "pomodoro")
+                    break
+                elif result == 'reset':
+                    self.reset_state()
+                    continue
+                elif result == 'skip':
+                    # Skip work, but count it and go to break
+                    self.pomodoro_count += 1
+                    self.save_state()
+                    # Flush any buffered keystrokes so 'S' doesn't skip the break
+                    try:
+                        termios.tcflush(sys.stdin, termios.TCIFLUSH)
+                    except Exception:
+                        pass
+                    # DON'T continue - fall through to break
+                elif result == 'complete':
+                    self.show_completion("pomodoro")
+                    self.pomodoro_count += 1
+                    self.save_state()
+                    # DON'T continue - fall through to break
             
             # Determine break type
             if self.pomodoro_count % self.long_break_interval == 0 and self.pomodoro_count > 0:

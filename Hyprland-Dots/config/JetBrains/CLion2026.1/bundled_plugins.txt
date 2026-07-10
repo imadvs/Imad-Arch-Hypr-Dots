@@ -36,6 +36,7 @@ com.intellij.ja|IDE Localization
 com.intellij.jsonpath|Languages
 com.intellij.ko|IDE Localization
 com.intellij.lang.qml|Languages
+com.intellij.mcpServer|AI-Powered
 com.intellij.modules.json|Languages
 com.intellij.nativeDebug|null
 com.intellij.platform.daemon|IDE Settings
@@ -91,6 +92,7 @@ intellij.nextjs|JavaScript Frameworks and Tools
 intellij.platform.ijent.impl|Remote Development
 intellij.prettierJS|JavaScript Frameworks and Tools
 intellij.sarif.viewer|null
+intellij.vitejs|JavaScript Frameworks and Tools
 intellij.webpack|JavaScript Frameworks and Tools
 name.kropp.intellij.makefile|Languages
 org.intellij.plugins.markdown|Languages

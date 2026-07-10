@@ -1,0 +1,11 @@
+<application>
+  <component name="NextEditFeedbackSurveyState">
+    <option name="sessionsSeen" value="1" />
+    <option name="sessionsAccepted" value="20" />
+    <option name="completionsAccepted" value="20" />
+    <option name="deletionsAccepted" value="1" />
+    <languageToUsages>
+      <entry language="C++" number="1" />
+    </languageToUsages>
+  </component>
+</application>

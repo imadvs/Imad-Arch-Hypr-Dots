@@ -1,5 +1,8 @@
 <application>
-  <component name="NextEditSettings"><![CDATA[{
-  "legacyMlCompletionResetApplied": true
+  <component name="NextEditOnboardingComponent"><![CDATA[{
+  "isOnboardingShown": true
 }]]></component>
+  <component name="NextEditSettings">{
+  &quot;legacyMlCompletionResetApplied&quot;: true
+}</component>
 </application>

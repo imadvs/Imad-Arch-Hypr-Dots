@@ -302,6 +302,7 @@ options_command+=(
   "pokemon" "Add Pokemon color scripts to your terminal?" "OFF"
   "rog" "Are you installing on Asus ROG laptops?" "OFF"
   "dots" "Download and install pre-configured KooL Hyprland dotfiles?" "OFF"
+  "digitalzen" "Install DigitalZen (focus/productivity app)?" "OFF"
 )
 
 # Capture the selected options before the while loop starts
@@ -513,6 +514,10 @@ for option in "${options[@]}"; do
   rog)
     echo "${INFO} Installing ${SKY_BLUE}ROG laptop packages...${RESET}" | tee -a "$LOG"
     execute_script "rog.sh"
+    ;;
+  digitalzen)
+    echo "${INFO} Installing ${SKY_BLUE}DigitalZen...${RESET}" | tee -a "$LOG"
+    execute_script "digitalzen.sh"
     ;;
   dots)
     if [ "$wallust_setup_failed" -ne 0 ]; then

@@ -278,6 +278,8 @@ hl.window_rule({
 hl.window_rule({ name = "opacity-deluge", match = { class = "^(deluge)$" }, opacity = "0.9 0.8" })
 hl.window_rule({ name = "opacity-seahorse", match = { class = "^(seahorse)$" }, opacity = "0.9 0.8" })
 
+hl.window_rule({ name = "opacity-float", match = { float = true }, opacity = "1.0 1.0 override" })
+
 hl.window_rule({ name = "float-kool-cheat", match = { tag = "KooL_Cheat" }, float = true })
 hl.window_rule({ name = "float-wallpaper", match = { tag = "wallpaper" }, float = true })
 hl.window_rule({ name = "float-settings", match = { tag = "settings" }, float = true })

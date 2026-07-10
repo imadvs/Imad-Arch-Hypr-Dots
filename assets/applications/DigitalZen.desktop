@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=DigitalZen
+Exec=/home/imad/.local/bin/DigitalZen.AppImage
+Icon=/home/imad/.local/share/icons/DigitalZen.png
+Terminal=false
+StartupNotify=true
+Categories=Utility;Productivity;
+X-AppImage-Integrate=false
+X-GNOME-Autostart-enabled=true
+X-KDE-autostart-enabled=true

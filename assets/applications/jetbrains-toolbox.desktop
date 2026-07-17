@@ -1,6 +1,6 @@
 [Desktop Entry]
 Icon=jetbrains-toolbox
-Exec=/tmp/jetbrains-toolbox-3.5.0.84344/bin/jetbrains-toolbox %u
+Exec=/home/imad/.local/share/JetBrains/Toolbox/jetbrains-toolbox %u
 Version=1.0
 Type=Application
 Categories=Development

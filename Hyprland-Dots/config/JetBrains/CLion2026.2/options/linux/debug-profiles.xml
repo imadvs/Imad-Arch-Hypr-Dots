@@ -1,0 +1,14 @@
+<application>
+  <component name="Debug Profiles">
+    <debug-profiles>
+      <debug-profile>
+        <option name="id" value="68dbad56-64d1-459f-bafa-c119aabfc7d3" />
+        <option name="type" value="gdb" />
+        <option name="name" value="gdb-16.3" />
+        <settings>
+          <option name="executable" value="$USER_HOME$/.local/bin/gdb-16.3" />
+        </settings>
+      </debug-profile>
+    </debug-profiles>
+  </component>
+</application>

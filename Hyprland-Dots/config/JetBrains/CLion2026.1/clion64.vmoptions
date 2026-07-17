@@ -1,5 +1,5 @@
 -Xmx8192m
--Dide.managed.by.toolbox=/tmp/jetbrains-toolbox-3.5.0.84344/bin/jetbrains-toolbox
+-Dide.managed.by.toolbox=/home/imad/.local/share/JetBrains/Toolbox/jetbrains-toolbox
 -Dtoolbox.notification.token=6e612554-fdea-4c61-88eb-99a4ac8847a5
 -Dtoolbox.notification.portFile=/home/imad/.cache/JetBrains/Toolbox/ports/d8072507-5596-4070-93f7-d76860fbcf16.port
 -Didea.suppressed.plugins.set.selector=radler

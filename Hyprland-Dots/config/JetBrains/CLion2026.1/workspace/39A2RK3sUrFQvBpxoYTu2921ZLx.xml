@@ -2,6 +2,7 @@
   <component name="AgentBraveModeToggleService">
     <option name="sessions">
       <map>
+        <entry key="03655f3e-4ce6-4ced-95fe-12047e03b518" value="false" />
         <entry key="06ed4a5b-d2d4-4ef2-b511-aa999466f4ed" value="false" />
         <entry key="082f22eb-bab0-402c-a0b7-7efd17474e49" value="false" />
         <entry key="093ba630-9251-43a9-a9e6-e86babb72a38" value="false" />
@@ -20,6 +21,7 @@
         <entry key="1f4de163-af4c-4e3c-a0e4-0f62692c1175" value="false" />
         <entry key="20751959-c4b2-461a-943e-bb88af4cb430" value="false" />
         <entry key="21e752f4-2caf-43be-94d9-ccb34180d07a" value="false" />
+        <entry key="225b86a6-a23d-4424-ae0c-20827a001136" value="false" />
         <entry key="230c1afd-cee1-4a15-8605-39337cc04d25" value="false" />
         <entry key="245e29ac-c112-44c1-9867-af5ae62eb18a" value="false" />
         <entry key="24a6b7a9-cbae-4278-b855-863f85a223ef" value="false" />
@@ -31,7 +33,9 @@
         <entry key="28c2f586-3660-4e4c-8f2c-98c6df5e5ef3" value="false" />
         <entry key="28c95731-4613-4e26-a9db-9dfac9f1b906" value="false" />
         <entry key="2ac73887-5144-4720-b273-e625611b2d40" value="false" />
+        <entry key="2acea4c1-4076-4fce-939a-dcd93bf1e2b1" value="false" />
         <entry key="2afc9266-bbd1-4203-b3d2-cb9ca34b28aa" value="false" />
+        <entry key="2c1f4550-0054-4bf4-9592-67d47b2fd436" value="false" />
         <entry key="2c4177bf-8f47-4e6c-a272-5133adadf25c" value="false" />
         <entry key="2d0b35c5-c5a4-4802-b950-ee82ff28b968" value="false" />
         <entry key="2d49f450-ca6b-442e-9fce-8698b13f5432" value="false" />
@@ -39,9 +43,11 @@
         <entry key="3284eef2-7c6a-44e7-975e-5e90355866ef" value="false" />
         <entry key="32b950dd-6088-44e3-b9f4-c6519bd2b30f" value="false" />
         <entry key="32c63f8a-101e-4407-86d9-378e505c29ca" value="false" />
+        <entry key="335ba181-f6bc-4dd2-94b0-36c9cbd8f573" value="false" />
         <entry key="357d48d1-01da-42f6-9537-bb7beaed94c4" value="false" />
         <entry key="3698dc6c-497e-4a01-8893-a2210d1b6688" value="false" />
         <entry key="38a4567f-f59b-4508-a7ac-b3c49c0198b6" value="false" />
+        <entry key="3aa02745-029a-4e7c-b327-8251848ddf84" value="false" />
         <entry key="3b5a1424-3ac4-4fb4-a408-17c4b40bc738" value="false" />
         <entry key="3c1f935d-0ef5-4bcd-8a18-1b0cff304157" value="false" />
         <entry key="3cdcfd88-4e7a-4c8f-9281-dd50f1df33de" value="false" />
@@ -56,6 +62,7 @@
         <entry key="44639c70-973f-43c6-9156-d98f210c47aa" value="false" />
         <entry key="44df65c6-53c8-4d40-94eb-54e3b92882e7" value="false" />
         <entry key="44f81942-ab70-4887-9a05-403890ae7a6c" value="false" />
+        <entry key="46527153-d718-437d-bebe-318d880cafde" value="false" />
         <entry key="48095878-7ac8-45f8-be64-e265254725cc" value="false" />
         <entry key="48786e0a-a9a9-4194-a606-e5c7ee9ee1aa" value="false" />
         <entry key="489187eb-e823-42b8-9b70-053741942934" value="false" />
@@ -79,6 +86,7 @@
         <entry key="5e148371-ff3b-4765-97ef-bb9090e1d990" value="false" />
         <entry key="5eb69b73-a0e6-43e9-94e7-370eafb8381c" value="false" />
         <entry key="606dd572-687e-430b-9588-01244d87ccf0" value="false" />
+        <entry key="60d18bc8-01c0-4b8a-8dcc-cd5dfdc41e8b" value="false" />
         <entry key="6619e99d-c079-4ad5-9b0a-15ea2c079ca8" value="false" />
         <entry key="66324db4-5547-463f-af01-7e50e1943ac7" value="false" />
         <entry key="687e4df0-7508-4132-b8bf-750baf7d8b10" value="false" />
@@ -107,6 +115,7 @@
         <entry key="851f1859-1b4d-4ad1-980d-64f7f6160670" value="false" />
         <entry key="85625d03-c7f7-4f7b-a35d-00f9fa7e2324" value="false" />
         <entry key="870bc3a1-ac69-4192-b1fc-46be43c85495" value="false" />
+        <entry key="8736528b-0329-4390-aa40-0d3cac152580" value="false" />
         <entry key="875c4bad-671f-421a-9556-6c15a4b24cac" value="false" />
         <entry key="87b60daf-dd23-4978-8152-65207c3b5264" value="false" />
         <entry key="89afdc9e-0644-4e8c-807a-131a9a12cec9" value="false" />
@@ -163,9 +172,11 @@
         <entry key="b00b1008-3b0e-42a8-b0f6-1000f7a75140" value="false" />
         <entry key="b08ccf82-65cb-422a-aa5a-12a314406697" value="false" />
         <entry key="b1212059-d0c8-4bb2-b9fd-5d71192206a9" value="false" />
+        <entry key="b1434ff7-a9e4-4c43-a669-0e0ea5f64c43" value="false" />
         <entry key="b1bb4151-dd0a-4025-8023-7053dd715395" value="false" />
         <entry key="b1e052e6-1070-4781-ae44-07ca812173cd" value="false" />
         <entry key="b3537d0d-d398-4104-9a05-cad4d4a2b00e" value="false" />
+        <entry key="b45bc974-ac78-4c11-827f-95641382c864" value="false" />
         <entry key="b5090a68-ab82-4af7-b098-194fbb8dbdc9" value="false" />
         <entry key="b5cfeb7e-8b7c-4bc4-beac-ffaa75d454fa" value="false" />
         <entry key="b6ea2863-b1ba-4972-b605-9c8d48ba589e" value="false" />
@@ -195,11 +206,13 @@
         <entry key="c94ebe46-2ef3-4ddd-9b76-69e870ce8a19" value="false" />
         <entry key="ca882f73-19cb-4db7-bf7a-b83d20ae4dba" value="false" />
         <entry key="cb3d2b69-8e55-4375-801f-0c15656ae4b3" value="false" />
+        <entry key="cbc0a5cb-7f95-409f-a8be-f6761a6701f7" value="false" />
         <entry key="cbdb2e66-6488-4cbe-b0ca-c281c07395be" value="false" />
         <entry key="cc50d7fb-25a8-489b-9820-8672581911f1" value="false" />
         <entry key="ce111d4b-79f5-4a9e-ba4a-804e03088293" value="false" />
         <entry key="cec61a0f-21a3-4487-95bb-21c66e7663bc" value="false" />
         <entry key="d04e2e13-c1ef-450c-bddd-930f89b0c85a" value="false" />
+        <entry key="d072a7e4-56dc-4b0e-99a9-95626d01bdb5" value="false" />
         <entry key="d0c9b4a2-a0f3-4d42-b770-785a40c3e877" value="false" />
         <entry key="d17bf530-037e-42e9-b843-ec81ed71ec8d" value="false" />
         <entry key="d1b723f0-5506-4bb7-a10f-50080ce27495" value="false" />
@@ -217,6 +230,7 @@
         <entry key="d9ded76b-21f3-4fa5-8517-bd1904c8dd3b" value="false" />
         <entry key="da62e2ba-6571-442d-b830-c0e3acb4035f" value="false" />
         <entry key="da9fb45f-e0ff-4489-8e56-d2d0eb1963ff" value="false" />
+        <entry key="daffc833-ba17-43bd-b880-2d7850c7c9c8" value="false" />
         <entry key="db10343f-3e80-4d40-9545-d4f318d11732" value="false" />
         <entry key="db3e1ecf-41b3-4ee3-959d-381be146884e" value="false" />
         <entry key="dbdbb2b6-23ad-4b92-a807-397122b11a52" value="false" />
@@ -224,6 +238,7 @@
         <entry key="dc926001-5ca3-4fb7-a1de-0c7d8d3e3c6b" value="false" />
         <entry key="dd64ffe0-5a18-480e-bc60-1b779f5a0f6a" value="false" />
         <entry key="ddb7b0c3-5da8-4125-9d5f-5cc36cbdf0b3" value="false" />
+        <entry key="e12f2869-71b4-4ecd-a6a0-e7442947fce8" value="false" />
         <entry key="e30302c1-d9dc-4a45-8d16-82ffe4e44e16" value="false" />
         <entry key="e7a653f7-f43b-4129-8a6e-e282335df817" value="false" />
         <entry key="e7be2fa8-214a-4d1a-a396-614188d6585e" value="false" />
@@ -233,6 +248,7 @@
         <entry key="ec690db4-2d0e-403e-98f7-a52ad96f0c02" value="false" />
         <entry key="ec75def7-6cf6-45d5-a8ee-0b40fcea55ee" value="false" />
         <entry key="ec9a32ef-a3aa-457b-8699-64e3d8cfb907" value="false" />
+        <entry key="eca5c44b-787c-429b-be19-5cb6fe90c7c0" value="false" />
         <entry key="ed8d88e4-7b51-42c0-b210-4035a2366944" value="false" />
         <entry key="ed9dc027-831b-4547-b7a1-6992505dae2f" value="false" />
         <entry key="ee5a2bdb-a455-4219-8de6-3a05dbbbe4e7" value="false" />
@@ -253,6 +269,7 @@
         <entry key="fba7af34-a3e8-404a-8754-c52e32807bfd" value="false" />
         <entry key="fbc917e1-9936-4cec-8b83-af5bc00e70ad" value="false" />
         <entry key="fc8ce23b-26ff-458a-803d-94be64ee83c7" value="false" />
+        <entry key="fca951d8-284b-4924-94d1-b006d560c376" value="false" />
         <entry key="fd4bd021-ac5b-418f-a4a3-fcfe54ea699a" value="false" />
         <entry key="fe4805ab-25f7-40e0-a269-424426fbf85b" value="false" />
         <entry key="fed29731-87b6-4d2b-ab4f-baf51c7d406f" value="false" />
@@ -6350,21 +6367,121 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf ideFingerprint="ruuwc6nnxqaa" SIDE_TABS_SIZE_LIMIT_KEY="-1" />
+    <leaf ideFingerprint="1rsa2hnzhc9co" SIDE_TABS_SIZE_LIMIT_KEY="-1">
+      <file>
+        <entry file="file://$PROJECT_DIR$/include/P04 Currency Exchange/clsCurrency.h" file-id="47318" managing-fs="1781622042365">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="4944">
+              <caret line="206" column="31" selection-start-line="206" selection-start-column="31" selection-end-line="206" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"clsCurrency.h","foregroundColor":-2105376,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,110,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,26,18,99,111,109,46,105,110,116,101,108,108,105,106,46,99,108,105,111,110,34,23,105,110,116,101,108,108,105,106,46,99,105,100,114,46,108,97,110,103,46,98,97,115,101,40,-48,-45,-18,-83,-7,-1,-1,-1,-1,1,48,0]}]]></tab>
+      </file>
+      <file current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/include/P04 Currency Exchange/clsCurrencyCalculatorScreen.h" file-id="48031" managing-fs="1781622042365">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="306">
+              <caret line="89" column="35" selection-start-line="89" selection-start-column="35" selection-end-line="89" selection-end-column="35" />
+              <folding>
+                <marker date="1784131377688" expanded="true" signature="0:39" ph="//..." />
+                <marker date="1784131377688" expanded="true" signature="163:260" ph="##include ..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"clsCurrencyCalculatorScreen.h","foregroundColor":-9922629,"textAttributes":{"name":"a","children":[{"name":"option","attributes":{"name":"FOREGROUND","value":"6897bb"}}]},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,110,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,26,18,99,111,109,46,105,110,116,101,108,108,105,106,46,99,108,105,111,110,34,23,105,110,116,101,108,108,105,106,46,99,105,100,114,46,108,97,110,103,46,98,97,115,101,40,-48,-45,-18,-83,-7,-1,-1,-1,-1,1,48,0]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/include/clsMainScreen.h" file-id="47196" managing-fs="1781622042365">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="2160">
+              <caret line="90" column="42" selection-start-line="90" selection-start-column="42" selection-end-line="90" selection-end-column="42" />
+              <folding>
+                <marker date="1784071864404" expanded="true" signature="13:566" ph="##include ..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"clsMainScreen.h","foregroundColor":-2105376,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,110,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,26,18,99,111,109,46,105,110,116,101,108,108,105,106,46,99,108,105,111,110,34,23,105,110,116,101,108,108,105,106,46,99,105,100,114,46,108,97,110,103,46,98,97,115,101,40,-48,-45,-18,-83,-7,-1,-1,-1,-1,1,48,0]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/include/P04 Currency Exchange/clsCurrencyExchangeMainScreen.h" file-id="47333" managing-fs="1781622042365">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="1512">
+              <caret line="63" selection-start-line="63" selection-end-line="63" />
+              <folding>
+                <marker date="1784128411903" expanded="true" signature="168:413" ph="##include ..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"clsCurrencyExchangeMainScreen.h","foregroundColor":-2105376,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,110,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,26,18,99,111,109,46,105,110,116,101,108,108,105,106,46,99,108,105,111,110,34,23,105,110,116,101,108,108,105,106,46,99,105,100,114,46,108,97,110,103,46,98,97,115,101,40,-48,-45,-18,-83,-7,-1,-1,-1,-1,1,48,0]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/include/P04 Currency Exchange/clsUpdateCurrencyRateScreen.h" file-id="48025" managing-fs="1781622042365">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="264">
+              <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"clsUpdateCurrencyRateScreen.h","foregroundColor":-2105376,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,110,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,26,18,99,111,109,46,105,110,116,101,108,108,105,106,46,99,108,105,111,110,34,23,105,110,116,101,108,108,105,106,46,99,105,100,114,46,108,97,110,103,46,98,97,115,101,40,-48,-45,-18,-83,-7,-1,-1,-1,-1,1,48,0]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/include/P04 Currency Exchange/clsCurrenciesListScreen.h" file-id="48016" managing-fs="1781622042365">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="624">
+              <caret line="26" column="15" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"clsCurrenciesListScreen.h","foregroundColor":-2105376,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,110,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,26,18,99,111,109,46,105,110,116,101,108,108,105,106,46,99,108,105,111,110,34,23,105,110,116,101,108,108,105,106,46,99,105,100,114,46,108,97,110,103,46,98,97,115,101,40,-48,-45,-18,-83,-7,-1,-1,-1,-1,1,48,0]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/include/P04 Currency Exchange/clsFindCurrencyScreen.h" file-id="48022" managing-fs="1781622042365">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="1008">
+              <caret line="42" column="16" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
+              <folding>
+                <marker date="1784111817203" expanded="true" signature="151:248" ph="##include ..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"clsFindCurrencyScreen.h","foregroundColor":-2105376,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,110,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,26,18,99,111,109,46,105,110,116,101,108,108,105,106,46,99,108,105,111,110,34,23,105,110,116,101,108,108,105,106,46,99,105,100,114,46,108,97,110,103,46,98,97,115,101,40,-48,-45,-18,-83,-7,-1,-1,-1,-1,1,48,0]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/include/clsScreen.h" file-id="47190" managing-fs="1781622042365">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="528">
+              <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"clsScreen.h","foregroundColor":-2105376,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,110,10,21,105,99,111,110,115,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,18,27,105,99,111,110,115,47,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,104,46,115,118,103,26,18,99,111,109,46,105,110,116,101,108,108,105,106,46,99,108,105,111,110,34,23,105,110,116,101,108,108,105,106,46,99,105,100,114,46,108,97,110,103,46,98,97,115,101,40,-48,-45,-18,-83,-7,-1,-1,-1,-1,1,48,0]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/data/Currencies.txt" file-id="47315" managing-fs="1781622042365">
+          <provider editor-type-id="text-editor" selected="true" />
+        </entry>
+        <tab><![CDATA[{"tabTitle":"Currencies.txt","foregroundColor":-2105376,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,73,10,18,102,105,108,101,84,121,112,101,115,47,116,101,120,116,46,115,118,103,18,24,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,116,101,120,116,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-122,-48,-19,-85,-2,-1,-1,-1,-1,1,48,0]}]]></tab>
+      </file>
+    </leaf>
   </component>
   <component name="FileTypeUsageLocalSummary"><![CDATA[{
   "data": {
     "C/C++": {
-      "usageCount": 293,
-      "lastUsed": 1783678260644
+      "usageCount": 295,
+      "lastUsed": 1784071117977
     },
     "CMakeLists.txt": {
       "usageCount": 89,
       "lastUsed": 1783678260487
     },
     "PLAIN_TEXT": {
-      "usageCount": 199,
-      "lastUsed": 1783678260592
+      "usageCount": 211,
+      "lastUsed": 1784291583173
     },
     "textmate": {
       "usageCount": 72,
@@ -6379,12 +6496,12 @@
       "lastUsed": 1782141335255
     },
     "C/C++ Header": {
-      "usageCount": 3301,
-      "lastUsed": 1783678264280
+      "usageCount": 3401,
+      "lastUsed": 1784291583362
     },
     "WebPreview": {
-      "usageCount": 4,
-      "lastUsed": 1783268115605
+      "usageCount": 5,
+      "lastUsed": 1784073112140
     }
   }
 }]]></component>
@@ -6409,19 +6526,6 @@
   <component name="GitSEFilterConfiguration">{}</component>
   <component name="IdeDocumentHistory">{
   &quot;changedPaths&quot;: [
-    &quot;/home/imad/Documents/Project1 - Utility library/include/clsDate.h&quot;,
-    &quot;/home/imad/Documents/Project1 - Utility library/include/Screens/clsAddNewClientScreen.h&quot;,
-    &quot;/home/imad/Documents/Project1 - Utility library/include/Screens/clsDeleteClientScreen.h&quot;,
-    &quot;/home/imad/Documents/Project1 - Utility library/include/Screens/clsUpdateClientScreen.h&quot;,
-    &quot;/home/imad/Documents/Project1 - Utility library/include/Screens/ManageUsers/clsManageUsersScreen.h&quot;,
-    &quot;/home/imad/Documents/Project1 - Utility library/include/Screens/Transactions/clsTransactionsScreen.h&quot;,
-    &quot;/home/imad/Documents/Project1 - Utility library/include/Screens/clsFindClientScreen.h&quot;,
-    &quot;/home/imad/Documents/Project1 - Utility library/include/Screens/ManageUsers/clsUser.h&quot;,
-    &quot;/home/imad/Documents/Project1 - Utility library/include/Screens/clsScreen.h&quot;,
-    &quot;/home/imad/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/Data/Clients.text&quot;,
-    &quot;/home/imad/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/clsClientListScreen.h&quot;,
-    &quot;/home/imad/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/clsDeleteClientScreen.h&quot;,
-    &quot;/home/imad/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/clsInputValidate.h&quot;,
     &quot;/home/imad/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/clsFindClientScreen.h&quot;,
     &quot;/home/imad/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/clsUpdateClientScreen.h&quot;,
     &quot;/home/imad/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/clsAddNewClientScreen.h&quot;,
@@ -6459,7 +6563,20 @@
     &quot;/home/imad/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/clsUtil.h&quot;,
     &quot;/home/imad/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/data/Users.txt&quot;,
     &quot;/home/imad/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Clients screens/clsBankClient.h&quot;,
-    &quot;/home/imad/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsUser.h&quot;
+    &quot;/home/imad/Documents/Coding_Projects/P03_Bank System/Project1 - Utility library/include/Manage_Users_Screen/clsUser.h&quot;,
+    &quot;/home/imad/Documents/Coding_Projects/P03_Bank System/include/InterfaceCommunication.h&quot;,
+    &quot;/home/imad/Documents/Coding_Projects/P03_Bank System/src/main1.cpp&quot;,
+    &quot;/home/imad/Documents/Coding_Projects/P03_Bank System/src/main1.h&quot;,
+    &quot;/home/imad/Documents/Coding_Projects/P03_Bank System/include/P04 Currency Exchange/main1 Currency.h&quot;,
+    &quot;/home/imad/Documents/Coding_Projects/P03_Bank System/include/clsMainScreen.h&quot;,
+    &quot;/home/imad/Documents/Coding_Projects/P03_Bank System/include/clsString.h&quot;,
+    &quot;/home/imad/Documents/Coding_Projects/P03_Bank System/data/Currencies.txt&quot;,
+    &quot;/home/imad/Documents/Coding_Projects/P03_Bank System/include/P04 Currency Exchange/clsCurrenciesListScreen.h&quot;,
+    &quot;/home/imad/Documents/Coding_Projects/P03_Bank System/include/P04 Currency Exchange/clsFindCurrencyScreen.h&quot;,
+    &quot;/home/imad/Documents/Coding_Projects/P03_Bank System/include/P04 Currency Exchange/clsCurrency.h&quot;,
+    &quot;/home/imad/Documents/Coding_Projects/P03_Bank System/include/P04 Currency Exchange/clsUpdateCurrencyRateScreen.h&quot;,
+    &quot;/home/imad/Documents/Coding_Projects/P03_Bank System/include/P04 Currency Exchange/clsCurrencyExchangeMainScreen.h&quot;,
+    &quot;/home/imad/Documents/Coding_Projects/P03_Bank System/include/P04 Currency Exchange/clsCurrencyCalculatorScreen.h&quot;
   ]
 }</component>
   <component name="IgnoredFileRootStore">
@@ -6472,6 +6589,7 @@
   <component name="JunieThinkMoreToggleService">
     <option name="sessions">
       <map>
+        <entry key="03655f3e-4ce6-4ced-95fe-12047e03b518" value="false" />
         <entry key="06ed4a5b-d2d4-4ef2-b511-aa999466f4ed" value="false" />
         <entry key="082f22eb-bab0-402c-a0b7-7efd17474e49" value="false" />
         <entry key="093ba630-9251-43a9-a9e6-e86babb72a38" value="false" />
@@ -6490,6 +6608,7 @@
         <entry key="1f4de163-af4c-4e3c-a0e4-0f62692c1175" value="false" />
         <entry key="20751959-c4b2-461a-943e-bb88af4cb430" value="false" />
         <entry key="21e752f4-2caf-43be-94d9-ccb34180d07a" value="false" />
+        <entry key="225b86a6-a23d-4424-ae0c-20827a001136" value="false" />
         <entry key="230c1afd-cee1-4a15-8605-39337cc04d25" value="false" />
         <entry key="245e29ac-c112-44c1-9867-af5ae62eb18a" value="false" />
         <entry key="24a6b7a9-cbae-4278-b855-863f85a223ef" value="false" />
@@ -6501,7 +6620,9 @@
         <entry key="28c2f586-3660-4e4c-8f2c-98c6df5e5ef3" value="false" />
         <entry key="28c95731-4613-4e26-a9db-9dfac9f1b906" value="false" />
         <entry key="2ac73887-5144-4720-b273-e625611b2d40" value="false" />
+        <entry key="2acea4c1-4076-4fce-939a-dcd93bf1e2b1" value="false" />
         <entry key="2afc9266-bbd1-4203-b3d2-cb9ca34b28aa" value="false" />
+        <entry key="2c1f4550-0054-4bf4-9592-67d47b2fd436" value="false" />
         <entry key="2c4177bf-8f47-4e6c-a272-5133adadf25c" value="false" />
         <entry key="2d0b35c5-c5a4-4802-b950-ee82ff28b968" value="false" />
         <entry key="2d49f450-ca6b-442e-9fce-8698b13f5432" value="false" />
@@ -6509,9 +6630,11 @@
         <entry key="3284eef2-7c6a-44e7-975e-5e90355866ef" value="false" />
         <entry key="32b950dd-6088-44e3-b9f4-c6519bd2b30f" value="false" />
         <entry key="32c63f8a-101e-4407-86d9-378e505c29ca" value="false" />
+        <entry key="335ba181-f6bc-4dd2-94b0-36c9cbd8f573" value="false" />
         <entry key="357d48d1-01da-42f6-9537-bb7beaed94c4" value="false" />
         <entry key="3698dc6c-497e-4a01-8893-a2210d1b6688" value="false" />
         <entry key="38a4567f-f59b-4508-a7ac-b3c49c0198b6" value="false" />
+        <entry key="3aa02745-029a-4e7c-b327-8251848ddf84" value="false" />
         <entry key="3b5a1424-3ac4-4fb4-a408-17c4b40bc738" value="false" />
         <entry key="3c1f935d-0ef5-4bcd-8a18-1b0cff304157" value="false" />
         <entry key="3cdcfd88-4e7a-4c8f-9281-dd50f1df33de" value="false" />
@@ -6526,6 +6649,7 @@
         <entry key="44639c70-973f-43c6-9156-d98f210c47aa" value="false" />
         <entry key="44df65c6-53c8-4d40-94eb-54e3b92882e7" value="false" />
         <entry key="44f81942-ab70-4887-9a05-403890ae7a6c" value="false" />
+        <entry key="46527153-d718-437d-bebe-318d880cafde" value="false" />
         <entry key="48095878-7ac8-45f8-be64-e265254725cc" value="false" />
         <entry key="48786e0a-a9a9-4194-a606-e5c7ee9ee1aa" value="false" />
         <entry key="489187eb-e823-42b8-9b70-053741942934" value="false" />
@@ -6549,6 +6673,7 @@
         <entry key="5e148371-ff3b-4765-97ef-bb9090e1d990" value="false" />
         <entry key="5eb69b73-a0e6-43e9-94e7-370eafb8381c" value="false" />
         <entry key="606dd572-687e-430b-9588-01244d87ccf0" value="false" />
+        <entry key="60d18bc8-01c0-4b8a-8dcc-cd5dfdc41e8b" value="false" />
         <entry key="6619e99d-c079-4ad5-9b0a-15ea2c079ca8" value="false" />
         <entry key="66324db4-5547-463f-af01-7e50e1943ac7" value="false" />
         <entry key="687e4df0-7508-4132-b8bf-750baf7d8b10" value="false" />
@@ -6577,6 +6702,7 @@
         <entry key="851f1859-1b4d-4ad1-980d-64f7f6160670" value="false" />
         <entry key="85625d03-c7f7-4f7b-a35d-00f9fa7e2324" value="false" />
         <entry key="870bc3a1-ac69-4192-b1fc-46be43c85495" value="false" />
+        <entry key="8736528b-0329-4390-aa40-0d3cac152580" value="false" />
         <entry key="875c4bad-671f-421a-9556-6c15a4b24cac" value="false" />
         <entry key="87b60daf-dd23-4978-8152-65207c3b5264" value="false" />
         <entry key="89afdc9e-0644-4e8c-807a-131a9a12cec9" value="false" />
@@ -6633,9 +6759,11 @@
         <entry key="b00b1008-3b0e-42a8-b0f6-1000f7a75140" value="false" />
         <entry key="b08ccf82-65cb-422a-aa5a-12a314406697" value="false" />
         <entry key="b1212059-d0c8-4bb2-b9fd-5d71192206a9" value="false" />
+        <entry key="b1434ff7-a9e4-4c43-a669-0e0ea5f64c43" value="false" />
         <entry key="b1bb4151-dd0a-4025-8023-7053dd715395" value="false" />
         <entry key="b1e052e6-1070-4781-ae44-07ca812173cd" value="false" />
         <entry key="b3537d0d-d398-4104-9a05-cad4d4a2b00e" value="false" />
+        <entry key="b45bc974-ac78-4c11-827f-95641382c864" value="false" />
         <entry key="b5090a68-ab82-4af7-b098-194fbb8dbdc9" value="false" />
         <entry key="b5cfeb7e-8b7c-4bc4-beac-ffaa75d454fa" value="false" />
         <entry key="b6ea2863-b1ba-4972-b605-9c8d48ba589e" value="false" />
@@ -6665,11 +6793,13 @@
         <entry key="c94ebe46-2ef3-4ddd-9b76-69e870ce8a19" value="false" />
         <entry key="ca882f73-19cb-4db7-bf7a-b83d20ae4dba" value="false" />
         <entry key="cb3d2b69-8e55-4375-801f-0c15656ae4b3" value="false" />
+        <entry key="cbc0a5cb-7f95-409f-a8be-f6761a6701f7" value="false" />
         <entry key="cbdb2e66-6488-4cbe-b0ca-c281c07395be" value="false" />
         <entry key="cc50d7fb-25a8-489b-9820-8672581911f1" value="false" />
         <entry key="ce111d4b-79f5-4a9e-ba4a-804e03088293" value="false" />
         <entry key="cec61a0f-21a3-4487-95bb-21c66e7663bc" value="false" />
         <entry key="d04e2e13-c1ef-450c-bddd-930f89b0c85a" value="false" />
+        <entry key="d072a7e4-56dc-4b0e-99a9-95626d01bdb5" value="false" />
         <entry key="d0c9b4a2-a0f3-4d42-b770-785a40c3e877" value="false" />
         <entry key="d17bf530-037e-42e9-b843-ec81ed71ec8d" value="false" />
         <entry key="d1b723f0-5506-4bb7-a10f-50080ce27495" value="false" />
@@ -6687,6 +6817,7 @@
         <entry key="d9ded76b-21f3-4fa5-8517-bd1904c8dd3b" value="false" />
         <entry key="da62e2ba-6571-442d-b830-c0e3acb4035f" value="false" />
         <entry key="da9fb45f-e0ff-4489-8e56-d2d0eb1963ff" value="false" />
+        <entry key="daffc833-ba17-43bd-b880-2d7850c7c9c8" value="false" />
         <entry key="db10343f-3e80-4d40-9545-d4f318d11732" value="false" />
         <entry key="db3e1ecf-41b3-4ee3-959d-381be146884e" value="false" />
         <entry key="dbdbb2b6-23ad-4b92-a807-397122b11a52" value="false" />
@@ -6694,6 +6825,7 @@
         <entry key="dc926001-5ca3-4fb7-a1de-0c7d8d3e3c6b" value="false" />
         <entry key="dd64ffe0-5a18-480e-bc60-1b779f5a0f6a" value="false" />
         <entry key="ddb7b0c3-5da8-4125-9d5f-5cc36cbdf0b3" value="false" />
+        <entry key="e12f2869-71b4-4ecd-a6a0-e7442947fce8" value="false" />
         <entry key="e30302c1-d9dc-4a45-8d16-82ffe4e44e16" value="false" />
         <entry key="e7a653f7-f43b-4129-8a6e-e282335df817" value="false" />
         <entry key="e7be2fa8-214a-4d1a-a396-614188d6585e" value="false" />
@@ -6703,6 +6835,7 @@
         <entry key="ec690db4-2d0e-403e-98f7-a52ad96f0c02" value="false" />
         <entry key="ec75def7-6cf6-45d5-a8ee-0b40fcea55ee" value="false" />
         <entry key="ec9a32ef-a3aa-457b-8699-64e3d8cfb907" value="false" />
+        <entry key="eca5c44b-787c-429b-be19-5cb6fe90c7c0" value="false" />
         <entry key="ed8d88e4-7b51-42c0-b210-4035a2366944" value="false" />
         <entry key="ed9dc027-831b-4547-b7a1-6992505dae2f" value="false" />
         <entry key="ee5a2bdb-a455-4219-8de6-3a05dbbbe4e7" value="false" />
@@ -6723,6 +6856,7 @@
         <entry key="fba7af34-a3e8-404a-8754-c52e32807bfd" value="false" />
         <entry key="fbc917e1-9936-4cec-8b83-af5bc00e70ad" value="false" />
         <entry key="fc8ce23b-26ff-458a-803d-94be64ee83c7" value="false" />
+        <entry key="fca951d8-284b-4924-94d1-b006d560c376" value="false" />
         <entry key="fd4bd021-ac5b-418f-a4a3-fcfe54ea699a" value="false" />
         <entry key="fe4805ab-25f7-40e0-a269-424426fbf85b" value="false" />
         <entry key="fed29731-87b6-4d2b-ab4f-baf51c7d406f" value="false" />
@@ -6732,13 +6866,13 @@
   </component>
   <component name="LanguageUsageStatistics">
     <language id="C++">
-      <summary usageCount="3594" lastUsage="1783678264280" />
+      <summary usageCount="3696" lastUsage="1784291583362" />
     </language>
     <language id="CMake">
       <summary usageCount="89" lastUsage="1783678260493" />
     </language>
     <language id="TEXT">
-      <summary usageCount="199" lastUsage="1783678260592" />
+      <summary usageCount="211" lastUsage="1784291583173" />
     </language>
     <language id="textmate">
       <summary usageCount="72" lastUsage="1782489927017" />
@@ -6747,116 +6881,11 @@
   <component name="ProjectRoots">
     <project-root url="file://$PROJECT_DIR$" />
     <project-root url="file://$PROJECT_DIR$" />
+    <project-root url="file://$PROJECT_DIR$" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1" />
-    <panes>
-      <pane id="ProjectPane" />
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="Project 2 L4 - ATM System" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="~/Documents/Project 2 L4 - ATM System" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </path>
-          </expand>
-          <select />
-          <presentation>
-            <attributes />
-            <data iconPath="expui/runConfigurations/application.svg" iconPlugin="com.intellij" isLeaf="false" text="Project 2 L4 - ATM System" />
-            <item name="Project 2 L4 - ATM System" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-            <presentation>
-              <attributes>
-                <map>
-                  <entry key="filePath" value="$PROJECT_DIR$" />
-                </map>
-              </attributes>
-              <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="~/Documents/Project 2 L4 - ATM System" />
-              <item name="~/Documents/Project 2 L4 - ATM System" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <presentation>
-                <attributes>
-                  <map>
-                    <entry key="filePath" value="$PROJECT_DIR$/.idea" />
-                  </map>
-                </attributes>
-                <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text=".idea" />
-                <item name=".idea" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              </presentation>
-              <presentation>
-                <attributes>
-                  <map>
-                    <entry key="filePath" value="$PROJECT_DIR$/cmake-build-debug" />
-                  </map>
-                </attributes>
-                <data iconPath="expui/nodes/excludeRoot.svg" iconPlugin="com.intellij" isLeaf="false" text="cmake-build-debug" />
-                <item name="cmake-build-debug" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              </presentation>
-            </presentation>
-            <presentation>
-              <attributes>
-                <map>
-                  <entry key="filePath" value="$APPLICATION_CONFIG_DIR$/extensions" />
-                </map>
-              </attributes>
-              <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="Extensions" />
-              <item name="Extensions" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </presentation>
-          </presentation>
-        </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="Project 2 L4 - ATM System" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="~/Documents/Project 2 L4 - ATM System" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </path>
-          </expand>
-          <select />
-          <presentation>
-            <attributes />
-            <data iconPath="expui/runConfigurations/application.svg" iconPlugin="com.intellij" isLeaf="false" text="Project 2 L4 - ATM System" />
-            <item name="Project 2 L4 - ATM System" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-            <presentation>
-              <attributes>
-                <map>
-                  <entry key="filePath" value="$PROJECT_DIR$" />
-                </map>
-              </attributes>
-              <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="~/Documents/Project 2 L4 - ATM System" />
-              <item name="~/Documents/Project 2 L4 - ATM System" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <presentation>
-                <attributes>
-                  <map>
-                    <entry key="filePath" value="$PROJECT_DIR$/.idea" />
-                  </map>
-                </attributes>
-                <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text=".idea" />
-                <item name=".idea" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              </presentation>
-              <presentation>
-                <attributes>
-                  <map>
-                    <entry key="filePath" value="$PROJECT_DIR$/cmake-build-debug" />
-                  </map>
-                </attributes>
-                <data iconPath="expui/nodes/excludeRoot.svg" iconPlugin="com.intellij" isLeaf="false" text="cmake-build-debug" />
-                <item name="cmake-build-debug" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              </presentation>
-            </presentation>
-            <presentation>
-              <attributes>
-                <map>
-                  <entry key="filePath" value="$APPLICATION_CONFIG_DIR$/extensions" />
-                </map>
-              </attributes>
-              <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="Extensions" />
-              <item name="Extensions" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </presentation>
-          </presentation>
-        </subPane>
-      </pane>
-    </panes>
+    <navigator proportions="" version="1" />
+    <panes />
   </component>
   <component name="QueryFileSettings">
     <option name="projectQueriesDirectory" value="$PROJECT_DIR$/.idea/queries" />
@@ -6895,7 +6924,7 @@
     </option>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="771007000" />
+    <option name="totallyTimeSpent" value="799648000" />
   </component>
   <component name="TodoView">
     <todo-panel id="all">
@@ -6905,20 +6934,20 @@
   </component>
   <component name="ToolWindowManager">
     <layoutV2>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5324519" visible="true" weight="0.1852904" />
-      <window_info id="Commit" order="1" sideWeight="0.50060385" weight="0.18531251" />
-      <window_info active="true" id="Structure" order="2" sideWeight="0.46754807" side_tool="true" visible="true" weight="0.1852904" />
-      <window_info id="Pull Requests" order="3" sideWeight="0.50060385" weight="0.18531251" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.53234154" weight="0.17582071" />
+      <window_info active="true" id="Commit" order="1" sideWeight="0.50253165" visible="true" weight="0.17582071" />
+      <window_info active="true" id="Structure" order="2" sideWeight="0.49746835" side_tool="true" visible="true" weight="0.17582071" />
+      <window_info id="Pull Requests" order="3" weight="0.18339646" />
       <window_info id="Bookmarks" order="4" sideWeight="0.46678746" side_tool="true" weight="0.18531251" />
       <window_info id="Learn" order="5" sideWeight="0.50060385" weight="0.1871875" />
-      <window_info anchor="bottom" id="Version Control" order="0" weight="0.40177515" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="0" visible="true" weight="0.44899172" />
       <window_info anchor="bottom" id="Problems" order="1" />
-      <window_info anchor="bottom" id="Problems View" order="2" weight="0.44055557" />
+      <window_info anchor="bottom" id="Problems View" order="2" weight="0.44944444" />
       <window_info active="true" anchor="bottom" x="399" y="0" width="786" height="845" id="Terminal" maximized="true" order="3" type="WINDOWED" weight="0.42544377" />
       <window_info anchor="bottom" id="Services" order="4" weight="0.37726244" />
-      <window_info anchor="bottom" id="CMake" order="5" visible="true" weight="0.44852942" />
-      <window_info anchor="bottom" id="Messages" order="6" weight="0.44852942" />
-      <window_info active="true" anchor="bottom" x="0" y="0" width="786" height="884" id="Run" maximized="true" order="7" type="WINDOWED" weight="0.44852942" />
+      <window_info anchor="bottom" id="CMake" order="5" weight="0.44852942" />
+      <window_info anchor="bottom" id="Messages" order="6" weight="0.44911242" />
+      <window_info active="true" anchor="bottom" x="0" y="0" width="786" height="845" id="Run" maximized="true" order="7" type="WINDOWED" weight="0.44911242" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.425" />
       <window_info anchor="bottom" id="Python Packages" order="9" weight="0.37726244" />
       <window_info anchor="bottom" id="PythonProcessOutput" order="10" weight="0.37726244" />
@@ -6936,7 +6965,7 @@
       <window_info anchor="right" id="documentation.v2" order="9" sideWeight="0.49938422" side_tool="true" weight="0.24526516" />
       <window_info anchor="right" id="Hierarchy" order="10" weight="0.3303125" />
       <window_info anchor="right" id="make" order="11" side_tool="true" weight="0.3303125" />
-      <unified_weights bottom="0.44852942" left="0.1852904" right="0.3303125" />
+      <unified_weights bottom="0.44899172" left="0.17582071" right="0.3303125" />
     </layoutV2>
     <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1556187" />
@@ -6966,15 +6995,16 @@
       <unified_weights bottom="0.33427602" left="0.1556187" right="0.29766417" />
     </layout-to-restore>
     <recentWindows>
-      <value>CMake</value>
+      <value>Version Control</value>
+      <value>Commit</value>
+      <value>Structure</value>
       <value>Project</value>
+      <value>Problems View</value>
+      <value>Pull Requests</value>
       <value>Messages</value>
       <value>Run</value>
-      <value>Problems View</value>
-      <value>Structure</value>
+      <value>CMake</value>
       <value>Notifications</value>
-      <value>Commit</value>
-      <value>Pull Requests</value>
       <value>Bookmarks</value>
       <value>TODO</value>
       <value>make</value>
@@ -6984,7 +7014,6 @@
       <value>Find</value>
       <value>AIAssistant</value>
       <value>Terminal</value>
-      <value>Version Control</value>
       <value>Services</value>
       <value>Python Packages</value>
       <value>PythonProcessOutput</value>
@@ -7018,28 +7047,28 @@
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="626" y="378" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.0.1600.900@0.0.1600.900" timestamp="1781571860293" />
-    <state width="786" height="842" key="GridCell.Tab.0.bottom" timestamp="1783465057266">
+    <state width="786" height="803" key="GridCell.Tab.0.bottom" timestamp="1784045580987">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="786" height="842" key="GridCell.Tab.0.bottom/0.0.1600.900@0.0.1600.900" timestamp="1783465057266" />
+    <state width="786" height="803" key="GridCell.Tab.0.bottom/0.0.1600.900@0.0.1600.900" timestamp="1784045580987" />
     <state width="780" height="767" key="GridCell.Tab.0.bottom/1600.0.1024.768/0.0.1600.900@0.0.1600.900" timestamp="1777898633805" />
     <state width="780" height="805" key="GridCell.Tab.0.bottom/1600.0.768.1024/0.0.1600.900@0.0.1600.900" timestamp="1776686357919" />
-    <state width="786" height="842" key="GridCell.Tab.0.center" timestamp="1783465057265">
+    <state width="786" height="803" key="GridCell.Tab.0.center" timestamp="1784045580987">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="786" height="842" key="GridCell.Tab.0.center/0.0.1600.900@0.0.1600.900" timestamp="1783465057265" />
+    <state width="786" height="803" key="GridCell.Tab.0.center/0.0.1600.900@0.0.1600.900" timestamp="1784045580987" />
     <state width="780" height="767" key="GridCell.Tab.0.center/1600.0.1024.768/0.0.1600.900@0.0.1600.900" timestamp="1777898633804" />
     <state width="780" height="805" key="GridCell.Tab.0.center/1600.0.768.1024/0.0.1600.900@0.0.1600.900" timestamp="1776686357919" />
-    <state width="786" height="842" key="GridCell.Tab.0.left" timestamp="1783465057265">
+    <state width="786" height="803" key="GridCell.Tab.0.left" timestamp="1784045580986">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="786" height="842" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1783465057265" />
+    <state width="786" height="803" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1784045580986" />
     <state width="780" height="767" key="GridCell.Tab.0.left/1600.0.1024.768/0.0.1600.900@0.0.1600.900" timestamp="1777898633803" />
     <state width="780" height="805" key="GridCell.Tab.0.left/1600.0.768.1024/0.0.1600.900@0.0.1600.900" timestamp="1776686357919" />
-    <state width="786" height="842" key="GridCell.Tab.0.right" timestamp="1783465057265">
+    <state width="786" height="803" key="GridCell.Tab.0.right" timestamp="1784045580987">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="786" height="842" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1783465057265" />
+    <state width="786" height="803" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1784045580987" />
     <state width="780" height="767" key="GridCell.Tab.0.right/1600.0.1024.768/0.0.1600.900@0.0.1600.900" timestamp="1777898633805" />
     <state width="780" height="805" key="GridCell.Tab.0.right/1600.0.768.1024/0.0.1600.900@0.0.1600.900" timestamp="1776686357919" />
     <state width="1502" height="317" key="GridCell.Tab.1.bottom" timestamp="1782159896466">
@@ -7115,10 +7144,10 @@
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state width="750" height="564" key="ShowBookmarks/0.0.1600.900@0.0.1600.900" timestamp="1783433270343" />
-    <state x="400" y="201" key="Vcs.Push.Dialog.v2" timestamp="1783460249793">
+    <state x="400" y="201" key="Vcs.Push.Dialog.v2" timestamp="1784129957468">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state x="400" y="201" key="Vcs.Push.Dialog.v2/0.0.1600.900@0.0.1600.900" timestamp="1783460249793" />
+    <state x="400" y="201" key="Vcs.Push.Dialog.v2/0.0.1600.900@0.0.1600.900" timestamp="1784129957468" />
     <state x="10" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1782054163037">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
@@ -7138,17 +7167,6 @@
     <state x="0" y="0" width="678" height="185" key="search.everywhere.popup/1600.0.1024.768/0.0.1600.900@0.0.1600.900" timestamp="1777898902356" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/include/Screens/Transactions/clsWithdrawScreen.h" />
-    <entry file="file://$PROJECT_DIR$/include/Screens/ManageUsers/clsUpdateUserScreen.h" />
-    <entry file="file://$PROJECT_DIR$/include/Screens/ManageUsers/clsDeleteUserScreen.h" />
-    <entry file="file://$PROJECT_DIR$/include/Screens/ManageUsers/clsAddNewUserScreen.h" />
-    <entry file="file://$PROJECT_DIR$/include/Screens/clsFindClientScreen.h" />
-    <entry file="file://$PROJECT_DIR$/data/User" />
-    <entry file="file://$PROJECT_DIR$/include/Screens/clsScreen.h" />
-    <entry file="file://$PROJECT_DIR$/include/Screens/clsMainScreen.h" />
-    <entry file="file://$PROJECT_DIR$/include/Screens/ManageUsers/clsUser.h" />
-    <entry file="file://$PROJECT_DIR$/src/imad.cpp" />
-    <entry file="file://$PROJECT_DIR$/src/imad.h" />
     <entry file="file://$PROJECT_DIR$/include/Manage_Users_Screen.h" />
     <entry file="file://$PROJECT_DIR$/include/Clients screens.h" />
     <entry file="file://$PROJECT_DIR$/data/fff" />
@@ -7180,13 +7198,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" column="31" lean-forward="true" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -7291,24 +7302,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/clsString.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6192">
-          <caret line="258" column="27" selection-start-line="258" selection-start-column="27" selection-end-line="258" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/include/Manage_Users_Screen/clsUpdateUserScreen.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2856">
           <caret line="119" column="41" selection-start-line="119" selection-start-column="41" selection-end-line="119" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/clsInputValidate.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1320">
-          <caret line="55" column="4" selection-start-line="55" selection-start-column="4" selection-end-line="55" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -7340,13 +7337,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/clsScreen.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1032">
-          <caret line="43" column="16" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/include/Transactions Screen/clsDepositScreen.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1320">
@@ -7368,13 +7358,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/clsMainScreen.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/include/Transactions Screen/clsWithdrawScreen.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
@@ -7386,6 +7369,115 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="722">
           <caret line="78" column="13" selection-start-line="78" selection-start-column="13" selection-end-line="78" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/clsInputValidate.h" preview="true">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="55" column="4" selection-start-line="55" selection-start-column="4" selection-end-line="55" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/InterfaceCommunication.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main1.cpp" />
+    <entry file="file://$PROJECT_DIR$/src/main.cpp" preview="true">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/P04 Currency Exchange/main1 Currency.h" />
+    <entry file="file:///usr/include/c++/16/bits/basic_string.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="2962" column="6" selection-start-line="2962" selection-start-column="6" selection-end-line="2962" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/clsMainScreen.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2160">
+          <caret line="90" column="42" selection-start-line="90" selection-start-column="42" selection-end-line="90" selection-end-column="42" />
+          <folding>
+            <marker date="1784071864404" expanded="true" signature="13:566" ph="##include ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/P04 Currency Exchange/clsCurrency.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4944">
+          <caret line="206" column="31" selection-start-line="206" selection-start-column="31" selection-end-line="206" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/P04 Currency Exchange/clsCurrencyExchangeMainScreen.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1512">
+          <caret line="63" selection-start-line="63" selection-end-line="63" />
+          <folding>
+            <marker date="1784128411903" expanded="true" signature="168:413" ph="##include ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/P04 Currency Exchange/clsCurrenciesListScreen.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="26" column="15" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/clsScreen.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/P04 Currency Exchange/clsFindCurrencyScreen.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1008">
+          <caret line="42" column="16" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
+          <folding>
+            <marker date="1784111817203" expanded="true" signature="151:248" ph="##include ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/P04 Currency Exchange/clsUpdateCurrencyRateScreen.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Currencies.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/clsString.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="264" selection-start-line="264" selection-end-line="264" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/P04 Currency Exchange/clsCurrencyCalculatorScreen.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="89" column="35" lean-forward="true" selection-start-line="89" selection-start-column="35" selection-end-line="89" selection-end-column="35" />
+          <folding>
+            <marker date="1784131377688" expanded="true" signature="0:39" ph="//..." />
+            <marker date="1784131377688" expanded="true" signature="163:260" ph="##include ..." />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -1,0 +1,9 @@
+com.intellij.ml.llm
+hg4idea
+Subversion
+PerforceDirectPlugin
+intellij.vitejs
+com.jetbrains.rust
+com.intellij.mcpServer
+PythonCore
+com.intellij.nativeDebug

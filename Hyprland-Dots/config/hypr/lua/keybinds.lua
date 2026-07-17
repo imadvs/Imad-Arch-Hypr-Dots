@@ -49,13 +49,13 @@ hl.bind(mainMod .. " + mouse:274", hl.dsp.window.close())
 hl.bind(
 	mainMod .. " + ALT + mouse_down",
 	hl.dsp.exec_cmd(
-		"hyprctl keyword cursor:zoom_factor \"$(hyprctl getoption cursor:zoom_factor | awk 'NR==1, {factor = $2; if (factor < 1) {factor = 1}; print factor * 2.0}')\""
+		"hyprctl eval \"hl.config({ cursor = { zoom_factor = $(hyprctl getoption cursor:zoom_factor | awk 'NR==1 {print $2 * 2.0}') } })\""
 	)
 )
 hl.bind(
 	mainMod .. " + ALT + mouse_up",
 	hl.dsp.exec_cmd(
-		"hyprctl keyword cursor:zoom_factor \"$(hyprctl getoption cursor:zoom_factor | awk 'NR==1, {factor = $2; if (factor < 1) {factor = 1}; print factor / 2.0}')\""
+		"hyprctl eval \"hl.config({ cursor = { zoom_factor = $(hyprctl getoption cursor:zoom_factor | awk 'NR==1 {if ($2 < 1) {print 1} else {print $2 / 2.0}}') } })\""
 	)
 )
 hl.bind(mainMod .. " + CTRL + ALT + B", hl.dsp.exec_cmd(uscripts .. "/ToggleWaybar.sh"))
@@ -83,6 +83,7 @@ hl.bind(mainMod .. " + CTRL + N", hl.dsp.exec_cmd("swaync-client -t -sw"))
 hl.bind(mainMod .. " + CTRL + E", hl.dsp.exec_cmd(scripts .. "/Kool_Quick_Settings.sh"))
 hl.bind(mainMod .. " + CTRL + D", hl.dsp.layout("removemaster"))
 hl.bind(mainMod .. " + I", hl.dsp.layout("addmaster"))
+hl.bind(mainMod .. " + CTRL + I", hl.dsp.exec_cmd(uscripts .. "/ToggleOpacity.sh"))
 hl.bind(mainMod .. " + CTRL + Return", hl.dsp.layout("swapwithmaster"))
 hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))
 hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())

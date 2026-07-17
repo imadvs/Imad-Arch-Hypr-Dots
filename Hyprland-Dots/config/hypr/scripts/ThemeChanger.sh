@@ -48,7 +48,7 @@ restore_layout_after_reload() {
     fi
   fi
 
-  hyprctl keyword general:layout "$layout" >/dev/null 2>&1 || true
+  hyprctl eval "hl.config({ general = { layout = '$layout' } })" >/dev/null 2>&1 || true
 }
 reload_hypr_preserve_layout() {
   command -v hyprctl >/dev/null 2>&1 || return 0
@@ -140,12 +140,12 @@ apply_hypr_border_fallback() {
   color15="$(extract_wallust_hex color15)"
   color0="$(extract_wallust_hex color0)"
 
-  [ -n "$color12" ] && hyprctl keyword general:col.active_border "rgb($color12)" >/dev/null 2>&1 || true
-  [ -n "$color10" ] && hyprctl keyword general:col.inactive_border "rgb($color10)" >/dev/null 2>&1 || true
-  [ -n "$color12" ] && hyprctl keyword decoration:shadow:color "rgb($color12)" >/dev/null 2>&1 || true
-  [ -n "$color10" ] && hyprctl keyword decoration:shadow:color_inactive "rgb($color10)" >/dev/null 2>&1 || true
-  [ -n "$color15" ] && hyprctl keyword group:col.border_active "rgb($color15)" >/dev/null 2>&1 || true
-  [ -n "$color0" ] && hyprctl keyword group:groupbar:col.active "rgb($color0)" >/dev/null 2>&1 || true
+  [ -n "$color12" ] && hyprctl eval "hl.config({ general = { col = { active_border = { colors = { \"rgb($color12)\" }, angle = 45 } } } })" >/dev/null 2>&1 || true
+  [ -n "$color10" ] && hyprctl eval "hl.config({ general = { col = { inactive_border = \"rgb($color10)\" } } })" >/dev/null 2>&1 || true
+  [ -n "$color12" ] && hyprctl eval "hl.config({ decoration = { shadow = { color = \"rgb($color12)\" } } })" >/dev/null 2>&1 || true
+  [ -n "$color10" ] && hyprctl eval "hl.config({ decoration = { shadow = { color_inactive = \"rgb($color10)\" } } })" >/dev/null 2>&1 || true
+  [ -n "$color15" ] && hyprctl eval "hl.config({ group = { col = { border_active = \"rgb($color15)\" } } })" >/dev/null 2>&1 || true
+  [ -n "$color0" ] && hyprctl eval "hl.config({ group = { groupbar = { col = { active = \"rgb($color0)\" } } } })" >/dev/null 2>&1 || true
 }
 
 # Prompt for theme; guard -e on cancel

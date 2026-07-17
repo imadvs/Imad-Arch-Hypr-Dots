@@ -5,10 +5,6 @@
 
 set -euo pipefail
 
-# Always reset and bind SUPER+J/K the same way on startup
-hyprctl keyword unbind SUPER,J || true
-hyprctl keyword unbind SUPER,K || true
-
 # Cycle windows globally: J = next, K = previous
-hyprctl keyword bind SUPER,J,cyclenext
-hyprctl keyword bind SUPER,K,cyclenext,prev
+hyprctl eval 'hl.bind("SUPER + J", hl.dsp.layout("cyclenext"))'
+hyprctl eval 'hl.bind("SUPER + K", hl.dsp.layout("cyclenext", "prev"))'

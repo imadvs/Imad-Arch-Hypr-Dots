@@ -1,7 +1,7 @@
 # custom JetBrains Rider VM options (expand/override 'bin/rider64.vmoptions')
 -Dsun.java2d.uiScale.enabled=true
 -Dsun.java2d.uiScale=2.5
--Dide.managed.by.toolbox=/tmp/jetbrains-toolbox-3.5.0.84344/bin/jetbrains-toolbox
+-Dide.managed.by.toolbox=/home/imad/.local/share/JetBrains/Toolbox/jetbrains-toolbox
 -Dtoolbox.notification.token=b6592442-d52a-40f4-a6dd-808d931f0208
 -Dtoolbox.notification.portFile=/home/imad/.cache/JetBrains/Toolbox/ports/30d1813c-76ab-4d2b-b157-ac753c84f8b9.port
 -Dawt.toolkit.name=WLToolkit

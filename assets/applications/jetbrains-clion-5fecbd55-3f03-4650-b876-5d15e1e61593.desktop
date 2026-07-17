@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=CLion 2026.1.3
+Name=CLion 2026.2
 Exec="/opt/clion/bin/clion" %u
 Version=1.0
 Type=Application

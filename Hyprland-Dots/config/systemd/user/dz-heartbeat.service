@@ -1,0 +1,21 @@
+[Unit]
+Description=DigitalZen Heartbeat Loop
+
+[Service]
+ExecStart="/home/imad/.cache/.dz_heartbeat.sh"
+# Restart only on crashes (non-zero exit / killed by signal).
+# A clean exit(0) from the SIGTERM handler during logout/shutdown must NOT trigger a restart.
+Restart=on-failure
+RestartSec=5s
+
+StandardOutput=journal
+StandardError=journal
+
+# kill all child processes when the service is stopped
+# the app will not get killed because it starts in a separate scopecontrol-group
+# THIS IS IMPORTANT to AVOID ORPHAN PROCESSES because we create bash->bash->app process tree
+KillMode=control-group
+
+
+[Install]
+WantedBy=default.target
